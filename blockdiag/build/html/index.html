@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>blockdiag - simple block-diagram image generator &mdash; blockdiag v0.2.2 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.2.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="blockdiag v0.2.2 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">blockdiag v0.2.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="blockdiag-simple-block-diagram-image-generator">
+<h1>blockdiag - simple block-diagram image generator<a class="headerlink" href="#blockdiag-simple-block-diagram-image-generator" title="Permalink to this headline">¶</a></h1>
+<p><cite>blockdiag</cite> generate block-diagram image file from spec-text file.</p>
+<p class="blockdiag">
+<img src="_images/blockdiag-68b745e5bc0d2bc457f0e048bbad390e60018fe1.png" alt="diagram {
+  blockdiag -&gt; generates -&gt; &quot;block-diagrams&quot;;
+  blockdiag -&gt; is -&gt; &quot;very easy!&quot;;
+
+  blockdiag [color = &quot;greenyellow&quot;];
+  &quot;block-diagrams&quot; [color = &quot;pink&quot;];
+  &quot;very easy!&quot; [color = &quot;orange&quot;];
+}"/>
+</p>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Generate block-diagram from dot like text (basic feature).</li>
+<li>Multilingualization for node-label (utf-8 only).</li>
+<li>Sphinx embedding (using sphinxcontrib-blockdiag package)</li>
+</ul>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="by-easy-install">
+<h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
+<p>Make environment:</p>
+<div class="highlight-python"><pre>$ easy_install blockdiag</pre>
+</div>
+</div>
+<div class="section" id="by-buildout">
+<h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
+<p>Make environment:</p>
+<div class="highlight-python"><pre>$ hg clone http://bitbucket.org/tk0miya/blockdiag
+$ cd blockdiag
+$ python bootstrap.py
+$ bin/buildout</pre>
+</div>
+<p>Copy and modify ini file. example:</p>
+<div class="highlight-python"><pre>$ cp &lt;blockdiag installed path&gt;/blockdiag/examples/simple.diag .
+$ vi simple.diag</pre>
+</div>
+<p>Please refer to <a class="reference internal" href="#spec-text-setting-sample">spec-text setting sample</a> section for the format of the
+<cite>simpla.diag</cite> configuration file.</p>
+</div>
+</div>
+<div class="section" id="spec-text-setting-sample">
+<h2>spec-text setting sample<a class="headerlink" href="#spec-text-setting-sample" title="Permalink to this headline">¶</a></h2>
+<p>Few examples are available.</p>
+<div class="section" id="simple-diag">
+<h3>simple.diag<a class="headerlink" href="#simple-diag" title="Permalink to this headline">¶</a></h3>
+<p>simple.diag is simply define nodes and transitions by dot-like text format:</p>
+<div class="highlight-python"><pre>diagram admin {
+  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+}</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-5a62147c2c15a7d36e0a0835f554b26b2ebd4106.png" alt="diagram admin {
+  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+}"/>
+</p>
+</div>
+<div class="section" id="screen-diag">
+<h3>screen.diag<a class="headerlink" href="#screen-diag" title="Permalink to this headline">¶</a></h3>
+<p>screen.diag is more complexly sample. diaglam nodes have a alternative label
+and some transitions:</p>
+<div class="highlight-python"><pre>diagram admin {
+  top_page [label = "Top page"];
+
+  foo_index [label = "List of FOOs"];
+  foo_detail [label = "Detail FOO"];
+  foo_add [label = "Add FOO"];
+  foo_add_confirm [label = "Add FOO (confirm)"];
+  foo_edit [label = "Edit FOO"];
+  foo_edit_confirm [label = "Edit FOO (confirm)"];
+  foo_delete_confirm [label = "Delete FOO (confirm)"];
+
+  bar_detail [label = "Detail of BAR"];
+  bar_edit [label = "Edit BAR"];
+  bar_edit_confirm [label = "Edit BAR (confirm)"];
+
+  logout;
+
+  top_page -&gt; foo_index;
+  top_page -&gt; bar_detail;
+
+  foo_index -&gt; foo_detail;
+               foo_detail -&gt; foo_edit;
+               foo_detail -&gt; foo_delete_confirm;
+  foo_index -&gt; foo_add -&gt; foo_add_confirm -&gt; foo_index;
+  foo_index -&gt; foo_edit -&gt; foo_edit_confirm -&gt; foo_index;
+  foo_index -&gt; foo_delete_confirm -&gt; foo_index;
+
+  bar_detail -&gt; bar_edit -&gt; bar_edit_confirm -&gt; bar_detail;
+}</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-477cdf7af1401884b23b4d241412e9a88348d691.png" alt="diagram admin {
+  top_page [label = &quot;Top page&quot;];
+
+  foo_index [label = &quot;List of FOOs&quot;];
+  foo_detail [label = &quot;Detail FOO&quot;];
+  foo_add [label = &quot;Add FOO&quot;];
+  foo_add_confirm [label = &quot;Add FOO (confirm)&quot;];
+  foo_edit [label = &quot;Edit FOO&quot;];
+  foo_edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
+  foo_delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
+
+  bar_detail [label = &quot;Detail of BAR&quot;];
+  bar_edit [label = &quot;Edit BAR&quot;];
+  bar_edit_confirm [label = &quot;Edit BAR (confirm)&quot;];
+
+  logout;
+
+  top_page -&gt; foo_index;
+  top_page -&gt; bar_detail;
+
+  foo_index -&gt; foo_detail;
+               foo_detail -&gt; foo_edit;
+               foo_detail -&gt; foo_delete_confirm;
+  foo_index -&gt; foo_add -&gt; foo_add_confirm -&gt; foo_index;
+  foo_index -&gt; foo_edit -&gt; foo_edit_confirm -&gt; foo_index;
+  foo_index -&gt; foo_delete_confirm -&gt; foo_index;
+
+  bar_detail -&gt; bar_edit -&gt; bar_edit_confirm -&gt; bar_detail;
+}"/>
+</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Execute blockdiag command:</p>
+<div class="highlight-python"><pre>$ blockdiag simple.diag
+$ ls simple.png
+simple.png</pre>
+</div>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python 2.4 or later (not support 3.x)</li>
+<li>Python Imaging Library 1.1.6 or later.</li>
+<li>funcparserlib 0.3.4 or later.</li>
+<li>setuptools or distriubte.</li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>Python Software Foundation License.</p>
+</div>
+<div class="section" id="history">
+<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>0.2.2 (2010-09-25)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix edge bugs.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>0.2.1 (2010-09-25)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fix bugs.</li>
+<li>Fix package style.</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>0.2 (2010-09-23)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Update layout engine.</li>
+<li>Support group { ... } sentence for create Node-Groups.</li>
+<li>Support numbered badge on node (cf. A [numbered = 5])</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>0.1 (2010-09-20)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>first release</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">blockdiag - simple block-diagram image generator</a><ul>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#setup">Setup</a><ul>
+<li><a class="reference internal" href="#by-easy-install">by easy_install</a></li>
+<li><a class="reference internal" href="#by-buildout">by buildout</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#spec-text-setting-sample">spec-text setting sample</a><ul>
+<li><a class="reference internal" href="#simple-diag">simple.diag</a></li>
+<li><a class="reference internal" href="#screen-diag">screen.diag</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#history">History</a><ul>
+<li><a class="reference internal" href="#id1">0.2.2 (2010-09-25)</a></li>
+<li><a class="reference internal" href="#id2">0.2.1 (2010-09-25)</a></li>
+<li><a class="reference internal" href="#id3">0.2 (2010-09-23)</a></li>
+<li><a class="reference internal" href="#id4">0.1 (2010-09-20)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">blockdiag v0.2.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.4.
+    </div>
+  </body>
+</html>
