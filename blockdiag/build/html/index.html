@@ -176,26 +176,32 @@ and some transitions:</p>
   config [label = "設定"];
   config_edit [label = "設定変更"];
   config_confirm [label = "設定変更確認"];
+  logout [label = "ログアウト"];
 
   top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+  top_page -&gt; logout;
 
   // その 2: クオートする方法
   "起" -&gt; "承" -&gt; "転" -&gt; "結";
+  "風" -&gt; "林" -&gt; "火" -&gt; "山";
 }</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-90fc8cdede5ab23b962f43f6a2cf02db94380270.png" alt="diagram admin {
+<img src="_images/blockdiag-0d4ed14f35fe0ec705d59d78c1c2247af96eb348.png" alt="diagram admin {
   // その 1: label 属性を使う方法
   top_page [label = &quot;トップページ&quot;];
   config [label = &quot;設定&quot;];
   config_edit [label = &quot;設定変更&quot;];
   config_confirm [label = &quot;設定変更確認&quot;];
+  logout [label = &quot;ログアウト&quot;];
 
   top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+  top_page -&gt; logout;
 
   // その 2: クオートする方法
   &quot;起&quot; -&gt; &quot;承&quot; -&gt; &quot;転&quot; -&gt; &quot;結&quot;;
-}" width="752" height="168" />
+  &quot;風&quot; -&gt; &quot;林&quot; -&gt; &quot;火&quot; -&gt; &quot;山&quot;;
+}" width="752" height="328" />
 </p>
 </div>
 </div>
@@ -206,6 +212,23 @@ and some transitions:</p>
 $ ls simple.png
 simple.png</pre>
 </div>
+</div>
+<div class="section" id="sphinxcontrib-blocidag">
+<h2>sphinxcontrib-blocidag<a class="headerlink" href="#sphinxcontrib-blocidag" title="Permalink to this headline">¶</a></h2>
+<p><cite>sphinxcontrib-blockdiag</cite> is sphinx extension for embedding blockdiag diagrams.
+You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
+<div class="highlight-text"><div class="highlight"><pre>.. blockdiag::
+
+    diagram admin {
+      top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+    }
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-c47c653ce44467ee8f301cbddea75588647cea58.png" alt="diagram admin {
+  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+}" width="752" height="88" />
+</p>
 </div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
@@ -219,36 +242,6 @@ simple.png</pre>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
 <p>Python Software Foundation License.</p>
-</div>
-<div class="section" id="history">
-<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>0.2.2 (2010-09-25)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Fix edge bugs.</li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h3>0.2.1 (2010-09-25)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Fix bugs.</li>
-<li>Fix package style.</li>
-</ul>
-</div>
-<div class="section" id="id3">
-<h3>0.2 (2010-09-23)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Update layout engine.</li>
-<li>Support group { ... } sentence for create Node-Groups.</li>
-<li>Support numbered badge on node (cf. A [numbered = 5])</li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h3>0.1 (2010-09-20)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>first release</li>
-</ul>
-</div>
 </div>
 </div>
 
@@ -274,15 +267,9 @@ simple.png</pre>
 </ul>
 </li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#sphinxcontrib-blocidag">sphinxcontrib-blocidag</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 <li><a class="reference internal" href="#license">License</a></li>
-<li><a class="reference internal" href="#history">History</a><ul>
-<li><a class="reference internal" href="#id1">0.2.2 (2010-09-25)</a></li>
-<li><a class="reference internal" href="#id2">0.2.1 (2010-09-25)</a></li>
-<li><a class="reference internal" href="#id3">0.2 (2010-09-23)</a></li>
-<li><a class="reference internal" href="#id4">0.1 (2010-09-20)</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

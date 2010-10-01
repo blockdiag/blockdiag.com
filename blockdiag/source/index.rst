@@ -166,8 +166,10 @@ multi-lingua.diag is multilingualization sample.  diagram nodes have a UTF-8 lab
       config [label = "設定"];
       config_edit [label = "設定変更"];
       config_confirm [label = "設定変更確認"];
+      logout [label = "ログアウト"];
 
       top_page -> config -> config_edit -> config_confirm -> top_page;
+      top_page -> logout;
 
       // その 2: クオートする方法
       "起" -> "承" -> "転" -> "結";
@@ -183,6 +185,27 @@ Execute blockdiag command::
    $ blockdiag simple.diag
    $ ls simple.png
    simple.png
+
+
+sphinxcontrib-blocidag
+======================
+
+`sphinxcontrib-blockdiag` is sphinx extension for embedding blockdiag diagrams.
+You can embed block diagrams with `blockdiag` directive.
+
+.. code-block:: text
+
+   .. blockdiag::
+
+       diagram admin {
+         top_page -> config -> config_edit -> config_confirm -> top_page;
+       }
+
+.. blockdiag::
+
+    diagram admin {
+      top_page -> config -> config_edit -> config_confirm -> top_page;
+    }
 
 
 Requirements
