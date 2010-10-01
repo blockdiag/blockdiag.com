@@ -197,27 +197,3 @@ Requirements
 License
 =======
 Python Software Foundation License.
-
-
-History
-=======
-
-0.2.2 (2010-09-25)
-------------------
-* Fix edge bugs.
-
-0.2.1 (2010-09-25)
-------------------
-* Fix bugs.
-* Fix package style.
-
-0.2 (2010-09-23)
-------------------
-* Update layout engine.
-* Support group { ... } sentence for create Node-Groups.
-* Support numbered badge on node (cf. A [numbered = 5])
-
-0.1 (2010-09-20)
------------------
-* first release
-
