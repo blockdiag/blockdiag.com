@@ -44,14 +44,14 @@
 <h1>blockdiag - simple block-diagram image generator<a class="headerlink" href="#blockdiag-simple-block-diagram-image-generator" title="Permalink to this headline">¶</a></h1>
 <p><cite>blockdiag</cite> generate block-diagram image file from spec-text file.</p>
 <p class="blockdiag">
-<img src="_images/blockdiag-68b745e5bc0d2bc457f0e048bbad390e60018fe1.png" alt="diagram {
+<img src="_images/blockdiag-9f5f62e7c8098c3a393ab631eeb67b1a12296f4c.png" alt="diagram {
   blockdiag -&gt; generates -&gt; &quot;block-diagrams&quot;;
   blockdiag -&gt; is -&gt; &quot;very easy!&quot;;
 
   blockdiag [color = &quot;greenyellow&quot;];
   &quot;block-diagrams&quot; [color = &quot;pink&quot;];
   &quot;very easy!&quot; [color = &quot;orange&quot;];
-}"/>
+}" width="560" height="168" />
 </p>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
@@ -96,9 +96,9 @@ $ vi simple.diag</pre>
 }</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-5a62147c2c15a7d36e0a0835f554b26b2ebd4106.png" alt="diagram admin {
+<img src="_images/blockdiag-c47c653ce44467ee8f301cbddea75588647cea58.png" alt="diagram admin {
   top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-}"/>
+}" width="752" height="88" />
 </p>
 </div>
 <div class="section" id="screen-diag">
@@ -136,7 +136,7 @@ and some transitions:</p>
 }</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-477cdf7af1401884b23b4d241412e9a88348d691.png" alt="diagram admin {
+<img src="_images/blockdiag-e8cf43145fccb2a59e7b5e001496c88a4ae7f579.png" alt="diagram admin {
   top_page [label = &quot;Top page&quot;];
 
   foo_index [label = &quot;List of FOOs&quot;];
@@ -164,7 +164,38 @@ and some transitions:</p>
   foo_index -&gt; foo_delete_confirm -&gt; foo_index;
 
   bar_detail -&gt; bar_edit -&gt; bar_edit_confirm -&gt; bar_detail;
-}"/>
+}" width="944" height="408" />
+</p>
+</div>
+<div class="section" id="multi-lingua-diag">
+<h3>multi-lingua.diag<a class="headerlink" href="#multi-lingua-diag" title="Permalink to this headline">¶</a></h3>
+<p>multi-lingua.diag is multilingualization sample.  diagram nodes have a UTF-8 label:</p>
+<div class="highlight-python"><pre>diagram admin {
+  // その 1: label 属性を使う方法
+  top_page [label = "トップページ"];
+  config [label = "設定"];
+  config_edit [label = "設定変更"];
+  config_confirm [label = "設定変更確認"];
+
+  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+
+  // その 2: クオートする方法
+  "起" -&gt; "承" -&gt; "転" -&gt; "結";
+}</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-90fc8cdede5ab23b962f43f6a2cf02db94380270.png" alt="diagram admin {
+  // その 1: label 属性を使う方法
+  top_page [label = &quot;トップページ&quot;];
+  config [label = &quot;設定&quot;];
+  config_edit [label = &quot;設定変更&quot;];
+  config_confirm [label = &quot;設定変更確認&quot;];
+
+  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
+
+  // その 2: クオートする方法
+  &quot;起&quot; -&gt; &quot;承&quot; -&gt; &quot;転&quot; -&gt; &quot;結&quot;;
+}" width="752" height="168" />
 </p>
 </div>
 </div>
@@ -239,6 +270,7 @@ simple.png</pre>
 <li><a class="reference internal" href="#spec-text-setting-sample">spec-text setting sample</a><ul>
 <li><a class="reference internal" href="#simple-diag">simple.diag</a></li>
 <li><a class="reference internal" href="#screen-diag">screen.diag</a></li>
+<li><a class="reference internal" href="#multi-lingua-diag">multi-lingua.diag</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#usage">Usage</a></li>

@@ -137,6 +137,44 @@ and some transitions::
     }
 
 
+multi-lingua.diag
+-----------------
+
+multi-lingua.diag is multilingualization sample.  diagram nodes have a UTF-8 label::
+
+    diagram admin {
+      // その 1: label 属性を使う方法
+      top_page [label = "トップページ"];
+      config [label = "設定"];
+      config_edit [label = "設定変更"];
+      config_confirm [label = "設定変更確認"];
+      logout [label = "ログアウト"];
+
+      top_page -> config -> config_edit -> config_confirm -> top_page;
+      top_page -> logout;
+
+      // その 2: クオートする方法
+      "起" -> "承" -> "転" -> "結";
+      "風" -> "林" -> "火" -> "山";
+    }
+
+.. blockdiag::
+
+    diagram admin {
+      // その 1: label 属性を使う方法
+      top_page [label = "トップページ"];
+      config [label = "設定"];
+      config_edit [label = "設定変更"];
+      config_confirm [label = "設定変更確認"];
+
+      top_page -> config -> config_edit -> config_confirm -> top_page;
+
+      // その 2: クオートする方法
+      "起" -> "承" -> "転" -> "結";
+      "風" -> "林" -> "火" -> "山";
+    }
+
+
 Usage
 =====
 
