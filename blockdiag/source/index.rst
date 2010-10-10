@@ -18,3 +18,5 @@ blockdiag - simple block-diagram image generator
 .. toctree::
 
    introduction
+   examples
+   sphinxcontrib
