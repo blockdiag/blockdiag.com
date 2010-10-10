@@ -1,131 +1,213 @@
-========
-Examples
-========
+==============
+Sample diagams
+==============
 
-spec-text setting sample
+blockdiag support .diag format.
+.diag format is similar to graphviz's DOT format.
+
+
+simple diagram
+==============
+
+.. code-block:: text
+
+   diagram {
+      A -> B -> C -> D;
+      A -> E -> F -> G;
+   }
+
+.. blockdiag::
+
+   diagram {
+      A -> B -> C -> D;
+      A -> E -> F -> G;
+   }
+
+
+label attribute to nodes
 ========================
 
-Few examples are available.
+.. code-block:: text
 
-simple.diag
-------------
+   diagram {
+      // Set labels to nodes.
+      A -> B -> C -> A;
 
-simple.diag is simply define nodes and transitions by dot-like text format::
+      A [label = "foo"];
+      B [label = "bar"];
+      C [label = "baz"];
+   }
+
+.. blockdiag::
+
+   diagram {
+      // Set labels to nodes.
+      A [label = "foo"];
+      B [label = "bar"];
+      C [label = "baz"];
+
+      A -> B -> C -> A;
+   }
+
+
+style attribute to nodes and edges
+==================================
+
+.. code-block:: text
+
+   diagram {
+      // Set boder-style and backgroun-color to nodes.
+      A [style = dotted];
+      B [style = dashed];
+      C [color = pink];
+      D [color = "#888888"];
+
+      // Set border-style and color to edges.
+      A -> B [style = dotted];
+      B -> C [style = dashed];
+      C -> D [color = "red"];
+
+      // Set numbered-badge to nodes.
+      E [numbered = 99];
+
+      // Set arrow direction to edges.
+      E -> F [dir = none];
+      F -> G [dir = forward];
+      G -> H [dir = back];
+      H -> I [dir = both];
+   }
+
+.. blockdiag::
+
+   diagram {
+      // Set boder-style and backgroun-color to nodes.
+      A [style = dotted];
+      B [style = dashed];
+      C [color = pink];
+      D [color = "#888888"];
+
+      // Set border-style and color to edges.
+      A -> B [style = dotted];
+      B -> C [style = dashed];
+      C -> D [color = "red"];
+
+      // Set numbered-badge to nodes.
+      E [numbered = 99];
+
+      // Set arrow direction to edges.
+      E -> F [dir = none];
+      F -> G [dir = forward];
+      G -> H [dir = back];
+      H -> I [dir = both];
+   }
+
+
+mutlilingualization
+===================
+
+.. code-block:: text
+
+   diagram admin {
+      A [label = "起"];
+      B [label = "承"];
+      C [label = "転"];
+      D [label = "結"];
+
+      A -> B -> C -> D;
+
+      // Use quoted string directly.
+      "春" -> "夏" -> "秋" -> "冬";
+   }
+
+.. note::
+
+   blockdiag supports UTF-8 encoding only.
+
+.. blockdiag::
+
+   diagram admin {
+      A [label = "起"];
+      B [label = "承"];
+      C [label = "転"];
+      D [label = "結"];
+
+      A -> B -> C -> D;
+
+      // Use quoted string directly.
+      "春" -> "夏" -> "秋" -> "冬";
+   }
+
+
+grouping nodes
+==============
+
+.. code-block:: text
+
+   diagram admin {
+      A -> B -> C -> D;
+      A -> E;
+
+      group {
+         A; B;
+      }
+
+      group {
+         color = "#77FF77";
+         E -> F -> G;
+      }
+   }
+
+.. blockdiag::
+
+   diagram admin {
+      A -> B -> C -> D;
+      A -> E;
+
+      group {
+         A; B;
+      }
+
+      group {
+         // Set background-color to this group.
+         color = "#77FF77";
+         E -> F -> G;
+      }
+   }
+
+
+Simple diagram for master data manager
+======================================
+
+.. code-block:: text
 
     diagram admin {
-      top_page -> config -> config_edit -> config_confirm -> top_page;
+      index [label = "List of FOOs"];
+      add [label = "Add FOO"];
+      add_confirm [label = "Add FOO (confirm)"];
+      edit [label = "Edit FOO"];
+      edit_confirm [label = "Edit FOO (confirm)"];
+      show [label = "Show FOO"];
+      delete_confirm [label = "Delete FOO (confirm)"];
+
+      index -> add  -> add_confirm  -> index;
+      index -> edit -> edit_confirm -> index;
+      index -> show -> index;
+      index -> delete_confirm -> index;
     }
 
 .. blockdiag::
 
     diagram admin {
-      top_page -> config -> config_edit -> config_confirm -> top_page;
-    }
+      index [label = "List of FOOs"];
+      add [label = "Add FOO"];
+      add_confirm [label = "Add FOO (confirm)"];
+      edit [label = "Edit FOO"];
+      edit_confirm [label = "Edit FOO (confirm)"];
+      show [label = "Show FOO"];
+      delete_confirm [label = "Delete FOO (confirm)"];
 
-screen.diag
-------------
-
-screen.diag is more complexly sample. diaglam nodes have a alternative label
-and some transitions::
-
-    diagram admin {
-      top_page [label = "Top page"];
-
-      foo_index [label = "List of FOOs"];
-      foo_detail [label = "Detail FOO"];
-      foo_add [label = "Add FOO"];
-      foo_add_confirm [label = "Add FOO (confirm)"];
-      foo_edit [label = "Edit FOO"];
-      foo_edit_confirm [label = "Edit FOO (confirm)"];
-      foo_delete_confirm [label = "Delete FOO (confirm)"];
-
-      bar_detail [label = "Detail of BAR"];
-      bar_edit [label = "Edit BAR"];
-      bar_edit_confirm [label = "Edit BAR (confirm)"];
-
-      logout;
-
-      top_page -> foo_index;
-      top_page -> bar_detail;
-
-      foo_index -> foo_detail;
-                   foo_detail -> foo_edit;
-                   foo_detail -> foo_delete_confirm;
-      foo_index -> foo_add -> foo_add_confirm -> foo_index;
-      foo_index -> foo_edit -> foo_edit_confirm -> foo_index;
-      foo_index -> foo_delete_confirm -> foo_index;
-
-      bar_detail -> bar_edit -> bar_edit_confirm -> bar_detail;
-    }
-
-.. blockdiag::
-
-    diagram admin {
-      top_page [label = "Top page"];
-
-      foo_index [label = "List of FOOs"];
-      foo_detail [label = "Detail FOO"];
-      foo_add [label = "Add FOO"];
-      foo_add_confirm [label = "Add FOO (confirm)"];
-      foo_edit [label = "Edit FOO"];
-      foo_edit_confirm [label = "Edit FOO (confirm)"];
-      foo_delete_confirm [label = "Delete FOO (confirm)"];
-
-      bar_detail [label = "Detail of BAR"];
-      bar_edit [label = "Edit BAR"];
-      bar_edit_confirm [label = "Edit BAR (confirm)"];
-
-      logout;
-
-      top_page -> foo_index;
-      top_page -> bar_detail;
-
-      foo_index -> foo_detail;
-                   foo_detail -> foo_edit;
-                   foo_detail -> foo_delete_confirm;
-      foo_index -> foo_add -> foo_add_confirm -> foo_index;
-      foo_index -> foo_edit -> foo_edit_confirm -> foo_index;
-      foo_index -> foo_delete_confirm -> foo_index;
-
-      bar_detail -> bar_edit -> bar_edit_confirm -> bar_detail;
-    }
-
-
-multi-lingua.diag
------------------
-
-multi-lingua.diag is multilingualization sample.  diagram nodes have a UTF-8 label::
-
-    diagram admin {
-      // その 1: label 属性を使う方法
-      top_page [label = "トップページ"];
-      config [label = "設定"];
-      config_edit [label = "設定変更"];
-      config_confirm [label = "設定変更確認"];
-      logout [label = "ログアウト"];
-
-      top_page -> config -> config_edit -> config_confirm -> top_page;
-      top_page -> logout;
-
-      // その 2: クオートする方法
-      "起" -> "承" -> "転" -> "結";
-      "風" -> "林" -> "火" -> "山";
-    }
-
-.. blockdiag::
-
-    diagram admin {
-      // その 1: label 属性を使う方法
-      top_page [label = "トップページ"];
-      config [label = "設定"];
-      config_edit [label = "設定変更"];
-      config_confirm [label = "設定変更確認"];
-      logout [label = "ログアウト"];
-
-      top_page -> config -> config_edit -> config_confirm -> top_page;
-      top_page -> logout;
-
-      // その 2: クオートする方法
-      "起" -> "承" -> "転" -> "結";
-      "風" -> "林" -> "火" -> "山";
+      index -> add  -> add_confirm  -> index;
+      index -> edit -> edit_confirm -> index;
+      index -> show -> index;
+      index -> delete_confirm -> index;
     }
