@@ -22,7 +22,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="blockdiag v0.2.2 documentation" href="#" /> 
+    <link rel="top" title="blockdiag v0.2.2 documentation" href="#" />
+    <link rel="next" title="Introduction of blockdiag" href="introduction.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,6 +32,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             accesskey="N">next</a> |</li>
         <li><a href="#">blockdiag v0.2.2 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -53,195 +57,31 @@
   &quot;very easy!&quot; [color = &quot;orange&quot;];
 }" width="560" height="168" />
 </p>
-<div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Generate block-diagram from dot like text (basic feature).</li>
-<li>Multilingualization for node-label (utf-8 only).</li>
-<li>Sphinx embedding (using sphinxcontrib-blockdiag package)</li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction of blockdiag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#setup">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#by-easy-install">by easy_install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#by-buildout">by buildout</a></li>
 </ul>
-</div>
-<div class="section" id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="by-easy-install">
-<h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
-<p>Make environment:</p>
-<div class="highlight-python"><pre>$ easy_install blockdiag</pre>
-</div>
-</div>
-<div class="section" id="by-buildout">
-<h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
-<p>Make environment:</p>
-<div class="highlight-python"><pre>$ hg clone http://bitbucket.org/tk0miya/blockdiag
-$ cd blockdiag
-$ python bootstrap.py
-$ bin/buildout</pre>
-</div>
-<p>Copy and modify ini file. example:</p>
-<div class="highlight-python"><pre>$ cp &lt;blockdiag installed path&gt;/blockdiag/examples/simple.diag .
-$ vi simple.diag</pre>
-</div>
-<p>Please refer to <a class="reference internal" href="#spec-text-setting-sample">spec-text setting sample</a> section for the format of the
-<cite>simpla.diag</cite> configuration file.</p>
-</div>
-</div>
-<div class="section" id="spec-text-setting-sample">
-<h2>spec-text setting sample<a class="headerlink" href="#spec-text-setting-sample" title="Permalink to this headline">¶</a></h2>
-<p>Few examples are available.</p>
-<div class="section" id="simple-diag">
-<h3>simple.diag<a class="headerlink" href="#simple-diag" title="Permalink to this headline">¶</a></h3>
-<p>simple.diag is simply define nodes and transitions by dot-like text format:</p>
-<div class="highlight-python"><pre>diagram admin {
-  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-}</pre>
-</div>
-<p class="blockdiag">
-<img src="_images/blockdiag-c47c653ce44467ee8f301cbddea75588647cea58.png" alt="diagram admin {
-  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-}" width="752" height="88" />
-</p>
-</div>
-<div class="section" id="screen-diag">
-<h3>screen.diag<a class="headerlink" href="#screen-diag" title="Permalink to this headline">¶</a></h3>
-<p>screen.diag is more complexly sample. diaglam nodes have a alternative label
-and some transitions:</p>
-<div class="highlight-python"><pre>diagram admin {
-  top_page [label = "Top page"];
-
-  foo_index [label = "List of FOOs"];
-  foo_detail [label = "Detail FOO"];
-  foo_add [label = "Add FOO"];
-  foo_add_confirm [label = "Add FOO (confirm)"];
-  foo_edit [label = "Edit FOO"];
-  foo_edit_confirm [label = "Edit FOO (confirm)"];
-  foo_delete_confirm [label = "Delete FOO (confirm)"];
-
-  bar_detail [label = "Detail of BAR"];
-  bar_edit [label = "Edit BAR"];
-  bar_edit_confirm [label = "Edit BAR (confirm)"];
-
-  logout;
-
-  top_page -&gt; foo_index;
-  top_page -&gt; bar_detail;
-
-  foo_index -&gt; foo_detail;
-               foo_detail -&gt; foo_edit;
-               foo_detail -&gt; foo_delete_confirm;
-  foo_index -&gt; foo_add -&gt; foo_add_confirm -&gt; foo_index;
-  foo_index -&gt; foo_edit -&gt; foo_edit_confirm -&gt; foo_index;
-  foo_index -&gt; foo_delete_confirm -&gt; foo_index;
-
-  bar_detail -&gt; bar_edit -&gt; bar_edit_confirm -&gt; bar_detail;
-}</pre>
-</div>
-<p class="blockdiag">
-<img src="_images/blockdiag-e8cf43145fccb2a59e7b5e001496c88a4ae7f579.png" alt="diagram admin {
-  top_page [label = &quot;Top page&quot;];
-
-  foo_index [label = &quot;List of FOOs&quot;];
-  foo_detail [label = &quot;Detail FOO&quot;];
-  foo_add [label = &quot;Add FOO&quot;];
-  foo_add_confirm [label = &quot;Add FOO (confirm)&quot;];
-  foo_edit [label = &quot;Edit FOO&quot;];
-  foo_edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
-  foo_delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
-
-  bar_detail [label = &quot;Detail of BAR&quot;];
-  bar_edit [label = &quot;Edit BAR&quot;];
-  bar_edit_confirm [label = &quot;Edit BAR (confirm)&quot;];
-
-  logout;
-
-  top_page -&gt; foo_index;
-  top_page -&gt; bar_detail;
-
-  foo_index -&gt; foo_detail;
-               foo_detail -&gt; foo_edit;
-               foo_detail -&gt; foo_delete_confirm;
-  foo_index -&gt; foo_add -&gt; foo_add_confirm -&gt; foo_index;
-  foo_index -&gt; foo_edit -&gt; foo_edit_confirm -&gt; foo_index;
-  foo_index -&gt; foo_delete_confirm -&gt; foo_index;
-
-  bar_detail -&gt; bar_edit -&gt; bar_edit_confirm -&gt; bar_detail;
-}" width="944" height="408" />
-</p>
-</div>
-<div class="section" id="multi-lingua-diag">
-<h3>multi-lingua.diag<a class="headerlink" href="#multi-lingua-diag" title="Permalink to this headline">¶</a></h3>
-<p>multi-lingua.diag is multilingualization sample.  diagram nodes have a UTF-8 label:</p>
-<div class="highlight-python"><pre>diagram admin {
-  // その 1: label 属性を使う方法
-  top_page [label = "トップページ"];
-  config [label = "設定"];
-  config_edit [label = "設定変更"];
-  config_confirm [label = "設定変更確認"];
-  logout [label = "ログアウト"];
-
-  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-  top_page -&gt; logout;
-
-  // その 2: クオートする方法
-  "起" -&gt; "承" -&gt; "転" -&gt; "結";
-  "風" -&gt; "林" -&gt; "火" -&gt; "山";
-}</pre>
-</div>
-<p class="blockdiag">
-<img src="_images/blockdiag-0d4ed14f35fe0ec705d59d78c1c2247af96eb348.png" alt="diagram admin {
-  // その 1: label 属性を使う方法
-  top_page [label = &quot;トップページ&quot;];
-  config [label = &quot;設定&quot;];
-  config_edit [label = &quot;設定変更&quot;];
-  config_confirm [label = &quot;設定変更確認&quot;];
-  logout [label = &quot;ログアウト&quot;];
-
-  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-  top_page -&gt; logout;
-
-  // その 2: クオートする方法
-  &quot;起&quot; -&gt; &quot;承&quot; -&gt; &quot;転&quot; -&gt; &quot;結&quot;;
-  &quot;風&quot; -&gt; &quot;林&quot; -&gt; &quot;火&quot; -&gt; &quot;山&quot;;
-}" width="752" height="328" />
-</p>
-</div>
-</div>
-<div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Execute blockdiag command:</p>
-<div class="highlight-python"><pre>$ blockdiag simple.diag
-$ ls simple.png
-simple.png</pre>
-</div>
-</div>
-<div class="section" id="sphinxcontrib-blocidag">
-<h2>sphinxcontrib-blocidag<a class="headerlink" href="#sphinxcontrib-blocidag" title="Permalink to this headline">¶</a></h2>
-<p><cite>sphinxcontrib-blockdiag</cite> is sphinx extension for embedding blockdiag diagrams.
-You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
-<div class="highlight-text"><div class="highlight"><pre>.. blockdiag::
-
-    diagram admin {
-      top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-    }
-</pre></div>
-</div>
-<p class="blockdiag">
-<img src="_images/blockdiag-c47c653ce44467ee8f301cbddea75588647cea58.png" alt="diagram admin {
-  top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
-}" width="752" height="88" />
-</p>
-</div>
-<div class="section" id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Python 2.4 or later (not support 3.x)</li>
-<li>Python Imaging Library 1.1.6 or later.</li>
-<li>funcparserlib 0.3.4 or later.</li>
-<li>setuptools or distriubte.</li>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#license">License</a></li>
 </ul>
-</div>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>Python Software Foundation License.</p>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Sample diagams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#simple-diagram">simple diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#label-attribute-to-nodes">label attribute to nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#mutlilingualization">mutlilingualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#grouping-nodes">grouping nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#simple-diagram-for-master-data-manager">Simple diagram for master data manager</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinxcontrib.html">sphinxcontrib-blocidag</a></li>
+</ul>
 </div>
 </div>
 
@@ -251,29 +91,9 @@ You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">blockdiag - simple block-diagram image generator</a><ul>
-<li><a class="reference internal" href="#features">Features</a></li>
-<li><a class="reference internal" href="#setup">Setup</a><ul>
-<li><a class="reference internal" href="#by-easy-install">by easy_install</a></li>
-<li><a class="reference internal" href="#by-buildout">by buildout</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#spec-text-setting-sample">spec-text setting sample</a><ul>
-<li><a class="reference internal" href="#simple-diag">simple.diag</a></li>
-<li><a class="reference internal" href="#screen-diag">screen.diag</a></li>
-<li><a class="reference internal" href="#multi-lingua-diag">multi-lingua.diag</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#usage">Usage</a></li>
-<li><a class="reference internal" href="#sphinxcontrib-blocidag">sphinxcontrib-blocidag</a></li>
-<li><a class="reference internal" href="#requirements">Requirements</a></li>
-<li><a class="reference internal" href="#license">License</a></li>
-</ul>
-</li>
-</ul>
-
+  <h4>Next topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="next chapter">Introduction of blockdiag</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -302,6 +122,9 @@ You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             >next</a> |</li>
         <li><a href="#">blockdiag v0.2.2 documentation</a> &raquo;</li> 
       </ul>
     </div>

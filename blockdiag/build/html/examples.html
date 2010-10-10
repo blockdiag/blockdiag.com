@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sample diagams &mdash; blockdiag v0.2.2 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.2.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="blockdiag v0.2.2 documentation" href="index.html" />
+    <link rel="next" title="sphinxcontrib-blocidag" href="sphinxcontrib.html" />
+    <link rel="prev" title="Introduction of blockdiag" href="introduction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-blocidag"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">blockdiag v0.2.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sample-diagams">
+<h1>Sample diagams<a class="headerlink" href="#sample-diagams" title="Permalink to this headline">¶</a></h1>
+<p>blockdiag support .diag format.
+.diag format is similar to graphviz&#8217;s DOT format.</p>
+<div class="section" id="simple-diagram">
+<h2>simple diagram<a class="headerlink" href="#simple-diagram" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-f15b1578bee5ff5c7d98fc95651934ce05895c22.png" alt="diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}" width="752" height="168" />
+</p>
+</div>
+<div class="section" id="label-attribute-to-nodes">
+<h2>label attribute to nodes<a class="headerlink" href="#label-attribute-to-nodes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram {
+   // Set labels to nodes.
+   A -&gt; B -&gt; C -&gt; A;
+
+   A [label = &quot;foo&quot;];
+   B [label = &quot;bar&quot;];
+   C [label = &quot;baz&quot;];
+}
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-4120d57041d19ed87ba5535955794cbdfb157b29.png" alt="diagram {
+   // Set labels to nodes.
+   A [label = &quot;foo&quot;];
+   B [label = &quot;bar&quot;];
+   C [label = &quot;baz&quot;];
+
+   A -&gt; B -&gt; C -&gt; A;
+}" width="560" height="88" />
+</p>
+</div>
+<div class="section" id="style-attribute-to-nodes-and-edges">
+<h2>style attribute to nodes and edges<a class="headerlink" href="#style-attribute-to-nodes-and-edges" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = &quot;#888888&quot;];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = &quot;red&quot;];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-bd4e7cff08d62e4e8ce2221a9eebb1b820f92b2d.png" alt="diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = &quot;#888888&quot;];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = &quot;red&quot;];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}" width="944" height="168" />
+</p>
+</div>
+<div class="section" id="mutlilingualization">
+<h2>mutlilingualization<a class="headerlink" href="#mutlilingualization" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram admin {
+   A [label = &quot;起&quot;];
+   B [label = &quot;承&quot;];
+   C [label = &quot;転&quot;];
+   D [label = &quot;結&quot;];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // Use quoted string directly.
+   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
+}
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">blockdiag supports UTF-8 encoding only.</p>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-f814bea5e5dbd30500ea65d2a3044d9609fe5cad.png" alt="diagram admin {
+   A [label = &quot;起&quot;];
+   B [label = &quot;承&quot;];
+   C [label = &quot;転&quot;];
+   D [label = &quot;結&quot;];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // Use quoted string directly.
+   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
+}" width="752" height="168" />
+</p>
+</div>
+<div class="section" id="grouping-nodes">
+<h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+
+   group {
+      A; B;
+   }
+
+   group {
+      color = &quot;#77FF77&quot;;
+      E -&gt; F -&gt; G;
+   }
+}
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-3cfda8b980d3d07506a2a55714ead04dbfb199ef.png" alt="diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+
+   group {
+      A; B;
+   }
+
+   group {
+      // Set background-color to this group.
+      color = &quot;#77FF77&quot;;
+      E -&gt; F -&gt; G;
+   }
+}" width="944" height="168" />
+</p>
+</div>
+<div class="section" id="simple-diagram-for-master-data-manager">
+<h2>Simple diagram for master data manager<a class="headerlink" href="#simple-diagram-for-master-data-manager" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text"><div class="highlight"><pre>diagram admin {
+  index [label = &quot;List of FOOs&quot;];
+  add [label = &quot;Add FOO&quot;];
+  add_confirm [label = &quot;Add FOO (confirm)&quot;];
+  edit [label = &quot;Edit FOO&quot;];
+  edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
+  show [label = &quot;Show FOO&quot;];
+  delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}
+</pre></div>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-b2d82bd9c9c8e010c05813dffecf393b7f69d967.png" alt="diagram admin {
+  index [label = &quot;List of FOOs&quot;];
+  add [label = &quot;Add FOO&quot;];
+  add_confirm [label = &quot;Add FOO (confirm)&quot;];
+  edit [label = &quot;Edit FOO&quot;];
+  edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
+  show [label = &quot;Show FOO&quot;];
+  delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}" width="560" height="328" />
+</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sample diagams</a><ul>
+<li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
+<li><a class="reference internal" href="#label-attribute-to-nodes">label attribute to nodes</a></li>
+<li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
+<li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
+<li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
+<li><a class="reference internal" href="#simple-diagram-for-master-data-manager">Simple diagram for master data manager</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction of blockdiag</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sphinxcontrib.html"
+                        title="next chapter">sphinxcontrib-blocidag</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/examples.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-blocidag"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             >previous</a> |</li>
+        <li><a href="index.html">blockdiag v0.2.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.4.
+    </div>
+  </body>
+</html>
