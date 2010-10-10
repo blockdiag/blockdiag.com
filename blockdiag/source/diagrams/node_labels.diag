@@ -1,0 +1,8 @@
+diagram {
+   // Set labels to nodes.
+   A [label = "foo"];
+   B [label = "bar"];
+   C [label = "baz"];
+
+   A -> B -> C -> A;
+}

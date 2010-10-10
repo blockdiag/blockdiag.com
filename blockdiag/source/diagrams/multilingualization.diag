@@ -1,0 +1,11 @@
+diagram admin {
+   A [label = "起"];
+   B [label = "承"];
+   C [label = "転"];
+   D [label = "結"];
+
+   A -> B -> C -> D;
+
+   // Use quoted string directly.
+   "春" -> "夏" -> "秋" -> "冬";
+}

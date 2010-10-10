@@ -52,14 +52,14 @@
 <h1>Sample diagams<a class="headerlink" href="#sample-diagams" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="simple-diagram">
 <h2>simple diagram<a class="headerlink" href="#simple-diagram" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram {
+<div class="highlight-python"><pre>diagram {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E -&gt; F -&gt; G;
 }
-</pre></div>
+</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-f15b1578bee5ff5c7d98fc95651934ce05895c22.png" alt="diagram {
+<img src="_images/blockdiag-2a4640a731151932934a492d9b9b2ed79f88f818.png" alt="diagram {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E -&gt; F -&gt; G;
 }" width="752" height="168" />
@@ -67,18 +67,18 @@
 </div>
 <div class="section" id="label-attribute-to-nodes">
 <h2>label attribute to nodes<a class="headerlink" href="#label-attribute-to-nodes" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram {
+<div class="highlight-python"><pre>diagram {
    // Set labels to nodes.
-   A -&gt; B -&gt; C -&gt; A;
+   A [label = "foo"];
+   B [label = "bar"];
+   C [label = "baz"];
 
-   A [label = &quot;foo&quot;];
-   B [label = &quot;bar&quot;];
-   C [label = &quot;baz&quot;];
+   A -&gt; B -&gt; C -&gt; A;
 }
-</pre></div>
+</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-4120d57041d19ed87ba5535955794cbdfb157b29.png" alt="diagram {
+<img src="_images/blockdiag-61ea6b5c8ff4041d8eeaa981363c86f05fab8faf.png" alt="diagram {
    // Set labels to nodes.
    A [label = &quot;foo&quot;];
    B [label = &quot;bar&quot;];
@@ -90,17 +90,17 @@
 </div>
 <div class="section" id="style-attribute-to-nodes-and-edges">
 <h2>style attribute to nodes and edges<a class="headerlink" href="#style-attribute-to-nodes-and-edges" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram {
+<div class="highlight-python"><pre>diagram {
    // Set boder-style and backgroun-color to nodes.
    A [style = dotted];
    B [style = dashed];
    C [color = pink];
-   D [color = &quot;#888888&quot;];
+   D [color = "#888888"];
 
    // Set border-style and color to edges.
    A -&gt; B [style = dotted];
    B -&gt; C [style = dashed];
-   C -&gt; D [color = &quot;red&quot;];
+   C -&gt; D [color = "red"];
 
    // Set numbered-badge to nodes.
    E [numbered = 99];
@@ -111,10 +111,10 @@
    G -&gt; H [dir = back];
    H -&gt; I [dir = both];
 }
-</pre></div>
+</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-bd4e7cff08d62e4e8ce2221a9eebb1b820f92b2d.png" alt="diagram {
+<img src="_images/blockdiag-0e6455212f808036b8e1b33e863a559d27876fb3.png" alt="diagram {
    // Set boder-style and backgroun-color to nodes.
    A [style = dotted];
    B [style = dashed];
@@ -139,25 +139,25 @@
 </div>
 <div class="section" id="mutlilingualization">
 <h2>mutlilingualization<a class="headerlink" href="#mutlilingualization" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram admin {
-   A [label = &quot;起&quot;];
-   B [label = &quot;承&quot;];
-   C [label = &quot;転&quot;];
-   D [label = &quot;結&quot;];
+<div class="highlight-python"><pre>diagram admin {
+   A [label = "起"];
+   B [label = "承"];
+   C [label = "転"];
+   D [label = "結"];
 
    A -&gt; B -&gt; C -&gt; D;
 
    // Use quoted string directly.
-   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
+   "春" -&gt; "夏" -&gt; "秋" -&gt; "冬";
 }
-</pre></div>
+</pre>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">blockdiag supports UTF-8 encoding only.</p>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-f814bea5e5dbd30500ea65d2a3044d9609fe5cad.png" alt="diagram admin {
+<img src="_images/blockdiag-a171c9353b87a5a8085ec12e4e19a0358f01a42c.png" alt="diagram admin {
    A [label = &quot;起&quot;];
    B [label = &quot;承&quot;];
    C [label = &quot;転&quot;];
@@ -172,7 +172,7 @@
 </div>
 <div class="section" id="grouping-nodes">
 <h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram admin {
+<div class="highlight-python"><pre>diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
 
@@ -181,14 +181,15 @@
    }
 
    group {
-      color = &quot;#77FF77&quot;;
+      // Set background-color to this group.
+      color = "#77FF77";
       E -&gt; F -&gt; G;
    }
 }
-</pre></div>
+</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-3cfda8b980d3d07506a2a55714ead04dbfb199ef.png" alt="diagram admin {
+<img src="_images/blockdiag-d6ae8173497feb53d389c1c835b9e56b84383639.png" alt="diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
 
@@ -206,24 +207,24 @@
 </div>
 <div class="section" id="simple-diagram-for-master-data-manager">
 <h2>Simple diagram for master data manager<a class="headerlink" href="#simple-diagram-for-master-data-manager" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-text"><div class="highlight"><pre>diagram admin {
-  index [label = &quot;List of FOOs&quot;];
-  add [label = &quot;Add FOO&quot;];
-  add_confirm [label = &quot;Add FOO (confirm)&quot;];
-  edit [label = &quot;Edit FOO&quot;];
-  edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
-  show [label = &quot;Show FOO&quot;];
-  delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
+<div class="highlight-python"><pre>diagram admin {
+  index [label = "List of FOOs"];
+  add [label = "Add FOO"];
+  add_confirm [label = "Add FOO (confirm)"];
+  edit [label = "Edit FOO"];
+  edit_confirm [label = "Edit FOO (confirm)"];
+  show [label = "Show FOO"];
+  delete_confirm [label = "Delete FOO (confirm)"];
 
   index -&gt; add  -&gt; add_confirm  -&gt; index;
   index -&gt; edit -&gt; edit_confirm -&gt; index;
   index -&gt; show -&gt; index;
   index -&gt; delete_confirm -&gt; index;
 }
-</pre></div>
+</pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-b2d82bd9c9c8e010c05813dffecf393b7f69d967.png" alt="diagram admin {
+<img src="_images/blockdiag-c63ad66ec48f9eb0c96ea78e72b83b73effa549a.png" alt="diagram admin {
   index [label = &quot;List of FOOs&quot;];
   add [label = &quot;Add FOO&quot;];
   add_confirm [label = &quot;Add FOO (confirm)&quot;];

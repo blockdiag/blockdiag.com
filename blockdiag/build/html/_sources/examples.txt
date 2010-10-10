@@ -5,205 +5,44 @@ Sample diagams
 simple diagram
 ==============
 
-.. code-block:: text
-
-   diagram {
-      A -> B -> C -> D;
-      A -> E -> F -> G;
-   }
-
-.. blockdiag::
-
-   diagram {
-      A -> B -> C -> D;
-      A -> E -> F -> G;
-   }
+.. literalinclude:: diagrams/simple.diag
+.. blockdiag:: diagrams/simple.diag
 
 
 label attribute to nodes
 ========================
 
-.. code-block:: text
-
-   diagram {
-      // Set labels to nodes.
-      A -> B -> C -> A;
-
-      A [label = "foo"];
-      B [label = "bar"];
-      C [label = "baz"];
-   }
-
-.. blockdiag::
-
-   diagram {
-      // Set labels to nodes.
-      A [label = "foo"];
-      B [label = "bar"];
-      C [label = "baz"];
-
-      A -> B -> C -> A;
-   }
+.. literalinclude:: diagrams/node_labels.diag
+.. blockdiag:: diagrams/node_labels.diag
 
 
 style attribute to nodes and edges
 ==================================
 
-.. code-block:: text
-
-   diagram {
-      // Set boder-style and backgroun-color to nodes.
-      A [style = dotted];
-      B [style = dashed];
-      C [color = pink];
-      D [color = "#888888"];
-
-      // Set border-style and color to edges.
-      A -> B [style = dotted];
-      B -> C [style = dashed];
-      C -> D [color = "red"];
-
-      // Set numbered-badge to nodes.
-      E [numbered = 99];
-
-      // Set arrow direction to edges.
-      E -> F [dir = none];
-      F -> G [dir = forward];
-      G -> H [dir = back];
-      H -> I [dir = both];
-   }
-
-.. blockdiag::
-
-   diagram {
-      // Set boder-style and backgroun-color to nodes.
-      A [style = dotted];
-      B [style = dashed];
-      C [color = pink];
-      D [color = "#888888"];
-
-      // Set border-style and color to edges.
-      A -> B [style = dotted];
-      B -> C [style = dashed];
-      C -> D [color = "red"];
-
-      // Set numbered-badge to nodes.
-      E [numbered = 99];
-
-      // Set arrow direction to edges.
-      E -> F [dir = none];
-      F -> G [dir = forward];
-      G -> H [dir = back];
-      H -> I [dir = both];
-   }
+.. literalinclude:: diagrams/node_attributes.diag
+.. blockdiag:: diagrams/node_attributes.diag
 
 
 mutlilingualization
 ===================
 
-.. code-block:: text
-
-   diagram admin {
-      A [label = "起"];
-      B [label = "承"];
-      C [label = "転"];
-      D [label = "結"];
-
-      A -> B -> C -> D;
-
-      // Use quoted string directly.
-      "春" -> "夏" -> "秋" -> "冬";
-   }
-
+.. literalinclude:: diagrams/multilingualization.diag
 .. note::
 
    blockdiag supports UTF-8 encoding only.
 
-.. blockdiag::
-
-   diagram admin {
-      A [label = "起"];
-      B [label = "承"];
-      C [label = "転"];
-      D [label = "結"];
-
-      A -> B -> C -> D;
-
-      // Use quoted string directly.
-      "春" -> "夏" -> "秋" -> "冬";
-   }
+.. blockdiag:: diagrams/multilingualization.diag
 
 
 grouping nodes
 ==============
 
-.. code-block:: text
-
-   diagram admin {
-      A -> B -> C -> D;
-      A -> E;
-
-      group {
-         A; B;
-      }
-
-      group {
-         color = "#77FF77";
-         E -> F -> G;
-      }
-   }
-
-.. blockdiag::
-
-   diagram admin {
-      A -> B -> C -> D;
-      A -> E;
-
-      group {
-         A; B;
-      }
-
-      group {
-         // Set background-color to this group.
-         color = "#77FF77";
-         E -> F -> G;
-      }
-   }
+.. literalinclude:: diagrams/node_groups.diag
+.. blockdiag:: diagrams/node_groups.diag
 
 
 Simple diagram for master data manager
 ======================================
 
-.. code-block:: text
-
-    diagram admin {
-      index [label = "List of FOOs"];
-      add [label = "Add FOO"];
-      add_confirm [label = "Add FOO (confirm)"];
-      edit [label = "Edit FOO"];
-      edit_confirm [label = "Edit FOO (confirm)"];
-      show [label = "Show FOO"];
-      delete_confirm [label = "Delete FOO (confirm)"];
-
-      index -> add  -> add_confirm  -> index;
-      index -> edit -> edit_confirm -> index;
-      index -> show -> index;
-      index -> delete_confirm -> index;
-    }
-
-.. blockdiag::
-
-    diagram admin {
-      index [label = "List of FOOs"];
-      add [label = "Add FOO"];
-      add_confirm [label = "Add FOO (confirm)"];
-      edit [label = "Edit FOO"];
-      edit_confirm [label = "Edit FOO (confirm)"];
-      show [label = "Show FOO"];
-      delete_confirm [label = "Delete FOO (confirm)"];
-
-      index -> add  -> add_confirm  -> index;
-      index -> edit -> edit_confirm -> index;
-      index -> show -> index;
-      index -> delete_confirm -> index;
-    }
+.. literalinclude:: diagrams/masterdata_manager.diag
+.. blockdiag:: diagrams/masterdata_manager.diag

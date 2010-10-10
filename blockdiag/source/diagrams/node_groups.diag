@@ -1,0 +1,14 @@
+diagram admin {
+   A -> B -> C -> D;
+   A -> E;
+
+   group {
+      A; B;
+   }
+
+   group {
+      // Set background-color to this group.
+      color = "#77FF77";
+      E -> F -> G;
+   }
+}
