@@ -2,10 +2,6 @@
 Sample diagams
 ==============
 
-blockdiag support .diag format.
-.diag format is similar to graphviz's DOT format.
-
-
 simple diagram
 ==============
 

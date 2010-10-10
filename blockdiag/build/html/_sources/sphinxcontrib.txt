@@ -1,6 +1,6 @@
-======================
-sphinxcontrib-blocidag
-======================
+=======================
+sphinxcontrib-blockdiag
+=======================
 
 `sphinxcontrib-blockdiag` is sphinx extension for embedding blockdiag diagrams.
 You can embed block diagrams with `blockdiag` directive.
