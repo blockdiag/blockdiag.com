@@ -65,26 +65,32 @@
 }" width="752" height="168" />
 </p>
 </div>
-<div class="section" id="label-attribute-to-nodes">
-<h2>label attribute to nodes<a class="headerlink" href="#label-attribute-to-nodes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="label-attribute-to-nodes-and-edges">
+<h2>label attribute to nodes and edges<a class="headerlink" href="#label-attribute-to-nodes-and-edges" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>diagram {
    // Set labels to nodes.
    A [label = "foo"];
    B [label = "bar"];
    C [label = "baz"];
 
-   A -&gt; B -&gt; C -&gt; A;
+   // Set labels to edges. (short text only)
+   A -&gt; B [label = "click bar"];
+   B -&gt; C [label = "click baz"];
+   C -&gt; A;
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-61ea6b5c8ff4041d8eeaa981363c86f05fab8faf.png" alt="diagram {
+<img src="_images/blockdiag-5482f5cb2903e76261e994bcfb3888549e06d128.png" alt="diagram {
    // Set labels to nodes.
    A [label = &quot;foo&quot;];
    B [label = &quot;bar&quot;];
    C [label = &quot;baz&quot;];
 
-   A -&gt; B -&gt; C -&gt; A;
+   // Set labels to edges. (short text only)
+   A -&gt; B [label = &quot;click bar&quot;];
+   B -&gt; C [label = &quot;click baz&quot;];
+   C -&gt; A;
 }" width="560" height="88" />
 </p>
 </div>
@@ -105,6 +111,9 @@
    // Set numbered-badge to nodes.
    E [numbered = 99];
 
+   // Set background image to nodes (and erase label).
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
    // Set arrow direction to edges.
    E -&gt; F [dir = none];
    F -&gt; G [dir = forward];
@@ -114,7 +123,7 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-0e6455212f808036b8e1b33e863a559d27876fb3.png" alt="diagram {
+<img src="_images/blockdiag-dba2f816fc7de384eff286677693ca083b51ed0b.png" alt="diagram {
    // Set boder-style and backgroun-color to nodes.
    A [style = dotted];
    B [style = dashed];
@@ -128,6 +137,9 @@
 
    // Set numbered-badge to nodes.
    E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
 
    // Set arrow direction to edges.
    E -&gt; F [dir = none];
@@ -252,7 +264,7 @@
   <ul>
 <li><a class="reference internal" href="#">Sample diagams</a><ul>
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
-<li><a class="reference internal" href="#label-attribute-to-nodes">label attribute to nodes</a></li>
+<li><a class="reference internal" href="#label-attribute-to-nodes-and-edges">label attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>

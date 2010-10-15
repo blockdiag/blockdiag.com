@@ -13,6 +13,9 @@ diagram {
    // Set numbered-badge to nodes.
    E [numbered = 99];
 
+   // Set background image to nodes (and erase label).
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
    // Set arrow direction to edges.
    E -> F [dir = none];
    F -> G [dir = forward];

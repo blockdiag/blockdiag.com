@@ -9,8 +9,8 @@ simple diagram
 .. blockdiag:: diagrams/simple.diag
 
 
-label attribute to nodes
-========================
+label attribute to nodes and edges
+==================================
 
 .. literalinclude:: diagrams/node_labels.diag
 .. blockdiag:: diagrams/node_labels.diag

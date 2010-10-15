@@ -2,13 +2,16 @@ diagram admin {
    A -> B -> C -> D;
    A -> E;
 
+   // A and B belong to first group.
    group {
       A; B;
    }
 
+   // E, F and G belong to second group.
    group {
       // Set background-color to this group.
       color = "#77FF77";
+
       E -> F -> G;
    }
 }

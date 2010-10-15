@@ -4,5 +4,8 @@ diagram {
    B [label = "bar"];
    C [label = "baz"];
 
-   A -> B -> C -> A;
+   // Set labels to edges. (short text only)
+   A -> B [label = "click bar"];
+   B -> C [label = "click baz"];
+   C -> A;
 }
