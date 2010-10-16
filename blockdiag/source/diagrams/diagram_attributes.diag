@@ -1,0 +1,15 @@
+diagram {
+  // Set node metrix.
+  node_width = 200;
+  node_height = 100;
+
+  // Set span metrix.
+  span_width = 240;
+  span_height = 120;
+
+  // Set fontsize.
+  fontsize = 20;
+
+  A -> B [label = "Use long edge label"];
+  A -> C;
+}

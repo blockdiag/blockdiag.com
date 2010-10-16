@@ -41,6 +41,12 @@ grouping nodes
 .. blockdiag:: diagrams/node_groups.diag
 
 
+diagram attributes
+==================
+
+.. literalinclude:: diagrams/diagram_attributes.diag
+.. blockdiag:: diagrams/diagram_attributes.diag
+
 Simple diagram for master data manager
 ======================================
 
