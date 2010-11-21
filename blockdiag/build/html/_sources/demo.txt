@@ -1,6 +1,6 @@
-===============
-blockdiag: Demo
-===============
+======================================
+Demo - interactive shell for blockdiag
+======================================
 
 This is demo program for blockdiag.
 You can get rendered diagrams after inputting 'Diagram source'.
