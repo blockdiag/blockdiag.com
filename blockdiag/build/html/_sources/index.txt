@@ -23,3 +23,4 @@ You can get diagrams like this.
    introduction
    examples
    sphinxcontrib
+   demo
