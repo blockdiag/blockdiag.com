@@ -14,13 +14,28 @@ function update_diagram() {
     data: params,
     success: function(json) {
       if (json['image']) {
-        html = json['image'].replace(/<\?xml.*>\n/, '')
-        html = html.replace(/<!DOCTYPE.*>\n/, '')
-
-        $('#diagram_image').html(html);
         if (!$.support.checkOn) {
           // for Chrome and Safari
+          html = json['image'].replace(/<\?xml.*>\n/, '')
+          html = html.replace(/<!DOCTYPE.*>\n/, '')
+
+          $('#diagram_image').html(html);
           $('#diagram_image svg').removeAttr('viewBox');
+        } else {
+          re = RegExp('viewBox="\\d+\\s+\\d+\\s+(\\d+)\\s+(\\d+)\\s*"');
+          m = re(json['image'])
+          if (m) {
+              width = m[1]
+              height = m[2]
+          } else {
+              width = 400
+              height = 400
+          }
+
+          encoded_diagram = Base64.encodeURI(diagram)
+          url = 'http://blockdiag.appspot.com/image?encoding=base64&src=' + encoded_diagram
+          html = '<object type="image/svg+xml" data="' + url + '" width="' + width + '" height="' + height + '" />'
+          $('#diagram_image').html(html);
         }
       }
     }
