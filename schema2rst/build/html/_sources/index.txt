@@ -16,6 +16,7 @@ schema2rst
 .. code-block:: none
 
    % schema2rst > schema.rst
+   % schema2graph > graph.rst
 
 抽出したデータベース定義書は以下になります。
 
@@ -23,3 +24,4 @@ schema2rst
    :maxdepth: 2
 
    schema
+   graph
