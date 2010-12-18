@@ -49,7 +49,7 @@
 <p><a href="#id1"><span class="problematic" id="id2">`</span></a>schema2rst`(目下開発中) は MySQL データベースに接続し、
 スキーマ情報を抽出して reST 形式のデータベース定義書を出力します。</p>
 <p>このサンプルでは以下の SQL でデータベースの初期化をしています。</p>
-<div class="highlight-python"><pre>DROP TABLE IF EXISTS users, items, order_history;
+<div class="highlight-python"><pre>DROP TABLE IF EXISTS users, items, order_history, uncommented_table;
 
 CREATE TABLE users (
   id int primary key auto_increment comment 'ユーザ ID',
@@ -75,6 +75,11 @@ CREATE TABLE order_history (
   index (user_id, order_date),
   index (item_id, order_date)
 ) COMMENT '購入履歴';
+
+CREATE TABLE uncommented_table (
+  id int primary key auto_increment,
+  name varchar(255) binary
+);
 </pre>
 </div>
 <p>上記の定義から <cite>schema2rst</cite> コマンドで定義を抽出します。
@@ -86,9 +91,10 @@ CREATE TABLE order_history (
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="schema.html">Schema: sample</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="schema.html#order-history">order_history</a></li>
-<li class="toctree-l2"><a class="reference internal" href="schema.html#items">items</a></li>
-<li class="toctree-l2"><a class="reference internal" href="schema.html#users">users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#order-history">購入履歴 (order_history)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#items">商品 (items)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#users">ユーザ (users)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#uncommented-table">uncommented_table</a></li>
 </ul>
 </li>
 </ul>

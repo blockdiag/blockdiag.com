@@ -3,8 +3,8 @@ Schema: sample
 ==============
 
 
-order_history
--------------
+購入履歴 (order_history)
+------------------------
 
 .. list-table::
    :header-rows: 1
@@ -22,7 +22,7 @@ order_history
      - False
      - True
      - None
-     - 
+     - auto_increment
    * - ユーザ ID
      - user_id
      - INTEGER(11)
@@ -52,8 +52,8 @@ order_history
      - None
      - 
 
-items
------
+商品 (items)
+------------
 
 .. list-table::
    :header-rows: 1
@@ -71,7 +71,7 @@ items
      - False
      - True
      - None
-     - 
+     - auto_increment
    * - 商品名
      - name
      - VARCHAR(255)
@@ -79,13 +79,13 @@ items
      - False
      - None
      - 
-   * - 種別 (1:食品, 2:文具, 3:雑貨)
+   * - 種別 
      - type
      - INTEGER(11)
      - False
      - False
      - 1
-     - 
+     - 1:食品, 2:文具, 3:雑貨
    * - 説明文
      - description
      - TEXT
@@ -94,8 +94,8 @@ items
      - None
      - 
 
-users
------
+ユーザ (users)
+--------------
 
 .. list-table::
    :header-rows: 1
@@ -113,7 +113,7 @@ users
      - False
      - True
      - None
-     - 
+     - auto_increment
    * - ログイン ID
      - login_id
      - VARCHAR(16)
@@ -135,3 +135,31 @@ users
      - False
      - 
      - 
+
+uncommented_table
+-----------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Fullname
+     - Name
+     - Type
+     - NOT NULL
+     - PKey
+     - Default
+     - Comment
+   * - id
+     - id
+     - INTEGER(11)
+     - False
+     - True
+     - None
+     - auto_increment
+   * - name
+     - name
+     - VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin
+     - True
+     - False
+     - None
+     - utf8_bin

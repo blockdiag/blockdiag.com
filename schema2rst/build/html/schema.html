@@ -23,7 +23,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="schema v1.0 documentation" href="index.html" />
-    <link rel="prev" title="Welcome to schema’s documentation!" href="index.html" /> 
+    <link rel="prev" title="schema2rst" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -33,7 +33,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to schema’s documentation!"
+          <a href="index.html" title="schema2rst"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">schema v1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -47,7 +47,7 @@
   <div class="section" id="schema-sample">
 <h1>Schema: sample<a class="headerlink" href="#schema-sample" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="order-history">
-<h2>order_history<a class="headerlink" href="#order-history" title="Permalink to this headline">¶</a></h2>
+<h2>購入履歴 (order_history)<a class="headerlink" href="#order-history" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="14%" />
@@ -75,7 +75,7 @@
 <td>False</td>
 <td>True</td>
 <td>None</td>
-<td>&nbsp;</td>
+<td>auto_increment</td>
 </tr>
 <tr><td>ユーザ ID</td>
 <td>user_id</td>
@@ -113,7 +113,7 @@
 </table>
 </div>
 <div class="section" id="items">
-<h2>items<a class="headerlink" href="#items" title="Permalink to this headline">¶</a></h2>
+<h2>商品 (items)<a class="headerlink" href="#items" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="14%" />
@@ -141,7 +141,7 @@
 <td>False</td>
 <td>True</td>
 <td>None</td>
-<td>&nbsp;</td>
+<td>auto_increment</td>
 </tr>
 <tr><td>商品名</td>
 <td>name</td>
@@ -151,13 +151,13 @@
 <td>None</td>
 <td>&nbsp;</td>
 </tr>
-<tr><td>種別 (1:食品, 2:文具, 3:雑貨)</td>
+<tr><td>種別</td>
 <td>type</td>
 <td>INTEGER(11)</td>
 <td>False</td>
 <td>False</td>
 <td>1</td>
-<td>&nbsp;</td>
+<td>1:食品, 2:文具, 3:雑貨</td>
 </tr>
 <tr><td>説明文</td>
 <td>description</td>
@@ -171,7 +171,7 @@
 </table>
 </div>
 <div class="section" id="users">
-<h2>users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<h2>ユーザ (users)<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="14%" />
@@ -199,7 +199,7 @@
 <td>False</td>
 <td>True</td>
 <td>None</td>
-<td>&nbsp;</td>
+<td>auto_increment</td>
 </tr>
 <tr><td>ログイン ID</td>
 <td>login_id</td>
@@ -228,6 +228,48 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="uncommented-table">
+<h2>uncommented_table<a class="headerlink" href="#uncommented-table" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Fullname</th>
+<th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">NOT NULL</th>
+<th class="head">PKey</th>
+<th class="head">Default</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>id</td>
+<td>id</td>
+<td>INTEGER(11)</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>auto_increment</td>
+</tr>
+<tr><td>name</td>
+<td>name</td>
+<td>VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>utf8_bin</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -239,16 +281,17 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Schema: sample</a><ul>
-<li><a class="reference internal" href="#order-history">order_history</a></li>
-<li><a class="reference internal" href="#items">items</a></li>
-<li><a class="reference internal" href="#users">users</a></li>
+<li><a class="reference internal" href="#order-history">購入履歴 (order_history)</a></li>
+<li><a class="reference internal" href="#items">商品 (items)</a></li>
+<li><a class="reference internal" href="#users">ユーザ (users)</a></li>
+<li><a class="reference internal" href="#uncommented-table">uncommented_table</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to schema&#8217;s documentation!</a></p>
+                        title="previous chapter">schema2rst</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/schema.txt"
@@ -278,7 +321,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to schema’s documentation!"
+          <a href="index.html" title="schema2rst"
              >previous</a> |</li>
         <li><a href="index.html">schema v1.0 documentation</a> &raquo;</li> 
       </ul>

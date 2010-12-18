@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS users, items, order_history;
+DROP TABLE IF EXISTS users, items, order_history, uncommented_table;
 
 CREATE TABLE users (
   id int primary key auto_increment comment 'ユーザ ID',
@@ -24,3 +24,8 @@ CREATE TABLE order_history (
   index (user_id, order_date),
   index (item_id, order_date)
 ) COMMENT '購入履歴';
+
+CREATE TABLE uncommented_table (
+  id int primary key auto_increment,
+  name varchar(255) binary
+);
