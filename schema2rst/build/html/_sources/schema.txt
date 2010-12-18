@@ -29,14 +29,14 @@ Schema: sample
      - False
      - False
      - None
-     - 
+     - Refer: users.id
    * - 商品 ID
      - item_id
      - INTEGER(11)
      - False
      - False
      - None
-     - 
+     - Refer: items.id
    * - 数量
      - amount
      - INTEGER(11)
@@ -51,6 +51,13 @@ Schema: sample
      - False
      - None
      - 
+
+Keys
+^^^^
+
+* PRIMARY (PRIMARY KEY): id
+* order_history_ibfk_1 (FOREIGN KEY): user_id
+* order_history_ibfk_2 (FOREIGN KEY): item_id
 
 商品 (items)
 ------------
@@ -94,6 +101,44 @@ Schema: sample
      - None
      - 
 
+Keys
+^^^^
+
+* PRIMARY (PRIMARY KEY): id
+
+foo
+---
+
+.. list-table::
+   :header-rows: 1
+
+   * - Fullname
+     - Name
+     - Type
+     - NOT NULL
+     - PKey
+     - Default
+     - Comment
+   * - a
+     - a
+     - INTEGER(11)
+     - False
+     - True
+     - 0
+     - 
+   * - b
+     - b
+     - INTEGER(11)
+     - False
+     - True
+     - 0
+     - 
+
+Keys
+^^^^
+
+* PRIMARY (PRIMARY KEY): a, b
+
 ユーザ (users)
 --------------
 
@@ -136,6 +181,12 @@ Schema: sample
      - 
      - 
 
+Keys
+^^^^
+
+* PRIMARY (PRIMARY KEY): id
+* mailaddr (UNIQUE): mailaddr
+
 uncommented_table
 -----------------
 
@@ -163,3 +214,8 @@ uncommented_table
      - False
      - None
      - utf8_bin
+
+Keys
+^^^^
+
+* PRIMARY (PRIMARY KEY): id
