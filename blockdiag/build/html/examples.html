@@ -154,6 +154,21 @@
 }" width="944" height="200" />
 </p>
 </div>
+<div class="section" id="direction-of-edges">
+<h2>direction of edges<a class="headerlink" href="#direction-of-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.5.5.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}" width="944" height="120" />
+</p>
+</div>
 <div class="section" id="mutlilingualization">
 <h2>mutlilingualization<a class="headerlink" href="#mutlilingualization" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>diagram admin {
@@ -191,6 +206,8 @@
 </div>
 <div class="section" id="grouping-nodes">
 <h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.5.3: </span>group label</p>
 <div class="highlight-python"><pre>diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
@@ -202,6 +219,9 @@
 
    // E, F and G belong to second group.
    group {
+      // Set group-label
+      label = "second group";
+
       // Set background-color to this group.
       color = "#77FF77";
 
@@ -211,7 +231,7 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-ac779c0d01dab8f2f9c6302a7e6d33cbbd5afd63.png" alt="diagram admin {
+<img src="_images/blockdiag-cc96e40916fdc3be2e5974e013062bc46406fc76.png" alt="diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
 
@@ -222,6 +242,9 @@
 
    // E, F and G belong to second group.
    group {
+      // Set group-label
+      label = &quot;second group&quot;;
+
       // Set background-color to this group.
       color = &quot;#77FF77&quot;;
 
@@ -316,6 +339,7 @@
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
 <li><a class="reference internal" href="#label-attribute-to-nodes-and-edges">label attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
+<li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
 <li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
@@ -370,7 +394,7 @@
 
     <div class="footer">
         &copy; Copyright 2010, Takeshi Komiya.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.4.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];

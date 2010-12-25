@@ -9,6 +9,9 @@ diagram admin {
 
    // E, F and G belong to second group.
    group {
+      // Set group-label
+      label = "second group";
+
       // Set background-color to this group.
       color = "#77FF77";
 

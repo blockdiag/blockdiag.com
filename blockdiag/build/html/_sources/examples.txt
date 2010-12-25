@@ -23,6 +23,15 @@ style attribute to nodes and edges
 .. blockdiag:: diagrams/node_attributes.diag
 
 
+direction of edges
+==================
+
+.. versionadded:: 0.5.5
+
+.. literalinclude:: diagrams/edge_direction.diag
+.. blockdiag:: diagrams/edge_direction.diag
+
+
 mutlilingualization
 ===================
 
@@ -36,6 +45,9 @@ mutlilingualization
 
 grouping nodes
 ==============
+
+.. versionadded:: 0.5.3
+   group label
 
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
