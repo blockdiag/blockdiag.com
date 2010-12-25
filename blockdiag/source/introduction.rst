@@ -45,6 +45,29 @@ Execute blockdiag command::
    $ ls simple.png
    simple.png
 
+If you want SVG images, use -T option::
+
+   $ blockdiag -Tsvg simple.diag
+   $ ls simple.svg
+   simple.svg
+
+
+Font Configuration
+==================
+
+blockdiag uses TrueType Font to render text. 
+blockdiag try to detect installed fonts but if nothing detected,
+You can specify fonts with -f (--font) option::
+
+   $ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+
+
+If you always use same font, write $HOME/.blockdiagrc::
+
+   $ cat $HOME/.blockdiagrc
+   [blockdiag]
+   fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+
 
 Requirements
 ============

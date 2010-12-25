@@ -94,6 +94,24 @@ $ vi simple.diag</pre>
 $ ls simple.png
 simple.png</pre>
 </div>
+<p>If you want SVG images, use -T option:</p>
+<div class="highlight-python"><pre>$ blockdiag -Tsvg simple.diag
+$ ls simple.svg
+simple.svg</pre>
+</div>
+</div>
+<div class="section" id="font-configuration">
+<h2>Font Configuration<a class="headerlink" href="#font-configuration" title="Permalink to this headline">¶</a></h2>
+<p>blockdiag uses TrueType Font to render text.
+blockdiag try to detect installed fonts but if nothing detected,
+You can specify fonts with -f (&#8211;font) option:</p>
+<div class="highlight-python"><pre>$ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag</pre>
+</div>
+<p>If you always use same font, write $HOME/.blockdiagrc:</p>
+<div class="highlight-python"><pre>$ cat $HOME/.blockdiagrc
+[blockdiag]
+fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</pre>
+</div>
 </div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
@@ -126,6 +144,7 @@ simple.png</pre>
 </ul>
 </li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#font-configuration">Font Configuration</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 <li><a class="reference internal" href="#license">License</a></li>
 </ul>
