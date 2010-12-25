@@ -1,3 +1,5 @@
+.. _sample-diagrams:
+
 ==============
 Sample diagams
 ==============
