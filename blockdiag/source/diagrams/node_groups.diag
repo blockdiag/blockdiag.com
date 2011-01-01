@@ -1,6 +1,7 @@
 diagram admin {
    A -> B -> C -> D;
    A -> E;
+   A -> H;
 
    // A and B belong to first group.
    group {
@@ -16,5 +17,11 @@ diagram admin {
       color = "#77FF77";
 
       E -> F -> G;
+
+      // H and I belong to third "nested" group.
+      group {
+          color = "#7777FF";
+          H -> I;
+      }
    }
 }

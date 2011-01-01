@@ -208,9 +208,12 @@
 <h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.5.3: </span>label attributes for group</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6: </span>nested groups</p>
 <div class="highlight-python"><pre>diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
+   A -&gt; H;
 
    // A and B belong to first group.
    group {
@@ -226,14 +229,21 @@
       color = "#77FF77";
 
       E -&gt; F -&gt; G;
+
+      // H and I belong to third "nested" group.
+      group {
+          color = "#7777FF";
+          H -&gt; I;
+      }
    }
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-cc96e40916fdc3be2e5974e013062bc46406fc76.png" alt="diagram admin {
+<img src="_images/blockdiag-5bc263be60ef0c7281933d4ee88a7d43f445f519.png" alt="diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
+   A -&gt; H;
 
    // A and B belong to first group.
    group {
@@ -249,8 +259,14 @@
       color = &quot;#77FF77&quot;;
 
       E -&gt; F -&gt; G;
+
+      // H and I belong to third &quot;nested&quot; group.
+      group {
+          color = &quot;#7777FF&quot;;
+          H -&gt; I;
+      }
    }
-}" width="944" height="200" />
+}" width="944" height="280" />
 </p>
 </div>
 <div class="section" id="diagram-attributes">

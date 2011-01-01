@@ -51,6 +51,9 @@ grouping nodes
 .. versionadded:: 0.5.3
    label attributes for group
 
+.. versionadded:: 0.6
+   nested groups
+
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 
