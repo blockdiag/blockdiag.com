@@ -257,3 +257,8 @@ epub_copyright = u'2010, Takeshi Komiya'
 
 
 blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+
+
+def setup(app):
+    app.add_description_unit('confval', 'confval',
+                             'pair: %s; configuration value')

@@ -69,6 +69,68 @@ You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
   top_page -&gt; config -&gt; config_edit -&gt; config_confirm -&gt; top_page;
 }" width="752" height="120" />
 </p>
+<div class="section" id="setting">
+<h2>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h2>
+<p>You can get archive file at <a class="reference external" href="http://bitbucket.org/birkenfeld/sphinx-contrib/">http://bitbucket.org/birkenfeld/sphinx-contrib/</a></p>
+<div class="section" id="install">
+<h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre>&gt; easy_install sphinxcontrib-blockdiag
+</pre></div>
+</div>
+</div>
+<div class="section" id="configure-sphinx">
+<h3>Configure Sphinx<a class="headerlink" href="#configure-sphinx" title="Permalink to this headline">¶</a></h3>
+<p>To enable this extension, add <tt class="docutils literal"><span class="pre">sphinxcontrib.blockdiag</span></tt> module to extensions
+option at <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="c"># Path to the folder where blockdiag.py is</span>
+<span class="c"># NOTE: not needed if the package is installed in traditional way</span>
+<span class="c"># using setup.py or easy_install</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s">&#39;/path/to/sphinxcontrib.blockdiag&#39;</span><span class="p">))</span>
+
+<span class="c"># Enabled extensions</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;sphinxcontrib.blockdiag&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="directive">
+<h2>Directive<a class="headerlink" href="#directive" title="Permalink to this headline">¶</a></h2>
+<dl class="describe">
+<dt>
+<tt class="descname">.. blockdiag:: [filename]</tt></dt>
+<dd><p>This directive insert a block diagram into the generated document.
+If filename is specified, sphinx reads external file as source script of blockfile.
+In another case, blockdiag directive takes code block as source script.</p>
+<p>Examples:</p>
+<div class="highlight-python"><pre>.. blockdiag:: foobar.diag
+
+.. blockdiag::
+
+   diagram {
+      // some diagrams are here.
+   }</pre>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="configuration-file-options">
+<h2>Configuration File Options<a class="headerlink" href="#configuration-file-options" title="Permalink to this headline">¶</a></h2>
+<dl class="confval">
+<dt id="confval-blockdiag_fontpath">
+<tt class="descname">blockdiag_fontpath</tt><a class="headerlink" href="#confval-blockdiag_fontpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a path for renderring fonts. You can use truetype font (.ttf) file path.</p>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-blockdiag_antialias">
+<tt class="descname">blockdiag_antialias</tt><a class="headerlink" href="#confval-blockdiag_antialias" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference internal" href="#confval-blockdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">blockdiag_antialias</span></tt></a>: is True, blockdiag generates images
+with anti-alias filter.</p>
+</dd></dl>
+
+</div>
 </div>
 
 
@@ -77,6 +139,20 @@ You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sphinxcontrib-blockdiag</a><ul>
+<li><a class="reference internal" href="#setting">Setting</a><ul>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#configure-sphinx">Configure Sphinx</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#directive">Directive</a></li>
+<li><a class="reference internal" href="#configuration-file-options">Configuration File Options</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="examples.html"
                         title="previous chapter">Sample diagams</a></p>
@@ -123,7 +199,7 @@ You can embed block diagrams with <cite>blockdiag</cite> directive.</p>
 
     <div class="footer">
         &copy; Copyright 2010, Takeshi Komiya.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];
