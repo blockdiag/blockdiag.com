@@ -169,6 +169,27 @@
 }" width="944" height="120" />
 </p>
 </div>
+<div class="section" id="edge-folding">
+<h2>edge folding<a class="headerlink" href="#edge-folding" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.1.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // fold edge at C to D (D will be layouted at top level; left side)
+  C -&gt; D [folded];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-4d988f8f9aa000145a9c480c947e080d3f5b54bb.png" alt="{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // fold edge at C to D (D will be layouted at top level; left side)
+  C -&gt; D [folded];
+}" width="560" height="200" />
+</p>
+</div>
 <div class="section" id="mutlilingualization">
 <h2>mutlilingualization<a class="headerlink" href="#mutlilingualization" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>diagram admin {
@@ -356,6 +377,7 @@
 <li><a class="reference internal" href="#label-attribute-to-nodes-and-edges">label attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
+<li><a class="reference internal" href="#edge-folding">edge folding</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
 <li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
@@ -410,7 +432,7 @@
 
     <div class="footer">
         &copy; Copyright 2010, Takeshi Komiya.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];

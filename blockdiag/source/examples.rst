@@ -34,6 +34,15 @@ direction of edges
 .. blockdiag:: diagrams/edge_direction.diag
 
 
+edge folding
+============
+
+.. versionadded:: 0.6.1
+
+.. literalinclude:: diagrams/folded_edges.diag
+.. blockdiag:: diagrams/folded_edges.diag
+
+
 mutlilingualization
 ===================
 
