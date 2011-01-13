@@ -10,3 +10,15 @@ simple diagram
 .. literalinclude:: diagrams/simple.diag
 .. seqdiag:: diagrams/simple.diag
 
+edge types
+===================
+
+.. literalinclude:: diagrams/edge_type.diag
+.. seqdiag:: diagrams/edge_type.diag
+
+attributes of edges
+===================
+
+.. literalinclude:: diagrams/edge_attributes.diag
+.. seqdiag:: diagrams/edge_attributes.diag
+

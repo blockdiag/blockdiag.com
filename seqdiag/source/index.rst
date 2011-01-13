@@ -10,8 +10,8 @@ You can get diagrams like this.
 .. seqdiag::
 
    diagram {
-     seqdiag -> generates -> "sequence-diagrams" [dir = forward];
-     seqdiag -> is -> "very easy!";
+     seqdiag -> "sequence-diagrams" [label = "generates"];
+     seqdiag --> "is very easy!";
    }
 
 .. toctree::

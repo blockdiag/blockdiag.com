@@ -58,20 +58,96 @@
 <div class="section" id="simple-diagram">
 <h2>simple diagram<a class="headerlink" href="#simple-diagram" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>diagram {
-  browser -&gt; webserver [label = "GET /index.html"];
-  browser -&gt; webserver [label = "POST /blog/comment"] {
-    webserver -&gt; database [label = "INSERT comment"];
-  }
+  browser  -&gt; webserver [label = "GET /index.html"];
+  browser &lt;-- webserver;
+  browser  -&gt; webserver [label = "POST /blog/comment"];
+              webserver  -&gt; database [label = "INSERT comment"];
+              webserver &lt;-- database;
+  browser &lt;-- webserver;
 }
 </pre>
 </div>
 <p class="seqdiag">
-<img src="_images/seqdiag-442ab816dbdfe100481c2ab0be693c8d62727e5f.png" alt="diagram {
-  browser -&gt; webserver [label = &quot;GET /index.html&quot;];
-  browser -&gt; webserver [label = &quot;POST /blog/comment&quot;] {
-    webserver -&gt; database [label = &quot;INSERT comment&quot;];
-  }
+<img src="_images/seqdiag-b58f696ba48f3a4b7d9b3194b9d89609fde9b526.png" alt="diagram {
+  browser  -&gt; webserver [label = &quot;GET /index.html&quot;];
+  browser &lt;-- webserver;
+  browser  -&gt; webserver [label = &quot;POST /blog/comment&quot;];
+              webserver  -&gt; database [label = &quot;INSERT comment&quot;];
+              webserver &lt;-- database;
+  browser &lt;-- webserver;
 }" width="560" height="360" />
+</p>
+</div>
+<div class="section" id="edge-types">
+<h2>edge types<a class="headerlink" href="#edge-types" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>{
+  // normal edge
+  A -&gt; B [label = "normal edge"];
+
+  // dotted edge
+  B --&gt; C [label = "dotted edge"];
+
+  // asynchronus edge
+  A -&gt;&gt; B [label = "asynchronus edge"];
+  B --&gt;&gt; C [label = "asynchronus dotted edge"];
+
+  // return edge
+  B &lt;- C [label = "return edge"];
+  A &lt;-- B [label = "return dotted edge"];
+  B &lt;&lt;- C [label = "return asynchronus edge"];
+  A &lt;&lt;-- B [label = "return asynchronus dotted edge"];
+
+  // self referenced edge
+  A -&gt; A [label = "self referenced edge"];
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-94ed217c90a0bb811d5ccc534634a6975d3548de.png" alt="{
+  // normal edge
+  A -&gt; B [label = &quot;normal edge&quot;];
+
+  // dotted edge
+  B --&gt; C [label = &quot;dotted edge&quot;];
+
+  // asynchronus edge
+  A -&gt;&gt; B [label = &quot;asynchronus edge&quot;];
+  B --&gt;&gt; C [label = &quot;asynchronus dotted edge&quot;];
+
+  // return edge
+  B &lt;- C [label = &quot;return edge&quot;];
+  A &lt;-- B [label = &quot;return dotted edge&quot;];
+  B &lt;&lt;- C [label = &quot;return asynchronus edge&quot;];
+  A &lt;&lt;-- B [label = &quot;return asynchronus dotted edge&quot;];
+
+  // self referenced edge
+  A -&gt; A [label = &quot;self referenced edge&quot;];
+}" width="560" height="520" />
+</p>
+</div>
+<div class="section" id="attributes-of-edges">
+<h2>attributes of edges<a class="headerlink" href="#attributes-of-edges" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>{
+  // edge label
+  A -&gt; B [label = "call"];
+  A &lt;- B [label = "return"];
+
+  // diagonal edge
+  A -&gt; B [diagonal, label = "diagonal edge"];
+  A &lt;- B [diagonal, label = "return diagonal edge"];
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-36d39e65dff07d56efdc0e82a54e8d0bebfbe2f3.png" alt="{
+  // edge label
+  A -&gt; B [label = &quot;call&quot;];
+  A &lt;- B [label = &quot;return&quot;];
+
+  // diagonal edge
+  A -&gt; B [diagonal, label = &quot;diagonal edge&quot;];
+  A &lt;- B [diagonal, label = &quot;return diagonal edge&quot;];
+}" width="368" height="360" />
 </p>
 </div>
 </div>
@@ -86,6 +162,8 @@
   <ul>
 <li><a class="reference internal" href="#">Sample diagams</a><ul>
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
+<li><a class="reference internal" href="#edge-types">edge types</a></li>
+<li><a class="reference internal" href="#attributes-of-edges">attributes of edges</a></li>
 </ul>
 </li>
 </ul>
