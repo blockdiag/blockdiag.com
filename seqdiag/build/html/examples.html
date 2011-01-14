@@ -146,6 +146,41 @@
 }" width="368" height="360" />
 </p>
 </div>
+<div class="section" id="auto-return-edge-and-nested-sequense">
+<h2>auto return edge and nested sequense<a class="headerlink" href="#auto-return-edge-and-nested-sequense" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>{
+  // auto return edge
+  A =&gt; B [label = "call", return = "return"];
+
+  // nested auto return edge
+  A =&gt; B =&gt; C [label = "call", return = "return"];
+
+  // nested sequence
+  A =&gt; B [label = "nested call"]{
+     B =&gt; C [label = "call 1"];
+     B =&gt; D [label = "call 2"];
+     B =&gt; E [label = "call 3"];
+  }
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-436f9bff051a3c68688fec45e73a6e483d43a515.png" alt="{
+  // auto return edge
+  A =&gt; B [label = &quot;call&quot;, return = &quot;return&quot;];
+
+  // nested auto return edge
+  A =&gt; B =&gt; C [label = &quot;call&quot;, return = &quot;return&quot;];
+
+  // nested sequence
+  A =&gt; B [label = &quot;nested call&quot;]{
+     B =&gt; C [label = &quot;call 1&quot;];
+     B =&gt; D [label = &quot;call 2&quot;];
+     B =&gt; E [label = &quot;call 3&quot;];
+  }
+}" width="944" height="680" />
+</p>
+</div>
 </div>
 
 
@@ -160,6 +195,7 @@
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
 <li><a class="reference internal" href="#edge-types">edge types</a></li>
 <li><a class="reference internal" href="#attributes-of-edges">attributes of edges</a></li>
+<li><a class="reference internal" href="#auto-return-edge-and-nested-sequense">auto return edge and nested sequense</a></li>
 </ul>
 </li>
 </ul>

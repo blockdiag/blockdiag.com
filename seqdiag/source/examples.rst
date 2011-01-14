@@ -22,3 +22,9 @@ attributes of edges
 .. literalinclude:: diagrams/edge_attributes.diag
 .. seqdiag:: diagrams/edge_attributes.diag
 
+auto return edge and nested sequense
+====================================
+
+.. literalinclude:: diagrams/nested_edges.diag
+.. seqdiag:: diagrams/nested_edges.diag
+
