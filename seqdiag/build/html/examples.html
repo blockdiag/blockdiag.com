@@ -81,47 +81,43 @@
 <div class="section" id="edge-types">
 <h2>edge types<a class="headerlink" href="#edge-types" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><pre>{
-  // normal edge
+  // normal edge and doted edge
   A -&gt; B [label = "normal edge"];
-
-  // dotted edge
   B --&gt; C [label = "dotted edge"];
+
+  B &lt;-- C [label = "return dotted edge"];
+  A &lt;- B [label = "return edge"];
 
   // asynchronus edge
   A -&gt;&gt; B [label = "asynchronus edge"];
   B --&gt;&gt; C [label = "asynchronus dotted edge"];
 
-  // return edge
-  B &lt;- C [label = "return edge"];
-  A &lt;-- B [label = "return dotted edge"];
-  B &lt;&lt;- C [label = "return asynchronus edge"];
-  A &lt;&lt;-- B [label = "return asynchronus dotted edge"];
+  B &lt;&lt;-- C [label = "return asynchronus doted edge"];
+  A &lt;&lt;- B [label = "return asynchronus edge"];
 
   // self referenced edge
-  A -&gt; A [label = "self referenced edge"];
+  A -&gt; A [label = "self reference edge"];
 }
 </pre>
 </div>
 <p class="seqdiag">
-<img src="_images/seqdiag-94ed217c90a0bb811d5ccc534634a6975d3548de.png" alt="{
-  // normal edge
+<img src="_images/seqdiag-f939f4059a2e9ae056711ca149380503a8f9d221.png" alt="{
+  // normal edge and doted edge
   A -&gt; B [label = &quot;normal edge&quot;];
-
-  // dotted edge
   B --&gt; C [label = &quot;dotted edge&quot;];
+
+  B &lt;-- C [label = &quot;return dotted edge&quot;];
+  A &lt;- B [label = &quot;return edge&quot;];
 
   // asynchronus edge
   A -&gt;&gt; B [label = &quot;asynchronus edge&quot;];
   B --&gt;&gt; C [label = &quot;asynchronus dotted edge&quot;];
 
-  // return edge
-  B &lt;- C [label = &quot;return edge&quot;];
-  A &lt;-- B [label = &quot;return dotted edge&quot;];
-  B &lt;&lt;- C [label = &quot;return asynchronus edge&quot;];
-  A &lt;&lt;-- B [label = &quot;return asynchronus dotted edge&quot;];
+  B &lt;&lt;-- C [label = &quot;return asynchronus doted edge&quot;];
+  A &lt;&lt;- B [label = &quot;return asynchronus edge&quot;];
 
   // self referenced edge
-  A -&gt; A [label = &quot;self referenced edge&quot;];
+  A -&gt; A [label = &quot;self reference edge&quot;];
 }" width="560" height="520" />
 </p>
 </div>
