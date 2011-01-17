@@ -67,7 +67,7 @@
 <img src="_images/blockdiag-2a4640a731151932934a492d9b9b2ed79f88f818.png" alt="diagram {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E -&gt; F -&gt; G;
-}" width="1504" height="400" />
+}" width="752" height="200" />
 </p>
 </div>
 <div class="section" id="label-attribute-to-nodes-and-edges">
@@ -96,7 +96,7 @@
    A -&gt; B [label = &quot;click bar&quot;];
    B -&gt; C [label = &quot;click baz&quot;];
    C -&gt; A;
-}" width="1120" height="240" />
+}" width="560" height="120" />
 </p>
 </div>
 <div class="section" id="style-attribute-to-nodes-and-edges">
@@ -151,7 +151,7 @@
    F -&gt; G [dir = forward];
    G -&gt; H [dir = back];
    H -&gt; I [dir = both];
-}" width="1888" height="400" />
+}" width="944" height="200" />
 </p>
 </div>
 <div class="section" id="direction-of-edges">
@@ -166,7 +166,7 @@
 <p class="blockdiag">
 <img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
   A -&gt; B &lt;- C -- D &lt;-&gt; E;
-}" width="1888" height="240" />
+}" width="944" height="120" />
 </p>
 </div>
 <div class="section" id="edge-folding">
@@ -187,7 +187,7 @@
 
   // fold edge at C to D (D will be layouted at top level; left side)
   C -&gt; D [folded];
-}" width="1120" height="400" />
+}" width="560" height="200" />
 </p>
 </div>
 <div class="section" id="mutlilingualization">
@@ -222,7 +222,54 @@
 
    // Use M17N text directly (need to quote).
    &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
-}" width="1504" height="400" />
+}" width="752" height="200" />
+</p>
+</div>
+<div class="section" id="shape-of-nodes">
+<h2>shape of nodes<a class="headerlink" href="#shape-of-nodes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.5: </span>(experimental)</p>
+<div class="highlight-python"><pre>{
+  // standard node shapes
+  box [shape = "box"];
+  roundedbox [shape = "roundedbox"];
+  diamond [shape = "diamond"];
+  ellipse [shape = "ellipse"];
+  note [shape = "note"];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
+
+  // node shapes for flowcharts
+  condition [shape = "flowchart.condition"];
+  database [shape = "flowchart.database"];
+  input [shape = "flowchart.input"];
+  loopin [shape = "flowchart.loopin"];
+  loopout [shape = "flowchart.loopout"];
+
+  condition -&gt; database -&gt; input -&gt; loopin -&gt; loopout;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-95822ad94af5771d29147b7a91623d98195f3260.png" alt="{
+  // standard node shapes
+  box [shape = &quot;box&quot;];
+  roundedbox [shape = &quot;roundedbox&quot;];
+  diamond [shape = &quot;diamond&quot;];
+  ellipse [shape = &quot;ellipse&quot;];
+  note [shape = &quot;note&quot;];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
+
+  // node shapes for flowcharts
+  condition [shape = &quot;flowchart.condition&quot;];
+  database [shape = &quot;flowchart.database&quot;];
+  input [shape = &quot;flowchart.input&quot;];
+  loopin [shape = &quot;flowchart.loopin&quot;];
+  loopout [shape = &quot;flowchart.loopout&quot;];
+
+  condition -&gt; database -&gt; input -&gt; loopin -&gt; loopout;
+}" width="944" height="200" />
 </p>
 </div>
 <div class="section" id="grouping-nodes">
@@ -287,7 +334,7 @@
           H -&gt; I;
       }
    }
-}" width="1888" height="560" />
+}" width="944" height="280" />
 </p>
 </div>
 <div class="section" id="diagram-attributes">
@@ -309,6 +356,23 @@
 }
 </pre>
 </div>
+<p class="blockdiag">
+<img src="_images/blockdiag-40285dfdfde5938a8ce1aa2b8bbcb684e3fc68f8.png" alt="diagram {
+  // Set node metrix.
+  node_width = 200;
+  node_height = 100;
+
+  // Set span metrix.
+  span_width = 240;
+  span_height = 120;
+
+  // Set fontsize.
+  fontsize = 20;
+
+  A -&gt; B [label = &quot;Use long edge label&quot;];
+  A -&gt; C;
+}" width="688" height="560" />
+</p>
 </div>
 <div class="section" id="simple-diagram-for-master-data-manager">
 <h2>Simple diagram for master data manager<a class="headerlink" href="#simple-diagram-for-master-data-manager" title="Permalink to this headline">¶</a></h2>
@@ -342,7 +406,7 @@
   index -&gt; edit -&gt; edit_confirm -&gt; index;
   index -&gt; show -&gt; index;
   index -&gt; delete_confirm -&gt; index;
-}" width="1120" height="720" />
+}" width="560" height="360" />
 </p>
 </div>
 </div>
@@ -362,6 +426,7 @@
 <li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
 <li><a class="reference internal" href="#edge-folding">edge folding</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
+<li><a class="reference internal" href="#shape-of-nodes">shape of nodes</a></li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
 <li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
 <li><a class="reference internal" href="#simple-diagram-for-master-data-manager">Simple diagram for master data manager</a></li>
@@ -415,7 +480,7 @@
 
     <div class="footer">
         &copy; Copyright 2010, Takeshi Komiya.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];

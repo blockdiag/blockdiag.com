@@ -1,0 +1,19 @@
+{
+  // standard node shapes
+  box [shape = "box"];
+  roundedbox [shape = "roundedbox"];
+  diamond [shape = "diamond"];
+  ellipse [shape = "ellipse"];
+  note [shape = "note"];
+
+  box -> roundedbox -> diamond -> ellipse -> note;
+
+  // node shapes for flowcharts
+  condition [shape = "flowchart.condition"];
+  database [shape = "flowchart.database"];
+  input [shape = "flowchart.input"];
+  loopin [shape = "flowchart.loopin"];
+  loopout [shape = "flowchart.loopout"];
+
+  condition -> database -> input -> loopin -> loopout;
+}

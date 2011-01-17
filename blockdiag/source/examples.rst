@@ -54,6 +54,16 @@ mutlilingualization
 .. blockdiag:: diagrams/multilingualization.diag
 
 
+shape of nodes
+==============
+
+.. versionadded:: 0.6.5
+   (experimental)
+
+.. literalinclude:: diagrams/node_shapes.diag
+.. blockdiag:: diagrams/node_shapes.diag
+
+
 grouping nodes
 ==============
 
