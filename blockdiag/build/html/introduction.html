@@ -70,6 +70,9 @@
 <p>Make environment:</p>
 <div class="highlight-python"><pre>$ easy_install blockdiag</pre>
 </div>
+<p>If you want to export as PDF format, give pdf arguments:</p>
+<div class="highlight-python"><pre>$ easy_install "blockdiag[pdf]"</pre>
+</div>
 </div>
 <div class="section" id="by-buildout">
 <h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
@@ -94,10 +97,14 @@ $ vi simple.diag</pre>
 $ ls simple.png
 simple.png</pre>
 </div>
-<p>If you want SVG images, use -T option:</p>
+<p>If you want SVG images or PDF images, use -T option:</p>
 <div class="highlight-python"><pre>$ blockdiag -Tsvg simple.diag
 $ ls simple.svg
-simple.svg</pre>
+simple.svg
+
+$ blockdiag -Tpdf simple.diag
+$ ls simple.pdf
+simple.pdf</pre>
 </div>
 </div>
 <div class="section" id="font-configuration">

@@ -18,6 +18,10 @@ Make environment::
 
    $ easy_install blockdiag
 
+If you want to export as PDF format, give pdf arguments::
+
+   $ easy_install "blockdiag[pdf]"
+
 by buildout
 ------------
 Make environment::
@@ -45,11 +49,15 @@ Execute blockdiag command::
    $ ls simple.png
    simple.png
 
-If you want SVG images, use -T option::
+If you want SVG images or PDF images, use -T option::
 
    $ blockdiag -Tsvg simple.diag
    $ ls simple.svg
    simple.svg
+
+   $ blockdiag -Tpdf simple.diag
+   $ ls simple.pdf
+   simple.pdf
 
 
 Font Configuration
