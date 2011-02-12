@@ -229,6 +229,8 @@
 <h2>shape of nodes<a class="headerlink" href="#shape-of-nodes" title="Permalink to this headline">¶</a></h2>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.6.5: </span>(experimental)</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.6: </span>actor shape</p>
 <div class="highlight-python"><pre>{
   // standard node shapes
   box [shape = "box"];
@@ -237,7 +239,17 @@
   ellipse [shape = "ellipse"];
   note [shape = "note"];
 
+  cloud [shape = "cloud"];
+  mail [shape = "mail"];
+  beginpoint [shape = "beginpoint"];
+  endpoint [shape = "endpoint"];
+  minidiamond [shape = "minidiamond"];
+  actor [shape = "actor"];
+
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
+  cloud -&gt; mail -&gt; beginpoint -&gt; endpoint;
+  minidiamond -&gt; actor;
+
 
   // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
@@ -251,7 +263,7 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-95822ad94af5771d29147b7a91623d98195f3260.png" alt="{
+<img src="_images/blockdiag-2799ce599a03bf1a90fd6168a1a9e40da3325cf4.png" alt="{
   // standard node shapes
   box [shape = &quot;box&quot;];
   roundedbox [shape = &quot;roundedbox&quot;];
@@ -259,7 +271,17 @@
   ellipse [shape = &quot;ellipse&quot;];
   note [shape = &quot;note&quot;];
 
+  cloud [shape = &quot;cloud&quot;];
+  mail [shape = &quot;mail&quot;];
+  beginpoint [shape = &quot;beginpoint&quot;];
+  endpoint [shape = &quot;endpoint&quot;];
+  minidiamond [shape = &quot;minidiamond&quot;];
+  actor [shape = &quot;actor&quot;];
+
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
+  cloud -&gt; mail -&gt; beginpoint -&gt; endpoint;
+  minidiamond -&gt; actor;
+
 
   // node shapes for flowcharts
   condition [shape = &quot;flowchart.condition&quot;];
@@ -269,7 +291,7 @@
   loopout [shape = &quot;flowchart.loopout&quot;];
 
   condition -&gt; database -&gt; input -&gt; loopin -&gt; loopout;
-}" width="944" height="200" />
+}" width="944" height="360" />
 </p>
 </div>
 <div class="section" id="grouping-nodes">

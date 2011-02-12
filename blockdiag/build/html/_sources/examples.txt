@@ -60,6 +60,9 @@ shape of nodes
 .. versionadded:: 0.6.5
    (experimental)
 
+.. versionadded:: 0.6.6
+   actor shape
+
 .. literalinclude:: diagrams/node_shapes.diag
 .. blockdiag:: diagrams/node_shapes.diag
 
