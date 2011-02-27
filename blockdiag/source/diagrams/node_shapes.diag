@@ -13,9 +13,9 @@
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
 
-  box -> roundedbox -> diamond -> ellipse -> note;
-  cloud -> mail -> beginpoint -> endpoint;
-  minidiamond -> actor;
+  box -> roundedbox -> diamond -> ellipse;
+  cloud -> note -> mail -> actor;
+  minidiamond -> beginpoint -> endpoint;
 
 
   // node shapes for flowcharts
@@ -24,6 +24,8 @@
   input [shape = "flowchart.input"];
   loopin [shape = "flowchart.loopin"];
   loopout [shape = "flowchart.loopout"];
+  terminator [shape = "flowchart.terminator"];
 
-  condition -> database -> input -> loopin -> loopout;
+  condition -> database -> terminator -> input;
+  loopin -> loopout;
 }

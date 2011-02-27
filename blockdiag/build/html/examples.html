@@ -246,9 +246,9 @@
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
 
-  box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
-  cloud -&gt; mail -&gt; beginpoint -&gt; endpoint;
-  minidiamond -&gt; actor;
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
 
 
   // node shapes for flowcharts
@@ -257,13 +257,15 @@
   input [shape = "flowchart.input"];
   loopin [shape = "flowchart.loopin"];
   loopout [shape = "flowchart.loopout"];
+  terminator [shape = "flowchart.terminator"];
 
-  condition -&gt; database -&gt; input -&gt; loopin -&gt; loopout;
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-2799ce599a03bf1a90fd6168a1a9e40da3325cf4.png" alt="{
+<img src="_images/blockdiag-5412991f9e2ff7899695ea94b2d6a8d73eb3ea58.png" alt="{
   // standard node shapes
   box [shape = &quot;box&quot;];
   roundedbox [shape = &quot;roundedbox&quot;];
@@ -278,9 +280,9 @@
   minidiamond [shape = &quot;minidiamond&quot;];
   actor [shape = &quot;actor&quot;];
 
-  box -&gt; roundedbox -&gt; diamond -&gt; ellipse -&gt; note;
-  cloud -&gt; mail -&gt; beginpoint -&gt; endpoint;
-  minidiamond -&gt; actor;
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
 
 
   // node shapes for flowcharts
@@ -289,9 +291,11 @@
   input [shape = &quot;flowchart.input&quot;];
   loopin [shape = &quot;flowchart.loopin&quot;];
   loopout [shape = &quot;flowchart.loopout&quot;];
+  terminator [shape = &quot;flowchart.terminator&quot;];
 
-  condition -&gt; database -&gt; input -&gt; loopin -&gt; loopout;
-}" width="944" height="360" />
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
+}" width="752" height="440" />
 </p>
 </div>
 <div class="section" id="grouping-nodes">
