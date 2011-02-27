@@ -52,6 +52,9 @@ option at :file:`conf.py`.
    # Enabled extensions
    extensions = ['sphinxcontrib.blockdiag']
 
+   # Fontpath for blockdiag (truetype font)
+   blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+
 
 Directive
 =========
