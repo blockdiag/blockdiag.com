@@ -86,6 +86,16 @@ diagram attributes
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
 
+
+portrait mode
+=============
+
+.. versionadded:: 0.7.0
+
+.. literalinclude:: diagrams/portrait_diagram.diag
+.. blockdiag:: diagrams/portrait_diagram.diag
+
+
 Simple diagram for master data manager
 ======================================
 
