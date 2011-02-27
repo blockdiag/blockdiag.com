@@ -10,6 +10,6 @@ diagram {
   // Set fontsize.
   fontsize = 20;
 
-  A -> B [label = "Use long edge label"];
+  A -> B [label = "Use long long\nedge label"];
   A -> C;
 }
