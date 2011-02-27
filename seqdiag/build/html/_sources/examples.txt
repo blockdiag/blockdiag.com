@@ -32,5 +32,7 @@ auto return edge and nested sequense
 diagram attributes
 ==================
 
+.. versionadded:: 0.2.0
+
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. seqdiag:: diagrams/diagram_attributes.diag
