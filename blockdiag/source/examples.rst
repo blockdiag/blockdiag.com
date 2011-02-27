@@ -83,6 +83,9 @@ grouping nodes
 diagram attributes
 ==================
 
+.. versionadded:: 0.7.2
+   default_shape
+
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
 
