@@ -75,7 +75,7 @@
               webserver  -&gt; database [label = &quot;INSERT comment&quot;];
               webserver &lt;-- database;
   browser &lt;-- webserver;
-}" width="560" height="360" />
+}" width="560" height="420" />
 </p>
 </div>
 <div class="section" id="edge-types">
@@ -118,7 +118,7 @@
 
   // self referenced edge
   A -&gt; A [label = &quot;self reference edge&quot;];
-}" width="560" height="520" />
+}" width="560" height="540" />
 </p>
 </div>
 <div class="section" id="attributes-of-edges">
@@ -143,7 +143,7 @@
   // diagonal edge
   A -&gt; B [diagonal, label = &quot;diagonal edge&quot;];
   A &lt;- B [diagonal, label = &quot;return diagonal edge&quot;];
-}" width="368" height="360" />
+}" width="368" height="340" />
 </p>
 </div>
 <div class="section" id="auto-return-edge-and-nested-sequense">
@@ -178,7 +178,36 @@
      B =&gt; D [label = &quot;call 2&quot;];
      B =&gt; E [label = &quot;call 3&quot;];
   }
-}" width="944" height="680" />
+}" width="944" height="740" />
+</p>
+</div>
+<div class="section" id="diagram-attributes">
+<h2>diagram attributes<a class="headerlink" href="#diagram-attributes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  edge_height = 80;  // default value is 40
+
+  // Set fontsize.
+  fontsize = 16;  // default value is 11
+
+  browser  -&gt; webserver [label = "GET \n/index.html"];
+  browser &lt;-- webserver;
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-4a8689443ffe139f66d6255d5719190ea7bca817.png" alt="diagram {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  edge_height = 80;  // default value is 40
+
+  // Set fontsize.
+  fontsize = 16;  // default value is 11
+
+  browser  -&gt; webserver [label = &quot;GET \n/index.html&quot;];
+  browser &lt;-- webserver;
+}" width="368" height="360" />
 </p>
 </div>
 </div>
@@ -196,6 +225,7 @@
 <li><a class="reference internal" href="#edge-types">edge types</a></li>
 <li><a class="reference internal" href="#attributes-of-edges">attributes of edges</a></li>
 <li><a class="reference internal" href="#auto-return-edge-and-nested-sequense">auto return edge and nested sequense</a></li>
+<li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -246,7 +276,7 @@
 
     <div class="footer">
         &copy; Copyright 2010, Takeshi Komiya.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
     <script type="text/javascript">
         var _gaq = _gaq || [];
