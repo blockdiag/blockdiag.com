@@ -50,6 +50,9 @@ option at :file:`conf.py`.
    # Enabled extensions
    extensions = ['sphinxcontrib_seqdiag']
 
+   # Fontpath for seqdiag (truetype font)
+   seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+
 
 Directive
 =========
