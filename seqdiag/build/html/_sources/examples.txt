@@ -19,6 +19,9 @@ edge types
 attributes of edges
 ===================
 
+.. versionadded:: 0.2.2
+   color attribute
+
 .. literalinclude:: diagrams/edge_attributes.diag
 .. seqdiag:: diagrams/edge_attributes.diag
 

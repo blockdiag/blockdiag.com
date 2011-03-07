@@ -6,4 +6,7 @@
   // diagonal edge
   A -> B [diagonal, label = "diagonal edge"];
   A <- B [diagonal, label = "return diagonal edge"];
+
+  // color of edge
+  A -> B [label = "colored label", color = red];
 }
