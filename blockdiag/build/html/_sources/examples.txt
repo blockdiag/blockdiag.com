@@ -99,6 +99,15 @@ portrait mode
 .. blockdiag:: diagrams/portrait_diagram.diag
 
 
+portrait group
+==============
+
+.. versionadded:: 0.7.4
+
+.. literalinclude:: diagrams/portrait_group.diag
+.. blockdiag:: diagrams/portrait_group.diag
+
+
 Simple diagram for master data manager
 ======================================
 
