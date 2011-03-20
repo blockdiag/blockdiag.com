@@ -30,8 +30,8 @@ branched edges
 
 .. versionadded:: 0.7.5
 
-.. literalinclude:: diagrams/node_attributes.diag
-.. blockdiag:: diagrams/node_attributes.diag
+.. literalinclude:: diagrams/branched_edge.diag
+.. blockdiag:: diagrams/branched_edge.diag
 
 
 direction of edges
@@ -39,8 +39,8 @@ direction of edges
 
 .. versionadded:: 0.5.5
 
-.. literalinclude:: diagrams/branched_edge.diag
-.. blockdiag:: diagrams/branched_edge.diag
+.. literalinclude:: diagrams/edge_direction.diag
+.. blockdiag:: diagrams/edge_direction.diag
 
 
 edge folding

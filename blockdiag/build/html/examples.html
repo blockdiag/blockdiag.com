@@ -158,63 +158,6 @@
 <h2>branched edges<a class="headerlink" href="#branched-edges" title="Permalink to this headline">¶</a></h2>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.7.5.</span></p>
-<div class="highlight-python"><pre>diagram {
-   // Set boder-style and backgroun-color to nodes.
-   A [style = dotted];
-   B [style = dashed];
-   C [color = pink];
-   D [color = "#888888"];
-
-   // Set border-style and color to edges.
-   A -&gt; B [style = dotted];
-   B -&gt; C [style = dashed];
-   C -&gt; D [color = "red"];
-
-   // Set numbered-badge to nodes.
-   E [numbered = 99];
-
-   // Set background image to nodes (and erase label).
-   F [label = "", background = "source/diagrams/python-logo.gif"];
-
-   // Set arrow direction to edges.
-   E -&gt; F [dir = none];
-   F -&gt; G [dir = forward];
-   G -&gt; H [dir = back];
-   H -&gt; I [dir = both];
-}
-</pre>
-</div>
-<p class="blockdiag">
-<img src="_images/blockdiag-dba2f816fc7de384eff286677693ca083b51ed0b.png" alt="diagram {
-   // Set boder-style and backgroun-color to nodes.
-   A [style = dotted];
-   B [style = dashed];
-   C [color = pink];
-   D [color = &quot;#888888&quot;];
-
-   // Set border-style and color to edges.
-   A -&gt; B [style = dotted];
-   B -&gt; C [style = dashed];
-   C -&gt; D [color = &quot;red&quot;];
-
-   // Set numbered-badge to nodes.
-   E [numbered = 99];
-
-   // Set background image to nodes (and erase label).
-   F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
-
-   // Set arrow direction to edges.
-   E -&gt; F [dir = none];
-   F -&gt; G [dir = forward];
-   G -&gt; H [dir = back];
-   H -&gt; I [dir = both];
-}" width="944" height="200" />
-</p>
-</div>
-<div class="section" id="direction-of-edges">
-<h2>direction of edges<a class="headerlink" href="#direction-of-edges" title="Permalink to this headline">¶</a></h2>
-<p class="versionadded">
-<span class="versionmodified">New in version 0.5.5.</span></p>
 <div class="highlight-python"><pre>{
   // branching edges to multiple children
   A -&gt; B, C;
@@ -232,6 +175,21 @@
   // branching edges from multiple parents
   D, E -&gt; F;
 }" width="368" height="360" />
+</p>
+</div>
+<div class="section" id="direction-of-edges">
+<h2>direction of edges<a class="headerlink" href="#direction-of-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.5.5.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}" width="944" height="120" />
 </p>
 </div>
 <div class="section" id="edge-folding">
