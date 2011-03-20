@@ -258,6 +258,7 @@ epub_copyright = u'2010, Takeshi Komiya'
 
 blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 blockdiag_antialias = True
+blockdiag_tex_image_format = 'PDF'
 
 
 def setup(app):

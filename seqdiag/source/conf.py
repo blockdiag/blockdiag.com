@@ -257,6 +257,8 @@ epub_copyright = u'2010, Takeshi Komiya'
 
 
 seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+seqdiag_antialias = True
+seqdiag_tex_image_format = 'PDF'
 
 
 def setup(app):
