@@ -123,6 +123,8 @@
 </div>
 <div class="section" id="attributes-of-edges">
 <h2>attributes of edges<a class="headerlink" href="#attributes-of-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.2.2: </span>color attribute</p>
 <div class="highlight-python"><pre>{
   // edge label
   A -&gt; B [label = "call"];
@@ -131,11 +133,14 @@
   // diagonal edge
   A -&gt; B [diagonal, label = "diagonal edge"];
   A &lt;- B [diagonal, label = "return diagonal edge"];
+
+  // color of edge
+  A -&gt; B [label = "colored label", color = red];
 }
 </pre>
 </div>
 <p class="seqdiag">
-<img src="_images/seqdiag-36d39e65dff07d56efdc0e82a54e8d0bebfbe2f3.png" alt="{
+<img src="_images/seqdiag-15761d14d523d941458ae6982e5a31bfa1a12b8a.png" alt="{
   // edge label
   A -&gt; B [label = &quot;call&quot;];
   A &lt;- B [label = &quot;return&quot;];
@@ -143,7 +148,10 @@
   // diagonal edge
   A -&gt; B [diagonal, label = &quot;diagonal edge&quot;];
   A &lt;- B [diagonal, label = &quot;return diagonal edge&quot;];
-}" width="368" height="340" />
+
+  // color of edge
+  A -&gt; B [label = &quot;colored label&quot;, color = red];
+}" width="368" height="380" />
 </p>
 </div>
 <div class="section" id="auto-return-edge-and-nested-sequense">
@@ -209,7 +217,7 @@
 
   browser  -&gt; webserver [label = &quot;GET \n/index.html&quot;];
   browser &lt;-- webserver;
-}" width="368" height="360" />
+}" width="476" height="260" />
 </p>
 </div>
 </div>
