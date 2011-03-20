@@ -1,0 +1,14 @@
+{
+  // auto return edge
+  A => B [label = "call", return = "return"];
+
+  // nested auto return edge
+  A => B => C [label = "call", return = "return"];
+
+  // nested sequence
+  A => B [label = "nested call"]{
+     B => C [label = "call 1"];
+     B => D [label = "call 2"];
+     B => E [label = "call 3"];
+  }
+}

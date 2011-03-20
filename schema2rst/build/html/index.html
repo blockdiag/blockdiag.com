@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>schema2rst &mdash; schema v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="schema v1.0 documentation" href="#" />
+    <link rel="next" title="Schema: sample" href="schema.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="schema.html" title="Schema: sample"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">schema v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="schema2rst">
+<h1>schema2rst<a class="headerlink" href="#schema2rst" title="Permalink to this headline">¶</a></h1>
+<p><cite>schema2rst</cite> (目下開発中) は MySQL データベースに接続し、
+スキーマ情報を抽出して reST 形式のデータベース定義書を出力します。</p>
+<p>このサンプルでは以下の SQL でデータベースの初期化をしています。</p>
+<div class="highlight-python"><pre>DROP TABLE IF EXISTS users, items, order_history, uncommented_table;
+
+CREATE TABLE users (
+  id int primary key auto_increment comment 'ユーザ ID',
+  login_id varchar(16) default '' not null comment 'ログイン ID',
+  fullname varchar(255) default '' not null comment '氏名',
+  mailaddr varchar(255) default '' not null unique comment 'メールアドレス',
+  key (mailaddr)
+) ENGINE='InnoDB' COMMENT 'ユーザ';
+
+CREATE TABLE items (
+  id int primary key auto_increment comment '商品 ID',
+  name varchar(255) not null comment '商品名',
+  type int not null default 1 comment '種別 (1:食品, 2:文具, 3:雑貨)',
+  description text comment '説明文'
+) ENGINE='InnoDB' COMMENT '商品';
+
+CREATE TABLE order_history (
+  id int primary key auto_increment comment '履歴 ID',
+  user_id int not null comment 'ユーザ ID',
+  item_id int not null comment '商品 ID',
+  amount int not null comment '数量',
+  order_date datetime comment '購入日',
+  index (user_id, order_date),
+  index (item_id, order_date),
+  foreign key (user_id) references users(id),
+  foreign key (item_id) references items(id)
+) ENGINE='InnoDB' COMMENT '購入履歴';
+
+CREATE TABLE uncommented_table (
+  id int primary key auto_increment,
+  name varchar(255) binary
+) ENGINE='InnoDB';
+</pre>
+</div>
+<p>上記の定義から <cite>schema2rst</cite> コマンドで定義を抽出します。
+接続に関する設定を指定する方法は設定ファイルを用いる予定です。</p>
+<div class="highlight-none"><div class="highlight"><pre>% schema2rst &gt; schema.rst
+% schema2graph &gt; graph.rst
+</pre></div>
+</div>
+<p>抽出したデータベース定義書は以下になります。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="schema.html">Schema: sample</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#items">商品 (items)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#order-history">購入履歴 (order_history)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#uncommented-table">uncommented_table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schema.html#users">ユーザ (users)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="graph.html">Schema: sample</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Next topic</h4>
+  <p class="topless"><a href="schema.html"
+                        title="next chapter">Schema: sample</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="schema.html" title="Schema: sample"
+             >next</a> |</li>
+        <li><a href="#">schema v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, tkomiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.5.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>
