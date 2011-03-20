@@ -9,7 +9,7 @@ diagram admin {
    }
 
    // E, F and G belong to second group.
-   group {
+   group second_group {
       // Set group-label
       label = "second group";
 
@@ -24,4 +24,7 @@ diagram admin {
           H -> I;
       }
    }
+
+   // J belongs to second group
+   J [group = second_group];
 }

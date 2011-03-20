@@ -25,13 +25,22 @@ style attribute to nodes and edges
 .. blockdiag:: diagrams/node_attributes.diag
 
 
+branched edges
+==============
+
+.. versionadded:: 0.7.5
+
+.. literalinclude:: diagrams/node_attributes.diag
+.. blockdiag:: diagrams/node_attributes.diag
+
+
 direction of edges
 ==================
 
 .. versionadded:: 0.5.5
 
-.. literalinclude:: diagrams/edge_direction.diag
-.. blockdiag:: diagrams/edge_direction.diag
+.. literalinclude:: diagrams/branched_edge.diag
+.. blockdiag:: diagrams/branched_edge.diag
 
 
 edge folding
@@ -75,6 +84,9 @@ grouping nodes
 
 .. versionadded:: 0.6
    nested groups
+
+.. versionadded:: 0.7.5
+   group definition within node-attributes
 
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag

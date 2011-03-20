@@ -154,19 +154,84 @@
 }" width="944" height="200" />
 </p>
 </div>
+<div class="section" id="branched-edges">
+<h2>branched edges<a class="headerlink" href="#branched-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.5.</span></p>
+<div class="highlight-python"><pre>diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = "#888888"];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = "red"];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-dba2f816fc7de384eff286677693ca083b51ed0b.png" alt="diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = &quot;#888888&quot;];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = &quot;red&quot;];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}" width="944" height="200" />
+</p>
+</div>
 <div class="section" id="direction-of-edges">
 <h2>direction of edges<a class="headerlink" href="#direction-of-edges" title="Permalink to this headline">¶</a></h2>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.5.5.</span></p>
 <div class="highlight-python"><pre>{
-  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+  // branching edges to multiple children
+  A -&gt; B, C;
+
+  // branching edges from multiple parents
+  D, E -&gt; F;
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
-  A -&gt; B &lt;- C -- D &lt;-&gt; E;
-}" width="944" height="120" />
+<img src="_images/blockdiag-08e03d2bc471b2c4bf5b792d4a12ee5b48f82418.png" alt="{
+  // branching edges to multiple children
+  A -&gt; B, C;
+
+  // branching edges from multiple parents
+  D, E -&gt; F;
+}" width="368" height="360" />
 </p>
 </div>
 <div class="section" id="edge-folding">
@@ -304,6 +369,8 @@
 <span class="versionmodified">New in version 0.5.3: </span>label attributes for group</p>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.6: </span>nested groups</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.5: </span>group definition within node-attributes</p>
 <div class="highlight-python"><pre>diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
@@ -315,7 +382,7 @@
    }
 
    // E, F and G belong to second group.
-   group {
+   group second_group {
       // Set group-label
       label = "second group";
 
@@ -330,11 +397,14 @@
           H -&gt; I;
       }
    }
+
+   // J belongs to second group
+   J [group = second_group];
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-5bc263be60ef0c7281933d4ee88a7d43f445f519.png" alt="diagram admin {
+<img src="_images/blockdiag-e8516416bc03762e6d3deadac2348c47759a6765.png" alt="diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
    A -&gt; H;
@@ -345,7 +415,7 @@
    }
 
    // E, F and G belong to second group.
-   group {
+   group second_group {
       // Set group-label
       label = &quot;second group&quot;;
 
@@ -360,7 +430,10 @@
           H -&gt; I;
       }
    }
-}" width="944" height="280" />
+
+   // J belongs to second group
+   J [group = second_group];
+}" width="944" height="360" />
 </p>
 </div>
 <div class="section" id="diagram-attributes">
@@ -478,6 +551,7 @@
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
 <li><a class="reference internal" href="#label-attribute-to-nodes-and-edges">label attribute to nodes and edges</a></li>
 <li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
+<li><a class="reference internal" href="#branched-edges">branched edges</a></li>
 <li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
 <li><a class="reference internal" href="#edge-folding">edge folding</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
