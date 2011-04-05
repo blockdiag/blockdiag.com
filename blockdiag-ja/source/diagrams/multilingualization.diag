@@ -1,0 +1,12 @@
+diagram admin {
+   // Set M17N text using label property.
+   A [label = "起"];
+   B [label = "承"];
+   C [label = "転"];
+   D [label = "結"];
+
+   A -> B -> C -> D;
+
+   // Use M17N text directly (need to quote).
+   "春" -> "夏" -> "秋" -> "冬";
+}
