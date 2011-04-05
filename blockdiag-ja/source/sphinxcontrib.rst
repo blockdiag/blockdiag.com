@@ -1,9 +1,10 @@
-=======================
-sphinxcontrib-blockdiag
-=======================
+====================================
+Sphinx 拡張：sphinxcontrib-blockdiag
+====================================
 
-`sphinxcontrib-blockdiag` is sphinx extension for embedding blockdiag diagrams.
-You can embed block diagrams with `blockdiag` directive.
+`sphinxcontrib-blockdiag` を利用すると Sphinx の拡張機能として
+`blockdiag` によるブロック図を埋め込むことができます。
+ブロック図の埋め込みには `blockdiag` ディレクティブを利用します。
 
 .. code-block:: text
 
@@ -19,35 +20,26 @@ You can embed block diagrams with `blockdiag` directive.
       top_page -> config -> config_edit -> config_confirm -> top_page;
     }
 
-Setting
-=======
+Sphinx の設定
+=============
 
-.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-blockdiag>`_.
-
-You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
-
-Install
--------
+easy_install 経由の場合
+-----------------------
+以下のコマンドで `sphinxcontrib-blockdiag` をインストールします。::
 
 .. code-block:: bash
 
    > easy_install sphinxcontrib-blockdiag
 
 
-Configure Sphinx
-----------------
+Sphinx プロジェクトの設定
+-------------------------
 
-To enable this extension, add ``sphinxcontrib.blockdiag`` module to extensions 
-option at :file:`conf.py`. 
+Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
+:file:`conf.py` の extensions に sphinxcontrib.blockdiag を追加します。
+また、blockdiag_fontpath に利用する TrueType フォントへのパスを指定します。
 
 .. code-block:: python
-
-   import os, sys
-
-   # Path to the folder where blockdiag.py is
-   # NOTE: not needed if the package is installed in traditional way
-   # using setup.py or easy_install
-   sys.path.append(os.path.abspath('/path/to/sphinxcontrib.blockdiag'))
 
    # Enabled extensions
    extensions = ['sphinxcontrib.blockdiag']
@@ -56,16 +48,22 @@ option at :file:`conf.py`.
    blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
 
-Directive
-=========
+利用可能なディレクティブ
+========================
 
 .. describe:: .. blockdiag:: [filename]
 
-   This directive insert a block diagram into the generated document.
-   If filename is specified, sphinx reads external file as source script of blockfile.
-   In another case, blockdiag directive takes code block as source script.
+   `blockdiag` ディレクティブは指定した箇所にブロック図を埋め込みます。
+   ブロック図の元となるテキストはファイルもしくは
+   テキストブロックで渡すことができます。
 
-   Examples::
+   ファイルを指定する場合は `blockdiag` ディレクティブの引数に
+   ファイル名を指定します。
+
+   テキストブロックを利用する場合は `blockdiag` ディレクティブ以降の行に
+   ブロックを記述します。
+
+   例::
 
       .. blockdiag:: foobar.diag
 
@@ -76,14 +74,14 @@ Directive
          }
 
 
-Configuration File Options
-==========================
+利用可能な設定オプション
+========================
 
 .. confval:: blockdiag_fontpath
 
-   This is a path for renderring fonts. You can use truetype font (.ttf) file path.
+   blockdiag で利用する TrueType フォントへのパスを指定します。
 
 .. confval:: blockdiag_antialias
 
-   If :confval:`blockdiag_antialias`: is True, blockdiag generates images
-   with anti-alias filter.
+   :confval:`blockdiag_antialias` に True が指定された場合、
+   アンチエイリアス処理を加えた画像を生成します(初期値：False)。
