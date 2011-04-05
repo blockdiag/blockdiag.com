@@ -1,32 +1,32 @@
 .. _sample-diagrams:
 
-==============
-Sample diagams
-==============
+============
+出力サンプル
+============
 
-simple diagram
-==============
+シンプルなブロック図
+====================
 
 .. literalinclude:: diagrams/simple.diag
 .. blockdiag:: diagrams/simple.diag
 
 
-label attribute to nodes and edges
-==================================
+ラベルの設定
+============
 
 .. literalinclude:: diagrams/node_labels.diag
 .. blockdiag:: diagrams/node_labels.diag
 
 
-style attribute to nodes and edges
-==================================
+ノード、エッジのカスタマイズ
+============================
 
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
 
 
-branched edges
-==============
+複数ノード間の接続
+==================
 
 .. versionadded:: 0.7.5
 
@@ -34,8 +34,8 @@ branched edges
 .. blockdiag:: diagrams/branched_edge.diag
 
 
-direction of edges
-==================
+エッジの向きを変更する
+======================
 
 .. versionadded:: 0.5.5
 
@@ -43,8 +43,8 @@ direction of edges
 .. blockdiag:: diagrams/edge_direction.diag
 
 
-edge folding
-============
+エッジの折り返し
+================
 
 .. versionadded:: 0.6.1
 
@@ -52,19 +52,19 @@ edge folding
 .. blockdiag:: diagrams/folded_edges.diag
 
 
-mutlilingualization
-===================
+日本語の利用
+============
 
 .. literalinclude:: diagrams/multilingualization.diag
 .. note::
 
-   blockdiag supports UTF-8 encoding only.
+   `blockdiag` では UTF-8 エンコード以外の文字コードを扱うことはできません。
 
 .. blockdiag:: diagrams/multilingualization.diag
 
 
-shape of nodes
-==============
+ノード形状の変更
+================
 
 .. versionadded:: 0.6.5
    (experimental)
@@ -76,34 +76,34 @@ shape of nodes
 .. blockdiag:: diagrams/node_shapes.diag
 
 
-grouping nodes
-==============
+グルーピング
+============
 
 .. versionadded:: 0.5.3
-   label attributes for group
+   グループラベルに対応
 
 .. versionadded:: 0.6
-   nested groups
+   グループの入れ子に対応
 
 .. versionadded:: 0.7.5
-   group definition within node-attributes
+   ノード属性として group キーワードを追加
 
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 
 
-diagram attributes
-==================
+図全体の設定
+============
 
 .. versionadded:: 0.7.2
-   default_shape
+   default_shape を追加
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
 
 
-portrait mode
-=============
+縦書きモード
+============
 
 .. versionadded:: 0.7.0
 
@@ -111,8 +111,8 @@ portrait mode
 .. blockdiag:: diagrams/portrait_diagram.diag
 
 
-portrait group
-==============
+グループの縦書き化
+==================
 
 .. versionadded:: 0.7.4
 
@@ -120,8 +120,8 @@ portrait group
 .. blockdiag:: diagrams/portrait_group.diag
 
 
-Simple diagram for master data manager
-======================================
+シンプルな管理画面の画面遷移図(例)
+==================================
 
 .. literalinclude:: diagrams/masterdata_manager.diag
 .. blockdiag:: diagrams/masterdata_manager.diag

@@ -1,16 +1,17 @@
 ======================================
-Demo - interactive shell for blockdiag
+デモ：interactive shell for blockdiag
 ======================================
 
-This is demo program for blockdiag.
-You can get rendered diagrams after inputting 'Diagram source'.
+このページは `blockdiag` を Web ブラウザから利用できるようにしたデモページです。
+入力フォームのテキストをリアルタイムに変換し、
+ブラウザ上で閲覧することができます。
 
 .. note::
 
-   This demo program supports non IE browsers only.
+   このデモページは IE に対応していません。
 
-Diagram source
-==============
+入力フォーム
+============
 
 .. raw:: html
 
@@ -20,8 +21,8 @@ Diagram source
    }</textarea><br />
 
 
-Diagram outputs
-===============
+出力された図
+============
 
 .. raw:: html
 
