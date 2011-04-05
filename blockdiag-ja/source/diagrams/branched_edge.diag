@@ -1,7 +1,7 @@
 {
-  // branching edges to multiple children
+  // 複数の子ノードへの接続
   A -> B, C;
 
-  // branching edges from multiple parents
+  // 複数の親ノードからの接続
   D, E -> F;
 }

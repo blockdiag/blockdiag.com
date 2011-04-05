@@ -1,5 +1,5 @@
 diagram admin {
-   // Set M17N text using label property.
+   // 日本語をラベルに指定することができます。
    A [label = "起"];
    B [label = "承"];
    C [label = "転"];
@@ -7,6 +7,6 @@ diagram admin {
 
    A -> B -> C -> D;
 
-   // Use M17N text directly (need to quote).
+   // クオートすると日本語をノード ID に使用できます。
    "春" -> "夏" -> "秋" -> "冬";
 }

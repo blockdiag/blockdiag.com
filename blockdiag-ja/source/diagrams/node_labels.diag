@@ -1,10 +1,10 @@
 diagram {
-   // Set labels to nodes.
+   // ノードラベルの設定
    A [label = "foo"];
    B [label = "bar"];
    C [label = "baz"];
 
-   // Set labels to edges. (short text only)
+   // エッジラベルの設定 (短い文字列のみ)
    A -> B [label = "click bar"];
    B -> C [label = "click baz"];
    C -> A;

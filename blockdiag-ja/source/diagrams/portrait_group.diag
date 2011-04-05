@@ -2,6 +2,7 @@
   A -> B -> C;
 
   group {
+    // このグループを縦書きモードに設定
     orientation = portrait
 
     C -> D -> E;

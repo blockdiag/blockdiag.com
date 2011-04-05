@@ -1,22 +1,22 @@
 diagram {
-   // Set boder-style and backgroun-color to nodes.
+   // ノードの設定 (枠線の種別、背景色)
    A [style = dotted];
    B [style = dashed];
    C [color = pink];
    D [color = "#888888"];
 
-   // Set border-style and color to edges.
+   // エッジの設定 (線の種別、色)
    A -> B [style = dotted];
    B -> C [style = dashed];
    C -> D [color = "red"];
 
-   // Set numbered-badge to nodes.
+   // ノードの設定 (背番号)
    E [numbered = 99];
 
-   // Set background image to nodes (and erase label).
+   // ノードの設定 (背景画像)
    F [label = "", background = "source/diagrams/python-logo.gif"];
 
-   // Set arrow direction to edges.
+   // エッジの設定 (接続の向き)
    E -> F [dir = none];
    F -> G [dir = forward];
    G -> H [dir = back];

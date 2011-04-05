@@ -1,6 +1,6 @@
 {
   A -> B -> C -> D -> E;
 
-  // fold edge at C to D (D will be layouted at top level; left side)
+  // C から D への接続を折り返す。(D は左側に配置される)
   C -> D [folded];
 }

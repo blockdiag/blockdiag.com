@@ -1,4 +1,5 @@
 {
+  // 縦書きモード
   orientation = portrait
 
   A -> B -> C;

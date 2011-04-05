@@ -1,5 +1,5 @@
 {
-  // standard node shapes
+  // 基本形状
   box [shape = "box"];
   roundedbox [shape = "roundedbox"];
   diamond [shape = "diamond"];
@@ -18,7 +18,7 @@
   minidiamond -> beginpoint -> endpoint;
 
 
-  // node shapes for flowcharts
+  // フローチャート用形状
   condition [shape = "flowchart.condition"];
   database [shape = "flowchart.database"];
   input [shape = "flowchart.input"];
