@@ -1,0 +1,614 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sample diagams &mdash; blockdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="blockdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="sphinxcontrib-blockdiag" href="sphinxcontrib.html" />
+    <link rel="prev" title="Introduction of blockdiag" href="introduction.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-blockdiag"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sample-diagams">
+<span id="sample-diagrams"></span><h1>Sample diagams<a class="headerlink" href="#sample-diagams" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simple-diagram">
+<h2>simple diagram<a class="headerlink" href="#simple-diagram" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-2a4640a731151932934a492d9b9b2ed79f88f818.png" alt="diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}" width="784" height="264" />
+</p>
+</div>
+<div class="section" id="label-attribute-to-nodes-and-edges">
+<h2>label attribute to nodes and edges<a class="headerlink" href="#label-attribute-to-nodes-and-edges" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   // Set labels to nodes.
+   A [label = "foo"];
+   B [label = "bar"];
+   C [label = "baz"];
+
+   // Set labels to edges. (short text only)
+   A -&gt; B [label = "click bar"];
+   B -&gt; C [label = "click baz"];
+   C -&gt; A;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-5482f5cb2903e76261e994bcfb3888549e06d128.png" alt="diagram {
+   // Set labels to nodes.
+   A [label = &quot;foo&quot;];
+   B [label = &quot;bar&quot;];
+   C [label = &quot;baz&quot;];
+
+   // Set labels to edges. (short text only)
+   A -&gt; B [label = &quot;click bar&quot;];
+   B -&gt; C [label = &quot;click baz&quot;];
+   C -&gt; A;
+}" width="592" height="184" />
+</p>
+</div>
+<div class="section" id="style-attribute-to-nodes-and-edges">
+<h2>style attribute to nodes and edges<a class="headerlink" href="#style-attribute-to-nodes-and-edges" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = "#888888"];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = "red"];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-dba2f816fc7de384eff286677693ca083b51ed0b.png" alt="diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = &quot;#888888&quot;];
+
+   // Set border-style and color to edges.
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = &quot;red&quot;];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
+
+   // Set arrow direction to edges.
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}" width="976" height="264" />
+</p>
+</div>
+<div class="section" id="branched-edges">
+<h2>branched edges<a class="headerlink" href="#branched-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.5.</span></p>
+<div class="highlight-python"><pre>{
+  // branching edges to multiple children
+  A -&gt; B, C;
+
+  // branching edges from multiple parents
+  D, E -&gt; F;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-08e03d2bc471b2c4bf5b792d4a12ee5b48f82418.png" alt="{
+  // branching edges to multiple children
+  A -&gt; B, C;
+
+  // branching edges from multiple parents
+  D, E -&gt; F;
+}" width="400" height="424" />
+</p>
+</div>
+<div class="section" id="direction-of-edges">
+<h2>direction of edges<a class="headerlink" href="#direction-of-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.5.5.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}" width="976" height="184" />
+</p>
+</div>
+<div class="section" id="edge-folding">
+<h2>edge folding<a class="headerlink" href="#edge-folding" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.1.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // fold edge at C to D (D will be layouted at top level; left side)
+  C -&gt; D [folded];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-4d988f8f9aa000145a9c480c947e080d3f5b54bb.png" alt="{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // fold edge at C to D (D will be layouted at top level; left side)
+  C -&gt; D [folded];
+}" width="592" height="264" />
+</p>
+</div>
+<div class="section" id="mutlilingualization">
+<h2>mutlilingualization<a class="headerlink" href="#mutlilingualization" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram admin {
+   // Set M17N text using label property.
+   A [label = "起"];
+   B [label = "承"];
+   C [label = "転"];
+   D [label = "結"];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // Use M17N text directly (need to quote).
+   "春" -&gt; "夏" -&gt; "秋" -&gt; "冬";
+}
+</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">blockdiag supports UTF-8 encoding only.</p>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-253d8ffa05ba935a8c2d7cba0c7e14686e64abc9.png" alt="diagram admin {
+   // Set M17N text using label property.
+   A [label = &quot;起&quot;];
+   B [label = &quot;承&quot;];
+   C [label = &quot;転&quot;];
+   D [label = &quot;結&quot;];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // Use M17N text directly (need to quote).
+   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
+}" width="784" height="264" />
+</p>
+</div>
+<div class="section" id="shape-of-nodes">
+<h2>shape of nodes<a class="headerlink" href="#shape-of-nodes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.5: </span>(experimental)</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6.6: </span>actor shape</p>
+<div class="highlight-python"><pre>{
+  // standard node shapes
+  box [shape = "box"];
+  roundedbox [shape = "roundedbox"];
+  diamond [shape = "diamond"];
+  ellipse [shape = "ellipse"];
+  note [shape = "note"];
+
+  cloud [shape = "cloud"];
+  mail [shape = "mail"];
+  beginpoint [shape = "beginpoint"];
+  endpoint [shape = "endpoint"];
+  minidiamond [shape = "minidiamond"];
+  actor [shape = "actor"];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
+
+
+  // node shapes for flowcharts
+  condition [shape = "flowchart.condition"];
+  database [shape = "flowchart.database"];
+  input [shape = "flowchart.input"];
+  loopin [shape = "flowchart.loopin"];
+  loopout [shape = "flowchart.loopout"];
+  terminator [shape = "flowchart.terminator"];
+
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-5412991f9e2ff7899695ea94b2d6a8d73eb3ea58.png" alt="{
+  // standard node shapes
+  box [shape = &quot;box&quot;];
+  roundedbox [shape = &quot;roundedbox&quot;];
+  diamond [shape = &quot;diamond&quot;];
+  ellipse [shape = &quot;ellipse&quot;];
+  note [shape = &quot;note&quot;];
+
+  cloud [shape = &quot;cloud&quot;];
+  mail [shape = &quot;mail&quot;];
+  beginpoint [shape = &quot;beginpoint&quot;];
+  endpoint [shape = &quot;endpoint&quot;];
+  minidiamond [shape = &quot;minidiamond&quot;];
+  actor [shape = &quot;actor&quot;];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
+
+
+  // node shapes for flowcharts
+  condition [shape = &quot;flowchart.condition&quot;];
+  database [shape = &quot;flowchart.database&quot;];
+  input [shape = &quot;flowchart.input&quot;];
+  loopin [shape = &quot;flowchart.loopin&quot;];
+  loopout [shape = &quot;flowchart.loopout&quot;];
+  terminator [shape = &quot;flowchart.terminator&quot;];
+
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
+}" width="784" height="504" />
+</p>
+</div>
+<div class="section" id="grouping-nodes">
+<h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.5.3: </span>label attributes for group</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.6: </span>nested groups</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.5: </span>group definition within node-attributes</p>
+<div class="highlight-python"><pre>diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+   A -&gt; H;
+
+   // A and B belong to first group.
+   group {
+      A; B;
+   }
+
+   // E, F and G belong to second group.
+   group second_group {
+      // Set group-label
+      label = "second group";
+
+      // Set background-color to this group.
+      color = "#77FF77";
+
+      E -&gt; F -&gt; G;
+
+      // H and I belong to third "nested" group.
+      group {
+          color = "#7777FF";
+          H -&gt; I;
+      }
+   }
+
+   // J belongs to second group
+   J [group = second_group];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-e8516416bc03762e6d3deadac2348c47759a6765.png" alt="diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+   A -&gt; H;
+
+   // A and B belong to first group.
+   group {
+      A; B;
+   }
+
+   // E, F and G belong to second group.
+   group second_group {
+      // Set group-label
+      label = &quot;second group&quot;;
+
+      // Set background-color to this group.
+      color = &quot;#77FF77&quot;;
+
+      E -&gt; F -&gt; G;
+
+      // H and I belong to third &quot;nested&quot; group.
+      group {
+          color = &quot;#7777FF&quot;;
+          H -&gt; I;
+      }
+   }
+
+   // J belongs to second group
+   J [group = second_group];
+}" width="976" height="424" />
+</p>
+</div>
+<div class="section" id="diagram-attributes">
+<h2>diagram attributes<a class="headerlink" href="#diagram-attributes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.2: </span>default_shape</p>
+<div class="highlight-python"><pre>diagram {
+  // Set node metrix
+  node_width = 200;  // default value is 128
+  node_height = 100;  // default value is 40
+
+  // Set span metrix
+  span_width = 240;  // default value is 64
+  span_height = 120;  // default value is 40
+
+  // Set fontsize
+  fontsize = 20;  // default value is 11
+
+  // set default shape
+  default_shape = roundedbox;  // default value is 'box'
+
+  A -&gt; B [label = "Use long long\nedge label"];
+  A -&gt; C;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-c8aae5236382b4746fef423de5965e077c0e7a1d.png" alt="diagram {
+  // Set node metrix
+  node_width = 200;  // default value is 128
+  node_height = 100;  // default value is 40
+
+  // Set span metrix
+  span_width = 240;  // default value is 64
+  span_height = 120;  // default value is 40
+
+  // Set fontsize
+  fontsize = 20;  // default value is 11
+
+  // set default shape
+  default_shape = roundedbox;  // default value is 'box'
+
+  A -&gt; B [label = &quot;Use long long\nedge label&quot;];
+  A -&gt; C;
+}" width="880" height="816" />
+</p>
+</div>
+<div class="section" id="portrait-mode">
+<h2>portrait mode<a class="headerlink" href="#portrait-mode" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.0.</span></p>
+<div class="highlight-python"><pre>{
+  orientation = portrait
+
+  A -&gt; B -&gt; C;
+       B -&gt; D;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-cbd04fd98f02dd0bbfd690f6cc4c7f35d43fa791.png" alt="{
+  orientation = portrait
+
+  A -&gt; B -&gt; C;
+       B -&gt; D;
+}" width="400" height="344" />
+</p>
+</div>
+<div class="section" id="portrait-group">
+<h2>portrait group<a class="headerlink" href="#portrait-group" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.7.4.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B -&gt; C;
+
+  group {
+    orientation = portrait
+
+    C -&gt; D -&gt; E;
+  }
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-8e6ba7eeacecfce5799ef76b1f245f1c8f3570aa.png" alt="{
+  A -&gt; B -&gt; C;
+
+  group {
+    orientation = portrait
+
+    C -&gt; D -&gt; E;
+  }
+}" width="592" height="344" />
+</p>
+</div>
+<div class="section" id="simple-diagram-for-master-data-manager">
+<h2>Simple diagram for master data manager<a class="headerlink" href="#simple-diagram-for-master-data-manager" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram admin {
+  index [label = "List of FOOs"];
+  add [label = "Add FOO"];
+  add_confirm [label = "Add FOO (confirm)"];
+  edit [label = "Edit FOO"];
+  edit_confirm [label = "Edit FOO (confirm)"];
+  show [label = "Show FOO"];
+  delete_confirm [label = "Delete FOO (confirm)"];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-c63ad66ec48f9eb0c96ea78e72b83b73effa549a.png" alt="diagram admin {
+  index [label = &quot;List of FOOs&quot;];
+  add [label = &quot;Add FOO&quot;];
+  add_confirm [label = &quot;Add FOO (confirm)&quot;];
+  edit [label = &quot;Edit FOO&quot;];
+  edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
+  show [label = &quot;Show FOO&quot;];
+  delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}" width="592" height="424" />
+</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sample diagams</a><ul>
+<li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
+<li><a class="reference internal" href="#label-attribute-to-nodes-and-edges">label attribute to nodes and edges</a></li>
+<li><a class="reference internal" href="#style-attribute-to-nodes-and-edges">style attribute to nodes and edges</a></li>
+<li><a class="reference internal" href="#branched-edges">branched edges</a></li>
+<li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
+<li><a class="reference internal" href="#edge-folding">edge folding</a></li>
+<li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
+<li><a class="reference internal" href="#shape-of-nodes">shape of nodes</a></li>
+<li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
+<li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
+<li><a class="reference internal" href="#portrait-mode">portrait mode</a></li>
+<li><a class="reference internal" href="#portrait-group">portrait group</a></li>
+<li><a class="reference internal" href="#simple-diagram-for-master-data-manager">Simple diagram for master data manager</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction of blockdiag</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sphinxcontrib.html"
+                        title="next chapter">sphinxcontrib-blockdiag</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/examples.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-blockdiag"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of blockdiag"
+             >previous</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>
