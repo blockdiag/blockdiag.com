@@ -1,55 +1,47 @@
-=========================
-Introduction of blockdiag
-=========================
+================
+blockdiag の概要
+================
 
-Features
+機能
 ========
 
-* Generate block-diagram from dot like text (basic feature).
-* Multilingualization for node-label (utf-8 only).
-* Sphinx embedding (using sphinxcontrib-blockdiag package)
+* テキストファイルからブロック図を生成
+* 日本語(UTF-8)対応
+* Sphinx 文書への埋め込み (sphinxcontrib-blockdiag パッケージの利用)
 
-Setup
-=====
+インストール
+============
 
-by easy_install
-----------------
-Make environment::
+easy_install 経由の場合
+-----------------------
+以下のコマンドで `blockdiag` をインストールします。::
 
    $ easy_install blockdiag
 
-If you want to export as PDF format, give pdf arguments::
+PDF 出力機能を利用する場合は、[pdf] パラメータを付けてインストールします。::
 
    $ easy_install "blockdiag[pdf]"
 
-by buildout
-------------
-Make environment::
+buildout 経由の場合
+-------------------
+以下のコマンドで `blockdiag` をインストールします。::
 
    $ hg clone http://bitbucket.org/tk0miya/blockdiag
    $ cd blockdiag
    $ python bootstrap.py
    $ bin/buildout
 
-Copy and modify ini file. example::
 
-   $ cp <blockdiag installed path>/blockdiag/examples/simple.diag .
-   $ vi simple.diag
+実行方法
+========
+ブロック図を生成するには `blockdiag` コマンドを起動します。::
 
-Please refer to :ref:`sample-diagrams` section for the format of the
-`simpla.diag` configuration file.
-
-
-Usage
-=====
-
-Execute blockdiag command::
-
+   $ cp examples/simple.diag .
    $ blockdiag simple.diag
    $ ls simple.png
    simple.png
 
-If you want SVG images or PDF images, use -T option::
+SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。::
 
    $ blockdiag -Tsvg simple.diag
    $ ls simple.svg
@@ -60,17 +52,17 @@ If you want SVG images or PDF images, use -T option::
    simple.pdf
 
 
-Font Configuration
-==================
-
-blockdiag uses TrueType Font to render text. 
-blockdiag try to detect installed fonts but if nothing detected,
-You can specify fonts with -f (--font) option::
+フォント設定
+============
+`blockdiag` はブロック図の生成に TrueType フォントを利用します。
+`blockdiag` は自動的に利用可能なフォントを取得しますが、
+-f (--font) オプションにて特定のフォントで画像を生成することができます。::
 
    $ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
-If you always use same font, write $HOME/.blockdiagrc::
+また、$HOME/.blockdiagrc ファイルに設定を書くことで
+常に同じフォントを利用することができます。::
 
    $ cat $HOME/.blockdiagrc
    [blockdiag]
@@ -79,13 +71,12 @@ If you always use same font, write $HOME/.blockdiagrc::
 
 Requirements
 ============
+* Python 2.4 以降 (3.x は未対応)
+* Python Imaging Library 1.1.6 以降
+* funcparserlib 0.3.4 以降
+* setuptools もしくは distriubte.
 
-* Python 2.4 or later (not support 3.x)
-* Python Imaging Library 1.1.6 or later.
-* funcparserlib 0.3.4 or later.
-* setuptools or distriubte.
 
-
-License
-=======
+ライセンス
+==========
 Python Software Foundation License.

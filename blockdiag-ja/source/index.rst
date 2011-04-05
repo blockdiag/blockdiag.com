@@ -1,11 +1,11 @@
-================================================
-blockdiag - simple block-diagram image generator
-================================================
+==============================
+ブロック図生成ツール blockdiag
+==============================
 
-`blockdiag` generate block-diagram image file from .diag file.  
-.diag file is similar to DOT file (graphviz's).
+`blockdiag` はシンプルなテキストからブロック図を生成する
+ブロック図生成ツールです。
 
-You can get diagrams like this.
+`blockdiag` を用いると以下のような図が簡単に生成できます。
 
 .. blockdiag::
 
