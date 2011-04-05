@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>blockdiag の概要 &mdash; blockdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+
+    <link rel="top" title="blockdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="出力サンプル" href="examples.html" />
+    <link rel="prev" title="ブロック図生成ツール blockdiag" href="index.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="examples.html" title="出力サンプル"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="ブロック図生成ツール blockdiag"
+             accesskey="P">前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="blockdiag">
+<h1>blockdiag の概要<a class="headerlink" href="#blockdiag" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id1">
+<h2>機能<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>テキストファイルからブロック図を生成</li>
+<li>日本語(UTF-8)対応</li>
+<li>Sphinx 文書への埋め込み (sphinxcontrib-blockdiag パッケージの利用)</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>インストール<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="easy-install">
+<h3>easy_install 経由の場合<a class="headerlink" href="#easy-install" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
+<div class="highlight-python"><pre>$ easy_install blockdiag</pre>
+</div>
+<p>PDF 出力機能を利用する場合は、[pdf] パラメータを付けてインストールします。:</p>
+<div class="highlight-python"><pre>$ easy_install "blockdiag[pdf]"</pre>
+</div>
+</div>
+<div class="section" id="buildout">
+<h3>buildout 経由の場合<a class="headerlink" href="#buildout" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
+<div class="highlight-python"><pre>$ hg clone http://bitbucket.org/tk0miya/blockdiag
+$ cd blockdiag
+$ python bootstrap.py
+$ bin/buildout</pre>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>実行方法<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ブロック図を生成するには <cite>blockdiag</cite> コマンドを起動します。:</p>
+<div class="highlight-python"><pre>$ cp examples/simple.diag .
+$ blockdiag simple.diag
+$ ls simple.png
+simple.png</pre>
+</div>
+<p>SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。:</p>
+<div class="highlight-python"><pre>$ blockdiag -Tsvg simple.diag
+$ ls simple.svg
+simple.svg
+
+$ blockdiag -Tpdf simple.diag
+$ ls simple.pdf
+simple.pdf</pre>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>フォント設定<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><cite>blockdiag</cite> はブロック図の生成に TrueType フォントを利用します。
+<cite>blockdiag</cite> は自動的に利用可能なフォントを取得しますが、
+-f (&#8211;font) オプションにて特定のフォントで画像を生成することができます。:</p>
+<div class="highlight-python"><pre>$ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag</pre>
+</div>
+<p>また、$HOME/.blockdiagrc ファイルに設定を書くことで
+常に同じフォントを利用することができます。:</p>
+<div class="highlight-python"><pre>$ cat $HOME/.blockdiagrc
+[blockdiag]
+fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</pre>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>事前に入れておくべきソフトウェア<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>Python 2.4 以降 (3.x は未対応)</li>
+<li>Python Imaging Library 1.1.6 以降</li>
+<li>funcparserlib 0.3.4 以降</li>
+<li>setuptools もしくは distriubte.</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>ライセンス<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Python Software Foundation License.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">blockdiag の概要</a><ul>
+<li><a class="reference internal" href="#id1">機能</a></li>
+<li><a class="reference internal" href="#id2">インストール</a><ul>
+<li><a class="reference internal" href="#easy-install">easy_install 経由の場合</a></li>
+<li><a class="reference internal" href="#buildout">buildout 経由の場合</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id3">実行方法</a></li>
+<li><a class="reference internal" href="#id4">フォント設定</a></li>
+<li><a class="reference internal" href="#id5">事前に入れておくべきソフトウェア</a></li>
+<li><a class="reference internal" href="#id6">ライセンス</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="index.html"
+                        title="前の章へ">ブロック図生成ツール blockdiag</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="examples.html"
+                        title="次の章へ">出力サンプル</a></p>
+  <h3>このページ</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/introduction.txt"
+           rel="nofollow">ソースコードを表示</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    モジュール、クラス、または関数名を入力してください
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="examples.html" title="出力サンプル"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="ブロック図生成ツール blockdiag"
+             >前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7 で生成しました。
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>
