@@ -31,14 +31,6 @@ Make environment::
    $ python bootstrap.py
    $ bin/buildout
 
-Copy and modify ini file. example::
-
-   $ cp <blockdiag installed path>/blockdiag/examples/simple.diag .
-   $ vi simple.diag
-
-Please refer to :ref:`sample-diagrams` section for the format of the
-`simpla.diag` configuration file.
-
 
 Usage
 =====
