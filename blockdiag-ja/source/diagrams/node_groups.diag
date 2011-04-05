@@ -1,0 +1,30 @@
+diagram admin {
+   A -> B -> C -> D;
+   A -> E;
+   A -> H;
+
+   // A、B は同じグループに所属
+   group {
+      A; B;
+   }
+
+   // E、F、G は同じグループ(second_group)に所属
+   group second_group {
+      // グループラベルを設定
+      label = "second group";
+
+      // グループの背景色を設定
+      color = "#77FF77";
+
+      E -> F -> G;
+
+      // H、I は内側のグループに所属
+      group {
+          color = "#7777FF";
+          H -> I;
+      }
+   }
+
+   // J を second_group グループに追加する
+   J [group = second_group];
+}
