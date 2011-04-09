@@ -9,15 +9,21 @@ You can embed block diagrams with `netdiag` directive.
 
    .. netdiag::
 
-       diagram admin {
-         A -> B -> C;
+       diagram {
+         network dmz {
+             web01;
+             web02;
+         }
        }
 
 .. netdiag::
 
-    diagram admin {
-      A -> B -> C;
-    }
+   diagram {
+     network dmz {
+         web01;
+         web02;
+     }
+   }
 
 Setting
 =======

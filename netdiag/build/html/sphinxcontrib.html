@@ -59,11 +59,22 @@
 You can embed block diagrams with <cite>netdiag</cite> directive.</p>
 <div class="highlight-text"><div class="highlight"><pre>.. netdiag::
 
-    diagram admin {
-      A -&gt; B -&gt; C;
+    diagram {
+      network dmz {
+          web01;
+          web02;
+      }
     }
 </pre></div>
 </div>
+<p class="netdiag">
+<img src="_images/netdiag-9d72a0009a037b6803b9261de1191412ce625157.png" alt="diagram {
+  network dmz {
+      web01;
+      web02;
+  }
+}" width="752" height="184" />
+</p>
 <div class="section" id="setting">
 <h2>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h2>
 <p>sphinxcontrib-netdiag is included in netdiag package.</p>
