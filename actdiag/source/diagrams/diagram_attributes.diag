@@ -1,0 +1,11 @@
+diagram {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  edge_height = 80;  // default value is 40
+
+  // Set fontsize.
+  fontsize = 16;  // default value is 11
+
+  browser  -> webserver [label = "GET \n/index.html"];
+  browser <-- webserver;
+}
