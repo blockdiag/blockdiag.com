@@ -12,24 +12,41 @@ blockdiag の概要
 インストール
 ============
 
-easy_install 経由の場合
+Debian 6.0 (Squeeze) の場合
+---------------------------
+apt-get コマンドで依存パッケージをインストールします。
+
+   # yum install python-imaging ttf-ipafont
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。::
+
+   # easy_install blockdiag
+
+.. note::
+
+   easy_install ではなく pypi-install を利用すると blockdiag を
+   Debian パッケージとして管理することができます。
+   pypi-install コマンドは python-stdeb パッケージに含まれているので、
+   お好みに合わせてお使い下さい。
+
+CentOS 5.5 の場合
+-----------------
+yum コマンドで依存パッケージをインストールします。
+なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
+setuptools に対応していないため、手動で egg-info を作成します。::
+
+   # yum install python-setuptools python-imaging fonts-japanese
+   # touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。::
+
+   # easy_install blockdiag
+
+そのほかの環境の場合
 -----------------------
 以下のコマンドで `blockdiag` をインストールします。::
 
    $ easy_install blockdiag
-
-PDF 出力機能を利用する場合は、[pdf] パラメータを付けてインストールします。::
-
-   $ easy_install "blockdiag[pdf]"
-
-buildout 経由の場合
--------------------
-以下のコマンドで `blockdiag` をインストールします。::
-
-   $ hg clone http://bitbucket.org/tk0miya/blockdiag
-   $ cd blockdiag
-   $ python bootstrap.py
-   $ bin/buildout
 
 
 実行方法
