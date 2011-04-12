@@ -24,8 +24,9 @@ apt-get コマンドで依存パッケージをインストールします。
 
 .. note::
 
-   easy_install ではなく pypi-install を利用すると blockdiag を
-   Debian パッケージとして管理することができます。
+   easy_install の代わりに pypi-install コマンドを利用すると
+   `blockdiag` を Debian パッケージとして管理することができます。
+
    pypi-install コマンドは python-stdeb パッケージに含まれているので、
    お好みに合わせてお使い下さい。
 
