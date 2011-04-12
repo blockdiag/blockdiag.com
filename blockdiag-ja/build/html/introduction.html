@@ -66,27 +66,46 @@
 </div>
 <div class="section" id="id2">
 <h2>インストール<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="easy-install">
-<h3>easy_install 経由の場合<a class="headerlink" href="#easy-install" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
-<div class="highlight-python"><pre>$ easy_install blockdiag</pre>
+<div class="section" id="debian-6-0-squeeze">
+<h3>Debian 6.0 (Squeeze) の場合<a class="headerlink" href="#debian-6-0-squeeze" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>apt-get コマンドで依存パッケージをインストールします。</p>
+<blockquote>
+<div># yum install python-imaging ttf-ipafont</div></blockquote>
+<p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># easy_install blockdiag</span>
+</pre></div>
 </div>
-<p>PDF 出力機能を利用する場合は、[pdf] パラメータを付けてインストールします。:</p>
-<div class="highlight-python"><pre>$ easy_install "blockdiag[pdf]"</pre>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p class="last">easy_install ではなく pypi-install を利用すると blockdiag を
+Debian パッケージとして管理することができます。
+pypi-install コマンドは python-stdeb パッケージに含まれているので、
+お好みに合わせてお使い下さい。</p>
 </div>
 </div>
-<div class="section" id="buildout">
-<h3>buildout 経由の場合<a class="headerlink" href="#buildout" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
-<div class="highlight-python"><pre>$ hg clone http://bitbucket.org/tk0miya/blockdiag
-$ cd blockdiag
-$ python bootstrap.py
-$ bin/buildout</pre>
+<div class="section" id="centos-5-5">
+<h3>CentOS 5.5 の場合<a class="headerlink" href="#centos-5-5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>yum コマンドで依存パッケージをインストールします。
+なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
+setuptools に対応していないため、手動で egg-info を作成します。:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># yum install python-setuptools python-imaging fonts-japanese</span>
+<span class="c"># touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info</span>
+</pre></div>
 </div>
+<p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># easy_install blockdiag</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>実行方法<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h3>そのほかの環境の場合<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
+<div class="highlight-python"><pre>$ easy_install blockdiag</pre>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>実行方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ブロック図を生成するには <cite>blockdiag</cite> コマンドを起動します。:</p>
 <div class="highlight-python"><pre>$ cp examples/simple.diag .
 $ blockdiag simple.diag
@@ -103,8 +122,8 @@ $ ls simple.pdf
 simple.pdf</pre>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>フォント設定<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h2>フォント設定<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><cite>blockdiag</cite> はブロック図の生成に TrueType フォントを利用します。
 <cite>blockdiag</cite> は自動的に利用可能なフォントを取得しますが、
 -f (&#8211;font) オプションにて特定のフォントで画像を生成することができます。:</p>
@@ -117,17 +136,17 @@ simple.pdf</pre>
 fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</pre>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>事前に入れておくべきソフトウェア<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id6">
+<h2>事前に入れておくべきソフトウェア<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li>Python 2.4 以降 (3.x は未対応)</li>
-<li>Python Imaging Library 1.1.6 以降</li>
+<li>Python Imaging Library 1.1.5 以降</li>
 <li>funcparserlib 0.3.4 以降</li>
 <li>setuptools もしくは distriubte.</li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>ライセンス<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id7">
+<h2>ライセンス<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Python Software Foundation License.</p>
 </div>
 </div>
@@ -143,14 +162,15 @@ fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</pre>
 <li><a class="reference internal" href="#">blockdiag の概要</a><ul>
 <li><a class="reference internal" href="#id1">機能</a></li>
 <li><a class="reference internal" href="#id2">インストール</a><ul>
-<li><a class="reference internal" href="#easy-install">easy_install 経由の場合</a></li>
-<li><a class="reference internal" href="#buildout">buildout 経由の場合</a></li>
+<li><a class="reference internal" href="#debian-6-0-squeeze">Debian 6.0 (Squeeze) の場合</a></li>
+<li><a class="reference internal" href="#centos-5-5">CentOS 5.5 の場合</a></li>
+<li><a class="reference internal" href="#id3">そのほかの環境の場合</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id3">実行方法</a></li>
-<li><a class="reference internal" href="#id4">フォント設定</a></li>
-<li><a class="reference internal" href="#id5">事前に入れておくべきソフトウェア</a></li>
-<li><a class="reference internal" href="#id6">ライセンス</a></li>
+<li><a class="reference internal" href="#id4">実行方法</a></li>
+<li><a class="reference internal" href="#id5">フォント設定</a></li>
+<li><a class="reference internal" href="#id6">事前に入れておくべきソフトウェア</a></li>
+<li><a class="reference internal" href="#id7">ライセンス</a></li>
 </ul>
 </li>
 </ul>
