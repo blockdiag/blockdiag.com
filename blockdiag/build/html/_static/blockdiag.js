@@ -7,7 +7,7 @@ function update_diagram() {
   __last = diagram;
 
   url = 'http://blockdiag.appspot.com/image?callback=?';
-  params = {'src': diagram};
+  params = {'src': diagram, 'encoding': 'jsonp'};
   $.ajax({
     url: url,
     dataType: "jsonp",
