@@ -1,3 +1,5 @@
+.. _sphinxcontrib-blockdiag:
+
 ====================================
 Sphinx 拡張：sphinxcontrib-blockdiag
 ====================================
@@ -25,11 +27,9 @@ Sphinx の設定
 
 easy_install 経由の場合
 -----------------------
-以下のコマンドで `sphinxcontrib-blockdiag` をインストールします。::
+以下のコマンドで `sphinxcontrib-blockdiag` をインストールします。:
 
-.. code-block:: bash
-
-   > easy_install sphinxcontrib-blockdiag
+   # easy_install sphinxcontrib-blockdiag
 
 
 Sphinx プロジェクトの設定

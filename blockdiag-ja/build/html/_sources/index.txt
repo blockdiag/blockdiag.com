@@ -22,5 +22,6 @@
 
    introduction
    examples
+   embed_diagram
    sphinxcontrib
    demo

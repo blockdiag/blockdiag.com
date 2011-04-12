@@ -1,3 +1,5 @@
+.. _sphinxcontrib-blockdiag:
+
 ====================================
 Sphinx 拡張：sphinxcontrib-blockdiag
 ====================================

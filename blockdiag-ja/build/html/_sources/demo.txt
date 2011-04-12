@@ -1,3 +1,5 @@
+.. _interactive shell for blockdiag:
+
 ======================================
 デモ：interactive shell for blockdiag
 ======================================
