@@ -89,7 +89,7 @@ SVG 形式や PDF 形式でブロック図を生成する場合は -T オプシ�
 事前に入れておくべきソフトウェア
 ================================
 * Python 2.4 以降 (3.x は未対応)
-* Python Imaging Library 1.1.6 以降
+* Python Imaging Library 1.1.5 以降
 * funcparserlib 0.3.4 以降
 * setuptools もしくは distriubte.
 
