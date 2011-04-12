@@ -15,8 +15,17 @@ Diagram source
 .. raw:: html
 
    <textarea id="diagram" cols="75" rows="10" style="font-size: 14pt; font-family: monospace;">{
-      A -> B -> C;
-           B -> D;
+     network dmz {
+         web01;
+         web02;
+     }
+     network internal {
+         db01;
+         app01;
+         app02;
+     }
+
+     dmz -- internal
    }</textarea><br />
 
 

@@ -6,7 +6,7 @@ function update_diagram() {
   if (__last == diagram) return; 
   __last = diagram;
 
-  url = 'http://blockdiag.appspot.com/seqdiag/image?callback=?';
+  url = 'http://blockdiag.appspot.com/netdiag/image?callback=?';
   params = {'encoding': 'jsonp', 'src': diagram};
   $.ajax({
     url: url,
@@ -25,7 +25,7 @@ function update_diagram() {
         }
 
         encoded_diagram = Base64.encodeURI(diagram)
-        url = 'http://blockdiag.appspot.com/seqdiag/image?encoding=base64&src=' + encoded_diagram
+        url = 'http://blockdiag.appspot.com/netdiag/image?encoding=base64&src=' + encoded_diagram
         html = '<object type="image/svg+xml" data="' + url + '" width="' + width + '" height="' + height + '" />'
         $('#diagram_image').html(html);
       }

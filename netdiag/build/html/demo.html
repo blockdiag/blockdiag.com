@@ -27,7 +27,7 @@
     <link rel="prev" title="sphinxcontrib-netdiag" href="sphinxcontrib.html" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="_static/base64.js"></script>
-    <script type="text/javascript" src="_static/seqdiag.js"></script>
+    <script type="text/javascript" src="_static/netdiag.js"></script>
  
   </head>
   <body>
@@ -60,8 +60,17 @@ You can get rendered diagrams after inputting &#8216;Diagram source&#8217;.</p>
 <div class="section" id="diagram-source">
 <h2>Diagram source<a class="headerlink" href="#diagram-source" title="Permalink to this headline">¶</a></h2>
 <textarea id="diagram" cols="75" rows="10" style="font-size: 14pt; font-family: monospace;">{
-   A -> B -> C;
-        B -> D;
+  network dmz {
+      web01;
+      web02;
+  }
+  network internal {
+      db01;
+      app01;
+      app02;
+  }
+
+  dmz -- internal
 }</textarea><br /></div>
 <div class="section" id="diagram-outputs">
 <h2>Diagram outputs<a class="headerlink" href="#diagram-outputs" title="Permalink to this headline">¶</a></h2>

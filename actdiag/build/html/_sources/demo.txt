@@ -15,8 +15,14 @@ Diagram source
 .. raw:: html
 
    <textarea id="diagram" cols="75" rows="10" style="font-size: 14pt; font-family: monospace;">{
-      A -> B -> C;
-           B -> D;
+      A -> B -> C -> D;
+
+     lane foo {
+       A; B;
+     }
+     lane bar {
+       C; D;
+     }
    }</textarea><br />
 
 
