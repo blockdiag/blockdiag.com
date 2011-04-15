@@ -16,13 +16,13 @@ Debian 6.0 (Squeeze) の場合
 ---------------------------
 apt-get コマンドで依存パッケージをインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo apt-get install python-imaging ttf-ipafont
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
@@ -40,14 +40,14 @@ yum コマンドで依存パッケージをインストールします。
 なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
 setuptools に対応していないため、手動で egg-info を作成します。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo yum install python-setuptools python-imaging fonts-japanese
    $ sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
@@ -55,7 +55,7 @@ MacOSX (MacPorts) の場合
 ------------------------
 port コマンドで依存パッケージをインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo port install py27-pil
 
@@ -63,7 +63,7 @@ port コマンドで依存パッケージをインストールします。
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
@@ -97,14 +97,14 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 
 その後、以下のコマンドで freetype2 および PIL をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo brew install freetype2
    $ sudo easy_install install pil
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
@@ -112,7 +112,7 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 -----------------------
 以下のコマンドで `blockdiag` をインストールします。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
@@ -121,7 +121,7 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 ========
 ブロック図を生成するには `blockdiag` コマンドを起動します。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ cp examples/simple.diag .
    $ blockdiag simple.diag
@@ -130,13 +130,13 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 
 SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -Tsvg simple.diag
    $ ls simple.svg
    simple.svg
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -Tpdf simple.diag
    $ ls simple.pdf
@@ -149,7 +149,7 @@ SVG 形式や PDF 形式でブロック図を生成する場合は -T オプシ�
 `blockdiag` は自動的に利用可能なフォントを取得しますが、
 -f (--font) オプションにて特定のフォントで画像を生成することができます。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
@@ -157,7 +157,7 @@ SVG 形式や PDF 形式でブロック図を生成する場合は -T オプシ�
 また、$HOME/.blockdiagrc ファイルに設定を書くことで
 常に同じフォントを利用することができます。
 
-.. code-block:: none
+.. code-block:: bash
 
    $ cat $HOME/.blockdiagrc
    [blockdiag]
