@@ -15,7 +15,7 @@ by easy_install
 ----------------
 Make environment
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install seqdiag
 
@@ -23,7 +23,7 @@ by buildout
 ------------
 Make environment
 
-.. code-block:: none
+.. code-block:: bash
 
    $ hg clone http://bitbucket.org/tk0miya/seqdiag
    $ cd seqdiag
@@ -32,7 +32,7 @@ Make environment
 
 Copy and modify ini file. example
 
-.. code-block:: none
+.. code-block:: bash
 
    $ cp <seqdiag installed path>/seqdiag/examples/simple.diag .
    $ vi simple.diag
@@ -45,7 +45,7 @@ Usage
 =====
 Execute seqdiag command
 
-.. code-block:: none
+.. code-block:: bash
 
    $ seqdiag simple.diag
    $ ls simple.png
@@ -53,7 +53,7 @@ Execute seqdiag command
 
 If you want SVG images, use -T option
 
-.. code-block:: none
+.. code-block:: bash
 
    $ seqdiag -Tsvg simple.diag
    $ ls simple.svg
@@ -66,14 +66,14 @@ seqdiag uses TrueType Font to render text.
 seqdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (--font) option
 
-.. code-block:: none
+.. code-block:: bash
 
    $ seqdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
 If you always use same font, write $HOME/.seqdiagrc
 
-.. code-block:: none
+.. code-block:: bash
 
    $ cat $HOME/.seqdiagrc
    [seqdiag]
