@@ -101,7 +101,7 @@ setuptools に対応していないため、手動で egg-info を作成しま�
 <div class="section" id="macosx-macports">
 <h3>MacOSX (MacPorts) の場合<a class="headerlink" href="#macosx-macports" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>port コマンドで依存パッケージをインストールします。</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo port install py27-pil
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo port install py27-setuptools py27-pil
 </pre></div>
 </div>
 <div class="admonition note">
@@ -109,8 +109,15 @@ setuptools に対応していないため、手動で egg-info を作成しま�
 <p class="last">お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。</p>
 </div>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo /opt/local/bin/easy_install-2.7 blockdiag
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p>Mac 標準でインストールされている easy_install コマンドを使用した場合
+blockdiag は正しく動作しません。</p>
+<p class="last">PATH の設定や、フルパス指定するなどして
+MacPorts でインストールした easy_install を利用して下さい。</p>
 </div>
 </div>
 <div class="section" id="macosx-homebrew">

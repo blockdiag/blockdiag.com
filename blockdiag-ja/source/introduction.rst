@@ -57,7 +57,7 @@ port コマンドで依存パッケージをインストールします。
 
 .. code-block:: bash
 
-   $ sudo port install py27-pil
+   $ sudo port install py27-setuptools py27-pil
 
 .. note:: お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。
 
@@ -65,7 +65,15 @@ port コマンドで依存パッケージをインストールします。
 
 .. code-block:: bash
 
-   $ sudo easy_install blockdiag
+   $ sudo /opt/local/bin/easy_install-2.7 blockdiag
+
+.. note::
+
+   Mac 標準でインストールされている easy_install コマンドを使用した場合
+   blockdiag は正しく動作しません。
+
+   PATH の設定や、フルパス指定するなどして
+   MacPorts でインストールした easy_install を利用して下さい。
 
 MacOSX (homebrew) の場合
 ------------------------
