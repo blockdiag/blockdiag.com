@@ -100,10 +100,9 @@ Wiki External Filter Plugin を利用します。</p>
 encoding=base64 を指定した場合は base64 エンコードする必要があります。</td>
 </tr>
 <tr><td>encoding</td>
-<td><p class="first">base64, jsonp のいずれかを指定することができます。</p>
-<p class="last">base64 を指定した場合、src に指定するテキストを base64 形式で送信します。
-jsonp を指定した場合、jsonp 形式で結果を受け取ることができます。</p>
-</td>
+<td>base64, jsonp のいずれかを指定することができます。
+base64 を指定した場合、src に指定するテキストを base64 形式で送信します。
+jsonp を指定した場合、jsonp 形式で結果を受け取ることができます。</td>
 </tr>
 <tr><td>callback</td>
 <td>コールバック関数の名前を指定します。
@@ -111,6 +110,10 @@ encoding=jsonp の場合のみ有効です。</td>
 </tr>
 </tbody>
 </table>
+<p>サーバは、受信したテキストデータが正常な図であれば、
+SVG 形式のブロック図を送信します。
+もし受信したテキストに文法間違いやエラーがあった場合は、
+空のレスポンスを返します。</p>
 <div class="admonition note">
 <p class="first admonition-title">ノート</p>
 <p class="last">この API は実験的に提供しているものであるため、

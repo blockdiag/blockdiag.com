@@ -70,10 +70,10 @@
 <h3>Debian 6.0 (Squeeze) の場合<a class="headerlink" href="#debian-6-0-squeeze" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>apt-get コマンドで依存パッケージをインストールします。</p>
 <blockquote>
-<div># yum install python-imaging ttf-ipafont</div></blockquote>
+<div>$ sudo apt-get install python-imaging ttf-ipafont</div></blockquote>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
 <blockquote>
-<div># easy_install blockdiag</div></blockquote>
+<div>$ sudo easy_install blockdiag</div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">ノート</p>
 <p>easy_install の代わりに pypi-install コマンドを利用すると
@@ -88,17 +88,63 @@
 なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
 setuptools に対応していないため、手動で egg-info を作成します。:</p>
 <blockquote>
-<div># yum install python-setuptools python-imaging fonts-japanese
-# touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info</div></blockquote>
+<div>$ sudo yum install python-setuptools python-imaging fonts-japanese
+$ sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info</div></blockquote>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
 <blockquote>
-<div># easy_install blockdiag</div></blockquote>
+<div>$ sudo easy_install blockdiag</div></blockquote>
+</div>
+<div class="section" id="macosx-macports">
+<h3>MacOSX (MacPorts) の場合<a class="headerlink" href="#macosx-macports" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>port コマンドで依存パッケージをインストールします。</p>
+<blockquote>
+<div>$ sudo port install py27-pil</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p class="last">お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。</p>
+</div>
+<p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
+<blockquote>
+<div>$ sudo easy_install blockdiag</div></blockquote>
+</div>
+<div class="section" id="macosx-homebrew">
+<h3>MacOSX (homebrew) の場合<a class="headerlink" href="#macosx-homebrew" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>MacOSX (homebrew) の環境でインストールされる PIL パッケージは
+freetype2 に対応していないためそのままでは blockdiag を利用することはできません。</p>
+<p>また、freetype2 用の Foluma (パッケージ)は提供されていないため、
+以下の内容で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。</p>
+<div class="highlight-ruby"><div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;formula&#39;</span>
+
+<span class="k">class</span> <span class="nc">Freetype2</span> <span class="o">&lt;</span><span class="no">Formula</span>
+  <span class="n">url</span> <span class="s1">&#39;http://sourceforge.net/projects/freetype/files/freetype2/2.4.4/freetype-2.4.4.tar.gz/download&#39;</span>
+  <span class="n">homepage</span> <span class="s1">&#39;http://freetype.sourceforge.net/index2.html&#39;</span>
+  <span class="n">md5</span> <span class="s1">&#39;9273efacffb683483e58a9e113efae9f&#39;</span>
+  <span class="n">version</span> <span class="s1">&#39;2.4.4&#39;</span>
+
+  <span class="c1"># depends_on &#39;cmake&#39;</span>
+
+  <span class="k">def</span> <span class="nf">install</span>
+    <span class="nb">system</span> <span class="s2">&quot;./configure&quot;</span><span class="p">,</span> <span class="s2">&quot;--disable-debug&quot;</span><span class="p">,</span> <span class="s2">&quot;--disable-dependency-tracking&quot;</span><span class="p">,</span>
+                          <span class="s2">&quot;--prefix=</span><span class="si">#{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="c1"># system &quot;cmake . #{std_cmake_parameters}&quot;</span>
+    <span class="nb">system</span> <span class="s2">&quot;make install&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>その後、以下のコマンドで freetype2 および PIL をインストールします。:</p>
+<div class="highlight-python"><pre>$ sudo brew install freetype2
+$ sudo easy_install install pil</pre>
+</div>
+<p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。:</p>
+<blockquote>
+<div>$ sudo easy_install blockdiag</div></blockquote>
 </div>
 <div class="section" id="id3">
 <h3>そのほかの環境の場合<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>以下のコマンドで <cite>blockdiag</cite> をインストールします。:</p>
 <blockquote>
-<div>$ easy_install blockdiag</div></blockquote>
+<div>$ sudo easy_install blockdiag</div></blockquote>
 </div>
 </div>
 <div class="section" id="id4">
@@ -161,6 +207,8 @@ fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</div></blockquot
 <li><a class="reference internal" href="#id2">インストール</a><ul>
 <li><a class="reference internal" href="#debian-6-0-squeeze">Debian 6.0 (Squeeze) の場合</a></li>
 <li><a class="reference internal" href="#centos-5-5">CentOS 5.5 の場合</a></li>
+<li><a class="reference internal" href="#macosx-macports">MacOSX (MacPorts) の場合</a></li>
+<li><a class="reference internal" href="#macosx-homebrew">MacOSX (homebrew) の場合</a></li>
 <li><a class="reference internal" href="#id3">そのほかの環境の場合</a></li>
 </ul>
 </li>
