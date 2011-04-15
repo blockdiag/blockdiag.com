@@ -69,11 +69,11 @@
 <div class="section" id="debian-6-0-squeeze">
 <h3>Debian 6.0 (Squeeze) の場合<a class="headerlink" href="#debian-6-0-squeeze" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>apt-get コマンドで依存パッケージをインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo apt-get install python-imaging ttf-ipafont
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install python-imaging ttf-ipafont
 </pre></div>
 </div>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 <div class="admonition note">
@@ -89,19 +89,19 @@
 <p>yum コマンドで依存パッケージをインストールします。
 なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
 setuptools に対応していないため、手動で egg-info を作成します。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo yum install python-setuptools python-imaging fonts-japanese
-$ sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo yum install python-setuptools python-imaging fonts-japanese
+<span class="nv">$ </span>sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
 </pre></div>
 </div>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 </div>
 <div class="section" id="macosx-macports">
 <h3>MacOSX (MacPorts) の場合<a class="headerlink" href="#macosx-macports" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>port コマンドで依存パッケージをインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo port install py27-pil
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo port install py27-pil
 </pre></div>
 </div>
 <div class="admonition note">
@@ -109,7 +109,7 @@ $ sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
 <p class="last">お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。</p>
 </div>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 </div>
@@ -139,19 +139,19 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 </pre></div>
 </div>
 <p>その後、以下のコマンドで freetype2 および PIL をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo brew install freetype2
-$ sudo easy_install install pil
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo brew install freetype2
+<span class="nv">$ </span>sudo easy_install install pil
 </pre></div>
 </div>
 <p>その後、easy_install コマンドにて <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
 <h3>そのほかの環境の場合<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>以下のコマンドで <cite>blockdiag</cite> をインストールします。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 </div>
@@ -159,20 +159,20 @@ $ sudo easy_install install pil
 <div class="section" id="id4">
 <h2>実行方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ブロック図を生成するには <cite>blockdiag</cite> コマンドを起動します。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cp examples/simple.diag .
-$ blockdiag simple.diag
-$ ls simple.png
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp examples/simple.diag .
+<span class="nv">$ </span>blockdiag simple.diag
+<span class="nv">$ </span>ls simple.png
 simple.png
 </pre></div>
 </div>
 <p>SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -Tsvg simple.diag
-$ ls simple.svg
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -Tsvg simple.diag
+<span class="nv">$ </span>ls simple.svg
 simple.svg
 </pre></div>
 </div>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -Tpdf simple.diag
-$ ls simple.pdf
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -Tpdf simple.diag
+<span class="nv">$ </span>ls simple.pdf
 simple.pdf
 </pre></div>
 </div>
@@ -182,14 +182,14 @@ simple.pdf
 <p><cite>blockdiag</cite> はブロック図の生成に TrueType フォントを利用します。
 <cite>blockdiag</cite> は自動的に利用可能なフォントを取得しますが、
 -f (&#8211;font) オプションにて特定のフォントで画像を生成することができます。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 </pre></div>
 </div>
 <p>また、$HOME/.blockdiagrc ファイルに設定を書くことで
 常に同じフォントを利用することができます。</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cat $HOME/.blockdiagrc
-[blockdiag]
-fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.blockdiagrc
+<span class="o">[</span>blockdiag<span class="o">]</span>
+<span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 </pre></div>
 </div>
 </div>
