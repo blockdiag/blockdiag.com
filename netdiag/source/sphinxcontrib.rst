@@ -35,7 +35,7 @@ Install
 
 .. code-block:: bash
 
-   > easy_install netdiag
+   $ sudo easy_install netdiag
 
 
 Configure Sphinx
