@@ -34,10 +34,10 @@ apt-get コマンドで依存パッケージをインストールします。
    pypi-install コマンドは python-stdeb パッケージに含まれているので、
    お好みに合わせてお使い下さい。
 
-CentOS 5.5 の場合
------------------
+CentOS 5.5/5.6 の場合
+---------------------
 yum コマンドで依存パッケージをインストールします。
-なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
+なお、CentOS 付属の PIL (python-imaging) パッケージは
 setuptools に対応していないため、手動で egg-info を作成します。
 
 .. code-block:: bash
