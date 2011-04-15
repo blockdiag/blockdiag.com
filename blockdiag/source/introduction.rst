@@ -15,13 +15,13 @@ by easy_install
 ----------------
 Make environment
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install blockdiag
 
 If you want to export as PDF format, give pdf arguments
 
-.. code-block:: none
+.. code-block:: bash
 
    $ sudo easy_install "blockdiag[pdf]"
 
@@ -29,7 +29,7 @@ by buildout
 ------------
 Make environment
 
-.. code-block:: none
+.. code-block:: bash
 
    $ hg clone http://bitbucket.org/tk0miya/blockdiag
    $ cd blockdiag
@@ -41,7 +41,7 @@ Usage
 =====
 Execute blockdiag command
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag simple.diag
    $ ls simple.png
@@ -49,13 +49,13 @@ Execute blockdiag command
 
 If you want SVG images or PDF images, use -T option
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -Tsvg simple.diag
    $ ls simple.svg
    simple.svg
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -Tpdf simple.diag
    $ ls simple.pdf
@@ -68,14 +68,14 @@ blockdiag uses TrueType Font to render text.
 blockdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (--font) option
 
-.. code-block:: none
+.. code-block:: bash
 
    $ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
 If you always use same font, write $HOME/.blockdiagrc
 
-.. code-block:: none
+.. code-block:: bash
 
    $ cat $HOME/.blockdiagrc
    [blockdiag]
