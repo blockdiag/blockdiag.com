@@ -4,7 +4,6 @@ Introduction of blockdiag
 
 Features
 ========
-
 * Generate block-diagram from dot like text (basic feature).
 * Multilingualization for node-label (utf-8 only).
 * Sphinx embedding (using sphinxcontrib-blockdiag package)
@@ -14,17 +13,23 @@ Setup
 
 by easy_install
 ----------------
-Make environment::
+Make environment
 
-   $ easy_install blockdiag
+.. code-block:: none
 
-If you want to export as PDF format, give pdf arguments::
+   $ sudo easy_install blockdiag
 
-   $ easy_install "blockdiag[pdf]"
+If you want to export as PDF format, give pdf arguments
+
+.. code-block:: none
+
+   $ sudo easy_install "blockdiag[pdf]"
 
 by buildout
 ------------
-Make environment::
+Make environment
+
+.. code-block:: none
 
    $ hg clone http://bitbucket.org/tk0miya/blockdiag
    $ cd blockdiag
@@ -34,18 +39,23 @@ Make environment::
 
 Usage
 =====
+Execute blockdiag command
 
-Execute blockdiag command::
+.. code-block:: none
 
    $ blockdiag simple.diag
    $ ls simple.png
    simple.png
 
-If you want SVG images or PDF images, use -T option::
+If you want SVG images or PDF images, use -T option
+
+.. code-block:: none
 
    $ blockdiag -Tsvg simple.diag
    $ ls simple.svg
    simple.svg
+
+.. code-block:: none
 
    $ blockdiag -Tpdf simple.diag
    $ ls simple.pdf
@@ -54,15 +64,18 @@ If you want SVG images or PDF images, use -T option::
 
 Font Configuration
 ==================
-
 blockdiag uses TrueType Font to render text. 
 blockdiag try to detect installed fonts but if nothing detected,
-You can specify fonts with -f (--font) option::
+You can specify fonts with -f (--font) option
+
+.. code-block:: none
 
    $ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
-If you always use same font, write $HOME/.blockdiagrc::
+If you always use same font, write $HOME/.blockdiagrc
+
+.. code-block:: none
 
    $ cat $HOME/.blockdiagrc
    [blockdiag]
@@ -71,7 +84,6 @@ If you always use same font, write $HOME/.blockdiagrc::
 
 Requirements
 ============
-
 * Python 2.4 or later (not support 3.x)
 * Python Imaging Library 1.1.5 or later.
 * funcparserlib 0.3.4 or later.
