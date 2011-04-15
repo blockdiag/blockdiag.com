@@ -62,12 +62,16 @@ Web API は http://blockdiag.appspot.com/image に対して、
        encoding=base64 を指定した場合は base64 エンコードする必要があります。
    * - encoding
      - base64, jsonp のいずれかを指定することができます。
-
        base64 を指定した場合、src に指定するテキストを base64 形式で送信します。
        jsonp を指定した場合、jsonp 形式で結果を受け取ることができます。
    * - callback
      - コールバック関数の名前を指定します。
        encoding=jsonp の場合のみ有効です。
+
+サーバは、受信したテキストデータが正常な図であれば、
+SVG 形式のブロック図を送信します。
+もし受信したテキストに文法間違いやエラーがあった場合は、
+空のレスポンスを返します。
 
 .. note::
 
