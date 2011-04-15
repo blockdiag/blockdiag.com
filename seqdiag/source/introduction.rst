@@ -4,7 +4,6 @@ Introduction of seqdiag
 
 Features
 ========
-
 * Generate sequence-diagram from dot like text (basic feature).
 * Multilingualization for node-label (utf-8 only).
 * Sphinx embedding
@@ -14,20 +13,26 @@ Setup
 
 by easy_install
 ----------------
-Make environment::
+Make environment
 
-   $ easy_install seqdiag
+.. code-block:: none
+
+   $ sudo easy_install seqdiag
 
 by buildout
 ------------
-Make environment::
+Make environment
+
+.. code-block:: none
 
    $ hg clone http://bitbucket.org/tk0miya/seqdiag
    $ cd seqdiag
    $ python bootstrap.py
    $ bin/buildout
 
-Copy and modify ini file. example::
+Copy and modify ini file. example
+
+.. code-block:: none
 
    $ cp <seqdiag installed path>/seqdiag/examples/simple.diag .
    $ vi simple.diag
@@ -38,14 +43,17 @@ Please refer to :ref:`sample-diagrams` section for the format of the
 
 Usage
 =====
+Execute seqdiag command
 
-Execute seqdiag command::
+.. code-block:: none
 
    $ seqdiag simple.diag
    $ ls simple.png
    simple.png
 
-If you want SVG images, use -T option::
+If you want SVG images, use -T option
+
+.. code-block:: none
 
    $ seqdiag -Tsvg simple.diag
    $ ls simple.svg
@@ -54,15 +62,18 @@ If you want SVG images, use -T option::
 
 Font Configuration
 ==================
-
 seqdiag uses TrueType Font to render text. 
 seqdiag try to detect installed fonts but if nothing detected,
-You can specify fonts with -f (--font) option::
+You can specify fonts with -f (--font) option
+
+.. code-block:: none
 
    $ seqdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
-If you always use same font, write $HOME/.seqdiagrc::
+If you always use same font, write $HOME/.seqdiagrc
+
+.. code-block:: none
 
    $ cat $HOME/.seqdiagrc
    [seqdiag]
@@ -71,7 +82,6 @@ If you always use same font, write $HOME/.seqdiagrc::
 
 Requirements
 ============
-
 * Python 2.4 or later (not support 3.x)
 * Python Imaging Library 1.1.5 or later.
 * funcparserlib 0.3.4 or later.
