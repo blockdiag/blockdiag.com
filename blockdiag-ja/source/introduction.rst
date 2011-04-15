@@ -43,6 +43,55 @@ setuptools に対応していないため、手動で egg-info を作成しま�
 
    # easy_install blockdiag
 
+MacOSX (MacPorts) の場合
+------------------------
+port コマンドで依存パッケージをインストールします。
+
+   $ sudo port install py27-pil
+
+.. note:: お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。:
+
+   $ sudo easy_install blockdiag
+
+MacOSX (homebrew) の場合
+------------------------
+MacOSX (homebrew) の環境でインストールされる PIL パッケージは
+freetype2 に対応していないためそのままでは blockdiag を利用することはできません。
+
+また、freetype2 用の Foluma (パッケージ)は提供されていないため、
+以下の内容で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。
+
+.. code-block:: ruby
+
+   require 'formula'
+
+   class Freetype2 <Formula
+     url 'http://sourceforge.net/projects/freetype/files/freetype2/2.4.4/freetype-2.4.4.tar.gz/download'
+     homepage 'http://freetype.sourceforge.net/index2.html'
+     md5 '9273efacffb683483e58a9e113efae9f'
+     version '2.4.4'
+
+     # depends_on 'cmake'
+
+     def install
+       system "./configure", "--disable-debug", "--disable-dependency-tracking",
+                             "--prefix=#{prefix}"
+       # system "cmake . #{std_cmake_parameters}"
+       system "make install"
+     end
+   end
+
+その後、以下のコマンドで freetype2 および PIL をインストールします。::
+
+   $ sudo brew install freetype2
+   $ sudo easy_install install pil
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。:
+
+   $ sudo easy_install blockdiag
+
 そのほかの環境の場合
 -----------------------
 以下のコマンドで `blockdiag` をインストールします。:
