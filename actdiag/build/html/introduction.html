@@ -67,21 +67,24 @@
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="by-easy-install">
 <h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
-<p>Make environment:</p>
-<div class="highlight-python"><pre>$ easy_install actdiag</pre>
+<p>Make environment</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install actdiag
+</pre></div>
 </div>
 </div>
 <div class="section" id="by-buildout">
 <h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
-<p>Make environment:</p>
-<div class="highlight-python"><pre>$ hg clone http://bitbucket.org/tk0miya/actdiag
-$ cd actdiag
-$ python bootstrap.py
-$ bin/buildout</pre>
+<p>Make environment</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/actdiag
+<span class="nv">$ </span><span class="nb">cd </span>actdiag
+<span class="nv">$ </span>python bootstrap.py
+<span class="nv">$ </span>bin/buildout
+</pre></div>
 </div>
-<p>Copy and modify ini file. example:</p>
-<div class="highlight-python"><pre>$ cp &lt;actdiag installed path&gt;/actdiag/examples/simple.diag .
-$ vi simple.diag</pre>
+<p>Copy and modify ini file. example</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp &lt;actdiag installed path&gt;/actdiag/examples/simple.diag .
+<span class="nv">$ </span>vi simple.diag
+</pre></div>
 </div>
 <p>Please refer to <a class="reference internal" href="examples.html#sample-diagrams"><em>Sample diagams</em></a> section for the format of the
 <cite>simpla.diag</cite> configuration file.</p>
@@ -89,28 +92,32 @@ $ vi simple.diag</pre>
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Execute actdiag command:</p>
-<div class="highlight-python"><pre>$ actdiag simple.diag
-$ ls simple.png
-simple.png</pre>
+<p>Execute actdiag command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>actdiag simple.diag
+<span class="nv">$ </span>ls simple.png
+simple.png
+</pre></div>
 </div>
-<p>If you want SVG images, use -T option:</p>
-<div class="highlight-python"><pre>$ actdiag -Tsvg simple.diag
-$ ls simple.svg
-simple.svg</pre>
+<p>If you want SVG images, use -T option</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>actdiag -Tsvg simple.diag
+<span class="nv">$ </span>ls simple.svg
+simple.svg
+</pre></div>
 </div>
 </div>
 <div class="section" id="font-configuration">
 <h2>Font Configuration<a class="headerlink" href="#font-configuration" title="Permalink to this headline">¶</a></h2>
 <p>actdiag uses TrueType Font to render text.
 actdiag try to detect installed fonts but if nothing detected,
-You can specify fonts with -f (&#8211;font) option:</p>
-<div class="highlight-python"><pre>$ actdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag</pre>
+You can specify fonts with -f (&#8211;font) option</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>actdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+</pre></div>
 </div>
-<p>If you always use same font, write $HOME/.actdiagrc:</p>
-<div class="highlight-python"><pre>$ cat $HOME/.actdiagrc
-[actdiag]
-fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf</pre>
+<p>If you always use same font, write $HOME/.actdiagrc</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.actdiagrc
+<span class="o">[</span>actdiag<span class="o">]</span>
+<span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+</pre></div>
 </div>
 </div>
 <div class="section" id="requirements">
