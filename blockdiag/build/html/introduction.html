@@ -68,21 +68,21 @@
 <div class="section" id="by-easy-install">
 <h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install blockdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install blockdiag
 </pre></div>
 </div>
 <p>If you want to export as PDF format, give pdf arguments</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install &quot;blockdiag[pdf]&quot;
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install <span class="s2">&quot;blockdiag[pdf]&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="by-buildout">
 <h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-none"><div class="highlight"><pre>$ hg clone http://bitbucket.org/tk0miya/blockdiag
-$ cd blockdiag
-$ python bootstrap.py
-$ bin/buildout
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/blockdiag
+<span class="nv">$ </span><span class="nb">cd </span>blockdiag
+<span class="nv">$ </span>python bootstrap.py
+<span class="nv">$ </span>bin/buildout
 </pre></div>
 </div>
 </div>
@@ -90,19 +90,19 @@ $ bin/buildout
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>Execute blockdiag command</p>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag simple.diag
-$ ls simple.png
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag simple.diag
+<span class="nv">$ </span>ls simple.png
 simple.png
 </pre></div>
 </div>
 <p>If you want SVG images or PDF images, use -T option</p>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -Tsvg simple.diag
-$ ls simple.svg
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -Tsvg simple.diag
+<span class="nv">$ </span>ls simple.svg
 simple.svg
 </pre></div>
 </div>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -Tpdf simple.diag
-$ ls simple.pdf
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -Tpdf simple.diag
+<span class="nv">$ </span>ls simple.pdf
 simple.pdf
 </pre></div>
 </div>
@@ -112,13 +112,13 @@ simple.pdf
 <p>blockdiag uses TrueType Font to render text.
 blockdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (&#8211;font) option</p>
-<div class="highlight-none"><div class="highlight"><pre>$ blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>blockdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 </pre></div>
 </div>
 <p>If you always use same font, write $HOME/.blockdiagrc</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cat $HOME/.blockdiagrc
-[blockdiag]
-fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.blockdiagrc
+<span class="o">[</span>blockdiag<span class="o">]</span>
+<span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 </pre></div>
 </div>
 </div>
