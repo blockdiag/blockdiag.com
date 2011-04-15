@@ -16,11 +16,11 @@ Debian 6.0 (Squeeze) の場合
 ---------------------------
 apt-get コマンドで依存パッケージをインストールします。
 
-   # yum install python-imaging ttf-ipafont
+   $ sudo apt-get install python-imaging ttf-ipafont
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。:
 
-   # easy_install blockdiag
+   $ sudo easy_install blockdiag
 
 .. note::
 
@@ -36,12 +36,12 @@ yum コマンドで依存パッケージをインストールします。
 なお、CentOS 5.5 付属の PIL (python-imaging) パッケージは
 setuptools に対応していないため、手動で egg-info を作成します。:
 
-   # yum install python-setuptools python-imaging fonts-japanese
-   # touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
+   $ sudo yum install python-setuptools python-imaging fonts-japanese
+   $ sudo touch /usr/lib/python2.4/site-packages/PIL-1.1.5.egg-info
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。:
 
-   # easy_install blockdiag
+   $ sudo easy_install blockdiag
 
 MacOSX (MacPorts) の場合
 ------------------------
@@ -96,7 +96,7 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 -----------------------
 以下のコマンドで `blockdiag` をインストールします。:
 
-   $ easy_install blockdiag
+   $ sudo easy_install blockdiag
 
 
 実行方法
