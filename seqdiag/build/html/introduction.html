@@ -68,22 +68,22 @@
 <div class="section" id="by-easy-install">
 <h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-none"><div class="highlight"><pre>$ sudo easy_install seqdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install seqdiag
 </pre></div>
 </div>
 </div>
 <div class="section" id="by-buildout">
 <h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-none"><div class="highlight"><pre>$ hg clone http://bitbucket.org/tk0miya/seqdiag
-$ cd seqdiag
-$ python bootstrap.py
-$ bin/buildout
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/seqdiag
+<span class="nv">$ </span><span class="nb">cd </span>seqdiag
+<span class="nv">$ </span>python bootstrap.py
+<span class="nv">$ </span>bin/buildout
 </pre></div>
 </div>
 <p>Copy and modify ini file. example</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cp &lt;seqdiag installed path&gt;/seqdiag/examples/simple.diag .
-$ vi simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp &lt;seqdiag installed path&gt;/seqdiag/examples/simple.diag .
+<span class="nv">$ </span>vi simple.diag
 </pre></div>
 </div>
 <p>Please refer to <a class="reference internal" href="examples.html#sample-diagrams"><em>Sample diagams</em></a> section for the format of the
@@ -93,14 +93,14 @@ $ vi simple.diag
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>Execute seqdiag command</p>
-<div class="highlight-none"><div class="highlight"><pre>$ seqdiag simple.diag
-$ ls simple.png
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>seqdiag simple.diag
+<span class="nv">$ </span>ls simple.png
 simple.png
 </pre></div>
 </div>
 <p>If you want SVG images, use -T option</p>
-<div class="highlight-none"><div class="highlight"><pre>$ seqdiag -Tsvg simple.diag
-$ ls simple.svg
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>seqdiag -Tsvg simple.diag
+<span class="nv">$ </span>ls simple.svg
 simple.svg
 </pre></div>
 </div>
@@ -110,13 +110,13 @@ simple.svg
 <p>seqdiag uses TrueType Font to render text.
 seqdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (&#8211;font) option</p>
-<div class="highlight-none"><div class="highlight"><pre>$ seqdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>seqdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 </pre></div>
 </div>
 <p>If you always use same font, write $HOME/.seqdiagrc</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cat $HOME/.seqdiagrc
-[seqdiag]
-fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.seqdiagrc
+<span class="o">[</span>seqdiag<span class="o">]</span>
+<span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 </pre></div>
 </div>
 </div>
