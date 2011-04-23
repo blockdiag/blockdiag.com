@@ -63,41 +63,35 @@
 
       web01 [address = "210.x.x.1"];
       web02 [address = "210.x.x.2"];
-      web03 [address = "210.x.x.3"];
   }
   network internal {
       address = "172.x.x.x/24";
 
+      web01 [address = "172.x.x.1"];
+      web02 [address = "172.x.x.2"];
       db01;
       db02;
-      app01;
-      app02;
   }
-
-  dmz -- internal
 }
 </pre>
 </div>
 <p class="netdiag">
-<img src="_images/netdiag-47ab91ac5b5562d9780a646f7ec29e9995b63fc0.png" alt="diagram {
+<img src="_images/netdiag-6b40893e83592eed9c3307766ee42096a82712bd.png" alt="diagram {
   network dmz {
       address = &quot;210.x.x.x/24&quot;
 
       web01 [address = &quot;210.x.x.1&quot;];
       web02 [address = &quot;210.x.x.2&quot;];
-      web03 [address = &quot;210.x.x.3&quot;];
   }
   network internal {
       address = &quot;172.x.x.x/24&quot;;
 
+      web01 [address = &quot;172.x.x.1&quot;];
+      web02 [address = &quot;172.x.x.2&quot;];
       db01;
       db02;
-      app01;
-      app02;
   }
-
-  dmz -- internal
-}" width="1136" height="344" />
+}" width="1088" height="504" />
 </p>
 </div>
 </div>
