@@ -108,7 +108,7 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 .. code-block:: bash
 
    $ sudo brew install freetype2
-   $ sudo easy_install install pil
+   $ sudo easy_install pil
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
