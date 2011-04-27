@@ -31,7 +31,7 @@ Trac に埋め込む
 
 Trac の Wiki にブロック図を埋め込むには `TracBlockDiagPlugin`_ を利用します。
 
-.. _TracBlockDiagPlugin: https://code.launchpad.net/~hid-iwata/+junk/tracblockdiagplugin
+.. _TracBlockDiagPlugin: http://trac-hacks.org/wiki/TracBlockDiagPlugin
 
 
 moinmoin に埋め込む
