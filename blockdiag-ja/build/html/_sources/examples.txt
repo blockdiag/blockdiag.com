@@ -1,5 +1,3 @@
-.. _sample-diagrams:
-
 ============
 出力サンプル
 ============
@@ -56,11 +54,19 @@
 ============
 
 .. literalinclude:: diagrams/multilingualization.diag
+.. blockdiag:: diagrams/multilingualization.diag
+
 .. note::
 
    `blockdiag` では UTF-8 エンコード以外の文字コードを扱うことはできません。
 
-.. blockdiag:: diagrams/multilingualization.diag
+.. warning::
+
+   日本語を含んだ図の出力に失敗する場合は、
+   日本語フォントが選択されていない可能性があります。
+   :ref:`blockdiag_font_configurations` もしくは
+   :ref:`sphinxcontrib_font_configurations` (Sphinx) を参考に
+   フォントの設定を確認して下さい。
 
 
 ノード形状の変更

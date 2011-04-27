@@ -151,6 +151,8 @@ SVG 形式や PDF 形式でブロック図を生成する場合は -T オプシ�
    simple.pdf
 
 
+.. _blockdiag_font_configurations:
+
 フォント設定
 ============
 `blockdiag` はブロック図の生成に TrueType フォントを利用します。

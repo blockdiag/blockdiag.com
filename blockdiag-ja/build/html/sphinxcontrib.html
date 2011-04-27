@@ -91,6 +91,12 @@
 <span class="n">blockdiag_fontpath</span> <span class="o">=</span> <span class="s">&#39;/usr/share/fonts/truetype/ipafont/ipagp.ttf&#39;</span>
 </pre></div>
 </div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">図に日本語を利用する場合は、必ず <cite>blockdiag_fontpath</cite> を設定して下さい。
+<cite>blockdiag_fontpath</cite> の設定方法は上記の例もしくは
+<em class="xref std std-ref">sphinxcontrib_font_configrations</em> を参照して下さい。</p>
+</div>
 </div>
 </div>
 <div class="section" id="id2">
@@ -117,12 +123,18 @@
 </dd></dl>
 
 </div>
-<div class="section" id="id3">
-<h2>利用可能な設定オプション<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="sphinxcontrib-font-configurations">
+<span id="id3"></span><h2>利用可能な設定オプション<a class="headerlink" href="#sphinxcontrib-font-configurations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="confval">
 <dt id="confval-blockdiag_fontpath">
 <tt class="descname">blockdiag_fontpath</tt><a class="headerlink" href="#confval-blockdiag_fontpath" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>blockdiag で利用する TrueType フォントへのパスを指定します。</p>
+<dd><p>blockdiag で利用する TrueType フォントへのパスを指定します。
+標準ではフォントを利用せず PIL 標準のフォントを利用します。</p>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">PIL 標準のフォントは日本語フォントを含みません。
+そのため、日本語を利用する場合は必ずフォントを設定して下さい。</p>
+</div>
 </dd></dl>
 
 <dl class="confval">
@@ -150,7 +162,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#id2">利用可能なディレクティブ</a></li>
-<li><a class="reference internal" href="#id3">利用可能な設定オプション</a></li>
+<li><a class="reference internal" href="#sphinxcontrib-font-configurations">利用可能な設定オプション</a></li>
 </ul>
 </li>
 </ul>

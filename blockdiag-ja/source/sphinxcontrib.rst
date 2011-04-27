@@ -47,6 +47,12 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
    # Fontpath for blockdiag (truetype font)
    blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
+.. warning::
+
+   図に日本語を利用する場合は、必ず `blockdiag_fontpath` を設定して下さい。
+   `blockdiag_fontpath` の設定方法は上記の例もしくは
+   :ref:`sphinxcontrib_font_configrations` を参照して下さい。
+
 
 利用可能なディレクティブ
 ========================
@@ -73,6 +79,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
             // some diagrams are here.
          }
 
+.. _sphinxcontrib_font_configurations:
 
 利用可能な設定オプション
 ========================
@@ -80,6 +87,12 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 .. confval:: blockdiag_fontpath
 
    blockdiag で利用する TrueType フォントへのパスを指定します。
+   標準ではフォントを利用せず PIL 標準のフォントを利用します。
+
+   .. warning::
+
+      PIL 標準のフォントは日本語フォントを含みません。
+      そのため、日本語を利用する場合は必ずフォントを設定して下さい。
 
 .. confval:: blockdiag_antialias
 
