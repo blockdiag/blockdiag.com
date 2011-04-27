@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
 
     <link rel="top" title="blockdiag v1.0 documentation" href="index.html" />
-    <link rel="next" title="Sphinx 拡張：sphinxcontrib-blockdiag" href="sphinxcontrib.html" />
+    <link rel="next" title="文書にブロック図を埋め込む" href="embed_diagram.html" />
     <link rel="prev" title="blockdiag の概要" href="introduction.html" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="_static/base64.js"></script>
@@ -40,7 +40,7 @@
           <a href="genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="sphinxcontrib.html" title="Sphinx 拡張：sphinxcontrib-blockdiag"
+          <a href="embed_diagram.html" title="文書にブロック図を埋め込む"
              accesskey="N">次へ</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="blockdiag の概要"
@@ -54,8 +54,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="sample-diagrams">
-<span id="id1"></span><h1>出力サンプル<a class="headerlink" href="#sample-diagrams" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <div class="section" id="id1">
+<h1>出力サンプル<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>シンプルなブロック図<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-python"><pre>diagram {
@@ -230,10 +230,6 @@
 }
 </pre>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">ノート</p>
-<p class="last"><cite>blockdiag</cite> では UTF-8 エンコード以外の文字コードを扱うことはできません。</p>
-</div>
 <p class="blockdiag">
 <img src="_images/blockdiag-72a88904b251b9d42a062bf77be8ad265503472e.png" alt="diagram admin {
    // 日本語をラベルに指定することができます。
@@ -248,6 +244,18 @@
    &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
 }" width="784" height="264" />
 </p>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p class="last"><cite>blockdiag</cite> では UTF-8 エンコード以外の文字コードを扱うことはできません。</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">日本語を含んだ図の出力に失敗する場合は、
+日本語フォントが選択されていない可能性があります。
+<a class="reference internal" href="introduction.html#blockdiag-font-configurations"><em>フォント設定</em></a> もしくは
+<a class="reference internal" href="sphinxcontrib.html#sphinxcontrib-font-configurations"><em>利用可能な設定オプション</em></a> (Sphinx) を参考に
+フォントの設定を確認して下さい。</p>
+</div>
 </div>
 <div class="section" id="id9">
 <h2>ノード形状の変更<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
@@ -559,8 +567,8 @@
   <p class="topless"><a href="introduction.html"
                         title="前の章へ">blockdiag の概要</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="sphinxcontrib.html"
-                        title="次の章へ">Sphinx 拡張：sphinxcontrib-blockdiag</a></p>
+  <p class="topless"><a href="embed_diagram.html"
+                        title="次の章へ">文書にブロック図を埋め込む</a></p>
   <h3>このページ</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/examples.txt"
@@ -590,7 +598,7 @@
           <a href="genindex.html" title="総合索引"
              >索引</a></li>
         <li class="right" >
-          <a href="sphinxcontrib.html" title="Sphinx 拡張：sphinxcontrib-blockdiag"
+          <a href="embed_diagram.html" title="文書にブロック図を埋め込む"
              >次へ</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="blockdiag の概要"
