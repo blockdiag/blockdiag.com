@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>sphinxcontrib-netdiag &mdash; netdiag v1.0 documentation</title>
+    <title>sphinxcontrib-nwdiag &mdash; nwdiag v1.0 documentation</title>
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -23,8 +23,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
 
-    <link rel="top" title="netdiag v1.0 documentation" href="index.html" />
-    <link rel="next" title="Demo - interactive shell for netdiag" href="demo.html" />
+    <link rel="top" title="nwdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="Demo - interactive shell for nwdiag" href="demo.html" />
     <link rel="prev" title="Sample diagams" href="examples.html" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="_static/base64.js"></script>
@@ -39,12 +39,12 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="demo.html" title="Demo - interactive shell for netdiag"
+          <a href="demo.html" title="Demo - interactive shell for nwdiag"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="examples.html" title="Sample diagams"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">netdiag v1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -53,11 +53,11 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="sphinxcontrib-netdiag">
-<h1>sphinxcontrib-netdiag<a class="headerlink" href="#sphinxcontrib-netdiag" title="Permalink to this headline">¶</a></h1>
-<p><cite>sphinxcontrib-netdiag</cite> is sphinx extension for embedding netdiag diagrams.
-You can embed block diagrams with <cite>netdiag</cite> directive.</p>
-<div class="highlight-text"><div class="highlight"><pre>.. netdiag::
+  <div class="section" id="sphinxcontrib-nwdiag">
+<h1>sphinxcontrib-nwdiag<a class="headerlink" href="#sphinxcontrib-nwdiag" title="Permalink to this headline">¶</a></h1>
+<p><cite>sphinxcontrib-nwdiag</cite> is sphinx extension for embedding nwdiag diagrams.
+You can embed block diagrams with <cite>nwdiag</cite> directive.</p>
+<div class="highlight-text"><div class="highlight"><pre>.. nwdiag::
 
     diagram {
       network dmz {
@@ -67,39 +67,39 @@ You can embed block diagrams with <cite>netdiag</cite> directive.</p>
     }
 </pre></div>
 </div>
-<p class="netdiag">
-<img src="_images/netdiag-9d72a0009a037b6803b9261de1191412ce625157.png" alt="diagram {
+<p class="nwdiag">
+<img src="_images/nwdiag-9d72a0009a037b6803b9261de1191412ce625157.png" alt="diagram {
   network dmz {
       web01;
       web02;
   }
-}" width="704" height="344" />
+}" width="752" height="344" />
 </p>
 <div class="section" id="setting">
 <h2>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h2>
-<p>sphinxcontrib-netdiag is included in netdiag package.</p>
+<p>sphinxcontrib-nwdiag is included in nwdiag package.</p>
 <div class="section" id="install">
 <h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install netdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install nwdiag
 </pre></div>
 </div>
 </div>
 <div class="section" id="configure-sphinx">
 <h3>Configure Sphinx<a class="headerlink" href="#configure-sphinx" title="Permalink to this headline">¶</a></h3>
-<p>To enable this extension, add <tt class="docutils literal"><span class="pre">sphinxcontrib_netdiag</span></tt> module to extensions
+<p>To enable this extension, add <tt class="docutils literal"><span class="pre">sphinxcontrib_nwdiag</span></tt> module to extensions
 option at <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 
-<span class="c"># Path to the folder where netdiag.py is</span>
+<span class="c"># Path to the folder where nwdiag.py is</span>
 <span class="c"># NOTE: not needed if the package is installed in traditional way</span>
 <span class="c"># using setup.py or easy_install</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s">&#39;/path/to/sphinxcontrib_netdiag&#39;</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s">&#39;/path/to/sphinxcontrib_nwdiag&#39;</span><span class="p">))</span>
 
 <span class="c"># Enabled extensions</span>
-<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;sphinxcontrib_netdiag&#39;</span><span class="p">]</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;sphinxcontrib_nwdiag&#39;</span><span class="p">]</span>
 
-<span class="c"># Fontpath for netdiag (truetype font)</span>
-<span class="n">netdiag_fontpath</span> <span class="o">=</span> <span class="s">&#39;/usr/share/fonts/truetype/ipafont/ipagp.ttf&#39;</span>
+<span class="c"># Fontpath for nwdiag (truetype font)</span>
+<span class="n">nwdiag_fontpath</span> <span class="o">=</span> <span class="s">&#39;/usr/share/fonts/truetype/ipafont/ipagp.ttf&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -108,14 +108,14 @@ option at <tt class="file docutils literal"><span class="pre">conf.py</span></tt
 <h2>Directive<a class="headerlink" href="#directive" title="Permalink to this headline">¶</a></h2>
 <dl class="describe">
 <dt>
-<tt class="descname">.. netdiag:: [filename]</tt></dt>
+<tt class="descname">.. nwdiag:: [filename]</tt></dt>
 <dd><p>This directive insert a netuence diagram into the generated document.
 If filename is specified, sphinx reads external file as source script of blockfile.
-In another case, netdiag directive takes code block as source script.</p>
+In another case, nwdiag directive takes code block as source script.</p>
 <p>Examples:</p>
-<div class="highlight-python"><pre>.. netdiag:: foobar.diag
+<div class="highlight-python"><pre>.. nwdiag:: foobar.diag
 
-.. netdiag::
+.. nwdiag::
 
    diagram {
       // some diagrams are here.
@@ -127,16 +127,16 @@ In another case, netdiag directive takes code block as source script.</p>
 <div class="section" id="configuration-file-options">
 <h2>Configuration File Options<a class="headerlink" href="#configuration-file-options" title="Permalink to this headline">¶</a></h2>
 <dl class="confval">
-<dt id="confval-netdiag_fontpath">
-<tt class="descname">netdiag_fontpath</tt><a class="headerlink" href="#confval-netdiag_fontpath" title="Permalink to this definition">¶</a></dt>
+<dt id="confval-nwdiag_fontpath">
+<tt class="descname">nwdiag_fontpath</tt><a class="headerlink" href="#confval-nwdiag_fontpath" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a path for renderring fonts.
 You can use truetype font (.ttf) file path.</p>
 </dd></dl>
 
 <dl class="confval">
-<dt id="confval-netdiag_antialias">
-<tt class="descname">netdiag_antialias</tt><a class="headerlink" href="#confval-netdiag_antialias" title="Permalink to this definition">¶</a></dt>
-<dd><p>If <a class="reference internal" href="#confval-netdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">netdiag_antialias</span></tt></a>: is True, netdiag generates images
+<dt id="confval-nwdiag_antialias">
+<tt class="descname">nwdiag_antialias</tt><a class="headerlink" href="#confval-nwdiag_antialias" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference internal" href="#confval-nwdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">nwdiag_antialias</span></tt></a>: is True, nwdiag generates images
 with anti-alias filter.</p>
 </dd></dl>
 
@@ -151,7 +151,7 @@ with anti-alias filter.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">sphinxcontrib-netdiag</a><ul>
+<li><a class="reference internal" href="#">sphinxcontrib-nwdiag</a><ul>
 <li><a class="reference internal" href="#setting">Setting</a><ul>
 <li><a class="reference internal" href="#install">Install</a></li>
 <li><a class="reference internal" href="#configure-sphinx">Configure Sphinx</a></li>
@@ -168,7 +168,7 @@ with anti-alias filter.</p>
                         title="previous chapter">Sample diagams</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="demo.html"
-                        title="next chapter">Demo - interactive shell for netdiag</a></p>
+                        title="next chapter">Demo - interactive shell for nwdiag</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/sphinxcontrib.txt"
@@ -198,12 +198,12 @@ with anti-alias filter.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="demo.html" title="Demo - interactive shell for netdiag"
+          <a href="demo.html" title="Demo - interactive shell for nwdiag"
              >next</a> |</li>
         <li class="right" >
           <a href="examples.html" title="Sample diagams"
              >previous</a> |</li>
-        <li><a href="index.html">netdiag v1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
 

@@ -8,4 +8,4 @@ simple diagram
 ==============
 
 .. literalinclude:: diagrams/simple.diag
-.. netdiag:: diagrams/simple.diag
+.. nwdiag:: diagrams/simple.diag

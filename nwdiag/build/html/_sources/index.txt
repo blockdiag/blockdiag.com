@@ -1,13 +1,13 @@
-=================================================
-netdiag - simple network-diagram image generator
-=================================================
+===============================================
+nwdiag - simple network-diagram image generator
+===============================================
 
-`netdiag` generate network-diagram image file from .diag file.  
+`nwdiag` generate network-diagram image file from .diag file.  
 .diag file is similar to DOT file (graphviz's).
 
 You can get diagrams like this.
 
-.. netdiag::
+.. nwdiag::
 
    diagram {
      network dmz {

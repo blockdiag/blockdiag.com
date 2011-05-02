@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinxcontrib_netdiag']
+extensions = ['sphinx.ext.todo', 'sphinxcontrib_nwdiag']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'netdiag'
+project = u'nwdiag'
 copyright = u'2010, Takeshi Komiya'
 
 # The version info for the project you're documenting, nets as replacement for
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'netdiagdoc'
+htmlhelp_basename = 'nwdiagdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -178,7 +178,7 @@ htmlhelp_basename = 'netdiagdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'netdiag.tex', u'netdiag Documentation',
+  ('index', 'nwdiag.tex', u'nwdiag Documentation',
    u'Takeshi Komiya', 'manual'),
 ]
 
@@ -211,7 +211,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'netdiag', u'netdiag Documentation',
+    ('index', 'nwdiag', u'nwdiag Documentation',
      [u'Takeshi Komiya'], 1)
 ]
 
@@ -219,7 +219,7 @@ man_pages = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'netdiag'
+epub_title = u'nwdiag'
 epub_author = u'Takeshi Komiya'
 epub_publisher = u'Takeshi Komiya'
 epub_copyright = u'2010, Takeshi Komiya'
@@ -256,9 +256,9 @@ epub_copyright = u'2010, Takeshi Komiya'
 #epub_tocdup = True
 
 
-netdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
-#netdiag_antialias = True
-netdiag_tex_image_format = 'PDF'
+nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+#nwdiag_antialias = True
+nwdiag_tex_image_format = 'PDF'
 
 
 def setup(app):
