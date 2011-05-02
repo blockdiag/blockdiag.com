@@ -1,8 +1,8 @@
-====================================
-Demo - interactive shell for netdiag
-====================================
+===================================
+Demo - interactive shell for nwdiag
+===================================
 
-This is demo program for netdiag.
+This is demo program for nwdiag.
 You can get rendered diagrams after inputting 'Diagram source'.
 
 .. note::

@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Introduction of netdiag &mdash; netdiag v1.0 documentation</title>
+    <title>Introduction of nwdiag &mdash; nwdiag v1.0 documentation</title>
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -23,9 +23,9 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
 
-    <link rel="top" title="netdiag v1.0 documentation" href="index.html" />
+    <link rel="top" title="nwdiag v1.0 documentation" href="index.html" />
     <link rel="next" title="Sample diagams" href="examples.html" />
-    <link rel="prev" title="netdiag - simple network-diagram image generator" href="index.html" />
+    <link rel="prev" title="nwdiag - simple network-diagram image generator" href="index.html" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="_static/base64.js"></script>
     <script type="text/javascript" src="_static/netdiag.js"></script>
@@ -42,9 +42,9 @@
           <a href="examples.html" title="Sample diagams"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="netdiag - simple network-diagram image generator"
+          <a href="index.html" title="nwdiag - simple network-diagram image generator"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">netdiag v1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -53,8 +53,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="introduction-of-netdiag">
-<h1>Introduction of netdiag<a class="headerlink" href="#introduction-of-netdiag" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="introduction-of-nwdiag">
+<h1>Introduction of nwdiag<a class="headerlink" href="#introduction-of-nwdiag" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -68,21 +68,21 @@
 <div class="section" id="by-easy-install">
 <h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install netdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install nwdiag
 </pre></div>
 </div>
 </div>
 <div class="section" id="by-buildout">
 <h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
 <p>Make environment</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/netdiag
-<span class="nv">$ </span><span class="nb">cd </span>netdiag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/nwdiag
+<span class="nv">$ </span><span class="nb">cd </span>nwdiag
 <span class="nv">$ </span>python bootstrap.py
 <span class="nv">$ </span>bin/buildout
 </pre></div>
 </div>
 <p>Copy and modify ini file. example</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp &lt;netdiag installed path&gt;/netdiag/examples/simple.diag .
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp &lt;nwdiag installed path&gt;/nwdiag/examples/simple.diag .
 <span class="nv">$ </span>vi simple.diag
 </pre></div>
 </div>
@@ -92,14 +92,14 @@
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Execute netdiag command</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>netdiag simple.diag
+<p>Execute nwdiag command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag simple.diag
 <span class="nv">$ </span>ls simple.png
 simple.png
 </pre></div>
 </div>
 <p>If you want SVG images, use -T option</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>netdiag -Tsvg simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag -Tsvg simple.diag
 <span class="nv">$ </span>ls simple.svg
 simple.svg
 </pre></div>
@@ -107,15 +107,15 @@ simple.svg
 </div>
 <div class="section" id="font-configuration">
 <h2>Font Configuration<a class="headerlink" href="#font-configuration" title="Permalink to this headline">¶</a></h2>
-<p>netdiag uses TrueType Font to render text.
-netdiag try to detect installed fonts but if nothing detected,
+<p>nwdiag uses TrueType Font to render text.
+nwdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (&#8211;font) option</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>netdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 </pre></div>
 </div>
-<p>If you always use same font, write $HOME/.netdiagrc</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.netdiagrc
-<span class="o">[</span>netdiag<span class="o">]</span>
+<p>If you always use same font, write $HOME/.nwdiagrc</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.nwdiagrc
+<span class="o">[</span>nwdiag<span class="o">]</span>
 <span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 </pre></div>
 </div>
@@ -143,7 +143,7 @@ You can specify fonts with -f (&#8211;font) option</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Introduction of netdiag</a><ul>
+<li><a class="reference internal" href="#">Introduction of nwdiag</a><ul>
 <li><a class="reference internal" href="#features">Features</a></li>
 <li><a class="reference internal" href="#setup">Setup</a><ul>
 <li><a class="reference internal" href="#by-easy-install">by easy_install</a></li>
@@ -160,7 +160,7 @@ You can specify fonts with -f (&#8211;font) option</p>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
-                        title="previous chapter">netdiag - simple network-diagram image generator</a></p>
+                        title="previous chapter">nwdiag - simple network-diagram image generator</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="examples.html"
                         title="next chapter">Sample diagams</a></p>
@@ -196,9 +196,9 @@ You can specify fonts with -f (&#8211;font) option</p>
           <a href="examples.html" title="Sample diagams"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="netdiag - simple network-diagram image generator"
+          <a href="index.html" title="nwdiag - simple network-diagram image generator"
              >previous</a> |</li>
-        <li><a href="index.html">netdiag v1.0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
 
