@@ -1,3 +1,7 @@
+.. warning:: netdiag was renamed to nwdiag. The reference page has moved to `nwdiag`_
+
+.. _nwdiag: http://tk0miya.bitbucket.org/nwdiag/build/html/index.html
+
 =======================
 Introduction of netdiag
 =======================
