@@ -1,13 +1,13 @@
-=======================
-sphinxcontrib-netdiag
-=======================
+====================
+sphinxcontrib-nwdiag
+====================
 
-`sphinxcontrib-netdiag` is sphinx extension for embedding netdiag diagrams.
-You can embed block diagrams with `netdiag` directive.
+`sphinxcontrib-nwdiag` is sphinx extension for embedding nwdiag diagrams.
+You can embed block diagrams with `nwdiag` directive.
 
 .. code-block:: text
 
-   .. netdiag::
+   .. nwdiag::
 
        diagram {
          network dmz {
@@ -16,7 +16,7 @@ You can embed block diagrams with `netdiag` directive.
          }
        }
 
-.. netdiag::
+.. nwdiag::
 
    diagram {
      network dmz {
@@ -28,52 +28,52 @@ You can embed block diagrams with `netdiag` directive.
 Setting
 =======
 
-sphinxcontrib-netdiag is included in netdiag package.
+sphinxcontrib-nwdiag is included in nwdiag package.
 
 Install
 -------
 
 .. code-block:: bash
 
-   $ sudo easy_install netdiag
+   $ sudo easy_install nwdiag
 
 
 Configure Sphinx
 ----------------
 
-To enable this extension, add ``sphinxcontrib_netdiag`` module to extensions 
+To enable this extension, add ``sphinxcontrib_nwdiag`` module to extensions 
 option at :file:`conf.py`. 
 
 .. code-block:: python
 
    import os, sys
 
-   # Path to the folder where netdiag.py is
+   # Path to the folder where nwdiag.py is
    # NOTE: not needed if the package is installed in traditional way
    # using setup.py or easy_install
-   sys.path.append(os.path.abspath('/path/to/sphinxcontrib_netdiag'))
+   sys.path.append(os.path.abspath('/path/to/sphinxcontrib_nwdiag'))
 
    # Enabled extensions
-   extensions = ['sphinxcontrib_netdiag']
+   extensions = ['sphinxcontrib_nwdiag']
 
-   # Fontpath for netdiag (truetype font)
-   netdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+   # Fontpath for nwdiag (truetype font)
+   nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
 
 Directive
 =========
 
-.. describe:: .. netdiag:: [filename]
+.. describe:: .. nwdiag:: [filename]
 
    This directive insert a netuence diagram into the generated document.
    If filename is specified, sphinx reads external file as source script of blockfile.
-   In another case, netdiag directive takes code block as source script.
+   In another case, nwdiag directive takes code block as source script.
 
    Examples::
 
-      .. netdiag:: foobar.diag
+      .. nwdiag:: foobar.diag
 
-      .. netdiag::
+      .. nwdiag::
 
          diagram {
             // some diagrams are here.
@@ -83,12 +83,12 @@ Directive
 Configuration File Options
 ==========================
 
-.. confval:: netdiag_fontpath
+.. confval:: nwdiag_fontpath
 
    This is a path for renderring fonts.
    You can use truetype font (.ttf) file path.
 
-.. confval:: netdiag_antialias
+.. confval:: nwdiag_antialias
 
-   If :confval:`netdiag_antialias`: is True, netdiag generates images
+   If :confval:`nwdiag_antialias`: is True, nwdiag generates images
    with anti-alias filter.
