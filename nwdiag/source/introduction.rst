@@ -1,6 +1,6 @@
-=======================
-Introduction of netdiag
-=======================
+======================
+Introduction of nwdiag
+======================
 
 Features
 ========
@@ -17,7 +17,7 @@ Make environment
 
 .. code-block:: bash
 
-   $ sudo easy_install netdiag
+   $ sudo easy_install nwdiag
 
 by buildout
 ------------
@@ -25,8 +25,8 @@ Make environment
 
 .. code-block:: bash
 
-   $ hg clone http://bitbucket.org/tk0miya/netdiag
-   $ cd netdiag
+   $ hg clone http://bitbucket.org/tk0miya/nwdiag
+   $ cd nwdiag
    $ python bootstrap.py
    $ bin/buildout
 
@@ -34,7 +34,7 @@ Copy and modify ini file. example
 
 .. code-block:: bash
 
-   $ cp <netdiag installed path>/netdiag/examples/simple.diag .
+   $ cp <nwdiag installed path>/nwdiag/examples/simple.diag .
    $ vi simple.diag
 
 Please refer to :ref:`sample-diagrams` section for the format of the
@@ -43,11 +43,11 @@ Please refer to :ref:`sample-diagrams` section for the format of the
 
 Usage
 =====
-Execute netdiag command
+Execute nwdiag command
 
 .. code-block:: bash
 
-   $ netdiag simple.diag
+   $ nwdiag simple.diag
    $ ls simple.png
    simple.png
 
@@ -55,27 +55,27 @@ If you want SVG images, use -T option
 
 .. code-block:: bash
 
-   $ netdiag -Tsvg simple.diag
+   $ nwdiag -Tsvg simple.diag
    $ ls simple.svg
    simple.svg
 
 
 Font Configuration
 ==================
-netdiag uses TrueType Font to render text. 
-netdiag try to detect installed fonts but if nothing detected,
+nwdiag uses TrueType Font to render text. 
+nwdiag try to detect installed fonts but if nothing detected,
 You can specify fonts with -f (--font) option
 
 .. code-block:: bash
 
-   $ netdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+   $ nwdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
-If you always use same font, write $HOME/.netdiagrc
+If you always use same font, write $HOME/.nwdiagrc
 
 .. code-block:: bash
 
-   $ cat $HOME/.netdiagrc
-   [netdiag]
+   $ cat $HOME/.nwdiagrc
+   [nwdiag]
    fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 
 
