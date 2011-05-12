@@ -61,16 +61,18 @@ You can get rendered diagrams after inputting &#8216;Diagram source&#8217;.</p>
 <h2>Diagram source<a class="headerlink" href="#diagram-source" title="Permalink to this headline">¶</a></h2>
 <textarea id="diagram" cols="75" rows="10" style="font-size: 14pt; font-family: monospace;">{
   network dmz {
-      web01;
-      web02;
+      address = "210.x.x.x/24"
+
+      web01 [address = "210.x.x.1"];
+      web02 [address = "210.x.x.2"];
   }
   network internal {
+      address = "172.x.x.x/24";
+
+      web01 [address = "172.x.x.1"];
       db01;
       app01;
-      app02;
   }
-
-  dmz -- internal
 }</textarea><br /></div>
 <div class="section" id="diagram-outputs">
 <h2>Diagram outputs<a class="headerlink" href="#diagram-outputs" title="Permalink to this headline">¶</a></h2>
