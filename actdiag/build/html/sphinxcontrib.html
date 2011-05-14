@@ -82,14 +82,7 @@ You can embed block diagrams with <cite>actdiag</cite> directive.</p>
 <h3>Configure Sphinx<a class="headerlink" href="#configure-sphinx" title="Permalink to this headline">¶</a></h3>
 <p>To enable this extension, add <tt class="docutils literal"><span class="pre">sphinxcontrib_actdiag</span></tt> module to extensions
 option at <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
-
-<span class="c"># Path to the folder where actdiag.py is</span>
-<span class="c"># NOTE: not needed if the package is installed in traditional way</span>
-<span class="c"># using setup.py or easy_install</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s">&#39;/path/to/sphinxcontrib_actdiag&#39;</span><span class="p">))</span>
-
-<span class="c"># Enabled extensions</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Enabled extensions</span>
 <span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;sphinxcontrib_actdiag&#39;</span><span class="p">]</span>
 
 <span class="c"># Fontpath for actdiag (truetype font)</span>
