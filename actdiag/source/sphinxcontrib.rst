@@ -40,13 +40,6 @@ option at :file:`conf.py`.
 
 .. code-block:: python
 
-   import os, sys
-
-   # Path to the folder where actdiag.py is
-   # NOTE: not needed if the package is installed in traditional way
-   # using setup.py or easy_install
-   sys.path.append(os.path.abspath('/path/to/sphinxcontrib_actdiag'))
-
    # Enabled extensions
    extensions = ['sphinxcontrib_actdiag']
 
