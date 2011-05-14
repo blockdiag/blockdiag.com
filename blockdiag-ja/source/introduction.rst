@@ -184,4 +184,4 @@ SVG 形式や PDF 形式でブロック図を生成する場合は -T オプシ�
 
 ライセンス
 ==========
-Python Software Foundation License.
+Apache License 2.0
