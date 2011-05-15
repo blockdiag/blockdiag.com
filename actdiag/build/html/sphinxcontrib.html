@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>sphinxcontrib-actdiag &mdash; actdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="actdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="Demo - interactive shell for actdiag" href="demo.html" />
+    <link rel="prev" title="Sample diagams" href="examples.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/actdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="demo.html" title="Demo - interactive shell for actdiag"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Sample diagams"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">actdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sphinxcontrib-actdiag">
+<h1>sphinxcontrib-actdiag<a class="headerlink" href="#sphinxcontrib-actdiag" title="Permalink to this headline">¶</a></h1>
+<p><cite>sphinxcontrib-actdiag</cite> is sphinx extension for embedding actdiag diagrams.
+You can embed block diagrams with <cite>actdiag</cite> directive.</p>
+<div class="highlight-text"><div class="highlight"><pre>.. actdiag::
+
+    diagram admin {
+      A -&gt; B -&gt; C;
+    }
+</pre></div>
+</div>
+<p class="actdiag">
+<img src="_images/actdiag-df84ba7d41062ea71d3072b7a9241acdf14daa7c.png" alt="diagram admin {
+  A -&gt; B -&gt; C;
+}" width="256" height="376" />
+</p>
+<div class="section" id="setting">
+<h2>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h2>
+<p>sphinxcontrib-actdiag is included in actdiag package.</p>
+<div class="section" id="install">
+<h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install actdiag
+</pre></div>
+</div>
+</div>
+<div class="section" id="configure-sphinx">
+<h3>Configure Sphinx<a class="headerlink" href="#configure-sphinx" title="Permalink to this headline">¶</a></h3>
+<p>To enable this extension, add <tt class="docutils literal"><span class="pre">sphinxcontrib_actdiag</span></tt> module to extensions
+option at <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Enabled extensions</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;sphinxcontrib_actdiag&#39;</span><span class="p">]</span>
+
+<span class="c"># Fontpath for actdiag (truetype font)</span>
+<span class="n">actdiag_fontpath</span> <span class="o">=</span> <span class="s">&#39;/usr/share/fonts/truetype/ipafont/ipagp.ttf&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="directive">
+<h2>Directive<a class="headerlink" href="#directive" title="Permalink to this headline">¶</a></h2>
+<dl class="describe">
+<dt>
+<tt class="descname">.. actdiag:: [filename]</tt></dt>
+<dd><p>This directive insert a actuence diagram into the generated document.
+If filename is specified, sphinx reads external file as source script of blockfile.
+In another case, actdiag directive takes code block as source script.</p>
+<p>Examples:</p>
+<div class="highlight-python"><pre>.. actdiag:: foobar.diag
+
+.. actdiag::
+
+   diagram {
+      // some diagrams are here.
+   }</pre>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="configuration-file-options">
+<h2>Configuration File Options<a class="headerlink" href="#configuration-file-options" title="Permalink to this headline">¶</a></h2>
+<dl class="confval">
+<dt id="confval-actdiag_fontpath">
+<tt class="descname">actdiag_fontpath</tt><a class="headerlink" href="#confval-actdiag_fontpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a path for renderring fonts.
+You can use truetype font (.ttf) file path.</p>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-actdiag_antialias">
+<tt class="descname">actdiag_antialias</tt><a class="headerlink" href="#confval-actdiag_antialias" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference internal" href="#confval-actdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">actdiag_antialias</span></tt></a>: is True, actdiag generates images
+with anti-alias filter.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sphinxcontrib-actdiag</a><ul>
+<li><a class="reference internal" href="#setting">Setting</a><ul>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#configure-sphinx">Configure Sphinx</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#directive">Directive</a></li>
+<li><a class="reference internal" href="#configuration-file-options">Configuration File Options</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="examples.html"
+                        title="previous chapter">Sample diagams</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="demo.html"
+                        title="next chapter">Demo - interactive shell for actdiag</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sphinxcontrib.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="demo.html" title="Demo - interactive shell for actdiag"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Sample diagams"
+             >previous</a> |</li>
+        <li><a href="index.html">actdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

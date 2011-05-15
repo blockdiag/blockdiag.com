@@ -1,0 +1,627 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>出力サンプル &mdash; blockdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+
+    <link rel="top" title="blockdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="文書にブロック図を埋め込む" href="embed_diagram.html" />
+    <link rel="prev" title="blockdiag の概要" href="introduction.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="embed_diagram.html" title="文書にブロック図を埋め込む"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="blockdiag の概要"
+             accesskey="P">前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>出力サンプル<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>シンプルなブロック図<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-2a4640a731151932934a492d9b9b2ed79f88f818.png" alt="diagram {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E -&gt; F -&gt; G;
+}" width="784" height="264" />
+</p>
+</div>
+<div class="section" id="id3">
+<h2>ラベルの設定<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   // ノードラベルの設定
+   A [label = "foo"];
+   B [label = "bar"];
+   C [label = "baz"];
+
+   // エッジラベルの設定 (短い文字列のみ)
+   A -&gt; B [label = "click bar"];
+   B -&gt; C [label = "click baz"];
+   C -&gt; A;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-eb81b54b0ff1c3091c87a7f4d71429e4ef55b0ac.png" alt="diagram {
+   // ノードラベルの設定
+   A [label = &quot;foo&quot;];
+   B [label = &quot;bar&quot;];
+   C [label = &quot;baz&quot;];
+
+   // エッジラベルの設定 (短い文字列のみ)
+   A -&gt; B [label = &quot;click bar&quot;];
+   B -&gt; C [label = &quot;click baz&quot;];
+   C -&gt; A;
+}" width="592" height="184" />
+</p>
+</div>
+<div class="section" id="id4">
+<h2>ノード、エッジのカスタマイズ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+   // ノードの設定 (枠線の種別、背景色)
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = "#888888"];
+
+   // エッジの設定 (線の種別、色)
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = "red"];
+
+   // ノードの設定 (背番号)
+   E [numbered = 99];
+
+   // ノードの設定 (背景画像)
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
+   // エッジの設定 (接続の向き)
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-6379d01868d64a6799be082a1911ef175670ca2e.png" alt="diagram {
+   // ノードの設定 (枠線の種別、背景色)
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = &quot;#888888&quot;];
+
+   // エッジの設定 (線の種別、色)
+   A -&gt; B [style = dotted];
+   B -&gt; C [style = dashed];
+   C -&gt; D [color = &quot;red&quot;];
+
+   // ノードの設定 (背番号)
+   E [numbered = 99];
+
+   // ノードの設定 (背景画像)
+   F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
+
+   // エッジの設定 (接続の向き)
+   E -&gt; F [dir = none];
+   F -&gt; G [dir = forward];
+   G -&gt; H [dir = back];
+   H -&gt; I [dir = both];
+}" width="976" height="264" />
+</p>
+</div>
+<div class="section" id="id5">
+<h2>複数ノード間の接続<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.7.5 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  // 複数の子ノードへの接続
+  A -&gt; B, C;
+
+  // 複数の親ノードからの接続
+  D, E -&gt; F;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-b6c2e6353ceb45b8c84b773c5b91a296bf768467.png" alt="{
+  // 複数の子ノードへの接続
+  A -&gt; B, C;
+
+  // 複数の親ノードからの接続
+  D, E -&gt; F;
+}" width="400" height="424" />
+</p>
+</div>
+<div class="section" id="id6">
+<h2>エッジの向きを変更する<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.5.5 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-e1982a649654505edef2536f6164930aa6706bd4.png" alt="{
+  A -&gt; B &lt;- C -- D &lt;-&gt; E;
+}" width="976" height="184" />
+</p>
+</div>
+<div class="section" id="id7">
+<h2>エッジの折り返し<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.6.1 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // C から D への接続を折り返す。(D は左側に配置される)
+  C -&gt; D [folded];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-2e7255523ce31b24604272e2a9b085e1324b1674.png" alt="{
+  A -&gt; B -&gt; C -&gt; D -&gt; E;
+
+  // C から D への接続を折り返す。(D は左側に配置される)
+  C -&gt; D [folded];
+}" width="592" height="264" />
+</p>
+</div>
+<div class="section" id="id8">
+<h2>日本語の利用<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-python"><pre>diagram admin {
+   // 日本語をラベルに指定することができます。
+   A [label = "起"];
+   B [label = "承"];
+   C [label = "転"];
+   D [label = "結"];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // クオートすると日本語をノード ID に使用できます。
+   "春" -&gt; "夏" -&gt; "秋" -&gt; "冬";
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-72a88904b251b9d42a062bf77be8ad265503472e.png" alt="diagram admin {
+   // 日本語をラベルに指定することができます。
+   A [label = &quot;起&quot;];
+   B [label = &quot;承&quot;];
+   C [label = &quot;転&quot;];
+   D [label = &quot;結&quot;];
+
+   A -&gt; B -&gt; C -&gt; D;
+
+   // クオートすると日本語をノード ID に使用できます。
+   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
+}" width="784" height="264" />
+</p>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p class="last"><cite>blockdiag</cite> では UTF-8 エンコード以外の文字コードを扱うことはできません。</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">日本語を含んだ図の出力に失敗する場合は、
+日本語フォントが選択されていない可能性があります。
+<a class="reference internal" href="introduction.html#blockdiag-font-configurations"><em>フォント設定</em></a> もしくは
+<a class="reference internal" href="sphinxcontrib.html#sphinxcontrib-font-configurations"><em>利用可能な設定オプション</em></a> (Sphinx) を参考に
+フォントの設定を確認して下さい。</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>ノード形状の変更<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.6.5 で追加: </span>(experimental)</p>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.6.6 で追加: </span>actor shape</p>
+<div class="highlight-python"><pre>{
+  // 基本形状
+  box [shape = "box"];
+  roundedbox [shape = "roundedbox"];
+  diamond [shape = "diamond"];
+  ellipse [shape = "ellipse"];
+  note [shape = "note"];
+
+  cloud [shape = "cloud"];
+  mail [shape = "mail"];
+  beginpoint [shape = "beginpoint"];
+  endpoint [shape = "endpoint"];
+  minidiamond [shape = "minidiamond"];
+  actor [shape = "actor"];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
+
+
+  // フローチャート用形状
+  condition [shape = "flowchart.condition"];
+  database [shape = "flowchart.database"];
+  input [shape = "flowchart.input"];
+  loopin [shape = "flowchart.loopin"];
+  loopout [shape = "flowchart.loopout"];
+  terminator [shape = "flowchart.terminator"];
+
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-25185abfcf40a3e66881df199387ee9afbfd9bd4.png" alt="{
+  // 基本形状
+  box [shape = &quot;box&quot;];
+  roundedbox [shape = &quot;roundedbox&quot;];
+  diamond [shape = &quot;diamond&quot;];
+  ellipse [shape = &quot;ellipse&quot;];
+  note [shape = &quot;note&quot;];
+
+  cloud [shape = &quot;cloud&quot;];
+  mail [shape = &quot;mail&quot;];
+  beginpoint [shape = &quot;beginpoint&quot;];
+  endpoint [shape = &quot;endpoint&quot;];
+  minidiamond [shape = &quot;minidiamond&quot;];
+  actor [shape = &quot;actor&quot;];
+
+  box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
+  cloud -&gt; note -&gt; mail -&gt; actor;
+  minidiamond -&gt; beginpoint -&gt; endpoint;
+
+
+  // フローチャート用形状
+  condition [shape = &quot;flowchart.condition&quot;];
+  database [shape = &quot;flowchart.database&quot;];
+  input [shape = &quot;flowchart.input&quot;];
+  loopin [shape = &quot;flowchart.loopin&quot;];
+  loopout [shape = &quot;flowchart.loopout&quot;];
+  terminator [shape = &quot;flowchart.terminator&quot;];
+
+  condition -&gt; database -&gt; terminator -&gt; input;
+  loopin -&gt; loopout;
+}" width="784" height="504" />
+</p>
+</div>
+<div class="section" id="id10">
+<h2>グルーピング<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.5.3 で追加: </span>グループラベルに対応</p>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.6 で追加: </span>グループの入れ子に対応</p>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.7.5 で追加: </span>ノード属性として group キーワードを追加</p>
+<div class="highlight-python"><pre>diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+   A -&gt; H;
+
+   // A、B は同じグループに所属
+   group {
+      A; B;
+   }
+
+   // E、F、G は同じグループ(second_group)に所属
+   group second_group {
+      // グループラベルを設定
+      label = "second group";
+
+      // グループの背景色を設定
+      color = "#77FF77";
+
+      E -&gt; F -&gt; G;
+
+      // H、I は内側のグループに所属
+      group {
+          color = "#7777FF";
+          H -&gt; I;
+      }
+   }
+
+   // J を second_group グループに追加する
+   J [group = second_group];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-2b84c1a41bf987e0eaa6a8965e13710799db54a6.png" alt="diagram admin {
+   A -&gt; B -&gt; C -&gt; D;
+   A -&gt; E;
+   A -&gt; H;
+
+   // A、B は同じグループに所属
+   group {
+      A; B;
+   }
+
+   // E、F、G は同じグループ(second_group)に所属
+   group second_group {
+      // グループラベルを設定
+      label = &quot;second group&quot;;
+
+      // グループの背景色を設定
+      color = &quot;#77FF77&quot;;
+
+      E -&gt; F -&gt; G;
+
+      // H、I は内側のグループに所属
+      group {
+          color = &quot;#7777FF&quot;;
+          H -&gt; I;
+      }
+   }
+
+   // J を second_group グループに追加する
+   J [group = second_group];
+}" width="976" height="424" />
+</p>
+</div>
+<div class="section" id="id11">
+<h2>図全体の設定<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.7.2 で追加: </span>default_shape を追加</p>
+<div class="highlight-python"><pre>diagram {
+  // ノードサイズの設定
+  node_width = 200;  // デフォルト： 128
+  node_height = 100;  // デフォルト： 40
+
+  // ノード間隔の設定
+  span_width = 240;  // デフォルト： 64
+  span_height = 120;  // デフォルト： 40
+
+  // フォントサイズの設定
+  fontsize = 20;  // デフォルト： 11
+
+  // ノード形状の設定
+  default_shape = roundedbox;  // デフォルト： box
+
+  A -&gt; B [label = "Use long long\nedge label"];
+  A -&gt; C;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-0b3d4ac454f48824c76ca5c13866ed379dd4dd45.png" alt="diagram {
+  // ノードサイズの設定
+  node_width = 200;  // デフォルト： 128
+  node_height = 100;  // デフォルト： 40
+
+  // ノード間隔の設定
+  span_width = 240;  // デフォルト： 64
+  span_height = 120;  // デフォルト： 40
+
+  // フォントサイズの設定
+  fontsize = 20;  // デフォルト： 11
+
+  // ノード形状の設定
+  default_shape = roundedbox;  // デフォルト： box
+
+  A -&gt; B [label = &quot;Use long long\nedge label&quot;];
+  A -&gt; C;
+}" width="880" height="816" />
+</p>
+</div>
+<div class="section" id="id12">
+<h2>縦書きモード<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.7.0 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  // 縦書きモード
+  orientation = portrait
+
+  A -&gt; B -&gt; C;
+       B -&gt; D;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-fc8494a836482d85542a5f86df916ec74be809ea.png" alt="{
+  // 縦書きモード
+  orientation = portrait
+
+  A -&gt; B -&gt; C;
+       B -&gt; D;
+}" width="400" height="344" />
+</p>
+</div>
+<div class="section" id="id13">
+<h2>グループの縦書き化<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.7.4 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B -&gt; C;
+
+  group {
+    // このグループを縦書きモードに設定
+    orientation = portrait
+
+    C -&gt; D -&gt; E;
+  }
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-5d8a1b2ce47169425918b2623ae0375416e851da.png" alt="{
+  A -&gt; B -&gt; C;
+
+  group {
+    // このグループを縦書きモードに設定
+    orientation = portrait
+
+    C -&gt; D -&gt; E;
+  }
+}" width="592" height="344" />
+</p>
+</div>
+<div class="section" id="id14">
+<h2>シンプルな管理画面の画面遷移図(例)<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-python"><pre>diagram admin {
+  index [label = "一覧画面"];
+  add [label = "追加画面"];
+  add_confirm [label = "追加画面(確認)"];
+  edit [label = "編集画面"];
+  edit_confirm [label = "編集画面(確認)"];
+  show [label = "詳細表示画面"];
+  delete_confirm [label = "削除画面(確認)"];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-cab9abefda5467b118fae3319b7d1341c394e1f9.png" alt="diagram admin {
+  index [label = &quot;一覧画面&quot;];
+  add [label = &quot;追加画面&quot;];
+  add_confirm [label = &quot;追加画面(確認)&quot;];
+  edit [label = &quot;編集画面&quot;];
+  edit_confirm [label = &quot;編集画面(確認)&quot;];
+  show [label = &quot;詳細表示画面&quot;];
+  delete_confirm [label = &quot;削除画面(確認)&quot;];
+
+  index -&gt; add  -&gt; add_confirm  -&gt; index;
+  index -&gt; edit -&gt; edit_confirm -&gt; index;
+  index -&gt; show -&gt; index;
+  index -&gt; delete_confirm -&gt; index;
+}" width="592" height="424" />
+</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">出力サンプル</a><ul>
+<li><a class="reference internal" href="#id2">シンプルなブロック図</a></li>
+<li><a class="reference internal" href="#id3">ラベルの設定</a></li>
+<li><a class="reference internal" href="#id4">ノード、エッジのカスタマイズ</a></li>
+<li><a class="reference internal" href="#id5">複数ノード間の接続</a></li>
+<li><a class="reference internal" href="#id6">エッジの向きを変更する</a></li>
+<li><a class="reference internal" href="#id7">エッジの折り返し</a></li>
+<li><a class="reference internal" href="#id8">日本語の利用</a></li>
+<li><a class="reference internal" href="#id9">ノード形状の変更</a></li>
+<li><a class="reference internal" href="#id10">グルーピング</a></li>
+<li><a class="reference internal" href="#id11">図全体の設定</a></li>
+<li><a class="reference internal" href="#id12">縦書きモード</a></li>
+<li><a class="reference internal" href="#id13">グループの縦書き化</a></li>
+<li><a class="reference internal" href="#id14">シンプルな管理画面の画面遷移図(例)</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="前の章へ">blockdiag の概要</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="embed_diagram.html"
+                        title="次の章へ">文書にブロック図を埋め込む</a></p>
+  <h3>このページ</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/examples.txt"
+           rel="nofollow">ソースコードを表示</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    モジュール、クラス、または関数名を入力してください
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="embed_diagram.html" title="文書にブロック図を埋め込む"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="blockdiag の概要"
+             >前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7 で生成しました。
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>
