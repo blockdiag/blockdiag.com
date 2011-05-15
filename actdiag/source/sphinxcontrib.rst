@@ -35,13 +35,13 @@ Install
 Configure Sphinx
 ----------------
 
-To enable this extension, add ``sphinxcontrib_actdiag`` module to extensions 
+To enable this extension, add ``sphinxcontrib.actdiag`` module to extensions 
 option at :file:`conf.py`. 
 
 .. code-block:: python
 
    # Enabled extensions
-   extensions = ['sphinxcontrib_actdiag']
+   extensions = ['sphinxcontrib.actdiag']
 
    # Fontpath for actdiag (truetype font)
    actdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
