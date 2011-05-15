@@ -35,7 +35,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo easy_install nwdiag
+   $ sudo easy_install sphinxcontrib-nwdiag
 
 
 Configure Sphinx
