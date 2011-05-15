@@ -29,7 +29,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo easy_install actdiag
+   $ sudo easy_install sphinxcontrib-actdiag
 
 
 Configure Sphinx
