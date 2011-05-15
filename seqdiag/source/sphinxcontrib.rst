@@ -35,13 +35,13 @@ Install
 Configure Sphinx
 ----------------
 
-To enable this extension, add ``sphinxcontrib_seqdiag`` module to extensions 
+To enable this extension, add ``sphinxcontrib.seqdiag`` module to extensions 
 option at :file:`conf.py`. 
 
 .. code-block:: python
 
    # Enabled extensions
-   extensions = ['sphinxcontrib_seqdiag']
+   extensions = ['sphinxcontrib.seqdiag']
 
    # Fontpath for seqdiag (truetype font)
    seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
