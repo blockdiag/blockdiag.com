@@ -22,26 +22,28 @@ You can embed block diagrams with `actdiag` directive.
 Setting
 =======
 
-sphinxcontrib-actdiag is included in actdiag package.
+.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-actdiag>`_.
+
+You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
 -------
 
 .. code-block:: bash
 
-   $ sudo easy_install actdiag
+   $ sudo easy_install sphinxcontrib-actdiag
 
 
 Configure Sphinx
 ----------------
 
-To enable this extension, add ``sphinxcontrib_actdiag`` module to extensions 
+To enable this extension, add ``sphinxcontrib.actdiag`` module to extensions 
 option at :file:`conf.py`. 
 
 .. code-block:: python
 
    # Enabled extensions
-   extensions = ['sphinxcontrib_actdiag']
+   extensions = ['sphinxcontrib.actdiag']
 
    # Fontpath for actdiag (truetype font)
    actdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
