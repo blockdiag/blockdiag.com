@@ -28,7 +28,9 @@ You can embed block diagrams with `nwdiag` directive.
 Setting
 =======
 
-sphinxcontrib-nwdiag is included in nwdiag package.
+.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-nwdiag>`_.
+
+You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
 -------

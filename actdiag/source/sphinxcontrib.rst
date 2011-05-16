@@ -22,7 +22,9 @@ You can embed block diagrams with `actdiag` directive.
 Setting
 =======
 
-sphinxcontrib-actdiag is included in actdiag package.
+.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-actdiag>`_.
+
+You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
 -------
