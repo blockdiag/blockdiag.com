@@ -29,7 +29,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo easy_install seqdiag
+   $ sudo easy_install sphinxcontrib-seqdiag
 
 
 Configure Sphinx
