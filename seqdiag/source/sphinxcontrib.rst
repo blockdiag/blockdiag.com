@@ -22,14 +22,16 @@ You can embed block diagrams with `seqdiag` directive.
 Setting
 =======
 
-sphinxcontrib-seqdiag is included in seqdiag package.
+.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-seqdiag>`_.
+
+You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
 -------
 
 .. code-block:: bash
 
-   $ sudo easy_install seqdiag
+   $ sudo easy_install sphinxcontrib-seqdiag
 
 
 Configure Sphinx
