@@ -28,26 +28,28 @@ You can embed block diagrams with `nwdiag` directive.
 Setting
 =======
 
-sphinxcontrib-nwdiag is included in nwdiag package.
+.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-nwdiag>`_.
+
+You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
 -------
 
 .. code-block:: bash
 
-   $ sudo easy_install nwdiag
+   $ sudo easy_install sphinxcontrib-nwdiag
 
 
 Configure Sphinx
 ----------------
 
-To enable this extension, add ``sphinxcontrib_nwdiag`` module to extensions 
+To enable this extension, add ``sphinxcontrib.nwdiag`` module to extensions 
 option at :file:`conf.py`. 
 
 .. code-block:: python
 
    # Enabled extensions
-   extensions = ['sphinxcontrib_nwdiag']
+   extensions = ['sphinxcontrib.nwdiag']
 
    # Fontpath for nwdiag (truetype font)
    nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
