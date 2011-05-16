@@ -1,0 +1,36 @@
+diagram {
+  group web {
+    web01;
+    web02;
+  }
+
+  network dmz {
+    address = "210.x.x.x/24"
+
+    web01 [address = "210.x.x.1"];
+    web02 [address = "210.x.x.2"];
+  }
+  network internal {
+    address = "172.x.x.x/24";
+
+    web01 [address = "172.x.x.1"];
+    web02 [address = "172.x.x.2"];
+
+    group db {
+      color = "#7777FF";
+
+      db01 [address = "172.x.x.10"];
+      db02 [address = "172.x.x.20"];
+    }
+  }
+  network backup {
+    address = "192.x.x.x/24";
+
+    group db {
+      db01 [address = "192.x.x.10"];
+      db02 [address = "192.x.x.20"];
+      bk01 [address = "192.x.x.254", color = "#77FF77"];
+    }
+  }
+}
+
