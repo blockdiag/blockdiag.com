@@ -16,6 +16,9 @@ grouping nodes
 
 .. versionadded:: 0.2.2
 
-.. literalinclude:: diagrams/node_groups.diag
-.. nwdiag:: diagrams/node_groups.diag
+.. literalinclude:: diagrams/node_groups1.diag
+.. nwdiag:: diagrams/node_groups1.diag
+
+.. literalinclude:: diagrams/node_groups2.diag
+.. nwdiag:: diagrams/node_groups2.diag
 
