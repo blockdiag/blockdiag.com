@@ -1,7 +1,8 @@
 diagram {
-  // inside network block
   network Sample_front {
     address = "192.168.10.0/24";
+
+    // define group
     group web {
       web01 [address = ".1"];
       web02 [address = ".2"];
@@ -11,24 +12,13 @@ diagram {
     address = "192.168.20.0/24";
     web01 [address = ".1"];
     web02 [address = ".2"];
+    db01 [address = ".101"];
+    db02 [address = ".102"];
 
+    // define network using defined nodes
     group db {
-      db01 [address = ".101"];
-      db02 [address = ".102"];
+      db01;
+      db02;
     }
-  }
-
-  // outside network block and color set
-  group {
-    color = "#FF7777";
-    sv01;
-    sv02;
-  }
-
-  network dmz {
-    sv01;
-  }
-  network internal {
-    sv02;
   }
 }

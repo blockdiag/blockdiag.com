@@ -91,7 +91,7 @@
       db01;
       db02;
   }
-}" width="976" height="616" />
+}" width="976" height="516" />
 </p>
 </div>
 <div class="section" id="grouping-nodes">
@@ -99,79 +99,100 @@
 <p class="versionadded">
 <span class="versionmodified">New in version 0.2.2.</span></p>
 <div class="highlight-python"><pre>diagram {
-  group web {
-    web01;
-    web02;
-  }
+  network Sample_front {
+    address = "192.168.10.0/24";
 
-  network dmz {
-    address = "210.x.x.x/24"
-
-    web01 [address = "210.x.x.1"];
-    web02 [address = "210.x.x.2"];
-  }
-  network internal {
-    address = "172.x.x.x/24";
-
-    web01 [address = "172.x.x.1"];
-    web02 [address = "172.x.x.2"];
-
-    group db {
-      color = "#7777FF";
-
-      db01 [address = "172.x.x.10"];
-      db02 [address = "172.x.x.20"];
+    // define group
+    group web {
+      web01 [address = ".1"];
+      web02 [address = ".2"];
     }
   }
-  network backup {
-    address = "192.x.x.x/24";
+  network Sample_back {
+    address = "192.168.20.0/24";
+    web01 [address = ".1"];
+    web02 [address = ".2"];
+    db01 [address = ".101"];
+    db02 [address = ".102"];
 
+    // define network using defined nodes
     group db {
-      db01 [address = "192.x.x.10"];
-      db02 [address = "192.x.x.20"];
-      bk01 [address = "192.x.x.254", color = "#77FF77"];
+      db01;
+      db02;
     }
   }
 }
-
 </pre>
 </div>
 <p class="nwdiag">
-<img src="_images/nwdiag-616734d1b6c902468be7cdc09e3bfd458f8b03af.png" alt="diagram {
-  group web {
+<img src="_images/nwdiag-42b77ee1142ceb3dc3368edb5f07dbc1c42a1ea8.png" alt="diagram {
+  network Sample_front {
+    address = &quot;192.168.10.0/24&quot;;
+
+    // define group
+    group web {
+      web01 [address = &quot;.1&quot;];
+      web02 [address = &quot;.2&quot;];
+    }
+  }
+  network Sample_back {
+    address = &quot;192.168.20.0/24&quot;;
+    web01 [address = &quot;.1&quot;];
+    web02 [address = &quot;.2&quot;];
+    db01 [address = &quot;.101&quot;];
+    db02 [address = &quot;.102&quot;];
+
+    // define network using defined nodes
+    group db {
+      db01;
+      db02;
+    }
+  }
+}" width="976" height="516" />
+</p>
+<div class="highlight-python"><pre>diagram {
+  // define group at outside network definitions
+  group {
+    color = "#FF7777";
+
     web01;
     web02;
+    db01;
   }
 
   network dmz {
-    address = &quot;210.x.x.x/24&quot;
-
-    web01 [address = &quot;210.x.x.1&quot;];
-    web02 [address = &quot;210.x.x.2&quot;];
+    web01;
+    web02;
   }
   network internal {
-    address = &quot;172.x.x.x/24&quot;;
-
-    web01 [address = &quot;172.x.x.1&quot;];
-    web02 [address = &quot;172.x.x.2&quot;];
-
-    group db {
-      color = &quot;#7777FF&quot;;
-
-      db01 [address = &quot;172.x.x.10&quot;];
-      db02 [address = &quot;172.x.x.20&quot;];
-    }
+    web01;
+    web02;
+    db01;
   }
-  network backup {
-    address = &quot;192.x.x.x/24&quot;;
+}
+</pre>
+</div>
+<p class="nwdiag">
+<img src="_images/nwdiag-e79429c8a4cf4dbac2d05e195492be08e1bfc98a.png" alt="diagram {
+  // define group at outside network definitions
+  group {
+    color = &quot;#FF7777&quot;;
 
-    group db {
-      db01 [address = &quot;192.x.x.10&quot;];
-      db02 [address = &quot;192.x.x.20&quot;];
-      bk01 [address = &quot;192.x.x.254&quot;, color = &quot;#77FF77&quot;];
-    }
+    web01;
+    web02;
+    db01;
   }
-}" width="1168" height="776" />
+
+  network dmz {
+    web01;
+    web02;
+  }
+  network internal {
+    web01;
+    web02;
+    db01;
+  }
+}" width="784" height="516" />
 </p>
 </div>
 </div>
