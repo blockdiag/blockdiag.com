@@ -1,4 +1,4 @@
-{
+diagram {
   // inside network block
   network Sample_front {
     address = "192.168.10.0/24";
