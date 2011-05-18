@@ -25,10 +25,10 @@
     sv02;
   }
 
-  network a1 {
+  network dmz {
     sv01;
   }
-  network a2 {
+  network internal {
     sv02;
   }
 }
