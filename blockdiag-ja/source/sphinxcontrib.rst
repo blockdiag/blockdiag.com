@@ -88,11 +88,19 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
    blockdiag で利用する TrueType フォントへのパスを指定します。
    標準ではフォントを利用せず PIL 標準のフォントを利用します。
+   `blockdiag_fontpath` にはパス文字列もしくは
+   パス文字列の配列を指定することができます。
+   複数の環境で Sphinx プロジェクトを共有している場合は、
+   パス文字列の配列を指定することで環境の違いを吸収することができます。
 
    .. warning::
 
       PIL 標準のフォントは日本語フォントを含みません。
       そのため、日本語を利用する場合は必ずフォントを設定して下さい。
+
+   .. versionadded:: 0.8.3
+
+      `blockdiag_fontpath` にパス文字列の配列を指定する
 
 .. confval:: blockdiag_antialias
 

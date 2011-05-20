@@ -129,12 +129,18 @@
 <dt id="confval-blockdiag_fontpath">
 <tt class="descname">blockdiag_fontpath</tt><a class="headerlink" href="#confval-blockdiag_fontpath" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>blockdiag で利用する TrueType フォントへのパスを指定します。
-標準ではフォントを利用せず PIL 標準のフォントを利用します。</p>
+標準ではフォントを利用せず PIL 標準のフォントを利用します。
+<cite>blockdiag_fontpath</cite> にはパス文字列もしくは
+パス文字列の配列を指定することができます。
+複数の環境で Sphinx プロジェクトを共有している場合は、
+パス文字列の配列を指定することで環境の違いを吸収することができます。</p>
 <div class="admonition warning">
 <p class="first admonition-title">警告</p>
 <p class="last">PIL 標準のフォントは日本語フォントを含みません。
 そのため、日本語を利用する場合は必ずフォントを設定して下さい。</p>
 </div>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.8.3 で追加.</span></p>
 </dd></dl>
 
 <dl class="confval">
