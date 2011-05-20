@@ -74,8 +74,12 @@ Configuration File Options
 
 .. confval:: seqdiag_fontpath
 
-   This is a path for renderring fonts.
-   You can use truetype font (.ttf) file path.
+   This is a path for renderring fonts. You can use truetype font (.ttf) file path.
+   You can specify single path with string, or multiple paths using array.
+
+   .. versionadded:: 0.1.1
+
+      seqdiag_fontpath allows fontpath array
 
 .. confval:: seqdiag_antialias
 
