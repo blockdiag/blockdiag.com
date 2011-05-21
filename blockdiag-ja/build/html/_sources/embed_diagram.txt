@@ -42,6 +42,14 @@ moinmoin にブロック図を取り込むには `moinmoin blockdiag plugin`_ �
 .. _moinmoin blockdiag plugin: http://d.hatena.ne.jp/podhmo/20110409/1302342454
 
 
+mediawiki に埋め込む
+=====================
+
+mediawiki にブロック図を取り込むには `Blockdiag MediaWiki Extension`_ を利用します。
+
+.. _Blockdiag MediaWiki Extension: https://github.com/kjmkznr/blockdiag-mediawiki-extension
+
+
 API 経由で取得する
 ==================
 
