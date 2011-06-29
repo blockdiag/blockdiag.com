@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sample diagams &mdash; seqdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="seqdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="sphinxcontrib-seqdiag" href="sphinxcontrib.html" />
+    <link rel="prev" title="Introduction of seqdiag" href="introduction.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/seqdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-seqdiag"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of seqdiag"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">seqdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sample-diagams">
+<span id="sample-diagrams"></span><h1>Sample diagams<a class="headerlink" href="#sample-diagams" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simple-diagram">
+<h2>simple diagram<a class="headerlink" href="#simple-diagram" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>diagram {
+  browser  -&gt; webserver [label = "GET /index.html"];
+  browser &lt;-- webserver;
+  browser  -&gt; webserver [label = "POST /blog/comment"];
+              webserver  -&gt; database [label = "INSERT comment"];
+              webserver &lt;-- database;
+  browser &lt;-- webserver;
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-b58f696ba48f3a4b7d9b3194b9d89609fde9b526.png" alt="diagram {
+  browser  -&gt; webserver [label = &quot;GET /index.html&quot;];
+  browser &lt;-- webserver;
+  browser  -&gt; webserver [label = &quot;POST /blog/comment&quot;];
+              webserver  -&gt; database [label = &quot;INSERT comment&quot;];
+              webserver &lt;-- database;
+  browser &lt;-- webserver;
+}" width="640" height="436" />
+</p>
+</div>
+<div class="section" id="edge-types">
+<h2>edge types<a class="headerlink" href="#edge-types" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>{
+  // normal edge and doted edge
+  A -&gt; B [label = "normal edge"];
+  B --&gt; C [label = "dotted edge"];
+
+  B &lt;-- C [label = "return dotted edge"];
+  A &lt;- B [label = "return edge"];
+
+  // asynchronus edge
+  A -&gt;&gt; B [label = "asynchronus edge"];
+  B --&gt;&gt; C [label = "asynchronus dotted edge"];
+
+  B &lt;&lt;-- C [label = "return asynchronus doted edge"];
+  A &lt;&lt;- B [label = "return asynchronus edge"];
+
+  // self referenced edge
+  A -&gt; A [label = "self reference edge"];
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-f939f4059a2e9ae056711ca149380503a8f9d221.png" alt="{
+  // normal edge and doted edge
+  A -&gt; B [label = &quot;normal edge&quot;];
+  B --&gt; C [label = &quot;dotted edge&quot;];
+
+  B &lt;-- C [label = &quot;return dotted edge&quot;];
+  A &lt;- B [label = &quot;return edge&quot;];
+
+  // asynchronus edge
+  A -&gt;&gt; B [label = &quot;asynchronus edge&quot;];
+  B --&gt;&gt; C [label = &quot;asynchronus dotted edge&quot;];
+
+  B &lt;&lt;-- C [label = &quot;return asynchronus doted edge&quot;];
+  A &lt;&lt;- B [label = &quot;return asynchronus edge&quot;];
+
+  // self referenced edge
+  A -&gt; A [label = &quot;self reference edge&quot;];
+}" width="640" height="556" />
+</p>
+</div>
+<div class="section" id="attributes-of-edges">
+<h2>attributes of edges<a class="headerlink" href="#attributes-of-edges" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.2.2: </span>color attribute</p>
+<div class="highlight-python"><pre>{
+  // edge label
+  A -&gt; B [label = "call"];
+  A &lt;- B [label = "return"];
+
+  // diagonal edge
+  A -&gt; B [diagonal, label = "diagonal edge"];
+  A &lt;- B [diagonal, label = "return diagonal edge"];
+
+  // color of edge
+  A -&gt; B [label = "colored label", color = red];
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-15761d14d523d941458ae6982e5a31bfa1a12b8a.png" alt="{
+  // edge label
+  A -&gt; B [label = &quot;call&quot;];
+  A &lt;- B [label = &quot;return&quot;];
+
+  // diagonal edge
+  A -&gt; B [diagonal, label = &quot;diagonal edge&quot;];
+  A &lt;- B [diagonal, label = &quot;return diagonal edge&quot;];
+
+  // color of edge
+  A -&gt; B [label = &quot;colored label&quot;, color = red];
+}" width="448" height="436" />
+</p>
+</div>
+<div class="section" id="auto-return-edge-and-nested-sequense">
+<h2>auto return edge and nested sequense<a class="headerlink" href="#auto-return-edge-and-nested-sequense" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>{
+  // auto return edge
+  A =&gt; B [label = "call", return = "return"];
+
+  // nested auto return edge
+  A =&gt; B =&gt; C [label = "call", return = "return"];
+
+  // nested sequence
+  A =&gt; B [label = "nested call"]{
+     B =&gt; C [label = "call 1"];
+     B =&gt; D [label = "call 2"];
+     B =&gt; E [label = "call 3"];
+  }
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-436f9bff051a3c68688fec45e73a6e483d43a515.png" alt="{
+  // auto return edge
+  A =&gt; B [label = &quot;call&quot;, return = &quot;return&quot;];
+
+  // nested auto return edge
+  A =&gt; B =&gt; C [label = &quot;call&quot;, return = &quot;return&quot;];
+
+  // nested sequence
+  A =&gt; B [label = &quot;nested call&quot;]{
+     B =&gt; C [label = &quot;call 1&quot;];
+     B =&gt; D [label = &quot;call 2&quot;];
+     B =&gt; E [label = &quot;call 3&quot;];
+  }
+}" width="1024" height="756" />
+</p>
+</div>
+<div class="section" id="diagram-attributes">
+<h2>diagram attributes<a class="headerlink" href="#diagram-attributes" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.2.0.</span></p>
+<div class="highlight-python"><pre>diagram {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  edge_height = 80;  // default value is 40
+
+  // Set fontsize.
+  fontsize = 16;  // default value is 11
+
+  browser  -&gt; webserver [label = "GET \n/index.html"];
+  browser &lt;-- webserver;
+}
+</pre>
+</div>
+<p class="seqdiag">
+<img src="_images/seqdiag-4a8689443ffe139f66d6255d5719190ea7bca817.png" alt="diagram {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  edge_height = 80;  // default value is 40
+
+  // Set fontsize.
+  fontsize = 16;  // default value is 11
+
+  browser  -&gt; webserver [label = &quot;GET \n/index.html&quot;];
+  browser &lt;-- webserver;
+}" width="470" height="376" />
+</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sample diagams</a><ul>
+<li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
+<li><a class="reference internal" href="#edge-types">edge types</a></li>
+<li><a class="reference internal" href="#attributes-of-edges">attributes of edges</a></li>
+<li><a class="reference internal" href="#auto-return-edge-and-nested-sequense">auto return edge and nested sequense</a></li>
+<li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction of seqdiag</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sphinxcontrib.html"
+                        title="next chapter">sphinxcontrib-seqdiag</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/examples.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="sphinxcontrib-seqdiag"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of seqdiag"
+             >previous</a> |</li>
+        <li><a href="index.html">seqdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

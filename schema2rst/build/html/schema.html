@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Schema: sample &mdash; schema v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="schema v1.0 documentation" href="index.html" />
+    <link rel="next" title="Schema: sample" href="graph.html" />
+    <link rel="prev" title="schema2rst" href="index.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="graph.html" title="Schema: sample"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="schema2rst"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">schema v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="schema-sample">
+<h1>Schema: sample<a class="headerlink" href="#schema-sample" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="items">
+<h2>商品 (items)<a class="headerlink" href="#items" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Fullname</th>
+<th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">NOT NULL</th>
+<th class="head">PKey</th>
+<th class="head">Default</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>商品 ID</td>
+<td>id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>auto_increment</td>
+</tr>
+<tr><td>商品名</td>
+<td>name</td>
+<td>varchar(255)</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>種別</td>
+<td>type</td>
+<td>int(11)</td>
+<td>False</td>
+<td>False</td>
+<td>&#8216;1&#8217;</td>
+<td>1:食品, 2:文具, 3:雑貨</td>
+</tr>
+<tr><td>説明文</td>
+<td>description</td>
+<td>text</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="order-history">
+<h2>購入履歴 (order_history)<a class="headerlink" href="#order-history" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Fullname</th>
+<th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">NOT NULL</th>
+<th class="head">PKey</th>
+<th class="head">Default</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>履歴 ID</td>
+<td>id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>auto_increment</td>
+</tr>
+<tr><td>ユーザ ID</td>
+<td>user_id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>FK: users.id</td>
+</tr>
+<tr><td>商品 ID</td>
+<td>item_id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>FK: items.id</td>
+</tr>
+<tr><td>数量</td>
+<td>amount</td>
+<td>int(11)</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>購入日</td>
+<td>order_date</td>
+<td>datetime</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="keys">
+<h3>Keys<a class="headerlink" href="#keys" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>KEY: user_id (user_id, order_date)</li>
+<li>KEY: item_id (item_id, order_date)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="uncommented-table">
+<h2>uncommented_table<a class="headerlink" href="#uncommented-table" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Fullname</th>
+<th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">NOT NULL</th>
+<th class="head">PKey</th>
+<th class="head">Default</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>id</td>
+<td>id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>auto_increment</td>
+</tr>
+<tr><td>name</td>
+<td>name</td>
+<td>varchar(255)</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>utf8_bin</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="users">
+<h2>ユーザ (users)<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Fullname</th>
+<th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">NOT NULL</th>
+<th class="head">PKey</th>
+<th class="head">Default</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>ユーザ ID</td>
+<td>id</td>
+<td>int(11)</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>auto_increment</td>
+</tr>
+<tr><td>ログイン ID</td>
+<td>login_id</td>
+<td>varchar(16)</td>
+<td>False</td>
+<td>False</td>
+<td>&#8216;&#8217;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>氏名</td>
+<td>fullname</td>
+<td>varchar(255)</td>
+<td>False</td>
+<td>False</td>
+<td>&#8216;&#8217;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>メールアドレス</td>
+<td>mailaddr</td>
+<td>varchar(255)</td>
+<td>False</td>
+<td>False</td>
+<td>&#8216;&#8217;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id1">
+<h3>Keys<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>UNIQUE KEY: mailaddr (mailaddr)</li>
+<li>KEY: mailaddr_2 (mailaddr)</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Schema: sample</a><ul>
+<li><a class="reference internal" href="#items">商品 (items)</a></li>
+<li><a class="reference internal" href="#order-history">購入履歴 (order_history)</a><ul>
+<li><a class="reference internal" href="#keys">Keys</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uncommented-table">uncommented_table</a></li>
+<li><a class="reference internal" href="#users">ユーザ (users)</a><ul>
+<li><a class="reference internal" href="#id1">Keys</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">schema2rst</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="graph.html"
+                        title="next chapter">Schema: sample</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/schema.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="graph.html" title="Schema: sample"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="schema2rst"
+             >previous</a> |</li>
+        <li><a href="index.html">schema v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, tkomiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

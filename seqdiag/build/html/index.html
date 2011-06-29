@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>seqdiag - simple sequence-diagram image generator &mdash; seqdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="seqdiag v1.0 documentation" href="#" />
+    <link rel="next" title="Introduction of seqdiag" href="introduction.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/seqdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of seqdiag"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">seqdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="seqdiag-simple-sequence-diagram-image-generator">
+<h1>seqdiag - simple sequence-diagram image generator<a class="headerlink" href="#seqdiag-simple-sequence-diagram-image-generator" title="Permalink to this headline">¶</a></h1>
+<p><cite>seqdiag</cite> generate sequence-diagram image file from .diag file.
+.diag file is similar to DOT file (graphviz&#8217;s).</p>
+<p>You can get diagrams like this.</p>
+<p class="seqdiag">
+<img src="_images/seqdiag-041641d4eb3aff044b8675898429b5ee595ddb12.png" alt="diagram {
+  seqdiag -&gt; &quot;sequence-diagrams&quot; [label = &quot;generates&quot;];
+  seqdiag --&gt; &quot;is very easy!&quot;;
+}" width="640" height="276" />
+</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction of seqdiag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#setup">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#by-easy-install">by easy_install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#by-buildout">by buildout</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#font-configuration">Font Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#license">License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Sample diagams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#simple-diagram">simple diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#edge-types">edge types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#attributes-of-edges">attributes of edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#auto-return-edge-and-nested-sequense">auto return edge and nested sequense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#diagram-attributes">diagram attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinxcontrib.html">sphinxcontrib-seqdiag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sphinxcontrib.html#setting">Setting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sphinxcontrib.html#install">Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphinxcontrib.html#configure-sphinx">Configure Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sphinxcontrib.html#directive">Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinxcontrib.html#configuration-file-options">Configuration File Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="demo.html">Demo - interactive shell for seqdiag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="demo.html#diagram-source">Diagram source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demo.html#diagram-outputs">Diagram outputs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Next topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="next chapter">Introduction of seqdiag</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction of seqdiag"
+             >next</a> |</li>
+        <li><a href="#">seqdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

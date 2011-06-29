@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction of nwdiag &mdash; nwdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+
+    <link rel="top" title="nwdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="Sample diagams" href="examples.html" />
+    <link rel="prev" title="nwdiag - simple network-diagram image generator" href="index.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/netdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="examples.html" title="Sample diagams"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="nwdiag - simple network-diagram image generator"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction-of-nwdiag">
+<h1>Introduction of nwdiag<a class="headerlink" href="#introduction-of-nwdiag" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Generate network-diagram from dot like text (basic feature).</li>
+<li>Multilingualization for node-label (utf-8 only).</li>
+<li>Sphinx embedding</li>
+</ul>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="by-easy-install">
+<h3>by easy_install<a class="headerlink" href="#by-easy-install" title="Permalink to this headline">¶</a></h3>
+<p>Make environment</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo easy_install nwdiag
+</pre></div>
+</div>
+</div>
+<div class="section" id="by-buildout">
+<h3>by buildout<a class="headerlink" href="#by-buildout" title="Permalink to this headline">¶</a></h3>
+<p>Make environment</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>hg clone http://bitbucket.org/tk0miya/nwdiag
+<span class="nv">$ </span><span class="nb">cd </span>nwdiag
+<span class="nv">$ </span>python bootstrap.py
+<span class="nv">$ </span>bin/buildout
+</pre></div>
+</div>
+<p>Copy and modify ini file. example</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cp &lt;nwdiag installed path&gt;/nwdiag/examples/simple.diag .
+<span class="nv">$ </span>vi simple.diag
+</pre></div>
+</div>
+<p>Please refer to <a class="reference internal" href="examples.html#sample-diagrams"><em>Sample diagams</em></a> section for the format of the
+<cite>simpla.diag</cite> configuration file.</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Execute nwdiag command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag simple.diag
+<span class="nv">$ </span>ls simple.png
+simple.png
+</pre></div>
+</div>
+<p>If you want SVG images, use -T option</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag -Tsvg simple.diag
+<span class="nv">$ </span>ls simple.svg
+simple.svg
+</pre></div>
+</div>
+</div>
+<div class="section" id="font-configuration">
+<h2>Font Configuration<a class="headerlink" href="#font-configuration" title="Permalink to this headline">¶</a></h2>
+<p>nwdiag uses TrueType Font to render text.
+nwdiag try to detect installed fonts but if nothing detected,
+You can specify fonts with -f (&#8211;font) option</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>nwdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
+</pre></div>
+</div>
+<p>If you always use same font, write $HOME/.nwdiagrc</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>cat <span class="nv">$HOME</span>/.nwdiagrc
+<span class="o">[</span>nwdiag<span class="o">]</span>
+<span class="nv">fontpath</span> <span class="o">=</span> /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+</pre></div>
+</div>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python 2.4 or later (not support 3.x)</li>
+<li>Python Imaging Library 1.1.5 or later.</li>
+<li>funcparserlib 0.3.4 or later.</li>
+<li>setuptools or distribute.</li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>Apache License 2.0</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction of nwdiag</a><ul>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#setup">Setup</a><ul>
+<li><a class="reference internal" href="#by-easy-install">by easy_install</a></li>
+<li><a class="reference internal" href="#by-buildout">by buildout</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#font-configuration">Font Configuration</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">nwdiag - simple network-diagram image generator</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="examples.html"
+                        title="next chapter">Sample diagams</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/introduction.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="examples.html" title="Sample diagams"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="nwdiag - simple network-diagram image generator"
+             >previous</a> |</li>
+        <li><a href="index.html">nwdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

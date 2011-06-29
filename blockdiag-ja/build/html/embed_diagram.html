@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>文書にブロック図を埋め込む &mdash; blockdiag v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+
+    <link rel="top" title="blockdiag v1.0 documentation" href="index.html" />
+    <link rel="next" title="Sphinx 拡張：sphinxcontrib-blockdiag" href="sphinxcontrib.html" />
+    <link rel="prev" title="出力サンプル" href="examples.html" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/base64.js"></script>
+    <script type="text/javascript" src="_static/blockdiag.js"></script>
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="Sphinx 拡張：sphinxcontrib-blockdiag"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="出力サンプル"
+             accesskey="P">前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>文書にブロック図を埋め込む<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>いくつかの文書管理システムではプラグインや拡張機能として
+<cite>blockdiag</cite> で生成したブロック図を文章に埋め込むことができます。</p>
+<div class="section" id="sphinx">
+<h2>Sphinx に埋め込む<a class="headerlink" href="#sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Sphinx で作成する文書にブロック図を埋め込むには
+Sphinx 拡張である sphinxcontrib-blockdiag パッケージを利用します。</p>
+<p>sphinxcontrib-blockdiag については <a class="reference internal" href="sphinxcontrib.html#sphinxcontrib-blockdiag"><em>Sphinx 拡張：sphinxcontrib-blockdiag</em></a> で説明します。</p>
+</div>
+<div class="section" id="redmine">
+<h2>Redmine に埋め込む<a class="headerlink" href="#redmine" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Redmine の Wiki にブロック図を埋め込むには
+Wiki External Filter Plugin を利用します。</p>
+<p>詳細は <a class="reference external" href="http://d.hatena.ne.jp/miau/20110309/1299674086">Wiki External Filter Plugin を導入してみた</a> をご覧ください。</p>
+</div>
+<div class="section" id="trac">
+<h2>Trac に埋め込む<a class="headerlink" href="#trac" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Trac の Wiki にブロック図を埋め込むには <a class="reference external" href="http://trac-hacks.org/wiki/TracBlockDiagPlugin">TracBlockDiagPlugin</a> を利用します。</p>
+</div>
+<div class="section" id="moinmoin">
+<h2>moinmoin に埋め込む<a class="headerlink" href="#moinmoin" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>moinmoin にブロック図を取り込むには <a class="reference external" href="http://d.hatena.ne.jp/podhmo/20110409/1302342454">moinmoin blockdiag plugin</a> を利用します。</p>
+</div>
+<div class="section" id="mediawiki">
+<h2>mediawiki に埋め込む<a class="headerlink" href="#mediawiki" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>mediawiki にブロック図を取り込むには <a class="reference external" href="https://github.com/kjmkznr/blockdiag-mediawiki-extension">Blockdiag MediaWiki Extension</a> を利用します。</p>
+</div>
+<div class="section" id="api">
+<h2>API 経由で取得する<a class="headerlink" href="#api" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference internal" href="demo.html#interactive-shell-for-blockdiag"><em>デモ：interactive shell for blockdiag</em></a> では Web API を提供しています。
+テキストデータを送信すると SVG 形式のブロック図を取得することができます。</p>
+<p>Web API は <a class="reference external" href="http://blockdiag.appspot.com/image">http://blockdiag.appspot.com/image</a> に対して、
+以下のパラメータを含んだ GET リクエストを送ることで呼び出すことができます。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">パラメータ名</th>
+<th class="head">内容</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>src</td>
+<td>テキスト形式のブロック図を指定します。
+encoding=base64 を指定した場合は base64 エンコードする必要があります。</td>
+</tr>
+<tr><td>encoding</td>
+<td>base64, jsonp のいずれかを指定することができます。
+base64 を指定した場合、src に指定するテキストを base64 形式で送信します。
+jsonp を指定した場合、jsonp 形式で結果を受け取ることができます。</td>
+</tr>
+<tr><td>callback</td>
+<td>コールバック関数の名前を指定します。
+encoding=jsonp の場合のみ有効です。</td>
+</tr>
+</tbody>
+</table>
+<p>サーバは、受信したテキストデータが正常な図であれば、
+SVG 形式のブロック図を送信します。
+もし受信したテキストに文法間違いやエラーがあった場合は、
+空のレスポンスを返します。</p>
+<div class="admonition note">
+<p class="first admonition-title">ノート</p>
+<p class="last">この API は実験的に提供しているものであるため、
+パラメータの変更やサービスの停止が行われる可能性があります。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">文書にブロック図を埋め込む</a><ul>
+<li><a class="reference internal" href="#sphinx">Sphinx に埋め込む</a></li>
+<li><a class="reference internal" href="#redmine">Redmine に埋め込む</a></li>
+<li><a class="reference internal" href="#trac">Trac に埋め込む</a></li>
+<li><a class="reference internal" href="#moinmoin">moinmoin に埋め込む</a></li>
+<li><a class="reference internal" href="#mediawiki">mediawiki に埋め込む</a></li>
+<li><a class="reference internal" href="#api">API 経由で取得する</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="examples.html"
+                        title="前の章へ">出力サンプル</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="sphinxcontrib.html"
+                        title="次の章へ">Sphinx 拡張：sphinxcontrib-blockdiag</a></p>
+  <h3>このページ</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/embed_diagram.txt"
+           rel="nofollow">ソースコードを表示</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    モジュール、クラス、または関数名を入力してください
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="sphinxcontrib.html" title="Sphinx 拡張：sphinxcontrib-blockdiag"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="出力サンプル"
+             >前へ</a> |</li>
+        <li><a href="index.html">blockdiag v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2010, Takeshi Komiya.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7 で生成しました。
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19477951-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+  </body>
+</html>

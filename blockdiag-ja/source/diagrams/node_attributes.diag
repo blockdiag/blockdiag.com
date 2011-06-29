@@ -1,0 +1,24 @@
+diagram {
+   // ノードの設定 (枠線の種別、背景色)
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = "#888888"];
+
+   // エッジの設定 (線の種別、色)
+   A -> B [style = dotted];
+   B -> C [style = dashed];
+   C -> D [color = "red"];
+
+   // ノードの設定 (背番号)
+   E [numbered = 99];
+
+   // ノードの設定 (背景画像)
+   F [label = "", background = "source/diagrams/python-logo.gif"];
+
+   // エッジの設定 (接続の向き)
+   E -> F [dir = none];
+   F -> G [dir = forward];
+   G -> H [dir = back];
+   H -> I [dir = both];
+}
