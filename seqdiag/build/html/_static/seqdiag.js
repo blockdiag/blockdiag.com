@@ -15,7 +15,7 @@ function update_diagram() {
     success: function(json) {
       if (json['image']) {
         re = RegExp('viewBox="\\d+\\s+\\d+\\s+(\\d+)\\s+(\\d+)\\s*"');
-        m = re(json['image'])
+        m = json['image'].match(re)
         if (m) {
             width = m[1]
             height = m[2]
