@@ -8,13 +8,12 @@ blockdiag - simple block-diagram image generator
 You can get diagrams like this.
 
 .. blockdiag::
-   :desctable:
 
    diagram {
      blockdiag -> generates -> "block-diagrams";
      blockdiag -> is -> "very easy!";
 
-     blockdiag [color = "greenyellow", description = "script>alert('hello');/script>"];
+     blockdiag [color = "greenyellow"];
      "block-diagrams" [color = "pink"];
      "very easy!" [color = "orange"];
    }
