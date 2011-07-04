@@ -32,7 +32,11 @@ apt-get コマンドで依存パッケージをインストールします。
    `blockdiag` を Debian パッケージとして管理することができます。
 
    pypi-install コマンドは python-stdeb パッケージに含まれているので、
-   お好みに合わせてお使い下さい。
+   お好みに合わせてお使い下さい::
+
+     % pypi-install funcparserlib
+     % pypi-install webcolors
+     % pypi-install blockdiag
 
 CentOS 5.5/5.6 の場合
 ---------------------
