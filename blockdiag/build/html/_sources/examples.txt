@@ -73,14 +73,27 @@ shape of nodes
    actor shape
 
 .. versionadded:: 0.8.2
-   dots and none shape,
-   stacked nodes
+   dots shape
 
 .. literalinclude:: diagrams/node_shapes.diag
 .. blockdiag:: diagrams/node_shapes.diag
 
+Using stacked attribute
+-----------------------
+
+.. versionadded:: 0.8.2
+
 .. literalinclude:: diagrams/stacked_node_shape.diag
 .. blockdiag:: diagrams/stacked_node_shape.diag
+
+Using dots shape
+----------------
+
+.. versionadded:: 0.8.2
+
+.. literalinclude:: diagrams/dots_shape.diag
+.. blockdiag:: diagrams/dots_shape.diag
+
 
 grouping nodes
 ==============

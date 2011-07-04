@@ -12,14 +12,11 @@
   endpoint [shape = "endpoint"];
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
-
   dots [shape = "dots"];
-  none [shape = "none"];
 
   box -> roundedbox -> diamond -> ellipse;
   cloud -> note -> mail -> actor;
-  minidiamond -> beginpoint -> endpoint;
-  dots -> none;
+  minidiamond -> beginpoint -> endpoint -> dots;
 
   // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
