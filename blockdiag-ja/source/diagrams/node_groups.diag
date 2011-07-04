@@ -3,28 +3,28 @@ diagram admin {
    A -> E;
    A -> H;
 
-   // A、B は同じグループに所属
+   // A and B belong to first group.
    group {
       A; B;
    }
 
-   // E、F、G は同じグループ(second_group)に所属
+   // E, F and G belong to second group.
    group second_group {
-      // グループラベルを設定
+      // Set group-label
       label = "second group";
 
-      // グループの背景色を設定
+      // Set background-color to this group.
       color = "#77FF77";
 
       E -> F -> G;
 
-      // H、I は内側のグループに所属
+      // H and I belong to third "nested" group.
       group {
           color = "#7777FF";
           H -> I;
       }
    }
 
-   // J を second_group グループに追加する
+   // J belongs to second group
    J [group = second_group];
 }

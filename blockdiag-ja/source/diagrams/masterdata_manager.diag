@@ -1,11 +1,11 @@
 diagram admin {
-  index [label = "一覧画面"];
-  add [label = "追加画面"];
-  add_confirm [label = "追加画面(確認)"];
-  edit [label = "編集画面"];
-  edit_confirm [label = "編集画面(確認)"];
-  show [label = "詳細表示画面"];
-  delete_confirm [label = "削除画面(確認)"];
+  index [label = "List of FOOs"];
+  add [label = "Add FOO"];
+  add_confirm [label = "Add FOO (confirm)"];
+  edit [label = "Edit FOO"];
+  edit_confirm [label = "Edit FOO (confirm)"];
+  show [label = "Show FOO"];
+  delete_confirm [label = "Delete FOO (confirm)"];
 
   index -> add  -> add_confirm  -> index;
   index -> edit -> edit_confirm -> index;
