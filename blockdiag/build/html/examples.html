@@ -254,6 +254,9 @@
 <span class="versionmodified">New in version 0.6.5: </span>(experimental)</p>
 <p class="versionadded">
 <span class="versionmodified">New in version 0.6.6: </span>actor shape</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.8.2: </span>dots and none shape,
+stacked nodes</p>
 <div class="highlight-python"><pre>{
   // standard node shapes
   box [shape = "box"];
@@ -269,10 +272,13 @@
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
 
+  dots [shape = "dots"];
+  none [shape = "none"];
+
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
   minidiamond -&gt; beginpoint -&gt; endpoint;
-
+  dots -&gt; none;
 
   // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
@@ -288,7 +294,7 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-5412991f9e2ff7899695ea94b2d6a8d73eb3ea58.png" alt="{
+<img src="_images/blockdiag-76987caca8bda4d49276168771f60680e9755545.png" alt="{
   // standard node shapes
   box [shape = &quot;box&quot;];
   roundedbox [shape = &quot;roundedbox&quot;];
@@ -303,10 +309,13 @@
   minidiamond [shape = &quot;minidiamond&quot;];
   actor [shape = &quot;actor&quot;];
 
+  dots [shape = &quot;dots&quot;];
+  none [shape = &quot;none&quot;];
+
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
   minidiamond -&gt; beginpoint -&gt; endpoint;
-
+  dots -&gt; none;
 
   // node shapes for flowcharts
   condition [shape = &quot;flowchart.condition&quot;];
@@ -318,7 +327,27 @@
 
   condition -&gt; database -&gt; terminator -&gt; input;
   loopin -&gt; loopout;
-}" width="832" height="456" />
+}" width="832" height="536" />
+</p>
+<div class="highlight-python"><pre>diagram {
+  // Set stacked to nodes.
+  stacked [stacked];
+  diamond [shape = "diamond", stacked];
+  database [shape = "flowchart.database", stacked];
+
+  stacked -&gt; diamond -&gt; database;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-d669c3f6ec82c997a7a8dc1ef79669c56c9fd19d.png" alt="diagram {
+  // Set stacked to nodes.
+  stacked [stacked];
+  diamond [shape = &quot;diamond&quot;, stacked];
+  database [shape = &quot;flowchart.database&quot;, stacked];
+
+  stacked -&gt; diamond -&gt; database;
+}" width="640" height="136" />
 </p>
 </div>
 <div class="section" id="grouping-nodes">
