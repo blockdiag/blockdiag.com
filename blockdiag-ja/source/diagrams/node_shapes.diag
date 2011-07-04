@@ -1,5 +1,5 @@
 {
-  // 基本形状
+  // standard node shapes
   box [shape = "box"];
   roundedbox [shape = "roundedbox"];
   diamond [shape = "diamond"];
@@ -12,13 +12,13 @@
   endpoint [shape = "endpoint"];
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
+  dots [shape = "dots"];
 
   box -> roundedbox -> diamond -> ellipse;
   cloud -> note -> mail -> actor;
-  minidiamond -> beginpoint -> endpoint;
+  minidiamond -> beginpoint -> endpoint -> dots;
 
-
-  // フローチャート用形状
+  // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
   database [shape = "flowchart.database"];
   input [shape = "flowchart.input"];

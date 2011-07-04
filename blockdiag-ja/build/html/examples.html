@@ -74,12 +74,12 @@
 <div class="section" id="id3">
 <h2>ラベルの設定<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-python"><pre>diagram {
-   // ノードラベルの設定
+   // Set labels to nodes.
    A [label = "foo"];
    B [label = "bar"];
    C [label = "baz"];
 
-   // エッジラベルの設定 (短い文字列のみ)
+   // Set labels to edges. (short text only)
    A -&gt; B [label = "click bar"];
    B -&gt; C [label = "click baz"];
    C -&gt; A;
@@ -87,13 +87,13 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-eb81b54b0ff1c3091c87a7f4d71429e4ef55b0ac.png" alt="diagram {
-   // ノードラベルの設定
+<img src="_images/blockdiag-5482f5cb2903e76261e994bcfb3888549e06d128.png" alt="diagram {
+   // Set labels to nodes.
    A [label = &quot;foo&quot;];
    B [label = &quot;bar&quot;];
    C [label = &quot;baz&quot;];
 
-   // エッジラベルの設定 (短い文字列のみ)
+   // Set labels to edges. (short text only)
    A -&gt; B [label = &quot;click bar&quot;];
    B -&gt; C [label = &quot;click baz&quot;];
    C -&gt; A;
@@ -103,24 +103,24 @@
 <div class="section" id="id4">
 <h2>ノード、エッジのカスタマイズ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-python"><pre>diagram {
-   // ノードの設定 (枠線の種別、背景色)
+   // Set boder-style and backgroun-color to nodes.
    A [style = dotted];
    B [style = dashed];
    C [color = pink];
    D [color = "#888888"];
 
-   // エッジの設定 (線の種別、色)
+   // Set border-style and color to edges.
    A -&gt; B [style = dotted];
    B -&gt; C [style = dashed];
    C -&gt; D [color = "red"];
 
-   // ノードの設定 (背番号)
+   // Set numbered-badge to nodes.
    E [numbered = 99];
 
-   // ノードの設定 (背景画像)
+   // Set background image to nodes (and erase label).
    F [label = "", background = "source/diagrams/python-logo.gif"];
 
-   // エッジの設定 (接続の向き)
+   // Set arrow direction to edges.
    E -&gt; F [dir = none];
    F -&gt; G [dir = forward];
    G -&gt; H [dir = back];
@@ -129,25 +129,25 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-6379d01868d64a6799be082a1911ef175670ca2e.png" alt="diagram {
-   // ノードの設定 (枠線の種別、背景色)
+<img src="_images/blockdiag-dba2f816fc7de384eff286677693ca083b51ed0b.png" alt="diagram {
+   // Set boder-style and backgroun-color to nodes.
    A [style = dotted];
    B [style = dashed];
    C [color = pink];
    D [color = &quot;#888888&quot;];
 
-   // エッジの設定 (線の種別、色)
+   // Set border-style and color to edges.
    A -&gt; B [style = dotted];
    B -&gt; C [style = dashed];
    C -&gt; D [color = &quot;red&quot;];
 
-   // ノードの設定 (背番号)
+   // Set numbered-badge to nodes.
    E [numbered = 99];
 
-   // ノードの設定 (背景画像)
+   // Set background image to nodes (and erase label).
    F [label = &quot;&quot;, background = &quot;source/diagrams/python-logo.gif&quot;];
 
-   // エッジの設定 (接続の向き)
+   // Set arrow direction to edges.
    E -&gt; F [dir = none];
    F -&gt; G [dir = forward];
    G -&gt; H [dir = back];
@@ -160,20 +160,20 @@
 <p class="versionadded">
 <span class="versionmodified">バージョン 0.7.5 で追加.</span></p>
 <div class="highlight-python"><pre>{
-  // 複数の子ノードへの接続
+  // branching edges to multiple children
   A -&gt; B, C;
 
-  // 複数の親ノードからの接続
+  // branching edges from multiple parents
   D, E -&gt; F;
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-b6c2e6353ceb45b8c84b773c5b91a296bf768467.png" alt="{
-  // 複数の子ノードへの接続
+<img src="_images/blockdiag-08e03d2bc471b2c4bf5b792d4a12ee5b48f82418.png" alt="{
+  // branching edges to multiple children
   A -&gt; B, C;
 
-  // 複数の親ノードからの接続
+  // branching edges from multiple parents
   D, E -&gt; F;
 }" width="448" height="376" />
 </p>
@@ -200,16 +200,16 @@
 <div class="highlight-python"><pre>{
   A -&gt; B -&gt; C -&gt; D -&gt; E;
 
-  // C から D への接続を折り返す。(D は左側に配置される)
+  // fold edge at C to D (D will be layouted at top level; left side)
   C -&gt; D [folded];
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-2e7255523ce31b24604272e2a9b085e1324b1674.png" alt="{
+<img src="_images/blockdiag-4d988f8f9aa000145a9c480c947e080d3f5b54bb.png" alt="{
   A -&gt; B -&gt; C -&gt; D -&gt; E;
 
-  // C から D への接続を折り返す。(D は左側に配置される)
+  // fold edge at C to D (D will be layouted at top level; left side)
   C -&gt; D [folded];
 }" width="640" height="216" />
 </p>
@@ -217,7 +217,7 @@
 <div class="section" id="id8">
 <h2>日本語の利用<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-python"><pre>diagram admin {
-   // 日本語をラベルに指定することができます。
+   // Set M17N text using label property.
    A [label = "起"];
    B [label = "承"];
    C [label = "転"];
@@ -225,14 +225,17 @@
 
    A -&gt; B -&gt; C -&gt; D;
 
-   // クオートすると日本語をノード ID に使用できます。
-   "春" -&gt; "夏" -&gt; "秋" -&gt; "冬";
+   // Use M17N text directly (need to quote).
+   春 -&gt; 夏 -&gt; 秋 -&gt; 冬;
+
+   // Use M17N text including symbol characters (need to quote).
+   "春は 曙" -&gt; "夏 = 夜" -&gt; "秋.夕暮れ" -&gt; "冬 &amp; つとめて";
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-72a88904b251b9d42a062bf77be8ad265503472e.png" alt="diagram admin {
-   // 日本語をラベルに指定することができます。
+<img src="_images/blockdiag-5a95df20aaec19480d6de56890f688e77f5966fa.png" alt="diagram admin {
+   // Set M17N text using label property.
    A [label = &quot;起&quot;];
    B [label = &quot;承&quot;];
    C [label = &quot;転&quot;];
@@ -240,9 +243,12 @@
 
    A -&gt; B -&gt; C -&gt; D;
 
-   // クオートすると日本語をノード ID に使用できます。
-   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
-}" width="832" height="216" />
+   // Use M17N text directly (need to quote).
+   春 -&gt; 夏 -&gt; 秋 -&gt; 冬;
+
+   // Use M17N text including symbol characters (need to quote).
+   &quot;春は 曙&quot; -&gt; &quot;夏 = 夜&quot; -&gt; &quot;秋.夕暮れ&quot; -&gt; &quot;冬 &amp; つとめて&quot;;
+}" width="832" height="296" />
 </p>
 <div class="admonition note">
 <p class="first admonition-title">ノート</p>
@@ -262,9 +268,11 @@
 <p class="versionadded">
 <span class="versionmodified">バージョン 0.6.5 で追加: </span>(experimental)</p>
 <p class="versionadded">
-<span class="versionmodified">バージョン 0.6.6 で追加: </span>actor shape</p>
+<span class="versionmodified">バージョン 0.6.6 で追加: </span>actor shape に対応</p>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.8.2 で追加: </span>dots shape に対応</p>
 <div class="highlight-python"><pre>{
-  // 基本形状
+  // standard node shapes
   box [shape = "box"];
   roundedbox [shape = "roundedbox"];
   diamond [shape = "diamond"];
@@ -277,13 +285,13 @@
   endpoint [shape = "endpoint"];
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
+  dots [shape = "dots"];
 
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
-  minidiamond -&gt; beginpoint -&gt; endpoint;
+  minidiamond -&gt; beginpoint -&gt; endpoint -&gt; dots;
 
-
-  // フローチャート用形状
+  // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
   database [shape = "flowchart.database"];
   input [shape = "flowchart.input"];
@@ -297,8 +305,8 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-25185abfcf40a3e66881df199387ee9afbfd9bd4.png" alt="{
-  // 基本形状
+<img src="_images/blockdiag-a78bd6f016062bba24eaac7f467d8fd9096c4e4f.png" alt="{
+  // standard node shapes
   box [shape = &quot;box&quot;];
   roundedbox [shape = &quot;roundedbox&quot;];
   diamond [shape = &quot;diamond&quot;];
@@ -311,13 +319,13 @@
   endpoint [shape = &quot;endpoint&quot;];
   minidiamond [shape = &quot;minidiamond&quot;];
   actor [shape = &quot;actor&quot;];
+  dots [shape = &quot;dots&quot;];
 
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
-  minidiamond -&gt; beginpoint -&gt; endpoint;
+  minidiamond -&gt; beginpoint -&gt; endpoint -&gt; dots;
 
-
-  // フローチャート用形状
+  // node shapes for flowcharts
   condition [shape = &quot;flowchart.condition&quot;];
   database [shape = &quot;flowchart.database&quot;];
   input [shape = &quot;flowchart.input&quot;];
@@ -329,6 +337,56 @@
   loopin -&gt; loopout;
 }" width="832" height="456" />
 </p>
+<div class="section" id="stacked">
+<h3>stacked 属性の利用<a class="headerlink" href="#stacked" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.8.2 で追加.</span></p>
+<div class="highlight-python"><pre>diagram {
+  // Set stacked to nodes.
+  stacked [stacked];
+  diamond [shape = "diamond", stacked];
+  database [shape = "flowchart.database", stacked];
+
+  stacked -&gt; diamond -&gt; database;
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-d669c3f6ec82c997a7a8dc1ef79669c56c9fd19d.png" alt="diagram {
+  // Set stacked to nodes.
+  stacked [stacked];
+  diamond [shape = &quot;diamond&quot;, stacked];
+  database [shape = &quot;flowchart.database&quot;, stacked];
+
+  stacked -&gt; diamond -&gt; database;
+}" width="640" height="136" />
+</p>
+</div>
+<div class="section" id="dots">
+<h3>dots 形状の利用<a class="headerlink" href="#dots" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.8.2 で追加.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B, C, D;
+
+  C [shape = "dots"];
+
+  // hide edge forward to dots node
+  A -&gt; C [style = "none"];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-dba648dbb7a209bcb09c0ed270c1ee8faf4fa37c.png" alt="{
+  A -&gt; B, C, D;
+
+  C [shape = &quot;dots&quot;];
+
+  // hide edge forward to dots node
+  A -&gt; C [style = &quot;none&quot;];
+}" width="448" height="296" />
+</p>
+</div>
 </div>
 <div class="section" id="id10">
 <h2>グルーピング<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
@@ -343,62 +401,62 @@
    A -&gt; E;
    A -&gt; H;
 
-   // A、B は同じグループに所属
+   // A and B belong to first group.
    group {
       A; B;
    }
 
-   // E、F、G は同じグループ(second_group)に所属
+   // E, F and G belong to second group.
    group second_group {
-      // グループラベルを設定
+      // Set group-label
       label = "second group";
 
-      // グループの背景色を設定
+      // Set background-color to this group.
       color = "#77FF77";
 
       E -&gt; F -&gt; G;
 
-      // H、I は内側のグループに所属
+      // H and I belong to third "nested" group.
       group {
           color = "#7777FF";
           H -&gt; I;
       }
    }
 
-   // J を second_group グループに追加する
+   // J belongs to second group
    J [group = second_group];
 }
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-2b84c1a41bf987e0eaa6a8965e13710799db54a6.png" alt="diagram admin {
+<img src="_images/blockdiag-e8516416bc03762e6d3deadac2348c47759a6765.png" alt="diagram admin {
    A -&gt; B -&gt; C -&gt; D;
    A -&gt; E;
    A -&gt; H;
 
-   // A、B は同じグループに所属
+   // A and B belong to first group.
    group {
       A; B;
    }
 
-   // E、F、G は同じグループ(second_group)に所属
+   // E, F and G belong to second group.
    group second_group {
-      // グループラベルを設定
+      // Set group-label
       label = &quot;second group&quot;;
 
-      // グループの背景色を設定
+      // Set background-color to this group.
       color = &quot;#77FF77&quot;;
 
       E -&gt; F -&gt; G;
 
-      // H、I は内側のグループに所属
+      // H and I belong to third &quot;nested&quot; group.
       group {
           color = &quot;#7777FF&quot;;
           H -&gt; I;
       }
    }
 
-   // J を second_group グループに追加する
+   // J belongs to second group
    J [group = second_group];
 }" width="1024" height="376" />
 </p>
@@ -408,19 +466,19 @@
 <p class="versionadded">
 <span class="versionmodified">バージョン 0.7.2 で追加: </span>default_shape を追加</p>
 <div class="highlight-python"><pre>diagram {
-  // ノードサイズの設定
-  node_width = 200;  // デフォルト： 128
-  node_height = 100;  // デフォルト： 40
+  // Set node metrix
+  node_width = 200;  // default value is 128
+  node_height = 100;  // default value is 40
 
-  // ノード間隔の設定
-  span_width = 240;  // デフォルト： 64
-  span_height = 120;  // デフォルト： 40
+  // Set span metrix
+  span_width = 240;  // default value is 64
+  span_height = 120;  // default value is 40
 
-  // フォントサイズの設定
-  fontsize = 20;  // デフォルト： 11
+  // Set fontsize
+  fontsize = 20;  // default value is 11
 
-  // ノード形状の設定
-  default_shape = roundedbox;  // デフォルト： box
+  // set default shape
+  default_shape = roundedbox;  // default value is 'box'
 
   A -&gt; B [label = "Use long long\nedge label"];
   A -&gt; C;
@@ -428,20 +486,20 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-0b3d4ac454f48824c76ca5c13866ed379dd4dd45.png" alt="diagram {
-  // ノードサイズの設定
-  node_width = 200;  // デフォルト： 128
-  node_height = 100;  // デフォルト： 40
+<img src="_images/blockdiag-c8aae5236382b4746fef423de5965e077c0e7a1d.png" alt="diagram {
+  // Set node metrix
+  node_width = 200;  // default value is 128
+  node_height = 100;  // default value is 40
 
-  // ノード間隔の設定
-  span_width = 240;  // デフォルト： 64
-  span_height = 120;  // デフォルト： 40
+  // Set span metrix
+  span_width = 240;  // default value is 64
+  span_height = 120;  // default value is 40
 
-  // フォントサイズの設定
-  fontsize = 20;  // デフォルト： 11
+  // Set fontsize
+  fontsize = 20;  // default value is 11
 
-  // ノード形状の設定
-  default_shape = roundedbox;  // デフォルト： box
+  // set default shape
+  default_shape = roundedbox;  // default value is 'box'
 
   A -&gt; B [label = &quot;Use long long\nedge label&quot;];
   A -&gt; C;
@@ -453,7 +511,6 @@
 <p class="versionadded">
 <span class="versionmodified">バージョン 0.7.0 で追加.</span></p>
 <div class="highlight-python"><pre>{
-  // 縦書きモード
   orientation = portrait
 
   A -&gt; B -&gt; C;
@@ -462,8 +519,7 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-fc8494a836482d85542a5f86df916ec74be809ea.png" alt="{
-  // 縦書きモード
+<img src="_images/blockdiag-cbd04fd98f02dd0bbfd690f6cc4c7f35d43fa791.png" alt="{
   orientation = portrait
 
   A -&gt; B -&gt; C;
@@ -479,7 +535,6 @@
   A -&gt; B -&gt; C;
 
   group {
-    // このグループを縦書きモードに設定
     orientation = portrait
 
     C -&gt; D -&gt; E;
@@ -488,11 +543,10 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-5d8a1b2ce47169425918b2623ae0375416e851da.png" alt="{
+<img src="_images/blockdiag-8e6ba7eeacecfce5799ef76b1f245f1c8f3570aa.png" alt="{
   A -&gt; B -&gt; C;
 
   group {
-    // このグループを縦書きモードに設定
     orientation = portrait
 
     C -&gt; D -&gt; E;
@@ -503,13 +557,13 @@
 <div class="section" id="id14">
 <h2>シンプルな管理画面の画面遷移図(例)<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-python"><pre>diagram admin {
-  index [label = "一覧画面"];
-  add [label = "追加画面"];
-  add_confirm [label = "追加画面(確認)"];
-  edit [label = "編集画面"];
-  edit_confirm [label = "編集画面(確認)"];
-  show [label = "詳細表示画面"];
-  delete_confirm [label = "削除画面(確認)"];
+  index [label = "List of FOOs"];
+  add [label = "Add FOO"];
+  add_confirm [label = "Add FOO (confirm)"];
+  edit [label = "Edit FOO"];
+  edit_confirm [label = "Edit FOO (confirm)"];
+  show [label = "Show FOO"];
+  delete_confirm [label = "Delete FOO (confirm)"];
 
   index -&gt; add  -&gt; add_confirm  -&gt; index;
   index -&gt; edit -&gt; edit_confirm -&gt; index;
@@ -519,14 +573,14 @@
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-cab9abefda5467b118fae3319b7d1341c394e1f9.png" alt="diagram admin {
-  index [label = &quot;一覧画面&quot;];
-  add [label = &quot;追加画面&quot;];
-  add_confirm [label = &quot;追加画面(確認)&quot;];
-  edit [label = &quot;編集画面&quot;];
-  edit_confirm [label = &quot;編集画面(確認)&quot;];
-  show [label = &quot;詳細表示画面&quot;];
-  delete_confirm [label = &quot;削除画面(確認)&quot;];
+<img src="_images/blockdiag-c63ad66ec48f9eb0c96ea78e72b83b73effa549a.png" alt="diagram admin {
+  index [label = &quot;List of FOOs&quot;];
+  add [label = &quot;Add FOO&quot;];
+  add_confirm [label = &quot;Add FOO (confirm)&quot;];
+  edit [label = &quot;Edit FOO&quot;];
+  edit_confirm [label = &quot;Edit FOO (confirm)&quot;];
+  show [label = &quot;Show FOO&quot;];
+  delete_confirm [label = &quot;Delete FOO (confirm)&quot;];
 
   index -&gt; add  -&gt; add_confirm  -&gt; index;
   index -&gt; edit -&gt; edit_confirm -&gt; index;
@@ -553,7 +607,11 @@
 <li><a class="reference internal" href="#id6">エッジの向きを変更する</a></li>
 <li><a class="reference internal" href="#id7">エッジの折り返し</a></li>
 <li><a class="reference internal" href="#id8">日本語の利用</a></li>
-<li><a class="reference internal" href="#id9">ノード形状の変更</a></li>
+<li><a class="reference internal" href="#id9">ノード形状の変更</a><ul>
+<li><a class="reference internal" href="#stacked">stacked 属性の利用</a></li>
+<li><a class="reference internal" href="#dots">dots 形状の利用</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#id10">グルーピング</a></li>
 <li><a class="reference internal" href="#id11">図全体の設定</a></li>
 <li><a class="reference internal" href="#id12">縦書きモード</a></li>
