@@ -225,7 +225,10 @@
    A -&gt; B -&gt; C -&gt; D;
 
    // Use M17N text directly (need to quote).
-   "春" -&gt; "夏" -&gt; "秋" -&gt; "冬";
+   春 -&gt; 夏 -&gt; 秋 -&gt; 冬;
+
+   // Use M17N text including symbol characters (need to quote).
+   "春は 曙" -&gt; "夏 = 夜" -&gt; "秋.夕暮れ" -&gt; "冬 &amp; つとめて";
 }
 </pre>
 </div>
@@ -234,7 +237,7 @@
 <p class="last">blockdiag supports UTF-8 encoding only.</p>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-253d8ffa05ba935a8c2d7cba0c7e14686e64abc9.png" alt="diagram admin {
+<img src="_images/blockdiag-5a95df20aaec19480d6de56890f688e77f5966fa.png" alt="diagram admin {
    // Set M17N text using label property.
    A [label = &quot;起&quot;];
    B [label = &quot;承&quot;];
@@ -244,8 +247,11 @@
    A -&gt; B -&gt; C -&gt; D;
 
    // Use M17N text directly (need to quote).
-   &quot;春&quot; -&gt; &quot;夏&quot; -&gt; &quot;秋&quot; -&gt; &quot;冬&quot;;
-}" width="832" height="216" />
+   春 -&gt; 夏 -&gt; 秋 -&gt; 冬;
+
+   // Use M17N text including symbol characters (need to quote).
+   &quot;春は 曙&quot; -&gt; &quot;夏 = 夜&quot; -&gt; &quot;秋.夕暮れ&quot; -&gt; &quot;冬 &amp; つとめて&quot;;
+}" width="832" height="296" />
 </p>
 </div>
 <div class="section" id="shape-of-nodes">
@@ -255,8 +261,7 @@
 <p class="versionadded">
 <span class="versionmodified">New in version 0.6.6: </span>actor shape</p>
 <p class="versionadded">
-<span class="versionmodified">New in version 0.8.2: </span>dots and none shape,
-stacked nodes</p>
+<span class="versionmodified">New in version 0.8.2: </span>dots shape</p>
 <div class="highlight-python"><pre>{
   // standard node shapes
   box [shape = "box"];
@@ -271,14 +276,11 @@ stacked nodes</p>
   endpoint [shape = "endpoint"];
   minidiamond [shape = "minidiamond"];
   actor [shape = "actor"];
-
   dots [shape = "dots"];
-  none [shape = "none"];
 
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
-  minidiamond -&gt; beginpoint -&gt; endpoint;
-  dots -&gt; none;
+  minidiamond -&gt; beginpoint -&gt; endpoint -&gt; dots;
 
   // node shapes for flowcharts
   condition [shape = "flowchart.condition"];
@@ -294,7 +296,7 @@ stacked nodes</p>
 </pre>
 </div>
 <p class="blockdiag">
-<img src="_images/blockdiag-76987caca8bda4d49276168771f60680e9755545.png" alt="{
+<img src="_images/blockdiag-a78bd6f016062bba24eaac7f467d8fd9096c4e4f.png" alt="{
   // standard node shapes
   box [shape = &quot;box&quot;];
   roundedbox [shape = &quot;roundedbox&quot;];
@@ -308,14 +310,11 @@ stacked nodes</p>
   endpoint [shape = &quot;endpoint&quot;];
   minidiamond [shape = &quot;minidiamond&quot;];
   actor [shape = &quot;actor&quot;];
-
   dots [shape = &quot;dots&quot;];
-  none [shape = &quot;none&quot;];
 
   box -&gt; roundedbox -&gt; diamond -&gt; ellipse;
   cloud -&gt; note -&gt; mail -&gt; actor;
-  minidiamond -&gt; beginpoint -&gt; endpoint;
-  dots -&gt; none;
+  minidiamond -&gt; beginpoint -&gt; endpoint -&gt; dots;
 
   // node shapes for flowcharts
   condition [shape = &quot;flowchart.condition&quot;];
@@ -327,8 +326,12 @@ stacked nodes</p>
 
   condition -&gt; database -&gt; terminator -&gt; input;
   loopin -&gt; loopout;
-}" width="832" height="536" />
+}" width="832" height="456" />
 </p>
+<div class="section" id="using-stacked-attribute">
+<h3>Using stacked attribute<a class="headerlink" href="#using-stacked-attribute" title="Permalink to this headline">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.8.2.</span></p>
 <div class="highlight-python"><pre>diagram {
   // Set stacked to nodes.
   stacked [stacked];
@@ -349,6 +352,32 @@ stacked nodes</p>
   stacked -&gt; diamond -&gt; database;
 }" width="640" height="136" />
 </p>
+</div>
+<div class="section" id="using-dots-shape">
+<h3>Using dots shape<a class="headerlink" href="#using-dots-shape" title="Permalink to this headline">¶</a></h3>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.8.2.</span></p>
+<div class="highlight-python"><pre>{
+  A -&gt; B, C, D;
+
+  C [shape = "dots"];
+
+  // hide edge forward to dots node
+  A -&gt; C [style = "none"];
+}
+</pre>
+</div>
+<p class="blockdiag">
+<img src="_images/blockdiag-dba648dbb7a209bcb09c0ed270c1ee8faf4fa37c.png" alt="{
+  A -&gt; B, C, D;
+
+  C [shape = &quot;dots&quot;];
+
+  // hide edge forward to dots node
+  A -&gt; C [style = &quot;none&quot;];
+}" width="448" height="296" />
+</p>
+</div>
 </div>
 <div class="section" id="grouping-nodes">
 <h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
@@ -569,7 +598,11 @@ stacked nodes</p>
 <li><a class="reference internal" href="#direction-of-edges">direction of edges</a></li>
 <li><a class="reference internal" href="#edge-folding">edge folding</a></li>
 <li><a class="reference internal" href="#mutlilingualization">mutlilingualization</a></li>
-<li><a class="reference internal" href="#shape-of-nodes">shape of nodes</a></li>
+<li><a class="reference internal" href="#shape-of-nodes">shape of nodes</a><ul>
+<li><a class="reference internal" href="#using-stacked-attribute">Using stacked attribute</a></li>
+<li><a class="reference internal" href="#using-dots-shape">Using dots shape</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
 <li><a class="reference internal" href="#diagram-attributes">diagram attributes</a></li>
 <li><a class="reference internal" href="#portrait-mode">portrait mode</a></li>
