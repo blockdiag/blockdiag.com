@@ -94,6 +94,49 @@
 }" width="770" height="418" />
 </p>
 </div>
+<div class="section" id="define-multiple-addresses">
+<h2>define multiple addresses<a class="headerlink" href="#define-multiple-addresses" title="Permalink to this headline">¶</a></h2>
+<p class="versionadded">
+<span class="versionmodified">New in version 0.2.6.</span></p>
+<div class="highlight-python"><pre>diagram {
+  network dmz {
+      address = "210.x.x.x/24"
+
+      // set multiple addresses (using comma)
+      web01 [address = "210.x.x.1, 210.x.x.20"];
+      web02 [address = "210.x.x.2"];
+  }
+  network internal {
+      address = "172.x.x.x/24";
+
+      web01 [address = "172.x.x.1"];
+      web02 [address = "172.x.x.2"];
+      db01;
+      db02;
+  }
+}
+</pre>
+</div>
+<p class="nwdiag">
+<img src="_images/nwdiag-f817f3a8258c7a2840b28dead3903f598ec68f11.png" alt="diagram {
+  network dmz {
+      address = &quot;210.x.x.x/24&quot;
+
+      // set multiple addresses (using comma)
+      web01 [address = &quot;210.x.x.1, 210.x.x.20&quot;];
+      web02 [address = &quot;210.x.x.2&quot;];
+  }
+  network internal {
+      address = &quot;172.x.x.x/24&quot;;
+
+      web01 [address = &quot;172.x.x.1&quot;];
+      web02 [address = &quot;172.x.x.2&quot;];
+      db01;
+      db02;
+  }
+}" width="770" height="418" />
+</p>
+</div>
 <div class="section" id="grouping-nodes">
 <h2>grouping nodes<a class="headerlink" href="#grouping-nodes" title="Permalink to this headline">¶</a></h2>
 <p class="versionadded">
@@ -207,6 +250,7 @@
   <ul>
 <li><a class="reference internal" href="#">Sample diagams</a><ul>
 <li><a class="reference internal" href="#simple-diagram">simple diagram</a></li>
+<li><a class="reference internal" href="#define-multiple-addresses">define multiple addresses</a></li>
 <li><a class="reference internal" href="#grouping-nodes">grouping nodes</a></li>
 </ul>
 </li>
