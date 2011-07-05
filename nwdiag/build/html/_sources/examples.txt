@@ -10,6 +10,14 @@ simple diagram
 .. literalinclude:: diagrams/simple.diag
 .. nwdiag:: diagrams/simple.diag
 
+define multiple addresses
+=========================
+
+.. versionadded:: 0.2.6
+
+.. literalinclude:: diagrams/multiple_addresses.diag
+.. nwdiag:: diagrams/multiple_addresses.diag
+
 
 grouping nodes
 ==============
