@@ -120,6 +120,30 @@
       // some diagrams are here.
    }</pre>
 </div>
+<p class="versionadded">
+<span class="versionmodified">バージョン 0.9.0 で追加.</span></p>
+<p>各ノードに対する説明を掲載する場合は <cite>description</cite> 属性と
+<tt class="docutils literal"><span class="pre">desctable</span></tt> オプションを使用して、ノードの説明表を生成することができます。</p>
+<p>入力:</p>
+<div class="highlight-python"><pre>.. blockdiag::
+   :desctable:
+
+   {
+      A -&gt; B -&gt; C;
+      A [description = "browsers in each client"];
+      B [description = "web server"];
+      C [description = "database server"];
+   }</pre>
+</div>
+<p>出力</p>
+<p class="blockdiag">
+<img src="_images/blockdiag-1542a20a54260a40fe6935a5cb49caf22b48c11c.png" alt="{
+   A -&gt; B -&gt; C;
+   A [description = &quot;browsers in each client&quot;];
+   B [description = &quot;web server&quot;];
+   C [description = &quot;database server&quot;];
+}" width="640" height="136" />
+<table border="1" class="docutils"><thead valign="bottom"><tr><th class="head">Name</th><th class="head">Description</th></tr></thead><tbody valign="top"><tr><td>A</td><td>browsers in each client</td></tr><tr><td>B</td><td>web server</td></tr><tr><td>C</td><td>database server</td></tr></tbody></table></p>
 </dd></dl>
 
 </div>
@@ -146,8 +170,19 @@
 <dl class="confval">
 <dt id="confval-blockdiag_antialias">
 <tt class="descname">blockdiag_antialias</tt><a class="headerlink" href="#confval-blockdiag_antialias" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p><a class="reference internal" href="#confval-blockdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">blockdiag_antialias</span></tt></a> に True が指定された場合、
-アンチエイリアス処理を加えた画像を生成します(初期値：False)。</p>
+<dd><p><a class="reference internal" href="#confval-blockdiag_antialias"><tt class="xref std std-confval docutils literal"><span class="pre">blockdiag_antialias</span></tt></a> は PNG 画像生成時に
+アンチエイリアス処理を行うかどうかを指定します。</p>
+<p><cite>True</cite> が指定された場合アンチエイリアス処理を実行します(初期値： <cite>False</cite> )。</p>
+</dd></dl>
+
+<dl class="confval">
+<dt id="confval-blockdiag_tex_image_format">
+<tt class="descname">blockdiag_tex_image_format</tt><a class="headerlink" href="#confval-blockdiag_tex_image_format" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><a class="reference internal" href="#confval-blockdiag_tex_image_format"><tt class="xref std std-confval docutils literal"><span class="pre">blockdiag_tex_image_format</span></tt></a> は TeX に変換する際に
+利用する画像形式を指定します。PNG もしくは PDF を指定することができます。</p>
+<p>PDF を利用するとベクター形式でブロック図を埋め込むことができます。
+( <cite>blockdiag</cite> の PDF 出力機能を利用するため
+<cite>reportlab</cite> のインストールが必要です)</p>
 </dd></dl>
 
 </div>

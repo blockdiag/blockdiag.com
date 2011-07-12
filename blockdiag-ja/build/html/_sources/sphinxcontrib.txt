@@ -79,6 +79,35 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
             // some diagrams are here.
          }
 
+   .. versionadded:: 0.9.0
+
+   各ノードに対する説明を掲載する場合は `description` 属性と
+   ``desctable`` オプションを使用して、ノードの説明表を生成することができます。
+
+   入力::
+
+      .. blockdiag::
+         :desctable:
+
+         {
+            A -> B -> C;
+            A [description = "browsers in each client"];
+            B [description = "web server"];
+            C [description = "database server"];
+         }
+
+   出力
+
+   .. blockdiag::
+      :desctable:
+
+      {
+         A -> B -> C;
+         A [description = "browsers in each client"];
+         B [description = "web server"];
+         C [description = "database server"];
+      }
+
 .. _sphinxcontrib_font_configurations:
 
 利用可能な設定オプション
@@ -104,5 +133,16 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
 .. confval:: blockdiag_antialias
 
-   :confval:`blockdiag_antialias` に True が指定された場合、
-   アンチエイリアス処理を加えた画像を生成します(初期値：False)。
+   :confval:`blockdiag_antialias` は PNG 画像生成時に
+   アンチエイリアス処理を行うかどうかを指定します。
+
+   `True` が指定された場合アンチエイリアス処理を実行します(初期値： `False` )。
+
+.. confval:: blockdiag_tex_image_format
+
+   :confval:`blockdiag_tex_image_format` は TeX に変換する際に
+   利用する画像形式を指定します。PNG もしくは PDF を指定することができます。
+
+   PDF を利用するとベクター形式でブロック図を埋め込むことができます。
+   ( `blockdiag` の PDF 出力機能を利用するため
+   `reportlab` のインストールが必要です)

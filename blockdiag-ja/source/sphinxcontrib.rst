@@ -82,7 +82,9 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
    .. versionadded:: 0.9.0
 
    各ノードに対する説明を掲載する場合は `description` 属性と
-   ``desctable`` オプションを使用して、ノードの説明表を生成することができます::
+   ``desctable`` オプションを使用して、ノードの説明表を生成することができます。
+
+   入力::
 
       .. blockdiag::
          :desctable:
@@ -93,6 +95,8 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
             B [description = "web server"];
             C [description = "database server"];
          }
+
+   出力
 
    .. blockdiag::
       :desctable:
@@ -141,4 +145,4 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
    PDF を利用するとベクター形式でブロック図を埋め込むことができます。
    ( `blockdiag` の PDF 出力機能を利用するため
-    `reportlab` のインストールが必要です)
+   `reportlab` のインストールが必要です)
