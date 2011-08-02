@@ -50,6 +50,14 @@ mediawiki にブロック図を取り込むには `Blockdiag MediaWiki Extension
 .. _Blockdiag MediaWiki Extension: https://github.com/kjmkznr/blockdiag-mediawiki-extension
 
 
+PukiWiki に埋め込む
+====================
+
+PukiWiki にブロック図を取り込むには `blockdiag PukiWiki Extension`_ を利用します。
+
+.. _blockdiag PukiWiki Extension: http://d.hatena.ne.jp/hekyou/20110717/p1
+
+
 API 経由で取得する
 ==================
 
