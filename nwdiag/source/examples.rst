@@ -30,3 +30,12 @@ grouping nodes
 .. literalinclude:: diagrams/node_groups2.diag
 .. nwdiag:: diagrams/node_groups2.diag
 
+
+peer networks
+=============
+
+.. versionadded:: 0.4.0
+
+.. literalinclude:: diagrams/peer_networks.diag
+.. nwdiag:: diagrams/peer_networks.diag
+
