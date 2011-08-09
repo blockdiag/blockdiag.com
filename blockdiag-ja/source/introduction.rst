@@ -120,8 +120,16 @@ freetype2 に対応していないためそのままでは blockdiag を利用�
 
    $ sudo easy_install blockdiag
 
+FreeBSD (ports) の場合
+----------------------
+portinstall コマンドで blockdiag パッケージをインストールします。
+
+.. code-block:: bash
+
+   $ sudo portinstall graphics/py-blockdiag japanese/font-ipa
+
 そのほかの環境の場合
------------------------
+--------------------
 以下のコマンドで `blockdiag` をインストールします。
 
 .. code-block:: bash
