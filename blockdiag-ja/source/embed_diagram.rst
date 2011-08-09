@@ -8,54 +8,76 @@
 
 Sphinx に埋め込む
 =================
+`Sphinx`_ は reST 形式(テキスト)で記述するドキュメント生成ツールです。
 
 Sphinx で作成する文書にブロック図を埋め込むには
 Sphinx 拡張である sphinxcontrib-blockdiag パッケージを利用します。
 
 sphinxcontrib-blockdiag については :ref:`sphinxcontrib-blockdiag` で説明します。
 
+.. _Sphinx: http://sphinx.pocoo.org/
 
 Redmine に埋め込む
 ==================
+`Redmine`_ は Web ベースのプロジェクト管理ソフトウェアです。
 
 Redmine の Wiki にブロック図を埋め込むには
 Wiki External Filter Plugin を利用します。
 
 詳細は `Wiki External Filter Plugin を導入してみた`_ をご覧ください。
 
+.. _Redmine: http://www.redmine.org/
 .. _Wiki External Filter Plugin を導入してみた: http://d.hatena.ne.jp/miau/20110309/1299674086
 
 
 Trac に埋め込む
 ===============
+`Trac`_ は Web ベースのプロジェクト管理ソフトウェアです。
 
 Trac の Wiki にブロック図を埋め込むには `TracBlockDiagPlugin`_ を利用します。
 
+.. _Trac: http://trac.edgewall.org/
 .. _TracBlockDiagPlugin: http://trac-hacks.org/wiki/TracBlockDiagPlugin
 
 
 moinmoin に埋め込む
 ===================
+`moinmoin`_ は Python で書かれた Wiki clone サーバです。
 
 moinmoin にブロック図を取り込むには `moinmoin blockdiag plugin`_ を利用します。
 
+.. _moinmoin: http://moinmo.in/
 .. _moinmoin blockdiag plugin: http://d.hatena.ne.jp/podhmo/20110409/1302342454
 
 
 mediawiki に埋め込む
 =====================
+`mediawiki`_ は Wiki clone サーバです。
 
 mediawiki にブロック図を取り込むには `Blockdiag MediaWiki Extension`_ を利用します。
 
+.. _mediawiki: http://www.mediawiki.org/wiki/MediaWiki
 .. _Blockdiag MediaWiki Extension: https://github.com/kjmkznr/blockdiag-mediawiki-extension
 
 
 PukiWiki に埋め込む
 ====================
+`PukiWiki`_ は PHP で書かれた Wiki clone サーバです。
 
 PukiWiki にブロック図を取り込むには `blockdiag PukiWiki Extension`_ を利用します。
 
+.. _PukiWiki: http://pukiwiki.sourceforge.jp/?PukiWiki
 .. _blockdiag PukiWiki Extension: http://d.hatena.ne.jp/hekyou/20110717/p1
+
+
+Rabbit に埋め込む
+====================
+`Rabbit`_ は Ruby で書かれたプレゼンテーションツールです。
+
+Rabbit は blockdiag の埋込みをサポートしており、
+追加のソフトウェなしにプレゼンテーションに図を組み込むことができます。
+
+.. _Rabbit: http://rabbit-shockers.org/
 
 
 API 経由で取得する
