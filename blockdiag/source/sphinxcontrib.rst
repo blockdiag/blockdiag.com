@@ -54,7 +54,7 @@ Directive
 
 .. describe:: .. blockdiag:: [filename]
 
-   This directive insert a block diagram into the generated document.
+   This directive inserts a block diagram into the generated document.
    If filename is specified, sphinx reads external file as source script of blockfile.
    In another case, blockdiag directive takes code block as source script.
 
@@ -67,6 +67,36 @@ Directive
          diagram {
             // some diagrams are here.
          }
+
+
+   .. versionadded:: 0.9.0
+
+   This directive is able to generate description table using ``desctable`` option and
+   `description` attribute
+
+   Input::
+
+      .. blockdiag::
+         :desctable:
+
+         {
+            A -> B -> C;
+            A [description = "browsers in each client"];
+            B [description = "web server"];
+            C [description = "database server"];
+         }
+
+   Output
+
+   .. blockdiag::
+      :desctable:
+
+      {
+         A -> B -> C;
+         A [description = "browsers in each client"];
+         B [description = "web server"];
+         C [description = "database server"];
+      }
 
 
 Configuration File Options

@@ -69,6 +69,51 @@ Directive
          }
 
 
+   .. versionadded:: 0.2.0
+
+   This directive is able to generate description table using ``desctable`` option and
+   `description` attribute
+
+   Input::
+
+      .. actdiag::
+         :desctable:
+
+         {
+            A -> B -> C;
+            A [description = "first action"];
+            B [description = "second action"];
+            C [description = "third action"];
+
+            lane {
+               A; B;
+            }
+            lane {
+               C;
+            }
+         }
+
+   Output
+
+   .. actdiag::
+      :desctable:
+
+      {
+         A -> B -> C;
+         A [description = "first action"];
+         B [description = "second action"];
+         C [description = "third action"];
+
+         lane {
+            A; B;
+         }
+         lane {
+            C;
+         }
+      }
+
+
+
 Configuration File Options
 ==========================
 
