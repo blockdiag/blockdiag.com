@@ -69,6 +69,36 @@ Directive
          }
 
 
+   .. versionadded:: 0.2.0
+
+   This directive is able to generate description table using ``desctable`` option and
+   `description` attribute
+
+   Input::
+
+      .. seqdiag::
+         :desctable:
+
+         {
+            A -> B -> C;
+            A [description = "first node"];
+            B [description = "second node"];
+            C [description = "third node"];
+         }
+
+   Output
+
+   .. seqdiag::
+      :desctable:
+
+      {
+         A -> B -> C;
+         A [description = "first node"];
+         B [description = "second node"];
+         C [description = "third node"];
+      }
+
+
 Configuration File Options
 ==========================
 

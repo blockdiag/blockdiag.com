@@ -75,6 +75,44 @@ Directive
          }
 
 
+   .. versionadded:: 0.2.0
+
+   This directive is able to generate description table using ``desctable`` option and
+   `description` attribute
+
+   Input::
+
+      .. nwdiag::
+         :desctable:
+
+         {
+            network {
+              A [address = 192.168.0.1, description = "web server01"];
+              B [address = 192.168.0.2, description = "web server02"];
+            }
+            network {
+              A [address = 172.0.0.1];
+              C [address = 172.0.0.2, description = "database server"];
+            }
+         }
+
+   Output
+
+   .. nwdiag::
+      :desctable:
+
+      {
+         network {
+           A [address = 192.168.0.1, description = "web server01"];
+           B [address = 192.168.0.2, description = "web server02"];
+         }
+         network {
+           A [address = 172.0.0.1];
+           C [address = 172.0.0.2, description = "database server"];
+         }
+      }
+
+
 Configuration File Options
 ==========================
 
