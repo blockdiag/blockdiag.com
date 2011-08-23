@@ -128,6 +128,18 @@ portinstall コマンドで blockdiag パッケージをインストールしま
 
    $ sudo portinstall graphics/py-blockdiag japanese/font-ipa
 
+NetBSD (pkgsrc) の場合
+----------------------
+blockdiag パッケージは pkgsrc に graphics/py-blockdiag として収録されています。
+そのため、通常の pkgsrc の管理方法でインストールすることができます。
+
+ここでは一般的な make を使った方法を紹介します。
+
+.. code-block:: bash
+
+   $ cd /usr/pkgsrc/graphics/py-blockdiag
+   $ sudo make install
+
 そのほかの環境の場合
 --------------------
 以下のコマンドで `blockdiag` をインストールします。
