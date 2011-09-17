@@ -40,3 +40,4 @@ Table of contents
    seqdiag/index
    actdiag/index
    nwdiag/index
+   blockdiagcontrib/index
