@@ -30,7 +30,7 @@ Features:
 Enjoy documentation with blockdiag !
 
 Table of contents
-=================
+==================
 
 .. toctree::
    :maxdepth: 1
@@ -39,3 +39,24 @@ Table of contents
    seqdiag/index
    actdiag/index
    nwdiag/index
+
+Resources
+==========
+* Author
+   * Takeshi KOMIYA ( `@tk0miya <http://twitter.com/tk0miya>`_ ) <i.tkomiya at gmail.com>
+* Google Groups: `<http://groups.google.com/group/blockdiag-discuss/topics>`_
+* Twitter: #blockdiag
+* Interactive Shell: `<http://interactive.blockdiag.com/>`_
+* blockdiag
+   * PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_
+* seqdiag
+   * PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_
+* actdiag
+   * PyPI: `<http://pypi.python.org/pypi/actdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_
+* nwdiag
+   * PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/nwdiag/>`_
+* Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?status=new&status=open>`_
