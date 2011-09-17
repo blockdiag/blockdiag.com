@@ -1,0 +1,7 @@
+{
+  // branching edges to multiple children
+  A -> B, C;
+
+  // branching edges from multiple parents
+  D, E -> F;
+}
