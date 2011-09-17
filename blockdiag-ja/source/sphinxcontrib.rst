@@ -79,6 +79,18 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
             // some diagrams are here.
          }
 
+   ``maxwidth`` オプションを指定すると画像の横幅を調整することができます。
+   ``maxwidth`` オプションの引数はピクセルで指定します。
+
+   Examples::
+
+      .. blockdiag::
+         :maxwidth: 240
+
+         diagram {
+            // some diagrams are here.
+         }
+
    .. versionadded:: 0.9.0
 
    各ノードに対する説明を掲載する場合は `description` 属性と

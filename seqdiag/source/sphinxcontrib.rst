@@ -69,6 +69,18 @@ Directive
          }
 
 
+   This directive is able to generate thumbnail images using ``maxwidth`` option.
+   ``maxwidth`` option takes pixel-size of image's width.
+
+   Examples::
+
+      .. seqdiag::
+         :maxwidth: 240
+
+         diagram {
+            // some diagrams are here.
+         }
+
    .. versionadded:: 0.2.0
 
    This directive is able to generate description table using ``desctable`` option and
