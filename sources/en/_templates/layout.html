@@ -5,3 +5,12 @@
     <script type="text/javascript" src="{{ pathto('_static/base64.js', 1) }}"></script>
     <script type="text/javascript" src="{{ pathto('_static/interactive.js', 1) }}"></script>
 {% endblock %}
+
+{%- block sidebarsearch %}
+  <h3>{{ _('Languages') }}</h3>
+  <ul class="this-page-menu">
+    <li><a href="/en/">English</a></li>
+    <li><a href="/ja/">Japanese</a></li>
+  </ul>
+{{ super() }}
+{% endblock %}
