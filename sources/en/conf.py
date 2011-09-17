@@ -26,6 +26,7 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.todo',
+              'sphinxcontrib.googleanalytics',
               'sphinxcontrib.blockdiag',
               'sphinxcontrib.seqdiag',
               'sphinxcontrib.actdiag',
@@ -260,6 +261,10 @@ epub_copyright = u'2011, Takeshi KOMIYA'
 #epub_tocdup = True
 
 
+# ID for google analytics
+googleanalytics_id = 'UA-19477951-1'
+
+# font settings for blockdiag families
 blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 blockdiag_antialias = True
 seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
