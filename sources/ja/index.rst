@@ -41,3 +41,36 @@ Table of contents
    actdiag/index
    nwdiag/index
    blockdiagcontrib/index
+
+わがままドリブン開発
+=====================
+`blockdiag` シリーズは手探りで開発されているため、
+利用したユーザーの意見・要望によって機能拡張やレイアウトエンジンの調整が行われています。
+
+そのため、使用感や違和感、「こういうのがあればいいのに」といった意見を常に募集しています。
+新しい図のサポートなども頂いたご意見をベースに進めていく予定です。
+
+Twitter、イシュートラッカー、メールなど、どのような方法でもかまいませんので
+お気づきのところを教えて下さい。
+
+
+Resources
+==========
+* Author
+   * Takeshi KOMIYA ( `@tk0miya <http://twitter.com/tk0miya>`_ ) <i.tkomiya at gmail.com>
+* Google Groups: `<http://groups.google.com/group/blockdiag-discuss/topics>`_
+* Twitter: #blockdiag
+* Interactive Shell: `<http://interactive.blockdiag.com/>`_
+* blockdiag
+   * PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_
+* seqdiag
+   * PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_
+* actdiag
+   * PyPI: `<http://pypi.python.org/pypi/actdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_
+* nwdiag
+   * PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_
+   * Repository: `<https://bitbucket.org/tk0miya/nwdiag/>`_
+* Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?status=new&status=open>`_
