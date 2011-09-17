@@ -1,12 +1,21 @@
 var __last = null;
 
+function basename(path) {
+  return path.replace(/\\/g,'/').replace( /.*\//, '' );
+}
+ 
+function dirname(path) {
+  return path.replace(/\\/g,'/').replace(/\/[^\/]*$/, '');
+}
+
 function update_diagram() {
   diagram = $('#diagram').val();
   if (diagram == null || diagram.length == 0) return;
   if (__last == diagram) return; 
   __last = diagram;
 
-  url = 'http://interactive.blockdiag.com/image?callback=?';
+  diagname = basename(dirname(document.URL)) + '/';
+  url = 'http://interactive.blockdiag.com/' + diagname + 'image?callback=?';
   params = {'encoding': 'jsonp', 'src': diagram};
   $.ajax({
     url: url,
@@ -25,7 +34,7 @@ function update_diagram() {
         }
 
         encoded_diagram = Base64.encodeURI(diagram)
-        url = 'http://interactive.blockdiag.com/image?encoding=base64&src=' + encoded_diagram
+        url = 'http://interactive.blockdiag.com/' + diagname + 'image?encoding=base64&src=' + encoded_diagram
         html = '<object type="image/svg+xml" data="' + url + '" width="' + width + '" height="' + height + '" />'
         $('#diagram_image').html(html);
       }
