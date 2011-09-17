@@ -8,6 +8,8 @@ html:
 	$(MAKE) -C seqdiag html
 	$(MAKE) -C actdiag html
 	$(MAKE) -C nwdiag html
+	$(MAKE) -C source/en html
+	$(MAKE) -C source/ja html
 
 clean:
 	$(MAKE) -C blockdiag clean
@@ -16,3 +18,5 @@ clean:
 	$(MAKE) -C seqdiag clean
 	$(MAKE) -C actdiag clean
 	$(MAKE) -C nwdiag clean
+	$(MAKE) -C source/en clean
+	$(MAKE) -C source/ja clean
