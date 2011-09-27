@@ -19,7 +19,7 @@
 ノード、エッジのカスタマイズ
 ============================
 
-.. versionadded:: 0.9.1
+.. versionadded:: 0.9.0
    icon 属性を追加
 
 .. literalinclude:: diagrams/node_attributes.diag
