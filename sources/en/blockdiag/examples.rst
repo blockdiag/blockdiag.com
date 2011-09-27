@@ -11,15 +11,18 @@ simple diagram
 .. blockdiag:: diagrams/simple.diag
 
 
-label attribute to nodes and edges
-==================================
+label attributes to nodes and edges
+===================================
 
 .. literalinclude:: diagrams/node_labels.diag
 .. blockdiag:: diagrams/node_labels.diag
 
 
-style attribute to nodes and edges
-==================================
+style attributes to nodes and edges
+===================================
+
+.. versionadded:: 0.9.1
+   node.icon attribute
 
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
@@ -65,9 +68,6 @@ mutlilingualization
 
 shape of nodes
 ==============
-
-.. versionadded:: 0.6.5
-   (experimental)
 
 .. versionadded:: 0.6.6
    actor shape
