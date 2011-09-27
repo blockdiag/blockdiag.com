@@ -13,6 +13,15 @@ diagram {
   // set default shape
   default_shape = roundedbox;  // default value is 'box'
 
+  // set default colors
+  default_node_color = lightblue;
+  default_line_color = blue;
+  default_group_color = "#7777FF";
+
   A -> B [label = "Use long long\nedge label"];
   A -> C;
+
+  group {
+    C;
+  }
 }
