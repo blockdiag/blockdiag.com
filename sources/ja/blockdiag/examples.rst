@@ -123,6 +123,9 @@ dots 形状の利用
 .. versionadded:: 0.7.2
    default_shape を追加
 
+.. versionadded:: 0.9.1
+   default_node_color, default_group_color, default_line_color を追加
+
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
 
