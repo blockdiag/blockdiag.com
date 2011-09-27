@@ -14,7 +14,10 @@ diagram {
    E [numbered = 99];
 
    // Set background image to nodes (and erase label).
-   F [label = "", background = "blockdiag/diagrams/python-logo.gif"];
+   F [label = "", background = "_static/python-logo.gif"];
+   G [label = "", background = "http://blockdiag.com/en/_static/python-logo.gif"];
+   H [icon = "_static/help-browser.png"];
+   I [icon = "http://blockdiag.com/en/_static/internet-mail.png"];
 
    // Set arrow direction to edges.
    E -> F [dir = none];

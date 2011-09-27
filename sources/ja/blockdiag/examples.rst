@@ -19,6 +19,9 @@
 ノード、エッジのカスタマイズ
 ============================
 
+.. versionadded:: 0.9.1
+   icon 属性を追加
+
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
 
@@ -71,9 +74,6 @@
 
 ノード形状の変更
 ================
-
-.. versionadded:: 0.6.5
-   (experimental)
 
 .. versionadded:: 0.6.6
    actor shape に対応
