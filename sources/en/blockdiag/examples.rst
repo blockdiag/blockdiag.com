@@ -21,7 +21,7 @@ label attributes to nodes and edges
 style attributes to nodes and edges
 ===================================
 
-.. versionadded:: 0.9.1
+.. versionadded:: 0.9.0
    node.icon attribute
 
 .. literalinclude:: diagrams/node_attributes.diag
