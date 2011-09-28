@@ -1,0 +1,7 @@
+diagram {
+   // Set span metrix
+   span_width = 240;
+   span_height = 120;
+
+   A -> B, C;
+}

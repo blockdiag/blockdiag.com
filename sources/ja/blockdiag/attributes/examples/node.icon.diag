@@ -1,0 +1,7 @@
+diagram {
+  A -> B -> C;
+
+  A [icon = "http://gigazine.jp/img/2006/05/23/feedicon/feed-icon-legacy_orange.png"];
+  B [icon = "http://gigazine.jp/img/2006/05/23/feedicon/feed-icon-legacy_blue.png"];
+  C [icon = "http://gigazine.jp/img/2006/05/23/feedicon/feed-icon-legacy_purple.png"];
+}

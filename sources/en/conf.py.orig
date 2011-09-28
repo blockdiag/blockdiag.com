@@ -275,6 +275,10 @@ nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 nwdiag_antialias = True
 
 
+def setup(app):
+    app.add_description_unit('confval', 'confval',
+                             'pair: %s; configuration value')
+
 from sphinx import addnodes
 
 def parse_event(env, sig, signode):
@@ -282,17 +286,9 @@ def parse_event(env, sig, signode):
     return sig.replace(' ','').split('=')[0]
 
 def setup(app):
-    app.add_description_unit('confval', 'confval',
-                             'pair: %s; configuration value')
-
-    # original directives for index
     from sphinx.util.docfields import GroupedField
-    fdesc = GroupedField('parameter', label='Parameters',
-                         names=['param'], can_collapse=True)
-    app.add_object_type('blockdiag_diagram_attr', 'blockdiag_diagram_attr',
-                        'pair: %s; diagram atttribute(blockdiag)', parse_event, doc_field_types=[fdesc])
-    app.add_object_type('blockdiag_edge_attr', 'blockdiag_egde_attr',
-                        'pair: %s; edge attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
-    app.add_object_type('blockdiag_node_attr', 'blockdiag_node_attr',
-                        'pair: %s; node attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
+    fdesc = GroupedField('parameter', label='Parameters', names=['param'], can_collapse=True)
+    app.add_object_type('blockdiag_diagram_attr', 'blockdiag_diagram_attr', 'pair: %s; diagram atttribute(blockdiag)', parse_event, doc_field_types=[fdesc])
+    app.add_object_type('blockdiag_edge_attr', 'blockdiag_egde_attr', 'pair: %s; edge attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
+    app.add_object_type('blockdiag_node_attr', 'blockdiag_node_attr', 'pair: %s; node attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
 
