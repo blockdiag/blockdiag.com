@@ -1,0 +1,7 @@
+diagram {
+   // Set fontsize
+   fontsize = 24;
+
+   A -> B;
+}
+

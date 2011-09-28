@@ -21,6 +21,7 @@
 .. toctree::
 
    introduction
+   attributes
    examples
    embed_diagram
    sphinxcontrib

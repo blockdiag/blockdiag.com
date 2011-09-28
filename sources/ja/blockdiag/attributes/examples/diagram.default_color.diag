@@ -1,0 +1,11 @@
+diagram {
+  default_node_color = lightyellow;
+  default_group_color = lightgreen;
+  default_line_color = magenta;
+
+  A -> B -> C;
+       B -> D;
+  group {
+    C; D;
+  }
+}

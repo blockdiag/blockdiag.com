@@ -1,0 +1,7 @@
+diagram {
+   // Set boder-style to nodes.
+   B [style = dotted];
+   C [style = dashed];
+
+   A -> B -> C;
+}
