@@ -33,10 +33,29 @@ function update_diagram() {
             height = 400
         }
 
-        encoded_diagram = Base64.encodeURI(diagram)
-        url = 'http://interactive.blockdiag.com/' + diagname + 'image?encoding=base64&src=' + encoded_diagram
-        html = '<object type="image/svg+xml" data="' + url + '" width="' + width + '" height="' + height + '" />'
-        $('#diagram_image').html(html);
+
+        is_webkit = !document.uniqueID && !window.opera && !window.globalStorage && window.localStorage
+        if (!is_webkit && jQuery.support.noCloneEvent && !window.globalStorage){
+          encoded_diagram = Base64.encodeURI(diagram)
+          url = 'http://interactive.blockdiag.com/' + diagname + 'image?encoding=base64&src=' + encoded_diagram
+          var obj = $(document.createElement('object'))
+          obj.attr('type', 'image/svg+xml')
+          obj.attr('data', url)
+          obj.attr('width', width)
+          obj.attr('height', height)
+          $('#diagram_image').html(obj);
+        } else {
+          html = json['image'].replace(/<\?xml.*>\n/, '')
+          html = html.replace(/<!DOCTYPE.*>\n/, '')
+
+          $('#diagram_image').html(html);
+          if (is_webkit) {
+            // for Chrome and Safari
+            $('#diagram_image svg').removeAttr('viewBox');
+            $('#diagram_image svg').width(width);
+            $('#diagram_image svg').height(height);
+          }
+        }
       }
     }
   });
