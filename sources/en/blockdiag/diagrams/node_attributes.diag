@@ -1,0 +1,27 @@
+diagram {
+   // Set boder-style and backgroun-color to nodes.
+   A [style = dotted];
+   B [style = dashed];
+   C [color = pink];
+   D [color = "#888888"];
+
+   // Set border-style and color to edges.
+   A -> B [style = dotted];
+   B -> C [style = dashed];
+   C -> D [color = "red"];
+
+   // Set numbered-badge to nodes.
+   E [numbered = 99];
+
+   // Set background image to nodes (and erase label).
+   F [label = "", background = "_static/python-logo.gif"];
+   G [label = "", background = "http://blockdiag.com/en/_static/python-logo.gif"];
+   H [icon = "_static/help-browser.png"];
+   I [icon = "http://blockdiag.com/en/_static/internet-mail.png"];
+
+   // Set arrow direction to edges.
+   E -> F [dir = none];
+   F -> G [dir = forward];
+   G -> H [dir = back];
+   H -> I [dir = both];
+}
