@@ -1,0 +1,8 @@
+diagram {
+   // Set backgroun-color to nodes.
+   B [color = none];
+   C [color = pink];
+   D [color = "#888888"];
+
+   A -> B -> C -> D;
+}

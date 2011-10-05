@@ -1,0 +1,5 @@
+diagram {
+   // Set labels to edges. (short text only)
+   A -> B -> C [label = "foo"];
+   C -> A [label = "bar"];
+}

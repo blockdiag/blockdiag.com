@@ -1,0 +1,8 @@
+diagram {
+   // Set numbered-badge and description to nodes.
+   A [numbered = 1, label = "入力", description = "牛肉, 人参, 玉ねぎ, じゃがいも, カレー粉, 水"];
+   B [numbered = 2, label = "処理", description = "じっくりコトコト"];
+   C [numbered = 3, label = "出力", description = "ウマウマカレー"];
+
+   A -> B -> C;
+}
