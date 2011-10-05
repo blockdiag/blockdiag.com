@@ -1,0 +1,4 @@
+diagram {
+   // Set background image to nodes (and erase label).
+   A [label = "", background = "source/examples/python-logo.gif"];
+}

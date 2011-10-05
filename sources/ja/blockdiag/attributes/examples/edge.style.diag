@@ -1,0 +1,6 @@
+diagram {
+   // Set style to edges.
+   A -> B [style = dotted];
+   B -> C [style = dashed];
+   C -> D [style = none];
+}

@@ -19,8 +19,10 @@
    }
 
 .. toctree::
+   :maxdepth: 3
 
    introduction
+   attributes/index
    examples
    embed_diagram
    sphinxcontrib
