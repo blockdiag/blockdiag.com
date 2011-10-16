@@ -12,6 +12,9 @@
 ラベルの設定
 ============
 
+.. versionadded:: 0.9.2
+   textcolor 属性を追加
+
 .. literalinclude:: diagrams/node_labels.diag
 .. blockdiag:: diagrams/node_labels.diag
 
@@ -21,6 +24,9 @@
 
 .. versionadded:: 0.9.0
    icon 属性を追加
+
+.. versionadded:: 0.9.2
+   textcolor 属性を追加
 
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
@@ -113,6 +119,12 @@ dots 形状の利用
 .. versionadded:: 0.7.5
    ノード属性として group キーワードを追加
 
+.. versionadded:: 0.9.1
+   デフォルトの背景色を指定できるように default_group_color 属性を追加
+
+.. versionadded:: 0.9.2
+   グループラベルの色を指定できるように textcolor 属性を追加
+
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 
@@ -125,6 +137,9 @@ dots 形状の利用
 
 .. versionadded:: 0.9.1
    default_node_color, default_group_color, default_line_color を追加
+
+.. versionadded:: 0.9.2
+   default_text_color を追加
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag

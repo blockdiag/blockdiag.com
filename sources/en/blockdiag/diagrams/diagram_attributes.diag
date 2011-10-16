@@ -17,6 +17,7 @@ diagram {
   default_node_color = lightblue;
   default_line_color = blue;
   default_group_color = "#7777FF";
+  default_text_color = red;
 
   A -> B [label = "Use long long\nedge label"];
   A -> C;
