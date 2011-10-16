@@ -1,9 +1,9 @@
 diagram {
-   // Set boder-style and backgroun-color to nodes.
+   // Set boder-style, backgroun-color and text-color to nodes.
    A [style = dotted];
    B [style = dashed];
    C [color = pink];
-   D [color = "#888888"];
+   D [color = "#888888", textcolor="#FFFFFF"];
 
    // Set border-style and color to edges.
    A -> B [style = dotted];

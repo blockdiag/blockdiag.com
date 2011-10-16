@@ -14,6 +14,9 @@ simple diagram
 label attributes to nodes and edges
 ===================================
 
+.. versionadded:: 0.9.2
+   Add textcolor attribute
+
 .. literalinclude:: diagrams/node_labels.diag
 .. blockdiag:: diagrams/node_labels.diag
 
@@ -23,6 +26,9 @@ style attributes to nodes and edges
 
 .. versionadded:: 0.9.0
    node.icon attribute
+
+.. versionadded:: 0.9.2
+   node.textcolor attribute
 
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
@@ -107,6 +113,12 @@ grouping nodes
 .. versionadded:: 0.7.5
    group definition within node-attributes
 
+.. versionadded:: 0.9.1
+   add default_group_color attribute
+
+.. versionadded:: 0.9.2
+   add textcolor attribute
+
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 
@@ -119,6 +131,9 @@ diagram attributes
 
 .. versionadded:: 0.9.1
    default_node_color, default_group_color, default_line_color
+
+.. versionadded:: 0.9.2
+   default_text_color
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag

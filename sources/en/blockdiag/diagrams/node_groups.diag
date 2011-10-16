@@ -20,6 +20,8 @@ diagram admin {
 
       // H and I belong to third "nested" group.
       group {
+          label = "third group";
+          textcolor = "#77FF77";
           color = "#7777FF";
           H -> I;
       }
