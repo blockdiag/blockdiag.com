@@ -124,6 +124,12 @@
 
   .. versionadded:: 0.9.0
 
+.. blockdiag_node_attr:: textcolor = #RRGGBB or 色名
+
+  ノードのラベルの色を指定します。省略時は黒です。
+
+  .. versionadded:: 0.9.2
+
 .. EXAMPLES
    ========
 
@@ -208,3 +214,9 @@ icon 属性の設定例
 
 .. literalinclude:: examples/node.icon.diag
 .. blockdiag:: examples/node.icon.diag
+
+textcolor 属性の設定例
+-----------------
+
+.. literalinclude:: examples/node.textcolor.diag
+.. blockdiag:: examples/node.textcolor.diag
