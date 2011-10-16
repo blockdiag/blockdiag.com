@@ -94,6 +94,12 @@
 
   .. versionadded:: 0.9.1
 
+.. blockdiag_diagram_attr:: default_text_color  = #RRGGBB or 色名
+
+  ノードのラベルのデフォルトの色を指定します。省略時は黒です。
+
+  .. versionadded:: 0.9.2
+
 .. EXAMPLES
    ========
 
@@ -145,8 +151,8 @@ orientation 属性の設定例
 .. literalinclude:: examples/diagram.orientation.diag
 .. blockdiag:: examples/diagram.orientation.diag
 
-default_node_color 属性と default_group_color 属性と default_line_color 属性の設定例
-------------------------------------------------------------------------------------
+default_node_color, default_group_color, default_line_color, default_text_color 属性の設定例
+--------------------------------------------------------------------------------------------
 
 .. literalinclude:: examples/diagram.default_color.diag
 .. blockdiag:: examples/diagram.default_color.diag
