@@ -2,6 +2,7 @@ diagram {
   default_node_color = lightyellow;
   default_group_color = lightgreen;
   default_line_color = magenta;
+  default_text_color = red;
 
   A -> B -> C;
        B -> D;
