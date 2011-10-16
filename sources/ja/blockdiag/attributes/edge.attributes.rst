@@ -105,6 +105,12 @@
 
   .. versionadded:: 0.7.5
 
+.. blockdiag_edge_attr:: textcolor = #RRGGBB or 色名
+
+  エッジのラベルの色を指定します。省略時は黒です。
+
+  .. versionadded:: 0.9.2
+
 .. EXAMPLES
    ========
 
@@ -155,3 +161,10 @@ folded 属性の設定例
 
 .. literalinclude:: examples/edge.folded.diag
 .. blockdiag:: examples/edge.folded.diag
+
+textcolor 属性の設定例
+----------------------
+
+.. literalinclude:: examples/edge.textcolor.diag
+.. blockdiag:: examples/edge.textcolor.diag
+
