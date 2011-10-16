@@ -1,0 +1,6 @@
+diagram {
+  A -> B;
+
+  A[textcolor=blue];
+  B[textcolor='#FF00FF'];
+}
