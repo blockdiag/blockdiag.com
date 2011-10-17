@@ -96,7 +96,7 @@
 
 .. blockdiag_diagram_attr:: default_text_color  = #RRGGBB or 色名
 
-  ノードのラベルのデフォルトの色を指定します。省略時は黒です。
+  ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略時は黒です。
 
   .. versionadded:: 0.9.2
 
