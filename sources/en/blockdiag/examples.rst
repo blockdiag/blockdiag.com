@@ -113,9 +113,6 @@ grouping nodes
 .. versionadded:: 0.7.5
    group definition within node-attributes
 
-.. versionadded:: 0.9.1
-   add default_group_color attribute
-
 .. versionadded:: 0.9.2
    add textcolor attribute
 
