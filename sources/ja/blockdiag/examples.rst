@@ -28,6 +28,9 @@
 .. versionadded:: 0.9.2
    textcolor 属性を追加
 
+.. versionadded:: 0.9.5
+   width と height 属性を追加
+
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
 
