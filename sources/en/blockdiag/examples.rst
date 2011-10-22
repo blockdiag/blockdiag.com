@@ -29,6 +29,8 @@ style attributes to nodes and edges
 
 .. versionadded:: 0.9.2
    node.textcolor attribute
+.. versionadded:: 0.9.5
+   node.width and node.height attribute
 
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
