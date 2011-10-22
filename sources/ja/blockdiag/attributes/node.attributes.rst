@@ -130,6 +130,18 @@
 
   .. versionadded:: 0.9.2
 
+.. blockdiag_node_attr:: width = 数値
+
+  ノードの幅を指定します。省略時は128です。
+
+  .. versionadded:: 0.9.5
+
+.. blockdiag_node_attr:: height = 数値
+
+  ノードの高さを指定します。省略時は40です。
+
+  .. versionadded:: 0.9.5
+
 .. EXAMPLES
    ========
 
