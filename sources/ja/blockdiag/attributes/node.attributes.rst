@@ -228,7 +228,13 @@ icon 属性の設定例
 .. blockdiag:: examples/node.icon.diag
 
 textcolor 属性の設定例
------------------
+----------------------
 
 .. literalinclude:: examples/node.textcolor.diag
 .. blockdiag:: examples/node.textcolor.diag
+
+width と height 属性の設定例
+----------------------------
+
+.. literalinclude:: examples/node.width-height.diag
+.. blockdiag:: examples/node.width-height.diag
