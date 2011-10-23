@@ -32,6 +32,9 @@ style attributes to nodes and edges
 .. versionadded:: 0.9.5
    node.width and node.height attribute
 
+.. versionadded:: 0.9.6
+   node.style and edge.style supports dashed_array format style
+
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
 

@@ -31,6 +31,9 @@
 .. versionadded:: 0.9.5
    width と height 属性を追加
 
+.. versionadded:: 0.9.6
+   style 属性で dashed_array フォーマットをサポート
+
 .. literalinclude:: diagrams/node_attributes.diag
 .. blockdiag:: diagrams/node_attributes.diag
 
