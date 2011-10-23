@@ -2,13 +2,13 @@ diagram {
    // Set boder-style, backgroun-color and text-color to nodes.
    A [style = dotted];
    B [style = dashed];
-   C [color = pink];
+   C [color = pink, style = "3,3,3,3,15,3"]; //dashed_array format style
    D [color = "#888888", textcolor="#FFFFFF"];
 
    // Set border-style and color to edges.
    A -> B [style = dotted];
    B -> C [style = dashed];
-   C -> D [color = "red"];
+   C -> D [color = "red", style = "3,3,3,3,15,3"]; //dashed_array format style
 
    // Set numbered-badge to nodes.
    E [numbered = 99];

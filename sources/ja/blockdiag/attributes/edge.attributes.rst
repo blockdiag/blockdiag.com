@@ -68,6 +68,11 @@
   **none**
     エッジを消します。
 
+  **数値, 数値, ...**
+    線の長さ、空白の長さをカンマ区切りで交互に指定します。
+
+    .. versionadded:: 0.9.6
+
 
 .. blockdiag_edge_attr:: color = #RRGGBB or 色名
 
