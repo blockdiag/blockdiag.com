@@ -6,6 +6,12 @@ diagram {
   // Set fontsize.
   fontsize = 16;  // default value is 11
 
+  // Do not show activity line
+  activation = none;
+
+  // Numbering edges automaticaly
+  autonumber = True;
+
   browser  -> webserver [label = "GET \n/index.html"];
   browser <-- webserver;
 }

@@ -9,4 +9,7 @@
 
   // color of edge
   A -> B [label = "colored label", color = red];
+
+  // failed edge
+  A -> B [label = "failed edge", failed];
 }
