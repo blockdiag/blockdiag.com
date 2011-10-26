@@ -12,6 +12,36 @@ blockdiag の概要
 インストール
 ============
 
+Windows の場合 
+---------------
+easy_install コマンドで依存パッケージをインストールします。
+
+.. code-block:: bash
+
+   $ easy_install pillow
+
+また、Pillow が依存している「Microsoft Visual C++ 2008 SP1 再頒布可能パッケージ」をインストールします。
+32ビット版は `こちら <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=a5c84275-3b97-4ab7-a40d-3802b2af5fc2&displaylang=ja-nec>`_ から、
+64ビット版は `こちら <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=ba9257ca-337f-4b40-8c14-157cfdffee4e&displaylang=ja-nec>`_ から
+ダウンロードしてください。
+
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。
+
+.. code-block:: bash
+
+   $ easy_install blockdiag
+
+.. note::
+
+   `Sphinx-users.jp`_ で配布されている `スタンドアロンインストーラ`_ を利用すると
+   簡単に Python, Sphinx, blockdiag シリーズを簡単にインストールすることができます。
+
+   スタンドアロンインストーラの詳細は `こちら <http://sphinx-users.jp/gettingstarted/install_windows_standalone.html>`_ をご覧ください。
+
+.. _Sphinx-users.jp: http://sphinx-users.jp/
+.. _スタンドアロンインストーラ: http://sphinx-users.jp/gettingstarted/install_windows_standalone.html
+
 Debian 6.0 (Squeeze) の場合
 ---------------------------
 apt-get コマンドで依存パッケージをインストールします。
