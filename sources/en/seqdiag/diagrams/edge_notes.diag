@@ -1,0 +1,9 @@
+{
+  // Use note (put note on rightside)
+  browser -> webserver [note = "request\nGET /"];
+  browser <- webserver;
+
+  // Use leftnote and rightnote
+  browser -> webserver [leftnote = "send request"];
+  browser <- webserver [rightnote = "send response"];
+}
