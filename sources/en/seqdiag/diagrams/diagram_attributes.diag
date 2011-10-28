@@ -12,6 +12,9 @@ diagram {
   // Numbering edges automaticaly
   autonumber = True;
 
+  // Change note color
+  default_note_color = lightblue;
+
   browser  -> webserver [label = "GET \n/index.html"];
-  browser <-- webserver;
+  browser <-- webserver [note = "Apache works!"];
 }

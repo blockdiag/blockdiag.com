@@ -42,6 +42,14 @@ separators
 .. literalinclude:: diagrams/separators.diag
 .. seqdiag:: diagrams/separators.diag
 
+edge notes
+===========
+
+.. versionadded:: 0.6.0
+
+.. literalinclude:: diagrams/edge_notes.diag
+.. seqdiag:: diagrams/edge_notes.diag
+
 diagram attributes
 ==================
 
@@ -49,6 +57,9 @@ diagram attributes
 
 .. versionadded:: 0.5.0
    activation and autonumber attributes
+
+.. versionadded:: 0.6.0
+   default_note_color attribute
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. seqdiag:: diagrams/diagram_attributes.diag
