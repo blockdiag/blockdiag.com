@@ -73,6 +73,23 @@
 
     .. versionadded:: 0.9.6
 
+.. todo::
+
+  .. blockdiag_edge_attr:: hstyle = エッジの先頭の種類
+
+    エッジの先頭の形状を指定します。
+
+    .. versionadded:: 0.7.3
+
+    **generalization**
+      汎化
+
+    **composition**
+      構成
+
+    **aggregation**
+      集合
+
 
 .. blockdiag_edge_attr:: color = #RRGGBB or 色名
 
@@ -115,6 +132,12 @@
   エッジのラベルの色を指定します。省略時は黒です。
 
   .. versionadded:: 0.9.2
+
+.. blockdiag_edge_attr:: fontsize = 数値
+
+  エッジのラベルのフォントサイズを指定します。省略時は11です。
+
+  .. versionadded:: 0.9.7
 
 .. EXAMPLES
    ========
@@ -173,3 +196,8 @@ textcolor 属性の設定例
 .. literalinclude:: examples/edge.textcolor.diag
 .. blockdiag:: examples/edge.textcolor.diag
 
+fontsize 属性の設定例
+---------------------
+
+.. literalinclude:: examples/edge.fontsize.diag
+.. blockdiag:: examples/edge.fontsize.diag
