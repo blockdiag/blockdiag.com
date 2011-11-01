@@ -146,6 +146,12 @@
 
   .. versionadded:: 0.9.5
 
+.. blockdiag_node_attr:: fontsize = 数値
+
+  ノードのラベル属性のフォントサイズを指定します。省略時は11です。
+
+  .. versionadded:: 0.9.7
+
 .. EXAMPLES
    ========
 
@@ -242,3 +248,10 @@ width と height 属性の設定例
 
 .. literalinclude:: examples/node.width-height.diag
 .. blockdiag:: examples/node.width-height.diag
+
+fontsize 属性の設定例
+---------------------
+
+.. literalinclude:: examples/node.fontsize.diag
+.. blockdiag:: examples/node.fontsize.diag
+
