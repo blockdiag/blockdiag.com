@@ -207,3 +207,9 @@ fontsize 属性の設定例
 
 .. literalinclude:: examples/edge.fontsize.diag
 .. blockdiag:: examples/edge.fontsize.diag
+
+thick 属性の設定例
+------------------
+
+.. literalinclude:: examples/edge.thick.diag
+.. blockdiag:: examples/edge.thick.diag
