@@ -133,6 +133,12 @@
 
   .. versionadded:: 0.9.2
 
+.. blockdiag_edge_attr:: thick
+
+  エッジを太くします。
+
+  .. versionadded:: 0.9.7
+
 .. blockdiag_edge_attr:: fontsize = 数値
 
   エッジのラベルのフォントサイズを指定します。省略時は11です。
