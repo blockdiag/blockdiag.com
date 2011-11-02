@@ -26,7 +26,10 @@ diagram {
    H -> I [dir = both];
 
    // Set width and height to nodes.
-   J -> K -> L;
    K [width = 192]; // default value is 128
    L [height = 64]; // default value is 40
+
+   // Use thick line
+   J -> K [thick]
+   K -> L;
 }
