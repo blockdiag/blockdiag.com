@@ -110,7 +110,7 @@ grouping nodes
 ==============
 
 .. versionadded:: 0.5.3
-   label attributes for group
+   label attribute for group
 
 .. versionadded:: 0.6
    nested groups
@@ -119,10 +119,19 @@ grouping nodes
    group definition within node-attributes
 
 .. versionadded:: 0.9.2
-   add textcolor attribute
+   textcolor attribute
 
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
+
+font settings
+==============
+
+.. versionadded:: 0.9.7
+   fontsize attribute
+
+.. literalinclude:: diagrams/font_settings.diag
+.. blockdiag:: diagrams/font_settings.diag
 
 
 diagram attributes

@@ -7,9 +7,6 @@ diagram {
   span_width = 240;  // default value is 64
   span_height = 120;  // default value is 40
 
-  // Set fontsize
-  fontsize = 20;  // default value is 11
-
   // set default shape
   default_shape = roundedbox;  // default value is 'box'
 
