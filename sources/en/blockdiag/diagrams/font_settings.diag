@@ -1,0 +1,16 @@
+diagram {
+  // Set fontsize
+  fontsize = 20;  // default value is 11
+
+  A -> B [label = "large"];
+  B -> C [label = "small", fontsize = 11];  // change fontsize of edge-label
+
+  A [fontsize = 32];  // change fontsize of node-label
+
+  group {
+    label = "group label";
+    fontsize = 16;  // change fontsize of group-label
+
+    C;
+  }
+}
