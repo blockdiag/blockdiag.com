@@ -117,13 +117,13 @@ dots 形状の利用
 ============
 
 .. versionadded:: 0.5.3
-   グループラベルに対応
+   グループ属性として label を追加
 
 .. versionadded:: 0.6
    グループの入れ子に対応
 
 .. versionadded:: 0.7.5
-   ノード属性として group キーワードを追加
+   ノード属性として group を追加
 
 .. versionadded:: 0.9.1
    デフォルトの背景色を指定できるように default_group_color 属性を追加
@@ -133,6 +133,15 @@ dots 形状の利用
 
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
+
+フォントの設定
+==============
+
+.. versionadded:: 0.9.7
+   ノード、エッジ、グループの属性として fontsize を追加
+
+.. literalinclude:: diagrams/font_settings.diag
+.. blockdiag:: diagrams/font_settings.diag
 
 
 図全体の設定
@@ -149,6 +158,15 @@ dots 形状の利用
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
+
+クラス機能
+==========
+
+.. versionadded:: 0.9.7
+   (experimental)
+
+.. literalinclude:: diagrams/class.diag
+.. blockdiag:: diagrams/class.diag
 
 
 縦書きモード

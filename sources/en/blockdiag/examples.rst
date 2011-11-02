@@ -150,6 +150,16 @@ diagram attributes
 .. blockdiag:: diagrams/diagram_attributes.diag
 
 
+define classes
+==============
+
+.. versionadded:: 0.9.7
+   (experimental)
+
+.. literalinclude:: diagrams/class.diag
+.. blockdiag:: diagrams/class.diag
+
+
 portrait mode
 =============
 
