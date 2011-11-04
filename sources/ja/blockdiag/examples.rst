@@ -148,10 +148,13 @@ dots 形状の利用
    default_shape を追加
 
 .. versionadded:: 0.9.1
-   default_node_color, default_group_color, default_line_color を追加
+   default_node_color, default_group_color, default_line_color(廃止) を追加
 
 .. versionadded:: 0.9.2
-   default_text_color を追加
+   default_text_color(廃止) を追加
+
+.. versionadded:: 1.0.0
+   default_textcolor, default_linecolor を追加
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag

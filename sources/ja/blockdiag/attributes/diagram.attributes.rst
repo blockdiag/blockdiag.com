@@ -58,7 +58,7 @@
   ノード間の縦幅を指定します。省略時は40です。
 
 
-.. blockdiag_diagram_attr:: fontsize = 数値
+.. blockdiag_diagram_attr:: default_fontsize = 数値
 
   ノードのラベル属性に使用するフォントサイズを指定します。省略時は11です。
 
@@ -88,13 +88,13 @@
 
   .. versionadded:: 0.9.1
 
-.. blockdiag_diagram_attr:: default_line_color = #RRGGBB or 色名
+.. blockdiag_diagram_attr:: default_linecolor = #RRGGBB or 色名
 
   ノードの枠とエッジのデフォルトの色を指定します。省略時は黒です。
 
   .. versionadded:: 0.9.1
 
-.. blockdiag_diagram_attr:: default_text_color  = #RRGGBB or 色名
+.. blockdiag_diagram_attr:: default_textcolor  = #RRGGBB or 色名
 
   ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略時は黒です。
 
@@ -124,11 +124,11 @@ span_width 属性と span_height 属性の設定例
 .. literalinclude:: examples/diagram.span.diag
 .. blockdiag:: examples/diagram.span.diag
 
-.. fontsize attribute to diagram
-   -----------------------------
+.. default_fontsize attribute to diagram
+   -------------------------------------
 
-fontsize 属性の設定例
----------------------
+default_fontsize 属性の設定例
+-----------------------------
 
 .. literalinclude:: examples/diagram.fontsize.diag
 .. blockdiag:: examples/diagram.fontsize.diag
@@ -151,7 +151,7 @@ orientation 属性の設定例
 .. literalinclude:: examples/diagram.orientation.diag
 .. blockdiag:: examples/diagram.orientation.diag
 
-default_node_color, default_group_color, default_line_color, default_text_color 属性の設定例
+default_node_color, default_group_color, default_linecolor, default_textcolor 属性の設定例
 --------------------------------------------------------------------------------------------
 
 .. literalinclude:: examples/diagram.default_color.diag

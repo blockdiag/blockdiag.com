@@ -141,10 +141,13 @@ diagram attributes
    default_shape
 
 .. versionadded:: 0.9.1
-   default_node_color, default_group_color, default_line_color
+   default_node_color, default_group_color, default_line_color (obsoleted)
 
 .. versionadded:: 0.9.2
-   default_text_color
+   default_text_color (obsoleted)
+
+.. versionadded:: 1.0.0
+   default_textcolor, default_linecolor
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. blockdiag:: diagrams/diagram_attributes.diag
