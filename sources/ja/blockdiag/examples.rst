@@ -125,9 +125,6 @@ dots 形状の利用
 .. versionadded:: 0.7.5
    ノード属性として group を追加
 
-.. versionadded:: 0.9.1
-   デフォルトの背景色を指定できるように default_group_color 属性を追加
-
 .. versionadded:: 0.9.2
    グループラベルの色を指定できるように textcolor 属性を追加
 
