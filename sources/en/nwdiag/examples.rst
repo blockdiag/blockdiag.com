@@ -1,4 +1,4 @@
-.. _sample-diagrams:
+.. _nwdiag-sample-diagrams:
 
 ==============
 Sample diagams

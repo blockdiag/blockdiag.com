@@ -1,4 +1,4 @@
-.. _sample-diagrams:
+.. _blockdiag-sample-diagrams:
 
 ==============
 Sample diagams

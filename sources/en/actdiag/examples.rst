@@ -1,4 +1,4 @@
-.. _sample-diagrams:
+.. _actdiag-sample-diagrams:
 
 ==============
 Sample diagams

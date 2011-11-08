@@ -37,7 +37,7 @@ Copy and modify ini file. example
    $ cp <nwdiag installed path>/nwdiag/examples/simple.diag .
    $ vi simple.diag
 
-Please refer to :ref:`sample-diagrams` section for the format of the
+Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the
 `simpla.diag` configuration file.
 
 

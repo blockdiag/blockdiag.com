@@ -1,4 +1,4 @@
-.. _sample-diagrams:
+.. _seqdiag-sample-diagrams:
 
 ==============
 Sample diagams

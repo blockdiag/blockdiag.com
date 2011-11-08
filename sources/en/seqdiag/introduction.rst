@@ -37,7 +37,7 @@ Copy and modify ini file. example
    $ cp <seqdiag installed path>/seqdiag/examples/simple.diag .
    $ vi simple.diag
 
-Please refer to :ref:`sample-diagrams` section for the format of the
+Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the
 `simpla.diag` configuration file.
 
 
