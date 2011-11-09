@@ -1,8 +1,8 @@
-===============================================
-nwdiag - simple network-diagram image generator
-===============================================
+================================================
+nwdiag - simple network-diagram image generators
+================================================
 
-`nwdiag` generate network-diagram image file from .diag file.  
+`nwdiag` generates network-diagram image file from .diag file.  
 .diag file is similar to DOT file (graphviz's).
 
 You can get diagrams like this.
@@ -25,9 +25,27 @@ You can get diagrams like this.
      }
    }
 
+And, `nwdiag` package includes `rackdiag` which generates rack-structure diagram images.
+
+.. rackdiag::
+
+   diagram {
+     8U;
+
+     1: UPS [2U];
+     3: DB Server
+     4: Web Server
+     5: Web Server
+     6: Web Server
+     7: Load Balancer
+     8: L3 Switch
+   }
+
+
 .. toctree::
 
    introduction
-   examples
+   nwdiag-examples
+   rackdiag-examples
    sphinxcontrib
    demo

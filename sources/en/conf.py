@@ -30,7 +30,8 @@ extensions = ['sphinx.ext.todo',
               'sphinxcontrib.blockdiag',
               'sphinxcontrib.seqdiag',
               'sphinxcontrib.actdiag',
-              'sphinxcontrib.nwdiag']
+              'sphinxcontrib.nwdiag',
+              'sphinxcontrib.rackdiag']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -273,6 +274,8 @@ actdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 actdiag_antialias = True
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 nwdiag_antialias = True
+rackdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+rackdiag_antialias = True
 
 
 from sphinx import addnodes
@@ -295,4 +298,3 @@ def setup(app):
                         'pair: %s; edge attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
     app.add_object_type('blockdiag_node_attr', 'blockdiag_node_attr',
                         'pair: %s; node attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
-
