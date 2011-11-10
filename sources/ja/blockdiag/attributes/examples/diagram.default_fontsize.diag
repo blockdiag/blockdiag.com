@@ -1,6 +1,6 @@
 diagram {
    // Set fontsize
-   fontsize = 24;
+   default_fontsize = 24;
 
    A -> B;
 }

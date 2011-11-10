@@ -130,8 +130,8 @@ span_width 属性と span_height 属性の設定例
 default_fontsize 属性の設定例
 -----------------------------
 
-.. literalinclude:: examples/diagram.fontsize.diag
-.. blockdiag:: examples/diagram.fontsize.diag
+.. literalinclude:: examples/diagram.default_fontsize.diag
+.. blockdiag:: examples/diagram.default_fontsize.diag
 
 .. default_shape attribute to diagram
    ----------------------------------
