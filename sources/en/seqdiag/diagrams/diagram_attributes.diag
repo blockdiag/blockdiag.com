@@ -4,7 +4,7 @@ diagram {
   span_height = 80;  // default value is 40
 
   // Set fontsize.
-  fontsize = 16;  // default value is 11
+  default_fontsize = 16;  // default value is 11
 
   // Do not show activity line
   activation = none;
