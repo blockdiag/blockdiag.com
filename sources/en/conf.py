@@ -275,7 +275,7 @@ actdiag_antialias = True
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 nwdiag_antialias = True
 rackdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
-rackdiag_antialias = True
+#rackdiag_antialias = True
 
 
 from sphinx import addnodes
