@@ -128,6 +128,9 @@ dots 形状の利用
 .. versionadded:: 0.9.2
    グループラベルの色を指定できるように textcolor 属性を追加
 
+.. versionadded:: 1.0.1
+   グループの形状を指定できるように shape 属性を追加
+
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 

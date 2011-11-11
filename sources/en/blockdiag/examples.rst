@@ -121,6 +121,9 @@ grouping nodes
 .. versionadded:: 0.9.2
    textcolor attribute
 
+.. versionadded:: 1.0.1
+   shape attribute
+
 .. literalinclude:: diagrams/node_groups.diag
 .. blockdiag:: diagrams/node_groups.diag
 
