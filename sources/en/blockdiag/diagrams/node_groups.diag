@@ -16,13 +16,22 @@ diagram admin {
       // Set background-color to this group.
       color = "#77FF77";
 
+      // Set textcolor to this group
+      textcolor = "#FF0000";
+
       E -> F -> G;
 
       // H and I belong to third "nested" group.
       group {
           label = "third group";
-          textcolor = "#77FF77";
-          color = "#7777FF";
+          color = "#FF0000";
+
+          // Set group shape to 'line group' (default is box)
+          shape = line;
+
+          // Set line style (effects to 'line group' only)
+          style = dashed;
+
           H -> I;
       }
    }
