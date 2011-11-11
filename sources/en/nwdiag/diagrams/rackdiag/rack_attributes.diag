@@ -1,0 +1,19 @@
+diagram {
+  // Change order of rack-number as ascending
+  ascending;
+
+  // define height of rack
+  12U;
+
+  // define description of rack
+  description = "Tokyo/1234 East";
+
+  // define rack units
+  1: UPS [2U];   // define height of unit
+  3: DB Server [5kg]  // define weight of unit
+  4: Web Server [0.5A]  // define ampere of unit
+  5: Web Server
+  6: Web Server
+  7: Load Balancer
+  8: L3 Switch
+}
