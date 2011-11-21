@@ -86,6 +86,9 @@ shape of nodes
 .. versionadded:: 0.8.2
    dots shape
 
+.. versionadded:: 1.1.0
+   square shape and circle shape
+
 .. literalinclude:: diagrams/node_shapes.diag
 .. blockdiag:: diagrams/node_shapes.diag
 

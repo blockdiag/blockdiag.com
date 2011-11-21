@@ -93,6 +93,9 @@
 .. versionadded:: 0.8.2
    dots shape に対応
 
+.. versionadded:: 1.1.0
+   square shape, circle shape に対応
+
 .. literalinclude:: diagrams/node_shapes.diag
 .. blockdiag:: diagrams/node_shapes.diag
 
