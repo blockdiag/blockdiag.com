@@ -27,3 +27,9 @@ multiple racks
 
 .. literalinclude:: diagrams/rackdiag/multiple_racks.diag
 .. rackdiag:: diagrams/rackdiag/multiple_racks.diag
+
+define not available units
+===========================
+
+.. literalinclude:: diagrams/rackdiag/not_available_rack.diag
+.. rackdiag:: diagrams/rackdiag/not_available_rack.diag
