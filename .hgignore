@@ -1,6 +1,8 @@
 .installed.cfg
 .pyc
 .swp
+.po~
+.mo
 bin
 _build
 develop-eggs

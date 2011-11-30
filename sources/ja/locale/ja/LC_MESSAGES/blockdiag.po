@@ -1,0 +1,1353 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-30 11:01\n"
+"PO-Revision-Date: 2011-11-30 10:59+0900\n"
+"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 310c85ef7c7e412ea7097bb0e9e886b5
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:7
+msgid "ダイアグラムの属性設定"
+msgstr ""
+
+# 9a7b21e66d234330bf3c2d2af982b7ac
+# 7ded0ecfb1d844028368965bf0d507c9
+# 5e80566ba6ca4f39b1d8a381efd52ff6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:13
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:13
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:13
+msgid "名前"
+msgstr ""
+
+# 597a9a28ba0b41cf9a1dae794992b4e1
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:15
+msgid "ダイアグラムの属性の設定"
+msgstr ""
+
+# a379d03ce6f14bedb208f36f11bba6c3
+# 797f460014c444d8be9a0dc10753d576
+# bf9bde1084054d74ae4ed3b9d1340989
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:21
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:21
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:21
+msgid "使い方"
+msgstr ""
+
+# 479679d5aee9458b8b756de013ffbec6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:25
+msgid "**属性名** = **設定値** ;"
+msgstr ""
+
+# 7ab7fbd5ec674bf1837b465cb4f0b32e
+# fadaa13aaafa4cb38e6b1e02989c57c4
+# 51f2e9fe959b4eeabc4394da59104e63
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:31
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:41
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:41
+msgid "概要"
+msgstr ""
+
+# 81f27dc3220649ff89812ba403d1af61
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:33
+msgid "ブロックダイアグ全体の属性を設定をします。"
+msgstr ""
+
+# e5427ea1de1142cfa13e7112ab898ae8
+# 32918c1945d1482b9f5de0d028efba88
+# 444a563ca45949ae8daeaebc92b84a20
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:39
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:51
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:51
+msgid "属性"
+msgstr ""
+
+# fdc161ff93ef49798896f0034329b2e5
+# e75b93fd38cb476bb80dd136e423624c
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:43
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:139
+msgid "ノードの幅を指定します。省略時は128です。"
+msgstr ""
+
+# ce60c3c0962142129e09bc624e7e032c
+# f97ffb1e72ff43749549779c78cb2ccc
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:48
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:145
+msgid "ノードの高さを指定します。省略時は40です。"
+msgstr ""
+
+# 694677e48b9a466ebd69965952e44cd9
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:53
+msgid "ノード間の横幅を指定します。省略時は64です。"
+msgstr ""
+
+# 62a27dcb572d44598f3068bc55465b33
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:58
+msgid "ノード間の縦幅を指定します。省略時は40です。"
+msgstr ""
+
+# eed983a280c744899f61eb3bbb7e8ada
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:63
+msgid ""
+"ノードのラベル属性に使用するフォントサイズを指定します。省略時は11です。"
+msgstr ""
+
+# 47b1f3eb19a3429685ab825b04d6e22c
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:68
+msgid "ノードの形状のデフォルトを指定します。省略時はboxです。"
+msgstr ""
+
+# 8441db42bed2472e8facea931cab5db1
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:75
+msgid "縦書きモードにします。省略時は横書きモードです。"
+msgstr ""
+
+# e972a85c4834428a816902bb8253dab8
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:81
+msgid "ノードのデフォルトの色を指定します。省略時は白です。"
+msgstr ""
+
+# 83400ce85f6c41c59ab5a9ac15929146
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:87
+msgid "グループのデフォルトの色を指定します。省略時はオレンジです。"
+msgstr ""
+
+# cb1296f29be14a229121a5b163706b34
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:93
+msgid "ノードの枠とエッジのデフォルトの色を指定します。省略時は黒です。"
+msgstr ""
+
+# e4132f95f28e496fbfcdef0a3d7f05dd
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:99
+msgid ""
+"ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略"
+"時は黒です。"
+msgstr ""
+
+# 487ae25d31fa4ac5b41c2c32064a075e
+# 8be4d112197b4b01b770648d4473db71
+# 7f43ff7a89624a6fb4258610f19512e6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:107
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:152
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:159
+msgid "設定例"
+msgstr ""
+
+# 921c045063894fe6ab078884062c1a7f
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:113
+msgid "node_width 属性と node_height 属性の設定例"
+msgstr ""
+
+# ca00b47a0950483d92f26c1085b1fb24
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:122
+msgid "span_width 属性と span_height 属性の設定例"
+msgstr ""
+
+# 51ef8a7476cb41ce8fb9a4b455b60cd2
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:131
+msgid "default_fontsize 属性の設定例"
+msgstr ""
+
+# 513c0eef2a934c92b7a54264433aa837
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:140
+msgid "default_shape 属性の設定例"
+msgstr ""
+
+# 0fd9e92c003e45969a97d0343564c745
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:149
+msgid "orientation 属性の設定例"
+msgstr ""
+
+# 6524bc7885d44f30ae391bea4be35d33
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:155
+msgid ""
+"default_node_color, default_group_color, default_linecolor, "
+"default_textcolor 属性の設定例"
+msgstr ""
+
+# 4f33f7bcedef461bae4bd4a1d519f6e2
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:7
+msgid "エッジ属性の設定"
+msgstr ""
+
+# 5dd334c0d23c4b6cb5a7285d8f61b19f
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:15
+msgid "ブロックダイアグのエッジ属性の設定"
+msgstr ""
+
+# 04353374acc34c79ad123ab0e91fec2f
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:30
+msgid "**ノードA -> ノードB -> ...** [ **属性名** ];"
+msgstr ""
+
+# 21d7cbfce3c14eb185d23e1f256758da
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:32
+msgid "**ノードA -> ノードB -> ...** [ **属性名** = **設定値** ];"
+msgstr ""
+
+# ee692db24d14463fa44ab707333bcf71
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:34
+msgid ""
+"**ノードA -> ノードB -> ...** [ **属性名** = **設定値** , **属性名** = **設定"
+"値** , ... ];"
+msgstr ""
+
+# 29875f9bbd97406181c6f0e2599edacc
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:43
+msgid "エッジ属性の設定をします。"
+msgstr ""
+
+# 69516e946a034b9eb812a1bf7a61f54e
+# 3a57e65e293f465bac6d30e0c5bcb247
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:45
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:45
+msgid ""
+"属性を複数指定するときはカンマで区切ります。属性に指定する文字列に記号や空白"
+"が含まれる場合はクオートが必要です。"
+msgstr ""
+
+# eb73c4ecf80141138e449027963f489c
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:55
+msgid "短い文をエッジに表示します。"
+msgstr ""
+
+# 640a0cd67e114177a5481dcdcc9faebc
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:60
+msgid "エッジの線の種類を指定します。省略時は実線で繋ぎます。"
+msgstr ""
+
+# 1c5d55b2aa3d4aa68d83a5a1006b908d
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:63
+msgid "点線で繋ぎます。"
+msgstr ""
+
+# 31c12915ef1d4fe3970903800085d902
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:66
+msgid "破線で繋ぎます。"
+msgstr ""
+
+# c9adbadbc4514ecb892d0ef02c67c604
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:69
+msgid "エッジを消します。"
+msgstr ""
+
+# 61b46d04d7774aa6bce78ae6a5966ad7
+# 1e31ee610a6c48fd9a730b42078bfa60
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:72
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:71
+msgid "線の長さ、空白の長さをカンマ区切りで交互に指定します。"
+msgstr ""
+
+# aeb790a4737942d89364edce164547aa
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:96
+msgid ""
+"エッジの色を指定します。省略時は黒です。 **none** を指定すると透明の矢印を書"
+"きます。"
+msgstr ""
+
+# 77366e7edef94658bd6ccdfcf0e28fd1
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:101
+msgid "矢印の向きを指定します。"
+msgstr ""
+
+# d41bb340a69e4228bb24ec1e2fcd0bf9
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:104
+msgid "矢印を書かずにノードを繋ぎます。"
+msgstr ""
+
+# a85b3c591adc43dea10c4ae1fc177be1
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:106
+msgid "``A -- B`` と等価です。"
+msgstr ""
+
+# 39dc54d97292448e9ced225e2ab08fa4
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:109
+msgid ""
+"矢印を左のノードから右のノード、または上のノードから下のノードに向かって書き"
+"ます。"
+msgstr ""
+
+# 2f486e8171fb4777abc09a3904aa264f
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:111
+msgid "``A -> B`` と等価です。"
+msgstr ""
+
+# 222f188ab0a740169fb70959bd61069b
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:114
+msgid ""
+"矢印を右のノードから左のノード、または下のノードから上のノードに向かって書き"
+"ます。"
+msgstr ""
+
+# fc257c20f53b4253ba7d52ed63dfccbe
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:116
+msgid "``A <- B`` と等価です。"
+msgstr ""
+
+# c61bdab048f0494a98afa612bc28ed1e
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:119
+msgid "矢印を両方に書きます。"
+msgstr ""
+
+# 9dad6699c9404097aa0f20a795c78031
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:121
+msgid "``A <-> B`` と等価です。"
+msgstr ""
+
+# 5dd876670b21438c8e6f5c9d6c63bb5a
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:126
+msgid "エッジを折り返します。"
+msgstr ""
+
+# d671a94819194ebd9917194ead583339
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:132
+msgid "エッジのラベルの色を指定します。省略時は黒です。"
+msgstr ""
+
+# f9b4b871d1034aa1b909a2d4e5b2b882
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:138
+msgid "エッジを太くします。"
+msgstr ""
+
+# e2f1be6c160d4818a067c765397795d1
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:144
+msgid "エッジのラベルのフォントサイズを指定します。省略時は11です。"
+msgstr ""
+
+# 33d9a12c2ba444a4a8d121ff43fb71d4
+# ce6659cecd0e4746b5db408e3f1860f5
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:158
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:165
+msgid "label 属性の設定例"
+msgstr ""
+
+# 089aee9b917e42d9ad185f8f10cf5e11
+# f4b61ee478b34194bde48213ed399981
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:167
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:174
+msgid "style 属性の設定例"
+msgstr ""
+
+# 9e6b275cb03b444b9ac7d1f93624bc32
+# 177105704e1a4853a5f87b1732f5cd8a
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:176
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:183
+msgid "color 属性の設定例"
+msgstr ""
+
+# aa67c221139049cc98b7ca6e0742957f
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:185
+msgid "dir 属性の設定例"
+msgstr ""
+
+# 7ff59040f57e48bbbd9936c824399d6e
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:194
+msgid "folded 属性の設定例"
+msgstr ""
+
+# 1caad2ed11884ec8be161fa6c5f25f41
+# 1e7168c5059847f6be7882052c41d5b9
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:200
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:241
+msgid "textcolor 属性の設定例"
+msgstr ""
+
+# 602ee9b3ef5b4bbd8052cda5ee799cd1
+# a6496b8a0a684b6abbfc632164701f03
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:206
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:253
+msgid "fontsize 属性の設定例"
+msgstr ""
+
+# e1657500f8e440d78bce966e2d6f388f
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:212
+msgid "thick 属性の設定例"
+msgstr ""
+
+# ae6a4aa6ca874a7084a40361ca4822ea
+#: ../../../sources/ja/blockdiag/attributes/index.rst:2
+msgid "属性の説明"
+msgstr ""
+
+# 96c9eec0a2bc49c683bf4c2a66468e94
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:7
+msgid "ノード属性の設定"
+msgstr ""
+
+# e8c7509147724c95931d253a874517a2
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:15
+msgid "ブロックダイアグのノード属性の設定"
+msgstr ""
+
+# 62600293bb6c498abe344d5931a557d4
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:30
+msgid "**ノードID** [ **属性名** ];"
+msgstr ""
+
+# b1eddf7cb5284f9b925e1f954fbbecba
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:32
+msgid "**ノードID** [ **属性名** = **設定値** ];"
+msgstr ""
+
+# e45418b23f124b31a2aec24dd9211413
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:34
+msgid ""
+"**ノードID** [ **属性名** = **設定値** , **属性名** = **設定値** , ...];"
+msgstr ""
+
+# 8e0d9c0f76b14c17aa6e518e8e128d19
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:43
+msgid "ノード属性の設定をします。"
+msgstr ""
+
+# 5a897fc1342347fa9203db1131652ced
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:57
+msgid ""
+"ノードに表示するラベルを定義します。省略された場合は **ノードID** が利用され"
+"ます。"
+msgstr ""
+
+# 97983a73e9bb4997ac56c9e8f6705187
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:62
+msgid "ノードを囲む境界線の種類を指定します。省略時は実線で囲います。"
+msgstr ""
+
+# 7ae2fd618ed8413bbff1481048c90a0f
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:65
+msgid "点線で囲います。"
+msgstr ""
+
+# 7e4753360988497887ad4948ace03a3b
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:68
+msgid "破線で囲います。"
+msgstr ""
+
+# 18dd38918a674b30b5db8b142310316a
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:77
+msgid ""
+"ノードの背景色を指定します。 **none** を指定すると透明になります。指定がない"
+"場合は白です。"
+msgstr ""
+
+# bdd70b9f6a254c939b695285f6085ef9
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:82
+msgid "ノードに番号を振ります。"
+msgstr ""
+
+# 572e76fcf52d4bd99f97a8cdbffba43e
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:84
+msgid ""
+"Sphinx 拡張で desctable オプションを利用している場合、テーブルに No 列が追加"
+"されます。desctable オプションは description を使うことによって有効になりま"
+"す。"
+msgstr ""
+
+# 5eb8cee745024c338bdea0046454a782
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:89
+msgid "ノードの形状を指定します。省略時は **box** です。"
+msgstr ""
+
+# 6674f6ed4e7e4ae7847460ab412c62a4
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:91
+msgid "形状はレンダラプラグインによって拡張することが可能です。"
+msgstr ""
+
+# e38b6ea2fc224f17a05a0919ef46fec1
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:107
+msgid ""
+"ノードに背景画像を張り付けます。ファイルパス、または URL で指定できます。"
+msgstr ""
+
+# 1cba69c78f3e4fb4aeeb198f9f7ca7b5
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:112
+msgid "ノードを重ね合わせた状態にします。"
+msgstr ""
+
+# d14737c46ea644a4ade99a20d41631c4
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:119
+msgid ""
+"Sphinx 拡張で desctable オプションを利用している場合、図の下にテーブルを表示"
+"します。"
+msgstr ""
+
+# f343b9f5c3204988a5eb7226e2096700
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:121
+msgid ""
+"表示される列は name と description です。 name には **ノードID** または "
+"**label** 属性が利用されます。"
+msgstr ""
+
+# 646fc247655940b99f2d8fb0700c57f2
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:127
+msgid "ノードにアイコンを設定します。ファイルパス、または URL で指定できます。"
+msgstr ""
+
+# 57057493d0bf44dab633021d3f121bc9
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:133
+msgid "ノードのラベルの色を指定します。省略時は黒です。"
+msgstr ""
+
+# 1b13949b04354956b05e79aa89b8ad11
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:151
+msgid "ノードのラベル属性のフォントサイズを指定します。省略時は11です。"
+msgstr ""
+
+# bdefa41d1e6b4e889a7b1033d4674289
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:192
+msgid "numbered 属性の設定例"
+msgstr ""
+
+# 4cbd64eebe4a46058c6b6f757b501276
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:201
+msgid "shape 属性の設定例"
+msgstr ""
+
+# 37e40b054e4a475abf6cfba43e7f6150
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:210
+msgid "background 属性の設定例"
+msgstr ""
+
+# 1e952ca0381e403abcf17fd48792b2bf
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:219
+msgid "stacked 属性の設定例"
+msgstr ""
+
+# 83c28f6ea7124fda82599796b5aa2566
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:228
+msgid "description 属性の設定例"
+msgstr ""
+
+# fa5076e97f5942008465b0e5037f40d7
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:235
+msgid "icon 属性の設定例"
+msgstr ""
+
+# ded0acc7efd34051851d7184b14b6049
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:247
+msgid "width と height 属性の設定例"
+msgstr ""
+
+# 8948ef3658814fe6ac2259d895fb276e
+#: ../../../sources/ja/blockdiag/demo.rst:5
+msgid "デモ：interactive shell for blockdiag"
+msgstr ""
+
+# 9239129dd7454f65a299e61a98c13ee7
+#: ../../../sources/ja/blockdiag/demo.rst:7
+msgid ""
+"このページは `blockdiag` を Web ブラウザから利用できるようにしたデモページで"
+"す。 入力フォームのテキストをリアルタイムに変換し、 ブラウザ上で閲覧すること"
+"ができます。"
+msgstr ""
+
+# ae26ea4debd54274bf8ebbd82784ab72
+#: ../../../sources/ja/blockdiag/demo.rst:13
+msgid "このデモページは IE に対応していません。"
+msgstr ""
+
+# ca1bfb7e1cb94002836351bdc20becc6
+#: ../../../sources/ja/blockdiag/demo.rst:16
+msgid "入力フォーム"
+msgstr ""
+
+# 956944c4e3e94362b64e52b2ca73b2f5
+#: ../../../sources/ja/blockdiag/demo.rst:27
+msgid "出力された図"
+msgstr ""
+
+# b25afc2f46ff4b62b77b3535c2c99971
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:3
+msgid "文書にブロック図を埋め込む"
+msgstr ""
+
+# 1f569c7823f843fe810b867c25c5d7ec
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:5
+msgid ""
+"いくつかの文書管理システムではプラグインや拡張機能として `blockdiag` で生成し"
+"たブロック図を文章に埋め込むことができます。"
+msgstr ""
+
+# 52ccc67de9994dd38662e57d28e16686
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:10
+msgid "Sphinx に埋め込む"
+msgstr ""
+
+# 0330b5689cd74d8e8a80a455bfa08baf
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:11
+msgid "`Sphinx`_ は reST 形式(テキスト)で記述するドキュメント生成ツールです。"
+msgstr ""
+
+# 4c96fdb1a85e4c4a84f7a6529f4b0217
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:13
+msgid ""
+"Sphinx で作成する文書にブロック図を埋め込むには Sphinx 拡張である "
+"sphinxcontrib-blockdiag パッケージを利用します。"
+msgstr ""
+
+# 4182158d16c34a468e7d55fb0ab2f3fe
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:16
+msgid ""
+"sphinxcontrib-blockdiag については :ref:`sphinxcontrib-blockdiag` で説明しま"
+"す。"
+msgstr ""
+
+# a2a80657509d4e7d90cc03c341f41065
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:21
+msgid "Redmine に埋め込む"
+msgstr ""
+
+# a5e2b436232c44c0a273dd00fa42e167
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:22
+msgid "`Redmine`_ は Web ベースのプロジェクト管理ソフトウェアです。"
+msgstr ""
+
+# a670145634444c7f81fe316b4868b5b6
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:24
+msgid ""
+"Redmine の Wiki にブロック図を埋め込むには Wiki External Filter Plugin を利用"
+"します。"
+msgstr ""
+
+# 8532f46ea18d48838d87a6a0489fc364
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:27
+msgid "詳細は `Wiki External Filter Plugin を導入してみた`_ をご覧ください。"
+msgstr ""
+
+# 5a6cf75e2d864a98bec37929524b2669
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:34
+msgid "Trac に埋め込む"
+msgstr ""
+
+# 9dfa3b4918d14de98c479f04c1063766
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:35
+msgid "`Trac`_ は Web ベースのプロジェクト管理ソフトウェアです。"
+msgstr ""
+
+# 286487d8f4d74bf3b59a9238e1790a6f
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:37
+msgid ""
+"Trac の Wiki にブロック図を埋め込むには `TracBlockDiagPlugin`_ を利用します。"
+msgstr ""
+
+# 560dadc13e544901ab1287b2e2e819f8
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:44
+msgid "moinmoin に埋め込む"
+msgstr ""
+
+# 88891c2757b94053bbe43e6bbeedc6e3
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:45
+msgid "`moinmoin`_ は Python で書かれた Wiki clone サーバです。"
+msgstr ""
+
+# e815c802340d455b86599d87eac4a38d
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:47
+msgid ""
+"moinmoin にブロック図を取り込むには `moinmoin blockdiag plugin`_ を利用しま"
+"す。"
+msgstr ""
+
+# 9500e61823064a429cbdcf4e9ee81ff9
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:54
+msgid "mediawiki に埋め込む"
+msgstr ""
+
+# 56522fcdbf6246358f0e79a04647298f
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:55
+msgid "`mediawiki`_ は Wiki clone サーバです。"
+msgstr ""
+
+# b93c7c68d35f4e5ab71a466ee6c32fcc
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:57
+msgid ""
+"mediawiki にブロック図を取り込むには `Blockdiag MediaWiki Extension`_ を利用"
+"します。"
+msgstr ""
+
+# e0c8bbf3702d47aead41fa24b068d8f1
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:64
+msgid "PukiWiki に埋め込む"
+msgstr ""
+
+# c15e5749ac7a40deaa1f8db52ff71448
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:65
+msgid "`PukiWiki`_ は PHP で書かれた Wiki clone サーバです。"
+msgstr ""
+
+# cdc2d54721cd4939becd99d038c66914
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:67
+msgid ""
+"PukiWiki にブロック図を取り込むには `blockdiag PukiWiki Extension`_ を利用し"
+"ます。"
+msgstr ""
+
+# 43db483a66a04562a6bd2d15492330b2
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:74
+msgid "Rabbit に埋め込む"
+msgstr ""
+
+# 00e7f5feea5e494281accbdaabbb3f94
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:75
+msgid "`Rabbit`_ は Ruby で書かれたプレゼンテーションツールです。"
+msgstr ""
+
+# f3afc8e4c9714126bca72b507f2a6b40
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:77
+msgid ""
+"Rabbit は blockdiag の埋込みをサポートしており、 追加のソフトウェなしにプレゼ"
+"ンテーションに図を組み込むことができます。"
+msgstr ""
+
+# 6aedceaa98c54bf6a90aa412fe6dbe7d
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:84
+msgid "API 経由で取得する"
+msgstr ""
+
+# 46c4cd18e3ef41e4b3a6ba16feae34ed
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:86
+msgid ""
+":ref:`interactive shell for blockdiag` では Web API を提供しています。 テキス"
+"トデータを送信すると SVG 形式のブロック図を取得することができます。"
+msgstr ""
+
+# 34295b6a77544cab9081d175a3bf9185
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:89
+msgid ""
+"Web API は http://blockdiag.appspot.com/image に対して、 以下のパラメータを含"
+"んだ GET リクエストを送ることで呼び出すことができます。"
+msgstr ""
+
+# f0f0ddc932844955803d9c893eb4431a
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:96
+msgid "パラメータ名"
+msgstr ""
+
+# 22f1909643604a8b99bd5a90b8b71833
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:97
+msgid "内容"
+msgstr ""
+
+# 6df46f8648d7404f94fdda2195cf2ee5
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:98
+msgid "src"
+msgstr ""
+
+# 514f8445b55e4ec7bcbd31cf42018dd4
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:99
+msgid ""
+"テキスト形式のブロック図を指定します。 encoding=base64 を指定した場合は "
+"base64 エンコードする必要があります。"
+msgstr ""
+
+# 71445d07371d4de68e9b15d0d67fe72f
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:101
+msgid "encoding"
+msgstr ""
+
+# 6fb331a97762403d8bbf9ca911b3b54c
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:102
+msgid ""
+"base64, jsonp のいずれかを指定することができます。 base64 を指定した場合、"
+"src に指定するテキストを base64 形式で送信します。 jsonp を指定した場合、"
+"jsonp 形式で結果を受け取ることができます。"
+msgstr ""
+
+# ceea910e78894710868c93f5d05bdc24
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:105
+msgid "callback"
+msgstr ""
+
+# 9caec01639254709bd4e81da3080792a
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:106
+msgid ""
+"コールバック関数の名前を指定します。 encoding=jsonp の場合のみ有効です。"
+msgstr ""
+
+# 2ea71ca17b36488b93f06b910dba2965
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:109
+msgid ""
+"サーバは、受信したテキストデータが正常な図であれば、 SVG 形式のブロック図を送"
+"信します。 もし受信したテキストに文法間違いやエラーがあった場合は、 空のレス"
+"ポンスを返します。"
+msgstr ""
+
+# b903770b5877418a9980d142625d833b
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:116
+msgid ""
+"この API は実験的に提供しているものであるため、 パラメータの変更やサービスの"
+"停止が行われる可能性があります。"
+msgstr ""
+
+# 9916e46ee4ed4ddc96fcbd0a18a2ec33
+#: ../../../sources/ja/blockdiag/examples.rst:3
+msgid "出力サンプル"
+msgstr ""
+
+# 7aef7e8cb6e34b689dc4de77bb17636d
+#: ../../../sources/ja/blockdiag/examples.rst:6
+msgid "シンプルなブロック図"
+msgstr ""
+
+# d9d2bf6751d84bb992ee9225819a4e57
+#: ../../../sources/ja/blockdiag/examples.rst:13
+msgid "ラベルの設定"
+msgstr ""
+
+# 203c4f09309842a7a54e602cd789a7e6
+#: ../../../sources/ja/blockdiag/examples.rst:23
+msgid "ノード、エッジのカスタマイズ"
+msgstr ""
+
+# c438a63e6a954bcb9d0e11d46dbe9f1b
+#: ../../../sources/ja/blockdiag/examples.rst:42
+msgid "複数ノード間の接続"
+msgstr ""
+
+# 4ccbfc3ce5e84389a4dab2b8b9a3b037
+#: ../../../sources/ja/blockdiag/examples.rst:51
+msgid "エッジの向きを変更する"
+msgstr ""
+
+# ca4d6e0f418e4c0f87f2a9fa77a03483
+#: ../../../sources/ja/blockdiag/examples.rst:60
+msgid "エッジの折り返し"
+msgstr ""
+
+# 65085e2f0a7149a39df66f40b5211921
+#: ../../../sources/ja/blockdiag/examples.rst:69
+msgid "日本語の利用"
+msgstr ""
+
+# b76ac62522b04e528f0b8bcd02d7b616
+#: ../../../sources/ja/blockdiag/examples.rst:76
+msgid ""
+"`blockdiag` では UTF-8 エンコード以外の文字コードを扱うことはできません。"
+msgstr ""
+
+# d5deb3ac955d498baac0dd51512ed988
+#: ../../../sources/ja/blockdiag/examples.rst:80
+msgid ""
+"日本語を含んだ図の出力に失敗する場合は、 日本語フォントが選択されていない可能"
+"性があります。 :ref:`blockdiag_font_configurations` もしくは :ref:"
+"`sphinxcontrib_font_configurations` (Sphinx) を参考に フォントの設定を確認し"
+"て下さい。"
+msgstr ""
+
+# 6090a480e0b642fd886300d92f9a7fe7
+#: ../../../sources/ja/blockdiag/examples.rst:88
+msgid "ノード形状の変更"
+msgstr ""
+
+# ae5103a25a754dcb86439181dcfc1ccc
+#: ../../../sources/ja/blockdiag/examples.rst:103
+msgid "stacked 属性の利用"
+msgstr ""
+
+# 36c90e4e9a0a482ba5c3fdc5be769a5d
+#: ../../../sources/ja/blockdiag/examples.rst:111
+msgid "dots 形状の利用"
+msgstr ""
+
+# 3aee112756904b07b5b205fa734af13d
+#: ../../../sources/ja/blockdiag/examples.rst:120
+msgid "グルーピング"
+msgstr ""
+
+# aa1d28f11bd24c70abdfd04c1380a9e2
+#: ../../../sources/ja/blockdiag/examples.rst:141
+msgid "フォントの設定"
+msgstr ""
+
+# 3df7d5108df74297902ac2aed4905d12
+#: ../../../sources/ja/blockdiag/examples.rst:151
+msgid "図全体の設定"
+msgstr ""
+
+# 7a35baa7bddb4895a93125a10847a543
+#: ../../../sources/ja/blockdiag/examples.rst:169
+msgid "クラス機能"
+msgstr ""
+
+# 4c1f8c82d206487bb3ff8ea5f706b7f6
+#: ../../../sources/ja/blockdiag/examples.rst:179
+msgid "縦書きモード"
+msgstr ""
+
+# b80cb58138384c6e99061d0c78e1a948
+#: ../../../sources/ja/blockdiag/examples.rst:188
+msgid "グループの縦書き化"
+msgstr ""
+
+# 5dbc04e665874c05b9019115ed9d3ed5
+#: ../../../sources/ja/blockdiag/examples.rst:197
+msgid "シンプルな管理画面の画面遷移図(例)"
+msgstr ""
+
+# 2d8d8d5ec65c42998d1e6bba82d83eb1
+#: ../../../sources/ja/blockdiag/index.rst:3
+msgid "ブロック図生成ツール blockdiag"
+msgstr ""
+
+# a70e92ee5c7642e6b5d509c047dd55f3
+#: ../../../sources/ja/blockdiag/index.rst:5
+msgid ""
+"`blockdiag` はシンプルなテキストからブロック図を生成する ブロック図生成ツール"
+"です。"
+msgstr ""
+
+# 9f4fa4d80cae44a8bedbf0158204af7d
+#: ../../../sources/ja/blockdiag/index.rst:8
+msgid "`blockdiag` を用いると以下のような図が簡単に生成できます。"
+msgstr ""
+
+# 5f3f0a8a312045168f3fddff9737c9b5
+#: ../../../sources/ja/blockdiag/introduction.rst:3
+msgid "blockdiag の概要"
+msgstr ""
+
+# 3645edfa9d1b4ab3b16b24f284f5b32b
+#: ../../../sources/ja/blockdiag/introduction.rst:6
+msgid "機能"
+msgstr ""
+
+# b23dc3adcd144e57896013f446a4dea4
+#: ../../../sources/ja/blockdiag/introduction.rst:8
+msgid "テキストファイルからブロック図を生成"
+msgstr ""
+
+# 6d59599519cf4a5ea95c3483d8ecc711
+#: ../../../sources/ja/blockdiag/introduction.rst:9
+msgid "日本語(UTF-8)対応"
+msgstr ""
+
+# 6e817c410b704efea41c176efce5116a
+#: ../../../sources/ja/blockdiag/introduction.rst:10
+msgid "Sphinx 文書への埋め込み (sphinxcontrib-blockdiag パッケージの利用)"
+msgstr ""
+
+# 20f9d67bbd254d9f8461eaab7adaa342
+#: ../../../sources/ja/blockdiag/introduction.rst:13
+msgid "インストール"
+msgstr ""
+
+# 747e2e28ed8746a3b042aea7a7bdc75b
+#: ../../../sources/ja/blockdiag/introduction.rst:16
+msgid "Windows の場合"
+msgstr ""
+
+# 49115e46cde24531996b5a005de54d95
+#: ../../../sources/ja/blockdiag/introduction.rst:17
+msgid "easy_install コマンドで依存パッケージをインストールします。"
+msgstr ""
+
+# cc51e14157254b4b9bec52bf401b072a
+#: ../../../sources/ja/blockdiag/introduction.rst:23
+msgid ""
+"また、Pillow が依存している「Microsoft Visual C++ 2008 SP1 再頒布可能パッケー"
+"ジ」をインストールします。 32ビット版は `こちら <http://www.microsoft.com/"
+"downloads/ja-jp/details.aspx?familyid=a5c84275-3b97-4ab7-"
+"a40d-3802b2af5fc2&displaylang=ja-nec>`_ から、 64ビット版は `こちら <http://"
+"www.microsoft.com/downloads/ja-jp/details.aspx?"
+"familyid=ba9257ca-337f-4b40-8c14-157cfdffee4e&displaylang=ja-nec>`_ から ダウ"
+"ンロードしてください。"
+msgstr ""
+
+# 3814b75ac9b244229ec0948c8d9f47c3
+# 549d015cc462446bae5c8c74a0cd290c
+# 2fe6762cdb0e4a28801f7591e9aedea0
+# 55b61643ff1441f9bf00a5d5e09e18e3
+# 09249de6d5094e52b1638caee9e923da
+#: ../../../sources/ja/blockdiag/introduction.rst:29
+#: ../../../sources/ja/blockdiag/introduction.rst:53
+#: ../../../sources/ja/blockdiag/introduction.rst:82
+#: ../../../sources/ja/blockdiag/introduction.rst:98
+#: ../../../sources/ja/blockdiag/introduction.rst:147
+msgid "その後、easy_install コマンドにて `blockdiag` をインストールします。"
+msgstr ""
+
+# cdba5383d17e46da9f95603553270ce7
+#: ../../../sources/ja/blockdiag/introduction.rst:37
+msgid ""
+"`Sphinx-users.jp`_ で配布されている `スタンドアロンインストーラ`_ を利用する"
+"と 簡単に Python, Sphinx, blockdiag シリーズを簡単にインストールすることがで"
+"きます。"
+msgstr ""
+
+# f57648a407f34ac1bb94a698702b56bb
+#: ../../../sources/ja/blockdiag/introduction.rst:40
+msgid ""
+"スタンドアロンインストーラの詳細は `こちら <http://sphinx-users.jp/"
+"gettingstarted/install_windows_standalone.html>`_ をご覧ください。"
+msgstr ""
+
+# 5628fa490b6643458f9785805ab74846
+#: ../../../sources/ja/blockdiag/introduction.rst:46
+msgid "Debian 6.0 (Squeeze) の場合"
+msgstr ""
+
+# ebc50c2454d84de69d899b3569baba15
+#: ../../../sources/ja/blockdiag/introduction.rst:47
+msgid "apt-get コマンドで依存パッケージをインストールします。"
+msgstr ""
+
+# e11d413db32547d8a848b5ba54f528c8
+#: ../../../sources/ja/blockdiag/introduction.rst:61
+msgid ""
+"easy_install の代わりに pypi-install コマンドを利用すると `blockdiag` を "
+"Debian パッケージとして管理することができます。"
+msgstr ""
+
+# af0b691fba7247baac6d9683d2f8e62d
+#: ../../../sources/ja/blockdiag/introduction.rst:64
+msgid ""
+"pypi-install コマンドは python-stdeb パッケージに含まれているので、 お好みに"
+"合わせてお使い下さい::"
+msgstr ""
+
+# 197b45fe09ad45e58c70376dea4b825b
+#: ../../../sources/ja/blockdiag/introduction.rst:72
+msgid "CentOS 5.5/5.6 の場合"
+msgstr ""
+
+# 0096f1e3550b4688b3d5d94ab0d06be2
+#: ../../../sources/ja/blockdiag/introduction.rst:73
+msgid ""
+"yum コマンドで依存パッケージをインストールします。 なお、CentOS 付属の PIL "
+"(python-imaging) パッケージは setuptools に対応していないため、手動で egg-"
+"info を作成します。"
+msgstr ""
+
+# 64544cc571074f318e46ac3d323fdcee
+#: ../../../sources/ja/blockdiag/introduction.rst:89
+msgid "MacOSX (MacPorts) の場合"
+msgstr ""
+
+# 263056bc5f3249f4bdb7387851d23104
+#: ../../../sources/ja/blockdiag/introduction.rst:90
+msgid "port コマンドで依存パッケージをインストールします。"
+msgstr ""
+
+# 7b6bcc32a8164bf0b3cb7253dd119804
+#: ../../../sources/ja/blockdiag/introduction.rst:96
+msgid "お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。"
+msgstr ""
+
+# 4492d9e5810746caae3492fe5edfe5b2
+#: ../../../sources/ja/blockdiag/introduction.rst:106
+msgid ""
+"Mac 標準でインストールされている easy_install コマンドを使用した場合 "
+"blockdiag は正しく動作しません。"
+msgstr ""
+
+# c40f7ff0ff6f48f784a9bd9e68687375
+#: ../../../sources/ja/blockdiag/introduction.rst:109
+msgid ""
+"PATH の設定や、フルパス指定するなどして MacPorts でインストールした "
+"easy_install を利用して下さい。"
+msgstr ""
+
+# de74f2acdb20470f8f6f90b88fe5b22e
+#: ../../../sources/ja/blockdiag/introduction.rst:113
+msgid "MacOSX (homebrew) の場合"
+msgstr ""
+
+# d3d25aaaff3f4f9c9e222c9d57643358
+#: ../../../sources/ja/blockdiag/introduction.rst:114
+msgid ""
+"MacOSX (homebrew) の環境でインストールされる PIL パッケージは freetype2 に対"
+"応していないためそのままでは blockdiag を利用することはできません。"
+msgstr ""
+
+# 5aafe1876d2d484895e52f354e9d4dc2
+#: ../../../sources/ja/blockdiag/introduction.rst:117
+msgid ""
+"また、freetype2 用の Foluma (パッケージ)は提供されていないため、 以下の内容"
+"で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。"
+msgstr ""
+
+# c2ff8eea6a5c4b43937d5c424777447e
+#: ../../../sources/ja/blockdiag/introduction.rst:140
+msgid "その後、以下のコマンドで freetype2 および PIL をインストールします。"
+msgstr ""
+
+# 65dee79149e0437a81b209287974431b
+#: ../../../sources/ja/blockdiag/introduction.rst:154
+msgid "FreeBSD (ports) の場合"
+msgstr ""
+
+# b9083415c1cb4dc4a94cbc970b80e6c1
+#: ../../../sources/ja/blockdiag/introduction.rst:155
+msgid "portinstall コマンドで blockdiag パッケージをインストールします。"
+msgstr ""
+
+# 99d86ea36130492989c0e028fd1b4235
+#: ../../../sources/ja/blockdiag/introduction.rst:162
+msgid "NetBSD (pkgsrc) の場合"
+msgstr ""
+
+# ed5cf73812564deaa139f5761df980af
+#: ../../../sources/ja/blockdiag/introduction.rst:163
+msgid ""
+"blockdiag パッケージは pkgsrc に graphics/py-blockdiag として収録されていま"
+"す。 そのため、通常の pkgsrc の管理方法でインストールすることができます。"
+msgstr ""
+
+# aa2d3a6ae6544fb8905a435f6c64251f
+#: ../../../sources/ja/blockdiag/introduction.rst:166
+msgid "ここでは一般的な make を使った方法を紹介します。"
+msgstr ""
+
+# 01235cc0af3d4bc9bd7d78a57a5e2b7a
+#: ../../../sources/ja/blockdiag/introduction.rst:174
+msgid "そのほかの環境の場合"
+msgstr ""
+
+# e51ed65a4b9f4cbba015793829dc862c
+#: ../../../sources/ja/blockdiag/introduction.rst:175
+msgid "以下のコマンドで `blockdiag` をインストールします。"
+msgstr ""
+
+# 9679b03507694929af7c84cea3f32db4
+#: ../../../sources/ja/blockdiag/introduction.rst:183
+msgid "実行方法"
+msgstr ""
+
+# 7db1cf0a169b4e56ada9c700cc911ae9
+#: ../../../sources/ja/blockdiag/introduction.rst:184
+msgid "ブロック図を生成するには `blockdiag` コマンドを起動します。"
+msgstr ""
+
+# e72d3a6f52864b4ab8f15e4a49f12f5a
+#: ../../../sources/ja/blockdiag/introduction.rst:193
+msgid ""
+"SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。"
+msgstr ""
+
+# 162465d19e0f4cb0ae091c2d2b42b5fd
+#: ../../../sources/ja/blockdiag/introduction.rst:211
+msgid "フォント設定"
+msgstr ""
+
+# 05b4781cbb5d4deea965d73022c06d8b
+#: ../../../sources/ja/blockdiag/introduction.rst:212
+msgid ""
+"`blockdiag` はブロック図の生成に TrueType フォントを利用します。 `blockdiag` "
+"は自動的に利用可能なフォントを取得しますが、 -f (--font) オプションにて特定の"
+"フォントで画像を生成することができます。"
+msgstr ""
+
+# a36a302f957146328ff0892a3457c5d8
+#: ../../../sources/ja/blockdiag/introduction.rst:221
+msgid ""
+"また、$HOME/.blockdiagrc ファイルに設定を書くことで 常に同じフォントを利用す"
+"ることができます。"
+msgstr ""
+
+# 0cd846bcbccd40c2b38d61019c72e2e4
+#: ../../../sources/ja/blockdiag/introduction.rst:232
+msgid "事前に入れておくべきソフトウェア"
+msgstr ""
+
+# c9d027a4edae46c7bda791eec7d94456
+#: ../../../sources/ja/blockdiag/introduction.rst:233
+msgid "Python 2.4 以降 (3.x は未対応)"
+msgstr ""
+
+# 03c7651ea05b49a6974b3daab9b8f570
+#: ../../../sources/ja/blockdiag/introduction.rst:234
+msgid "Python Imaging Library 1.1.5 以降"
+msgstr ""
+
+# a35e9496e4144f4b8b8e486f52d395c0
+#: ../../../sources/ja/blockdiag/introduction.rst:235
+msgid "funcparserlib 0.3.4 以降"
+msgstr ""
+
+# 091048226a364ac5baa14d75e644d4f7
+#: ../../../sources/ja/blockdiag/introduction.rst:236
+msgid "setuptools もしくは distribute."
+msgstr ""
+
+# cf014ea577234e34a03e8c1a13b14986
+#: ../../../sources/ja/blockdiag/introduction.rst:240
+msgid "ライセンス"
+msgstr ""
+
+# 824e51b530774a0eb4a68d39c24e5746
+#: ../../../sources/ja/blockdiag/introduction.rst:241
+msgid "Apache License 2.0"
+msgstr ""
+
+# cd7e917fbad74048ae47eef19814bf16
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:5
+msgid "Sphinx 拡張：sphinxcontrib-blockdiag"
+msgstr ""
+
+# 9d22cd335d434e8dbfaddbaf89d8c93a
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:7
+msgid ""
+"`sphinxcontrib-blockdiag` を利用すると Sphinx の拡張機能として `blockdiag` に"
+"よるブロック図を埋め込むことができます。 ブロック図の埋め込みには "
+"`blockdiag` ディレクティブを利用します。"
+msgstr ""
+
+# 2c739c6ebfdb4a52a06be5c272ca6d04
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:26
+msgid "Sphinx の設定"
+msgstr ""
+
+# 3c5805c36d8549b08b79c07128fca2c6
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:29
+msgid "easy_install 経由の場合"
+msgstr ""
+
+# cf2496932e874f6b891c4d7ddf898ffa
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:30
+msgid "以下のコマンドで `sphinxcontrib-blockdiag` をインストールします。:"
+msgstr ""
+
+# 404573390903443b818b8f785fe53eb4
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:32
+msgid "# easy_install sphinxcontrib-blockdiag"
+msgstr ""
+
+# 320dbbb776bc4b23a00d7088610a13ba
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:36
+msgid "Sphinx プロジェクトの設定"
+msgstr ""
+
+# 77f94293bca34ccebd9d38b6f9870bf3
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:38
+msgid ""
+"Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。 :file:`conf."
+"py` の extensions に sphinxcontrib.blockdiag を追加します。 また、"
+"blockdiag_fontpath に利用する TrueType フォントへのパスを指定します。"
+msgstr ""
+
+# d38dc5a798064657a89a7a71a400a8a8
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:52
+msgid ""
+"図に日本語を利用する場合は、必ず `blockdiag_fontpath` を設定して下さい。 "
+"`blockdiag_fontpath` の設定方法は上記の例もしくは :ref:"
+"`sphinxcontrib_font_configurations` を参照して下さい。"
+msgstr ""
+
+# e80921cb1e954af28e146576bfd9a539
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:58
+msgid "利用可能なディレクティブ"
+msgstr ""
+
+# 5fd008c0734e46cba35aeb53f379b1df
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:62
+msgid ""
+"`blockdiag` ディレクティブは指定した箇所にブロック図を埋め込みます。 ブロック"
+"図の元となるテキストはファイルもしくは テキストブロックで渡すことができます。"
+msgstr ""
+
+# 16c3f19cdfb24d6ca8fb50412315a95a
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:66
+msgid ""
+"ファイルを指定する場合は `blockdiag` ディレクティブの引数に ファイル名を指定"
+"します。"
+msgstr ""
+
+# beb61110d20a44a0aedf37ae778fdbd4
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:69
+msgid ""
+"テキストブロックを利用する場合は `blockdiag` ディレクティブ以降の行に ブロッ"
+"クを記述します。"
+msgstr ""
+
+# 72214ff267c743e2b733947895db5fb2
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:72
+msgid "例::"
+msgstr ""
+
+# a3e3c88bb2984c92b3eefcf84ebff192
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:82
+msgid ""
+"``maxwidth`` オプションを指定すると画像の横幅を調整することができます。 "
+"``maxwidth`` オプションの引数はピクセルで指定します。"
+msgstr ""
+
+# e5c75939154c4b52aa9a961778737f9c
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:85
+msgid "Examples::"
+msgstr ""
+
+# e75168bdcfb5428aac3a28b1a1e2c2fc
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:96
+msgid ""
+"各ノードに対する説明を掲載する場合は `description` 属性と ``desctable`` オプ"
+"ションを使用して、ノードの説明表を生成することができます。"
+msgstr ""
+
+# 0f14cf768d544b26bb3bbb2a446b1ccc
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:99
+msgid "入力::"
+msgstr ""
+
+# 5c67f2d6d3804a439ed87336b26f2716
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:111
+msgid "出力"
+msgstr ""
+
+# 3b4a21efac0544f9b76d2c0a167d266c
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:126
+msgid "利用可能な設定オプション"
+msgstr ""
+
+# 3ed41e13d3e7461dae4be44b4c75a46e
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:130
+msgid ""
+"blockdiag で利用する TrueType フォントへのパスを指定します。 標準ではフォント"
+"を利用せず PIL 標準のフォントを利用します。 `blockdiag_fontpath` にはパス文字"
+"列もしくは パス文字列の配列を指定することができます。 複数の環境で Sphinx プ"
+"ロジェクトを共有している場合は、 パス文字列の配列を指定することで環境の違いを"
+"吸収することができます。"
+msgstr ""
+
+# 963e181beeb34243b5c3b6fdec63edb7
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:139
+msgid ""
+"PIL 標準のフォントは日本語フォントを含みません。 そのため、日本語を利用する場"
+"合は必ずフォントを設定して下さい。"
+msgstr ""
+
+# 4ef771c9bf0d4dcebf37b58ae51c248b
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:148
+msgid ""
+":confval:`blockdiag_antialias` は PNG 画像生成時に アンチエイリアス処理を行う"
+"かどうかを指定します。"
+msgstr ""
+
+# a2ffb263bf1a49549b71cadade3a3d5d
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:151
+msgid ""
+"`True` が指定された場合アンチエイリアス処理を実行します(初期値： `False` )。"
+msgstr ""
+
+# 53bb9d85362c4f34af3265fa8b1a8963
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:155
+msgid ""
+":confval:`blockdiag_tex_image_format` は TeX に変換する際に 利用する画像形式"
+"を指定します。PNG もしくは PDF を指定することができます。"
+msgstr ""
+
+# e293b8330d6d4039b10bb2926657d163
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:158
+msgid ""
+"PDF を利用するとベクター形式でブロック図を埋め込むことができます。 "
+"( `blockdiag` の PDF 出力機能を利用するため `reportlab` のインストールが必要"
+"です)"
+msgstr ""
