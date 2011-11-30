@@ -51,7 +51,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
    図に日本語を利用する場合は、必ず `blockdiag_fontpath` を設定して下さい。
    `blockdiag_fontpath` の設定方法は上記の例もしくは
-   :ref:`sphinxcontrib_font_configrations` を参照して下さい。
+   :ref:`sphinxcontrib_font_configurations` を参照して下さい。
 
 
 利用可能なディレクティブ
