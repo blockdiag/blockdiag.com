@@ -87,66 +87,66 @@ msgstr ""
 # 6f6d4bfc6d7043169763821dde1f4658
 #: ../../../sources/ja/seqdiag/index.rst:3
 msgid "seqdiag - simple sequence-diagram image generator"
-msgstr ""
+msgstr "シーケンス図生成ツール seqdiag"
 
 # 8c5f5a379e984d3191acb622bce0d9e1
 #: ../../../sources/ja/seqdiag/index.rst:5
 msgid ""
 "`seqdiag` generate sequence-diagram image file from .diag file. .diag file "
 "is similar to DOT file (graphviz's)."
-msgstr ""
+msgstr "`seqdiag` はシンプルなテキストからシーケンス図を生成するシーケンス図生成ツールです。"
 
 # c3876b79e28f4a62b3ba0b13401c9813
 #: ../../../sources/ja/seqdiag/index.rst:8
 msgid "You can get diagrams like this."
-msgstr ""
+msgstr "`seqdiag` を用いると以下のような図が簡単に生成できます。"
 
 # 405e66e143aa40c6b8b8b4a94e791293
 #: ../../../sources/ja/seqdiag/introduction.rst:3
 msgid "Introduction of seqdiag"
-msgstr ""
+msgstr "seqdiag の概要"
 
 # fc1bc7e6181b406392e3648e5de03f1f
 #: ../../../sources/ja/seqdiag/introduction.rst:6
 msgid "Features"
-msgstr ""
+msgstr "機能"
 
 # 2a319f0f246347d2a218e3723a7a1077
 #: ../../../sources/ja/seqdiag/introduction.rst:7
 msgid "Generate sequence-diagram from dot like text (basic feature)."
-msgstr ""
+msgstr "テキストファイルからシーケンス図を生成"
 
 # 91f0d8d7a45e473694689041b9ea5dee
 #: ../../../sources/ja/seqdiag/introduction.rst:8
 msgid "Multilingualization for node-label (utf-8 only)."
-msgstr ""
+msgstr "日本語(UTF-8)対応"
 
 # 3bd6b79d72fa4875ba314a326f68e4e0
 #: ../../../sources/ja/seqdiag/introduction.rst:9
 msgid "Sphinx embedding"
-msgstr ""
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-seqdiag パッケージの利用)"
 
 # f62315a8d5f747039c0b9fb4c1a8fd3d
 #: ../../../sources/ja/seqdiag/introduction.rst:12
 msgid "Setup"
-msgstr ""
+msgstr "インストール"
 
 # 1756c80a900f4734b253dc2fab65f226
 #: ../../../sources/ja/seqdiag/introduction.rst:15
 msgid "by easy_install"
-msgstr ""
+msgstr "easy_install を利用する場合"
 
 # e595a51919c54688a02019dba7b657ce
 # 8838722ff1094ef792900bc3489c809f
 #: ../../../sources/ja/seqdiag/introduction.rst:16
 #: ../../../sources/ja/seqdiag/introduction.rst:24
 msgid "Make environment"
-msgstr ""
+msgstr "以下のコマンドでインストールすることができます。"
 
 # 4319c3cbdb534430b7982e349cc2dc36
 #: ../../../sources/ja/seqdiag/introduction.rst:23
 msgid "by buildout"
-msgstr ""
+msgstr "buildout を利用する場合"
 
 # 528302ea0d644fe0ba47c9c7545737ba
 #: ../../../sources/ja/seqdiag/introduction.rst:33
@@ -158,7 +158,7 @@ msgstr ""
 msgid ""
 "Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
-msgstr ""
+msgstr "書式の詳細については :ref:`seqdiag-sample-diagrams` を参照してください。"
 
 # 7b1ebcf93126462f9523407d69421479
 #: ../../../sources/ja/seqdiag/introduction.rst:45
@@ -168,64 +168,64 @@ msgstr ""
 # 5caf69cb5d6c41fb91dcbcc6212a56c2
 #: ../../../sources/ja/seqdiag/introduction.rst:46
 msgid "Execute seqdiag command"
-msgstr ""
+msgstr "コマンドラインで seqdiag コマンドを実行します。"
 
 # 4f2042edb7d940c8bd6988da7ca938b9
 #: ../../../sources/ja/seqdiag/introduction.rst:54
 msgid "If you want SVG images, use -T option"
-msgstr ""
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 8418ee6229f74eed92d2d26bb2d77f9c
 #: ../../../sources/ja/seqdiag/introduction.rst:64
 msgid "Font Configuration"
-msgstr ""
+msgstr "フォント設定"
 
 # 491893c9d5e849399fefed5278531412
 #: ../../../sources/ja/seqdiag/introduction.rst:65
 msgid ""
 "seqdiag uses TrueType Font to render text. seqdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
-msgstr ""
+msgstr "seqdiag は文字の描画に TrueType フォントを利用します。指定がない場合 seqdiag は自動的にフォントを検索しますが、見つからない場合もしくはフォントを指定したい場合は -f (--font) オプションを利用します。"
 
 # 2c710dc0abea4278a5e98fafbc21d0b4
 #: ../../../sources/ja/seqdiag/introduction.rst:74
 msgid "If you always use same font, write $HOME/.seqdiagrc"
-msgstr ""
+msgstr "もし常に同じ設定を利用する場合は $HOME/.seqdiagrc に以下の記述をするとよいでしょう。"
 
 # 5268874756c142fe8169784cae7c46df
 #: ../../../sources/ja/seqdiag/introduction.rst:84
 msgid "Requirements"
-msgstr ""
+msgstr "事前に入れておくべきソフトウェア"
 
 # 4c15552a6db54de995c97cb2f5dd1e64
 #: ../../../sources/ja/seqdiag/introduction.rst:85
 msgid "Python 2.4 or later (not support 3.x)"
-msgstr ""
+msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # cb5a87da8d414188a726fc9fb41aebe1
 #: ../../../sources/ja/seqdiag/introduction.rst:86
 msgid "Python Imaging Library 1.1.5 or later."
-msgstr ""
+msgstr "Python Imaging Library 1.1.5 以降"
 
 # a979728e662445ddb46739c78e0c96df
 #: ../../../sources/ja/seqdiag/introduction.rst:87
 msgid "funcparserlib 0.3.4 or later."
-msgstr ""
+msgstr "funcparserlib 0.3.4 以降"
 
 # 71766a15629b4431928dee5c15f7e4d2
 #: ../../../sources/ja/seqdiag/introduction.rst:88
 msgid "setuptools or distribute."
-msgstr ""
+msgstr "setuptools もしくは distribute"
 
 # d869d075ea134b6e888e06c07168224e
 #: ../../../sources/ja/seqdiag/introduction.rst:92
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 # 86a2a70ecbb346c9916710c3f00a3503
 #: ../../../sources/ja/seqdiag/introduction.rst:93
 msgid "Apache License 2.0"
-msgstr ""
+msgstr "Apache License 2.0"
 
 # e23da89ff6444651a095cab877333a11
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:3
