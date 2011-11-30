@@ -1,0 +1,302 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-30 11:01\n"
+"PO-Revision-Date: 2011-11-30 10:58+0900\n"
+"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# fbe7523ed6d140619d32e49685d60c47
+#: ../../../sources/ja/actdiag/demo.rst:3
+msgid "Demo - interactive shell for actdiag"
+msgstr ""
+
+# abcdd3b107a54fa4aa3c75659cdc267e
+#: ../../../sources/ja/actdiag/demo.rst:5
+msgid ""
+"This is demo program for actdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr ""
+
+# f166e2e1dd874f9baece86402568d38e
+#: ../../../sources/ja/actdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr ""
+
+# 8f80b9a7d0c24120800452d43eac5810
+#: ../../../sources/ja/actdiag/demo.rst:13
+msgid "Diagram source"
+msgstr ""
+
+# 06c0f7edaa654f15885423930f4b2f3b
+#: ../../../sources/ja/actdiag/demo.rst:30
+msgid "Diagram outputs"
+msgstr ""
+
+# 2712998d541843459f376c29b18de3ca
+#: ../../../sources/ja/actdiag/examples.rst:5
+msgid "Sample diagams"
+msgstr ""
+
+# 2f5e72a99a634aea9537df68cc944369
+#: ../../../sources/ja/actdiag/examples.rst:8
+msgid "simple diagram"
+msgstr ""
+
+# b421555c0b50460f8341fbe947d6a0f9
+#: ../../../sources/ja/actdiag/index.rst:3
+msgid "actdiag - simple activity-diagram image generator"
+msgstr ""
+
+# 2df4e22f70694519ba4e277a31b1a145
+#: ../../../sources/ja/actdiag/index.rst:5
+msgid ""
+"`actdiag` generate activity-diagram image file from .diag file. .diag file "
+"is similar to DOT file (graphviz's)."
+msgstr ""
+
+# 32393c6764e343f19862c96dc3c82478
+#: ../../../sources/ja/actdiag/index.rst:8
+msgid "You can get diagrams like this."
+msgstr ""
+
+# dfeffb30ea7e40d88b347ab82bb47c60
+#: ../../../sources/ja/actdiag/introduction.rst:3
+msgid "Introduction of actdiag"
+msgstr ""
+
+# d49dd2d4748347b6a2f890c429264a8b
+#: ../../../sources/ja/actdiag/introduction.rst:6
+msgid "Features"
+msgstr ""
+
+# 79e72e2b207549a3a631562e9c479f06
+#: ../../../sources/ja/actdiag/introduction.rst:7
+msgid "Generate activity-diagram from dot like text (basic feature)."
+msgstr ""
+
+# f93a6e6851b245cb9191ecc573a44884
+#: ../../../sources/ja/actdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr ""
+
+# 4d34ef3d967541bcafcc4813cfb7efd4
+#: ../../../sources/ja/actdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr ""
+
+# 6f34c034eb2f4ec191fd93c559d3d72e
+#: ../../../sources/ja/actdiag/introduction.rst:12
+msgid "Setup"
+msgstr ""
+
+# 52793f002f464a4e83bdc8e7f0f190d3
+#: ../../../sources/ja/actdiag/introduction.rst:15
+msgid "by easy_install"
+msgstr ""
+
+# 8c38f57da95548f89fc1f0a003e83145
+# 5395e751867d4ddab06f99ed107ae125
+#: ../../../sources/ja/actdiag/introduction.rst:16
+#: ../../../sources/ja/actdiag/introduction.rst:24
+msgid "Make environment"
+msgstr ""
+
+# c399bb21e87b42028baa1962a77cb652
+#: ../../../sources/ja/actdiag/introduction.rst:23
+msgid "by buildout"
+msgstr ""
+
+# aabe8ac5c8a049539d292ef8f3910ba6
+#: ../../../sources/ja/actdiag/introduction.rst:33
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# a2e6e97bed49477c8a72514518e6bad2
+#: ../../../sources/ja/actdiag/introduction.rst:40
+msgid ""
+"Please refer to :ref:`actdiag-sample-diagrams` section for the format of the "
+"`simpla.diag` configuration file."
+msgstr ""
+
+# 5645f640576f4302a517ecd0ad6a032e
+#: ../../../sources/ja/actdiag/introduction.rst:45
+msgid "Usage"
+msgstr ""
+
+# 7e8740b52fa54bcaa7c9278c3eb2b83d
+#: ../../../sources/ja/actdiag/introduction.rst:46
+msgid "Execute actdiag command"
+msgstr ""
+
+# be6e3b4843f348d6af0c1bd6636b2567
+#: ../../../sources/ja/actdiag/introduction.rst:54
+msgid "If you want SVG images, use -T option"
+msgstr ""
+
+# 3ec108406339429c88a1aa31fa1b1c38
+#: ../../../sources/ja/actdiag/introduction.rst:64
+msgid "Font Configuration"
+msgstr ""
+
+# 3d14f44f1174466885a5550e78078a12
+#: ../../../sources/ja/actdiag/introduction.rst:65
+msgid ""
+"actdiag uses TrueType Font to render text. actdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr ""
+
+# ce67367380a442a59afde212997608cb
+#: ../../../sources/ja/actdiag/introduction.rst:73
+msgid "If you always use same font, write $HOME/.actdiagrc"
+msgstr ""
+
+# 3964db3952d749f7a2b0521b69efbbc9
+#: ../../../sources/ja/actdiag/introduction.rst:83
+msgid "Requirements"
+msgstr ""
+
+# 31a3c70c33d3450da80afabfb863c15c
+#: ../../../sources/ja/actdiag/introduction.rst:84
+msgid "Python 2.4 or later (not support 3.x)"
+msgstr ""
+
+# 09072bf4725b4b31ac1ba0c6e14cab65
+#: ../../../sources/ja/actdiag/introduction.rst:85
+msgid "Python Imaging Library 1.1.5 or later."
+msgstr ""
+
+# dae57d7573e348dba4589e1dcfd8abe4
+#: ../../../sources/ja/actdiag/introduction.rst:86
+msgid "funcparserlib 0.3.4 or later."
+msgstr ""
+
+# fb9a92eafcbd4c189d92a356745b23a1
+#: ../../../sources/ja/actdiag/introduction.rst:87
+msgid "setuptools or distribute."
+msgstr ""
+
+# 22f967dab44d40ca8be8e0bf10310d87
+#: ../../../sources/ja/actdiag/introduction.rst:91
+msgid "License"
+msgstr ""
+
+# 1e86f097a82f4760a3e072aa4cb465ee
+#: ../../../sources/ja/actdiag/introduction.rst:92
+msgid "Apache License 2.0"
+msgstr ""
+
+# b3e0adb390bf4d2494ba5e7cc5f459fa
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:3
+msgid "sphinxcontrib-actdiag"
+msgstr ""
+
+# e9fcec69ff704d18aea7d145f64d7972
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:5
+msgid ""
+"`sphinxcontrib-actdiag` is sphinx extension for embedding actdiag diagrams. "
+"You can embed block diagrams with `actdiag` directive."
+msgstr ""
+
+# b4d4bf2feb0d4093a3f60e7b4555aba8
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:23
+msgid "Setting"
+msgstr ""
+
+# ce157ec8dbb347a0a1c49297853d376e
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:27
+msgid ""
+"You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
+msgstr ""
+
+# 12f766d6407a4625939ad0a518d72560
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:30
+msgid "Install"
+msgstr ""
+
+# 27ff2373ba7d49d1a675a90d7cd03951
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:38
+msgid "Configure Sphinx"
+msgstr ""
+
+# 1bd1ac85f1784c4683b7fdef088334d4
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:40
+msgid ""
+"To enable this extension, add ``sphinxcontrib.actdiag`` module to extensions "
+"option at :file:`conf.py`."
+msgstr ""
+
+# 382d3e7a192e45af9b0591fba9b35b56
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:53
+msgid "Directive"
+msgstr ""
+
+# b864acc5d2504d809077055e133489c4
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:57
+msgid ""
+"This directive insert a actuence diagram into the generated document. If "
+"filename is specified, sphinx reads external file as source script of "
+"blockfile. In another case, actdiag directive takes code block as source "
+"script."
+msgstr ""
+
+# be8d86450e434f4aa16f1e6ec4dd1d82
+# 819e7498f9884ea782b04dec715b90c9
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:61
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:75
+msgid "Examples::"
+msgstr ""
+
+# f698a471b3374079b59ae5b6aea112a5
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:72
+msgid ""
+"This directive is able to generate thumbnail images using ``maxwidth`` "
+"option. ``maxwidth`` option takes pixel-size of image's width."
+msgstr ""
+
+# e0a40e7907bd45a9bcb7047550301eed
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:86
+msgid ""
+"This directive is able to generate description table using ``desctable`` "
+"option and `description` attribute"
+msgstr ""
+
+# 6730d685dce74e6bb1c0223517a4f7b7
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:89
+msgid "Input::"
+msgstr ""
+
+# 78fc67478b1840d781bc4b1c8a392e56
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:108
+msgid "Output"
+msgstr ""
+
+# 4ec4265c82a44739b6c160a4d4f5eadf
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:130
+msgid "Configuration File Options"
+msgstr ""
+
+# 4751d33de35946a79fbc38618aa85a4d
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:134
+msgid ""
+"This is a path for renderring fonts. You can use truetype font (.ttf) file "
+"path. You can specify single path with string, or multiple paths using array."
+msgstr ""
+
+# 72dc24fe45a440aaaca77174f4498f15
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:143
+msgid ""
+"If :confval:`actdiag_antialias`: is True, actdiag generates images with anti-"
+"alias filter."
+msgstr ""

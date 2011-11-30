@@ -1,0 +1,190 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-30 11:01\n"
+"PO-Revision-Date: 2011-11-30 10:59+0900\n"
+"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# f0dd6377231e4823b549a0c7254450f5
+#: ../../../sources/ja/index.rst:3
+msgid "ブロック図生成ツール blockdiag"
+msgstr ""
+
+# 8342812ca49a43e68ceb2bffd6b7c4a7
+#: ../../../sources/ja/index.rst:4
+msgid ""
+"`blockdiag` シリーズはシンプルなテキストからブロック図などの画像を生成する画"
+"像生成ツール群です。"
+msgstr ""
+
+# d6444a53cf0b4a05884c9dc97ac149b6
+#: ../../../sources/ja/index.rst:6
+msgid "`blockdiag` を用いると以下のような図が簡単に生成できます。"
+msgstr ""
+
+# 7fd9805ddb064fe98292a6a5971698f1
+#: ../../../sources/ja/index.rst:19
+msgid "`blockdiag` の主な機能:"
+msgstr ""
+
+# 065319d6a5da4e229479a79a4377d5b6
+#: ../../../sources/ja/index.rst:22
+msgid "ブロック図 (blockdiag コマンド)"
+msgstr ""
+
+# 356069c6520a45b5b63fa18cb5be819f
+#: ../../../sources/ja/index.rst:23
+msgid "シーケンス図 (seqdiag コマンド)"
+msgstr ""
+
+# 3dd605906ca9455db15bb6d47b18ad66
+#: ../../../sources/ja/index.rst:24
+msgid "アクティビティ図 (actdiag コマンド)"
+msgstr ""
+
+# 00ef7e58440c47bb8d11fcd738b0e0c0
+#: ../../../sources/ja/index.rst:25
+msgid "論理ネットワーク図 (actdiag コマンド)"
+msgstr ""
+
+# dca7cae666f14e5db426026e7b13d8cf
+#: ../../../sources/ja/index.rst:26
+msgid ""
+"テキストベースの定義ファイルから画像ファイルを生成 (graphviz 風の文法を採用)"
+msgstr ""
+
+# b4f0be0e672c4d26a9bd8ef760680cee
+#: ../../../sources/ja/index.rst:27
+msgid "定義にあわせて図の配置を自動的に決定 (自動レイアウト)"
+msgstr ""
+
+# eeaa6ac5358646e69597019404127540
+#: ../../../sources/ja/index.rst:28
+msgid ""
+"Sphinx, Trac, Redmine, 各種 Wiki エンジン等、多様なシステムへの画像埋め込みに"
+"対応"
+msgstr ""
+
+# c2d0eafc8be2411f97f8bc8efc21dd12
+#: ../../../sources/ja/index.rst:31
+msgid "Enjoy documentation with blockdiag !"
+msgstr ""
+
+# c9ae7304845b44cba6733f3eb0d6a025
+#: ../../../sources/ja/index.rst:34
+msgid "Table of contents"
+msgstr ""
+
+# 92248303273346718b6e321c1f2c84cb
+#: ../../../sources/ja/index.rst:46
+msgid "わがままドリブン開発"
+msgstr ""
+
+# a8c4e72f178843d3af1c13d9b43a2b11
+#: ../../../sources/ja/index.rst:47
+msgid ""
+"`blockdiag` シリーズは手探りで開発されているため、 利用したユーザーの意見・要"
+"望によって機能拡張やレイアウトエンジンの調整が行われています。"
+msgstr ""
+
+# 2bdd2288b80649d88d20c030b320abb3
+#: ../../../sources/ja/index.rst:50
+msgid ""
+"そのため、使用感や違和感、「こういうのがあればいいのに」といった意見を常に募"
+"集しています。 新しい図のサポートなども頂いたご意見をベースに進めていく予定で"
+"す。"
+msgstr ""
+
+# d08ed3e18812454496a1ba26e8266503
+#: ../../../sources/ja/index.rst:53
+msgid ""
+"Twitter、イシュートラッカー、メールなど、どのような方法でもかまいませんので "
+"お気づきのところを教えて下さい。"
+msgstr ""
+
+# eb3bc9c818624190ba9be5c294a416e4
+#: ../../../sources/ja/index.rst:58
+msgid "Resources"
+msgstr ""
+
+# 261f97c1d145415ab5e4d0d27e867c81
+#: ../../../sources/ja/index.rst:60
+msgid ""
+"Takeshi KOMIYA ( `@tk0miya <http://twitter.com/tk0miya>`_ ) <i.tkomiya at "
+"gmail.com>"
+msgstr ""
+
+# 8743a485c98f4f71938733334382774b
+#: ../../../sources/ja/index.rst:61
+msgid ""
+"Google Groups: `<http://groups.google.com/group/blockdiag-discuss/topics>`_"
+msgstr ""
+
+# 50c426a56bbe419da2d2d22c01adbe55
+#: ../../../sources/ja/index.rst:62
+msgid "Twitter: #blockdiag"
+msgstr ""
+
+# 4c9def2ddc454b809de766ed06760c59
+#: ../../../sources/ja/index.rst:63
+msgid "Interactive Shell: `<http://interactive.blockdiag.com/>`_"
+msgstr ""
+
+# f04013a135ee486ba3d04400ab68c96e
+#: ../../../sources/ja/index.rst:65
+msgid "PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_"
+msgstr ""
+
+# da8531690a994e12b206aef442004a72
+#: ../../../sources/ja/index.rst:66
+msgid "Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_"
+msgstr ""
+
+# 6558ccce7ffa45c8910cc5817ea7e1bc
+#: ../../../sources/ja/index.rst:68
+msgid "PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_"
+msgstr ""
+
+# e6a07af18f9f4a9c9b129a035aaf862a
+#: ../../../sources/ja/index.rst:69
+msgid "Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_"
+msgstr ""
+
+# b0067012ae5e46418e550b0d11ad8574
+#: ../../../sources/ja/index.rst:71
+msgid "PyPI: `<http://pypi.python.org/pypi/actdiag/>`_"
+msgstr ""
+
+# c7f5c4948dca4b6793d293d581a570ff
+#: ../../../sources/ja/index.rst:72
+msgid "Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_"
+msgstr ""
+
+# 2d90334ac4e14fcc9bfa0d3f2f30cf21
+#: ../../../sources/ja/index.rst:74
+msgid "PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_"
+msgstr ""
+
+# bd106a11145742998e3eb70884f8ea06
+#: ../../../sources/ja/index.rst:75
+msgid "Repository: `<https://bitbucket.org/tk0miya/nwdiag/>`_"
+msgstr ""
+
+# a056bad9053547c4a3a9d994931bcc7d
+#: ../../../sources/ja/index.rst:76
+msgid ""
+"Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?"
+"status=new&status=open>`_"
+msgstr ""

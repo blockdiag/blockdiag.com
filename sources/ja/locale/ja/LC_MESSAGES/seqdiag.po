@@ -1,0 +1,332 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-30 11:01\n"
+"PO-Revision-Date: 2011-11-30 10:59+0900\n"
+"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# c9a9780157fc400fbaf7ed30b49a8056
+#: ../../../sources/ja/seqdiag/demo.rst:3
+msgid "Demo - interactive shell for seqdiag"
+msgstr ""
+
+# 8f91465c0ea5477cab87777e31179977
+#: ../../../sources/ja/seqdiag/demo.rst:5
+msgid ""
+"This is demo program for seqdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr ""
+
+# 8abb2598ac384fa1a991afa8530ee513
+#: ../../../sources/ja/seqdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr ""
+
+# 54606473118d48f2840b4c3ebd800d92
+#: ../../../sources/ja/seqdiag/demo.rst:13
+msgid "Diagram source"
+msgstr ""
+
+# f3f20c39645f4ecfaa6fe256718e5223
+#: ../../../sources/ja/seqdiag/demo.rst:24
+msgid "Diagram outputs"
+msgstr ""
+
+# 69af8aa0af7441b3895b0b946fa8caf7
+#: ../../../sources/ja/seqdiag/examples.rst:5
+msgid "Sample diagams"
+msgstr ""
+
+# c95beea2858c4e899968d51077d36a36
+#: ../../../sources/ja/seqdiag/examples.rst:8
+msgid "simple diagram"
+msgstr ""
+
+# aee07fe11e1544b5b414d4ae1c361f2b
+#: ../../../sources/ja/seqdiag/examples.rst:14
+msgid "edge types"
+msgstr ""
+
+# 85491eb099f34c72aad6c68bddd18e30
+#: ../../../sources/ja/seqdiag/examples.rst:20
+msgid "attributes of edges"
+msgstr ""
+
+# 8ead3abaa9254f28bd9aa1f1623ec094
+#: ../../../sources/ja/seqdiag/examples.rst:32
+msgid "auto return edge and nested sequense"
+msgstr ""
+
+# 5fc4173f0cf546d7a4b05c33ff5300b5
+#: ../../../sources/ja/seqdiag/examples.rst:38
+msgid "separators"
+msgstr ""
+
+# dae9527ffc1c46c8b716a1e5f42daeb1
+#: ../../../sources/ja/seqdiag/examples.rst:46
+msgid "edge notes"
+msgstr ""
+
+# 7429a22f86e24858b3559c8a4da0e1ae
+#: ../../../sources/ja/seqdiag/examples.rst:54
+msgid "diagram attributes"
+msgstr ""
+
+# 6f6d4bfc6d7043169763821dde1f4658
+#: ../../../sources/ja/seqdiag/index.rst:3
+msgid "seqdiag - simple sequence-diagram image generator"
+msgstr ""
+
+# 8c5f5a379e984d3191acb622bce0d9e1
+#: ../../../sources/ja/seqdiag/index.rst:5
+msgid ""
+"`seqdiag` generate sequence-diagram image file from .diag file. .diag file "
+"is similar to DOT file (graphviz's)."
+msgstr ""
+
+# c3876b79e28f4a62b3ba0b13401c9813
+#: ../../../sources/ja/seqdiag/index.rst:8
+msgid "You can get diagrams like this."
+msgstr ""
+
+# 405e66e143aa40c6b8b8b4a94e791293
+#: ../../../sources/ja/seqdiag/introduction.rst:3
+msgid "Introduction of seqdiag"
+msgstr ""
+
+# fc1bc7e6181b406392e3648e5de03f1f
+#: ../../../sources/ja/seqdiag/introduction.rst:6
+msgid "Features"
+msgstr ""
+
+# 2a319f0f246347d2a218e3723a7a1077
+#: ../../../sources/ja/seqdiag/introduction.rst:7
+msgid "Generate sequence-diagram from dot like text (basic feature)."
+msgstr ""
+
+# 91f0d8d7a45e473694689041b9ea5dee
+#: ../../../sources/ja/seqdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr ""
+
+# 3bd6b79d72fa4875ba314a326f68e4e0
+#: ../../../sources/ja/seqdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr ""
+
+# f62315a8d5f747039c0b9fb4c1a8fd3d
+#: ../../../sources/ja/seqdiag/introduction.rst:12
+msgid "Setup"
+msgstr ""
+
+# 1756c80a900f4734b253dc2fab65f226
+#: ../../../sources/ja/seqdiag/introduction.rst:15
+msgid "by easy_install"
+msgstr ""
+
+# e595a51919c54688a02019dba7b657ce
+# 8838722ff1094ef792900bc3489c809f
+#: ../../../sources/ja/seqdiag/introduction.rst:16
+#: ../../../sources/ja/seqdiag/introduction.rst:24
+msgid "Make environment"
+msgstr ""
+
+# 4319c3cbdb534430b7982e349cc2dc36
+#: ../../../sources/ja/seqdiag/introduction.rst:23
+msgid "by buildout"
+msgstr ""
+
+# 528302ea0d644fe0ba47c9c7545737ba
+#: ../../../sources/ja/seqdiag/introduction.rst:33
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# e0c3d77a7b5740ecb561bce3d312623e
+#: ../../../sources/ja/seqdiag/introduction.rst:40
+msgid ""
+"Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the "
+"`simpla.diag` configuration file."
+msgstr ""
+
+# 7b1ebcf93126462f9523407d69421479
+#: ../../../sources/ja/seqdiag/introduction.rst:45
+msgid "Usage"
+msgstr ""
+
+# 5caf69cb5d6c41fb91dcbcc6212a56c2
+#: ../../../sources/ja/seqdiag/introduction.rst:46
+msgid "Execute seqdiag command"
+msgstr ""
+
+# 4f2042edb7d940c8bd6988da7ca938b9
+#: ../../../sources/ja/seqdiag/introduction.rst:54
+msgid "If you want SVG images, use -T option"
+msgstr ""
+
+# 8418ee6229f74eed92d2d26bb2d77f9c
+#: ../../../sources/ja/seqdiag/introduction.rst:64
+msgid "Font Configuration"
+msgstr ""
+
+# 491893c9d5e849399fefed5278531412
+#: ../../../sources/ja/seqdiag/introduction.rst:65
+msgid ""
+"seqdiag uses TrueType Font to render text. seqdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr ""
+
+# 2c710dc0abea4278a5e98fafbc21d0b4
+#: ../../../sources/ja/seqdiag/introduction.rst:74
+msgid "If you always use same font, write $HOME/.seqdiagrc"
+msgstr ""
+
+# 5268874756c142fe8169784cae7c46df
+#: ../../../sources/ja/seqdiag/introduction.rst:84
+msgid "Requirements"
+msgstr ""
+
+# 4c15552a6db54de995c97cb2f5dd1e64
+#: ../../../sources/ja/seqdiag/introduction.rst:85
+msgid "Python 2.4 or later (not support 3.x)"
+msgstr ""
+
+# cb5a87da8d414188a726fc9fb41aebe1
+#: ../../../sources/ja/seqdiag/introduction.rst:86
+msgid "Python Imaging Library 1.1.5 or later."
+msgstr ""
+
+# a979728e662445ddb46739c78e0c96df
+#: ../../../sources/ja/seqdiag/introduction.rst:87
+msgid "funcparserlib 0.3.4 or later."
+msgstr ""
+
+# 71766a15629b4431928dee5c15f7e4d2
+#: ../../../sources/ja/seqdiag/introduction.rst:88
+msgid "setuptools or distribute."
+msgstr ""
+
+# d869d075ea134b6e888e06c07168224e
+#: ../../../sources/ja/seqdiag/introduction.rst:92
+msgid "License"
+msgstr ""
+
+# 86a2a70ecbb346c9916710c3f00a3503
+#: ../../../sources/ja/seqdiag/introduction.rst:93
+msgid "Apache License 2.0"
+msgstr ""
+
+# e23da89ff6444651a095cab877333a11
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:3
+msgid "sphinxcontrib-seqdiag"
+msgstr ""
+
+# 18a6c74c294f482694d4c626783111d4
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:5
+msgid ""
+"`sphinxcontrib-seqdiag` is sphinx extension for embedding seqdiag diagrams. "
+"You can embed block diagrams with `seqdiag` directive."
+msgstr ""
+
+# f07f67b5c10b4cb4ad987e1f1c117836
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:23
+msgid "Setting"
+msgstr ""
+
+# 40ab4b4ee3964bd28dabfdc2ad7a3cd0
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:27
+msgid ""
+"You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
+msgstr ""
+
+# 1459577a194e44a5abbf9e65676aa816
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:30
+msgid "Install"
+msgstr ""
+
+# c20bf2e0d5fe463b8d6a2c3da8114fd7
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:38
+msgid "Configure Sphinx"
+msgstr ""
+
+# 28128a5b21cd49ef8d76f7bf493c3507
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:40
+msgid ""
+"To enable this extension, add ``sphinxcontrib.seqdiag`` module to extensions "
+"option at :file:`conf.py`."
+msgstr ""
+
+# 55e5c7017cbc41c099e34c2e932420a2
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:53
+msgid "Directive"
+msgstr ""
+
+# e8f9d4a2872e4bee8cfeb8d5beb7b65d
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:57
+msgid ""
+"This directive insert a sequence diagram into the generated document. If "
+"filename is specified, sphinx reads external file as source script of "
+"blockfile. In another case, seqdiag directive takes code block as source "
+"script."
+msgstr ""
+
+# 844f5f0f78b74a86922729b63ca70305
+# fb19a788716b442892a391a307c923d7
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:61
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:75
+msgid "Examples::"
+msgstr ""
+
+# 426c54034750449d94803435794e6d01
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:72
+msgid ""
+"This directive is able to generate thumbnail images using ``maxwidth`` "
+"option. ``maxwidth`` option takes pixel-size of image's width."
+msgstr ""
+
+# 5660ca484d3e454d8549da8d1788cc65
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:86
+msgid ""
+"This directive is able to generate description table using ``desctable`` "
+"option and `description` attribute"
+msgstr ""
+
+# f39db9f3c004438e90407adbb55b00a7
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:89
+msgid "Input::"
+msgstr ""
+
+# ef91de3f215d40eeb190215a0fab5fe9
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:101
+msgid "Output"
+msgstr ""
+
+# 642ca43e560c467c831685d43b423cd3
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:115
+msgid "Configuration File Options"
+msgstr ""
+
+# a301c0ffe54648b0a80e7eecea19cf9c
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:119
+msgid ""
+"This is a path for renderring fonts. You can use truetype font (.ttf) file "
+"path. You can specify single path with string, or multiple paths using array."
+msgstr ""
+
+# 82c0bb9568ef42efa2d6b4f0d05178c8
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:128
+msgid ""
+"If :confval:`seqdiag_antialias`: is True, seqdiag generates images with anti-"
+"alias filter."
+msgstr ""

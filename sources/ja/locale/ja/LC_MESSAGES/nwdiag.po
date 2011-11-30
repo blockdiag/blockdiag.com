@@ -1,0 +1,351 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-30 11:01\n"
+"PO-Revision-Date: 2011-11-30 10:59+0900\n"
+"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 38e2b4f5310b49f6bca10fb18310aaac
+#: ../../../sources/ja/nwdiag/demo.rst:3
+msgid "Demo - interactive shell for nwdiag"
+msgstr ""
+
+# e95d9e63520645f28ed12c819d745560
+#: ../../../sources/ja/nwdiag/demo.rst:5
+msgid ""
+"This is demo program for nwdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr ""
+
+# a30eb07600ef4feb9e8621151b368b5f
+#: ../../../sources/ja/nwdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr ""
+
+# 1c0a0fd02e3147f18264e3db87b78f09
+#: ../../../sources/ja/nwdiag/demo.rst:13
+msgid "Diagram source"
+msgstr ""
+
+# 3259b0a93cf949409fbbecfce78107ce
+#: ../../../sources/ja/nwdiag/demo.rst:35
+msgid "Diagram outputs"
+msgstr ""
+
+# 69f6d55f5a98476cb0b3de0dbb6f0583
+#: ../../../sources/ja/nwdiag/index.rst:3
+msgid "nwdiag - simple network-diagram image generators"
+msgstr ""
+
+# 1748b929ee55486daca5750981b350be
+#: ../../../sources/ja/nwdiag/index.rst:5
+msgid ""
+"`nwdiag` generates network-diagram image file from .diag file. .diag file is "
+"similar to DOT file (graphviz's)."
+msgstr ""
+
+# 582e2976a90d48a1908934cd4f46fc20
+#: ../../../sources/ja/nwdiag/index.rst:8
+msgid "You can get diagrams like this."
+msgstr ""
+
+# e702b73d7b5646e0a32f45b38aa7d5fa
+#: ../../../sources/ja/nwdiag/index.rst:28
+msgid ""
+"And, `nwdiag` package includes `rackdiag` which generates rack-structure "
+"diagram images."
+msgstr ""
+
+# e34d90960e734f2c8f6fb29915af05de
+#: ../../../sources/ja/nwdiag/introduction.rst:3
+msgid "Introduction of nwdiag"
+msgstr ""
+
+# bb4f9e77389e453c96782e0619cbe18e
+#: ../../../sources/ja/nwdiag/introduction.rst:6
+msgid "Features"
+msgstr ""
+
+# dbd739d3767f4d9e9ddc6d83b43efdee
+#: ../../../sources/ja/nwdiag/introduction.rst:7
+msgid "Generate network-diagram from dot like text (basic feature)."
+msgstr ""
+
+# 9fd68ed3a2a844458000d2e882059373
+#: ../../../sources/ja/nwdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr ""
+
+# b0266ceff09e43c0bce643d0ce43629b
+#: ../../../sources/ja/nwdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr ""
+
+# 86abbddfb93048568ad42366d2d8296c
+#: ../../../sources/ja/nwdiag/introduction.rst:12
+msgid "Setup"
+msgstr ""
+
+# 91239749321448dda4cb7342fa9dcc6e
+#: ../../../sources/ja/nwdiag/introduction.rst:15
+msgid "by easy_install"
+msgstr ""
+
+# 9d6b2fa8a2554221b21228200bc1759b
+# 90814189480147d4b051a53799d85a44
+#: ../../../sources/ja/nwdiag/introduction.rst:16
+#: ../../../sources/ja/nwdiag/introduction.rst:24
+msgid "Make environment"
+msgstr ""
+
+# fa7f7bcbaebb47759f2c6da0b0e5965e
+#: ../../../sources/ja/nwdiag/introduction.rst:23
+msgid "by buildout"
+msgstr ""
+
+# 01a24e1f52c54895b504b5a88bbcc82b
+#: ../../../sources/ja/nwdiag/introduction.rst:33
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# 2f36bb90f3c848d7b31429f7b8285722
+#: ../../../sources/ja/nwdiag/introduction.rst:40
+msgid ""
+"Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
+"`simpla.diag` configuration file."
+msgstr ""
+
+# c5aab038aace40518b91ea2aefa82a02
+#: ../../../sources/ja/nwdiag/introduction.rst:45
+msgid "Usage"
+msgstr ""
+
+# 4a4677bc3da74f74b2e1d304cc06af7b
+#: ../../../sources/ja/nwdiag/introduction.rst:46
+msgid "Execute nwdiag command"
+msgstr ""
+
+# a2535a98ff704599958713ac0fac2e35
+#: ../../../sources/ja/nwdiag/introduction.rst:54
+msgid "If you want SVG images, use -T option"
+msgstr ""
+
+# 8e125a082c4c44d693365ec47395c1f4
+#: ../../../sources/ja/nwdiag/introduction.rst:64
+msgid "Font Configuration"
+msgstr ""
+
+# 63b34c015ba947fe99124744ef7de2f7
+#: ../../../sources/ja/nwdiag/introduction.rst:65
+msgid ""
+"nwdiag uses TrueType Font to render text. nwdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr ""
+
+# 7fccd0db7cbd4286ab608c4c04e03215
+#: ../../../sources/ja/nwdiag/introduction.rst:73
+msgid "If you always use same font, write $HOME/.nwdiagrc"
+msgstr ""
+
+# 509b89ea4c3d4b68aee648c61867a7e5
+#: ../../../sources/ja/nwdiag/introduction.rst:83
+msgid "Requirements"
+msgstr ""
+
+# 64cad6f025564f659086f8494dda5de2
+#: ../../../sources/ja/nwdiag/introduction.rst:84
+msgid "Python 2.4 or later (not support 3.x)"
+msgstr ""
+
+# 6e1198958ad247ffb792cd55f7b27f8e
+#: ../../../sources/ja/nwdiag/introduction.rst:85
+msgid "Python Imaging Library 1.1.5 or later."
+msgstr ""
+
+# 26b97df86b3a4f45aea9a2f18e3a61ea
+#: ../../../sources/ja/nwdiag/introduction.rst:86
+msgid "funcparserlib 0.3.4 or later."
+msgstr ""
+
+# 927b502549144cf9bbfe5cf022a34cc1
+#: ../../../sources/ja/nwdiag/introduction.rst:87
+msgid "setuptools or distribute."
+msgstr ""
+
+# aff5979cc0384c5eb481cc7bc735ef92
+#: ../../../sources/ja/nwdiag/introduction.rst:91
+msgid "License"
+msgstr ""
+
+# f70d4f8f91b54a89a940380395087697
+#: ../../../sources/ja/nwdiag/introduction.rst:92
+msgid "Apache License 2.0"
+msgstr ""
+
+# 8231998e44164c64a2e8542b441d95b4
+#: ../../../sources/ja/nwdiag/nwdiag-examples.rst:5
+msgid "Sample diagams: nwdiag"
+msgstr ""
+
+# 9a709a0763c84f139654a456cb5e7cd0
+# 83a2f1b87d8a48d8a405764351a92c7f
+#: ../../../sources/ja/nwdiag/nwdiag-examples.rst:8
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:8
+msgid "simple diagram"
+msgstr ""
+
+# 61050149c8aa4058a71e8932df2eccad
+#: ../../../sources/ja/nwdiag/nwdiag-examples.rst:14
+msgid "define multiple addresses"
+msgstr ""
+
+# e36d76520705480387323625846e6d91
+#: ../../../sources/ja/nwdiag/nwdiag-examples.rst:23
+msgid "grouping nodes"
+msgstr ""
+
+# c4972186b05642048591d056280549ce
+#: ../../../sources/ja/nwdiag/nwdiag-examples.rst:35
+msgid "peer networks"
+msgstr ""
+
+# 239bf5bf58464c099ece76b06bb1f889
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:5
+msgid "Sample diagams: rackdiag"
+msgstr ""
+
+# 33edfbfff25d4c71b0794193c8de7f5d
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:14
+msgid "rack attributes"
+msgstr ""
+
+# 2d7bf201756a4093bec0c11e56571466
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:20
+msgid "put multiple units to same level"
+msgstr ""
+
+# b87596b5f6b34544985578cd52b7a9d6
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:26
+msgid "multiple racks"
+msgstr ""
+
+# 776ca5fc1d0f44dbab960d863a27a1f9
+#: ../../../sources/ja/nwdiag/rackdiag-examples.rst:32
+msgid "define not available units"
+msgstr ""
+
+# 51dcc47d9efa4343a750216ef90be7b0
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:3
+msgid "sphinxcontrib-nwdiag"
+msgstr ""
+
+# 9946162874ac4f6291d86a50037dde7a
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:5
+msgid ""
+"`sphinxcontrib-nwdiag` is sphinx extension for embedding nwdiag diagrams. "
+"You can embed block diagrams with `nwdiag` directive."
+msgstr ""
+
+# 2728248a59f44d869e9e5d664dfa4580
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:29
+msgid "Setting"
+msgstr ""
+
+# 181cdae34586421581148c9b57789395
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:33
+msgid ""
+"You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
+msgstr ""
+
+# 30d7983affd9487183a992c3920e64ca
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:36
+msgid "Install"
+msgstr ""
+
+# cc96697056cf49178171eecdeda4bd99
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:44
+msgid "Configure Sphinx"
+msgstr ""
+
+# 45256cdaf5f84aba986cc0a2942690ac
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:46
+msgid ""
+"To enable this extension, add ``sphinxcontrib.nwdiag`` module to extensions "
+"option at :file:`conf.py`."
+msgstr ""
+
+# a82474d43ea5478e85f016eb358be085
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:59
+msgid "Directive"
+msgstr ""
+
+# 0f9b8b7dd653461bbb439e4f0fa1dd12
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:63
+msgid ""
+"This directive insert a netuence diagram into the generated document. If "
+"filename is specified, sphinx reads external file as source script of "
+"blockfile. In another case, nwdiag directive takes code block as source "
+"script."
+msgstr ""
+
+# e2f8c926eb404a4c818d4f6a9f99c7f6
+# bb3dfd44da2842b1bad48f15de317b24
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:67
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:81
+msgid "Examples::"
+msgstr ""
+
+# 88c018861ed148f690a881077ad5f69e
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:78
+msgid ""
+"This directive is able to generate thumbnail images using ``maxwidth`` "
+"option. ``maxwidth`` option takes pixel-size of image's width."
+msgstr ""
+
+# d2532a16ba3a44ab9e65fa4b7590e0c0
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:92
+msgid ""
+"This directive is able to generate description table using ``desctable`` "
+"option and `description` attribute"
+msgstr ""
+
+# 34b9f399bac7409da6e9a8764fb7a6cf
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:95
+msgid "Input::"
+msgstr ""
+
+# 18286f1b57f043d686381bf629c2eef0
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:111
+msgid "Output"
+msgstr ""
+
+# fce6905ef7a34d309433357649ae0d58
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:129
+msgid "Configuration File Options"
+msgstr ""
+
+# 3df4314d7c8641989ad74fefa67573f3
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:133
+msgid ""
+"This is a path for renderring fonts. You can use truetype font (.ttf) file "
+"path. You can specify single path with string, or multiple paths using array."
+msgstr ""
+
+# fffb10b7878d4b928e3766b2d9198054
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:142
+msgid ""
+"If :confval:`nwdiag_antialias`: is True, nwdiag generates images with anti-"
+"alias filter."
+msgstr ""

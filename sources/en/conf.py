@@ -262,6 +262,10 @@ epub_copyright = u'2011, Takeshi KOMIYA'
 #epub_tocdup = True
 
 
+locale_dirs = ["locale"]
+language = None
+
+
 # ID for google analytics
 googleanalytics_id = 'UA-19477951-1'
 
