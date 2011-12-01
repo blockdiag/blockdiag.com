@@ -47,73 +47,74 @@ msgstr ""
 # 69f6d55f5a98476cb0b3de0dbb6f0583
 #: ../../../sources/ja/nwdiag/index.rst:3
 msgid "nwdiag - simple network-diagram image generators"
-msgstr ""
+msgstr "ネットワーク図生成ツール nwdiag"
 
 # 1748b929ee55486daca5750981b350be
 #: ../../../sources/ja/nwdiag/index.rst:5
 msgid ""
 "`nwdiag` generates network-diagram image file from .diag file. .diag file is "
 "similar to DOT file (graphviz's)."
-msgstr ""
+msgstr "nwdiag はシンプルなテキストからネットワーク図を生成するシーケンス図生成ツールです。"
+
 
 # 582e2976a90d48a1908934cd4f46fc20
 #: ../../../sources/ja/nwdiag/index.rst:8
 msgid "You can get diagrams like this."
-msgstr ""
+msgstr "nwdiag を用いると以下のような図が簡単に生成できます。"
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:28
 msgid ""
 "And, `nwdiag` package includes `rackdiag` which generates rack-structure "
 "diagram images."
-msgstr ""
+msgstr "また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
 
 # e34d90960e734f2c8f6fb29915af05de
 #: ../../../sources/ja/nwdiag/introduction.rst:3
 msgid "Introduction of nwdiag"
-msgstr ""
+msgstr "nwdiag の概要"
 
 # bb4f9e77389e453c96782e0619cbe18e
 #: ../../../sources/ja/nwdiag/introduction.rst:6
 msgid "Features"
-msgstr ""
+msgstr "機能"
 
 # dbd739d3767f4d9e9ddc6d83b43efdee
 #: ../../../sources/ja/nwdiag/introduction.rst:7
 msgid "Generate network-diagram from dot like text (basic feature)."
-msgstr ""
+msgstr "テキストファイルからネットワーク図を生成"
 
 # 9fd68ed3a2a844458000d2e882059373
 #: ../../../sources/ja/nwdiag/introduction.rst:8
 msgid "Multilingualization for node-label (utf-8 only)."
-msgstr ""
+msgstr "日本語(UTF-8)対応"
 
 # b0266ceff09e43c0bce643d0ce43629b
 #: ../../../sources/ja/nwdiag/introduction.rst:9
 msgid "Sphinx embedding"
-msgstr ""
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-nwdiag パッケージの利用)"
 
 # 86abbddfb93048568ad42366d2d8296c
 #: ../../../sources/ja/nwdiag/introduction.rst:12
 msgid "Setup"
-msgstr ""
+msgstr "インストール"
 
 # 91239749321448dda4cb7342fa9dcc6e
 #: ../../../sources/ja/nwdiag/introduction.rst:15
 msgid "by easy_install"
-msgstr ""
+msgstr "easy_install を利用する場合"
 
 # 9d6b2fa8a2554221b21228200bc1759b
 # 90814189480147d4b051a53799d85a44
 #: ../../../sources/ja/nwdiag/introduction.rst:16
 #: ../../../sources/ja/nwdiag/introduction.rst:24
 msgid "Make environment"
-msgstr ""
+msgstr "以下のコマンドでインストールすることができます。"
 
 # fa7f7bcbaebb47759f2c6da0b0e5965e
 #: ../../../sources/ja/nwdiag/introduction.rst:23
 msgid "by buildout"
-msgstr ""
+msgstr "buildout を利用する場合"
 
 # 01a24e1f52c54895b504b5a88bbcc82b
 #: ../../../sources/ja/nwdiag/introduction.rst:33
@@ -125,27 +126,27 @@ msgstr ""
 msgid ""
 "Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
-msgstr ""
+msgstr "書式の詳細については :ref:`nwdiag-sample-diagram` を参照してください。"
 
 # c5aab038aace40518b91ea2aefa82a02
 #: ../../../sources/ja/nwdiag/introduction.rst:45
 msgid "Usage"
-msgstr ""
+msgstr "実行方法"
 
 # 4a4677bc3da74f74b2e1d304cc06af7b
 #: ../../../sources/ja/nwdiag/introduction.rst:46
 msgid "Execute nwdiag command"
-msgstr ""
+msgstr "コマンドラインで nwdiag コマンドを実行します。"
 
 # a2535a98ff704599958713ac0fac2e35
 #: ../../../sources/ja/nwdiag/introduction.rst:54
 msgid "If you want SVG images, use -T option"
-msgstr ""
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 8e125a082c4c44d693365ec47395c1f4
 #: ../../../sources/ja/nwdiag/introduction.rst:64
 msgid "Font Configuration"
-msgstr ""
+msgstr "フォント設定"
 
 # 63b34c015ba947fe99124744ef7de2f7
 #: ../../../sources/ja/nwdiag/introduction.rst:65
@@ -153,98 +154,102 @@ msgid ""
 "nwdiag uses TrueType Font to render text. nwdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
 msgstr ""
+"nwdiag は文字の描画に TrueType フォントを利用します。"
+"指定がない場合 nwdiag は自動的にフォントを検索しますが、"
+"フォントが見つからない場合もしくはフォントを指定したい場合は"
+"-f (-font) オプションを利用します。"
 
 # 7fccd0db7cbd4286ab608c4c04e03215
 #: ../../../sources/ja/nwdiag/introduction.rst:73
 msgid "If you always use same font, write $HOME/.nwdiagrc"
-msgstr ""
+msgstr "もし常に同じ設定を利用する場合は $HOME/.nwdiagrc に以下の記述をするとよいでしょう。"
 
 # 509b89ea4c3d4b68aee648c61867a7e5
 #: ../../../sources/ja/nwdiag/introduction.rst:83
 msgid "Requirements"
-msgstr ""
+msgstr "事前に入れておくべきソフトウェア"
 
 # 64cad6f025564f659086f8494dda5de2
 #: ../../../sources/ja/nwdiag/introduction.rst:84
 msgid "Python 2.4 or later (not support 3.x)"
-msgstr ""
+msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # 6e1198958ad247ffb792cd55f7b27f8e
 #: ../../../sources/ja/nwdiag/introduction.rst:85
 msgid "Python Imaging Library 1.1.5 or later."
-msgstr ""
+msgstr "Python Imaging Library 1.1.5 以降"
 
 # 26b97df86b3a4f45aea9a2f18e3a61ea
 #: ../../../sources/ja/nwdiag/introduction.rst:86
 msgid "funcparserlib 0.3.4 or later."
-msgstr ""
+msgstr "funcparserlib 0.3.4 以降"
 
 # 927b502549144cf9bbfe5cf022a34cc1
 #: ../../../sources/ja/nwdiag/introduction.rst:87
 msgid "setuptools or distribute."
-msgstr ""
+msgstr "setuptools もしくは distribute"
 
 # aff5979cc0384c5eb481cc7bc735ef92
 #: ../../../sources/ja/nwdiag/introduction.rst:91
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 # f70d4f8f91b54a89a940380395087697
 #: ../../../sources/ja/nwdiag/introduction.rst:92
 msgid "Apache License 2.0"
-msgstr ""
+msgstr "Apache License 2.0"
 
 # 8231998e44164c64a2e8542b441d95b4
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:5
 msgid "Sample diagams: nwdiag"
-msgstr ""
+msgstr "nwdiag 出力サンプル"
 
 # 9a709a0763c84f139654a456cb5e7cd0
 # 83a2f1b87d8a48d8a405764351a92c7f
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:8
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:8
 msgid "simple diagram"
-msgstr ""
+msgstr "シンプルなネットワーク図"
 
 # 61050149c8aa4058a71e8932df2eccad
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:14
 msgid "define multiple addresses"
-msgstr ""
+msgstr "複数のアドレスを定義するケース"
 
 # e36d76520705480387323625846e6d91
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:23
 msgid "grouping nodes"
-msgstr ""
+msgstr "ノードのグルーピング"
 
 # c4972186b05642048591d056280549ce
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:35
 msgid "peer networks"
-msgstr ""
+msgstr "ピア接続"
 
 # 239bf5bf58464c099ece76b06bb1f889
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:5
 msgid "Sample diagams: rackdiag"
-msgstr ""
+msgstr "rackdiag 出力サンプル"
 
 # 33edfbfff25d4c71b0794193c8de7f5d
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:14
 msgid "rack attributes"
-msgstr ""
+msgstr "ラックの設定"
 
 # 2d7bf201756a4093bec0c11e56571466
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:20
 msgid "put multiple units to same level"
-msgstr ""
+msgstr "ラックの同じ段に複数の要素を配置する"
 
 # b87596b5f6b34544985578cd52b7a9d6
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:26
 msgid "multiple racks"
-msgstr ""
+msgstr "複数のラックを定義する"
 
 # 776ca5fc1d0f44dbab960d863a27a1f9
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:32
 msgid "define not available units"
-msgstr ""
+msgstr "利用できない段を定義する"
 
 # 51dcc47d9efa4343a750216ef90be7b0
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:3
