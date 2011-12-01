@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:01\n"
+"POT-Creation-Date: 2011-12-01 17:10\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -20,7 +20,7 @@ msgstr ""
 # c9a9780157fc400fbaf7ed30b49a8056
 #: ../../../sources/ja/seqdiag/demo.rst:3
 msgid "Demo - interactive shell for seqdiag"
-msgstr ""
+msgstr "デモ: interactive shell for seqdiag"
 
 # 8f91465c0ea5477cab87777e31179977
 #: ../../../sources/ja/seqdiag/demo.rst:5
@@ -28,61 +28,64 @@ msgid ""
 "This is demo program for seqdiag. You can get rendered diagrams after "
 "inputting 'Diagram source'."
 msgstr ""
+"このページは seqdiag を Web ブラウザから利用できるようにしたデモページです。"
+"入力フォームのテキストをリアルタイムに変換し、 ブラウザ上で閲覧することができ"
+"ます。"
 
 # 8abb2598ac384fa1a991afa8530ee513
 #: ../../../sources/ja/seqdiag/demo.rst:10
 msgid "This demo program supports non IE browsers only."
-msgstr ""
+msgstr "このデモページは IE に対応していません。"
 
 # 54606473118d48f2840b4c3ebd800d92
 #: ../../../sources/ja/seqdiag/demo.rst:13
 msgid "Diagram source"
-msgstr ""
+msgstr "入力フォーム"
 
 # f3f20c39645f4ecfaa6fe256718e5223
 #: ../../../sources/ja/seqdiag/demo.rst:24
 msgid "Diagram outputs"
-msgstr ""
+msgstr "出力された図"
 
 # 69af8aa0af7441b3895b0b946fa8caf7
 #: ../../../sources/ja/seqdiag/examples.rst:5
 msgid "Sample diagams"
-msgstr ""
+msgstr "出力サンプル"
 
 # c95beea2858c4e899968d51077d36a36
 #: ../../../sources/ja/seqdiag/examples.rst:8
 msgid "simple diagram"
-msgstr ""
+msgstr "シンプルなシーケンス図"
 
 # aee07fe11e1544b5b414d4ae1c361f2b
 #: ../../../sources/ja/seqdiag/examples.rst:14
 msgid "edge types"
-msgstr ""
+msgstr "エッジの種類"
 
 # 85491eb099f34c72aad6c68bddd18e30
 #: ../../../sources/ja/seqdiag/examples.rst:20
 msgid "attributes of edges"
-msgstr ""
+msgstr "エッジの設定"
 
 # 8ead3abaa9254f28bd9aa1f1623ec094
 #: ../../../sources/ja/seqdiag/examples.rst:32
 msgid "auto return edge and nested sequense"
-msgstr ""
+msgstr "往復エッジと複合シーケンス"
 
 # 5fc4173f0cf546d7a4b05c33ff5300b5
 #: ../../../sources/ja/seqdiag/examples.rst:38
 msgid "separators"
-msgstr ""
+msgstr "セパレータ"
 
 # dae9527ffc1c46c8b716a1e5f42daeb1
 #: ../../../sources/ja/seqdiag/examples.rst:46
 msgid "edge notes"
-msgstr ""
+msgstr "エッジノート(注意書き)"
 
 # 7429a22f86e24858b3559c8a4da0e1ae
 #: ../../../sources/ja/seqdiag/examples.rst:54
 msgid "diagram attributes"
-msgstr ""
+msgstr "図全体の設定"
 
 # 6f6d4bfc6d7043169763821dde1f4658
 #: ../../../sources/ja/seqdiag/index.rst:3
@@ -94,7 +97,9 @@ msgstr "シーケンス図生成ツール seqdiag"
 msgid ""
 "`seqdiag` generate sequence-diagram image file from .diag file. .diag file "
 "is similar to DOT file (graphviz's)."
-msgstr "`seqdiag` はシンプルなテキストからシーケンス図を生成するシーケンス図生成ツールです。"
+msgstr ""
+"`seqdiag` はシンプルなテキストからシーケンス図を生成するシーケンス図生成ツー"
+"ルです。"
 
 # c3876b79e28f4a62b3ba0b13401c9813
 #: ../../../sources/ja/seqdiag/index.rst:8
@@ -158,12 +163,13 @@ msgstr ""
 msgid ""
 "Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
-msgstr "書式の詳細については :ref:`seqdiag-sample-diagrams` を参照してください。"
+msgstr ""
+"書式の詳細については :ref:`seqdiag-sample-diagrams` を参照してください。"
 
 # 7b1ebcf93126462f9523407d69421479
 #: ../../../sources/ja/seqdiag/introduction.rst:45
 msgid "Usage"
-msgstr ""
+msgstr "実行方法"
 
 # 5caf69cb5d6c41fb91dcbcc6212a56c2
 #: ../../../sources/ja/seqdiag/introduction.rst:46
@@ -185,12 +191,17 @@ msgstr "フォント設定"
 msgid ""
 "seqdiag uses TrueType Font to render text. seqdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
-msgstr "seqdiag は文字の描画に TrueType フォントを利用します。指定がない場合 seqdiag は自動的にフォントを検索しますが、見つからない場合もしくはフォントを指定したい場合は -f (--font) オプションを利用します。"
+msgstr ""
+"seqdiag は文字の描画に TrueType フォントを利用します。指定がない場合 seqdiag "
+"は自動的にフォントを検索しますが、見つからない場合もしくはフォントを指定した"
+"い場合は -f (--font) オプションを利用します。"
 
 # 2c710dc0abea4278a5e98fafbc21d0b4
 #: ../../../sources/ja/seqdiag/introduction.rst:74
 msgid "If you always use same font, write $HOME/.seqdiagrc"
-msgstr "もし常に同じ設定を利用する場合は $HOME/.seqdiagrc に以下の記述をするとよいでしょう。"
+msgstr ""
+"もし常に同じ設定を利用する場合は $HOME/.seqdiagrc に以下の記述をするとよいで"
+"しょう。"
 
 # 5268874756c142fe8169784cae7c46df
 #: ../../../sources/ja/seqdiag/introduction.rst:84
@@ -230,7 +241,7 @@ msgstr "Apache License 2.0"
 # e23da89ff6444651a095cab877333a11
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:3
 msgid "sphinxcontrib-seqdiag"
-msgstr ""
+msgstr "Sphinx 拡張: sphinxcontrib-seqdiag"
 
 # 18a6c74c294f482694d4c626783111d4
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:5
@@ -238,27 +249,32 @@ msgid ""
 "`sphinxcontrib-seqdiag` is sphinx extension for embedding seqdiag diagrams. "
 "You can embed block diagrams with `seqdiag` directive."
 msgstr ""
+"`sphinxcontrib-seqdiag` を利用すると Sphinx の拡張機能としてseqdiag による"
+"シーケンス図を埋め込むことができます。 シーケンス図の埋め込みには `seqdiag` "
+"ディレクティブを利用します。"
 
 # f07f67b5c10b4cb4ad987e1f1c117836
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:23
 msgid "Setting"
-msgstr ""
+msgstr "設定"
 
 # 40ab4b4ee3964bd28dabfdc2ad7a3cd0
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:27
 msgid ""
 "You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
 msgstr ""
+"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得"
+"することができます。"
 
 # 1459577a194e44a5abbf9e65676aa816
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:30
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 # c20bf2e0d5fe463b8d6a2c3da8114fd7
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:38
 msgid "Configure Sphinx"
-msgstr ""
+msgstr "Sphinx の設定"
 
 # 28128a5b21cd49ef8d76f7bf493c3507
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:40
@@ -266,11 +282,14 @@ msgid ""
 "To enable this extension, add ``sphinxcontrib.seqdiag`` module to extensions "
 "option at :file:`conf.py`."
 msgstr ""
+"sphinxcontrib-seqdiag を利用するには :file:`conf.py` を編集します。"
+"extensions 変数に ``sphinxcontrib.seqdiag`` を追加し、必要に応じてオプション"
+"を記載します。"
 
 # 55e5c7017cbc41c099e34c2e932420a2
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:53
 msgid "Directive"
-msgstr ""
+msgstr "利用可能なディレクティブ"
 
 # e8f9d4a2872e4bee8cfeb8d5beb7b65d
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:57
@@ -280,13 +299,18 @@ msgid ""
 "blockfile. In another case, seqdiag directive takes code block as source "
 "script."
 msgstr ""
+"`seqdiag` ディレクティブは指定した箇所にシーケンス図を埋め込みます。シーケン"
+"ス図の元となるテキストはファイルもしくはテキストブロックで渡すことができま"
+"す。ファイルを指定する場合は seqdiag ディレクティブの引数にファイル名を指定し"
+"ます。テキストブロックを指定する場合は seqdiag ディレクティブ以降の行にブロッ"
+"クを記述します。"
 
 # 844f5f0f78b74a86922729b63ca70305
 # fb19a788716b442892a391a307c923d7
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:61
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:75
 msgid "Examples::"
-msgstr ""
+msgstr "例::"
 
 # 426c54034750449d94803435794e6d01
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:72
@@ -294,6 +318,8 @@ msgid ""
 "This directive is able to generate thumbnail images using ``maxwidth`` "
 "option. ``maxwidth`` option takes pixel-size of image's width."
 msgstr ""
+"``maxwidth`` オプションを指定すると画像の横幅を調整することができます。"
+"``maxwidth`` オプションの引数はピクセル単位で指定します。"
 
 # 5660ca484d3e454d8549da8d1788cc65
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:86
@@ -301,21 +327,23 @@ msgid ""
 "This directive is able to generate description table using ``desctable`` "
 "option and `description` attribute"
 msgstr ""
+"各ノードに対する説明を掲載する場合は `description` 属性と``desctable`` オプ"
+"ションを使用して、ノードの説明表を生成することができます。"
 
 # f39db9f3c004438e90407adbb55b00a7
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:89
 msgid "Input::"
-msgstr ""
+msgstr "入力::"
 
 # ef91de3f215d40eeb190215a0fab5fe9
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:101
 msgid "Output"
-msgstr ""
+msgstr "出力"
 
 # 642ca43e560c467c831685d43b423cd3
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:115
 msgid "Configuration File Options"
-msgstr ""
+msgstr "利用可能な設定オプション"
 
 # a301c0ffe54648b0a80e7eecea19cf9c
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:119
@@ -323,6 +351,10 @@ msgid ""
 "This is a path for renderring fonts. You can use truetype font (.ttf) file "
 "path. You can specify single path with string, or multiple paths using array."
 msgstr ""
+"seqdiag で利用する TrueType フォントへのパスをしていします。"
+"``seqdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することができます。"
+"複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配列を指定することで"
+"環境の違いを吸収することができます。"
 
 # 82c0bb9568ef42efa2d6b4f0d05178c8
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:128
@@ -330,3 +362,6 @@ msgid ""
 "If :confval:`seqdiag_antialias`: is True, seqdiag generates images with anti-"
 "alias filter."
 msgstr ""
+"``seqdiag_antialias`` は PNG 画像生成時にアンチエイリアス処理を行うかどうかを指定します。"
+""
+"`True` が指定された場合、アンチエイリアス処理を実行します(初期値: `False` )。"
