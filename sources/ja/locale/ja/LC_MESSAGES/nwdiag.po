@@ -20,7 +20,7 @@ msgstr ""
 # 38e2b4f5310b49f6bca10fb18310aaac
 #: ../../../sources/ja/nwdiag/demo.rst:3
 msgid "Demo - interactive shell for nwdiag"
-msgstr ""
+msgstr "デモ: interactive shell for nwdiag"
 
 # e95d9e63520645f28ed12c819d745560
 #: ../../../sources/ja/nwdiag/demo.rst:5
@@ -28,21 +28,23 @@ msgid ""
 "This is demo program for nwdiag. You can get rendered diagrams after "
 "inputting 'Diagram source'."
 msgstr ""
+"このページは nwdiag を Web ブラウザから利用できるようにしたデモページです。"
+"入力フォームのテキストをリアルタイムに変換し、ブラウザ上で閲覧することができます。"
 
 # a30eb07600ef4feb9e8621151b368b5f
 #: ../../../sources/ja/nwdiag/demo.rst:10
 msgid "This demo program supports non IE browsers only."
-msgstr ""
+msgstr "このデモページは IE に対応していません。"
 
 # 1c0a0fd02e3147f18264e3db87b78f09
 #: ../../../sources/ja/nwdiag/demo.rst:13
 msgid "Diagram source"
-msgstr ""
+msgstr "入力フォーム"
 
 # 3259b0a93cf949409fbbecfce78107ce
 #: ../../../sources/ja/nwdiag/demo.rst:35
 msgid "Diagram outputs"
-msgstr ""
+msgstr "出力された図"
 
 # 69f6d55f5a98476cb0b3de0dbb6f0583
 #: ../../../sources/ja/nwdiag/index.rst:3
@@ -126,7 +128,7 @@ msgstr ""
 msgid ""
 "Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
-msgstr "書式の詳細については :ref:`nwdiag-sample-diagram` を参照してください。"
+msgstr "書式の詳細については :ref:`nwdiag-sample-diagrams` を参照してください。"
 
 # c5aab038aace40518b91ea2aefa82a02
 #: ../../../sources/ja/nwdiag/introduction.rst:45
@@ -254,7 +256,7 @@ msgstr "利用できない段を定義する"
 # 51dcc47d9efa4343a750216ef90be7b0
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:3
 msgid "sphinxcontrib-nwdiag"
-msgstr ""
+msgstr "Sphinx 拡張: sphinxcontrib-nwdiag"
 
 # 9946162874ac4f6291d86a50037dde7a
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:5
@@ -262,27 +264,31 @@ msgid ""
 "`sphinxcontrib-nwdiag` is sphinx extension for embedding nwdiag diagrams. "
 "You can embed block diagrams with `nwdiag` directive."
 msgstr ""
+"`sphinxcontrib-nwdiag を利用すると Sphinx の拡張機能として"
+"nwdiag によるネットワーク図を埋め込むことができます。"
+"ネットワーク図の埋め込みには `nwdiag` ディレクティブを利用します。"
 
 # 2728248a59f44d869e9e5d664dfa4580
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:29
 msgid "Setting"
-msgstr ""
+msgstr "設定"
 
 # 181cdae34586421581148c9b57789395
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:33
 msgid ""
 "You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
 msgstr ""
+"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得することができます。"
 
 # 30d7983affd9487183a992c3920e64ca
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:36
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 # cc96697056cf49178171eecdeda4bd99
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:44
 msgid "Configure Sphinx"
-msgstr ""
+msgstr "Sphinx の設定"
 
 # 45256cdaf5f84aba986cc0a2942690ac
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:46
@@ -290,11 +296,14 @@ msgid ""
 "To enable this extension, add ``sphinxcontrib.nwdiag`` module to extensions "
 "option at :file:`conf.py`."
 msgstr ""
+"Sphinxcontrib-nwdiag を利用するには :file:`conf.py` を編集します。"
+"extensions 変数に ``sphinxcontrib.nwdiag`` を追加し、"
+"必要に応じてオプションを記載します。"
 
 # a82474d43ea5478e85f016eb358be085
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:59
 msgid "Directive"
-msgstr ""
+msgstr "利用可能なディレクティブ"
 
 # 0f9b8b7dd653461bbb439e4f0fa1dd12
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:63
@@ -304,13 +313,17 @@ msgid ""
 "blockfile. In another case, nwdiag directive takes code block as source "
 "script."
 msgstr ""
+"`seqdiag` ディレクティブは指定した箇所にネットワーク図を埋め込みます。"
+"ネットワークの元となるテキストはファイルもしくはテキストブロックで渡すことができます。"
+"ファイルを指定する場合は ``nwdiag`` ディレクティブの引数にファイル名を指定します。"
+"テキストブロックを指定する場合は ``nwdiag`` ディレクティブ以降の行にブロックを記述します。"
 
 # e2f8c926eb404a4c818d4f6a9f99c7f6
 # bb3dfd44da2842b1bad48f15de317b24
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:67
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:81
 msgid "Examples::"
-msgstr ""
+msgstr "例::"
 
 # 88c018861ed148f690a881077ad5f69e
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:78
@@ -318,6 +331,8 @@ msgid ""
 "This directive is able to generate thumbnail images using ``maxwidth`` "
 "option. ``maxwidth`` option takes pixel-size of image's width."
 msgstr ""
+"``maxwidth`` オプションを指定すると画像の横幅を調整することができます。"
+"``maxwidth`` オプションの引数はピクセル単位で指定します。"
 
 # d2532a16ba3a44ab9e65fa4b7590e0c0
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:92
@@ -325,21 +340,23 @@ msgid ""
 "This directive is able to generate description table using ``desctable`` "
 "option and `description` attribute"
 msgstr ""
+"各ノードに対する説明を記載する場合は `description` 属性と ``desctable`` オプションを使用して、"
+"ノードの説明表を生成することができます。"
 
 # 34b9f399bac7409da6e9a8764fb7a6cf
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:95
 msgid "Input::"
-msgstr ""
+msgstr "入力::"
 
 # 18286f1b57f043d686381bf629c2eef0
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:111
 msgid "Output"
-msgstr ""
+msgstr "出力"
 
 # fce6905ef7a34d309433357649ae0d58
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:129
 msgid "Configuration File Options"
-msgstr ""
+msgstr "利用可能な設定オプション"
 
 # 3df4314d7c8641989ad74fefa67573f3
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:133
@@ -347,6 +364,10 @@ msgid ""
 "This is a path for renderring fonts. You can use truetype font (.ttf) file "
 "path. You can specify single path with string, or multiple paths using array."
 msgstr ""
+"nwdiag で利用する TrueType フォントへのパスを指定します。"
+" ``nwdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することができます。"
+"複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配列を指定することで"
+"環境の違いを吸収することができます。"
 
 # fffb10b7878d4b928e3766b2d9198054
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:142
@@ -354,3 +375,5 @@ msgid ""
 "If :confval:`nwdiag_antialias`: is True, nwdiag generates images with anti-"
 "alias filter."
 msgstr ""
+":confval:`nwdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うかどうかを指定します。"
+" `True` が指定された場合、アンチエイリアス処理を実行します(初期値: `False` )。"
