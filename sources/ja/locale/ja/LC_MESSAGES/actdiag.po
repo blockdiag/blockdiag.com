@@ -20,7 +20,7 @@ msgstr ""
 # fbe7523ed6d140619d32e49685d60c47
 #: ../../../sources/ja/actdiag/demo.rst:3
 msgid "Demo - interactive shell for actdiag"
-msgstr ""
+msgstr "デモ: interactive shell for actdiag"
 
 # abcdd3b107a54fa4aa3c75659cdc267e
 #: ../../../sources/ja/actdiag/demo.rst:5
@@ -28,36 +28,38 @@ msgid ""
 "This is demo program for actdiag. You can get rendered diagrams after "
 "inputting 'Diagram source'."
 msgstr ""
+"このページは actdiag を Web ブラウザから利用できるようにしたデモページです。"
+"入力フォームのテキストをリアルタイムに変換し、ブラウザ上で閲覧することができます。"
 
 # f166e2e1dd874f9baece86402568d38e
 #: ../../../sources/ja/actdiag/demo.rst:10
 msgid "This demo program supports non IE browsers only."
-msgstr ""
+msgstr "このデモページは IE に対応していません。"
 
 # 8f80b9a7d0c24120800452d43eac5810
 #: ../../../sources/ja/actdiag/demo.rst:13
 msgid "Diagram source"
-msgstr ""
+msgstr "入力フォーム"
 
 # 06c0f7edaa654f15885423930f4b2f3b
 #: ../../../sources/ja/actdiag/demo.rst:30
 msgid "Diagram outputs"
-msgstr ""
+msgstr "出力された図"
 
 # 2712998d541843459f376c29b18de3ca
 #: ../../../sources/ja/actdiag/examples.rst:5
 msgid "Sample diagams"
-msgstr ""
+msgstr "出力サンプル"
 
 # 2f5e72a99a634aea9537df68cc944369
 #: ../../../sources/ja/actdiag/examples.rst:8
 msgid "simple diagram"
-msgstr ""
+msgstr "シンプルなアクティビティ図"
 
 # b421555c0b50460f8341fbe947d6a0f9
 #: ../../../sources/ja/actdiag/index.rst:3
 msgid "actdiag - simple activity-diagram image generator"
-msgstr ""
+msgstr "アクティビティ図生成ツール actdiag"
 
 # 2df4e22f70694519ba4e277a31b1a145
 #: ../../../sources/ja/actdiag/index.rst:5
@@ -65,58 +67,59 @@ msgid ""
 "`actdiag` generate activity-diagram image file from .diag file. .diag file "
 "is similar to DOT file (graphviz's)."
 msgstr ""
+"`actdiag` はシンプルなテキストからアクティブティ図を生成するアクティビティ図生成ツールです。"
 
 # 32393c6764e343f19862c96dc3c82478
 #: ../../../sources/ja/actdiag/index.rst:8
 msgid "You can get diagrams like this."
-msgstr ""
+msgstr "`actdiag` を用いると以下のような図が簡単に生成できます。"
 
 # dfeffb30ea7e40d88b347ab82bb47c60
 #: ../../../sources/ja/actdiag/introduction.rst:3
 msgid "Introduction of actdiag"
-msgstr ""
+msgstr "actdiag の概要"
 
 # d49dd2d4748347b6a2f890c429264a8b
 #: ../../../sources/ja/actdiag/introduction.rst:6
 msgid "Features"
-msgstr ""
+msgstr "機能"
 
 # 79e72e2b207549a3a631562e9c479f06
 #: ../../../sources/ja/actdiag/introduction.rst:7
 msgid "Generate activity-diagram from dot like text (basic feature)."
-msgstr ""
+msgstr "テキストファイルからアクティビティ図を生成"
 
 # f93a6e6851b245cb9191ecc573a44884
 #: ../../../sources/ja/actdiag/introduction.rst:8
 msgid "Multilingualization for node-label (utf-8 only)."
-msgstr ""
+msgstr "日本語(UTF-8)対応"
 
 # 4d34ef3d967541bcafcc4813cfb7efd4
 #: ../../../sources/ja/actdiag/introduction.rst:9
 msgid "Sphinx embedding"
-msgstr ""
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-actdiag パッケージの利用)"
 
 # 6f34c034eb2f4ec191fd93c559d3d72e
 #: ../../../sources/ja/actdiag/introduction.rst:12
 msgid "Setup"
-msgstr ""
+msgstr "インストール"
 
 # 52793f002f464a4e83bdc8e7f0f190d3
 #: ../../../sources/ja/actdiag/introduction.rst:15
 msgid "by easy_install"
-msgstr ""
+msgstr "easy_install を利用する場合"
 
 # 8c38f57da95548f89fc1f0a003e83145
 # 5395e751867d4ddab06f99ed107ae125
 #: ../../../sources/ja/actdiag/introduction.rst:16
 #: ../../../sources/ja/actdiag/introduction.rst:24
 msgid "Make environment"
-msgstr ""
+msgstr "以下のコマンドでインストールすることができます。"
 
 # c399bb21e87b42028baa1962a77cb652
 #: ../../../sources/ja/actdiag/introduction.rst:23
 msgid "by buildout"
-msgstr ""
+msgstr "buildout を利用する場合"
 
 # aabe8ac5c8a049539d292ef8f3910ba6
 #: ../../../sources/ja/actdiag/introduction.rst:33
@@ -129,26 +132,27 @@ msgid ""
 "Please refer to :ref:`actdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
 msgstr ""
+"書式の詳細については :ref:`actdiag-sample-diagrams` を参照してください。"
 
 # 5645f640576f4302a517ecd0ad6a032e
 #: ../../../sources/ja/actdiag/introduction.rst:45
 msgid "Usage"
-msgstr ""
+msgstr "実行方法"
 
 # 7e8740b52fa54bcaa7c9278c3eb2b83d
 #: ../../../sources/ja/actdiag/introduction.rst:46
 msgid "Execute actdiag command"
-msgstr ""
+msgstr "コマンドラインで actdiag コマンドを実行します。"
 
 # be6e3b4843f348d6af0c1bd6636b2567
 #: ../../../sources/ja/actdiag/introduction.rst:54
 msgid "If you want SVG images, use -T option"
-msgstr ""
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 3ec108406339429c88a1aa31fa1b1c38
 #: ../../../sources/ja/actdiag/introduction.rst:64
 msgid "Font Configuration"
-msgstr ""
+msgstr "フォント設定"
 
 # 3d14f44f1174466885a5550e78078a12
 #: ../../../sources/ja/actdiag/introduction.rst:65
@@ -156,51 +160,54 @@ msgid ""
 "actdiag uses TrueType Font to render text. actdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
 msgstr ""
+"actdiag は文字の描画に TrueType フォントを利用します。"
+"指定がない場合 actdiag は自動的にフォントを検索しますが、"
+"見つからない場合もしくはフォントを指定したい場合は -f (-font) オプションを利用します。"
 
 # ce67367380a442a59afde212997608cb
 #: ../../../sources/ja/actdiag/introduction.rst:73
 msgid "If you always use same font, write $HOME/.actdiagrc"
-msgstr ""
+msgstr "もし常に設定を利用する場合は $HOME/.actdiagrc に以下の記述をするとよいでしょう"
 
 # 3964db3952d749f7a2b0521b69efbbc9
 #: ../../../sources/ja/actdiag/introduction.rst:83
 msgid "Requirements"
-msgstr ""
+msgstr "事前に入れておくべきソフトウェア"
 
 # 31a3c70c33d3450da80afabfb863c15c
 #: ../../../sources/ja/actdiag/introduction.rst:84
 msgid "Python 2.4 or later (not support 3.x)"
-msgstr ""
+msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # 09072bf4725b4b31ac1ba0c6e14cab65
 #: ../../../sources/ja/actdiag/introduction.rst:85
 msgid "Python Imaging Library 1.1.5 or later."
-msgstr ""
+msgstr "Python Imaging Library 1.1.5 以降"
 
 # dae57d7573e348dba4589e1dcfd8abe4
 #: ../../../sources/ja/actdiag/introduction.rst:86
 msgid "funcparserlib 0.3.4 or later."
-msgstr ""
+msgstr "funcparserlib 0.3.4 以降"
 
 # fb9a92eafcbd4c189d92a356745b23a1
 #: ../../../sources/ja/actdiag/introduction.rst:87
 msgid "setuptools or distribute."
-msgstr ""
+msgstr "setuptools もしくは distribute"
 
 # 22f967dab44d40ca8be8e0bf10310d87
 #: ../../../sources/ja/actdiag/introduction.rst:91
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 # 1e86f097a82f4760a3e072aa4cb465ee
 #: ../../../sources/ja/actdiag/introduction.rst:92
 msgid "Apache License 2.0"
-msgstr ""
+msgstr "Apache License 2.0"
 
 # b3e0adb390bf4d2494ba5e7cc5f459fa
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:3
 msgid "sphinxcontrib-actdiag"
-msgstr ""
+msgstr "Sphinx 拡張: sphinxcontrib-actdiag"
 
 # e9fcec69ff704d18aea7d145f64d7972
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:5
@@ -208,27 +215,30 @@ msgid ""
 "`sphinxcontrib-actdiag` is sphinx extension for embedding actdiag diagrams. "
 "You can embed block diagrams with `actdiag` directive."
 msgstr ""
+"`sphinxcontrib-actdiag` を利用すると Sphinx の拡張機能として"
+"actdiag によるアクティビティ図を埋め込むことができます。"
+"アクティビティ図の埋め込みには `actdiag` ディレクティブを利用します。"
 
 # b4d4bf2feb0d4093a3f60e7b4555aba8
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:23
 msgid "Setting"
-msgstr ""
+msgstr "設定"
 
 # ce157ec8dbb347a0a1c49297853d376e
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:27
 msgid ""
 "You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
-msgstr ""
+msgstr "アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得することができます。"
 
 # 12f766d6407a4625939ad0a518d72560
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:30
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 # 27ff2373ba7d49d1a675a90d7cd03951
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:38
 msgid "Configure Sphinx"
-msgstr ""
+msgstr "Sphinx の設定"
 
 # 1bd1ac85f1784c4683b7fdef088334d4
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:40
@@ -236,11 +246,14 @@ msgid ""
 "To enable this extension, add ``sphinxcontrib.actdiag`` module to extensions "
 "option at :file:`conf.py`."
 msgstr ""
+"sphinxcontrib-actdiag を利用するには :file:`conf.py` を編集します。"
+"extensions 変数に ``sphinxcontrib.actdiag`` を追加し、"
+"必要に応じてオプションを記載します。"
 
 # 382d3e7a192e45af9b0591fba9b35b56
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:53
 msgid "Directive"
-msgstr ""
+msgstr "利用可能なディレクティブ"
 
 # b864acc5d2504d809077055e133489c4
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:57
@@ -250,13 +263,17 @@ msgid ""
 "blockfile. In another case, actdiag directive takes code block as source "
 "script."
 msgstr ""
+"`actdiag` ディレクティブは指定した箇所にアクティビティ図を埋め込みます。"
+"アクティビティ図の元となるテキストはファイルもしくはテキストブロックで渡すことができます。"
+"ファイルを指定する場合は actdiag ディレクティブの引数にファイル名を指定します。"
+"テキストブロックを指定する場合は actdiag ディレクティブ以降の行にブロックを記述します。"
 
 # be8d86450e434f4aa16f1e6ec4dd1d82
 # 819e7498f9884ea782b04dec715b90c9
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:61
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:75
 msgid "Examples::"
-msgstr ""
+msgstr "例::"
 
 # f698a471b3374079b59ae5b6aea112a5
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:72
@@ -264,6 +281,8 @@ msgid ""
 "This directive is able to generate thumbnail images using ``maxwidth`` "
 "option. ``maxwidth`` option takes pixel-size of image's width."
 msgstr ""
+"``maxwidth`` オプションを指定すると画像の横幅を調整することができます。"
+" ``maxwidth`` オプションの引数はピクセル単位で指定します。"
 
 # e0a40e7907bd45a9bcb7047550301eed
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:86
@@ -271,21 +290,23 @@ msgid ""
 "This directive is able to generate description table using ``desctable`` "
 "option and `description` attribute"
 msgstr ""
+"各ノードに対する説明を掲載する場合は `description` 属性と ``desctable`` オプションを使用して、"
+"ノードの説明表を生成することができます。"
 
 # 6730d685dce74e6bb1c0223517a4f7b7
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:89
 msgid "Input::"
-msgstr ""
+msgstr "入力::"
 
 # 78fc67478b1840d781bc4b1c8a392e56
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:108
 msgid "Output"
-msgstr ""
+msgstr "出力"
 
 # 4ec4265c82a44739b6c160a4d4f5eadf
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:130
 msgid "Configuration File Options"
-msgstr ""
+msgstr "利用可能なオプション"
 
 # 4751d33de35946a79fbc38618aa85a4d
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:134
@@ -293,6 +314,10 @@ msgid ""
 "This is a path for renderring fonts. You can use truetype font (.ttf) file "
 "path. You can specify single path with string, or multiple paths using array."
 msgstr ""
+"actdiag で利用する TrueType フォントへのパスを指定します。"
+" ``actdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することができます。"
+"複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配列を指定することで"
+"環境の違いを吸収することができます。"
 
 # 72dc24fe45a440aaaca77174f4498f15
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:143
@@ -300,3 +325,5 @@ msgid ""
 "If :confval:`actdiag_antialias`: is True, actdiag generates images with anti-"
 "alias filter."
 msgstr ""
+":confval:`actdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うかどうかを指定します。"
+" `True` が指定された場合、アンチエイリアス処理を実行します(初期値: `False` )。"
