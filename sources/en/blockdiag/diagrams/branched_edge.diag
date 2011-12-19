@@ -1,4 +1,4 @@
-{
+blockdiag {
   // branching edges to multiple children
   A -> B, C;
 

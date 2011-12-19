@@ -9,7 +9,7 @@ You can embed block diagrams with `nwdiag` directive.
 
    .. nwdiag::
 
-       diagram {
+       nwdiag {
          network dmz {
              web01;
              web02;
@@ -18,7 +18,7 @@ You can embed block diagrams with `nwdiag` directive.
 
 .. nwdiag::
 
-   diagram {
+   nwdiag {
      network dmz {
          web01;
          web02;
@@ -70,7 +70,7 @@ Directive
 
       .. nwdiag::
 
-         diagram {
+         nwdiag {
             // some diagrams are here.
          }
 
@@ -83,7 +83,7 @@ Directive
       .. nwdiag::
          :maxwidth: 240
 
-         diagram {
+         nwdiag {
             // some diagrams are here.
          }
 
@@ -97,7 +97,7 @@ Directive
       .. nwdiag::
          :desctable:
 
-         {
+         nwdiag {
             network {
               A [address = 192.168.0.1, description = "web server01"];
               B [address = 192.168.0.2, description = "web server02"];
@@ -113,7 +113,7 @@ Directive
    .. nwdiag::
       :desctable:
 
-      {
+      nwdiag {
          network {
            A [address = 192.168.0.1, description = "web server01"];
            B [address = 192.168.0.2, description = "web server02"];

@@ -1,4 +1,4 @@
-diagram {
+rackdiag {
   // Change order of rack-number as ascending
   ascending;
 

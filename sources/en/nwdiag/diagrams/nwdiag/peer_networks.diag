@@ -1,4 +1,4 @@
-{
+nwdiag {
   inet [shape = cloud];
   inet -- router;
 

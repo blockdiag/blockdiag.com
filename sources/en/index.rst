@@ -6,7 +6,7 @@ blockdiag - simple diagram images generator
 
 .. blockdiag::
 
-   diagram {
+   blockdiag {
      blockdiag -> generates -> "block-diagrams";
      blockdiag -> is -> "very easy!";
 

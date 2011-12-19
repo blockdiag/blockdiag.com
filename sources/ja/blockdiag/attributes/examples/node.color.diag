@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set backgroun-color to nodes.
    B [color = none];
    C [color = pink];

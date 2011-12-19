@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set fontsize
    default_fontsize = 24;
 

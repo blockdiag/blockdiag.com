@@ -9,7 +9,7 @@ You can get diagrams like this.
 
 .. actdiag::
 
-   diagram {
+   actdiag {
      write -> convert -> image
 
      lane user {

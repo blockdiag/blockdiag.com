@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set background image to nodes (and erase label).
    A [label = "", background = "_static/python-logo.gif"];
 }

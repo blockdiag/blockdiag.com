@@ -9,13 +9,13 @@ You can embed block diagrams with `seqdiag` directive.
 
    .. seqdiag::
 
-       diagram admin {
+       seqdiag admin {
          A -> B -> C;
        }
 
 .. seqdiag::
 
-    diagram admin {
+    seqdiag admin {
       A -> B -> C;
     }
 
@@ -64,7 +64,7 @@ Directive
 
       .. seqdiag::
 
-         diagram {
+         seqdiag {
             // some diagrams are here.
          }
 
@@ -77,7 +77,7 @@ Directive
       .. seqdiag::
          :maxwidth: 240
 
-         diagram {
+         seqdiag {
             // some diagrams are here.
          }
 
@@ -91,7 +91,7 @@ Directive
       .. seqdiag::
          :desctable:
 
-         {
+         seqdiag {
             A -> B -> C;
             A [description = "first node"];
             B [description = "second node"];
@@ -103,7 +103,7 @@ Directive
    .. seqdiag::
       :desctable:
 
-      {
+      seqdiag {
          A -> B -> C;
          A [description = "first node"];
          B [description = "second node"];

@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // set default shape
    default_shape = roundedbox
 

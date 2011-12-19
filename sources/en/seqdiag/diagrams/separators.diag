@@ -1,4 +1,4 @@
-diagram {
+seqdiag {
   A -> B;
 
   // Separator

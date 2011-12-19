@@ -1,4 +1,4 @@
-diagram admin {
+blockdiag admin {
    A -> B -> C -> D;
    A -> E;
    A -> H;

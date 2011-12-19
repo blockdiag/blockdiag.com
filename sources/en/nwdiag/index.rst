@@ -9,7 +9,7 @@ You can get diagrams like this.
 
 .. nwdiag::
 
-   diagram {
+   nwdiag {
      network dmz {
          address = "210.x.x.x/24"
 
@@ -29,7 +29,7 @@ And, `nwdiag` package includes `rackdiag` which generates rack-structure diagram
 
 .. rackdiag::
 
-   diagram {
+   rackdiag {
      8U;
 
      1: UPS [2U];

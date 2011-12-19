@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set arrow direction to edges.
    A -> B [dir = none];
    B -> C [dir = forward];

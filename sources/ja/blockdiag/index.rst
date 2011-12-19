@@ -9,7 +9,7 @@
 
 .. blockdiag::
 
-   diagram {
+   blockdiag {
      blockdiag -> generates -> "block-diagrams";
      blockdiag -> is -> "very easy!";
 

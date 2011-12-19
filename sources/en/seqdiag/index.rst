@@ -9,7 +9,7 @@ You can get diagrams like this.
 
 .. seqdiag::
 
-   diagram {
+   seqdiag {
      seqdiag -> "sequence-diagrams" [label = "generates"];
      seqdiag --> "is very easy!";
    }

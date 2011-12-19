@@ -1,4 +1,4 @@
-{
+seqdiag {
   // Use note (put note on rightside)
   browser -> webserver [note = "request\nGET /"];
   browser <- webserver;

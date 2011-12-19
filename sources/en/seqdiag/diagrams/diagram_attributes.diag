@@ -1,4 +1,4 @@
-diagram {
+seqdiag {
   // Set edge metrix.
   edge_length = 300;  // default value is 192
   span_height = 80;  // default value is 40

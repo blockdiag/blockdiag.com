@@ -1,4 +1,4 @@
-diagram {
+rackdiag {
   // define 1st rack
   rack {
     16U;

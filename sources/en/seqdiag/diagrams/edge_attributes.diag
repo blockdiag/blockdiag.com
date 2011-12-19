@@ -1,4 +1,4 @@
-{
+seqdiag {
   // edge label
   A -> B [label = "call"];
   A <- B [label = "return"];
