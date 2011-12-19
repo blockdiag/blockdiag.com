@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set boder-style to nodes.
    B [style = dotted];
    C [style = dashed];

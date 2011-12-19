@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set node metrix
    node_width = 200;
    node_height = 100;

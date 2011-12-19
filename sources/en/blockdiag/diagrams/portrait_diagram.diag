@@ -1,4 +1,4 @@
-{
+blockdiag {
   orientation = portrait
 
   A -> B -> C;

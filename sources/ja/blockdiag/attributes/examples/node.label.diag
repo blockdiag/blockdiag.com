@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set labels to nodes.
    B [label = "foo"];
    C [label = "bar"];

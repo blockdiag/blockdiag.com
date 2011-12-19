@@ -1,4 +1,4 @@
-{
+blockdiag {
   // standard node shapes
   box [shape = box];
   square [shape = square];

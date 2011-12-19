@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
   A -> B -> C;
 
   A [icon = "_static/feed-icon-legacy_orange.png"];

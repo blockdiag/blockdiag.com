@@ -9,13 +9,13 @@ You can embed block diagrams with `blockdiag` directive.
 
    .. blockdiag::
 
-       diagram admin {
+       blockdiag admin {
          top_page -> config -> config_edit -> config_confirm -> top_page;
        }
 
 .. blockdiag::
 
-    diagram admin {
+    blockdiag admin {
       top_page -> config -> config_edit -> config_confirm -> top_page;
     }
 
@@ -64,7 +64,7 @@ Directive
 
       .. blockdiag::
 
-         diagram {
+         blockdiag {
             // some diagrams are here.
          }
 
@@ -77,7 +77,7 @@ Directive
       .. blockdiag::
          :maxwidth: 240
 
-         diagram {
+         blockdiag {
             // some diagrams are here.
          }
 
@@ -91,7 +91,7 @@ Directive
       .. blockdiag::
          :desctable:
 
-         {
+         blockdiag {
             A -> B -> C;
             A [description = "browsers in each client"];
             B [description = "web server"];
@@ -103,7 +103,7 @@ Directive
    .. blockdiag::
       :desctable:
 
-      {
+      blockdiag {
          A -> B -> C;
          A [description = "browsers in each client"];
          B [description = "web server"];

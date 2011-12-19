@@ -1,4 +1,4 @@
-diagram {
+nwdiag {
   // define group at outside network definitions
   group {
     color = "#FF7777";

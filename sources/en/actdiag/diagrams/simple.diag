@@ -1,4 +1,4 @@
-diagram {
+actdiag {
   write -> convert -> image
 
   lane user {

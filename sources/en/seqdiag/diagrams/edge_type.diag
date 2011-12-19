@@ -1,4 +1,4 @@
-{
+seqdiag {
   // normal edge and doted edge
   A -> B [label = "normal edge"];
   B --> C [label = "dotted edge"];

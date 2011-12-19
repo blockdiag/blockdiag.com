@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
   default_node_color = lightyellow;
   default_group_color = lightgreen;
   default_linecolor = magenta;

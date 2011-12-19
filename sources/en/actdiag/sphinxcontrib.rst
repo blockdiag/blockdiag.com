@@ -9,13 +9,13 @@ You can embed block diagrams with `actdiag` directive.
 
    .. actdiag::
 
-       diagram admin {
+       actdiag admin {
          A -> B -> C;
        }
 
 .. actdiag::
 
-    diagram admin {
+    actdiag admin {
       A -> B -> C;
     }
 
@@ -64,7 +64,7 @@ Directive
 
       .. actdiag::
 
-         diagram {
+         actdiag {
             // some diagrams are here.
          }
 
@@ -77,7 +77,7 @@ Directive
       .. actdiag::
          :maxwidth: 240
 
-         diagram {
+         actdiag {
             // some diagrams are here.
          }
 
@@ -91,7 +91,7 @@ Directive
       .. actdiag::
          :desctable:
 
-         {
+         actdiag {
             A -> B -> C;
             A [description = "first action"];
             B [description = "second action"];
@@ -110,7 +110,7 @@ Directive
    .. actdiag::
       :desctable:
 
-      {
+      actdiag {
          A -> B -> C;
          A [description = "first action"];
          B [description = "second action"];

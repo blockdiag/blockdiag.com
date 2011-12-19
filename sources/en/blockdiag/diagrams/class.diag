@@ -1,4 +1,4 @@
-{
+blockdiag {
   // Define class (list of attributes)
   class emphasis [color = pink, style = dashed];
   class redline [color = red, style = dotted];

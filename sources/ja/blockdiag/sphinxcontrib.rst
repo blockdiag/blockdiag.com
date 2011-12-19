@@ -12,13 +12,13 @@ Sphinx 拡張：sphinxcontrib-blockdiag
 
    .. blockdiag::
 
-       diagram admin {
+       blockdiag admin {
          top_page -> config -> config_edit -> config_confirm -> top_page;
        }
 
 .. blockdiag::
 
-    diagram admin {
+    blockdiag admin {
       top_page -> config -> config_edit -> config_confirm -> top_page;
     }
 
@@ -75,7 +75,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
       .. blockdiag::
 
-         diagram {
+         blockdiag {
             // some diagrams are here.
          }
 
@@ -87,7 +87,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
       .. blockdiag::
          :maxwidth: 240
 
-         diagram {
+         blockdiag {
             // some diagrams are here.
          }
 
@@ -101,7 +101,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
       .. blockdiag::
          :desctable:
 
-         {
+         blockdiag {
             A -> B -> C;
             A [description = "browsers in each client"];
             B [description = "web server"];
@@ -113,7 +113,7 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
    .. blockdiag::
       :desctable:
 
-      {
+      blockdiag {
          A -> B -> C;
          A [description = "browsers in each client"];
          B [description = "web server"];

@@ -1,4 +1,4 @@
-diagram {
+blockdiag {
    // Set style to edges.
    A -> B [style = dotted];
    B -> C [style = dashed];

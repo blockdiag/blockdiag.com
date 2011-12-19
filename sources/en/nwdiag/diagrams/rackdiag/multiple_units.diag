@@ -1,4 +1,4 @@
-diagram {
+rackdiag {
   // define height of rack
   16U;
 

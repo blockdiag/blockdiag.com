@@ -1,4 +1,4 @@
-{
+seqdiag {
   // auto return edge
   A => B [label = "call", return = "return"];
 

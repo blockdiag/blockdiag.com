@@ -1,4 +1,4 @@
-diagram admin {
+blockdiag admin {
   index [label = "List of FOOs"];
   add [label = "Add FOO"];
   add_confirm [label = "Add FOO (confirm)"];

@@ -1,4 +1,4 @@
-diagram admin {
+blockdiag admin {
    // Set M17N text using label property.
    A [label = "起"];
    B [label = "承"];
