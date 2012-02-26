@@ -41,6 +41,7 @@ Table of contents
    actdiag/index
    nwdiag/index
    blockdiagcontrib/index
+   blockdiagdesign/index
 
 わがままドリブン開発
 =====================
