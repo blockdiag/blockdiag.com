@@ -89,8 +89,8 @@ colspan, rowspan (仮)
 * diagram.show_spread_sheet = true みたいなオプションがあるとデバッグしやすい?
 * colwidth, colheight ではなく colwidth, rowheight が正しいのでは or die
    * HTML に合わせるのであれば colspan, rowspan という名称となる
-      * col **span** ってどういう意味?
-   * 右側を nマス開けるための設定とどう結びつけるべきか。
+   * ピクセル単位ではないので width, height という名称は望ましくない
+   * 右側を nマス開けるための設定(colspan/仮)とどう結びつけるべきか。
 * colwidth = 2, width = 100 と指定されたらどうなるのか?
 * テスト可能にしたい...
 * 以前書いたメモ::
