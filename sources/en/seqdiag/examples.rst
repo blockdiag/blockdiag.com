@@ -63,3 +63,12 @@ diagram attributes
 
 .. literalinclude:: diagrams/diagram_attributes.diag
 .. seqdiag:: diagrams/diagram_attributes.diag
+
+TIPS: changing order of elements
+================================
+
+If you want to changing order of elements, define elements you want to layout.
+seqdiag sorts elements by order they appear.
+
+.. literalinclude:: diagrams/changing_order.diag
+.. seqdiag:: diagrams/changing_order.diag

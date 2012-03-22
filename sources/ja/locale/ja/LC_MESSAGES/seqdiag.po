@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-01 17:10\n"
+"POT-Creation-Date: 2012-03-22 18:58\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -86,6 +86,21 @@ msgstr "エッジノート(注意書き)"
 #: ../../../sources/ja/seqdiag/examples.rst:54
 msgid "diagram attributes"
 msgstr "図全体の設定"
+
+# 003998488aa44b0993dbefad1c6854f5
+#: ../../../sources/ja/seqdiag/examples.rst:68
+#, fuzzy
+msgid "TIPS: changing order of elements"
+msgstr "TIPS: ノードの並び替え方"
+
+# 46bdf55e1f514a01bcdcf134120a4e81
+#: ../../../sources/ja/seqdiag/examples.rst:70
+msgid ""
+"If you want to changing order of elements, define elements you want to "
+"layout. seqdiag sorts elements by order they appear."
+msgstr ""
+"ノードの並べ替えを行いたい場合は、図の先頭で並び替えたい順にノードを宣言します。"
+"seqdiag は出現順にノードを並べ替えます。"
 
 # 6f6d4bfc6d7043169763821dde1f4658
 #: ../../../sources/ja/seqdiag/index.rst:3
@@ -340,6 +355,36 @@ msgstr "入力::"
 msgid "Output"
 msgstr "出力"
 
+# f89561a772c04fdd8143e8cb7292f88b
+#: ../../../sources/ja/A:1
+msgid "A"
+msgstr ""
+
+# 31a1fa1b961147ee98ab9555aa7dfc49
+#: ../../../sources/ja/first node:1
+msgid "first node"
+msgstr ""
+
+# ef11579828644aaf92ad807bf3879efc
+#: ../../../sources/ja/B:1
+msgid "B"
+msgstr ""
+
+# 91ad1a5ddcae41bbb2875a1690f8cbde
+#: ../../../sources/ja/second node:1
+msgid "second node"
+msgstr ""
+
+# 3b86289c88584970bc72ed245a523f5a
+#: ../../../sources/ja/C:1
+msgid "C"
+msgstr ""
+
+# cf69e1f3cb7b423594080622d2322613
+#: ../../../sources/ja/third node:1
+msgid "third node"
+msgstr ""
+
 # 642ca43e560c467c831685d43b423cd3
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:115
 msgid "Configuration File Options"
@@ -351,10 +396,10 @@ msgid ""
 "This is a path for renderring fonts. You can use truetype font (.ttf) file "
 "path. You can specify single path with string, or multiple paths using array."
 msgstr ""
-"seqdiag で利用する TrueType フォントへのパスを指定します。"
-" ``seqdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することができます。"
-"複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配列を指定することで"
-"環境の違いを吸収することができます。"
+"seqdiag で利用する TrueType フォントへのパスを指定します。 "
+"``seqdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
+"きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
+"列を指定することで環境の違いを吸収することができます。"
 
 # 82c0bb9568ef42efa2d6b4f0d05178c8
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:128
@@ -362,5 +407,6 @@ msgid ""
 "If :confval:`seqdiag_antialias`: is True, seqdiag generates images with anti-"
 "alias filter."
 msgstr ""
-":confval:``seqdiag_antialias``: は PNG 画像生成時にアンチエイリアス処理を行うかどうかを指定します。"
-"`True` が指定された場合、アンチエイリアス処理を実行します(初期値: `False` )。"
+":confval:``seqdiag_antialias``: は PNG 画像生成時にアンチエイリアス処理を行う"
+"かどうかを指定します。`True` が指定された場合、アンチエイリアス処理を実行しま"
+"す(初期値: `False` )。"

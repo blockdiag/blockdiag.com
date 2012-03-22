@@ -1,0 +1,236 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Takeshi Komiya <katsuwo@www9286u.sakura.ne.jp>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-22 18:49\n"
+"PO-Revision-Date: 2012-03-22 18:48+0900\n"
+"Last-Translator: Takeshi Komiya <katsuwo@www9286u.sakura.ne.jp>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# da9ff1c01d8741b69f192b89aebe0f90
+#: ../../../sources/ja/blockdiagdesign/index.rst:3
+msgid "blockdiag 設計メモ"
+msgstr ""
+
+# a365cb5a405d4d4aa394c05d04f2ca52
+#: ../../../sources/ja/blockdiagdesign/index.rst:6
+msgid "ノードサイズの自動調整について"
+msgstr ""
+
+# 7fa2e77f89654ece9ac0a0715dbdecd9
+#: ../../../sources/ja/blockdiagdesign/index.rst:9
+msgid "ノードの大きさに関わる要素"
+msgstr ""
+
+# 2f53b86a71df4528af07deaa9fdf7572
+#: ../../../sources/ja/blockdiagdesign/index.rst:11
+msgid ""
+"スプレッドシート。図を配置する際のマス目をあらわす。 セル(cells)とスパン"
+"(spans)から構成され、 ノードはセル上に、ノードはスパンにそれぞれ配置される。 "
+"方眼紙と異なり、各セル、スパンの大きさは行もしくは列ごとに変更できる。 "
+"(Excel のセルの大きさ調整と同等のものとイメージしてよい)"
+msgstr ""
+
+# 2aeea0c7a3f14fcd9e9ed8b0e0a54196
+#: ../../../sources/ja/blockdiagdesign/index.rst:18
+msgid ""
+"スプレッドシート上の各セルの大きさをあらわす。 前述のとおり、spreadsheet の行"
+"および列は伸縮可能であるため、 あるセルの幅 x は同じ行のセル x_n と等しい。 "
+"同様にセルの高さ y は同じ列のセル y_n と等しい。"
+msgstr ""
+
+# 0dd76c4a21664fd78cc31b2e3c41f923
+#: ../../../sources/ja/blockdiagdesign/index.rst:24
+msgid ""
+"ノードの大きさをあらわす。 ノードはセルに内包されるため、node-size は必ず "
+"cell-size より小さい領域となる。"
+msgstr ""
+
+# 059cbd89dbe9454d8289adad249ceb5c
+#: ../../../sources/ja/blockdiagdesign/index.rst:28
+msgid ""
+"ノードとして描画される領域をあらわす (ただしテキスト描画領域は含まない)。 "
+"ノードの形状によって描画結果がかわる。 ノード領域内に描画が行われるため、"
+"shape-size は必ず node-size より小さい領域となる。"
+msgstr ""
+
+# fd514ba5a9f344f397df505f04ef367e
+#: ../../../sources/ja/blockdiagdesign/index.rst:33
+msgid ""
+"アイコンが描画される領域をあらわす。 一部のノードではアイコンが描画されないた"
+"め、icon-size は値をもたない。 *基本的に* ノードの領域内に描画が行われるた"
+"め、icon-size は *今のところ* node-size より小さい領域となる。"
+msgstr ""
+
+# 023c510b4af546e58376db7b85e2c02e
+#: ../../../sources/ja/blockdiagdesign/index.rst:38
+msgid ""
+"ノード内に描画されるラベル領域の大きさをあらわす。 ノード領域内に描画が行われ"
+"るため、label-size は必ず node-size より小さい領域となる。 なお、ラベルは必ず"
+"しも図形内に描画されるとは限らないため、 shape-size と異なる領域を指す可能性"
+"がある。 (例: minidiamond, beginpoint など。図形の外側にラベルが配置される) "
+"また、アイコンと描画領域が重なることがあるためアイコンの有無によって label-"
+"size の値は変化する。"
+msgstr ""
+
+# 47971ad162014ad9a832102c3ee4f1bd
+#: ../../../sources/ja/blockdiagdesign/index.rst:46
+msgid ""
+"ノードにおけるエッジ接続用の端点をあらわす。 上下左右 (それぞれ中央部)の 4箇"
+"所がコネクタとなる (現バージョンでは他の箇所からのエッジに対応しない)。 ノー"
+"ドの形状にあわせてコネクタが設定されることが多いので、 shape-size と同じ値を"
+"取ることが多いが、形状によっては shape-size の内側が端点となる可能性がある。 "
+"(現時点では存在しないが、臼形、台形などの内側に凹んでいる図形などが考えられ"
+"る)"
+msgstr ""
+
+# 00647f4092e14e7e8be6bf143ce7e46e
+#: ../../../sources/ja/blockdiagdesign/index.rst:53
+msgid ""
+"ノードの大きさを指定する方法のひとつ。 複数のセルにまたがってノードを配置する"
+"ことができる。"
+msgstr ""
+
+# 9614f1a4a5e7409d9d1bdd5ad312977c
+#: ../../../sources/ja/blockdiagdesign/index.rst:57
+msgid ""
+"ノードの大きさを指定する方法のひとつ。 隣接するセルを空白セルとする。 内部的"
+"には複数のセルにまたがってセルを専有する。"
+msgstr ""
+
+# 75d9468f526d483fb3e821e6ad7e51ba
+#: ../../../sources/ja/blockdiagdesign/index.rst:63
+msgid "基本ルール"
+msgstr ""
+
+# 0f498bc0e4574949b569011ff3701d72
+#: ../../../sources/ja/blockdiagdesign/index.rst:65
+msgid "ノードの大きさを仮決めする"
+msgstr ""
+
+# 1230a2196a1b4a1baf0b691364694cb7
+#: ../../../sources/ja/blockdiagdesign/index.rst:67
+msgid ""
+"diagram.node_width, diagram.node_height、node.width, node.height をベースにす"
+"る"
+msgstr ""
+
+# f7c26d18328e4b19ac1bbe5317c0a2af
+#: ../../../sources/ja/blockdiagdesign/index.rst:68
+msgid "ラベルの大きさから label-size, node-size を逆算する"
+msgstr ""
+
+# 500734c7e8644a6e9a10fd07ca342fbf
+#: ../../../sources/ja/blockdiagdesign/index.rst:69
+msgid "node.width, node.height が指定されている場合は高さ、幅を固定とする"
+msgstr ""
+
+# cbc15d4d66fd4f7080ebe1841b5100d4
+#: ../../../sources/ja/blockdiagdesign/index.rst:71
+msgid "スプレッドシートの大きさを仮決めする"
+msgstr ""
+
+# a92a106e340b4d7889a86eb243829dac
+#: ../../../sources/ja/blockdiagdesign/index.rst:73
+msgid ""
+"各ノードの node-size にあわせて、スプレッドシートの各 cell-size を仮決めする"
+msgstr ""
+
+# b17ca672cabd4255b339efb273759a11
+#: ../../../sources/ja/blockdiagdesign/index.rst:75
+msgid "ノードの大きさを確定する"
+msgstr ""
+
+# e5314a25627c47f990543fbd5fd4267f
+#: ../../../sources/ja/blockdiagdesign/index.rst:77
+msgid "cell-size を元にノードの大きさを確定させる"
+msgstr ""
+
+# 816183d4651f43f3bba70a3529c32e43
+#: ../../../sources/ja/blockdiagdesign/index.rst:79
+msgid "例: diamond のツノ"
+msgstr ""
+
+# e2598b0929594b79a3097ec16bb77a62
+#: ../../../sources/ja/blockdiagdesign/index.rst:80
+msgid "label-size は変更しないこと"
+msgstr ""
+
+# 0fbb7db54786488e816ed266c3f9abff
+#: ../../../sources/ja/blockdiagdesign/index.rst:82
+msgid "スプレッドシートの大きさを確定する"
+msgstr ""
+
+# b7ff25839b8945b383bcbbba5d56716f
+#: ../../../sources/ja/blockdiagdesign/index.rst:84
+msgid ""
+"各ノードの node-size にあわせて、スプレッドシートの各 cell-size を確定させる"
+msgstr ""
+
+# 78de32cfa7704e01a6b6e2f092252d1d
+#: ../../../sources/ja/blockdiagdesign/index.rst:88
+msgid ""
+"ラベルの描画領域が label-size に入りきらない場合、**横幅** を 20% 大きくする"
+msgstr ""
+
+# fe2f1b81fbe74c1ea11e68ffe0723171
+#: ../../../sources/ja/blockdiagdesign/index.rst:89
+msgid ""
+"ラベルの描画領域が label-size に入りきらない場合、**縦幅** を 20% 大きくする"
+msgstr ""
+
+# 03174967ad074992b640a4af304b3b08
+#: ../../../sources/ja/blockdiagdesign/index.rst:90
+msgid "label-size が大きくなるにあわせて、node-size の調整を行う"
+msgstr ""
+
+# a518ebf6d58240a5a43b290b27b5e4f7
+#: ../../../sources/ja/blockdiagdesign/index.rst:94
+msgid "メモ"
+msgstr ""
+
+# 38e6bfc958a74f208947b62d91d4f83b
+#: ../../../sources/ja/blockdiagdesign/index.rst:95
+msgid ""
+"diagram.show_spread_sheet = true みたいなオプションがあるとデバッグしやすい?"
+msgstr ""
+
+# da31d6e9416c450cbf06e352a4838ff6
+#: ../../../sources/ja/blockdiagdesign/index.rst:97
+msgid "HTML に合わせるのであれば colspan, rowspan という名称となる"
+msgstr ""
+
+# 337a3bdc33aa480db269e0ec7c1e17c2
+#: ../../../sources/ja/blockdiagdesign/index.rst:98
+msgid "ピクセル単位ではないので width, height という名称は望ましくない"
+msgstr ""
+
+# bd434206e18749b3b0dd78425c25015e
+#: ../../../sources/ja/blockdiagdesign/index.rst:99
+msgid "右側を nマス開けるための設定(colspan/仮)とどう結びつけるべきか。"
+msgstr ""
+
+# 46ba33ec764d40ed9f3fc48eb2ff24e8
+#: ../../../sources/ja/blockdiagdesign/index.rst:100
+msgid "colwidth = 2, width = 100 と指定されたらどうなるのか?"
+msgstr ""
+
+# 89269bf38c674b5883bf10613ecc9621
+#: ../../../sources/ja/blockdiagdesign/index.rst:101
+msgid "テスト可能にしたい..."
+msgstr ""
+
+# 89d6abb9555442ba80d951bc49e28280
+#: ../../../sources/ja/blockdiagdesign/index.rst:102
+msgid "以前書いたメモ::"
+msgstr ""
