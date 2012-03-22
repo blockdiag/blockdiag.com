@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:01\n"
+"POT-Creation-Date: 2012-03-22 18:55\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -28,8 +28,9 @@ msgid ""
 "This is demo program for nwdiag. You can get rendered diagrams after "
 "inputting 'Diagram source'."
 msgstr ""
-"このページは nwdiag を Web ブラウザから利用できるようにしたデモページです。"
-"入力フォームのテキストをリアルタイムに変換し、ブラウザ上で閲覧することができます。"
+"このページは nwdiag を Web ブラウザから利用できるようにしたデモページです。入"
+"力フォームのテキストをリアルタイムに変換し、ブラウザ上で閲覧することができま"
+"す。"
 
 # a30eb07600ef4feb9e8621151b368b5f
 #: ../../../sources/ja/nwdiag/demo.rst:10
@@ -56,8 +57,9 @@ msgstr "ネットワーク図生成ツール nwdiag"
 msgid ""
 "`nwdiag` generates network-diagram image file from .diag file. .diag file is "
 "similar to DOT file (graphviz's)."
-msgstr "nwdiag はシンプルなテキストからネットワーク図を生成するシーケンス図生成ツールです。"
-
+msgstr ""
+"nwdiag はシンプルなテキストからネットワーク図を生成するシーケンス図生成ツール"
+"です。"
 
 # 582e2976a90d48a1908934cd4f46fc20
 #: ../../../sources/ja/nwdiag/index.rst:8
@@ -69,7 +71,8 @@ msgstr "nwdiag を用いると以下のような図が簡単に生成できま�
 msgid ""
 "And, `nwdiag` package includes `rackdiag` which generates rack-structure "
 "diagram images."
-msgstr "また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+msgstr ""
+"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
 
 # e34d90960e734f2c8f6fb29915af05de
 #: ../../../sources/ja/nwdiag/introduction.rst:3
@@ -128,7 +131,8 @@ msgstr ""
 msgid ""
 "Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
-msgstr "書式の詳細については :ref:`nwdiag-sample-diagrams` を参照してください。"
+msgstr ""
+"書式の詳細については :ref:`nwdiag-sample-diagrams` を参照してください。"
 
 # c5aab038aace40518b91ea2aefa82a02
 #: ../../../sources/ja/nwdiag/introduction.rst:45
@@ -156,15 +160,16 @@ msgid ""
 "nwdiag uses TrueType Font to render text. nwdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
 msgstr ""
-"nwdiag は文字の描画に TrueType フォントを利用します。"
-"指定がない場合 nwdiag は自動的にフォントを検索しますが、"
-"フォントが見つからない場合もしくはフォントを指定したい場合は"
-"-f (-font) オプションを利用します。"
+"nwdiag は文字の描画に TrueType フォントを利用します。指定がない場合 nwdiag は"
+"自動的にフォントを検索しますが、フォントが見つからない場合もしくはフォントを"
+"指定したい場合は-f (-font) オプションを利用します。"
 
 # 7fccd0db7cbd4286ab608c4c04e03215
 #: ../../../sources/ja/nwdiag/introduction.rst:73
 msgid "If you always use same font, write $HOME/.nwdiagrc"
-msgstr "もし常に同じ設定を利用する場合は $HOME/.nwdiagrc に以下の記述をするとよいでしょう。"
+msgstr ""
+"もし常に同じ設定を利用する場合は $HOME/.nwdiagrc に以下の記述をするとよいで"
+"しょう。"
 
 # 509b89ea4c3d4b68aee648c61867a7e5
 #: ../../../sources/ja/nwdiag/introduction.rst:83
@@ -264,9 +269,9 @@ msgid ""
 "`sphinxcontrib-nwdiag` is sphinx extension for embedding nwdiag diagrams. "
 "You can embed block diagrams with `nwdiag` directive."
 msgstr ""
-"`sphinxcontrib-nwdiag を利用すると Sphinx の拡張機能として"
-"nwdiag によるネットワーク図を埋め込むことができます。"
-"ネットワーク図の埋め込みには `nwdiag` ディレクティブを利用します。"
+"`sphinxcontrib-nwdiag を利用すると Sphinx の拡張機能としてnwdiag によるネット"
+"ワーク図を埋め込むことができます。ネットワーク図の埋め込みには `nwdiag` ディ"
+"レクティブを利用します。"
 
 # 2728248a59f44d869e9e5d664dfa4580
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:29
@@ -278,7 +283,8 @@ msgstr "設定"
 msgid ""
 "You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
 msgstr ""
-"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得することができます。"
+"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得"
+"することができます。"
 
 # 30d7983affd9487183a992c3920e64ca
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:36
@@ -296,9 +302,9 @@ msgid ""
 "To enable this extension, add ``sphinxcontrib.nwdiag`` module to extensions "
 "option at :file:`conf.py`."
 msgstr ""
-"Sphinxcontrib-nwdiag を利用するには :file:`conf.py` を編集します。"
-"extensions 変数に ``sphinxcontrib.nwdiag`` を追加し、"
-"必要に応じてオプションを記載します。"
+"Sphinxcontrib-nwdiag を利用するには :file:`conf.py` を編集します。extensions "
+"変数に ``sphinxcontrib.nwdiag`` を追加し、必要に応じてオプションを記載しま"
+"す。"
 
 # a82474d43ea5478e85f016eb358be085
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:59
@@ -313,10 +319,11 @@ msgid ""
 "blockfile. In another case, nwdiag directive takes code block as source "
 "script."
 msgstr ""
-"`seqdiag` ディレクティブは指定した箇所にネットワーク図を埋め込みます。"
-"ネットワークの元となるテキストはファイルもしくはテキストブロックで渡すことができます。"
-"ファイルを指定する場合は ``nwdiag`` ディレクティブの引数にファイル名を指定します。"
-"テキストブロックを指定する場合は ``nwdiag`` ディレクティブ以降の行にブロックを記述します。"
+"`seqdiag` ディレクティブは指定した箇所にネットワーク図を埋め込みます。ネット"
+"ワークの元となるテキストはファイルもしくはテキストブロックで渡すことができま"
+"す。ファイルを指定する場合は ``nwdiag`` ディレクティブの引数にファイル名を指"
+"定します。テキストブロックを指定する場合は ``nwdiag`` ディレクティブ以降の行"
+"にブロックを記述します。"
 
 # e2f8c926eb404a4c818d4f6a9f99c7f6
 # bb3dfd44da2842b1bad48f15de317b24
@@ -340,8 +347,8 @@ msgid ""
 "This directive is able to generate description table using ``desctable`` "
 "option and `description` attribute"
 msgstr ""
-"各ノードに対する説明を記載する場合は `description` 属性と ``desctable`` オプションを使用して、"
-"ノードの説明表を生成することができます。"
+"各ノードに対する説明を記載する場合は `description` 属性と ``desctable`` オプ"
+"ションを使用して、ノードの説明表を生成することができます。"
 
 # 34b9f399bac7409da6e9a8764fb7a6cf
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:95
@@ -352,6 +359,36 @@ msgstr "入力::"
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:111
 msgid "Output"
 msgstr "出力"
+
+# 6c65fd29359f490bbf966f85794a86d7
+#: ../../../sources/ja/A:1
+msgid "A"
+msgstr ""
+
+# 0b49c0bc1f594ecfaf4ac138c83d02df
+#: ../../../sources/ja/web server01:1
+msgid "web server01"
+msgstr ""
+
+# 4afc3f287abe4e1084938b200901ded7
+#: ../../../sources/ja/B:1
+msgid "B"
+msgstr ""
+
+# 9e045a50f533497da67704eca95749b6
+#: ../../../sources/ja/web server02:1
+msgid "web server02"
+msgstr ""
+
+# bff8cf545e46434f87c5137b887f5055
+#: ../../../sources/ja/C:1
+msgid "C"
+msgstr ""
+
+# 9290022b71d34a8d9588b91a93ebc54c
+#: ../../../sources/ja/database server:1
+msgid "database server"
+msgstr ""
 
 # fce6905ef7a34d309433357649ae0d58
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:129
@@ -364,10 +401,10 @@ msgid ""
 "This is a path for renderring fonts. You can use truetype font (.ttf) file "
 "path. You can specify single path with string, or multiple paths using array."
 msgstr ""
-"nwdiag で利用する TrueType フォントへのパスを指定します。"
-" ``nwdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することができます。"
-"複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配列を指定することで"
-"環境の違いを吸収することができます。"
+"nwdiag で利用する TrueType フォントへのパスを指定します。 "
+"``nwdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
+"きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
+"列を指定することで環境の違いを吸収することができます。"
 
 # fffb10b7878d4b928e3766b2d9198054
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:142
@@ -375,5 +412,6 @@ msgid ""
 "If :confval:`nwdiag_antialias`: is True, nwdiag generates images with anti-"
 "alias filter."
 msgstr ""
-":confval:`nwdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うかどうかを指定します。"
-" `True` が指定された場合、アンチエイリアス処理を実行します(初期値: `False` )。"
+":confval:`nwdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うかど"
+"うかを指定します。 `True` が指定された場合、アンチエイリアス処理を実行します"
+"(初期値: `False` )。"

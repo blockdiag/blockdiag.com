@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:01\n"
+"POT-Creation-Date: 2012-03-22 18:55\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -526,6 +526,53 @@ msgstr ""
 # 83c28f6ea7124fda82599796b5aa2566
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:228
 msgid "description 属性の設定例"
+msgstr ""
+
+# 47c2f5c6156148dea5193aa9ca6bef49
+#: ../../../sources/ja/1:1
+msgid "1"
+msgstr ""
+
+# 2ce1ca6d259346cea77a9c321cb3a4f6
+#: ../../../sources/ja/入力:1
+msgid "入力"
+msgstr ""
+
+# 4c8795591eee4072942804f65091ed7b
+#: ../../../sources/ja/牛肉, 人参, 玉ねぎ, じゃがいも,
+#: カレー粉, 水:1
+msgid "牛肉, 人参, 玉ねぎ, じゃがいも, カレー粉, 水"
+msgstr ""
+
+# 6e8596b13da44a1c86ec40e847397711
+#: ../../../sources/ja/2:1
+msgid "2"
+msgstr ""
+
+# a3fe5ae4b309430b94a909978c29e74e
+#: ../../../sources/ja/処理:1
+msgid "処理"
+msgstr ""
+
+# 48e0180951fa4409be83687f6e71688d
+#: ../../../sources/ja/じっくりコトコト:1
+msgid "じっくりコトコト"
+msgstr ""
+
+# 08d70c846c9f4a10ab79f34c38b00447
+#: ../../../sources/ja/3:1
+msgid "3"
+msgstr ""
+
+# 5c67f2d6d3804a439ed87336b26f2716
+#: ../../../sources/ja/出力:1
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:111
+msgid "出力"
+msgstr ""
+
+# babb59c04e4e470fb677da7af0bce0db
+#: ../../../sources/ja/ウマウマカレー:1
+msgid "ウマウマカレー"
 msgstr ""
 
 # fa5076e97f5942008465b0e5037f40d7
@@ -1297,9 +1344,34 @@ msgstr ""
 msgid "入力::"
 msgstr ""
 
-# 5c67f2d6d3804a439ed87336b26f2716
-#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:111
-msgid "出力"
+# b32681a83bc2439f8a935362c7a900a8
+#: ../../../sources/ja/A:1
+msgid "A"
+msgstr ""
+
+# 3514f25e676049389543600ad30169c5
+#: ../../../sources/ja/browsers in each client:1
+msgid "browsers in each client"
+msgstr ""
+
+# f1cf699792fc4b028bf75863b2efb144
+#: ../../../sources/ja/B:1
+msgid "B"
+msgstr ""
+
+# 865ef9fbee904bdeb85d9f98d677fbc4
+#: ../../../sources/ja/web server:1
+msgid "web server"
+msgstr ""
+
+# 2d05b78f2f7c4757a412623e2ec2deb5
+#: ../../../sources/ja/C:1
+msgid "C"
+msgstr ""
+
+# 609fcac6345d46a6b5b80c4f1d921634
+#: ../../../sources/ja/database server:1
+msgid "database server"
 msgstr ""
 
 # 3b4a21efac0544f9b76d2c0a167d266c

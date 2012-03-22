@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:01\n"
+"POT-Creation-Date: 2012-03-22 18:48\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -54,9 +54,9 @@ msgstr ""
 msgid "アクティビティ図 (actdiag コマンド)"
 msgstr ""
 
-# 00ef7e58440c47bb8d11fcd738b0e0c0
+# 376f0b1621c445bea9671397be08871b
 #: ../../../sources/ja/index.rst:25
-msgid "論理ネットワーク図 (actdiag コマンド)"
+msgid "論理ネットワーク図 (nwdiag コマンド)"
 msgstr ""
 
 # dca7cae666f14e5db426026e7b13d8cf
@@ -88,19 +88,19 @@ msgid "Table of contents"
 msgstr ""
 
 # 92248303273346718b6e321c1f2c84cb
-#: ../../../sources/ja/index.rst:46
+#: ../../../sources/ja/index.rst:47
 msgid "わがままドリブン開発"
 msgstr ""
 
 # a8c4e72f178843d3af1c13d9b43a2b11
-#: ../../../sources/ja/index.rst:47
+#: ../../../sources/ja/index.rst:48
 msgid ""
 "`blockdiag` シリーズは手探りで開発されているため、 利用したユーザーの意見・要"
 "望によって機能拡張やレイアウトエンジンの調整が行われています。"
 msgstr ""
 
 # 2bdd2288b80649d88d20c030b320abb3
-#: ../../../sources/ja/index.rst:50
+#: ../../../sources/ja/index.rst:51
 msgid ""
 "そのため、使用感や違和感、「こういうのがあればいいのに」といった意見を常に募"
 "集しています。 新しい図のサポートなども頂いたご意見をベースに進めていく予定で"
@@ -108,82 +108,82 @@ msgid ""
 msgstr ""
 
 # d08ed3e18812454496a1ba26e8266503
-#: ../../../sources/ja/index.rst:53
+#: ../../../sources/ja/index.rst:54
 msgid ""
 "Twitter、イシュートラッカー、メールなど、どのような方法でもかまいませんので "
 "お気づきのところを教えて下さい。"
 msgstr ""
 
 # eb3bc9c818624190ba9be5c294a416e4
-#: ../../../sources/ja/index.rst:58
+#: ../../../sources/ja/index.rst:59
 msgid "Resources"
 msgstr ""
 
 # 261f97c1d145415ab5e4d0d27e867c81
-#: ../../../sources/ja/index.rst:60
+#: ../../../sources/ja/index.rst:61
 msgid ""
 "Takeshi KOMIYA ( `@tk0miya <http://twitter.com/tk0miya>`_ ) <i.tkomiya at "
 "gmail.com>"
 msgstr ""
 
 # 8743a485c98f4f71938733334382774b
-#: ../../../sources/ja/index.rst:61
+#: ../../../sources/ja/index.rst:62
 msgid ""
 "Google Groups: `<http://groups.google.com/group/blockdiag-discuss/topics>`_"
 msgstr ""
 
 # 50c426a56bbe419da2d2d22c01adbe55
-#: ../../../sources/ja/index.rst:62
+#: ../../../sources/ja/index.rst:63
 msgid "Twitter: #blockdiag"
 msgstr ""
 
 # 4c9def2ddc454b809de766ed06760c59
-#: ../../../sources/ja/index.rst:63
+#: ../../../sources/ja/index.rst:64
 msgid "Interactive Shell: `<http://interactive.blockdiag.com/>`_"
 msgstr ""
 
 # f04013a135ee486ba3d04400ab68c96e
-#: ../../../sources/ja/index.rst:65
+#: ../../../sources/ja/index.rst:66
 msgid "PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_"
 msgstr ""
 
 # da8531690a994e12b206aef442004a72
-#: ../../../sources/ja/index.rst:66
+#: ../../../sources/ja/index.rst:67
 msgid "Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_"
 msgstr ""
 
 # 6558ccce7ffa45c8910cc5817ea7e1bc
-#: ../../../sources/ja/index.rst:68
+#: ../../../sources/ja/index.rst:69
 msgid "PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_"
 msgstr ""
 
 # e6a07af18f9f4a9c9b129a035aaf862a
-#: ../../../sources/ja/index.rst:69
+#: ../../../sources/ja/index.rst:70
 msgid "Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_"
 msgstr ""
 
 # b0067012ae5e46418e550b0d11ad8574
-#: ../../../sources/ja/index.rst:71
+#: ../../../sources/ja/index.rst:72
 msgid "PyPI: `<http://pypi.python.org/pypi/actdiag/>`_"
 msgstr ""
 
 # c7f5c4948dca4b6793d293d581a570ff
-#: ../../../sources/ja/index.rst:72
+#: ../../../sources/ja/index.rst:73
 msgid "Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_"
 msgstr ""
 
 # 2d90334ac4e14fcc9bfa0d3f2f30cf21
-#: ../../../sources/ja/index.rst:74
+#: ../../../sources/ja/index.rst:75
 msgid "PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_"
 msgstr ""
 
 # bd106a11145742998e3eb70884f8ea06
-#: ../../../sources/ja/index.rst:75
+#: ../../../sources/ja/index.rst:76
 msgid "Repository: `<https://bitbucket.org/tk0miya/nwdiag/>`_"
 msgstr ""
 
 # a056bad9053547c4a3a9d994931bcc7d
-#: ../../../sources/ja/index.rst:76
+#: ../../../sources/ja/index.rst:77
 msgid ""
 "Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?"
 "status=new&status=open>`_"
