@@ -142,3 +142,18 @@ Configuration File Options
 
    If :confval:`actdiag_antialias`: is True, actdiag generates images
    with anti-alias filter.
+
+.. confval:: actdiag_html_image_format
+
+   You can specify image format on converting docs to HTML
+   using :confval:`actdiag_html_image_format` .
+   :confval:`actdiag_html_image_format` accepts 'PNG' or 'SVG' .
+
+.. confval:: actdiag_tex_image_format
+
+   You can specify image format on converting docs to TeX
+   using :confval:`actdiag_html_image_format` .
+   :confval:`actdiag_html_image_format` accepts 'PNG' or 'PDF' .
+
+   If you set PDF, you will get clear diagram images as vector format.
+   (*) reportlab is needed .

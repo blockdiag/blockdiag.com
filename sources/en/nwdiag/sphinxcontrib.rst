@@ -141,3 +141,18 @@ Configuration File Options
 
    If :confval:`nwdiag_antialias`: is True, nwdiag generates images
    with anti-alias filter.
+
+.. confval:: nwdiag_html_image_format
+
+   You can specify image format on converting docs to HTML
+   using :confval:`nwdiag_html_image_format` .
+   :confval:`nwdiag_html_image_format` accepts 'PNG' or 'SVG' .
+
+.. confval:: nwdiag_tex_image_format
+
+   You can specify image format on converting docs to TeX
+   using :confval:`nwdiag_html_image_format` .
+   :confval:`nwdiag_html_image_format` accepts 'PNG' or 'PDF' .
+
+   If you set PDF, you will get clear diagram images as vector format.
+   (*) reportlab is needed .
