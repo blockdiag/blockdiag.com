@@ -127,3 +127,18 @@ Configuration File Options
 
    If :confval:`seqdiag_antialias`: is True, seqdiag generates images
    with anti-alias filter.
+
+.. confval:: seqdiag_html_image_format
+
+   You can specify image format on converting docs to HTML
+   using :confval:`seqdiag_html_image_format` .
+   :confval:`seqdiag_html_image_format` accepts 'PNG' or 'SVG' .
+
+.. confval:: seqdiag_tex_image_format
+
+   You can specify image format on converting docs to TeX
+   using :confval:`seqdiag_html_image_format` .
+   :confval:`seqdiag_html_image_format` accepts 'PNG' or 'PDF' .
+
+   If you set PDF, you will get clear diagram images as vector format.
+   (*) reportlab is needed .

@@ -127,3 +127,18 @@ Configuration File Options
 
    If :confval:`blockdiag_antialias`: is True, blockdiag generates images
    with anti-alias filter.
+
+.. confval:: blockdiag_html_image_format
+
+   You can specify image format on converting docs to HTML
+   using :confval:`blockdiag_html_image_format` .
+   :confval:`blockdiag_html_image_format` accepts 'PNG' or 'SVG' .
+
+.. confval:: blockdiag_tex_image_format
+
+   You can specify image format on converting docs to TeX
+   using :confval:`blockdiag_html_image_format` .
+   :confval:`blockdiag_html_image_format` accepts 'PNG' or 'PDF' .
+
+   If you set PDF, you will get clear diagram images as vector format.
+   (*) reportlab is needed .
