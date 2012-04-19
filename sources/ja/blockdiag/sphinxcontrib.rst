@@ -150,6 +150,11 @@ Sphinx プロジェクトで `sphinxcontrib-blockdiag` を利用するには。
 
    `True` が指定された場合アンチエイリアス処理を実行します(初期値： `False` )。
 
+.. confval:: blockdiag_html_image_format
+
+   :confval:`blockdiag_html_image_format` は HTML に変換する際に
+   利用する画像形式を指定します。PNG もしくは SVG を指定することができます。
+
 .. confval:: blockdiag_tex_image_format
 
    :confval:`blockdiag_tex_image_format` は TeX に変換する際に
