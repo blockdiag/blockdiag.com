@@ -70,11 +70,11 @@ You can specify fonts with -f (--font) option
 
    $ nwdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
-If you always use same font, write $HOME/.nwdiagrc
+If you always use same font, write $HOME/.blockdiagrc
 
 .. code-block:: bash
 
-   $ cat $HOME/.nwdiagrc
+   $ cat $HOME/.blockdiagrc
    [nwdiag]
    fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 

@@ -70,11 +70,11 @@ You can specify fonts with -f (--font) option
 
    $ actdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
-If you always use same font, write $HOME/.actdiagrc
+If you always use same font, write $HOME/.blockdiagrc
 
 .. code-block:: bash
 
-   $ cat $HOME/.actdiagrc
+   $ cat $HOME/.blockdiagrc
    [actdiag]
    fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-22 18:55\n"
+"POT-Creation-Date: 2012-06-06 14:22\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -1409,15 +1409,22 @@ msgid ""
 "`True` が指定された場合アンチエイリアス処理を実行します(初期値： `False` )。"
 msgstr ""
 
-# 53bb9d85362c4f34af3265fa8b1a8963
+# 8a722a9ca1464ec7a7ddefba2147ae2a
 #: ../../../sources/ja/blockdiag/sphinxcontrib.rst:155
+msgid ""
+":confval:`blockdiag_html_image_format` は HTML に変換する際に 利用する画像形"
+"式を指定します。PNG もしくは SVG を指定することができます。"
+msgstr ""
+
+# 53bb9d85362c4f34af3265fa8b1a8963
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:160
 msgid ""
 ":confval:`blockdiag_tex_image_format` は TeX に変換する際に 利用する画像形式"
 "を指定します。PNG もしくは PDF を指定することができます。"
 msgstr ""
 
 # e293b8330d6d4039b10bb2926657d163
-#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:158
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:163
 msgid ""
 "PDF を利用するとベクター形式でブロック図を埋め込むことができます。 "
 "( `blockdiag` の PDF 出力機能を利用するため `reportlab` のインストールが必要"

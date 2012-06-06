@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-22 18:58\n"
+"POT-Creation-Date: 2012-06-06 14:22\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -89,7 +89,6 @@ msgstr "図全体の設定"
 
 # 003998488aa44b0993dbefad1c6854f5
 #: ../../../sources/ja/seqdiag/examples.rst:68
-#, fuzzy
 msgid "TIPS: changing order of elements"
 msgstr "TIPS: ノードの並び替え方"
 
@@ -99,8 +98,8 @@ msgid ""
 "If you want to changing order of elements, define elements you want to "
 "layout. seqdiag sorts elements by order they appear."
 msgstr ""
-"ノードの並べ替えを行いたい場合は、図の先頭で並び替えたい順にノードを宣言します。"
-"seqdiag は出現順にノードを並べ替えます。"
+"ノードの並べ替えを行いたい場合は、図の先頭で並び替えたい順にノードを宣言しま"
+"す。seqdiag は出現順にノードを並べ替えます。"
 
 # 6f6d4bfc6d7043169763821dde1f4658
 #: ../../../sources/ja/seqdiag/index.rst:3
@@ -213,9 +212,9 @@ msgstr ""
 
 # 2c710dc0abea4278a5e98fafbc21d0b4
 #: ../../../sources/ja/seqdiag/introduction.rst:74
-msgid "If you always use same font, write $HOME/.seqdiagrc"
+msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に同じ設定を利用する場合は $HOME/.seqdiagrc に以下の記述をするとよいで"
+"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
 "しょう。"
 
 # 5268874756c142fe8169784cae7c46df
@@ -410,3 +409,26 @@ msgstr ""
 ":confval:``seqdiag_antialias``: は PNG 画像生成時にアンチエイリアス処理を行う"
 "かどうかを指定します。`True` が指定された場合、アンチエイリアス処理を実行しま"
 "す(初期値: `False` )。"
+
+# 1a07b939ab2446bea8598c6fb74a96dd
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:133
+msgid ""
+"You can specify image format on converting docs to HTML using :confval:"
+"`seqdiag_html_image_format` . :confval:`seqdiag_html_image_format` accepts "
+"'PNG' or 'SVG' ."
+msgstr ""
+
+# 9995a398ca634200b93156be0684c756
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:139
+msgid ""
+"You can specify image format on converting docs to TeX using :confval:"
+"`seqdiag_html_image_format` . :confval:`seqdiag_html_image_format` accepts "
+"'PNG' or 'PDF' ."
+msgstr ""
+
+# 12a0a4fbb838499aaa085b1dec40948e
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:143
+msgid ""
+"If you set PDF, you will get clear diagram images as vector format. (*) "
+"reportlab is needed ."
+msgstr ""
