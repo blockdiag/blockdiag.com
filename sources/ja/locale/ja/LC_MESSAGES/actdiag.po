@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-22 18:55\n"
+"POT-Creation-Date: 2012-06-06 14:22\n"
 "PO-Revision-Date: 2011-11-30 10:58+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -168,10 +168,9 @@ msgstr ""
 
 # ce67367380a442a59afde212997608cb
 #: ../../../sources/ja/actdiag/introduction.rst:73
-msgid "If you always use same font, write $HOME/.actdiagrc"
+msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に設定を利用する場合は $HOME/.actdiagrc に以下の記述をするとよいでしょ"
-"う"
+"もし常に設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいでしょう"
 
 # 3964db3952d749f7a2b0521b69efbbc9
 #: ../../../sources/ja/actdiag/introduction.rst:83
@@ -365,3 +364,26 @@ msgstr ""
 ":confval:`actdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うか"
 "どうかを指定します。 `True` が指定された場合、アンチエイリアス処理を実行しま"
 "す(初期値: `False` )。"
+
+# ba8679332b5a4f318ac2b64104224850
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:148
+msgid ""
+"You can specify image format on converting docs to HTML using :confval:"
+"`actdiag_html_image_format` . :confval:`actdiag_html_image_format` accepts "
+"'PNG' or 'SVG' ."
+msgstr ""
+
+# 81cdf23b03df4c12a271179b4480fd6a
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:154
+msgid ""
+"You can specify image format on converting docs to TeX using :confval:"
+"`actdiag_html_image_format` . :confval:`actdiag_html_image_format` accepts "
+"'PNG' or 'PDF' ."
+msgstr ""
+
+# e1bd27c094dd4f4ca0026bbf786ff911
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:158
+msgid ""
+"If you set PDF, you will get clear diagram images as vector format. (*) "
+"reportlab is needed ."
+msgstr ""

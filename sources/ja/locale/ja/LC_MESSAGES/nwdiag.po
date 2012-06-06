@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-22 18:55\n"
+"POT-Creation-Date: 2012-06-06 14:22\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -166,9 +166,9 @@ msgstr ""
 
 # 7fccd0db7cbd4286ab608c4c04e03215
 #: ../../../sources/ja/nwdiag/introduction.rst:73
-msgid "If you always use same font, write $HOME/.nwdiagrc"
+msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に同じ設定を利用する場合は $HOME/.nwdiagrc に以下の記述をするとよいで"
+"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
 "しょう。"
 
 # 509b89ea4c3d4b68aee648c61867a7e5
@@ -415,3 +415,26 @@ msgstr ""
 ":confval:`nwdiag_antialias` は PNG 画像生成時にアンチエイリアス処理を行うかど"
 "うかを指定します。 `True` が指定された場合、アンチエイリアス処理を実行します"
 "(初期値: `False` )。"
+
+# bbd889dd648447c18335fd80855ffb86
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:147
+msgid ""
+"You can specify image format on converting docs to HTML using :confval:"
+"`nwdiag_html_image_format` . :confval:`nwdiag_html_image_format` accepts "
+"'PNG' or 'SVG' ."
+msgstr ""
+
+# 63dcbe23dafa451184f5edf265791fa9
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:153
+msgid ""
+"You can specify image format on converting docs to TeX using :confval:"
+"`nwdiag_html_image_format` . :confval:`nwdiag_html_image_format` accepts "
+"'PNG' or 'PDF' ."
+msgstr ""
+
+# dfaf3b19270540b299e3936681cd1948
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:157
+msgid ""
+"If you set PDF, you will get clear diagram images as vector format. (*) "
+"reportlab is needed ."
+msgstr ""

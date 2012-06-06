@@ -71,11 +71,11 @@ You can specify fonts with -f (--font) option
    $ seqdiag -f /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf simple.diag
 
 
-If you always use same font, write $HOME/.seqdiagrc
+If you always use same font, write $HOME/.blockdiagrc
 
 .. code-block:: bash
 
-   $ cat $HOME/.seqdiagrc
+   $ cat $HOME/.blockdiagrc
    [seqdiag]
    fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 
