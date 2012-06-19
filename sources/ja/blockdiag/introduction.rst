@@ -85,6 +85,20 @@ setuptools に対応していないため、手動で egg-info を作成しま�
 
    $ sudo easy_install blockdiag
 
+CentOS 6.2 の場合
+---------------------
+yum コマンドで依存パッケージをインストールします。
+
+.. code-block:: bash
+
+   $ sudo yum install python-setuptools python-imaging ipa-gothic-fonts
+
+その後、easy_install コマンドにて `blockdiag` をインストールします。
+
+.. code-block:: bash
+
+   $ sudo easy_install blockdiag
+
 MacOSX (MacPorts) の場合
 ------------------------
 port コマンドで依存パッケージをインストールします。
