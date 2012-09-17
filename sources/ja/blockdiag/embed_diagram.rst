@@ -80,6 +80,17 @@ Rabbit は blockdiag の埋込みをサポートしており、
 .. _Rabbit: http://rabbit-shockers.org/
 
 
+asciidoc に埋め込む
+====================
+`asciidoc`_ はテキスト文書から各種フォーマットに変換するドキュメント生成ツールです。
+
+asciidoc にブロック図を取り込むには `asciidoc-diag-filter`_ を利用します。
+
+.. _asciidoc: http://www.methods.co.nz/asciidoc/
+.. _asciidoc-diag-filter: https://code.google.com/p/asciidoc-diag-filter/
+
+
+
 API 経由で取得する
 ==================
 
