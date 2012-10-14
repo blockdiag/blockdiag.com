@@ -31,7 +31,8 @@ extensions = ['sphinx.ext.todo',
               'sphinxcontrib.seqdiag',
               'sphinxcontrib.actdiag',
               'sphinxcontrib.nwdiag',
-              'sphinxcontrib.rackdiag']
+              'sphinxcontrib.rackdiag',
+              'sphinxcontrib.packetdiag']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -280,6 +281,9 @@ nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 nwdiag_antialias = True
 rackdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 #rackdiag_antialias = True
+packetdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+packetdiag_antialias = True
+packetdiag_html_image_format = 'SVG'
 
 
 from sphinx import addnodes
