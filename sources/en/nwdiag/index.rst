@@ -25,7 +25,9 @@ You can get diagrams like this.
      }
    }
 
-And, `nwdiag` package includes `rackdiag` which generates rack-structure diagram images.
+And, `nwdiag` package includes more scripts called `rackdiag` and `packetdiag` .
+
+`rackdiag` generates rack-structure diagram images:
 
 .. rackdiag::
 
@@ -41,11 +43,25 @@ And, `nwdiag` package includes `rackdiag` which generates rack-structure diagram
      8: L3 Switch
    }
 
+`packetdiag` generates packet header diagram images:
+
+.. packetdiag::
+
+   packetdiag {
+     0-7: Source Port
+     8-15: Destination Port
+     16-31: Sequence Number
+     32-35: AckNo
+     36-39: Offset
+     40-47: Reserved
+   }
+
 
 .. toctree::
 
    introduction
    nwdiag-examples
    rackdiag-examples
+   packetdiag-examples
    sphinxcontrib
    demo
