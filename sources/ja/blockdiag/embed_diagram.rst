@@ -80,6 +80,15 @@ Rabbit は blockdiag の埋込みをサポートしており、
 .. _Rabbit: http://rabbit-shockers.org/
 
 
+Joomla に埋め込む
+====================
+`Joomla`_ は PHP で書かれた CMS です。
+
+Joomla にブロック図を取り込むには `Plugin blockdiag`_ を利用します。
+
+.. _Joomla: http://www.joomla.org/
+
+
 asciidoc に埋め込む
 ====================
 `asciidoc`_ はテキスト文書から各種フォーマットに変換するドキュメント生成ツールです。
