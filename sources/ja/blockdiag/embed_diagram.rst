@@ -87,6 +87,7 @@ Joomla に埋め込む
 Joomla にブロック図を取り込むには `Plugin blockdiag`_ を利用します。
 
 .. _Joomla: http://www.joomla.org/
+.. _Plugin blockdiag: http://extensions.joomla.fr/extensions/liste-des-derniers-fichiers/1790-accueil/4630-plugin-blockdiag
 
 
 asciidoc に埋め込む
