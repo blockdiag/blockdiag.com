@@ -22,5 +22,6 @@ You can get diagrams like this.
 
    introduction
    examples
+   embed_diagram
    sphinxcontrib
    demo
