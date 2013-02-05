@@ -1,7 +1,0 @@
-blockdiag {
-  A -> B -> C;
-
-  A [icon = "_static/feed-icon-legacy_orange.png"];
-  B [icon = "_static/feed-icon-legacy_blue.png"];
-  C [icon = "_static/feed-icon-legacy_purple.png"];
-}

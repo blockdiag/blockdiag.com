@@ -1,3 +1,0 @@
-blockdiag {
-   A -> B [label='text', fontsize=16];
-}

@@ -1,5 +1,0 @@
-blockdiag {
-   // Set color to edges.
-   A -> B [color = "#0000FF"];
-   B -> C [color = "red"];
-}

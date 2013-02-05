@@ -1,6 +1,0 @@
-blockdiag {
-   A -> B -> C -> D -> E;
-
-   // fold edge at C to D (D will be layouted at top level; left side)
-   C -> D [folded];
-}

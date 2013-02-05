@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-05 13:22\n"
+"POT-Creation-Date: 2013-02-05 13:41\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -361,10 +361,10 @@ msgstr "fontsize 属性の設定例"
 msgid "thick attribute to edges"
 msgstr "thick 属性の設定例"
 
-# ae6a4aa6ca874a7084a40361ca4822ea
+# e720b43371854953b68bfe8a23181e0e
 #: ../../../sources/ja/blockdiag/attributes/index.rst:2
-msgid "属性の説明"
-msgstr ""
+msgid "Attributes"
+msgstr "属性の説明"
 
 # 50beddc7ceac4575af88d73361c9fd99
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:3
@@ -390,7 +390,8 @@ msgstr "**ノードID** [ **属性名** = **設定値** ];"
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:18
 msgid ""
 "**node_id**  [ **attribute** = **value** , **attribute** = **value** , ... ];"
-msgstr "**ノードID** [ **属性名** = **設定値** , **属性名** = **設定値** , ...];"
+msgstr ""
+"**ノードID** [ **属性名** = **設定値** , **属性名** = **設定値** , ...];"
 
 # fc68f1b24142401786c0009c34b71f1e
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:23
@@ -400,7 +401,9 @@ msgstr "ノード属性の設定をします。"
 # 5293ac8e0c12444abcf8b518d253061d
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:41
 msgid "Specify label which is draw on the node. Default is **node_id**."
-msgstr "ノードに表示するラベルを定義します。省略された場合は **ノードID** が利用されます。"
+msgstr ""
+"ノードに表示するラベルを定義します。省略された場合は **ノードID** が利用され"
+"ます。"
 
 # d679c8a3110b444fa817456bc292afb1
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:45
@@ -423,12 +426,15 @@ msgid ""
 "Specify node background color. If **none** is specified, the node becomes "
 "transparent. Default is white."
 msgstr ""
-"ノードの背景色を指定します。 **none** を指定すると透明になります。指定がない場合は白です。"
+"ノードの背景色を指定します。 **none** を指定すると透明になります。指定がない"
+"場合は白です。"
 
 # d679c8a3110b444fa817456bc292afb1
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:78
 msgid "Specify shape of the node. Default is **box**. See :ref:`nodeshapes`."
-msgstr "ノードの形状を指定します。省略時は **box** です。詳細は :ref:`nodeshapes` を参照してください。"
+msgstr ""
+"ノードの形状を指定します。省略時は **box** です。詳細は :ref:`nodeshapes` を"
+"参照してください。"
 
 # f332154c63134689908660e72bfab9de
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:83
@@ -440,7 +446,8 @@ msgstr "形状はレンダラプラグインによって拡張することが可
 # c32faac9f0194c8c80fcc4a21e1b4836
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:101
 msgid "Set background image to the node. File path or URL can be used."
-msgstr "ノードに背景画像を張り付けます。ファイルパス、または URL で指定できます。"
+msgstr ""
+"ノードに背景画像を張り付けます。ファイルパス、または URL で指定できます。"
 
 # 23bb75db00964f57a52d099605972e1d
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:107
@@ -452,19 +459,24 @@ msgstr "ノードを重ね合わせた状態にします。"
 msgid ""
 "When you use desctable option on the Sphinx extension, draw a table below "
 "the blockdiag."
-msgstr "Sphinx 拡張で desctable オプションを利用している場合、図の下にテーブルを表示します。"
+msgstr ""
+"Sphinx 拡張で desctable オプションを利用している場合、図の下にテーブルを表示"
+"します。"
 
 # 50f857a7b86141f68aa67aed68e24fee
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:120
 msgid ""
 "Name and description will be shown on the column. **Node ID** or **label "
 "attribute** will be used to the name."
-msgstr "表示される列は name と description です。 name には **ノードID** または **label** 属性が利用されます。"
+msgstr ""
+"表示される列は name と description です。 name には **ノードID** または "
+"**label** 属性が利用されます。"
 
 # 0586979934f541eca90fc1e170329c41
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:127
 msgid "Set the image on the node. File path or URL can be used."
-msgstr "ノードにアイコンを設定します。ファイルパス、または URL で指定できます。"
+msgstr ""
+"ノードにアイコンを設定します。ファイルパス、または URL で指定できます。"
 
 # f1a61565983b48a9aea0ae7dc46d7e3d
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:133
@@ -529,49 +541,47 @@ msgstr "description 属性の設定例"
 # 47c2f5c6156148dea5193aa9ca6bef49
 #: ../../../sources/ja/1:1
 msgid "1"
-msgstr ""
+msgstr "1"
 
-# 2ce1ca6d259346cea77a9c321cb3a4f6
-#: ../../../sources/ja/入力:1
-msgid "入力"
-msgstr ""
+# cb278ac4d4004a899d9d1a450898acde
+#: ../../../sources/ja/Input:1
+msgid "Input"
+msgstr "入力"
 
-# 4c8795591eee4072942804f65091ed7b
-#: ../../../sources/ja/牛肉, 人参, 玉ねぎ, じゃがいも,
-#: カレー粉, 水:1
-msgid "牛肉, 人参, 玉ねぎ, じゃがいも, カレー粉, 水"
-msgstr ""
+# ac737f23961346e9a27c70fbc1b6e67e
+#: ../../../sources/ja/Beef, carrots, potatoes, curry powder and water:1
+msgid "Beef, carrots, potatoes, curry powder and water"
+msgstr "Beef, carrots, potatoes, curry powder and water"
 
 # 6e8596b13da44a1c86ec40e847397711
 #: ../../../sources/ja/2:1
 msgid "2"
-msgstr ""
+msgstr "2"
 
-# a3fe5ae4b309430b94a909978c29e74e
-#: ../../../sources/ja/処理:1
-msgid "処理"
-msgstr ""
+# 6c2de7e24bde43049ac6f279552bf41b
+#: ../../../sources/ja/Process:1
+msgid "Process"
+msgstr "Process"
 
-# 48e0180951fa4409be83687f6e71688d
-#: ../../../sources/ja/じっくりコトコト:1
-msgid "じっくりコトコト"
-msgstr ""
+# baa28fdfb82541e8b762a2118f65cc0a
+#: ../../../sources/ja/Simmer and simmer:1
+msgid "Simmer and simmer"
+msgstr "Simmer and simmer"
 
 # 08d70c846c9f4a10ab79f34c38b00447
 #: ../../../sources/ja/3:1
 msgid "3"
-msgstr ""
+msgstr "3"
 
-# 5c67f2d6d3804a439ed87336b26f2716
-#: ../../../sources/ja/出力:1
-#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:111
-msgid "出力"
-msgstr ""
+# f2ef2b7c3b6d494b818912003d8bca8a
+#: ../../../sources/ja/Output:1
+msgid "Output"
+msgstr "Output"
 
-# babb59c04e4e470fb677da7af0bce0db
-#: ../../../sources/ja/ウマウマカレー:1
-msgid "ウマウマカレー"
-msgstr ""
+# 08407d94ba4b4613a5d3032cb2874ce8
+#: ../../../sources/ja/yum-yum curry:1
+msgid "yum-yum curry"
+msgstr "yum-yum curry"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:208
@@ -1422,6 +1432,11 @@ msgstr ""
 # 0f14cf768d544b26bb3bbb2a446b1ccc
 #: ../../../sources/ja/blockdiag/sphinxcontrib.rst:99
 msgid "入力::"
+msgstr ""
+
+# 5c67f2d6d3804a439ed87336b26f2716
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:111
+msgid "出力"
 msgstr ""
 
 # b32681a83bc2439f8a935362c7a900a8
