@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-06 14:22\n"
+"POT-Creation-Date: 2013-02-05 12:19\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -755,54 +755,87 @@ msgid ""
 "ンテーションに図を組み込むことができます。"
 msgstr ""
 
-# 6aedceaa98c54bf6a90aa412fe6dbe7d
+# 883c462388ca4005a9d6ae89539e9e94
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:84
+msgid "Joomla に埋め込む"
+msgstr ""
+
+# 924b5e44ee204ed5aee654a6e888bf74
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:85
+msgid "`Joomla`_ は PHP で書かれた CMS です。"
+msgstr ""
+
+# c1ec4cd2aaca4ef5ba5eed61e02b8e5c
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:87
+msgid "Joomla にブロック図を取り込むには `Plugin blockdiag`_ を利用します。"
+msgstr ""
+
+# 06e863f4472f4203b49baa77d86525d1
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:94
+msgid "asciidoc に埋め込む"
+msgstr ""
+
+# 53225fa305fb4d4c8114caa49663b3fb
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:95
+msgid ""
+"`asciidoc`_ はテキスト文書から各種フォーマットに変換するドキュメント生成ツー"
+"ルです。"
+msgstr ""
+
+# a6708d8b9d684a31b9b08fbfc6a597c1
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:97
+msgid ""
+"asciidoc にブロック図を取り込むには `asciidoc-diag-filter`_ を利用します。"
+msgstr ""
+
+# 6aedceaa98c54bf6a90aa412fe6dbe7d
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:105
 msgid "API 経由で取得する"
 msgstr ""
 
 # 46c4cd18e3ef41e4b3a6ba16feae34ed
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:86
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:107
 msgid ""
 ":ref:`interactive shell for blockdiag` では Web API を提供しています。 テキス"
 "トデータを送信すると SVG 形式のブロック図を取得することができます。"
 msgstr ""
 
 # 34295b6a77544cab9081d175a3bf9185
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:89
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:110
 msgid ""
 "Web API は http://blockdiag.appspot.com/image に対して、 以下のパラメータを含"
 "んだ GET リクエストを送ることで呼び出すことができます。"
 msgstr ""
 
 # f0f0ddc932844955803d9c893eb4431a
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:96
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:117
 msgid "パラメータ名"
 msgstr ""
 
 # 22f1909643604a8b99bd5a90b8b71833
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:97
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:118
 msgid "内容"
 msgstr ""
 
 # 6df46f8648d7404f94fdda2195cf2ee5
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:98
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:119
 msgid "src"
 msgstr ""
 
 # 514f8445b55e4ec7bcbd31cf42018dd4
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:99
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:120
 msgid ""
 "テキスト形式のブロック図を指定します。 encoding=base64 を指定した場合は "
 "base64 エンコードする必要があります。"
 msgstr ""
 
 # 71445d07371d4de68e9b15d0d67fe72f
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:101
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:122
 msgid "encoding"
 msgstr ""
 
 # 6fb331a97762403d8bbf9ca911b3b54c
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:102
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:123
 msgid ""
 "base64, jsonp のいずれかを指定することができます。 base64 を指定した場合、"
 "src に指定するテキストを base64 形式で送信します。 jsonp を指定した場合、"
@@ -810,18 +843,18 @@ msgid ""
 msgstr ""
 
 # ceea910e78894710868c93f5d05bdc24
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:105
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:126
 msgid "callback"
 msgstr ""
 
 # 9caec01639254709bd4e81da3080792a
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:106
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:127
 msgid ""
 "コールバック関数の名前を指定します。 encoding=jsonp の場合のみ有効です。"
 msgstr ""
 
 # 2ea71ca17b36488b93f06b910dba2965
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:109
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:130
 msgid ""
 "サーバは、受信したテキストデータが正常な図であれば、 SVG 形式のブロック図を送"
 "信します。 もし受信したテキストに文法間違いやエラーがあった場合は、 空のレス"
@@ -829,7 +862,7 @@ msgid ""
 msgstr ""
 
 # b903770b5877418a9980d142625d833b
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:116
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:137
 msgid ""
 "この API は実験的に提供しているものであるため、 パラメータの変更やサービスの"
 "停止が行われる可能性があります。"
@@ -1017,8 +1050,9 @@ msgstr ""
 #: ../../../sources/ja/blockdiag/introduction.rst:29
 #: ../../../sources/ja/blockdiag/introduction.rst:53
 #: ../../../sources/ja/blockdiag/introduction.rst:82
-#: ../../../sources/ja/blockdiag/introduction.rst:98
-#: ../../../sources/ja/blockdiag/introduction.rst:147
+#: ../../../sources/ja/blockdiag/introduction.rst:96
+#: ../../../sources/ja/blockdiag/introduction.rst:112
+#: ../../../sources/ja/blockdiag/introduction.rst:161
 msgid "その後、easy_install コマンドにて `blockdiag` をインストールします。"
 msgstr ""
 
@@ -1074,119 +1108,129 @@ msgid ""
 "info を作成します。"
 msgstr ""
 
-# 64544cc571074f318e46ac3d323fdcee
+# ebc828a6a76e4db69b14bc45a13a9ac8
 #: ../../../sources/ja/blockdiag/introduction.rst:89
+msgid "CentOS 6.2 の場合"
+msgstr ""
+
+# 17d601eb1ffc4a26b3a085c4b06ef0b3
+#: ../../../sources/ja/blockdiag/introduction.rst:90
+msgid "yum コマンドで依存パッケージをインストールします。"
+msgstr ""
+
+# 64544cc571074f318e46ac3d323fdcee
+#: ../../../sources/ja/blockdiag/introduction.rst:103
 msgid "MacOSX (MacPorts) の場合"
 msgstr ""
 
 # 263056bc5f3249f4bdb7387851d23104
-#: ../../../sources/ja/blockdiag/introduction.rst:90
+#: ../../../sources/ja/blockdiag/introduction.rst:104
 msgid "port コマンドで依存パッケージをインストールします。"
 msgstr ""
 
 # 7b6bcc32a8164bf0b3cb7253dd119804
-#: ../../../sources/ja/blockdiag/introduction.rst:96
+#: ../../../sources/ja/blockdiag/introduction.rst:110
 msgid "お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。"
 msgstr ""
 
 # 4492d9e5810746caae3492fe5edfe5b2
-#: ../../../sources/ja/blockdiag/introduction.rst:106
+#: ../../../sources/ja/blockdiag/introduction.rst:120
 msgid ""
 "Mac 標準でインストールされている easy_install コマンドを使用した場合 "
 "blockdiag は正しく動作しません。"
 msgstr ""
 
 # c40f7ff0ff6f48f784a9bd9e68687375
-#: ../../../sources/ja/blockdiag/introduction.rst:109
+#: ../../../sources/ja/blockdiag/introduction.rst:123
 msgid ""
 "PATH の設定や、フルパス指定するなどして MacPorts でインストールした "
 "easy_install を利用して下さい。"
 msgstr ""
 
 # de74f2acdb20470f8f6f90b88fe5b22e
-#: ../../../sources/ja/blockdiag/introduction.rst:113
+#: ../../../sources/ja/blockdiag/introduction.rst:127
 msgid "MacOSX (homebrew) の場合"
 msgstr ""
 
 # d3d25aaaff3f4f9c9e222c9d57643358
-#: ../../../sources/ja/blockdiag/introduction.rst:114
+#: ../../../sources/ja/blockdiag/introduction.rst:128
 msgid ""
 "MacOSX (homebrew) の環境でインストールされる PIL パッケージは freetype2 に対"
 "応していないためそのままでは blockdiag を利用することはできません。"
 msgstr ""
 
 # 5aafe1876d2d484895e52f354e9d4dc2
-#: ../../../sources/ja/blockdiag/introduction.rst:117
+#: ../../../sources/ja/blockdiag/introduction.rst:131
 msgid ""
 "また、freetype2 用の Foluma (パッケージ)は提供されていないため、 以下の内容"
 "で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。"
 msgstr ""
 
 # c2ff8eea6a5c4b43937d5c424777447e
-#: ../../../sources/ja/blockdiag/introduction.rst:140
+#: ../../../sources/ja/blockdiag/introduction.rst:154
 msgid "その後、以下のコマンドで freetype2 および PIL をインストールします。"
 msgstr ""
 
 # 65dee79149e0437a81b209287974431b
-#: ../../../sources/ja/blockdiag/introduction.rst:154
+#: ../../../sources/ja/blockdiag/introduction.rst:168
 msgid "FreeBSD (ports) の場合"
 msgstr ""
 
 # b9083415c1cb4dc4a94cbc970b80e6c1
-#: ../../../sources/ja/blockdiag/introduction.rst:155
+#: ../../../sources/ja/blockdiag/introduction.rst:169
 msgid "portinstall コマンドで blockdiag パッケージをインストールします。"
 msgstr ""
 
 # 99d86ea36130492989c0e028fd1b4235
-#: ../../../sources/ja/blockdiag/introduction.rst:162
+#: ../../../sources/ja/blockdiag/introduction.rst:176
 msgid "NetBSD (pkgsrc) の場合"
 msgstr ""
 
 # ed5cf73812564deaa139f5761df980af
-#: ../../../sources/ja/blockdiag/introduction.rst:163
+#: ../../../sources/ja/blockdiag/introduction.rst:177
 msgid ""
 "blockdiag パッケージは pkgsrc に graphics/py-blockdiag として収録されていま"
 "す。 そのため、通常の pkgsrc の管理方法でインストールすることができます。"
 msgstr ""
 
 # aa2d3a6ae6544fb8905a435f6c64251f
-#: ../../../sources/ja/blockdiag/introduction.rst:166
+#: ../../../sources/ja/blockdiag/introduction.rst:180
 msgid "ここでは一般的な make を使った方法を紹介します。"
 msgstr ""
 
 # 01235cc0af3d4bc9bd7d78a57a5e2b7a
-#: ../../../sources/ja/blockdiag/introduction.rst:174
+#: ../../../sources/ja/blockdiag/introduction.rst:188
 msgid "そのほかの環境の場合"
 msgstr ""
 
 # e51ed65a4b9f4cbba015793829dc862c
-#: ../../../sources/ja/blockdiag/introduction.rst:175
+#: ../../../sources/ja/blockdiag/introduction.rst:189
 msgid "以下のコマンドで `blockdiag` をインストールします。"
 msgstr ""
 
 # 9679b03507694929af7c84cea3f32db4
-#: ../../../sources/ja/blockdiag/introduction.rst:183
+#: ../../../sources/ja/blockdiag/introduction.rst:197
 msgid "実行方法"
 msgstr ""
 
 # 7db1cf0a169b4e56ada9c700cc911ae9
-#: ../../../sources/ja/blockdiag/introduction.rst:184
+#: ../../../sources/ja/blockdiag/introduction.rst:198
 msgid "ブロック図を生成するには `blockdiag` コマンドを起動します。"
 msgstr ""
 
 # e72d3a6f52864b4ab8f15e4a49f12f5a
-#: ../../../sources/ja/blockdiag/introduction.rst:193
+#: ../../../sources/ja/blockdiag/introduction.rst:207
 msgid ""
 "SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。"
 msgstr ""
 
 # 162465d19e0f4cb0ae091c2d2b42b5fd
-#: ../../../sources/ja/blockdiag/introduction.rst:211
+#: ../../../sources/ja/blockdiag/introduction.rst:225
 msgid "フォント設定"
 msgstr ""
 
 # 05b4781cbb5d4deea965d73022c06d8b
-#: ../../../sources/ja/blockdiag/introduction.rst:212
+#: ../../../sources/ja/blockdiag/introduction.rst:226
 msgid ""
 "`blockdiag` はブロック図の生成に TrueType フォントを利用します。 `blockdiag` "
 "は自動的に利用可能なフォントを取得しますが、 -f (--font) オプションにて特定の"
@@ -1194,44 +1238,44 @@ msgid ""
 msgstr ""
 
 # a36a302f957146328ff0892a3457c5d8
-#: ../../../sources/ja/blockdiag/introduction.rst:221
+#: ../../../sources/ja/blockdiag/introduction.rst:235
 msgid ""
 "また、$HOME/.blockdiagrc ファイルに設定を書くことで 常に同じフォントを利用す"
 "ることができます。"
 msgstr ""
 
 # 0cd846bcbccd40c2b38d61019c72e2e4
-#: ../../../sources/ja/blockdiag/introduction.rst:232
+#: ../../../sources/ja/blockdiag/introduction.rst:246
 msgid "事前に入れておくべきソフトウェア"
 msgstr ""
 
 # c9d027a4edae46c7bda791eec7d94456
-#: ../../../sources/ja/blockdiag/introduction.rst:233
+#: ../../../sources/ja/blockdiag/introduction.rst:247
 msgid "Python 2.4 以降 (3.x は未対応)"
 msgstr ""
 
 # 03c7651ea05b49a6974b3daab9b8f570
-#: ../../../sources/ja/blockdiag/introduction.rst:234
+#: ../../../sources/ja/blockdiag/introduction.rst:248
 msgid "Python Imaging Library 1.1.5 以降"
 msgstr ""
 
 # a35e9496e4144f4b8b8e486f52d395c0
-#: ../../../sources/ja/blockdiag/introduction.rst:235
+#: ../../../sources/ja/blockdiag/introduction.rst:249
 msgid "funcparserlib 0.3.4 以降"
 msgstr ""
 
 # 091048226a364ac5baa14d75e644d4f7
-#: ../../../sources/ja/blockdiag/introduction.rst:236
+#: ../../../sources/ja/blockdiag/introduction.rst:250
 msgid "setuptools もしくは distribute."
 msgstr ""
 
 # cf014ea577234e34a03e8c1a13b14986
-#: ../../../sources/ja/blockdiag/introduction.rst:240
+#: ../../../sources/ja/blockdiag/introduction.rst:254
 msgid "ライセンス"
 msgstr ""
 
 # 824e51b530774a0eb4a68d39c24e5746
-#: ../../../sources/ja/blockdiag/introduction.rst:241
+#: ../../../sources/ja/blockdiag/introduction.rst:255
 msgid "Apache License 2.0"
 msgstr ""
 

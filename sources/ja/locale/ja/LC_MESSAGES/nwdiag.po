@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-06 14:22\n"
+"POT-Creation-Date: 2013-02-05 12:19\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -68,9 +68,24 @@ msgstr "nwdiag を用いると以下のような図が簡単に生成できま�
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:28
+#, fuzzy
 msgid ""
-"And, `nwdiag` package includes `rackdiag` which generates rack-structure "
-"diagram images."
+"And, `nwdiag` package includes more scripts called `rackdiag` and "
+"`packetdiag` ."
+msgstr ""
+"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+
+# e702b73d7b5646e0a32f45b38aa7d5fa
+#: ../../../sources/ja/nwdiag/index.rst:30
+#, fuzzy
+msgid "`rackdiag` generates rack-structure diagram images:"
+msgstr ""
+"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+
+# e702b73d7b5646e0a32f45b38aa7d5fa
+#: ../../../sources/ja/nwdiag/index.rst:46
+#, fuzzy
+msgid "`packetdiag` generates packet header diagram images:"
 msgstr ""
 "また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
 
@@ -168,8 +183,8 @@ msgstr ""
 #: ../../../sources/ja/nwdiag/introduction.rst:73
 msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
-"しょう。"
+"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよい"
+"でしょう。"
 
 # 509b89ea4c3d4b68aee648c61867a7e5
 #: ../../../sources/ja/nwdiag/introduction.rst:83
@@ -232,6 +247,17 @@ msgstr "ノードのグルーピング"
 #: ../../../sources/ja/nwdiag/nwdiag-examples.rst:35
 msgid "peer networks"
 msgstr "ピア接続"
+
+# 239bf5bf58464c099ece76b06bb1f889
+#: ../../../sources/ja/nwdiag/packetdiag-examples.rst:5
+#, fuzzy
+msgid "Sample diagams: packetdiag"
+msgstr "rackdiag 出力サンプル"
+
+# e1ab5f523e7e4e5089051656da26c751
+#: ../../../sources/ja/nwdiag/packetdiag-examples.rst:8
+msgid "Structure of TCP Header"
+msgstr ""
 
 # 239bf5bf58464c099ece76b06bb1f889
 #: ../../../sources/ja/nwdiag/rackdiag-examples.rst:5
