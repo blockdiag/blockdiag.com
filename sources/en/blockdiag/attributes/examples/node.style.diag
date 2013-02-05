@@ -1,0 +1,8 @@
+blockdiag {
+   // Set boder-style to nodes.
+   B [style = dotted];
+   C [style = dashed];
+   D [style = "3,3,3,3,15,3"];
+
+   A -> B -> C -> D;
+}

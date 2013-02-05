@@ -1,0 +1,5 @@
+blockdiag {
+   A -> B;
+
+   A[fontsize=20];
+}
