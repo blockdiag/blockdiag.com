@@ -77,6 +77,8 @@ mutlilingualization
 .. blockdiag:: diagrams/multilingualization.diag
 
 
+.. _nodeshapes:
+
 shape of nodes
 ==============
 

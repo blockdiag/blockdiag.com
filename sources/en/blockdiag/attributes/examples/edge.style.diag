@@ -1,0 +1,7 @@
+blockdiag {
+   // Set style to edges.
+   A -> B [style = dotted];
+   B -> C [style = dashed];
+   C -> D [style = none];
+   D -> E [style = "3,3,3,3,15,3"];
+}

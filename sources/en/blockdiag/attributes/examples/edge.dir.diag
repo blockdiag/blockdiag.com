@@ -1,0 +1,10 @@
+blockdiag {
+   // Set arrow direction to edges.
+   A -> B [dir = none];
+   B -> C [dir = forward];
+   C -> D [dir = back];
+   D -> E [dir = both];
+
+   // Same meaning
+   F -- G -> H <- I <-> J;
+}

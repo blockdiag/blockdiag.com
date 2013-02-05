@@ -1,0 +1,8 @@
+blockdiag {
+   // Set numbered-badge and description to nodes.
+   A [numbered = 1, label = "Input", description = "Beef, carrots, potatoes, curry powder and water"];
+   B [numbered = 2, label = "Process", description = "Simmer and simmer"];
+   C [numbered = 3, label = "Output", description = "yum-yum curry"];
+
+   A -> B -> C;
+}
