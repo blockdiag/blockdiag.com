@@ -1,6 +1,0 @@
-blockdiag {
-   // set default shape
-   default_shape = roundedbox
-
-   A -> B;
-}

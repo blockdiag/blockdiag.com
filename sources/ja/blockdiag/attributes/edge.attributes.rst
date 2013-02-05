@@ -1,1 +1,0 @@
-../../../en/blockdiag/attributes/edge.attributes.rst

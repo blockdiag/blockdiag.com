@@ -1,7 +1,0 @@
-blockdiag {
-   // Set numbered-badge to nodes.
-   B [numbered = 99];
-   C [numbered = A];
-
-   A -> B -> C;
-}

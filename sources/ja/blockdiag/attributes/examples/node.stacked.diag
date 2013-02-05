@@ -1,7 +1,0 @@
-blockdiag {
-   // Set stacked to nodes.
-   stacked [stacked];
-   ellipse [shape = "ellipse", stacked];
-
-   stacked -> ellipse;
-}

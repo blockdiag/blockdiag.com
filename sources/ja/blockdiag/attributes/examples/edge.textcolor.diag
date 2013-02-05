@@ -1,3 +1,0 @@
-blockdiag {
-   A -> B[label=foo, textcolor=pink];
-}
