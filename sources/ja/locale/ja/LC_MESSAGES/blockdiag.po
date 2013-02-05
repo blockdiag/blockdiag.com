@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-05 12:19\n"
+"POT-Creation-Date: 2013-02-05 12:45\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -613,260 +613,288 @@ msgstr ""
 msgid "出力された図"
 msgstr ""
 
-# b25afc2f46ff4b62b77b3535c2c99971
+# 01478e426f844255819906b5160176fd
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:3
-msgid "文書にブロック図を埋め込む"
-msgstr ""
+msgid "embed a blockdiagram in a document"
+msgstr "文書にブロック図を埋め込む"
 
-# 1f569c7823f843fe810b867c25c5d7ec
+# e2b3f9639c3e4a9985d77936d4b89252
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:5
 msgid ""
-"いくつかの文書管理システムではプラグインや拡張機能として `blockdiag` で生成し"
+"Some document management tools can embed a blockdiagram which is created by "
+"`blockdiag` as plugin or extension in the documents."
+msgstr ""
+"いくつかの文書管理システムではプラグインや拡張機能として`blockdiag` で生成し"
 "たブロック図を文章に埋め込むことができます。"
-msgstr ""
 
-# 52ccc67de9994dd38662e57d28e16686
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:10
-msgid "Sphinx に埋め込む"
-msgstr ""
+# 60f2f5db171948da948c8762c72ef8ff
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:9
+msgid "Embed in Sphinx"
+msgstr "Sphinx に埋め込む"
 
-# 0330b5689cd74d8e8a80a455bfa08baf
+# 5f025b84b912475093e0cf657ea8ef79
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:11
-msgid "`Sphinx`_ は reST 形式(テキスト)で記述するドキュメント生成ツールです。"
-msgstr ""
+msgid "`Sphinx`_ is a document generation tool which use reST format."
+msgstr "`Sphinx`_ は reST 形式(テキスト)で記述するドキュメント生成ツールです。"
 
-# 4c96fdb1a85e4c4a84f7a6529f4b0217
+# d9195ca85b8c45a5b8c9e88632ada6cd
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:13
 msgid ""
-"Sphinx で作成する文書にブロック図を埋め込むには Sphinx 拡張である "
-"sphinxcontrib-blockdiag パッケージを利用します。"
+"To embed a blockdiagram in the sphinx generated documents, use sphinxcontrib-"
+"blockdiag package which is Sphinx extension."
 msgstr ""
+"Sphinx で作成する文書にブロック図を埋め込むにはSphinx 拡張である "
+"sphinxcontrib-blockdiag パッケージを利用します。"
 
-# 4182158d16c34a468e7d55fb0ab2f3fe
+# ad55757f08224ab2aead718bd35344ce
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:16
 msgid ""
+":ref:`sphinxcontrib-blockdiag` explains how to use sphinxcontrib-blockdiag."
+msgstr ""
 "sphinxcontrib-blockdiag については :ref:`sphinxcontrib-blockdiag` で説明しま"
 "す。"
-msgstr ""
 
-# a2a80657509d4e7d90cc03c341f41065
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:21
-msgid "Redmine に埋め込む"
-msgstr ""
-
-# a5e2b436232c44c0a273dd00fa42e167
+# 37bb3b1fefd944f8a5401688231ecbbb
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:22
-msgid "`Redmine`_ は Web ベースのプロジェクト管理ソフトウェアです。"
-msgstr ""
+msgid "Embed in Redmine"
+msgstr "Redmine に埋め込む"
 
-# a670145634444c7f81fe316b4868b5b6
+# 4f94b9ef53694cb79e3e84e405e11849
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:24
+msgid "`Redmine`_ is a project management software."
+msgstr "`Redmine`_ は Web ベースのプロジェクト管理ソフトウェアです。"
+
+# 55f63835e386463fbde649d70ca5d9d8
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:26
 msgid ""
-"Redmine の Wiki にブロック図を埋め込むには Wiki External Filter Plugin を利用"
+"To embed a blockdiagram in the Redmine, use Wiki External Filter Plugin."
+msgstr ""
+"Redmine の Wiki にブロック図を埋め込むにはWiki External Filter Plugin を利用"
 "します。"
-msgstr ""
 
-# 8532f46ea18d48838d87a6a0489fc364
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:27
-msgid "詳細は `Wiki External Filter Plugin を導入してみた`_ をご覧ください。"
-msgstr ""
+# ab7cac5c5829427aae320a27e5258bd1
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:29
+msgid "See `Introduce Wiki External Filter Plugin(Japanese)`_ ."
+msgstr "詳細は `Wiki External Filter Plugin を導入してみた`_ をご覧ください。"
 
-# 5a6cf75e2d864a98bec37929524b2669
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:34
-msgid "Trac に埋め込む"
-msgstr ""
+# a45f9dda0dbe4b69986d2a69d6427761
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:36
+msgid "Embed in Trac"
+msgstr "Trac に埋め込む"
 
-# 9dfa3b4918d14de98c479f04c1063766
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:35
-msgid "`Trac`_ は Web ベースのプロジェクト管理ソフトウェアです。"
-msgstr ""
+# 769824d605f641e38ec6846df0fe1ad6
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:38
+msgid "`Trac`_ is a project management software."
+msgstr "`Trac`_ は Web ベースのプロジェクト管理ソフトウェアです。"
 
-# 286487d8f4d74bf3b59a9238e1790a6f
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:37
-msgid ""
+# acfe84d895b94137a0677fcd87aca08b
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:40
+msgid "To embed a blockdiagram in the Trac Wiki, use `TracBlockDiagPlugin`_."
+msgstr ""
 "Trac の Wiki にブロック図を埋め込むには `TracBlockDiagPlugin`_ を利用します。"
-msgstr ""
 
-# 560dadc13e544901ab1287b2e2e819f8
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:44
-msgid "moinmoin に埋め込む"
-msgstr ""
-
-# 88891c2757b94053bbe43e6bbeedc6e3
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:45
-msgid "`moinmoin`_ は Python で書かれた Wiki clone サーバです。"
-msgstr ""
-
-# e815c802340d455b86599d87eac4a38d
+# a8ac1e0988764ea0be2df66c6b1cfaa7
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:47
+msgid "Embed in moinmoin"
+msgstr "moinmoin に埋め込む"
+
+# a6dcc57e16a64c708fdf3f7a08c37ef6
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:49
+msgid "`moinmoin`_ is a Wiki clone server written in Python."
+msgstr "`moinmoin`_ は Python で書かれた Wiki clone サーバです。"
+
+# 1e3b668c6a1b40da841eab24ae80ea3b
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:51
 msgid ""
+"To embed a blockdiagram in the Trac Wiki, use `moinmoin blockdiag plugin`_."
+msgstr ""
 "moinmoin にブロック図を取り込むには `moinmoin blockdiag plugin`_ を利用しま"
 "す。"
-msgstr ""
 
-# 9500e61823064a429cbdcf4e9ee81ff9
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:54
-msgid "mediawiki に埋め込む"
-msgstr ""
+# 9f0a8dfbb675434d847e3c80d4a927b0
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:58
+msgid "Embed in mediawiki"
+msgstr "mediawiki に埋め込む"
 
-# 56522fcdbf6246358f0e79a04647298f
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:55
-msgid "`mediawiki`_ は Wiki clone サーバです。"
-msgstr ""
+# 2656c6395338428da93fc78e14f2dad2
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:59
+msgid "`mediawiki`_ is a Wiki clone server."
+msgstr "`mediawiki`_ は Wiki clone サーバです。"
 
-# b93c7c68d35f4e5ab71a466ee6c32fcc
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:57
+# 1b4e6a913c1c47c18a91d25de23eb7de
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:61
 msgid ""
+"To embed a blockdiagram in the mediawiki, use `Blockdiag MediaWiki "
+"Extension`_."
+msgstr ""
 "mediawiki にブロック図を取り込むには `Blockdiag MediaWiki Extension`_ を利用"
 "します。"
-msgstr ""
 
-# e0c8bbf3702d47aead41fa24b068d8f1
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:64
-msgid "PukiWiki に埋め込む"
-msgstr ""
+# 9831980df17a4bfaa47b0eda5394b952
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:68
+msgid "Embed in PukiWiki"
+msgstr "PukiWiki に埋め込む"
 
-# c15e5749ac7a40deaa1f8db52ff71448
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:65
-msgid "`PukiWiki`_ は PHP で書かれた Wiki clone サーバです。"
-msgstr ""
+# 122fb3d84a864c98b09af911279f9d5e
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:70
+msgid "`PukiWiki`_ is a Wiki clone server written in PHP."
+msgstr "`PukiWiki`_ は PHP で書かれた Wiki clone サーバです。"
 
-# cdc2d54721cd4939becd99d038c66914
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:67
+# 7dc62c4e9f9541eaa5a778a28e14f50b
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:72
 msgid ""
+"To embed a blockdiagram in the mediawiki, use `blockdiag PukiWiki "
+"Extension`_."
+msgstr ""
 "PukiWiki にブロック図を取り込むには `blockdiag PukiWiki Extension`_ を利用し"
 "ます。"
-msgstr ""
 
-# 43db483a66a04562a6bd2d15492330b2
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:74
-msgid "Rabbit に埋め込む"
-msgstr ""
+# f89e61444c7d4577ad966ab2d2257e2d
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:79
+msgid "Embed in Rabbit"
+msgstr "Rabbit に埋め込む"
 
-# 00e7f5feea5e494281accbdaabbb3f94
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:75
-msgid "`Rabbit`_ は Ruby で書かれたプレゼンテーションツールです。"
-msgstr ""
+# b0a4ae35a03f4b139f6f02cd10295e67
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:81
+msgid "`Rabbit`_ is a presentation tool written in Ruby."
+msgstr "`Rabbit`_ は Ruby で書かれたプレゼンテーションツールです。"
 
-# f3afc8e4c9714126bca72b507f2a6b40
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:77
+# 27a8f25c38504302a03907f471436f91
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:83
 msgid ""
-"Rabbit は blockdiag の埋込みをサポートしており、 追加のソフトウェなしにプレゼ"
+"Rabbit support blockdiag, users can embed a blockdiagram in a presentation "
+"with no additional software."
+msgstr ""
+"Rabbit は blockdiag の埋込みをサポートしており、追加のソフトウェなしにプレゼ"
 "ンテーションに図を組み込むことができます。"
-msgstr ""
 
-# 883c462388ca4005a9d6ae89539e9e94
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:84
-msgid "Joomla に埋め込む"
-msgstr ""
+# 003e91a08f984ebeb9f2f337513774f7
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:90
+msgid "Embed in Joomla"
+msgstr "Joomla に埋め込む"
 
-# 924b5e44ee204ed5aee654a6e888bf74
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:85
-msgid "`Joomla`_ は PHP で書かれた CMS です。"
-msgstr ""
+# 897d7e0d33de457e92acdf67fe326057
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:92
+msgid "`Joomla`_ is a Content Management System written in PHP."
+msgstr "`Joomla`_ は PHP で書かれた CMS です。"
 
-# c1ec4cd2aaca4ef5ba5eed61e02b8e5c
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:87
-msgid "Joomla にブロック図を取り込むには `Plugin blockdiag`_ を利用します。"
-msgstr ""
-
-# 06e863f4472f4203b49baa77d86525d1
+# 6282defc401a46d5bbacbece2a2703b0
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:94
-msgid "asciidoc に埋め込む"
-msgstr ""
+msgid "To embed a blockdiagram in the Joomla, use `Plugin blockdiag`_."
+msgstr "Joomla にブロック図を取り込むには `Plugin blockdiag`_ を利用します。"
 
-# 53225fa305fb4d4c8114caa49663b3fb
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:95
+# 1d0913aa61a34594acc9e61668eae650
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:100
+msgid "Embed in asciidoc"
+msgstr "asciidoc に埋め込む"
+
+# b5573e03db314d69b98809517eb89a5e
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:102
 msgid ""
+"`asciidoc`_ is a document generation tool which can translate from text "
+"document to some formats."
+msgstr ""
 "`asciidoc`_ はテキスト文書から各種フォーマットに変換するドキュメント生成ツー"
 "ルです。"
-msgstr ""
 
-# a6708d8b9d684a31b9b08fbfc6a597c1
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:97
-msgid ""
-"asciidoc にブロック図を取り込むには `asciidoc-diag-filter`_ を利用します。"
-msgstr ""
-
-# 6aedceaa98c54bf6a90aa412fe6dbe7d
+# ba5666e68d824819b2f0969cb2d7ae1e
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:105
-msgid "API 経由で取得する"
+msgid "To embed a blockdiagram in the asciidoc, use `asciidoc-diag-filter`_."
 msgstr ""
+"asciidoc にブロック図を取り込むには `asciidoc-diag-filter`_ を利用します。"
 
-# 46c4cd18e3ef41e4b3a6ba16feae34ed
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:107
+# d7ceaefcb0024fa3b13fb857ba7b4035
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:112
+msgid "Get from API"
+msgstr "API 経由で取得する"
+
+# b4d5ea8afe4d48f3ae652dd3db6493cf
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:114
 msgid ""
-":ref:`interactive shell for blockdiag` では Web API を提供しています。 テキス"
+":ref:`interactive shell for blockdiag` provides a Web API. When you send "
+"some text data, you can get a blockdiagram which is SVG format."
+msgstr ""
+":ref:`interactive shell for blockdiag` では Web API を提供しています。テキス"
 "トデータを送信すると SVG 形式のブロック図を取得することができます。"
-msgstr ""
 
-# 34295b6a77544cab9081d175a3bf9185
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:110
-msgid ""
-"Web API は http://blockdiag.appspot.com/image に対して、 以下のパラメータを含"
-"んだ GET リクエストを送ることで呼び出すことができます。"
-msgstr ""
-
-# f0f0ddc932844955803d9c893eb4431a
+# 2421e954d12748f894f60ed4528a06f6
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:117
-msgid "パラメータ名"
+msgid ""
+"To use Web API, send a GET request to http://blockdiag.appspot.com/image "
+"with some parameters."
 msgstr ""
+"Web API は http://blockdiag.appspot.com/image に対して、以下のパラメータを含"
+"んだ GET リクエストを送ることで呼び出すことができます。"
 
-# 22f1909643604a8b99bd5a90b8b71833
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:118
-msgid "内容"
-msgstr ""
+# a272ba8ae440411ead81d61c0d88e999
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:124
+msgid "parameter"
+msgstr "パラメータ名"
+
+# 0ed1926a8fa1423ca40faae20cbf2351
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:125
+msgid "description"
+msgstr "内容"
 
 # 6df46f8648d7404f94fdda2195cf2ee5
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:119
-msgid "src"
-msgstr ""
-
-# 514f8445b55e4ec7bcbd31cf42018dd4
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:120
-msgid ""
-"テキスト形式のブロック図を指定します。 encoding=base64 を指定した場合は "
-"base64 エンコードする必要があります。"
-msgstr ""
-
-# 71445d07371d4de68e9b15d0d67fe72f
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:122
-msgid "encoding"
-msgstr ""
-
-# 6fb331a97762403d8bbf9ca911b3b54c
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:123
-msgid ""
-"base64, jsonp のいずれかを指定することができます。 base64 を指定した場合、"
-"src に指定するテキストを base64 形式で送信します。 jsonp を指定した場合、"
-"jsonp 形式で結果を受け取ることができます。"
-msgstr ""
-
-# ceea910e78894710868c93f5d05bdc24
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:126
-msgid "callback"
-msgstr ""
+msgid "src"
+msgstr "src"
 
-# 9caec01639254709bd4e81da3080792a
+# 8b67d0f6dc7f479fa3c9b51f50e94240
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:127
 msgid ""
-"コールバック関数の名前を指定します。 encoding=jsonp の場合のみ有効です。"
+"specify blockdiag format text. When encoding=base64, text should be encoded "
+"by base64."
 msgstr ""
+"テキスト形式のブロック図を指定します。encoding=base64 を指定した場合は "
+"base64 エンコードする必要があります。"
 
-# 2ea71ca17b36488b93f06b910dba2965
+# 71445d07371d4de68e9b15d0d67fe72f
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:129
+msgid "encoding"
+msgstr "encoding"
+
+# a5147fe89141413c9dbc5f550996f108
 #: ../../../sources/ja/blockdiag/embed_diagram.rst:130
 msgid ""
-"サーバは、受信したテキストデータが正常な図であれば、 SVG 形式のブロック図を送"
-"信します。 もし受信したテキストに文法間違いやエラーがあった場合は、 空のレス"
-"ポンスを返します。"
+"choose base64 or jsonp.  When base64, client should send a src text with "
+"base64 encoded. When jsonp, client can get jsonp format."
 msgstr ""
+"base64, jsonp のいずれかを指定することができます。base64 を指定した場合、src "
+"に指定するテキストを base64 形式で送信します。jsonp を指定した場合、jsonp 形"
+"式で結果を受け取ることができます。"
 
-# b903770b5877418a9980d142625d833b
-#: ../../../sources/ja/blockdiag/embed_diagram.rst:137
-msgid ""
-"この API は実験的に提供しているものであるため、 パラメータの変更やサービスの"
-"停止が行われる可能性があります。"
+# ceea910e78894710868c93f5d05bdc24
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:132
+msgid "callback"
+msgstr "callback"
+
+# e95bace797454e52a14d71d6f4957a05
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:133
+msgid "specify callback function name. Enable only if encoding=jsonp."
 msgstr ""
+"コールバック関数の名前を指定します。encoding=jsonp の場合のみ有効です。"
+
+# e743ed67d55249659ba5b9ff68f9ee73
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:135
+msgid ""
+"Server returns a blockdiagram with SVG format if the text data is valid. If "
+"the text data is invalid or have some errors, the server returns an empty "
+"response."
+msgstr ""
+"サーバは、受信したテキストデータが正常な図であれば、SVG 形式のブロック図を送"
+"信します。もし受信したテキストに文法間違いやエラーがあった場合は、空のレスポ"
+"ンスを返します。"
+
+# f24cd4fdf8c24b8ca17fc45731a59ee7
+#: ../../../sources/ja/blockdiag/embed_diagram.rst:141
+msgid ""
+"Since this API is an experimental service, parameter change or service "
+"termination can be occured."
+msgstr ""
+"この API は実験的に提供しているものであるため、パラメータの変更やサービスの停"
+"止が行われる可能性があります。"
 
 # 9916e46ee4ed4ddc96fcbd0a18a2ec33
 #: ../../../sources/ja/blockdiag/examples.rst:3
