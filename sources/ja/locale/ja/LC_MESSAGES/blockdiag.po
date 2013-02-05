@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-05 12:45\n"
+"POT-Creation-Date: 2013-02-05 12:46\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -17,173 +17,165 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# 310c85ef7c7e412ea7097bb0e9e886b5
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:7
-msgid "ダイアグラムの属性設定"
-msgstr ""
+# 50beddc7ceac4575af88d73361c9fd99
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:3
+msgid "diagram attributes setting"
+msgstr "ダイアグラムの属性設定"
 
-# 9a7b21e66d234330bf3c2d2af982b7ac
-# 7ded0ecfb1d844028368965bf0d507c9
-# 5e80566ba6ca4f39b1d8a381efd52ff6
+# 12e6fd6960074bde86d7caa62c50b5d6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:6
+msgid "NAME"
+msgstr "名前"
+
+# 7bb2eea467124e1886525d7db419c7df
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:8
+msgid "Attribute settings of diagrams"
+msgstr "ダイアグラムの属性の設定"
+
+# a4a7c313a2774f37967a1129c13588a4
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:11
+msgid "SYNOPSIS"
+msgstr "使い方"
+
+# d10e6c0b85e649e199f57ac11cc39d3d
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:13
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:13
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:13
-msgid "名前"
-msgstr ""
+msgid "**attribute** = **value** ;"
+msgstr "**属性名** = **設定値** ;"
 
-# 597a9a28ba0b41cf9a1dae794992b4e1
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:15
-msgid "ダイアグラムの属性の設定"
-msgstr ""
+# 4423eaf69da84a939a6296522857d1e6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:16
+msgid "DESCRIPTION"
+msgstr "概要"
 
-# a379d03ce6f14bedb208f36f11bba6c3
-# 797f460014c444d8be9a0dc10753d576
-# bf9bde1084054d74ae4ed3b9d1340989
+# fc68f1b24142401786c0009c34b71f1e
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:18
+msgid "Set attributes related to whole of the blockdiag."
+msgstr "blockdiag 全体の属性を設定をします。"
+
+# 203b6d4e5fd74aea9890f89c2d371894
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:21
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:21
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:21
-msgid "使い方"
-msgstr ""
+msgid "ATTRIBUTES"
+msgstr "属性"
 
-# 479679d5aee9458b8b756de013ffbec6
+
+# 1b9e6a7ebc784b05ab306a9299df8e89
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:25
-msgid "**属性名** = **設定値** ;"
-msgstr ""
+msgid "Specify default node width. Default is 128."
+msgstr "ノードの幅を指定します。省略時は128です。"
 
-# 7ab7fbd5ec674bf1837b465cb4f0b32e
-# fadaa13aaafa4cb38e6b1e02989c57c4
-# 51f2e9fe959b4eeabc4394da59104e63
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:31
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:41
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:41
-msgid "概要"
-msgstr ""
+# 2305df2b2f274de9b1e2ae7a98450a2e
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:29
+msgid "Specify default node height. Default is 40."
+msgstr "ノードの高さを指定します。省略時は40です。"
 
-# 81f27dc3220649ff89812ba403d1af61
+# ffbb01e922b747d781aed9c380e669f5
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:33
-msgid "ブロックダイアグ全体の属性を設定をします。"
-msgstr ""
+msgid "Specify default horizontal span between nodes. Default is 64."
+msgstr "ノード間の横幅を指定します。省略時は64です。"
 
-# e5427ea1de1142cfa13e7112ab898ae8
-# 32918c1945d1482b9f5de0d028efba88
-# 444a563ca45949ae8daeaebc92b84a20
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:39
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:51
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:51
-msgid "属性"
-msgstr ""
+# 5293ac8e0c12444abcf8b518d253061d
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:37
+msgid "Specify default vertical span between nodes. Default is 40."
+msgstr "ノード間の縦幅を指定します。省略時は40です。"
 
-# fdc161ff93ef49798896f0034329b2e5
-# e75b93fd38cb476bb80dd136e423624c
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:43
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:139
-msgid "ノードの幅を指定します。省略時は128です。"
-msgstr ""
+# c38a85fd9ce147c291bb07d5c5f1e867
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:41
+msgid "Specify default font size used at label attribute. Default is 11."
+msgstr "ノードのラベル属性に使用するフォントサイズを指定します。省略時は11です。"
 
-# ce60c3c0962142129e09bc624e7e032c
-# f97ffb1e72ff43749549779c78cb2ccc
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:48
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:145
-msgid "ノードの高さを指定します。省略時は40です。"
-msgstr ""
+# d679c8a3110b444fa817456bc292afb1
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:45
+msgid "Specify default node shape. Default is box."
+msgstr "ノードの形状のデフォルトを指定します。省略時はboxです。"
 
-# 694677e48b9a466ebd69965952e44cd9
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:53
-msgid "ノード間の横幅を指定します。省略時は64です。"
-msgstr ""
+# 87aa3ee88fb549e19cdc21b758fc51c8
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:51
+msgid "Set portrait mode. Default is landscape mode."
+msgstr "縦書きモードにします。省略時は横書きモードです。"
 
-# 62a27dcb572d44598f3068bc55465b33
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:58
-msgid "ノード間の縦幅を指定します。省略時は40です。"
-msgstr ""
+# fa9378f5c0a143e4b14b2a31fd63ba15
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:57
+msgid "Specify node default color. Default is white."
+msgstr "ノードのデフォルトの色を指定します。省略時は白です。"
 
-# eed983a280c744899f61eb3bbb7e8ada
+# f1a61565983b48a9aea0ae7dc46d7e3d
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:63
-msgid ""
-"ノードのラベル属性に使用するフォントサイズを指定します。省略時は11です。"
-msgstr ""
+msgid "Specify group default color. Default is orange."
+msgstr "グループのデフォルトの色を指定します。省略時はオレンジです。"
 
-# 47b1f3eb19a3429685ab825b04d6e22c
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:68
-msgid "ノードの形状のデフォルトを指定します。省略時はboxです。"
-msgstr ""
+# f1a61565983b48a9aea0ae7dc46d7e3d
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:69
+msgid "Specify node border and edge default color. Default is black."
+msgstr "ノードの枠とエッジのデフォルトの色を指定します。省略時は黒です。"
 
-# 8441db42bed2472e8facea931cab5db1
+# 825277f42c114ddd9ac0bc52bc0a0ec3
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:75
-msgid "縦書きモードにします。省略時は横書きモードです。"
-msgstr ""
+msgid ""
+"Specify default color of node label, edge label and group label. Default is "
+"black."
+msgstr "ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略時は黒です。"
 
-# e972a85c4834428a816902bb8253dab8
+# 79f28b865f744a82913b84c335c06c02
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:81
-msgid "ノードのデフォルトの色を指定します。省略時は白です。"
-msgstr ""
+msgid "EXAMPLES"
+msgstr "設定例"
 
-# 83400ce85f6c41c59ab5a9ac15929146
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:87
-msgid "グループのデフォルトの色を指定します。省略時はオレンジです。"
-msgstr ""
+# ac27ae0c7a294ddb91d56ad01d39ba54
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:84
+msgid "node_width and node_height attribute to diagram"
+msgstr "node_width 属性と node_height 属性の設定例"
 
-# cb1296f29be14a229121a5b163706b34
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:93
-msgid "ノードの枠とエッジのデフォルトの色を指定します。省略時は黒です。"
-msgstr ""
+# 7cfdc86bd3a6440d8bdff6f0dc10641b
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:90
+msgid "span_width and span_height attribute to diagram"
+msgstr "span_width 属性と span_height 属性の設定例"
 
-# e4132f95f28e496fbfcdef0a3d7f05dd
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:99
+# 9781436f66304701a6f36e35171304a0
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:96
+msgid "default_fontsize attribute to diagram"
+msgstr "default_fontsize 属性の設定例"
+
+# fd4632dd102e49fb92672a67d6606998
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:102
+msgid "default_shape attribute to diagram"
+msgstr "default_shape 属性の設定例"
+
+# bebfb01441d84f1ca77e2f6ea01ebcf6
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:108
+msgid "orientation attribute to diagram"
+msgstr "orientation 属性の設定例"
+
+# f1a61565983b48a9aea0ae7dc46d7e3d
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:114
 msgid ""
-"ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略"
-"時は黒です。"
-msgstr ""
-
-# 487ae25d31fa4ac5b41c2c32064a075e
-# 8be4d112197b4b01b770648d4473db71
-# 7f43ff7a89624a6fb4258610f19512e6
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:107
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:152
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:159
-msgid "設定例"
-msgstr ""
-
-# 921c045063894fe6ab078884062c1a7f
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:113
-msgid "node_width 属性と node_height 属性の設定例"
-msgstr ""
-
-# ca00b47a0950483d92f26c1085b1fb24
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:122
-msgid "span_width 属性と span_height 属性の設定例"
-msgstr ""
-
-# 51ef8a7476cb41ce8fb9a4b455b60cd2
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:131
-msgid "default_fontsize 属性の設定例"
-msgstr ""
-
-# 513c0eef2a934c92b7a54264433aa837
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:140
-msgid "default_shape 属性の設定例"
-msgstr ""
-
-# 0fd9e92c003e45969a97d0343564c745
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:149
-msgid "orientation 属性の設定例"
-msgstr ""
-
-# 6524bc7885d44f30ae391bea4be35d33
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:155
-msgid ""
-"default_node_color, default_group_color, default_linecolor, "
-"default_textcolor 属性の設定例"
-msgstr ""
+"default_node_color, default_group_color, default_linecolor and "
+"default_textcolor attribute"
+msgstr "default_node_color, default_group_color, default_linecolor, default_textcolor 属性の設定例"
 
 # 4f33f7bcedef461bae4bd4a1d519f6e2
 #: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:7
 msgid "エッジ属性の設定"
 msgstr ""
 
+# 9a7b21e66d234330bf3c2d2af982b7ac
+# 7ded0ecfb1d844028368965bf0d507c9
+# 5e80566ba6ca4f39b1d8a381efd52ff6
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:13
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:13
+msgid "名前"
+msgstr ""
+
 # 5dd334c0d23c4b6cb5a7285d8f61b19f
 #: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:15
 msgid "ブロックダイアグのエッジ属性の設定"
+msgstr ""
+
+# a379d03ce6f14bedb208f36f11bba6c3
+# 797f460014c444d8be9a0dc10753d576
+# bf9bde1084054d74ae4ed3b9d1340989
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:21
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:21
+msgid "使い方"
 msgstr ""
 
 # 04353374acc34c79ad123ab0e91fec2f
@@ -203,6 +195,14 @@ msgid ""
 "値** , ... ];"
 msgstr ""
 
+# 7ab7fbd5ec674bf1837b465cb4f0b32e
+# fadaa13aaafa4cb38e6b1e02989c57c4
+# 51f2e9fe959b4eeabc4394da59104e63
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:41
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:41
+msgid "概要"
+msgstr ""
+
 # 29875f9bbd97406181c6f0e2599edacc
 #: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:43
 msgid "エッジ属性の設定をします。"
@@ -215,6 +215,14 @@ msgstr ""
 msgid ""
 "属性を複数指定するときはカンマで区切ります。属性に指定する文字列に記号や空白"
 "が含まれる場合はクオートが必要です。"
+msgstr ""
+
+# e5427ea1de1142cfa13e7112ab898ae8
+# 32918c1945d1482b9f5de0d028efba88
+# 444a563ca45949ae8daeaebc92b84a20
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:51
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:51
+msgid "属性"
 msgstr ""
 
 # eb73c4ecf80141138e449027963f489c
@@ -323,6 +331,14 @@ msgstr ""
 # e2f1be6c160d4818a067c765397795d1
 #: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:144
 msgid "エッジのラベルのフォントサイズを指定します。省略時は11です。"
+msgstr ""
+
+# 487ae25d31fa4ac5b41c2c32064a075e
+# 8be4d112197b4b01b770648d4473db71
+# 7f43ff7a89624a6fb4258610f19512e6
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:152
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:159
+msgid "設定例"
 msgstr ""
 
 # 33d9a12c2ba444a4a8d121ff43fb71d4
@@ -496,6 +512,18 @@ msgstr ""
 # 57057493d0bf44dab633021d3f121bc9
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:133
 msgid "ノードのラベルの色を指定します。省略時は黒です。"
+msgstr ""
+
+# fdc161ff93ef49798896f0034329b2e5
+# e75b93fd38cb476bb80dd136e423624c
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:139
+msgid "ノードの幅を指定します。省略時は128です。"
+msgstr ""
+
+# ce60c3c0962142129e09bc624e7e032c
+# f97ffb1e72ff43749549779c78cb2ccc
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:145
+msgid "ノードの高さを指定します。省略時は40です。"
 msgstr ""
 
 # 1b13949b04354956b05e79aa89b8ad11
