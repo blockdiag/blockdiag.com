@@ -21,9 +21,6 @@ DESCRIPTION
 
 Set attributes related to edges.
 
-..
-  属性を複数指定するときはカンマで区切ります。属性に指定する文字列に記号や空白が含まれる場合はクオートが必要です。
-
 Separate by ',' to use multiple attributes. If strings which is used
 to specify attributes include white-spaces or symbols, quotation is
 needed.
