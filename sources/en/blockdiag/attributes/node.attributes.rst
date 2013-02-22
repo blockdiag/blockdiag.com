@@ -127,6 +127,10 @@ ATTRIBUTES
 
    .. versionadded:: 0.9.7
 
+.. blockdiag_node_attr:: rotate = Integer
+
+   Specify angle of text rotation. 0, 90, 180 and 270 are supported. Default is 0.
+
 EXAMPLES
 ========
 
