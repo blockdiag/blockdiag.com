@@ -77,6 +77,11 @@ ATTRIBUTES
 
    .. versionadded:: 0.9.2
 
+.. blockdiag_diagram_attr:: edge_layout  = normal or flowchart
+
+   **Experimental** Specify how to layout edges. Default is normal.
+
+
 EXAMPLES
 ========
 
