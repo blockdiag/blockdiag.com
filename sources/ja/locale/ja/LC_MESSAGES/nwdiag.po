@@ -2,14 +2,15 @@
 # Copyright (C) 2011, Takeshi KOMIYA
 # This file is distributed under the same license as the blockdiag package.
 # Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+# IWAI, Masaharu <iwaim.sub@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-05 12:19\n"
-"PO-Revision-Date: 2011-11-30 10:59+0900\n"
-"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"PO-Revision-Date: 2013-03-03 23:17+0900\n"
+"Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -57,9 +58,7 @@ msgstr "ネットワーク図生成ツール nwdiag"
 msgid ""
 "`nwdiag` generates network-diagram image file from .diag file. .diag file is "
 "similar to DOT file (graphviz's)."
-msgstr ""
-"nwdiag はシンプルなテキストからネットワーク図を生成するシーケンス図生成ツール"
-"です。"
+msgstr "nwdiag はシンプルなテキストからネットワーク図を生成するネットワーク図生成ツールです。"
 
 # 582e2976a90d48a1908934cd4f46fc20
 #: ../../../sources/ja/nwdiag/index.rst:8
