@@ -2,14 +2,15 @@
 # Copyright (C) 2011, Takeshi KOMIYA
 # This file is distributed under the same license as the blockdiag package.
 # Takeshi Komiya <i.tkomiya@gmail.com>, 2011.
+# IWAI, Masaharu <iwaim.sub@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-06 14:22\n"
-"PO-Revision-Date: 2011-11-30 10:58+0900\n"
-"Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
+"PO-Revision-Date: 2013-03-03 17:21+0900\n"
+"Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +69,7 @@ msgid ""
 "`actdiag` generate activity-diagram image file from .diag file. .diag file "
 "is similar to DOT file (graphviz's)."
 msgstr ""
-"`actdiag` はシンプルなテキストからアクティブティ図を生成するアクティビティ図"
+"`actdiag` はシンプルなテキストからアクティビティ図を生成するアクティビティ図"
 "生成ツールです。"
 
 # 32393c6764e343f19862c96dc3c82478
