@@ -193,6 +193,13 @@ blockdiag パッケージは pkgsrc に graphics/py-blockdiag として収録さ
    $ sudo easy_install blockdiag
 
 
+.. note:: エラーが出る場合
+
+   blockdiag のインストール後、コマンドを実行した時に **The _imagingft C module is not installed** というエラーが出る場合、
+   PIL パッケージの再インストールを行なってください。
+   PIL パッケージが libfreetype2 にリンクされていない場合、上記のエラーが発生することがあります。
+
+
 実行方法
 ========
 ブロック図を生成するには `blockdiag` コマンドを起動します。
