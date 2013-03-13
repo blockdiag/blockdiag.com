@@ -42,6 +42,17 @@ easy_install コマンドで依存パッケージをインストールします�
 .. _Sphinx-users.jp: http://sphinx-users.jp/
 .. _スタンドアロンインストーラ: http://sphinx-users.jp/gettingstarted/install_windows_standalone.html
 
+Windows (Cygwin) の場合 
+------------------------
+setup.exe で依存パッケージのビルドに必要な gcc4 と libmpfr4 をインストールします。
+
+その後、easy_install コマンドで依存パッケージと `blockdiag` をインストールします。
+
+.. code-block:: bash
+
+   $ easy_install pillow
+   $ easy_install blockdiag
+
 Debian 6.0 (Squeeze) の場合
 ---------------------------
 apt-get コマンドで依存パッケージをインストールします。
