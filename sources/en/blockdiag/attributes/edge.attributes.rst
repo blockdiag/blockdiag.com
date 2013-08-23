@@ -50,22 +50,20 @@ ATTRIBUTES
 
    .. versionadded:: 0.9.6
 
-.. todo::
+.. blockdiag_edge_attr:: hstyle = Type of head shape
 
-  .. blockdiag_edge_attr:: hstyle = Type of head shape
+   Specify head shape of edge.
 
-    Specify head shape of edge.
+   .. versionadded:: 0.7.3
 
-    .. versionadded:: 0.7.3
+   **generalization**
+     generalization
 
-    **generalization**
-      generalization
+   **composition**
+     composition
 
-    **composition**
-      composition
-
-    **aggregation**
-      aggregation
+   **aggregation**
+     aggregation
 
 
 .. blockdiag_edge_attr:: color = #RRGGBB or colorname
@@ -138,6 +136,12 @@ style attribute to edges
 
 .. literalinclude:: examples/edge.style.diag
 .. blockdiag:: examples/edge.style.diag
+
+hstyle attribute to edges
+-------------------------
+
+.. literalinclude:: examples/edge.hstyle.diag
+.. blockdiag:: examples/edge.hstyle.diag
 
 color attribute to edges
 ------------------------
