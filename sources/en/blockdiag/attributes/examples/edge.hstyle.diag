@@ -1,0 +1,6 @@
+blockdiag {
+   // Set head shapes to edges.
+   A -> B [hstyle = generalization];
+   B -> C [hstyle = composition];
+   C -> D [hstyle = aggregation];
+}
