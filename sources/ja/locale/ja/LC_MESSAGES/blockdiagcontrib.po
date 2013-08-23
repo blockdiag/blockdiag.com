@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-30 11:01\n"
+"POT-Creation-Date: 2013-08-23 15:47\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -224,12 +224,22 @@ msgid ""
 "す。"
 msgstr ""
 
+# 06f2c5f5c60546788a602b922a138bfb
+#: ../../../sources/ja/blockdiagcontrib/index.rst:120
+msgid "エッジの接点"
+msgstr ""
+
 # d7c4d4798c2b44fba9a3ed1c4bdde4e2
 #: ../../../sources/ja/blockdiagcontrib/index.rst:117
 msgid ""
 "他の図形からのエッジ(矢印)が接続される接点を定義します。 設定箇所は上下左右"
 "の 4箇所です。 self.connectors 配列に 上、右、下、左 の順で座標を格納しま"
 "す。 初期値はセルの上下左右の四辺の中心です。"
+msgstr ""
+
+# eb048b62ada146cb9d2542d283195cbc
+#: ../../../sources/ja/blockdiagcontrib/index.rst:129
+msgid "テキスト描画領域"
 msgstr ""
 
 # 6c44b5128f6c40588c39146d6b2732f2
@@ -305,14 +315,29 @@ msgstr ""
 msgid "描画パラメータです。"
 msgstr ""
 
+# b61c2b5ffe4b486db2784d19ad34c0b4
+#: ../../../sources/ja/blockdiagcontrib/index.rst:185
+msgid "kwargs['shadow']"
+msgstr ""
+
 # 5685ea0b53654dd3876d3e8e081c4fbd
 #: ../../../sources/ja/blockdiagcontrib/index.rst:185
 msgid "影を描画する場合に True が指定されます。"
 msgstr ""
 
+# bf65dc107fa848f197d43348a90113f4
+#: ../../../sources/ja/blockdiagcontrib/index.rst:188
+msgid "kwargs['outline']"
+msgstr ""
+
 # 82a8cc0492584eb48b154ed7def9d27e
 #: ../../../sources/ja/blockdiagcontrib/index.rst:188
 msgid "図形の線を描画するときの色が指定されます。"
+msgstr ""
+
+# 5e5248d6010b4f20a06a6555e4772fa0
+#: ../../../sources/ja/blockdiagcontrib/index.rst:190
+msgid "kwargs['fill']"
 msgstr ""
 
 # 01df580696c247ec9dd8083055212b76
@@ -327,14 +352,29 @@ msgid ""
 "える必要があります。"
 msgstr ""
 
+# 0c288dcfae4f4abba2bd33ed7f784289
+#: ../../../sources/ja/blockdiagcontrib/index.rst:198
+msgid "kwargs['shadow'] が指定された場合は影を描画する"
+msgstr ""
+
 # 429699aa3f8d40bdb4a30039e82631b4
 #: ../../../sources/ja/blockdiagcontrib/index.rst:197
 msgid "黒く塗りつぶされた図形を描画する必要がある"
 msgstr ""
 
+# e878bd272b0c4deca210891d8e41ffbc
+#: ../../../sources/ja/blockdiagcontrib/index.rst:198
+msgid "描画エリアの内側の装飾は描画しなくてもよい"
+msgstr ""
+
 # deab39d7ece94a2ab1ff17e643e69334
 #: ../../../sources/ja/blockdiagcontrib/index.rst:199
 msgid "note の内側に折れた部分、mail の封筒のふた部分など"
+msgstr ""
+
+# b3b853f61b2c424bbc3cc45e68dec87b
+#: ../../../sources/ja/blockdiagcontrib/index.rst:202
+msgid "背景画像(self.node.background)が設定されている場合"
 msgstr ""
 
 # d28c323d895745db99fa45dbc43791a7

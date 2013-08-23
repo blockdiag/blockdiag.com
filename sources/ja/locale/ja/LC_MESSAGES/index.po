@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-22 18:48\n"
+"POT-Creation-Date: 2013-08-23 15:47\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -37,6 +37,11 @@ msgstr ""
 # 7fd9805ddb064fe98292a6a5971698f1
 #: ../../../sources/ja/index.rst:19
 msgid "`blockdiag` の主な機能:"
+msgstr ""
+
+# 83b0b3a3367d4f8c98fec85b8a224374
+#: ../../../sources/ja/index.rst:24
+msgid "数種類の図に対応"
 msgstr ""
 
 # 065319d6a5da4e229479a79a4377d5b6
@@ -119,6 +124,11 @@ msgstr ""
 msgid "Resources"
 msgstr ""
 
+# 3e9a3229d94146c9898280772f7803fa
+#: ../../../sources/ja/index.rst:60
+msgid "Author"
+msgstr ""
+
 # 261f97c1d145415ab5e4d0d27e867c81
 #: ../../../sources/ja/index.rst:61
 msgid ""
@@ -142,6 +152,11 @@ msgstr ""
 msgid "Interactive Shell: `<http://interactive.blockdiag.com/>`_"
 msgstr ""
 
+# 564c589f6ef347c8a21aef5e8f3e0d9b
+#: ../../../sources/ja/index.rst:66
+msgid "blockdiag"
+msgstr ""
+
 # f04013a135ee486ba3d04400ab68c96e
 #: ../../../sources/ja/index.rst:66
 msgid "PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_"
@@ -150,6 +165,11 @@ msgstr ""
 # da8531690a994e12b206aef442004a72
 #: ../../../sources/ja/index.rst:67
 msgid "Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_"
+msgstr ""
+
+# 08b80d77c8c24a84ab55c8a348ea69e6
+#: ../../../sources/ja/index.rst:69
+msgid "seqdiag"
 msgstr ""
 
 # 6558ccce7ffa45c8910cc5817ea7e1bc
@@ -162,6 +182,11 @@ msgstr ""
 msgid "Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_"
 msgstr ""
 
+# 59c16de87e334b3bba7db4faabea6fd8
+#: ../../../sources/ja/index.rst:72
+msgid "actdiag"
+msgstr ""
+
 # b0067012ae5e46418e550b0d11ad8574
 #: ../../../sources/ja/index.rst:72
 msgid "PyPI: `<http://pypi.python.org/pypi/actdiag/>`_"
@@ -170,6 +195,11 @@ msgstr ""
 # c7f5c4948dca4b6793d293d581a570ff
 #: ../../../sources/ja/index.rst:73
 msgid "Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_"
+msgstr ""
+
+# 964c0920debb4e1d99c7f3e30ec0bd78
+#: ../../../sources/ja/index.rst:75
+msgid "nwdiag"
 msgstr ""
 
 # 2d90334ac4e14fcc9bfa0d3f2f30cf21

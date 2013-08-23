@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-05 13:41\n"
+"POT-Creation-Date: 2013-08-23 15:47\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -60,8 +60,8 @@ msgstr "blockdiag 全体の属性を設定をします。"
 
 # 203b6d4e5fd74aea9890f89c2d371894
 #: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:21
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:32
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:34
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:29
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:31
 msgid "ATTRIBUTES"
 msgstr "属性"
 
@@ -125,40 +125,45 @@ msgstr ""
 "ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略"
 "時は黒です。"
 
+# 9efb501474af4f1d97b96b70188363e5
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:82
+msgid "**Experimental** Specify how to layout edges. Default is normal."
+msgstr "**Experimental** エッジレイアウトルールを指定します。"
+
 # 79f28b865f744a82913b84c335c06c02
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:81
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:131
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:156
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:86
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:126
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:135
 msgid "EXAMPLES"
 msgstr "設定例"
 
 # ac27ae0c7a294ddb91d56ad01d39ba54
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:84
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:89
 msgid "node_width and node_height attribute to diagram"
 msgstr "node_width 属性と node_height 属性の設定例"
 
 # 7cfdc86bd3a6440d8bdff6f0dc10641b
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:90
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:95
 msgid "span_width and span_height attribute to diagram"
 msgstr "span_width 属性と span_height 属性の設定例"
 
 # 9781436f66304701a6f36e35171304a0
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:96
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:101
 msgid "default_fontsize attribute to diagram"
 msgstr "default_fontsize 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:102
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:107
 msgid "default_shape attribute to diagram"
 msgstr "default_shape 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:108
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:113
 msgid "orientation attribute to diagram"
 msgstr "orientation 属性の設定例"
 
 # f1a61565983b48a9aea0ae7dc46d7e3d
-#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:114
+#: ../../../sources/ja/blockdiag/attributes/diagram.attributes.rst:119
 msgid ""
 "default_node_color, default_group_color, default_linecolor and "
 "default_textcolor attribute"
@@ -201,8 +206,8 @@ msgid "Set attributes related to edges."
 msgstr "エッジ属性の設定をします。"
 
 # e47192939771450baeab20af4777cc7b
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:27
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:28
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:24
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:25
 msgid ""
 "Separate by ',' to use multiple attributes. If strings which is used to "
 "specify attributes include white-spaces or symbols, quotation is needed."
@@ -211,38 +216,101 @@ msgstr ""
 "が含まれる場合はクオートが必要です。"
 
 # 1667fe5842b3432dbff85dac379cd65a
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:36
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:33
 msgid "Show short strings on the edge."
 msgstr "短い文をエッジに表示します。"
 
 # d679c8a3110b444fa817456bc292afb1
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:40
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:37
 msgid "Specify type of edge line. Default is solid."
 msgstr "エッジの線の種類を指定します。省略時は実線で繋ぎます。"
 
+# 3ee92630486f47ff852cd613d42a090f
+# e976ed5da3e247debb505a1735e0864e
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:40
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:42
+msgid "**dotted**"
+msgstr "**dotted**"
+
 # e710c25357e54ca29ce79344bf0ad930
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:43
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:40
 msgid "Dotted line."
 msgstr "点線で繋ぎます。"
 
+# d4d95cc6f7284475a718658467be971a
+# aaa9e171a58b43abbe20e1ba0e8408e1
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:43
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:45
+msgid "**dashed**"
+msgstr "**dashed**"
+
 # 572b3b6bc579429eaa3f7a5038953201
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:46
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:43
 msgid "Dashed line."
 msgstr "破線で繋ぎます。"
 
+# 553511c598134ede8f742d4cd9d8bd52
+# d2d41debe17748e190d74e49d22a6c0e
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:46
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:81
+msgid "**none**"
+msgstr "**none**"
+
 # f7f9a7f5cfce4bd18fc4191016918876
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:49
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:46
 msgid "Edge is not shown."
 msgstr "エッジを消します。"
 
+# c3628c2b0be548ebb735039c619c14e4
+# 3e9d56ebd8244046b432fa0b98cf66b6
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:49
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:49
+msgid "**Number, Number, ...**"
+msgstr "**Number, Number, ...**"
+
 # e6f001a5488740d49eae5ea01c98dc7c
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:52
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:54
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:49
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:48
 msgid "Specify line length and space length alternately with comma separated."
 msgstr "線の長さ、空白の長さをカンマ区切りで交互に指定します。"
 
+# 872e98799f9143368f145d29d11f6c5d
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:55
+msgid "Specify head shape of edge."
+msgstr "矢印の形状を指定します。"
+
+# d86f27782f4a4bb88d14e13a98a23315
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:60
+msgid "**generalization**"
+msgstr "**generalization**"
+
+# 380fe55ac5d84a259d3ac6e902c8496c
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:60
+msgid "generalization"
+msgstr "汎化 (generalization)"
+
+# 2f7d88d4804c4b4087aaf78051522287
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:63
+msgid "**composition**"
+msgstr "**composition**"
+
+# a5be5ff29aab4e6a901f8b258f855ac7
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:63
+msgid "composition"
+msgstr "コンポジション (composition)"
+
+# 4c874e579ecd432a893eab0a612456d1
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:65
+msgid "**aggregation**"
+msgstr "**aggregation**"
+
+# 12e11d8c9c304257a06a290db4fb5239
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:66
+msgid "aggregation"
+msgstr "集約 (aggregation)"
+
 # 8cdf82f2fe7949c58fdb4ac4fa876b58
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:76
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:71
 msgid ""
 "Specify edge color. Default is black. If **none** is specified, draw a "
 "transparent arrow."
@@ -251,22 +319,27 @@ msgstr ""
 "きます。"
 
 # 872e98799f9143368f145d29d11f6c5d
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:81
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:76
 msgid "Specify direction of edge arrow."
 msgstr "矢印の向きを指定します。"
 
 # 708f74a15b964ab894beb2bcd19a56e9
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:84
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:79
 msgid "Not draw an arrow, just connect nodes."
 msgstr "矢印を書かずにノードを繋ぎます。"
 
 # 4eec49e5194c42c7a438855b6ed02c35
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:86
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:81
 msgid "This is equivalent for ``A -- B``."
 msgstr "``A -- B`` と等価です。"
 
+# 93e4bc46875540d0a4e4eef8a66ceb9b
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:86
+msgid "**forward**"
+msgstr "**forward**"
+
 # 6c898d712e5640eb91701c7c7c3947d2
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:89
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:84
 msgid ""
 "Draw an arrow from left node to right node or upside node to downside node."
 msgstr ""
@@ -274,12 +347,17 @@ msgstr ""
 "ます。"
 
 # 5c30d2f437f246c6b54ab5e7d9046c46
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:91
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:86
 msgid "This is equivalent for ``A -> B``."
 msgstr "``A -> B`` と等価です。"
 
+# 16d17b99bd7144a7b37712a56cf79f22
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:91
+msgid "**back**"
+msgstr "**back**"
+
 # dcbba691cc7f4481a12c2f0d6d377019
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:94
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:89
 msgid ""
 "Draw an arrow from right node to left node or downside node to upside node."
 msgstr ""
@@ -287,77 +365,87 @@ msgstr ""
 "ます。"
 
 # ef10f17d5d06451f860acf0f282d9934
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:96
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:91
 msgid "This is equivalent for ``A <- B``."
 msgstr "``A <- B`` と等価です。"
 
+# 4bbe8e5693ac420197c56a7b090503e8
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:95
+msgid "**both**"
+msgstr "**both**"
+
 # 84452f2c2c4b4e1d991b57886a86f32a
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:99
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:94
 msgid "Draw arrows at both side."
 msgstr "矢印を両方に書きます。"
 
 # 1f751c1501cf43d7b55237c064d5f1fa
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:101
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:96
 msgid "This is equivalent for ``A <-> B``."
 msgstr "``A <-> B`` と等価です。"
 
 # 8747ed8bb7774b16980f46f5d23fc241
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:105
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:100
 msgid "Fold the edge."
 msgstr "エッジを折り返します。"
 
 # f1a61565983b48a9aea0ae7dc46d7e3d
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:111
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:106
 msgid "Specify edge label color. Default is black."
 msgstr "エッジのラベルの色を指定します。省略時は黒です。"
 
 # b1c0d4c5b70944baab2202ed18f167ff
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:120
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:115
 msgid "Make the edge thick."
 msgstr "エッジを太くします。"
 
 # 1b9e6a7ebc784b05ab306a9299df8e89
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:126
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:121
 msgid "Specify edge label font size. Default is 11."
 msgstr "エッジのラベルのフォントサイズを指定します。省略時は11です。"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:134
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:129
 msgid "label attribute to edges"
 msgstr "label 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:140
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:135
 msgid "style attribute to edges"
 msgstr "style 属性の設定例"
 
+# fd4632dd102e49fb92672a67d6606998
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:141
+msgid "hstyle attribute to edges"
+msgstr "hstyle 属性の設定例"
+
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:146
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:147
 msgid "color attribute to edges"
 msgstr "color 属性の設定例"
 
 # 50beddc7ceac4575af88d73361c9fd99
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:152
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:153
 msgid "dir attribute to edges"
 msgstr "dir 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:158
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:159
 msgid "folded attribute to edges"
 msgstr "folded 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:164
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:165
 msgid "text color attribute to edges"
 msgstr "textcolor 属性の設定例"
 
 # 9781436f66304701a6f36e35171304a0
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:170
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:171
 msgid "font size attribute to edges"
 msgstr "fontsize 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:176
+#: ../../../sources/ja/blockdiag/attributes/edge.attributes.rst:177
 msgid "thick attribute to edges"
 msgstr "thick 属性の設定例"
 
@@ -399,29 +487,29 @@ msgid "Set attributes related to nodes."
 msgstr "ノード属性の設定をします。"
 
 # 5293ac8e0c12444abcf8b518d253061d
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:41
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:35
 msgid "Specify label which is draw on the node. Default is **node_id**."
 msgstr ""
 "ノードに表示するラベルを定義します。省略された場合は **ノードID** が利用され"
 "ます。"
 
 # d679c8a3110b444fa817456bc292afb1
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:45
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:39
 msgid "Specify the line type of node border. Default is solid line."
 msgstr "ノードを囲む境界線の種類を指定します。省略時は実線で囲います。"
 
 # 3ed20e51316149e5a436f10152463c31
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:48
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:42
 msgid "Surround with dotted line."
 msgstr "点線で囲います。"
 
 # 58f0500d06a746cba0748863078bfce1
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:51
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:45
 msgid "Surround with dashed line."
 msgstr "破線で囲います。"
 
 # 8cdf82f2fe7949c58fdb4ac4fa876b58
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:60
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:54
 msgid ""
 "Specify node background color. If **none** is specified, the node becomes "
 "transparent. Default is white."
@@ -429,33 +517,47 @@ msgstr ""
 "ノードの背景色を指定します。 **none** を指定すると透明になります。指定がない"
 "場合は白です。"
 
+# 23bb75db00964f57a52d099605972e1d
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:59
+msgid "Set number to the node."
+msgstr "ノードの番号を指定します。"
+
+# e298e7e8b2894bb7a8b1bc145629a78a
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:61
+msgid ""
+"When you use desctable option on the Sphinx extension, a row named 'No.' is "
+"added to the table. Use description to enable desctable option."
+msgstr ""
+"設定されたノードの番号は、Sphinx 拡張で desctable オプションを利用している場合に、"
+"生成される表の No. 列に利用されます。"
+
 # d679c8a3110b444fa817456bc292afb1
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:78
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:66
 msgid "Specify shape of the node. Default is **box**. See :ref:`nodeshapes`."
 msgstr ""
 "ノードの形状を指定します。省略時は **box** です。詳細は :ref:`nodeshapes` を"
 "参照してください。"
 
 # f332154c63134689908660e72bfab9de
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:83
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:68
 msgid ""
 "You can use other shapes by using renderer plugins. Please search "
 "'blockdiagcontrib' on the `PyPi <http://pypi.python.org/pypi>`_."
 msgstr "形状はレンダラプラグインによって拡張することが可能です。"
 
 # c32faac9f0194c8c80fcc4a21e1b4836
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:101
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:82
 msgid "Set background image to the node. File path or URL can be used."
 msgstr ""
 "ノードに背景画像を張り付けます。ファイルパス、または URL で指定できます。"
 
 # 23bb75db00964f57a52d099605972e1d
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:107
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:86
 msgid "Set nodes to stacked."
 msgstr "ノードを重ね合わせた状態にします。"
 
 # e298e7e8b2894bb7a8b1bc145629a78a
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:117
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:92
 msgid ""
 "When you use desctable option on the Sphinx extension, draw a table below "
 "the blockdiag."
@@ -464,7 +566,7 @@ msgstr ""
 "します。"
 
 # 50f857a7b86141f68aa67aed68e24fee
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:120
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:95
 msgid ""
 "Name and description will be shown on the column. **Node ID** or **label "
 "attribute** will be used to the name."
@@ -473,68 +575,75 @@ msgstr ""
 "**label** 属性が利用されます。"
 
 # 0586979934f541eca90fc1e170329c41
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:127
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:102
 msgid "Set the image on the node. File path or URL can be used."
 msgstr ""
 "ノードにアイコンを設定します。ファイルパス、または URL で指定できます。"
 
 # f1a61565983b48a9aea0ae7dc46d7e3d
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:133
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:108
 msgid "Specify node label color. Default is black."
 msgstr "ノードのラベルの色を指定します。省略時は黒です。"
 
 # 1b9e6a7ebc784b05ab306a9299df8e89
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:139
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:114
 msgid "Specify the node width. Default is 128."
 msgstr "ノードの幅を指定します。省略時は128です。"
 
 # 2305df2b2f274de9b1e2ae7a98450a2e
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:145
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:120
 msgid "Specify the node height. Default is 40."
 msgstr "ノードの高さを指定します。省略時は40です。"
 
 # 1b9e6a7ebc784b05ab306a9299df8e89
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:151
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:126
 msgid "Specify label font size of the node. Default is 11."
 msgstr "ノードのラベル属性のフォントサイズを指定します。省略時は11です。"
 
+# 53c535d2aaed428895126a18ff34f248
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:132
+msgid ""
+"Specify angle of text rotation. 0, 90, 180 and 270 are supported. Default is "
+"0."
+msgstr "ラベルの回転角を指定します。0, 90, 180, 270 のいずれかの値を設定できます。省略時は0です。"
+
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:159
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:138
 msgid "label attribute to nodes"
 msgstr "label 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:165
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:144
 msgid "style attribute to nodes"
 msgstr "style 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:171
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:150
 msgid "color attribute to nodes"
 msgstr "color 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:177
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:156
 msgid "numbered attribute to nodes"
 msgstr "numbered 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:183
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:162
 msgid "shape attribute to nodes"
 msgstr "shape 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:189
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:168
 msgid "background attribute to nodes"
 msgstr "background 属性の設定例"
 
 # fd4632dd102e49fb92672a67d6606998
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:195
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:174
 msgid "stacked attribute to nodes"
 msgstr "stacked 属性の設定例"
 
 # 50beddc7ceac4575af88d73361c9fd99
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:201
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:180
 msgid "description attribute to nodes"
 msgstr "description 属性の設定例"
 
@@ -584,22 +693,22 @@ msgid "yum-yum curry"
 msgstr "yum-yum curry"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:208
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:187
 msgid "Icon attributes to nodes"
 msgstr "icon 属性の設定例"
 
 # bebfb01441d84f1ca77e2f6ea01ebcf6
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:214
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:193
 msgid "textcolor attributes to nodes"
 msgstr "textcolor 属性の設定例"
 
 # ac27ae0c7a294ddb91d56ad01d39ba54
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:220
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:199
 msgid "width and height attributes to nodes"
 msgstr "width と height 属性の設定例"
 
 # 9781436f66304701a6f36e35171304a0
-#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:226
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:205
 msgid "fontsize attributes to nodes"
 msgstr "fontsize 属性の設定例"
 
@@ -1094,11 +1203,11 @@ msgstr ""
 # 55b61643ff1441f9bf00a5d5e09e18e3
 # 09249de6d5094e52b1638caee9e923da
 #: ../../../sources/ja/blockdiag/introduction.rst:29
-#: ../../../sources/ja/blockdiag/introduction.rst:53
-#: ../../../sources/ja/blockdiag/introduction.rst:82
-#: ../../../sources/ja/blockdiag/introduction.rst:96
-#: ../../../sources/ja/blockdiag/introduction.rst:112
-#: ../../../sources/ja/blockdiag/introduction.rst:161
+#: ../../../sources/ja/blockdiag/introduction.rst:64
+#: ../../../sources/ja/blockdiag/introduction.rst:93
+#: ../../../sources/ja/blockdiag/introduction.rst:107
+#: ../../../sources/ja/blockdiag/introduction.rst:123
+#: ../../../sources/ja/blockdiag/introduction.rst:172
 msgid "その後、easy_install コマンドにて `blockdiag` をインストールします。"
 msgstr ""
 
@@ -1117,37 +1226,56 @@ msgid ""
 "gettingstarted/install_windows_standalone.html>`_ をご覧ください。"
 msgstr ""
 
-# 5628fa490b6643458f9785805ab74846
+# 5879a57af5404d8fa212acf65b80da7d
 #: ../../../sources/ja/blockdiag/introduction.rst:46
+msgid "Windows (Cygwin) の場合"
+msgstr ""
+
+# 426e2ae9b1a3489bb83963154f4c7592
+#: ../../../sources/ja/blockdiag/introduction.rst:47
+msgid ""
+"setup.exe で依存パッケージのビルドに必要な gcc4 と libmpfr4 をインストールし"
+"ます。"
+msgstr ""
+
+# 729758d226784cc2adf87b23fd53e109
+#: ../../../sources/ja/blockdiag/introduction.rst:49
+msgid ""
+"その後、easy_install コマンドで依存パッケージと `blockdiag` をインストールし"
+"ます。"
+msgstr ""
+
+# 5628fa490b6643458f9785805ab74846
+#: ../../../sources/ja/blockdiag/introduction.rst:57
 msgid "Debian 6.0 (Squeeze) の場合"
 msgstr ""
 
 # ebc50c2454d84de69d899b3569baba15
-#: ../../../sources/ja/blockdiag/introduction.rst:47
+#: ../../../sources/ja/blockdiag/introduction.rst:58
 msgid "apt-get コマンドで依存パッケージをインストールします。"
 msgstr ""
 
 # e11d413db32547d8a848b5ba54f528c8
-#: ../../../sources/ja/blockdiag/introduction.rst:61
+#: ../../../sources/ja/blockdiag/introduction.rst:72
 msgid ""
 "easy_install の代わりに pypi-install コマンドを利用すると `blockdiag` を "
 "Debian パッケージとして管理することができます。"
 msgstr ""
 
 # af0b691fba7247baac6d9683d2f8e62d
-#: ../../../sources/ja/blockdiag/introduction.rst:64
+#: ../../../sources/ja/blockdiag/introduction.rst:75
 msgid ""
 "pypi-install コマンドは python-stdeb パッケージに含まれているので、 お好みに"
 "合わせてお使い下さい::"
 msgstr ""
 
 # 197b45fe09ad45e58c70376dea4b825b
-#: ../../../sources/ja/blockdiag/introduction.rst:72
+#: ../../../sources/ja/blockdiag/introduction.rst:83
 msgid "CentOS 5.5/5.6 の場合"
 msgstr ""
 
 # 0096f1e3550b4688b3d5d94ab0d06be2
-#: ../../../sources/ja/blockdiag/introduction.rst:73
+#: ../../../sources/ja/blockdiag/introduction.rst:84
 msgid ""
 "yum コマンドで依存パッケージをインストールします。 なお、CentOS 付属の PIL "
 "(python-imaging) パッケージは setuptools に対応していないため、手動で egg-"
@@ -1155,128 +1283,142 @@ msgid ""
 msgstr ""
 
 # ebc828a6a76e4db69b14bc45a13a9ac8
-#: ../../../sources/ja/blockdiag/introduction.rst:89
+#: ../../../sources/ja/blockdiag/introduction.rst:100
 msgid "CentOS 6.2 の場合"
 msgstr ""
 
 # 17d601eb1ffc4a26b3a085c4b06ef0b3
-#: ../../../sources/ja/blockdiag/introduction.rst:90
+#: ../../../sources/ja/blockdiag/introduction.rst:101
 msgid "yum コマンドで依存パッケージをインストールします。"
 msgstr ""
 
 # 64544cc571074f318e46ac3d323fdcee
-#: ../../../sources/ja/blockdiag/introduction.rst:103
+#: ../../../sources/ja/blockdiag/introduction.rst:114
 msgid "MacOSX (MacPorts) の場合"
 msgstr ""
 
 # 263056bc5f3249f4bdb7387851d23104
-#: ../../../sources/ja/blockdiag/introduction.rst:104
+#: ../../../sources/ja/blockdiag/introduction.rst:115
 msgid "port コマンドで依存パッケージをインストールします。"
 msgstr ""
 
 # 7b6bcc32a8164bf0b3cb7253dd119804
-#: ../../../sources/ja/blockdiag/introduction.rst:110
+#: ../../../sources/ja/blockdiag/introduction.rst:121
 msgid "お使いの Python のバージョンに合わせて py2x の部分を変更して下さい。"
 msgstr ""
 
 # 4492d9e5810746caae3492fe5edfe5b2
-#: ../../../sources/ja/blockdiag/introduction.rst:120
+#: ../../../sources/ja/blockdiag/introduction.rst:131
 msgid ""
 "Mac 標準でインストールされている easy_install コマンドを使用した場合 "
 "blockdiag は正しく動作しません。"
 msgstr ""
 
 # c40f7ff0ff6f48f784a9bd9e68687375
-#: ../../../sources/ja/blockdiag/introduction.rst:123
+#: ../../../sources/ja/blockdiag/introduction.rst:134
 msgid ""
 "PATH の設定や、フルパス指定するなどして MacPorts でインストールした "
 "easy_install を利用して下さい。"
 msgstr ""
 
 # de74f2acdb20470f8f6f90b88fe5b22e
-#: ../../../sources/ja/blockdiag/introduction.rst:127
+#: ../../../sources/ja/blockdiag/introduction.rst:138
 msgid "MacOSX (homebrew) の場合"
 msgstr ""
 
 # d3d25aaaff3f4f9c9e222c9d57643358
-#: ../../../sources/ja/blockdiag/introduction.rst:128
+#: ../../../sources/ja/blockdiag/introduction.rst:139
 msgid ""
 "MacOSX (homebrew) の環境でインストールされる PIL パッケージは freetype2 に対"
 "応していないためそのままでは blockdiag を利用することはできません。"
 msgstr ""
 
 # 5aafe1876d2d484895e52f354e9d4dc2
-#: ../../../sources/ja/blockdiag/introduction.rst:131
+#: ../../../sources/ja/blockdiag/introduction.rst:142
 msgid ""
 "また、freetype2 用の Foluma (パッケージ)は提供されていないため、 以下の内容"
 "で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。"
 msgstr ""
 
 # c2ff8eea6a5c4b43937d5c424777447e
-#: ../../../sources/ja/blockdiag/introduction.rst:154
+#: ../../../sources/ja/blockdiag/introduction.rst:165
 msgid "その後、以下のコマンドで freetype2 および PIL をインストールします。"
 msgstr ""
 
 # 65dee79149e0437a81b209287974431b
-#: ../../../sources/ja/blockdiag/introduction.rst:168
+#: ../../../sources/ja/blockdiag/introduction.rst:179
 msgid "FreeBSD (ports) の場合"
 msgstr ""
 
 # b9083415c1cb4dc4a94cbc970b80e6c1
-#: ../../../sources/ja/blockdiag/introduction.rst:169
+#: ../../../sources/ja/blockdiag/introduction.rst:180
 msgid "portinstall コマンドで blockdiag パッケージをインストールします。"
 msgstr ""
 
 # 99d86ea36130492989c0e028fd1b4235
-#: ../../../sources/ja/blockdiag/introduction.rst:176
+#: ../../../sources/ja/blockdiag/introduction.rst:187
 msgid "NetBSD (pkgsrc) の場合"
 msgstr ""
 
 # ed5cf73812564deaa139f5761df980af
-#: ../../../sources/ja/blockdiag/introduction.rst:177
+#: ../../../sources/ja/blockdiag/introduction.rst:188
 msgid ""
 "blockdiag パッケージは pkgsrc に graphics/py-blockdiag として収録されていま"
 "す。 そのため、通常の pkgsrc の管理方法でインストールすることができます。"
 msgstr ""
 
 # aa2d3a6ae6544fb8905a435f6c64251f
-#: ../../../sources/ja/blockdiag/introduction.rst:180
+#: ../../../sources/ja/blockdiag/introduction.rst:191
 msgid "ここでは一般的な make を使った方法を紹介します。"
 msgstr ""
 
 # 01235cc0af3d4bc9bd7d78a57a5e2b7a
-#: ../../../sources/ja/blockdiag/introduction.rst:188
+#: ../../../sources/ja/blockdiag/introduction.rst:199
 msgid "そのほかの環境の場合"
 msgstr ""
 
 # e51ed65a4b9f4cbba015793829dc862c
-#: ../../../sources/ja/blockdiag/introduction.rst:189
+#: ../../../sources/ja/blockdiag/introduction.rst:200
 msgid "以下のコマンドで `blockdiag` をインストールします。"
 msgstr ""
 
+# bb4399132ef94c24af4c4673cb843e80
+#: ../../../sources/ja/blockdiag/introduction.rst:207
+msgid "エラーが出る場合"
+msgstr ""
+
+# 05b4c80eca7642c0922c44359bf62fd6
+#: ../../../sources/ja/blockdiag/introduction.rst:209
+msgid ""
+"blockdiag のインストール後、コマンドを実行した時に **The _imagingft C module "
+"is not installed** というエラーが出る場合、 PIL パッケージの再インストールを"
+"行なってください。 PIL パッケージが libfreetype2 にリンクされていない場合、上"
+"記のエラーが発生することがあります。"
+msgstr ""
+
 # 9679b03507694929af7c84cea3f32db4
-#: ../../../sources/ja/blockdiag/introduction.rst:197
+#: ../../../sources/ja/blockdiag/introduction.rst:215
 msgid "実行方法"
 msgstr ""
 
 # 7db1cf0a169b4e56ada9c700cc911ae9
-#: ../../../sources/ja/blockdiag/introduction.rst:198
+#: ../../../sources/ja/blockdiag/introduction.rst:216
 msgid "ブロック図を生成するには `blockdiag` コマンドを起動します。"
 msgstr ""
 
 # e72d3a6f52864b4ab8f15e4a49f12f5a
-#: ../../../sources/ja/blockdiag/introduction.rst:207
+#: ../../../sources/ja/blockdiag/introduction.rst:225
 msgid ""
 "SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。"
 msgstr ""
 
 # 162465d19e0f4cb0ae091c2d2b42b5fd
-#: ../../../sources/ja/blockdiag/introduction.rst:225
+#: ../../../sources/ja/blockdiag/introduction.rst:243
 msgid "フォント設定"
 msgstr ""
 
 # 05b4781cbb5d4deea965d73022c06d8b
-#: ../../../sources/ja/blockdiag/introduction.rst:226
+#: ../../../sources/ja/blockdiag/introduction.rst:244
 msgid ""
 "`blockdiag` はブロック図の生成に TrueType フォントを利用します。 `blockdiag` "
 "は自動的に利用可能なフォントを取得しますが、 -f (--font) オプションにて特定の"
@@ -1284,44 +1426,44 @@ msgid ""
 msgstr ""
 
 # a36a302f957146328ff0892a3457c5d8
-#: ../../../sources/ja/blockdiag/introduction.rst:235
+#: ../../../sources/ja/blockdiag/introduction.rst:253
 msgid ""
 "また、$HOME/.blockdiagrc ファイルに設定を書くことで 常に同じフォントを利用す"
 "ることができます。"
 msgstr ""
 
 # 0cd846bcbccd40c2b38d61019c72e2e4
-#: ../../../sources/ja/blockdiag/introduction.rst:246
+#: ../../../sources/ja/blockdiag/introduction.rst:264
 msgid "事前に入れておくべきソフトウェア"
 msgstr ""
 
 # c9d027a4edae46c7bda791eec7d94456
-#: ../../../sources/ja/blockdiag/introduction.rst:247
+#: ../../../sources/ja/blockdiag/introduction.rst:265
 msgid "Python 2.4 以降 (3.x は未対応)"
 msgstr ""
 
 # 03c7651ea05b49a6974b3daab9b8f570
-#: ../../../sources/ja/blockdiag/introduction.rst:248
+#: ../../../sources/ja/blockdiag/introduction.rst:266
 msgid "Python Imaging Library 1.1.5 以降"
 msgstr ""
 
 # a35e9496e4144f4b8b8e486f52d395c0
-#: ../../../sources/ja/blockdiag/introduction.rst:249
+#: ../../../sources/ja/blockdiag/introduction.rst:267
 msgid "funcparserlib 0.3.4 以降"
 msgstr ""
 
 # 091048226a364ac5baa14d75e644d4f7
-#: ../../../sources/ja/blockdiag/introduction.rst:250
+#: ../../../sources/ja/blockdiag/introduction.rst:268
 msgid "setuptools もしくは distribute."
 msgstr ""
 
 # cf014ea577234e34a03e8c1a13b14986
-#: ../../../sources/ja/blockdiag/introduction.rst:254
+#: ../../../sources/ja/blockdiag/introduction.rst:272
 msgid "ライセンス"
 msgstr ""
 
 # 824e51b530774a0eb4a68d39c24e5746
-#: ../../../sources/ja/blockdiag/introduction.rst:255
+#: ../../../sources/ja/blockdiag/introduction.rst:273
 msgid "Apache License 2.0"
 msgstr ""
 
