@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-06 14:22\n"
+"POT-Creation-Date: 2013-11-23 14:46+0900\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -67,6 +67,16 @@ msgstr "エッジの種類"
 msgid "attributes of edges"
 msgstr "エッジの設定"
 
+# 7429a22f86e24858b3559c8a4da0e1ae
+#: ../../../sources/ja/seqdiag/examples.rst:22
+msgid "color attribute"
+msgstr "color 属性"
+
+# 7429a22f86e24858b3559c8a4da0e1ae
+#: ../../../sources/ja/seqdiag/examples.rst:25
+msgid "failed attribute"
+msgstr "failed 属性"
+
 # 8ead3abaa9254f28bd9aa1f1623ec094
 #: ../../../sources/ja/seqdiag/examples.rst:32
 msgid "auto return edge and nested sequense"
@@ -86,6 +96,16 @@ msgstr "エッジノート(注意書き)"
 #: ../../../sources/ja/seqdiag/examples.rst:54
 msgid "diagram attributes"
 msgstr "図全体の設定"
+
+# 94130a94f47b414cabee0d7c94fa6087
+#: ../../../sources/ja/seqdiag/examples.rst:58
+msgid "activation and autonumber attributes"
+msgstr "activation, autonumber 属性"
+
+# 71766a15629b4431928dee5c15f7e4d2
+#: ../../../sources/ja/seqdiag/examples.rst:61
+msgid "default_note_color attribute"
+msgstr "default_note_color 属性"
 
 # 003998488aa44b0993dbefad1c6854f5
 #: ../../../sources/ja/seqdiag/examples.rst:68
@@ -151,29 +171,17 @@ msgid "Setup"
 msgstr "インストール"
 
 # 1756c80a900f4734b253dc2fab65f226
-#: ../../../sources/ja/seqdiag/introduction.rst:15
-msgid "by easy_install"
-msgstr "easy_install を利用する場合"
-
-# e595a51919c54688a02019dba7b657ce
-# 8838722ff1094ef792900bc3489c809f
-#: ../../../sources/ja/seqdiag/introduction.rst:16
-#: ../../../sources/ja/seqdiag/introduction.rst:24
-msgid "Make environment"
-msgstr "以下のコマンドでインストールすることができます。"
-
-# 4319c3cbdb534430b7982e349cc2dc36
-#: ../../../sources/ja/seqdiag/introduction.rst:23
-msgid "by buildout"
-msgstr "buildout を利用する場合"
+#: ../../../sources/ja/seqdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
 
 # 528302ea0d644fe0ba47c9c7545737ba
-#: ../../../sources/ja/seqdiag/introduction.rst:33
+#: ../../../sources/ja/seqdiag/introduction.rst:24
 msgid "Copy and modify ini file. example"
 msgstr ""
 
 # e0c3d77a7b5740ecb561bce3d312623e
-#: ../../../sources/ja/seqdiag/introduction.rst:40
+#: ../../../sources/ja/seqdiag/introduction.rst:31
 msgid ""
 "Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
@@ -181,27 +189,27 @@ msgstr ""
 "書式の詳細については :ref:`seqdiag-sample-diagrams` を参照してください。"
 
 # 7b1ebcf93126462f9523407d69421479
-#: ../../../sources/ja/seqdiag/introduction.rst:45
+#: ../../../sources/ja/seqdiag/introduction.rst:36
 msgid "Usage"
 msgstr "実行方法"
 
 # 5caf69cb5d6c41fb91dcbcc6212a56c2
-#: ../../../sources/ja/seqdiag/introduction.rst:46
+#: ../../../sources/ja/seqdiag/introduction.rst:37
 msgid "Execute seqdiag command"
 msgstr "コマンドラインで seqdiag コマンドを実行します。"
 
 # 4f2042edb7d940c8bd6988da7ca938b9
-#: ../../../sources/ja/seqdiag/introduction.rst:54
+#: ../../../sources/ja/seqdiag/introduction.rst:45
 msgid "If you want SVG images, use -T option"
 msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 8418ee6229f74eed92d2d26bb2d77f9c
-#: ../../../sources/ja/seqdiag/introduction.rst:64
+#: ../../../sources/ja/seqdiag/introduction.rst:55
 msgid "Font Configuration"
 msgstr "フォント設定"
 
 # 491893c9d5e849399fefed5278531412
-#: ../../../sources/ja/seqdiag/introduction.rst:65
+#: ../../../sources/ja/seqdiag/introduction.rst:56
 msgid ""
 "seqdiag uses TrueType Font to render text. seqdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
@@ -211,44 +219,44 @@ msgstr ""
 "い場合は -f (--font) オプションを利用します。"
 
 # 2c710dc0abea4278a5e98fafbc21d0b4
-#: ../../../sources/ja/seqdiag/introduction.rst:74
+#: ../../../sources/ja/seqdiag/introduction.rst:65
 msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
-"しょう。"
+"もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよい"
+"でしょう。"
 
 # 5268874756c142fe8169784cae7c46df
-#: ../../../sources/ja/seqdiag/introduction.rst:84
+#: ../../../sources/ja/seqdiag/introduction.rst:75
 msgid "Requirements"
 msgstr "事前に入れておくべきソフトウェア"
 
 # 4c15552a6db54de995c97cb2f5dd1e64
-#: ../../../sources/ja/seqdiag/introduction.rst:85
+#: ../../../sources/ja/seqdiag/introduction.rst:76
 msgid "Python 2.4 or later (not support 3.x)"
 msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # cb5a87da8d414188a726fc9fb41aebe1
-#: ../../../sources/ja/seqdiag/introduction.rst:86
+#: ../../../sources/ja/seqdiag/introduction.rst:77
 msgid "Python Imaging Library 1.1.5 or later."
 msgstr "Python Imaging Library 1.1.5 以降"
 
 # a979728e662445ddb46739c78e0c96df
-#: ../../../sources/ja/seqdiag/introduction.rst:87
+#: ../../../sources/ja/seqdiag/introduction.rst:78
 msgid "funcparserlib 0.3.4 or later."
 msgstr "funcparserlib 0.3.4 以降"
 
 # 71766a15629b4431928dee5c15f7e4d2
-#: ../../../sources/ja/seqdiag/introduction.rst:88
+#: ../../../sources/ja/seqdiag/introduction.rst:79
 msgid "setuptools or distribute."
 msgstr "setuptools もしくは distribute"
 
 # d869d075ea134b6e888e06c07168224e
-#: ../../../sources/ja/seqdiag/introduction.rst:92
+#: ../../../sources/ja/seqdiag/introduction.rst:83
 msgid "License"
 msgstr "ライセンス"
 
 # 86a2a70ecbb346c9916710c3f00a3503
-#: ../../../sources/ja/seqdiag/introduction.rst:93
+#: ../../../sources/ja/seqdiag/introduction.rst:84
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
@@ -399,6 +407,11 @@ msgstr ""
 "``seqdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
 "きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
 "列を指定することで環境の違いを吸収することができます。"
+
+# 3c9d4976705c496ea6d10d0c7961aae9
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:124
+msgid "seqdiag_fontpath allows fontpath array"
+msgstr ""
 
 # 82c0bb9568ef42efa2d6b4f0d05178c8
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:128

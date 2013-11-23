@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-05 12:19\n"
+"POT-Creation-Date: 2013-11-23 14:46+0900\n"
 "PO-Revision-Date: 2013-03-03 23:17+0900\n"
 "Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -58,7 +58,9 @@ msgstr "ネットワーク図生成ツール nwdiag"
 msgid ""
 "`nwdiag` generates network-diagram image file from .diag file. .diag file is "
 "similar to DOT file (graphviz's)."
-msgstr "nwdiag はシンプルなテキストからネットワーク図を生成するネットワーク図生成ツールです。"
+msgstr ""
+"nwdiag はシンプルなテキストからネットワーク図を生成するネットワーク図生成ツー"
+"ルです。"
 
 # 582e2976a90d48a1908934cd4f46fc20
 #: ../../../sources/ja/nwdiag/index.rst:8
@@ -67,26 +69,23 @@ msgstr "nwdiag を用いると以下のような図が簡単に生成できま�
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:28
-#, fuzzy
 msgid ""
 "And, `nwdiag` package includes more scripts called `rackdiag` and "
 "`packetdiag` ."
 msgstr ""
-"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+"また、nwdiag は `rackdiag` 、 `packetdiag` というふたつのスクリプトを同梱しています。"
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:30
-#, fuzzy
 msgid "`rackdiag` generates rack-structure diagram images:"
 msgstr ""
-"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+"`rackdiag` はラック図を生成することができます。"
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:46
-#, fuzzy
 msgid "`packetdiag` generates packet header diagram images:"
 msgstr ""
-"また、nwdiag はラック図生成用のツールである `rackdiag` を同梱しています。"
+"`packetdiag` はパケットヘッダ図を生成することができます。"
 
 # e34d90960e734f2c8f6fb29915af05de
 #: ../../../sources/ja/nwdiag/introduction.rst:3
@@ -119,29 +118,17 @@ msgid "Setup"
 msgstr "インストール"
 
 # 91239749321448dda4cb7342fa9dcc6e
-#: ../../../sources/ja/nwdiag/introduction.rst:15
-msgid "by easy_install"
-msgstr "easy_install を利用する場合"
-
-# 9d6b2fa8a2554221b21228200bc1759b
-# 90814189480147d4b051a53799d85a44
-#: ../../../sources/ja/nwdiag/introduction.rst:16
-#: ../../../sources/ja/nwdiag/introduction.rst:24
-msgid "Make environment"
-msgstr "以下のコマンドでインストールすることができます。"
-
-# fa7f7bcbaebb47759f2c6da0b0e5965e
-#: ../../../sources/ja/nwdiag/introduction.rst:23
-msgid "by buildout"
-msgstr "buildout を利用する場合"
+#: ../../../sources/ja/nwdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
 
 # 01a24e1f52c54895b504b5a88bbcc82b
-#: ../../../sources/ja/nwdiag/introduction.rst:33
+#: ../../../sources/ja/nwdiag/introduction.rst:24
 msgid "Copy and modify ini file. example"
 msgstr ""
 
 # 2f36bb90f3c848d7b31429f7b8285722
-#: ../../../sources/ja/nwdiag/introduction.rst:40
+#: ../../../sources/ja/nwdiag/introduction.rst:31
 msgid ""
 "Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
@@ -149,27 +136,27 @@ msgstr ""
 "書式の詳細については :ref:`nwdiag-sample-diagrams` を参照してください。"
 
 # c5aab038aace40518b91ea2aefa82a02
-#: ../../../sources/ja/nwdiag/introduction.rst:45
+#: ../../../sources/ja/nwdiag/introduction.rst:36
 msgid "Usage"
 msgstr "実行方法"
 
 # 4a4677bc3da74f74b2e1d304cc06af7b
-#: ../../../sources/ja/nwdiag/introduction.rst:46
+#: ../../../sources/ja/nwdiag/introduction.rst:37
 msgid "Execute nwdiag command"
 msgstr "コマンドラインで nwdiag コマンドを実行します。"
 
 # a2535a98ff704599958713ac0fac2e35
-#: ../../../sources/ja/nwdiag/introduction.rst:54
+#: ../../../sources/ja/nwdiag/introduction.rst:45
 msgid "If you want SVG images, use -T option"
 msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 8e125a082c4c44d693365ec47395c1f4
-#: ../../../sources/ja/nwdiag/introduction.rst:64
+#: ../../../sources/ja/nwdiag/introduction.rst:55
 msgid "Font Configuration"
 msgstr "フォント設定"
 
 # 63b34c015ba947fe99124744ef7de2f7
-#: ../../../sources/ja/nwdiag/introduction.rst:65
+#: ../../../sources/ja/nwdiag/introduction.rst:56
 msgid ""
 "nwdiag uses TrueType Font to render text. nwdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
@@ -179,44 +166,44 @@ msgstr ""
 "指定したい場合は-f (-font) オプションを利用します。"
 
 # 7fccd0db7cbd4286ab608c4c04e03215
-#: ../../../sources/ja/nwdiag/introduction.rst:73
+#: ../../../sources/ja/nwdiag/introduction.rst:64
 msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
 "もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよい"
 "でしょう。"
 
 # 509b89ea4c3d4b68aee648c61867a7e5
-#: ../../../sources/ja/nwdiag/introduction.rst:83
+#: ../../../sources/ja/nwdiag/introduction.rst:74
 msgid "Requirements"
 msgstr "事前に入れておくべきソフトウェア"
 
 # 64cad6f025564f659086f8494dda5de2
-#: ../../../sources/ja/nwdiag/introduction.rst:84
+#: ../../../sources/ja/nwdiag/introduction.rst:75
 msgid "Python 2.4 or later (not support 3.x)"
 msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # 6e1198958ad247ffb792cd55f7b27f8e
-#: ../../../sources/ja/nwdiag/introduction.rst:85
+#: ../../../sources/ja/nwdiag/introduction.rst:76
 msgid "Python Imaging Library 1.1.5 or later."
 msgstr "Python Imaging Library 1.1.5 以降"
 
 # 26b97df86b3a4f45aea9a2f18e3a61ea
-#: ../../../sources/ja/nwdiag/introduction.rst:86
+#: ../../../sources/ja/nwdiag/introduction.rst:77
 msgid "funcparserlib 0.3.4 or later."
 msgstr "funcparserlib 0.3.4 以降"
 
 # 927b502549144cf9bbfe5cf022a34cc1
-#: ../../../sources/ja/nwdiag/introduction.rst:87
+#: ../../../sources/ja/nwdiag/introduction.rst:78
 msgid "setuptools or distribute."
 msgstr "setuptools もしくは distribute"
 
 # aff5979cc0384c5eb481cc7bc735ef92
-#: ../../../sources/ja/nwdiag/introduction.rst:91
+#: ../../../sources/ja/nwdiag/introduction.rst:82
 msgid "License"
 msgstr "ライセンス"
 
 # f70d4f8f91b54a89a940380395087697
-#: ../../../sources/ja/nwdiag/introduction.rst:92
+#: ../../../sources/ja/nwdiag/introduction.rst:83
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
@@ -249,9 +236,8 @@ msgstr "ピア接続"
 
 # 239bf5bf58464c099ece76b06bb1f889
 #: ../../../sources/ja/nwdiag/packetdiag-examples.rst:5
-#, fuzzy
 msgid "Sample diagams: packetdiag"
-msgstr "rackdiag 出力サンプル"
+msgstr "packetdiag 出力サンプル"
 
 # e1ab5f523e7e4e5089051656da26c751
 #: ../../../sources/ja/nwdiag/packetdiag-examples.rst:8
@@ -430,6 +416,11 @@ msgstr ""
 "``nwdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
 "きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
 "列を指定することで環境の違いを吸収することができます。"
+
+# 58e58d19f7a04bf18466361842c98582
+#: ../../../sources/ja/nwdiag/sphinxcontrib.rst:138
+msgid "nwdiag_fontpath allows fontpath array"
+msgstr ""
 
 # fffb10b7878d4b928e3766b2d9198054
 #: ../../../sources/ja/nwdiag/sphinxcontrib.rst:142
