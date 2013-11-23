@@ -11,24 +11,15 @@ Features
 Setup
 =====
 
-by easy_install
-----------------
-Make environment
+Use easy_install or pip
 
 .. code-block:: bash
 
    $ sudo easy_install actdiag
 
-by buildout
-------------
-Make environment
+   Or
 
-.. code-block:: bash
-
-   $ hg clone http://bitbucket.org/tk0miya/actdiag
-   $ cd actdiag
-   $ python bootstrap.py
-   $ bin/buildout
+   $ sudo pip actdiag
 
 Copy and modify ini file. example
 

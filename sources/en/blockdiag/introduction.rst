@@ -11,30 +11,21 @@ Features
 Setup
 =====
 
-by easy_install
-----------------
-Make environment
+Use easy_install or pip
 
 .. code-block:: bash
 
    $ sudo easy_install blockdiag
+
+   Or
+
+   $ sudo pip blockdiag
 
 If you want to export as PDF format, give pdf arguments
 
 .. code-block:: bash
 
    $ sudo easy_install "blockdiag[pdf]"
-
-by buildout
-------------
-Make environment
-
-.. code-block:: bash
-
-   $ hg clone http://bitbucket.org/tk0miya/blockdiag
-   $ cd blockdiag
-   $ python bootstrap.py
-   $ bin/buildout
 
 
 Usage

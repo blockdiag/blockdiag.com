@@ -11,24 +11,15 @@ Features
 Setup
 =====
 
-by easy_install
-----------------
-Make environment
+Use easy_install or pip
 
 .. code-block:: bash
 
    $ sudo easy_install nwdiag
 
-by buildout
-------------
-Make environment
+   Or
 
-.. code-block:: bash
-
-   $ hg clone http://bitbucket.org/tk0miya/nwdiag
-   $ cd nwdiag
-   $ python bootstrap.py
-   $ bin/buildout
+   $ sudo pip nwdiag
 
 Copy and modify ini file. example
 
