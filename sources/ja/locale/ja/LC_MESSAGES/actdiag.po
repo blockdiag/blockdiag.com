@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-06 14:22\n"
+"POT-Creation-Date: 2013-11-23 14:46+0900\n"
 "PO-Revision-Date: 2013-03-03 17:21+0900\n"
 "Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -108,29 +108,17 @@ msgid "Setup"
 msgstr "インストール"
 
 # 52793f002f464a4e83bdc8e7f0f190d3
-#: ../../../sources/ja/actdiag/introduction.rst:15
-msgid "by easy_install"
-msgstr "easy_install を利用する場合"
-
-# 8c38f57da95548f89fc1f0a003e83145
-# 5395e751867d4ddab06f99ed107ae125
-#: ../../../sources/ja/actdiag/introduction.rst:16
-#: ../../../sources/ja/actdiag/introduction.rst:24
-msgid "Make environment"
-msgstr "以下のコマンドでインストールすることができます。"
-
-# c399bb21e87b42028baa1962a77cb652
-#: ../../../sources/ja/actdiag/introduction.rst:23
-msgid "by buildout"
-msgstr "buildout を利用する場合"
+#: ../../../sources/ja/actdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
 
 # aabe8ac5c8a049539d292ef8f3910ba6
-#: ../../../sources/ja/actdiag/introduction.rst:33
+#: ../../../sources/ja/actdiag/introduction.rst:24
 msgid "Copy and modify ini file. example"
 msgstr ""
 
 # a2e6e97bed49477c8a72514518e6bad2
-#: ../../../sources/ja/actdiag/introduction.rst:40
+#: ../../../sources/ja/actdiag/introduction.rst:31
 msgid ""
 "Please refer to :ref:`actdiag-sample-diagrams` section for the format of the "
 "`simpla.diag` configuration file."
@@ -138,27 +126,27 @@ msgstr ""
 "書式の詳細については :ref:`actdiag-sample-diagrams` を参照してください。"
 
 # 5645f640576f4302a517ecd0ad6a032e
-#: ../../../sources/ja/actdiag/introduction.rst:45
+#: ../../../sources/ja/actdiag/introduction.rst:36
 msgid "Usage"
 msgstr "実行方法"
 
 # 7e8740b52fa54bcaa7c9278c3eb2b83d
-#: ../../../sources/ja/actdiag/introduction.rst:46
+#: ../../../sources/ja/actdiag/introduction.rst:37
 msgid "Execute actdiag command"
 msgstr "コマンドラインで actdiag コマンドを実行します。"
 
 # be6e3b4843f348d6af0c1bd6636b2567
-#: ../../../sources/ja/actdiag/introduction.rst:54
+#: ../../../sources/ja/actdiag/introduction.rst:45
 msgid "If you want SVG images, use -T option"
 msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
 
 # 3ec108406339429c88a1aa31fa1b1c38
-#: ../../../sources/ja/actdiag/introduction.rst:64
+#: ../../../sources/ja/actdiag/introduction.rst:55
 msgid "Font Configuration"
 msgstr "フォント設定"
 
 # 3d14f44f1174466885a5550e78078a12
-#: ../../../sources/ja/actdiag/introduction.rst:65
+#: ../../../sources/ja/actdiag/introduction.rst:56
 msgid ""
 "actdiag uses TrueType Font to render text. actdiag try to detect installed "
 "fonts but if nothing detected, You can specify fonts with -f (--font) option"
@@ -168,43 +156,44 @@ msgstr ""
 "い場合は -f (-font) オプションを利用します。"
 
 # ce67367380a442a59afde212997608cb
-#: ../../../sources/ja/actdiag/introduction.rst:73
+#: ../../../sources/ja/actdiag/introduction.rst:64
 msgid "If you always use same font, write $HOME/.blockdiagrc"
 msgstr ""
-"もし常に設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいでしょう"
+"もし常に設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
+"しょう"
 
 # 3964db3952d749f7a2b0521b69efbbc9
-#: ../../../sources/ja/actdiag/introduction.rst:83
+#: ../../../sources/ja/actdiag/introduction.rst:74
 msgid "Requirements"
 msgstr "事前に入れておくべきソフトウェア"
 
 # 31a3c70c33d3450da80afabfb863c15c
-#: ../../../sources/ja/actdiag/introduction.rst:84
+#: ../../../sources/ja/actdiag/introduction.rst:75
 msgid "Python 2.4 or later (not support 3.x)"
 msgstr "Python 2.4 以降 (3.x は未対応)"
 
 # 09072bf4725b4b31ac1ba0c6e14cab65
-#: ../../../sources/ja/actdiag/introduction.rst:85
+#: ../../../sources/ja/actdiag/introduction.rst:76
 msgid "Python Imaging Library 1.1.5 or later."
 msgstr "Python Imaging Library 1.1.5 以降"
 
 # dae57d7573e348dba4589e1dcfd8abe4
-#: ../../../sources/ja/actdiag/introduction.rst:86
+#: ../../../sources/ja/actdiag/introduction.rst:77
 msgid "funcparserlib 0.3.4 or later."
 msgstr "funcparserlib 0.3.4 以降"
 
 # fb9a92eafcbd4c189d92a356745b23a1
-#: ../../../sources/ja/actdiag/introduction.rst:87
+#: ../../../sources/ja/actdiag/introduction.rst:78
 msgid "setuptools or distribute."
 msgstr "setuptools もしくは distribute"
 
 # 22f967dab44d40ca8be8e0bf10310d87
-#: ../../../sources/ja/actdiag/introduction.rst:91
+#: ../../../sources/ja/actdiag/introduction.rst:82
 msgid "License"
 msgstr "ライセンス"
 
 # 1e86f097a82f4760a3e072aa4cb465ee
-#: ../../../sources/ja/actdiag/introduction.rst:92
+#: ../../../sources/ja/actdiag/introduction.rst:83
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
@@ -355,6 +344,11 @@ msgstr ""
 "``actdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
 "きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
 "列を指定することで環境の違いを吸収することができます。"
+
+# 887d2e65149e432ea19a4560ddf4b144
+#: ../../../sources/ja/actdiag/sphinxcontrib.rst:139
+msgid "actdiag_fontpath allows fontpath array"
+msgstr ""
 
 # 72dc24fe45a440aaaca77174f4498f15
 #: ../../../sources/ja/actdiag/sphinxcontrib.rst:143

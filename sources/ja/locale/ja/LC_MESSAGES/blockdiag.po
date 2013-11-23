@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-23 15:47\n"
+"POT-Creation-Date: 2013-11-23 14:46+0900\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -528,8 +528,8 @@ msgid ""
 "When you use desctable option on the Sphinx extension, a row named 'No.' is "
 "added to the table. Use description to enable desctable option."
 msgstr ""
-"設定されたノードの番号は、Sphinx 拡張で desctable オプションを利用している場合に、"
-"生成される表の No. 列に利用されます。"
+"設定されたノードの番号は、Sphinx 拡張で desctable オプションを利用している場"
+"合に、生成される表の No. 列に利用されます。"
 
 # d679c8a3110b444fa817456bc292afb1
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:66
@@ -544,6 +544,23 @@ msgid ""
 "You can use other shapes by using renderer plugins. Please search "
 "'blockdiagcontrib' on the `PyPi <http://pypi.python.org/pypi>`_."
 msgstr "形状はレンダラプラグインによって拡張することが可能です。"
+
+# d8a1986c5fca49dc9a87322b6c2eb513
+# fdb71de74e7141998454b5c7b561449a
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:71
+#: ../../../sources/ja/blockdiag/examples.rst:171
+msgid "(experimental)"
+msgstr ""
+
+# 5fa26f4e8fcc4b959c70f5f35e143edb
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:74
+msgid "actor shape"
+msgstr ""
+
+# 82d190b90fb9410d9e054d295dc8fd32
+#: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:77
+msgid "dots shape"
+msgstr ""
 
 # c32faac9f0194c8c80fcc4a21e1b4836
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:82
@@ -605,7 +622,9 @@ msgstr "ノードのラベル属性のフォントサイズを指定します。
 msgid ""
 "Specify angle of text rotation. 0, 90, 180 and 270 are supported. Default is "
 "0."
-msgstr "ラベルの回転角を指定します。0, 90, 180, 270 のいずれかの値を設定できます。省略時は0です。"
+msgstr ""
+"ラベルの回転角を指定します。0, 90, 180, 270 のいずれかの値を設定できます。省"
+"略時は0です。"
 
 # fd4632dd102e49fb92672a67d6606998
 #: ../../../sources/ja/blockdiag/attributes/node.attributes.rst:138
@@ -1038,9 +1057,31 @@ msgstr ""
 msgid "ラベルの設定"
 msgstr ""
 
+# 63a8b258de2f4ebda8d0ef0a40ac4f9e
+# d40c5a0e306947aeb777a4cd98d4ed2c
+#: ../../../sources/ja/blockdiag/examples.rst:15
+#: ../../../sources/ja/blockdiag/examples.rst:28
+msgid "textcolor 属性を追加"
+msgstr ""
+
 # 203c4f09309842a7a54e602cd789a7e6
 #: ../../../sources/ja/blockdiag/examples.rst:23
 msgid "ノード、エッジのカスタマイズ"
+msgstr ""
+
+# a46132a6cfca47759786f80016cf8348
+#: ../../../sources/ja/blockdiag/examples.rst:25
+msgid "icon 属性を追加"
+msgstr ""
+
+# 9267f633623f4fb087acaccc45d778b7
+#: ../../../sources/ja/blockdiag/examples.rst:31
+msgid "width と height 属性を追加"
+msgstr ""
+
+# f7875cbe490941569e4cc556e12b5af7
+#: ../../../sources/ja/blockdiag/examples.rst:34
+msgid "style 属性で dashed_array フォーマットをサポート"
 msgstr ""
 
 # c438a63e6a954bcb9d0e11d46dbe9f1b
@@ -1083,6 +1124,21 @@ msgstr ""
 msgid "ノード形状の変更"
 msgstr ""
 
+# dc6cb602396f4d92a321de316b9d1037
+#: ../../../sources/ja/blockdiag/examples.rst:90
+msgid "actor shape に対応"
+msgstr ""
+
+# d867debf3c3f4d5c879f77418db1059a
+#: ../../../sources/ja/blockdiag/examples.rst:93
+msgid "dots shape に対応"
+msgstr ""
+
+# fb678b7a6a8f4cef98992fdece95c5ec
+#: ../../../sources/ja/blockdiag/examples.rst:96
+msgid "square shape, circle shape に対応"
+msgstr ""
+
 # ae5103a25a754dcb86439181dcfc1ccc
 #: ../../../sources/ja/blockdiag/examples.rst:103
 msgid "stacked 属性の利用"
@@ -1098,14 +1154,65 @@ msgstr ""
 msgid "グルーピング"
 msgstr ""
 
+# bf2eb092f98c409b86b42282387fb10b
+#: ../../../sources/ja/blockdiag/examples.rst:122
+msgid "グループ属性として label を追加"
+msgstr ""
+
+# d31ea58ac0014738aad78425c0fae273
+#: ../../../sources/ja/blockdiag/examples.rst:125
+msgid "グループの入れ子に対応"
+msgstr ""
+
+# f04bf8143d014289b7256f1dfec5b87a
+#: ../../../sources/ja/blockdiag/examples.rst:128
+msgid "ノード属性として group を追加"
+msgstr ""
+
+# 51281cd28fee4d6489d82ecc0ebb64dd
+#: ../../../sources/ja/blockdiag/examples.rst:131
+msgid "グループラベルの色を指定できるように textcolor 属性を追加"
+msgstr ""
+
+# a84ecc03a6094e5ba8dfd335c3b67424
+#: ../../../sources/ja/blockdiag/examples.rst:134
+msgid "グループの形状を指定できるように shape 属性を追加"
+msgstr ""
+
 # aa1d28f11bd24c70abdfd04c1380a9e2
 #: ../../../sources/ja/blockdiag/examples.rst:141
 msgid "フォントの設定"
 msgstr ""
 
+# d8f268ec823c4941881d084799759ad3
+#: ../../../sources/ja/blockdiag/examples.rst:143
+msgid "ノード、エッジ、グループの属性として fontsize を追加"
+msgstr ""
+
 # 3df7d5108df74297902ac2aed4905d12
 #: ../../../sources/ja/blockdiag/examples.rst:151
 msgid "図全体の設定"
+msgstr ""
+
+# 79064f0c08cd42918bc031c09ab31e38
+#: ../../../sources/ja/blockdiag/examples.rst:153
+msgid "default_shape を追加"
+msgstr ""
+
+# f1a61565983b48a9aea0ae7dc46d7e3d
+#: ../../../sources/ja/blockdiag/examples.rst:156
+msgid ""
+"default_node_color, default_group_color, default_line_color(廃止) を追加"
+msgstr ""
+
+# 45dd258cb0674f13ab600ac522fb2140
+#: ../../../sources/ja/blockdiag/examples.rst:159
+msgid "default_text_color(廃止) を追加"
+msgstr ""
+
+# b52abe879d1943dcb70417d01a18f701
+#: ../../../sources/ja/blockdiag/examples.rst:162
+msgid "default_textcolor, default_linecolor を追加"
 msgstr ""
 
 # 7a35baa7bddb4895a93125a10847a543
@@ -1631,6 +1738,11 @@ msgstr ""
 msgid ""
 "PIL 標準のフォントは日本語フォントを含みません。 そのため、日本語を利用する場"
 "合は必ずフォントを設定して下さい。"
+msgstr ""
+
+# 2d010181b486471c9efbf4664c699b6b
+#: ../../../sources/ja/blockdiag/sphinxcontrib.rst:144
+msgid "`blockdiag_fontpath` にパス文字列の配列を指定する"
 msgstr ""
 
 # 4ef771c9bf0d4dcebf37b58ae51c248b
