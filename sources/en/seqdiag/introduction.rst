@@ -11,24 +11,15 @@ Features
 Setup
 =====
 
-by easy_install
-----------------
-Make environment
+Use easy_install or pip
 
 .. code-block:: bash
 
    $ sudo easy_install seqdiag
 
-by buildout
-------------
-Make environment
+   Or
 
-.. code-block:: bash
-
-   $ hg clone http://bitbucket.org/tk0miya/seqdiag
-   $ cd seqdiag
-   $ python bootstrap.py
-   $ bin/buildout
+   $ sudo pip seqdiag
 
 Copy and modify ini file. example
 
