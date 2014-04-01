@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-23 14:46+0900\n"
+"POT-Creation-Date: 2014-04-01 16:11+0900\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -230,20 +230,20 @@ msgstr ""
 msgid "Requirements"
 msgstr "事前に入れておくべきソフトウェア"
 
-# 4c15552a6db54de995c97cb2f5dd1e64
+# 138a97d38f684002a3169a488d5c7964
 #: ../../../sources/ja/seqdiag/introduction.rst:76
-msgid "Python 2.4 or later (not support 3.x)"
-msgstr "Python 2.4 以降 (3.x は未対応)"
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
 
-# cb5a87da8d414188a726fc9fb41aebe1
+# 4200eb37f59c48ecaa6965a885d89f35
 #: ../../../sources/ja/seqdiag/introduction.rst:77
-msgid "Python Imaging Library 1.1.5 or later."
-msgstr "Python Imaging Library 1.1.5 以降"
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
 
 # a979728e662445ddb46739c78e0c96df
 #: ../../../sources/ja/seqdiag/introduction.rst:78
-msgid "funcparserlib 0.3.4 or later."
-msgstr "funcparserlib 0.3.4 以降"
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
 
 # 71766a15629b4431928dee5c15f7e4d2
 #: ../../../sources/ja/seqdiag/introduction.rst:79

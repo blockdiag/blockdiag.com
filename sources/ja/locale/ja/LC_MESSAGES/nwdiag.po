@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-23 14:46+0900\n"
+"POT-Creation-Date: 2014-04-01 16:11+0900\n"
 "PO-Revision-Date: 2013-03-03 23:17+0900\n"
 "Last-Translator: IWAI, Masaharu <iwaim.sub@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -73,19 +73,18 @@ msgid ""
 "And, `nwdiag` package includes more scripts called `rackdiag` and "
 "`packetdiag` ."
 msgstr ""
-"また、nwdiag は `rackdiag` 、 `packetdiag` というふたつのスクリプトを同梱しています。"
+"また、nwdiag は `rackdiag` 、 `packetdiag` というふたつのスクリプトを同梱して"
+"います。"
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:30
 msgid "`rackdiag` generates rack-structure diagram images:"
-msgstr ""
-"`rackdiag` はラック図を生成することができます。"
+msgstr "`rackdiag` はラック図を生成することができます。"
 
 # e702b73d7b5646e0a32f45b38aa7d5fa
 #: ../../../sources/ja/nwdiag/index.rst:46
 msgid "`packetdiag` generates packet header diagram images:"
-msgstr ""
-"`packetdiag` はパケットヘッダ図を生成することができます。"
+msgstr "`packetdiag` はパケットヘッダ図を生成することができます。"
 
 # e34d90960e734f2c8f6fb29915af05de
 #: ../../../sources/ja/nwdiag/introduction.rst:3
@@ -177,20 +176,20 @@ msgstr ""
 msgid "Requirements"
 msgstr "事前に入れておくべきソフトウェア"
 
-# 64cad6f025564f659086f8494dda5de2
+# 4f4f9fee46284166bcfc5d873d2f9ed9
 #: ../../../sources/ja/nwdiag/introduction.rst:75
-msgid "Python 2.4 or later (not support 3.x)"
-msgstr "Python 2.4 以降 (3.x は未対応)"
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
 
-# 6e1198958ad247ffb792cd55f7b27f8e
+# ab1c8e1c804d42b8b427b80d91925b68
 #: ../../../sources/ja/nwdiag/introduction.rst:76
-msgid "Python Imaging Library 1.1.5 or later."
-msgstr "Python Imaging Library 1.1.5 以降"
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
 
 # 26b97df86b3a4f45aea9a2f18e3a61ea
 #: ../../../sources/ja/nwdiag/introduction.rst:77
-msgid "funcparserlib 0.3.4 or later."
-msgstr "funcparserlib 0.3.4 以降"
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
 
 # 927b502549144cf9bbfe5cf022a34cc1
 #: ../../../sources/ja/nwdiag/introduction.rst:78
@@ -454,3 +453,11 @@ msgid ""
 "If you set PDF, you will get clear diagram images as vector format. (*) "
 "reportlab is needed ."
 msgstr ""
+
+# 64cad6f025564f659086f8494dda5de2
+#~ msgid "Python 2.4 or later (not support 3.x)"
+#~ msgstr "Python 2.4 以降 (3.x は未対応)"
+
+# 6e1198958ad247ffb792cd55f7b27f8e
+#~ msgid "Python Imaging Library 1.1.5 or later."
+#~ msgstr "Python Imaging Library 1.1.5 以降"
