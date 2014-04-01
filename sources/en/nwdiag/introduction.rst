@@ -19,7 +19,7 @@ Use easy_install or pip
 
    Or
 
-   $ sudo pip nwdiag
+   $ sudo pip install nwdiag
 
 Copy and modify ini file. example
 

@@ -19,7 +19,7 @@ Use easy_install or pip
 
    Or
 
-   $ sudo pip seqdiag
+   $ sudo pip install seqdiag
 
 Copy and modify ini file. example
 

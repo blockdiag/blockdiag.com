@@ -19,7 +19,7 @@ Use easy_install or pip
 
    Or
 
-   $ sudo pip actdiag
+   $ sudo pip install actdiag
 
 Copy and modify ini file. example
 
