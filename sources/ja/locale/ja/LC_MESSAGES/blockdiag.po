@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-23 14:46+0900\n"
+"POT-Creation-Date: 2014-04-01 16:15+0900\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -1544,19 +1544,19 @@ msgstr ""
 msgid "事前に入れておくべきソフトウェア"
 msgstr ""
 
-# c9d027a4edae46c7bda791eec7d94456
+# 143a4b8d0038496a8584b022af5a248b
 #: ../../../sources/ja/blockdiag/introduction.rst:265
-msgid "Python 2.4 以降 (3.x は未対応)"
+msgid "Python 2.6, 2.7, 3.2 および 3.3 以降"
 msgstr ""
 
-# 03c7651ea05b49a6974b3daab9b8f570
+# 4c7a8b0c588644739d915f350390581c
 #: ../../../sources/ja/blockdiag/introduction.rst:266
-msgid "Python Imaging Library 1.1.5 以降"
+msgid "Pillow 2.2.1 以降"
 msgstr ""
 
-# a35e9496e4144f4b8b8e486f52d395c0
+# 6e4c583008a4474aa1ec5467d8e74818
 #: ../../../sources/ja/blockdiag/introduction.rst:267
-msgid "funcparserlib 0.3.4 以降"
+msgid "funcparserlib 0.3.6 以降"
 msgstr ""
 
 # 091048226a364ac5baa14d75e644d4f7
