@@ -72,9 +72,9 @@ If you always use same font, write $HOME/.blockdiagrc
 
 Requirements
 ============
-* Python 2.4 or later (not support 3.x)
-* Python Imaging Library 1.1.5 or later.
-* funcparserlib 0.3.4 or later.
+* Python 2.6, 2.7, 3.2, 3.3 or later
+* Pillow 2.2.1 or later.
+* funcparserlib 0.3.6 or later.
 * setuptools or distribute.
 
 
