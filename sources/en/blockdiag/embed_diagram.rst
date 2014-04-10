@@ -83,7 +83,7 @@ Embed in Rabbit
 Rabbit support blockdiag, users can embed a blockdiagram in a
 presentation with no additional software.
 
-.. _Rabbit: http://rabbit-shockers.org/
+.. _Rabbit: http://rabbit-shocker.org/
 
 
 Embed in Joomla
