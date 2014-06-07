@@ -18,6 +18,18 @@ sphinxcontrib-blockdiag package which is Sphinx extension.
 .. _Sphinx: http://sphinx.pocoo.org/
 
 
+Embed in ipython-notebook
+==========================
+
+`IPython-notebook` is a web based interactive document.
+
+To embed a blockdiagram in the ipython-notebook documents,
+use `ipython-diags`_.
+
+.. _IPython-notebook: http://ipython.org/notebook.html
+.. _ipython-diags: https://bitbucket.org/vladf/ipython-diags
+
+
 Embed in Redmine
 =================
 
