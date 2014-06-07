@@ -18,6 +18,30 @@ sphinxcontrib-blockdiag package which is Sphinx extension.
 .. _Sphinx: http://sphinx.pocoo.org/
 
 
+Embed in Read the Docs
+=======================
+
+`Read the Docs`_ is documentation hosting service for sphinx docs.
+
+To embed a blockdiagram in the sphinx docs at Read the Docs,
+Use sphinxcontrib-blockdiag package.
+
+1. Add `sphinxcontrib.blockdiag` extension to `conf.py`
+2. Add `sphinxcontrib-blockdiag` to your `requirements.txt`
+3. Set up your project on Read the Docs.
+
+   * check `Use virtualenv`
+   * input path to your requirements.txt to `Requirements file`
+
+
+If you want to publish documents including unicodes,
+put truetype fonts to your `_static` directory.
+And specify it as `blockdiag_fontpath` in `conf.py`::
+
+   # Set up font for blockdiag
+   blockdiag_fontpath = '_static/ipagp.ttf'
+
+
 Embed in ipython-notebook
 ==========================
 
