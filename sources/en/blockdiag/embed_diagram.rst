@@ -153,7 +153,7 @@ Get from API
 send some text data, you can get a blockdiagram which is SVG format.
 
 To use Web API, send a GET request to
-http://blockdiag.appspot.com/image with some parameters.
+http://interactive.blockdiag.com/image with some parameters.
 
 .. list-table::
    :widths: 10 30
