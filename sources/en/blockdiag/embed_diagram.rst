@@ -41,6 +41,8 @@ And specify it as `blockdiag_fontpath` in `conf.py`::
    # Set up font for blockdiag
    blockdiag_fontpath = '_static/ipagp.ttf'
 
+.. _Read the Docs: https://readthedocs.org/
+
 
 Embed in ipython-notebook
 ==========================
@@ -147,7 +149,7 @@ To embed a blockdiagram in the asciidoc, use `asciidoc-diag-filter`_.
 Get from API
 =============
 
-:ref:`interactive shell for blockdiag` provides a Web API. When you
+`interactive shell for blockdiag <http://interactive.blockdiag.com>` provides a Web API. When you
 send some text data, you can get a blockdiagram which is SVG format.
 
 To use Web API, send a GET request to
