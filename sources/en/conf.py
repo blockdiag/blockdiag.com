@@ -280,17 +280,18 @@ actdiag_antialias = True
 nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 nwdiag_antialias = True
 rackdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
-#rackdiag_antialias = True
+rackdiag_antialias = True
 packetdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 packetdiag_antialias = True
 packetdiag_html_image_format = 'SVG'
 
 
-from sphinx import addnodes
-
 def parse_event(env, sig, signode):
+    from sphinx import addnodes
+
     signode += addnodes.desc_name(sig, sig)
-    return sig.replace(' ','').split('=')[0]
+    return sig.replace(' ', '').split('=')[0]
+
 
 def setup(app):
     app.add_description_unit('confval', 'confval',
@@ -300,9 +301,15 @@ def setup(app):
     from sphinx.util.docfields import GroupedField
     fdesc = GroupedField('parameter', label='Parameters',
                          names=['param'], can_collapse=True)
-    app.add_object_type('blockdiag_diagram_attr', 'blockdiag_diagram_attr',
-                        'pair: %s; diagram atttribute(blockdiag)', parse_event, doc_field_types=[fdesc])
-    app.add_object_type('blockdiag_edge_attr', 'blockdiag_egde_attr',
-                        'pair: %s; edge attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
-    app.add_object_type('blockdiag_node_attr', 'blockdiag_node_attr',
-                        'pair: %s; node attribute(blockdiag)', parse_event, doc_field_types=[fdesc])
+    app.add_object_type('blockdiag_diagram_attr',
+                        'blockdiag_diagram_attr',
+                        'pair: %s; diagram atttribute(blockdiag)',
+                        parse_event, doc_field_types=[fdesc])
+    app.add_object_type('blockdiag_edge_attr',
+                        'blockdiag_egde_attr',
+                        'pair: %s; edge attribute(blockdiag)',
+                        parse_event, doc_field_types=[fdesc])
+    app.add_object_type('blockdiag_node_attr',
+                        'blockdiag_node_attr',
+                        'pair: %s; node attribute(blockdiag)',
+                        parse_event, doc_field_types=[fdesc])
