@@ -512,7 +512,7 @@ msgid ""
 "of \"PDF\" is specified, you can get clear diagram images. In which case, "
 "reportlab_ library is required."
 msgstr ""
-"LaTeX 経由で PDF 文書を生成する際の画像出力フォーマットを指定します。
+"LaTeX 経由で PDF 文書を生成する際の画像出力フォーマットを指定します。"
 "\"PDF\" フォーマットで画像を出力するとベクター形式の画像を得ることができます。"
 "なお、その場合は reportlab_ のインストールが必要です。"
 
