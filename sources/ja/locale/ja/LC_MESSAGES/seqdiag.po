@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blockdiag 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-01 16:11+0900\n"
+"POT-Creation-Date: 2014-07-05 14:10+0900\n"
 "PO-Revision-Date: 2011-11-30 10:59+0900\n"
 "Last-Translator: Takeshi Komiya <i.tkomiya@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -269,179 +269,326 @@ msgstr "Sphinx 拡張: sphinxcontrib-seqdiag"
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:5
 msgid ""
 "`sphinxcontrib-seqdiag` is sphinx extension for embedding seqdiag diagrams. "
-"You can embed block diagrams with `seqdiag` directive."
+"You can embed sequence diagrams with `seqdiag` directive."
 msgstr ""
-"`sphinxcontrib-seqdiag` を利用すると Sphinx の拡張機能としてseqdiag による"
-"シーケンス図を埋め込むことができます。 シーケンス図の埋め込みには `seqdiag` "
-"ディレクティブを利用します。"
+"`sphinxcontrib-seqdiag` は seqdiag によるシーケンス図をドキュメントに埋め込むための Sphinx 拡張です。"
+"シーケンス図の埋め込みには `seqdiag` ディレクティブを利用します。"
 
 # f07f67b5c10b4cb4ad987e1f1c117836
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:23
 msgid "Setting"
-msgstr "設定"
+msgstr "インストール・設定"
 
 # 40ab4b4ee3964bd28dabfdc2ad7a3cd0
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:27
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:25
 msgid ""
 "You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
 msgstr ""
-"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ より取得"
+"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ よりダウンロード"
 "することができます。"
 
 # 1459577a194e44a5abbf9e65676aa816
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:30
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:28
 msgid "Install"
 msgstr "インストール"
 
 # c20bf2e0d5fe463b8d6a2c3da8114fd7
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:38
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:36
 msgid "Configure Sphinx"
 msgstr "Sphinx の設定"
 
 # 28128a5b21cd49ef8d76f7bf493c3507
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:40
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:38
 msgid ""
 "To enable this extension, add ``sphinxcontrib.seqdiag`` module to extensions "
 "option at :file:`conf.py`."
 msgstr ""
-"sphinxcontrib-seqdiag を利用するには :file:`conf.py` を編集します。"
-"extensions 変数に ``sphinxcontrib.seqdiag`` を追加し、必要に応じてオプション"
-"を記載します。"
+"``sphinxcontrib-seqdiag`` を有効するには :file:`conf.py` を以下のように書き換えます。"
+
+# 8dd2a6284e8747dd8fe48db8146a2fa6
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:51
+msgid ""
+"If you write documents including multibyte characters, you have to set "
+"fontpath to `seqdiag_fontpath`."
+msgstr "日本語を利用する場合は、 `seqdiag_fontpath` を設定する必要があります。"
 
 # 55e5c7017cbc41c099e34c2e932420a2
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:53
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:56
 msgid "Directive"
-msgstr "利用可能なディレクティブ"
+msgstr "ディレクティブ"
 
 # e8f9d4a2872e4bee8cfeb8d5beb7b65d
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:57
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:60
 msgid ""
-"This directive insert a sequence diagram into the generated document. If "
-"filename is specified, sphinx reads external file as source script of "
-"blockfile. In another case, seqdiag directive takes code block as source "
-"script."
+"This directive inserts a sequence diagram into the document. When `filename` "
+"argument is specified, the extension reads a diagram definitiom from file. "
+"In another case, it reads from code block."
 msgstr ""
-"`seqdiag` ディレクティブは指定した箇所にシーケンス図を埋め込みます。シーケン"
-"ス図の元となるテキストはファイルもしくはテキストブロックで渡すことができま"
-"す。ファイルを指定する場合は seqdiag ディレクティブの引数にファイル名を指定し"
-"ます。テキストブロックを指定する場合は seqdiag ディレクティブ以降の行にブロッ"
-"クを記述します。"
+"`seqdiag` ディレクティブは指定した場所にシーケンス図を埋め込みます。"
+"`filename` 引数が指定された場合はそのファイルから、"
+"それ以外の場合はテキストブロックからブロック図の定義を読み込みます。"
 
 # 844f5f0f78b74a86922729b63ca70305
 # fb19a788716b442892a391a307c923d7
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:61
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:75
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:64
 msgid "Examples::"
 msgstr "例::"
 
-# 426c54034750449d94803435794e6d01
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:72
-msgid ""
-"This directive is able to generate thumbnail images using ``maxwidth`` "
-"option. ``maxwidth`` option takes pixel-size of image's width."
-msgstr ""
-"``maxwidth`` オプションを指定すると画像の横幅を調整することができます。"
-"``maxwidth`` オプションの引数はピクセル単位で指定します。"
+# 2658d668f4014be7a22e5497518e1658
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:74
+msgid "In addition, the following options are recognized:"
+msgstr "`seqdiag` ディレクティブには以下のオプションを指定することができます。"
 
-# 5660ca484d3e454d8549da8d1788cc65
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:86
-msgid ""
-"This directive is able to generate description table using ``desctable`` "
-"option and `description` attribute"
-msgstr ""
-"各ノードに対する説明を掲載する場合は `description` 属性と``desctable`` オプ"
-"ションを使用して、ノードの説明表を生成することができます。"
+# 613ebbe2f7ba40818a0ac5287f3ca3fc
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:78
+msgid "``alt`` : text"
+msgstr "``alt`` : text"
 
-# f39db9f3c004438e90407adbb55b00a7
+# 14113b70291f47c69bdc155b23ffe82c
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:77
+msgid ""
+"Alternate text: a short description of the diagram, displayed by "
+"applications that cannot display diagram."
+msgstr "図を表示することができないアプリケーションが用いる代替テキスト(図の説明文)です。"
+
+# 6452fcbdcad342969ef8f16aa4084a99
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:84
+msgid "``height`` : length"
+msgstr "``height`` : length"
+
+# f7095e37fb9342fdb276155d6c75b7c8
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:81
+msgid ""
+"The desired height of the diagram. When the \"scale\" option is also "
+"specified, they are combined. For example, a height of 200px and a scale of "
+"50 is equivalent to a height of 100px with no scale."
+msgstr ""
+"図の高さを指定します。\"scale\" オプションと同時に指定された場合、"
+"掛けあわせた結果が利用されます。例えば `height` オプションに 200px 、 `scale` オプションに"
+"50% が指定された場合、図の高さとして 100px が指定されたものと解釈します。"
+
+# 04204837e1ac4260a5ea0cb83c942d84
 #: ../../../sources/ja/seqdiag/sphinxcontrib.rst:89
-msgid "Input::"
-msgstr "入力::"
+msgid "``width`` : length"
+msgstr "``width`` : length"
 
-# ef91de3f215d40eeb190215a0fab5fe9
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:101
-msgid "Output"
-msgstr "出力"
+# 8b374b21ce4049eeb134dace7fb19201
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:87
+msgid ""
+"The width of the diagram. As with \"height\" above, when the \"scale\" "
+"option is also specified, they are combined."
+msgstr ""
+"図の幅を指定します。 `height` オプションと同様に、"
+"`scale` オプションと同時に指定された場合、掛けあわせた結果が利用されます。"
+
+# 94cb73fdc37943c9a0cddde4c1f914ec
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:93
+msgid "``scale`` : integer percentage"
+msgstr "``scale`` : integer percentage"
+
+# 11a7849bb26343a1ac229743a69f0c6a
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:92
+msgid ""
+"The uniform scaling factor of the image. The default is \"100%\", i.e. no "
+"scaling."
+msgstr "図の表示倍率を指定します。デフォルトでは 100%、つまりそのままの大きさで埋め込まれます。"
+
+# 4c170c70cf604b3883c211589a051353
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:99
+msgid "``maxwidth`` : length"
+msgstr "``maxwidth`` : length"
+
+# b984667653c945b7a08678560882aaf5
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:96
+msgid "Use ``width`` option."
+msgstr "``width`` オプションを使ってください。"
+
+# 2ab2b093c8684f9cacfef0fd522f4441
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:99
+msgid "Same as \"width\" option."
+msgstr "\"width\" オプションと等価です。"
+
+# 469020fb4f544d51bf7235772674f83f
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:102
+msgid "``align`` : \"left\", \"center\" or \"right\""
+msgstr "``align`` : \"left\", \"center\" or \"right\""
+
+# 885863d896624832adafecca1054f4c5
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:102
+msgid "The horizontal alignment of the diagram."
+msgstr "図の表示位置を指定します。"
+
+# a132c4673a5c4f4ebc498102e62e7839
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:105
+msgid "``caption`` : text"
+msgstr "``caption`` : text"
+
+# 7dd0fc2755644f7683517df0479004b2
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:105
+msgid "The caption of the diagram."
+msgstr "図の表題を指定します。"
+
+# 9d90729739724c82b8357791977dcd0d
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:134
+msgid "``desctable`` :"
+msgstr "``desctable`` :"
+
+# ba67a40e05074083b5a722bba9a10a06
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:108
+msgid ""
+"Description Table: a table that describes each diagram elements (cf. nodes, "
+"edges) When this option is specified, Sphinx generates Description Table "
+"from diagram, corrects descriptons from `description` attribute of each node "
+"and edges."
+msgstr ""
+"図の要素(ノード、エッジなど)の説明表を生成します。"
+"`desctable` オプションが指定された場合、各要素の `description` 属性から"
+"要素の説明文を抜き出し、図と共に説明表を生成します。"
+
+# 844f5f0f78b74a86922729b63ca70305
+# fb19a788716b442892a391a307c923d7
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:112
+msgid "Example::"
+msgstr "例::"
+
+# b2cee2aa98ca4f3b9216005397091edd
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:124
+msgid "Generated:"
+msgstr "生成結果:"
 
 # f89561a772c04fdd8143e8cb7292f88b
 #: ../../../sources/ja/A:1
 msgid "A"
-msgstr ""
+msgstr "A"
 
-# 31a1fa1b961147ee98ab9555aa7dfc49
-#: ../../../sources/ja/first node:1
-msgid "first node"
-msgstr ""
+# 0cf9d0511e7142c2b7c88f1a72e52166
+#: ../../../sources/ja/browsers in each client:1
+msgid "browsers in each client"
+msgstr "browsers in each client"
 
 # ef11579828644aaf92ad807bf3879efc
 #: ../../../sources/ja/B:1
 msgid "B"
-msgstr ""
+msgstr "B"
 
-# 91ad1a5ddcae41bbb2875a1690f8cbde
-#: ../../../sources/ja/second node:1
-msgid "second node"
-msgstr ""
+# 29c0cf0302a84dd280460c2f814593a4
+#: ../../../sources/ja/web server:1
+msgid "web server"
+msgstr "web server"
 
 # 3b86289c88584970bc72ed245a523f5a
 #: ../../../sources/ja/C:1
 msgid "C"
-msgstr ""
+msgstr "C"
 
-# cf69e1f3cb7b423594080622d2322613
-#: ../../../sources/ja/third node:1
-msgid "third node"
+# 3fe16fb8152f4a199095858978ce9a0d
+#: ../../../sources/ja/database server:1
+msgid "database server"
+msgstr "database server"
+
+# a6c40e01b1174c34bbd462b4c004cbad
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:139
+msgid "``figwidth`` : \"image\", length"
+msgstr "``figwidth`` : \"image\", length"
+
+# 67a32b008e344690984ef3fa530763ff
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:137
+msgid ""
+"The width of the figure. A special value of \"image\" is allowed, in which "
+"case the included diagram's actual width is used."
 msgstr ""
+"figure 要素の幅を指定します。\"image\" を指定した場合は図のサイズが利用されます。"
+
+# 766a417258d34372809f92804788c4bc
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:142
+msgid "``figclass`` : text"
+msgstr "``figclass`` : text"
+
+# 45e03621dae746dfbd881ed348dab30f
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:142
+msgid "Set a `classes` attribute value on the figure element."
+msgstr "figure 要素の `classes` 属性を指定します。"
+
+# c027f14ff07d4586961dc7646283b220
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:146
+msgid "``name`` : text"
+msgstr "``name`` : text"
+
+# 544092c55a4d4468b34fbbc6a613ffa4
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:145
+msgid ""
+"Set a `names` attribute value on the diagram-image element. This allows "
+"hyperlink references to the diagram using text as reference name."
+msgstr ""
+"図の `names` 属性を指定します。"
+"設定した名前を使うことでドキュメント内から図へのハイパーリンクを作ることができます。"
+
+# 1da938fb288d44e78489895cef32c5c0
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:148
+msgid "``class`` : text"
+msgstr "``class`` : text"
+
+# cedbdae5012e464893ec3e7c0d72cb10
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:149
+msgid "Set a `classes` attribute value on the diagram-image element."
+msgstr "図の `classes` 属性を指定します。"
 
 # 642ca43e560c467c831685d43b423cd3
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:115
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:153
 msgid "Configuration File Options"
-msgstr "利用可能な設定オプション"
+msgstr "設定オプション"
 
-# a301c0ffe54648b0a80e7eecea19cf9c
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:119
+# bdcd5d1871864b39856a00773ea6d1a6
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:157
 msgid ""
-"This is a path for renderring fonts. You can use truetype font (.ttf) file "
-"path. You can specify single path with string, or multiple paths using array."
+"The paths to truetype fonts. `seqdiag_fontpath` option accepts both single "
+"path string and list of paths."
 msgstr ""
-"seqdiag で利用する TrueType フォントへのパスを指定します。 "
-"``seqdiag_fontpath`` にはパス文字列もしくはパス文字列の配列を指定することがで"
-"きます。複数の環境で Sphinx プロジェクトを共有している場合は、パス文字列の配"
-"列を指定することで環境の違いを吸収することができます。"
+"TrueType フォントファイルへのパスを指定します。"
+"`seqdiag_fontpath` オプションにはファイル名(文字列)もしくはファイル名の配列を指定することができます。"
 
-# 3c9d4976705c496ea6d10d0c7961aae9
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:124
-msgid "seqdiag_fontpath allows fontpath array"
-msgstr ""
+# faaed3b54fa940be87045762a14c1ab3
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:162
+msgid "`seqdiag_fontpath` accepts fontpath list"
+msgstr "配列によるパス指定に対応しました。"
 
-# 82c0bb9568ef42efa2d6b4f0d05178c8
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:128
+# 8607c59a0cfc429088d21e40176ecdde
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:166
+msgid "The path to fontmap definitions."
+msgstr "フォント定義ファイルへのパスを指定します。"
+
+# 8074c593cbbe4a00be7c298491e77696
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:170
+msgid "Render diagrams in antialias mode or not."
+msgstr "図の描画の際にアンチエイリアスを行うかを指定します。"
+
+# 835b58f41db84a3eb5a7cfe9ea151e16
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:174
+msgid "The output image format at generating HTML docs."
+msgstr "HTML 文書生成の際の画像出力フォーマットを指定します。"
+
+# b77d79aa51fc478097129758c4a1c35a
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:178
 msgid ""
-"If :confval:`seqdiag_antialias`: is True, seqdiag generates images with anti-"
-"alias filter."
+"The output image format at generating PDF docs (through LaTeX). When a value "
+"of \"PDF\" is specified, you can get clear diagram images. In which case, "
+"reportlab_ library is required."
 msgstr ""
-":confval:``seqdiag_antialias``: は PNG 画像生成時にアンチエイリアス処理を行う"
-"かどうかを指定します。`True` が指定された場合、アンチエイリアス処理を実行しま"
-"す(初期値: `False` )。"
+"LaTeX 経由で PDF 文書を生成する際の画像出力フォーマットを指定します。"
+"\"PDF\" フォーマットで画像を出力するとベクター形式の画像を得ることができます。"
+"なお、その場合は reportlab_ のインストールが必要です。"
 
-# 1a07b939ab2446bea8598c6fb74a96dd
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:133
-msgid ""
-"You can specify image format on converting docs to HTML using :confval:"
-"`seqdiag_html_image_format` . :confval:`seqdiag_html_image_format` accepts "
-"'PNG' or 'SVG' ."
-msgstr ""
+# 4990b108520b47629f960bec110a405f
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:186
+msgid "Use ``seqdiag_latex_image_format`` option."
+msgstr "``seqdiag_latex_image_format`` オプションを使ってください。"
 
-# 9995a398ca634200b93156be0684c756
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:139
-msgid ""
-"You can specify image format on converting docs to TeX using :confval:"
-"`seqdiag_html_image_format` . :confval:`seqdiag_html_image_format` accepts "
-"'PNG' or 'PDF' ."
-msgstr ""
+# 4990b108520b47629f960bec110a405f
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:189
+msgid "Same as \"seqdiag_latex_image_format\" option."
+msgstr "\"seqdiag_latex_image_format\" と等価です。"
 
-# 12a0a4fbb838499aaa085b1dec40948e
-#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:143
-msgid ""
-"If you set PDF, you will get clear diagram images as vector format. (*) "
-"reportlab is needed ."
-msgstr ""
+# 6d7eb96743cb40068584e15c11701da9
+#: ../../../sources/ja/seqdiag/sphinxcontrib.rst:193
+msgid "Enable debug mode of seqdiag."
+msgstr "デバッグモードを有効にします。"
