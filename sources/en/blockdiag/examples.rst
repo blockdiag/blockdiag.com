@@ -149,10 +149,10 @@ diagram attributes
    default_shape
 
 .. versionadded:: 0.9.1
-   default_node_color, default_group_color, default_line_color (obsoleted)
+   default_node_color, default_group_color, default_line_color (deprecated)
 
 .. versionadded:: 0.9.2
-   default_text_color (obsoleted)
+   default_text_color (deprecated)
 
 .. versionadded:: 1.0.0
    default_textcolor, default_linecolor
