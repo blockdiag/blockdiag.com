@@ -174,6 +174,8 @@ Configuration File Options
    When a value of "PDF" is specified, you can get clear diagram images.
    In which case, reportlab_ library is required.
 
+   .. _reportlab: https://pypi.python.org/pypi/reportlab
+
 .. confval:: seqdiag_tex_image_format = "PNG" or "PDF"
 
    .. deprecated:: 0.7.0
