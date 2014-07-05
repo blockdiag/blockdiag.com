@@ -46,6 +46,11 @@ option at :file:`conf.py`.
    # Fontpath for actdiag (truetype font)
    actdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
+.. note::
+
+   If you write documents including multibyte characters,
+   you have to set fontpath to `actdiag_fontpath`.
+
 
 Directive
 =========
