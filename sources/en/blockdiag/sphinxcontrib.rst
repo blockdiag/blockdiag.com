@@ -24,8 +24,6 @@ You can embed block diagrams with `blockdiag` directive.
 Setting
 =======
 
-.. You can see available package at `PyPI <http://pypi.python.org/pypi/sphinxcontrib-blockdiag>`_.
-
 You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/
 
 Install
@@ -33,7 +31,7 @@ Install
 
 .. code-block:: bash
 
-   > easy_install sphinxcontrib-blockdiag
+   $ sudo pip install sphinxcontrib-blockdiag
 
 
 Configure Sphinx
@@ -56,9 +54,9 @@ Directive
 
 .. describe:: .. blockdiag:: [filename]
 
-   This directive inserts a block diagram into the generated document.
-   If filename is specified, sphinx reads external file as source script of blockfile.
-   In another case, blockdiag directive takes code block as source script.
+   This directive inserts a block diagram into the document.
+   When `filename` argument is specified, the extension reads a diagram definitiom from file.
+   In another case, it reads from code block.
 
    Examples::
 
@@ -70,77 +68,121 @@ Directive
             // some diagrams are here.
          }
 
+   In addition, the following options are recognized:
 
-   This directive is able to generate thumbnail images using ``maxwidth`` option.
-   ``maxwidth`` option takes pixel-size of image's width.
+   ``alt`` : text
+     Alternate text: a short description of the diagram,
+     displayed by applications that cannot display diagram.
 
-   Examples::
+   ``height`` : length
+     The desired height of the diagram.
+     When the "scale" option is also specified, they are combined.
+     For example, a height of 200px and a scale of 50 is equivalent to
+     a height of 100px with no scale.
 
-      .. blockdiag::
-         :maxwidth: 240
+   ``width`` : length
+     The width of the diagram.
+     As with "height" above, when the "scale" option is also specified,
+     they are combined.
 
-         blockdiag {
-            // some diagrams are here.
-         }
+   ``scale`` : integer percentage
+     The uniform scaling factor of the image.
+     The default is "100%", i.e. no scaling.
 
-   .. versionadded:: 0.9.0
+   ``maxwidth`` : length
+     .. deprecated:: 1.4.0
+        Use ``width`` option.
 
-   This directive is able to generate description table using ``desctable`` option and
-   `description` attribute
+     Same as "width" option.
 
-   Input::
+   ``align`` : "left", "center" or "right"
+     The horizontal alignment of the diagram.
 
-      .. blockdiag::
-         :desctable:
+   ``caption`` : text
+     The caption of the diagram.
 
-         blockdiag {
-            A -> B -> C;
-            A [description = "browsers in each client"];
-            B [description = "web server"];
-            C [description = "database server"];
-         }
+   ``desctable`` :
+     Description Table: a table that describes each diagram elements (cf. nodes, edges)
+     When this option is specified, Sphinx generates Description Table from diagram,
+     corrects descriptons from `description` attribute of each node and edges.
 
-   Output
+     Example::
 
-   .. blockdiag::
-      :desctable:
+       .. blockdiag::
+          :desctable:
 
-      blockdiag {
-         A -> B -> C;
-         A [description = "browsers in each client"];
-         B [description = "web server"];
-         C [description = "database server"];
-      }
+          blockdiag {
+             A -> B -> C;
+             A [description = "browsers in each client"];
+             B [description = "web server"];
+             C [description = "database server"];
+          }
+
+     Generated:
+
+     .. blockdiag::
+        :desctable:
+
+        blockdiag {
+           A -> B -> C;
+           A [description = "browsers in each client"];
+           B [description = "web server"];
+           C [description = "database server"];
+        }
+
+   ``figwidth`` : "image", length
+     The width of the figure.
+     A special value of "image" is allowed, in which case
+     the included diagram's actual width is used.
+
+   ``figclass`` : text
+     Set a `classes` attribute value on the figure element.
+
+   ``name`` : text
+     Set a `names` attribute value on the diagram-image element.
+     This allows hyperlink references to the diagram using text as reference name.
+
+   ``class`` : text
+     Set a `classes` attribute value on the diagram-image element.
 
 
 Configuration File Options
 ==========================
 
-.. confval:: blockdiag_fontpath
+.. confval:: blockdiag_fontpath = str or list of str
 
-   This is a path for renderring fonts. You can use truetype font (.ttf) file path.
-   You can specify single path with string, or multiple paths using array.
+   The paths to truetype fonts.
+   `blockdiag_fontpath` option accepts both single path string and list of paths.
 
    .. versionadded:: 0.1.1
 
-      blockdiag_fontpath allows fontpath array
+      `blockdiag_fontpath` accepts fontpath list
 
-.. confval:: blockdiag_antialias
+.. confval:: blockdiag_fontmap = str
 
-   If :confval:`blockdiag_antialias`: is True, blockdiag generates images
-   with anti-alias filter.
+   The path to fontmap definitions.
 
-.. confval:: blockdiag_html_image_format
+.. confval:: blockdiag_antialias = bool
 
-   You can specify image format on converting docs to HTML
-   using :confval:`blockdiag_html_image_format` .
-   :confval:`blockdiag_html_image_format` accepts 'PNG' or 'SVG' .
+   Render diagrams in antialias mode or not.
 
-.. confval:: blockdiag_tex_image_format
+.. confval:: blockdiag_html_image_format = "PNG" or "SVG"
 
-   You can specify image format on converting docs to TeX
-   using :confval:`blockdiag_html_image_format` .
-   :confval:`blockdiag_html_image_format` accepts 'PNG' or 'PDF' .
+   The output image format at generating HTML docs.
 
-   If you set PDF, you will get clear diagram images as vector format.
-   (*) reportlab is needed .
+.. confval:: blockdiag_latex_image_format = "PNG" or "PDF"
+
+   The output image format at generating PDF docs (through LaTeX).
+   When a value of "PDF" is specified, you can get clear diagram images.
+   In which case, reportlab_ library is required.
+
+.. confval:: blockdiag_tex_image_format = "PNG" or "PDF"
+
+   .. deprecated:: 1.4.0
+      Use ``blockdiag_latex_image_format`` option.
+
+   Same as "blockdiag_latex_image_format" option.
+
+.. confval:: blockdiag_debug = bool
+
+   Enable debug mode of blockdiag.
