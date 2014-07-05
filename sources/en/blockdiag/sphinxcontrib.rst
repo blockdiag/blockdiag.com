@@ -48,6 +48,10 @@ option at :file:`conf.py`.
    # Fontpath for blockdiag (truetype font)
    blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
+.. note::
+
+   If you write documents including multibyte characters,
+   you have to set fontpath to `blockdiag_fontpath`.
 
 Directive
 =========

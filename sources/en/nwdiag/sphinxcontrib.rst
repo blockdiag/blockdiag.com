@@ -55,6 +55,11 @@ option at :file:`conf.py`.
    # Fontpath for nwdiag series (truetype font)
    nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
+.. note::
+
+   If you write documents including multibyte characters,
+   you have to set fontpath to `nwdiag_fontpath`.
+
 
 Directive
 =========

@@ -46,6 +46,11 @@ option at :file:`conf.py`.
    # Fontpath for seqdiag (truetype font)
    seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
 
+.. note::
+
+   If you write documents including multibyte characters,
+   you have to set fontpath to `seqdiag_fontpath`.
+
 
 Directive
 =========
