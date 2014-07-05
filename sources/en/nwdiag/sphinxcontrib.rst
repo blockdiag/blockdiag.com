@@ -226,6 +226,8 @@ Configuration File Options
    When a value of "PDF" is specified, you can get clear diagram images.
    In which case, reportlab_ library is required.
 
+   .. _reportlab: https://pypi.python.org/pypi/reportlab
+
 .. confval:: nwdiag_tex_image_format = "PNG" or "PDF"
 
    .. deprecated:: 1.4.0
