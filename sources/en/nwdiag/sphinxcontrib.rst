@@ -181,7 +181,7 @@ Directive
             // some diagrams are here.
          }
 
-   `rackdiag` directive recgnize options same as `nwdiag` directive.
+   `rackdiag` directive recognize options same as `nwdiag` directive.
 
 .. describe:: .. packetdiag:: [filename]
 
@@ -199,7 +199,7 @@ Directive
             // some diagrams are here.
          }
 
-   `packetdiag` directive recgnize options same as `nwdiag` directive.
+   `packetdiag` directive recognize options same as `nwdiag` directive.
 
 Configuration File Options
 ==========================
