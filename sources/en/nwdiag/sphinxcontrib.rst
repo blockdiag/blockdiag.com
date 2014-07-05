@@ -102,7 +102,7 @@ Directive
      The default is "100%", i.e. no scaling.
 
    ``maxwidth`` : length
-     .. deprecated:: 1.4.0
+     .. deprecated:: 0.8.0
         Use ``width`` option.
 
      Same as "width" option.
@@ -235,7 +235,7 @@ Configuration File Options
 
 .. confval:: nwdiag_tex_image_format = "PNG" or "PDF"
 
-   .. deprecated:: 1.4.0
+   .. deprecated:: 0.8.0
       Use ``nwdiag_latex_image_format`` option.
 
    Same as "nwdiag_latex_image_format" option.

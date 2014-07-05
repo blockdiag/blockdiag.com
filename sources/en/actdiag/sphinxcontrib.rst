@@ -93,7 +93,7 @@ Directive
      The default is "100%", i.e. no scaling.
 
    ``maxwidth`` : length
-     .. deprecated:: 1.4.0
+     .. deprecated:: 0.7.0
         Use ``width`` option.
 
      Same as "width" option.
@@ -183,7 +183,7 @@ Configuration File Options
 
 .. confval:: actdiag_tex_image_format = "PNG" or "PDF"
 
-   .. deprecated:: 1.4.0
+   .. deprecated:: 0.7.0
       Use ``actdiag_latex_image_format`` option.
 
    Same as "actdiag_latex_image_format" option.
