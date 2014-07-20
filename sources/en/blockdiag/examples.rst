@@ -70,12 +70,14 @@ mutlilingualization
 ===================
 
 .. literalinclude:: diagrams/multilingualization.diag
-.. note::
-
-   blockdiag supports UTF-8 encoding only.
-
 .. blockdiag:: diagrams/multilingualization.diag
 
+.. note::
+
+   If you write diagram including multibyte characters,
+   you have to use UTF-8 as charset and set truetype fonts to fontpath.
+   More details, see :ref:`blockdiag_font_configurations` or
+   :ref:`sphinxcontrib_font_configurations` (for Sphinx).
 
 .. _nodeshapes:
 
