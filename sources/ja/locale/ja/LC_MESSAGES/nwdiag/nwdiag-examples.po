@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:07+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 7f1b523c251e4841b39088d0f343ab1e
+#: ../../../sources/en/nwdiag/nwdiag-examples.rst:5
+msgid "Sample diagams: nwdiag"
+msgstr "nwdiag 出力サンプル"
+
+# 4cafd17a1f7d41528204f9ba843ed571
+#: ../../../sources/en/nwdiag/nwdiag-examples.rst:8
+msgid "simple diagram"
+msgstr "シンプルなネットワーク図"
+
+# 878075c6a03540cb97e5fdbe670d67f5
+#: ../../../sources/en/nwdiag/nwdiag-examples.rst:14
+msgid "define multiple addresses"
+msgstr "複数のアドレスを定義するケース"
+
+# f0f8156157a74226a89ca68de4a25611
+#: ../../../sources/en/nwdiag/nwdiag-examples.rst:23
+msgid "grouping nodes"
+msgstr "ノードのグルーピング"
+
+# 3cd9a817a7094a38884e3491492c427c
+#: ../../../sources/en/nwdiag/nwdiag-examples.rst:35
+msgid "peer networks"
+msgstr "ピア接続"

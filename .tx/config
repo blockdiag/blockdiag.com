@@ -1,0 +1,144 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[blockdiagcom.index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/index.po
+source_file = _build/en/locale/index.pot
+source_lang = en
+
+[blockdiagcom.actdiag--demo]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/actdiag/demo.po
+source_file = _build/en/locale/actdiag/demo.pot
+source_lang = en
+
+[blockdiagcom.actdiag--examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/actdiag/examples.po
+source_file = _build/en/locale/actdiag/examples.pot
+source_lang = en
+
+[blockdiagcom.actdiag--index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/actdiag/index.po
+source_file = _build/en/locale/actdiag/index.pot
+source_lang = en
+
+[blockdiagcom.actdiag--introduction]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/actdiag/introduction.po
+source_file = _build/en/locale/actdiag/introduction.pot
+source_lang = en
+
+[blockdiagcom.actdiag--sphinxcontrib]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/actdiag/sphinxcontrib.po
+source_file = _build/en/locale/actdiag/sphinxcontrib.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--demo]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/demo.po
+source_file = _build/en/locale/blockdiag/demo.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--embed_diagram]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/embed_diagram.po
+source_file = _build/en/locale/blockdiag/embed_diagram.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/examples.po
+source_file = _build/en/locale/blockdiag/examples.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/index.po
+source_file = _build/en/locale/blockdiag/index.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--introduction]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/introduction.po
+source_file = _build/en/locale/blockdiag/introduction.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--sphinxcontrib]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/sphinxcontrib.po
+source_file = _build/en/locale/blockdiag/sphinxcontrib.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--attributes--diagram_attributes]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/attributes/diagram.attributes.po
+source_file = _build/en/locale/blockdiag/attributes/diagram.attributes.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--attributes--edge_attributes]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/attributes/edge.attributes.po
+source_file = _build/en/locale/blockdiag/attributes/edge.attributes.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--attributes--index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/attributes/index.po
+source_file = _build/en/locale/blockdiag/attributes/index.pot
+source_lang = en
+
+[blockdiagcom.blockdiag--attributes--node_attributes]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/blockdiag/attributes/node.attributes.po
+source_file = _build/en/locale/blockdiag/attributes/node.attributes.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--demo]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/demo.po
+source_file = _build/en/locale/nwdiag/demo.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/index.po
+source_file = _build/en/locale/nwdiag/index.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--introduction]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/introduction.po
+source_file = _build/en/locale/nwdiag/introduction.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--nwdiag-examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/nwdiag-examples.po
+source_file = _build/en/locale/nwdiag/nwdiag-examples.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--packetdiag-examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/packetdiag-examples.po
+source_file = _build/en/locale/nwdiag/packetdiag-examples.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--rackdiag-examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/rackdiag-examples.po
+source_file = _build/en/locale/nwdiag/rackdiag-examples.pot
+source_lang = en
+
+[blockdiagcom.nwdiag--sphinxcontrib]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/nwdiag/sphinxcontrib.po
+source_file = _build/en/locale/nwdiag/sphinxcontrib.pot
+source_lang = en
+
+[blockdiagcom.seqdiag--demo]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/seqdiag/demo.po
+source_file = _build/en/locale/seqdiag/demo.pot
+source_lang = en
+
+[blockdiagcom.seqdiag--examples]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/seqdiag/examples.po
+source_file = _build/en/locale/seqdiag/examples.pot
+source_lang = en
+
+[blockdiagcom.seqdiag--index]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/seqdiag/index.po
+source_file = _build/en/locale/seqdiag/index.pot
+source_lang = en
+
+[blockdiagcom.seqdiag--introduction]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/seqdiag/introduction.po
+source_file = _build/en/locale/seqdiag/introduction.pot
+source_lang = en
+
+[blockdiagcom.seqdiag--sphinxcontrib]
+file_filter = sources/ja/locale/<lang>/LC_MESSAGES/seqdiag/sphinxcontrib.po
+source_file = _build/en/locale/seqdiag/sphinxcontrib.pot
+source_lang = en
+

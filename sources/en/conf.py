@@ -263,6 +263,7 @@ epub_copyright = u'2011, Takeshi KOMIYA'
 #epub_tocdup = True
 
 
+gettext_compact = False
 locale_dirs = ["locale"]
 language = None
 

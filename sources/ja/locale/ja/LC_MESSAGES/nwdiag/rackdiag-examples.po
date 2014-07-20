@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:08+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# b7348169bb5f456f920122883896e8e7
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:5
+msgid "Sample diagams: rackdiag"
+msgstr "rackdiag 出力サンプル"
+
+# 1b17e36fea7c431c9c28782e2ee5b4ff
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:8
+msgid "simple diagram"
+msgstr "rackdiag 出力サンプル"
+
+# 2895d91a7470422d8770611cb003e91e
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:14
+msgid "rack attributes"
+msgstr "ラックの設定"
+
+# ffa9174516844e53a346790a4cf3d06e
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:20
+msgid "put multiple units to same level"
+msgstr "ラックの同じ段に複数の要素を配置する"
+
+# be2112d3f5c947fc837153577809da73
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:26
+msgid "multiple racks"
+msgstr "複数のラックを定義する"
+
+# 1b5095f1a0ef4df6a8b4a17f00b540e6
+#: ../../../sources/en/nwdiag/rackdiag-examples.rst:32
+msgid "define not available units"
+msgstr "利用できない段を定義する"

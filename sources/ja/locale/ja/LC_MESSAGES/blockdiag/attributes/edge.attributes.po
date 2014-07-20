@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:11+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 682a1917c1ab41c0b34031c3f3b23f02
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:3
+msgid "edge attributes setting"
+msgstr "エッジ属性の設定"
+
+# 297c0adaa443490fa27a328e37afce1c
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:6
+msgid "NAME"
+msgstr "名称"
+
+# fa89925411ba499898e4e93e9b874446
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:8
+msgid "Attribute settings of edges."
+msgstr "blockdiag のエッジ属性の設定"
+
+# ea0a7d2bbf254ca2871eab9ef03a953e
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:11
+msgid "SYNOPSIS"
+msgstr "使い方"
+
+# 665e6d4e4e584a32a0ec2baf4f69e65d
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:13
+msgid "**node_A -> node_B -> ...**  [ **attribute** ];"
+msgstr "**ノードA -> ノードB -> ...** [ **属性名** ];"
+
+# 4d6d31094a8e4d42ba1855150e995864
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:15
+msgid "**node_A -> node_B -> ...**  [ **attribute** = **value** ];"
+msgstr "**ノードA -> ノードB -> ...** [ **属性名** = **設定値** ];"
+
+# f977972c8fa94b798853296b09fb4642
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:17
+msgid ""
+"**node_A -> node_B -> ...**  [ **attribute** = **value** , **attribute** = "
+"**value** , ... ];"
+msgstr "**ノードA -> ノードB -> ...** [ **属性名** = **設定値** , **属性名** = **設定値** , ... ];"
+
+# 292e5fb9d0634175a1cf26184c5ecd12
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:20
+msgid "DESCRIPTION"
+msgstr "概要"
+
+# a04df736df5a46479c90eeb8b25ac38e
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:22
+msgid "Set attributes related to edges."
+msgstr "エッジ属性の設定をします。"
+
+# 63a5c23b66774524aaa5b73c834abc8a
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:24
+msgid ""
+"Separate by ',' to use multiple attributes. If strings which is used to "
+"specify attributes include white-spaces or symbols, quotation is needed."
+msgstr "属性を複数指定するときはカンマで区切ります。属性に指定する文字列に記号や空白が含まれる場合はクオートが必要です。"
+
+# 354bc02f91a0498c9ed8b8e4381f78e8
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:29
+msgid "ATTRIBUTES"
+msgstr "属性"
+
+# dce0e01f02ba49259e6cca902c09979c
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:33
+msgid "Show short strings on the edge."
+msgstr "短い文をエッジに表示します。"
+
+# 06248a5ab32c4a2b99ea27cfc65fd90b
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:37
+msgid "Specify type of edge line. Default is solid."
+msgstr "エッジの線の種類を指定します。省略時は実線で繋ぎます。"
+
+# b70215ef4d974b508f62e259e54806d6
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:40
+msgid "**dotted**"
+msgstr "**dotted**"
+
+# 067718fd79a44613ba2c1616520b92c8
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:40
+msgid "Dotted line."
+msgstr "点線で繋ぎます。"
+
+# e0b4065fe0ed4da7b3f307f70c07c101
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:43
+msgid "**dashed**"
+msgstr "**dashed**"
+
+# 21da79246f2241c38a8eeab68f1b3833
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:43
+msgid "Dashed line."
+msgstr "破線で繋ぎます。"
+
+# 22db26f8170d47f389f24e5927ba3d31
+# 28183b653156483285b8513f919cbf3c
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:46
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:81
+msgid "**none**"
+msgstr "**none**"
+
+# bcbd8c630af44e83964548ac33cf6174
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:46
+msgid "Edge is not shown."
+msgstr "エッジを消します。"
+
+# 76f8c859cd4a4c0f99d481b2cc49a0db
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:49
+msgid "**Number, Number, ...**"
+msgstr "**Number, Number, ...**"
+
+# c0389da00ee3463f89c710719df4378d
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:49
+msgid "Specify line length and space length alternately with comma separated."
+msgstr "線の長さ、空白の長さをカンマ区切りで交互に指定します。"
+
+# 9c89f4142b4a4d45b6d15de897727702
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:55
+msgid "Specify head shape of edge."
+msgstr "矢印の形状を指定します。"
+
+# e09ab229295b4eb6acb262f0ba8f21a4
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:60
+msgid "**generalization**"
+msgstr "**generalization**"
+
+# 53e22b9f01204461b19b0556894e0494
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:60
+msgid "generalization"
+msgstr "汎化 (generalization)"
+
+# 13b78cc4ab4447f39d968155ca8e595e
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:63
+msgid "**composition**"
+msgstr "**composition**"
+
+# ddc9384cffe741db97ae853401c4659c
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:63
+msgid "composition"
+msgstr "コンポジション (composition)"
+
+# 0dd346c89f304651957f2b5eb2101be5
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:65
+msgid "**aggregation**"
+msgstr "**aggregation**"
+
+# 002d246d9316455ab5987cc191ad2b5b
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:66
+msgid "aggregation"
+msgstr "集約 (aggregation)"
+
+# d31fd214c22b4ccda69d84475b9078b7
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:71
+msgid ""
+"Specify edge color. Default is black. If **none** is specified, draw a "
+"transparent arrow."
+msgstr "エッジの色を指定します。省略時は黒です。 **none** を指定すると透明の矢印を書きます。"
+
+# 83782713adf944f98ae49b417f2ac887
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:76
+msgid "Specify direction of edge arrow."
+msgstr "矢印の向きを指定します。"
+
+# 7a0f37f807ea46229c603b49055102eb
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:79
+msgid "Not draw an arrow, just connect nodes."
+msgstr "矢印を書かずにノードを繋ぎます。"
+
+# faeda3fe01264fb29a25032ce130a1be
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:81
+msgid "This is equivalent for ``A -- B``."
+msgstr "``A -- B`` と等価です。"
+
+# 3d702b5f16c646709f11084d7dde728b
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:86
+msgid "**forward**"
+msgstr "**forward**"
+
+# b151293f086a40c7a0d5fc40d2e34e65
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:84
+msgid ""
+"Draw an arrow from left node to right node or upside node to downside node."
+msgstr "矢印を左のノードから右のノード、または上のノードから下のノードに向かって書きます。"
+
+# b94c730d6f0d4cfdb6c1ae539fa61c17
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:86
+msgid "This is equivalent for ``A -> B``."
+msgstr "``A -> B`` と等価です。"
+
+# 20d6fe0132104bcebd308cc89224a943
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:91
+msgid "**back**"
+msgstr "**back**"
+
+# 118f384c9ac44731a2e65e0a4b7d1a65
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:89
+msgid ""
+"Draw an arrow from right node to left node or downside node to upside node."
+msgstr "矢印を右のノードから左のノード、または下のノードから上のノードに向かって書きます。"
+
+# c2ce7ffe69c74329a44171b550fd8001
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:91
+msgid "This is equivalent for ``A <- B``."
+msgstr "``A <- B`` と等価です。"
+
+# 9c3daa97cf5447b8870f48453a314436
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:95
+msgid "**both**"
+msgstr "**both**"
+
+# 1421f140ea6649e29636d1799d2f6c84
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:94
+msgid "Draw arrows at both side."
+msgstr "矢印を両方に書きます。"
+
+# ef8a9eb1db464dcdaa796c381e6dbe0e
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:96
+msgid "This is equivalent for ``A <-> B``."
+msgstr "``A <-> B`` と等価です。"
+
+# a96bde631b7f4881bc5d884569759abb
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:100
+msgid "Fold the edge."
+msgstr "エッジを折り返します。"
+
+# f93bd2de33ce45c2b46b2c6af1dedf56
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:106
+msgid "Specify edge label color. Default is black."
+msgstr "エッジのラベルの色を指定します。省略時は黒です。"
+
+# 54b4300aa6604ee08d55aa6195bd1dbe
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:115
+msgid "Make the edge thick."
+msgstr "エッジを太くします。"
+
+# ac90ab329592477fb8914b92b5e4a5b6
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:121
+msgid "Specify edge label font size. Default is 11."
+msgstr "エッジのラベルのフォントサイズを指定します。省略時は11です。"
+
+# a930e87503324968a05c375894d862d6
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:126
+msgid "EXAMPLES"
+msgstr "設定例"
+
+# 5ec3577e35384d96a322ccb2d2a83b25
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:129
+msgid "label attribute to edges"
+msgstr "label 属性の設定例"
+
+# 77ae0a25e7b5429a968ecda042f50f1a
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:135
+msgid "style attribute to edges"
+msgstr "style 属性の設定例"
+
+# d73720f82eb341db9014d9946f05245e
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:141
+msgid "hstyle attribute to edges"
+msgstr "hstyle 属性の設定例"
+
+# 12b7a695cbbe427dba81469b6cad57c0
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:147
+msgid "color attribute to edges"
+msgstr "color 属性の設定例"
+
+# 38b13a7c87654651845a81706e5bb2f3
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:153
+msgid "dir attribute to edges"
+msgstr "dir 属性の設定例"
+
+# ebd31087ffb24b7dba19fb2d15b940aa
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:159
+msgid "folded attribute to edges"
+msgstr "folded 属性の設定例"
+
+# eae574bdcd1a487093d2647338ec6bd5
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:165
+msgid "text color attribute to edges"
+msgstr "textcolor 属性の設定例"
+
+# 4b2eb753822b470c8f578dd249e1c1f1
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:171
+msgid "font size attribute to edges"
+msgstr "fontsize 属性の設定例"
+
+# 255e769c99d9492b8b648e0a78cac328
+#: ../../../sources/en/blockdiag/attributes/edge.attributes.rst:177
+msgid "thick attribute to edges"
+msgstr "thick 属性の設定例"

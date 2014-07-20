@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+# Takeshi KOMIYA <i.tkomiya@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:14+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 50cc0d53e6a74443a1e4da1f41130b93
+#: ../../../sources/en/blockdiag/examples.rst:5
+msgid "Sample diagams"
+msgstr "出力サンプル"
+
+# 9a520b26e3db45ff948d523dbf25de96
+#: ../../../sources/en/blockdiag/examples.rst:8
+msgid "simple diagram"
+msgstr "シンプルなブロック図"
+
+# 9efb02a8b0c945f2a6e7c9028e6356ea
+#: ../../../sources/en/blockdiag/examples.rst:15
+msgid "label attributes to nodes and edges"
+msgstr "ラベルの設定"
+
+# 904cffa1c58b4ee8943fb3443f881087
+#: ../../../sources/en/blockdiag/examples.rst:17
+msgid "Add textcolor attribute"
+msgstr "textcolor 属性を追加"
+
+# 5e75b5c4a2464289a8ab744ee7daaa96
+#: ../../../sources/en/blockdiag/examples.rst:25
+msgid "style attributes to nodes and edges"
+msgstr "ノード、エッジのカスタマイズ"
+
+# 996fcd3ff0964ee2822c2e25033b033d
+#: ../../../sources/en/blockdiag/examples.rst:27
+msgid "node.icon attribute"
+msgstr "icon 属性を追加"
+
+# 4e64cce6c0994873a3ba897b0bc24959
+#: ../../../sources/en/blockdiag/examples.rst:30
+msgid "node.textcolor attribute"
+msgstr "textcolor 属性を追加"
+
+# 51982e4f530945e199dfc0e504a9d271
+#: ../../../sources/en/blockdiag/examples.rst:32
+msgid "node.width and node.height attribute"
+msgstr "width と height 属性を追加"
+
+# 14ecab25e2e5486bb4c4792b0b451564
+#: ../../../sources/en/blockdiag/examples.rst:35
+msgid "node.style and edge.style supports dashed_array format style"
+msgstr "style 属性で dashed_array フォーマットをサポート"
+
+# 1d559114f2864bc6a4774de57466e4ac
+#: ../../../sources/en/blockdiag/examples.rst:43
+msgid "branched edges"
+msgstr "複数ノード間の接続"
+
+# 185eae8a74254eca9fb13e6de786f401
+#: ../../../sources/en/blockdiag/examples.rst:52
+msgid "direction of edges"
+msgstr "エッジの向きを変更する"
+
+# 831df1a26eca4f0eb108b214da0ca35e
+#: ../../../sources/en/blockdiag/examples.rst:61
+msgid "edge folding"
+msgstr "エッジの折り返し"
+
+# 7de71f6099874bfaaa38cf8c74aab503
+#: ../../../sources/en/blockdiag/examples.rst:70
+msgid "mutlilingualization"
+msgstr "日本語の利用"
+
+# e996df29ae2240f591a99e9e12292081
+#: ../../../sources/en/blockdiag/examples.rst:75
+msgid "blockdiag supports UTF-8 encoding only."
+msgstr "`blockdiag` では UTF-8 エンコード以外の文字コードを扱うことはできません。"
+
+# d3ecbaf37b094832a0c6f6eec33ff12f
+#: ../../../sources/en/blockdiag/examples.rst:83
+msgid "shape of nodes"
+msgstr "ノード形状の変更"
+
+# 9fef3e53c489421e9aaa60718b0d3633
+#: ../../../sources/en/blockdiag/examples.rst:85
+msgid "actor shape"
+msgstr "actor shape に対応"
+
+# d9fc70b6abae48e09b3a3f2fdf56619b
+#: ../../../sources/en/blockdiag/examples.rst:88
+msgid "dots shape"
+msgstr "dots shape に対応"
+
+# 27d26a3c81c44c5ea2e6f1cc449dee7c
+#: ../../../sources/en/blockdiag/examples.rst:91
+msgid "square shape and circle shape"
+msgstr "square shape, circle shape に対応"
+
+# dcae8cd942374c2c96a867757594df77
+#: ../../../sources/en/blockdiag/examples.rst:98
+msgid "Using stacked attribute"
+msgstr "stacked 属性の利用"
+
+# 24392e8ddceb4fd5a61246873b3cb0ad
+#: ../../../sources/en/blockdiag/examples.rst:106
+msgid "Using dots shape"
+msgstr "dots 形状の利用"
+
+# 39d6381e53ee42da864c19a99bb76052
+#: ../../../sources/en/blockdiag/examples.rst:115
+msgid "grouping nodes"
+msgstr "グルーピング"
+
+# 6fe4c3c8c1f946bd99677efe78e145a6
+#: ../../../sources/en/blockdiag/examples.rst:117
+msgid "label attribute for group"
+msgstr "グループ属性として label を追加"
+
+# e4aa0fe847c24d5785b0cb925907f039
+#: ../../../sources/en/blockdiag/examples.rst:120
+msgid "nested groups"
+msgstr "グループの入れ子に対応"
+
+# 6a7103e76e8845f680fd093ad1b904f3
+#: ../../../sources/en/blockdiag/examples.rst:123
+msgid "group definition within node-attributes"
+msgstr "ノード属性として group を追加"
+
+# c1ed8aafd5ac49479a6de9b58b52a28f
+#: ../../../sources/en/blockdiag/examples.rst:126
+msgid "textcolor attribute"
+msgstr "グループラベルの色を指定できるように textcolor 属性を追加"
+
+# 3a2a1197e61949e1b637b6b1ff845d71
+#: ../../../sources/en/blockdiag/examples.rst:129
+msgid "shape attribute"
+msgstr "グループの形状を指定できるように shape 属性を追加"
+
+# 52058f69ce534712ae2aa82081af14f1
+#: ../../../sources/en/blockdiag/examples.rst:136
+msgid "font settings"
+msgstr "フォントの設定"
+
+# 00de921d17fc427db96d310569d4c3a4
+#: ../../../sources/en/blockdiag/examples.rst:138
+msgid "fontsize attribute"
+msgstr "ノード、エッジ、グループの属性として fontsize を追加"
+
+# 643c568ff64048feb89836178000a010
+#: ../../../sources/en/blockdiag/examples.rst:146
+msgid "diagram attributes"
+msgstr "図全体の設定"
+
+# 60cf2418789f478e8dc9ebc878ae0784
+#: ../../../sources/en/blockdiag/examples.rst:148
+msgid "default_shape"
+msgstr "default_shape を追加"
+
+# f5bce1d8479b48c1ad5f0fc7415c03c6
+#: ../../../sources/en/blockdiag/examples.rst:151
+msgid ""
+"default_node_color, default_group_color, default_line_color (deprecated)"
+msgstr "default_node_color, default_group_color, default_line_color(廃止) を追加"
+
+# fe3e3008463d4aa1a0bafd1c275275e6
+#: ../../../sources/en/blockdiag/examples.rst:154
+msgid "default_text_color (deprecated)"
+msgstr "default_text_color(廃止) を追加"
+
+# ba73ca7e893b4209b037e59670396a73
+#: ../../../sources/en/blockdiag/examples.rst:157
+msgid "default_textcolor, default_linecolor"
+msgstr "default_textcolor, default_linecolor を追加"
+
+# dc49ac6879934c63b6516a712cf91263
+#: ../../../sources/en/blockdiag/examples.rst:165
+msgid "define classes"
+msgstr "クラス機能"
+
+# 624296a3a95e42d1b18d5f06e0dc2dda
+#: ../../../sources/en/blockdiag/examples.rst:167
+msgid "(experimental)"
+msgstr "(experimental)"
+
+# 0de4d2ac4f574327aaf74d11395abc33
+#: ../../../sources/en/blockdiag/examples.rst:175
+msgid "portrait mode"
+msgstr "縦書きモード"
+
+# 56c2aecc3ce44dc99099d71a26f48e5e
+#: ../../../sources/en/blockdiag/examples.rst:184
+msgid "portrait group"
+msgstr "グループの縦書き化"
+
+# 8ad9eb87a21c4445b470c8d00909cb02
+#: ../../../sources/en/blockdiag/examples.rst:193
+msgid "Simple diagram for master data manager"
+msgstr "シンプルな管理画面の画面遷移図(例)"

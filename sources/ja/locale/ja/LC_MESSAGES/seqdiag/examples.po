@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:08+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# f18121dfe7644250b639ae57390ffd53
+#: ../../../sources/en/seqdiag/examples.rst:5
+msgid "Sample diagams"
+msgstr "出力サンプル"
+
+# 9427b17bda954233af6716ae83096da0
+#: ../../../sources/en/seqdiag/examples.rst:8
+msgid "simple diagram"
+msgstr "シンプルなシーケンス図"
+
+# 50ccbadb0b27476baab16303e5c2c6b8
+#: ../../../sources/en/seqdiag/examples.rst:14
+msgid "edge types"
+msgstr "エッジの種類"
+
+# c26519e6c52b4dc084b03ab94d870d1b
+#: ../../../sources/en/seqdiag/examples.rst:20
+msgid "attributes of edges"
+msgstr "エッジの設定"
+
+# 495269a74319454e8d5f15cb7dc3ba94
+#: ../../../sources/en/seqdiag/examples.rst:22
+msgid "color attribute"
+msgstr "color 属性"
+
+# aaf373ae07594a0a896fa04c3cbd7410
+#: ../../../sources/en/seqdiag/examples.rst:25
+msgid "failed attribute"
+msgstr "failed 属性"
+
+# f3f348c5f3f242adaa8c39f16fd608e4
+#: ../../../sources/en/seqdiag/examples.rst:32
+msgid "auto return edge and nested sequense"
+msgstr "往復エッジと複合シーケンス"
+
+# b6769c01a0e44bdf9294e1effbd87676
+#: ../../../sources/en/seqdiag/examples.rst:38
+msgid "separators"
+msgstr "セパレータ"
+
+# 15408a856c8a46438bb329bf0cef1bee
+#: ../../../sources/en/seqdiag/examples.rst:46
+msgid "edge notes"
+msgstr "エッジノート(注意書き)"
+
+# 4b8c548318fa4fcda238381f53080cef
+#: ../../../sources/en/seqdiag/examples.rst:54
+msgid "diagram attributes"
+msgstr "図全体の設定"
+
+# a82b48273a0c4751b6b9cad8a68d1f82
+#: ../../../sources/en/seqdiag/examples.rst:58
+msgid "activation and autonumber attributes"
+msgstr "activation, autonumber 属性"
+
+# 43403d4d3bd740d6a698112a599974a2
+#: ../../../sources/en/seqdiag/examples.rst:61
+msgid "default_note_color attribute"
+msgstr "default_note_color 属性"
+
+# b913a40221d64a42a22e8cc6a004903c
+#: ../../../sources/en/seqdiag/examples.rst:68
+msgid "TIPS: changing order of elements"
+msgstr "TIPS: ノードの並び替え方"
+
+# c4962c7880cc4896b011f9945cdce984
+#: ../../../sources/en/seqdiag/examples.rst:70
+msgid ""
+"If you want to changing order of elements, define elements you want to "
+"layout. seqdiag sorts elements by order they appear."
+msgstr "ノードの並べ替えを行いたい場合は、図の先頭で並び替えたい順にノードを宣言します。seqdiag は出現順にノードを並べ替えます。"

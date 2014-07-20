@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:07+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# bd51aa570b5845958a1a3665a4d3fcd8
+#: ../../../sources/en/nwdiag/introduction.rst:3
+msgid "Introduction of nwdiag"
+msgstr "nwdiag の概要"
+
+# 197c47c5dc5145dfa75eea39c1a8afc2
+#: ../../../sources/en/nwdiag/introduction.rst:6
+msgid "Features"
+msgstr "機能"
+
+# 2af924b8a69d40feb690bbfc8c27dea0
+#: ../../../sources/en/nwdiag/introduction.rst:7
+msgid "Generate network-diagram from dot like text (basic feature)."
+msgstr "テキストファイルからネットワーク図を生成"
+
+# 7fea5116b8c14fd99b3fb1bd8d936658
+#: ../../../sources/en/nwdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr "日本語(UTF-8)対応"
+
+# fa20d13f0eaa4e15af623395598843dd
+#: ../../../sources/en/nwdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-nwdiag パッケージの利用)"
+
+# 5b37a87b586d48b2a975507aac3489a4
+#: ../../../sources/en/nwdiag/introduction.rst:12
+msgid "Setup"
+msgstr "インストール"
+
+# d0f02bac3d804b1d8961b42007e9fcdf
+#: ../../../sources/en/nwdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
+
+# 54164466cba646ae8640a86bc979bb87
+#: ../../../sources/en/nwdiag/introduction.rst:24
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# b51112c021084d6ba90330185881cc73
+#: ../../../sources/en/nwdiag/introduction.rst:31
+msgid ""
+"Please refer to :ref:`nwdiag-sample-diagrams` section for the format of the "
+"`simpla.diag` configuration file."
+msgstr "書式の詳細については :ref:`nwdiag-sample-diagrams` を参照してください。"
+
+# 7d9a82ed5cfe4867896b4e470efd9b61
+#: ../../../sources/en/nwdiag/introduction.rst:36
+msgid "Usage"
+msgstr "実行方法"
+
+# 9d3f9dd725794a6dbfd95cafabeb46e5
+#: ../../../sources/en/nwdiag/introduction.rst:37
+msgid "Execute nwdiag command"
+msgstr "コマンドラインで nwdiag コマンドを実行します。"
+
+# 8f3da6f65df742f68c8b604d5ad2fe33
+#: ../../../sources/en/nwdiag/introduction.rst:45
+msgid "If you want SVG images, use -T option"
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
+
+# cf5ba5ac6c444b51b86858207f1e1c07
+#: ../../../sources/en/nwdiag/introduction.rst:55
+msgid "Font Configuration"
+msgstr "フォント設定"
+
+# 4d7f7ea62a2049f0a06ee1bab3723330
+#: ../../../sources/en/nwdiag/introduction.rst:56
+msgid ""
+"nwdiag uses TrueType Font to render text. nwdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr "nwdiag は文字の描画に TrueType フォントを利用します。指定がない場合 nwdiag は自動的にフォントを検索しますが、フォントが見つからない場合もしくはフォントを指定したい場合は-f (-font) オプションを利用します。"
+
+# 370f8192880947019904b8060ff505e6
+#: ../../../sources/en/nwdiag/introduction.rst:64
+msgid "If you always use same font, write $HOME/.blockdiagrc"
+msgstr "もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいでしょう。"
+
+# 1f9f8b422bcf46098f5b06405cd2550a
+#: ../../../sources/en/nwdiag/introduction.rst:74
+msgid "Requirements"
+msgstr "事前に入れておくべきソフトウェア"
+
+# b50e81d03c344ada81ccabbb4649be69
+#: ../../../sources/en/nwdiag/introduction.rst:75
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
+
+# f0e5725a13dd4791a5964008f41b91ea
+#: ../../../sources/en/nwdiag/introduction.rst:76
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
+
+# 400cdf20ea1547be8d459f9f92ba0e85
+#: ../../../sources/en/nwdiag/introduction.rst:77
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
+
+# adc23e1fa661497eb4ee3a0e0bb9f70c
+#: ../../../sources/en/nwdiag/introduction.rst:78
+msgid "setuptools or distribute."
+msgstr "setuptools もしくは distribute"
+
+# c9a8c10ca3be45d4a185f23f3ff19ce9
+#: ../../../sources/en/nwdiag/introduction.rst:82
+msgid "License"
+msgstr "ライセンス"
+
+# 066db5d38fac454286b715c7ed29bca1
+#: ../../../sources/en/nwdiag/introduction.rst:83
+msgid "Apache License 2.0"
+msgstr "Apache License 2.0"

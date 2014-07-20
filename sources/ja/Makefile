@@ -5,7 +5,7 @@
 LANGUAGE      = ja
 SPHINXOPTS    = -D language=$(LANGUAGE)
 SPHINXBUILD   = ../../bin/sphinx-build
-GETTEXTHELPER = ../../bin/sphinx-gettext-helper
+SPHINXINTL    = ../../bin/sphinx-intl
 PAPER         =
 BUILDDIR      = ../../_build/ja
 
@@ -44,6 +44,7 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 html:
+	$(SPHINXINTL) build
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
@@ -135,7 +136,6 @@ info:
 
 gettext:
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
-	$(GETTEXTHELPER) -l $(LANGUAGE) -p $(BUILDDIR)/locale --update --build --statistics
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
 

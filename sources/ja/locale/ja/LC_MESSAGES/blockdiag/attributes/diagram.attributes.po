@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:07+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 4603b00147384afa997bfebcff548c16
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:3
+msgid "diagram attributes setting"
+msgstr "ダイアグラムの属性設定"
+
+# 7c6589ee8a5944cab11ea29133b4b184
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:6
+msgid "NAME"
+msgstr "名称"
+
+# 726bf62c4013456487fb9fb5149e436b
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:8
+msgid "Attribute settings of diagrams"
+msgstr "ダイアグラムの属性の設定"
+
+# 30f977c8e45946c99878b73baf6a7d51
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:11
+msgid "SYNOPSIS"
+msgstr "使い方"
+
+# 4939834a6f8b455f8a0edbd83588e2c6
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:13
+msgid "**attribute** = **value** ;"
+msgstr "**属性名** = **設定値** ;"
+
+# 2251a6a005934e7e9f94c2f0e7374d46
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:16
+msgid "DESCRIPTION"
+msgstr "概要"
+
+# 49c25707126e4d7db25c5d29b7718f29
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:18
+msgid "Set attributes related to whole of the blockdiag."
+msgstr "blockdiag 全体の属性を設定をします。"
+
+# f1160ae1ea6648618253247e0cb79151
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:21
+msgid "ATTRIBUTES"
+msgstr "属性"
+
+# ee0e5910b6d44306a3cc204f6f72b5e8
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:25
+msgid "Specify default node width. Default is 128."
+msgstr "ノードの幅を指定します。省略時は128です。"
+
+# 48a5e9dc697345ed94400097da253268
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:29
+msgid "Specify default node height. Default is 40."
+msgstr "ノードの高さを指定します。省略時は40です。"
+
+# 8fb967ba74354eefb7963bf861c8e982
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:33
+msgid "Specify default horizontal span between nodes. Default is 64."
+msgstr "ノード間の横幅を指定します。省略時は64です。"
+
+# 25b4b4781f964135b97678f2ce7c89a3
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:37
+msgid "Specify default vertical span between nodes. Default is 40."
+msgstr "ノード間の縦幅を指定します。省略時は40です。"
+
+# 5eff436572874701922eeabbd624aafe
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:41
+msgid "Specify default font size used at label attribute. Default is 11."
+msgstr "ノードのラベル属性に使用するフォントサイズを指定します。省略時は11です。"
+
+# 3548f4ab89fc4a7f8c8dbbacfcaaf528
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:45
+msgid "Specify default node shape. Default is box."
+msgstr "ノードの形状のデフォルトを指定します。省略時はboxです。"
+
+# cd5deff56c034f739fe45b94c38d2a70
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:51
+msgid "Set portrait mode. Default is landscape mode."
+msgstr "縦書きモードにします。省略時は横書きモードです。"
+
+# e8b31894abb74384a06afeb729cddc37
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:57
+msgid "Specify node default color. Default is white."
+msgstr "ノードのデフォルトの色を指定します。省略時は白です。"
+
+# 202b2038a1224de2a0d66d8b2a4da426
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:63
+msgid "Specify group default color. Default is orange."
+msgstr "グループのデフォルトの色を指定します。省略時はオレンジです。"
+
+# 4221d298d3fa484c94d3e6dee1fdeb69
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:69
+msgid "Specify node border and edge default color. Default is black."
+msgstr "ノードの枠とエッジのデフォルトの色を指定します。省略時は黒です。"
+
+# 9dea118a3a2b41ae96dc7e21ccdd17fb
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:75
+msgid ""
+"Specify default color of node label, edge label and group label. Default is "
+"black."
+msgstr "ノードラベル、エッジラベル、グループラベルのデフォルトの色を指定します。省略時は黒です。"
+
+# ad0098045a4d49468381e487e4aa4a20
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:82
+msgid "**Experimental** Specify how to layout edges. Default is normal."
+msgstr "**Experimental** エッジレイアウトルールを指定します。"
+
+# 0381fa4a07344e1bb0f5fa94c91b5b5b
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:86
+msgid "EXAMPLES"
+msgstr "設定例"
+
+# 2b440a2dd231423d8481c889ac8b8a08
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:89
+msgid "node_width and node_height attribute to diagram"
+msgstr "node_width 属性と node_height 属性の設定例"
+
+# d7348297d95c470fb3689de0c2f29d50
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:95
+msgid "span_width and span_height attribute to diagram"
+msgstr "span_width 属性と span_height 属性の設定例"
+
+# d0a883f100214334bdba8dd99c48263b
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:101
+msgid "default_fontsize attribute to diagram"
+msgstr "default_fontsize 属性の設定例"
+
+# b31bbafec7094f5e9804fdbb49d17fa3
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:107
+msgid "default_shape attribute to diagram"
+msgstr "default_shape 属性の設定例"
+
+# af9146477c4b4d9b80f2b0d27b6ce376
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:113
+msgid "orientation attribute to diagram"
+msgstr "orientation 属性の設定例"
+
+# 9a12733cc2b14f448f1f1bce2fdabd4e
+#: ../../../sources/en/blockdiag/attributes/diagram.attributes.rst:119
+msgid ""
+"default_node_color, default_group_color, default_linecolor and "
+"default_textcolor attribute"
+msgstr "default_node_color, default_group_color, default_linecolor, default_textcolor 属性の設定例"

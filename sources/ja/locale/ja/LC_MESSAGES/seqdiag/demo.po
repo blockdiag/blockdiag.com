@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:08+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 7547d87ae1f146c5a06b0adb0dd90593
+#: ../../../sources/en/seqdiag/demo.rst:3
+msgid "Demo - interactive shell for seqdiag"
+msgstr "デモ: interactive shell for seqdiag"
+
+# 2700f85697904a44871f28c85d837678
+#: ../../../sources/en/seqdiag/demo.rst:5
+msgid ""
+"This is demo program for seqdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr "このページは seqdiag を Web ブラウザから利用できるようにしたデモページです。入力フォームのテキストをリアルタイムに変換し、 ブラウザ上で閲覧することができます。"
+
+# 6c8c58ffe6f74d18a9453b05cfb3f6dc
+#: ../../../sources/en/seqdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr "このデモページは IE に対応していません。"
+
+# 994dd80bc91949bc8502120f94f98f78
+#: ../../../sources/en/seqdiag/demo.rst:13
+msgid "Diagram source"
+msgstr "入力フォーム"
+
+# 34169a86f4e74a80a8e9d14b74bd1fa1
+#: ../../../sources/en/seqdiag/demo.rst:24
+msgid "Diagram outputs"
+msgstr "出力された図"

@@ -1,0 +1,48 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 13:24+0900\n"
+"PO-Revision-Date: 2014-07-20 13:24+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# a3960f0f0ac64f048944004a337b3dce
+#: ../../../sources/en/blockdiag/demo.rst:3
+msgid "Demo - interactive shell for blockdiag"
+msgstr "デモ：interactive shell for blockdiag"
+
+# f04d37837e0645f9bed172561aa213a0
+#: ../../../sources/en/blockdiag/demo.rst:5
+msgid ""
+"This is demo program for blockdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr ""
+"このページは `blockdiag` を Web ブラウザから利用できるようにしたデモページで"
+"す。 入力フォームのテキストをリアルタイムに変換し、 ブラウザ上で閲覧すること"
+"ができます。"
+
+# a905c0805934489c8c7fe03f1b5f0a65
+#: ../../../sources/en/blockdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr "このデモページは IE に対応していません。"
+
+# ef018cb2faf6467b9cc4550dffdf1d91
+#: ../../../sources/en/blockdiag/demo.rst:13
+msgid "Diagram source"
+msgstr "入力フォーム"
+
+# 0cc0cc9d1b454194adee0079e8fa52bf
+#: ../../../sources/en/blockdiag/demo.rst:24
+msgid "Diagram outputs"
+msgstr "出力された図"

@@ -1,0 +1,28 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 13:24+0900\n"
+"PO-Revision-Date: 2014-07-20 13:24+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 6a2aa8b86c4f4e5a93213f17d7690365
+#: ../../../sources/en/actdiag/examples.rst:5
+msgid "Sample diagams"
+msgstr "出力サンプル"
+
+# 138fe698a09841f591ba8a48bc48b8cf
+#: ../../../sources/en/actdiag/examples.rst:8
+msgid "simple diagram"
+msgstr "シンプルなアクティビティ図"
