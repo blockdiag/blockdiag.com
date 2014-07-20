@@ -149,6 +149,7 @@ Directive
    ``class`` : text
      Set a `classes` attribute value on the diagram-image element.
 
+.. _sphinxcontrib_font_configurations:
 
 Configuration File Options
 ==========================
