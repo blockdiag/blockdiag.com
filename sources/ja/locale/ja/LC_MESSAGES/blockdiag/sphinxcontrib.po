@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:07+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 4d7f2b483fe649009af2c63d8398e18f
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:5
+msgid "sphinxcontrib-blockdiag"
+msgstr "sphinxcontrib-blockdiag"
+
+# c1fbecfc174c4b7facb6bbe47f5c38d8
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:7
+msgid ""
+"`sphinxcontrib-blockdiag` is sphinx extension for embedding blockdiag "
+"diagrams. You can embed block diagrams with `blockdiag` directive."
+msgstr "`sphinxcontrib-blockdiag` は blockdiag によるブロック図をドキュメントに埋め込むための Sphinx 拡張です。ブロック図の埋め込みには `blockdiag` ディレクティブを利用します。"
+
+# f803f314c14a49aea6c6ca9c1a2c378a
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:25
+msgid "Setting"
+msgstr "インストール・設定"
+
+# 5162168ec4764231a400dffe39883d14
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:27
+msgid ""
+"You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
+msgstr "アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ からダウンロードすることができます。"
+
+# 10868e25635a47ed9d7f52c18ee46e9e
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:30
+msgid "Install"
+msgstr "インストール"
+
+# c87b02d6b5c34d8aa286e9a91ade6db3
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:38
+msgid "Configure Sphinx"
+msgstr "Sphinx の設定"
+
+# bbf48b3346ae46c4ac1c2689ecf565ae
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:40
+msgid ""
+"To enable this extension, add ``sphinxcontrib.blockdiag`` module to "
+"extensions option at :file:`conf.py`."
+msgstr "`sphinxcontrib.blockdiag` を有効にするには `conf.py` を以下のように書き換えます。"
+
+# e18a01a032054d84be879e2bc4bffd1a
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:53
+msgid ""
+"If you write documents including multibyte characters, you have to set "
+"fontpath to `blockdiag_fontpath`."
+msgstr "日本語を利用する場合は、 `blockdiag_fontpath` を設定する必要があります。"
+
+# 12cd94e09fd84a309521437d4281b781
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:57
+msgid "Directive"
+msgstr "ディレクティブ"
+
+# 517ce2a0d5bf4d9cab8e689eaef0c089
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:61
+msgid ""
+"This directive inserts a block diagram into the document. When `filename` "
+"argument is specified, the extension reads a diagram definitiom from file. "
+"In another case, it reads from code block."
+msgstr "`blockdiag` ディレクティブは指定した場所にブロック図を埋め込みます。`filename` 引数が指定された場合はそのファイルから、それ以外の場合はテキストブロックからブロック図の定義を読み込みます。"
+
+# 14f2d9098f384631bb3e23981f28e559
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:65
+msgid "Examples::"
+msgstr "例::"
+
+# f5682573e7654e779d76d03c3758220d
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:75
+msgid "In addition, the following options are recognized:"
+msgstr "`blockdiag` ディレクティブには以下のオプションを指定することができます。"
+
+# 70f48ce7a43445d0854aa05d40d290e8
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:79
+msgid "``alt`` : text"
+msgstr "``alt`` : text"
+
+# 04031b8d2552416b8d61f440af640354
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:78
+msgid ""
+"Alternate text: a short description of the diagram, displayed by "
+"applications that cannot display diagram."
+msgstr "図を表示することができないアプリケーションが用いる代替テキスト(図の説明文)です。"
+
+# 389dbc6ce08d4679a2d06d59d8550da4
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:85
+msgid "``height`` : length"
+msgstr "``height`` : length"
+
+# 78442fd47583407b8ffe64fad9472874
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:82
+msgid ""
+"The desired height of the diagram. When the \"scale\" option is also "
+"specified, they are combined. For example, a height of 200px and a scale of "
+"50 is equivalent to a height of 100px with no scale."
+msgstr "図の高さを指定します。\"scale\" オプションと同時に指定された場合、掛けあわせた結果が利用されます。例えば `height` オプションに 200px 、 `scale` オプションに 50% が指定された場合、図の高さとして 100px が指定されたものと解釈します。"
+
+# 545c8bd165074c58a5e75dbc55cce365
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:90
+msgid "``width`` : length"
+msgstr "``width`` : length"
+
+# edaab2ddec8048029f7a0bd7cb4e2c7f
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:88
+msgid ""
+"The width of the diagram. As with \"height\" above, when the \"scale\" "
+"option is also specified, they are combined."
+msgstr "図の幅を指定します。 `height` オプションと同様に、 `scale` オプションと同時に指定された場合、掛けあわせた結果が利用されます。"
+
+# 1ce13419398241bfbe1bcec1b09f1032
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:94
+msgid "``scale`` : integer percentage"
+msgstr "``scale`` : integer percentage"
+
+# 2df7726e43cd4528894633f465ea1e06
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:93
+msgid ""
+"The uniform scaling factor of the image. The default is \"100%\", i.e. no "
+"scaling."
+msgstr "図の表示倍率を指定します。デフォルトでは 100%、つまりそのままの大きさで埋め込まれます。"
+
+# a302ff6ad4b04629b13ab8058ec656c5
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:100
+msgid "``maxwidth`` : length"
+msgstr "``maxwidth`` : length"
+
+# 38f6e4dcc2fd4598a18bc4b9c1b74af0
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:97
+msgid "Use ``width`` option."
+msgstr "``width`` オプションを使ってください。"
+
+# 38a4220d8490460ca3613a7dfc6ac112
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:100
+msgid "Same as \"width\" option."
+msgstr "\"width\" オプションと等価です。"
+
+# 8cd4408c6030474882ebce2910c6d491
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:103
+msgid "``align`` : \"left\", \"center\" or \"right\""
+msgstr "``align`` : \"left\", \"center\" or \"right\""
+
+# 42075161fc2045378db6adf0af5e31a0
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:103
+msgid "The horizontal alignment of the diagram."
+msgstr "図の表示位置を指定します。"
+
+# eb429707880f4e9ca8c005af968f10d8
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:106
+msgid "``caption`` : text"
+msgstr "``caption`` : text"
+
+# c6df78eef1c44ee3b87e9387421411ee
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:106
+msgid "The caption of the diagram."
+msgstr "図の表題を指定します。"
+
+# 55520b7634114c0bb2fa2c354e2a063c
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:135
+msgid "``desctable`` :"
+msgstr "``desctable`` :"
+
+# 01cc50b9aea449d1a56bdc14e69c9820
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:109
+msgid ""
+"Description Table: a table that describes each diagram elements (cf. nodes, "
+"edges) When this option is specified, Sphinx generates Description Table "
+"from diagram, corrects descriptons from `description` attribute of each node"
+" and edges."
+msgstr "図の要素(ノード、エッジなど)の説明表を生成します。`desctable` オプションが指定された場合、各要素の `description` 属性から要素の説明文を抜き出し、図と共に説明表を生成します。"
+
+# 719adc53d9814d5683561cad19a0d647
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:113
+msgid "Example::"
+msgstr "例::"
+
+# 3522c06c4d7541fdaad7c0d8b588f2c2
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:125
+msgid "Generated:"
+msgstr "生成結果:"
+
+# 5f19c1f0c9fa408d912ff2c1af1c0cc4
+#: ../../../sources/en/A:1
+msgid "A"
+msgstr "A"
+
+# 51eb3fc03deb4a45a37897e5f169c0ef
+#: ../../../sources/en/browsers in each client:1
+msgid "browsers in each client"
+msgstr "browsers in each client"
+
+# abdaf91a9c7544e080226c840c836c17
+#: ../../../sources/en/B:1
+msgid "B"
+msgstr "B"
+
+# 2bef7b02c62c4fb88555f262c23b6e71
+#: ../../../sources/en/web server:1
+msgid "web server"
+msgstr "web server"
+
+# 06082f4b80a148da8971caef5f9292d6
+#: ../../../sources/en/C:1
+msgid "C"
+msgstr "C"
+
+# 23967d6230e548b6b6dc7a52b21a1d3b
+#: ../../../sources/en/database server:1
+msgid "database server"
+msgstr "database server"
+
+# db2d37776dcf48bc90b5ad794b502d7e
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:140
+msgid "``figwidth`` : \"image\", length"
+msgstr "``figwidth`` : \"image\", length"
+
+# 52ff525c547a497ca613a2b0a8bac51b
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:138
+msgid ""
+"The width of the figure. A special value of \"image\" is allowed, in which "
+"case the included diagram's actual width is used."
+msgstr "figure 要素の幅を指定します。\"image\" を指定した場合は図のサイズが利用されます。"
+
+# 08fd50535eee43c58a3628d67c4ae015
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:143
+msgid "``figclass`` : text"
+msgstr "``figclass`` : text"
+
+# 067f924eb263464e914768a8012e6e8a
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:143
+msgid "Set a `classes` attribute value on the figure element."
+msgstr "figure 要素の classes 属性を指定します。"
+
+# 64071515b98446b29f0a6babaac5ce3d
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:147
+msgid "``name`` : text"
+msgstr "``name`` : text"
+
+# f9ffdf67118a445cb35c996cb711eb0a
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:146
+msgid ""
+"Set a `names` attribute value on the diagram-image element. This allows "
+"hyperlink references to the diagram using text as reference name."
+msgstr "図の `names` 属性を指定します。設定した名前を使うことでドキュメント内から図へのハイパーリンクを作ることができます。"
+
+# 42f0fabf96ce40ffbad1af6a8d78c15f
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:149
+msgid "``class`` : text"
+msgstr "``class`` : text"
+
+# 68c5209ce9eb46d68ee26eff669cc3a8
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:150
+msgid "Set a `classes` attribute value on the diagram-image element."
+msgstr "図の `classes` 属性を指定します。"
+
+# f3780bd9f3114f948d07f837f0b5a2b7
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:154
+msgid "Configuration File Options"
+msgstr "設定オプション"
+
+# 5a72daa3831c426f8a284e4dc79ae59b
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:158
+msgid ""
+"The paths to truetype fonts. `blockdiag_fontpath` option accepts both single"
+" path string and list of paths."
+msgstr "TrueType フォントファイルへのパスを指定します。`blockdiag_fontpath` オプションにはファイル名(文字列)もしくはファイル名の配列を指定することができます。"
+
+# 61cb3c3dd563413b878908b64f42b72d
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:163
+msgid "`blockdiag_fontpath` accepts fontpath list"
+msgstr "配列によるパス指定に対応しました。"
+
+# a06ce873c8c14624830c348ded8df73d
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:167
+msgid "The path to fontmap definitions."
+msgstr "フォント定義ファイルへのパスを指定します。"
+
+# ce4adfe5c53e4f72a16dfb2cff76c1e0
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:171
+msgid "Render diagrams in antialias mode or not."
+msgstr "図の描画の際にアンチエイリアスを行うかを指定します。"
+
+# 0e01bc3035874e0e87905752b760307d
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:175
+msgid "The output image format at generating HTML docs."
+msgstr "HTML 文書生成の際の画像出力フォーマットを指定します。"
+
+# b657d1a5ca3549f59707f1769cc0e205
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:179
+msgid ""
+"The output image format at generating PDF docs (through LaTeX). When a value"
+" of \"PDF\" is specified, you can get clear diagram images. In which case, "
+"reportlab_ library is required."
+msgstr "LaTeX 経由で PDF 文書を生成する際の画像出力フォーマットを指定します。\"PDF\" フォーマットで画像を出力するとベクター形式の画像を得ることができます。なお、その場合は reportlab_ のインストールが必要です。"
+
+# 38bb7e83ac9c485ab67c1f8a5bde16d4
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:187
+msgid "Use ``blockdiag_latex_image_format`` option."
+msgstr "``blockdiag_latex_image_format`` オプションを使ってください。"
+
+# e5d2ce47eb9643048eae121c08c1a713
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:190
+msgid "Same as \"blockdiag_latex_image_format\" option."
+msgstr "\"blockdiag_latex_image_format\" オプションと等価です。"
+
+# a27b67ef0d1440298fdaf1bbc9e19bcd
+#: ../../../sources/en/blockdiag/sphinxcontrib.rst:194
+msgid "Enable debug mode of blockdiag."
+msgstr "デバッグモードを有効にします。"

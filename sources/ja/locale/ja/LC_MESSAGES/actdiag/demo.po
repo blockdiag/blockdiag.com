@@ -1,0 +1,48 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 13:24+0900\n"
+"PO-Revision-Date: 2014-07-20 13:24+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# ea254723440345c2a59afe399538beae
+#: ../../../sources/en/actdiag/demo.rst:3
+msgid "Demo - interactive shell for actdiag"
+msgstr "デモ: interactive shell for actdiag"
+
+# a9fb135e98d4492280decd28b6c3191e
+#: ../../../sources/en/actdiag/demo.rst:5
+msgid ""
+"This is demo program for actdiag. You can get rendered diagrams after "
+"inputting 'Diagram source'."
+msgstr ""
+"このページは actdiag を Web ブラウザから利用できるようにしたデモページです。"
+"入力フォームのテキストをリアルタイムに変換し、ブラウザ上で閲覧することができ"
+"ます。"
+
+# 5c5bb8fdc5c54805a54108d3aac2df09
+#: ../../../sources/en/actdiag/demo.rst:10
+msgid "This demo program supports non IE browsers only."
+msgstr "このデモページは IE に対応していません。"
+
+# afe150e9e50f441caffe7be52dfd7c9d
+#: ../../../sources/en/actdiag/demo.rst:13
+msgid "Diagram source"
+msgstr "入力フォーム"
+
+# 2466dc01157d4fbf85e492d9d8261a1a
+#: ../../../sources/en/actdiag/demo.rst:30
+msgid "Diagram outputs"
+msgstr "出力された図"

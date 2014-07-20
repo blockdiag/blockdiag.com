@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:07+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# b9abd29e5d3c4c06a359e51eb1566c6c
+#: ../../../sources/en/blockdiag/index.rst:3
+msgid "blockdiag - simple block-diagram image generator"
+msgstr "ブロック図生成ツール blockdiag"
+
+# d57a4fcfe83a49e98a746133c4e196d1
+#: ../../../sources/en/blockdiag/index.rst:5
+msgid ""
+"`blockdiag` generate block-diagram image file from .diag file. .diag file is"
+" similar to DOT file (graphviz's)."
+msgstr "`blockdiag` はシンプルなテキストからブロック図を生成する ブロック図生成ツールです。"
+
+# 76eb606eeb72422695ca2c42a0e09dfa
+#: ../../../sources/en/blockdiag/index.rst:8
+msgid "You can get diagrams like this."
+msgstr "`blockdiag` を用いると以下のような図が簡単に生成できます。"

@@ -1,0 +1,138 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 13:24+0900\n"
+"PO-Revision-Date: 2014-07-20 13:24+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 8b6830a274014a558911a06c7fb7a3bb
+#: ../../../sources/en/actdiag/introduction.rst:3
+msgid "Introduction of actdiag"
+msgstr "actdiag の概要"
+
+# 26f968e3630344588a3276e42e578d4c
+#: ../../../sources/en/actdiag/introduction.rst:6
+msgid "Features"
+msgstr "機能"
+
+# 6fad9742e9ba4e6ba1d4ee1f98e56d85
+#: ../../../sources/en/actdiag/introduction.rst:7
+msgid "Generate activity-diagram from dot like text (basic feature)."
+msgstr "テキストファイルからアクティビティ図を生成"
+
+# 9b74530554604f9bb35f4cbf57d582f5
+#: ../../../sources/en/actdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr "日本語(UTF-8)対応"
+
+# 69e753b3ef1444a296154471dd63d336
+#: ../../../sources/en/actdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-actdiag パッケージの利用)"
+
+# 41e45b990f6147de82b1f68cc36385af
+#: ../../../sources/en/actdiag/introduction.rst:12
+msgid "Setup"
+msgstr "インストール"
+
+# 38b518b0769048f98a39ef961d673d41
+#: ../../../sources/en/actdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
+
+# 291835a6ede448e2a2980da216045c9d
+#: ../../../sources/en/actdiag/introduction.rst:24
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# 0a190d8e07b04e47950a8ef376d30c90
+#: ../../../sources/en/actdiag/introduction.rst:31
+msgid ""
+"Please refer to :ref:`actdiag-sample-diagrams` section for the format of the "
+"`simpla.diag` configuration file."
+msgstr ""
+"書式の詳細については :ref:`actdiag-sample-diagrams` を参照してください。"
+
+# 35048caad50948f8814d0437e0489725
+#: ../../../sources/en/actdiag/introduction.rst:36
+msgid "Usage"
+msgstr "実行方法"
+
+# 05c5e83ed8284017b0d48935e85849ef
+#: ../../../sources/en/actdiag/introduction.rst:37
+msgid "Execute actdiag command"
+msgstr "コマンドラインで actdiag コマンドを実行します。"
+
+# 25c07cb57d594e25b5f7230ab116f228
+#: ../../../sources/en/actdiag/introduction.rst:45
+msgid "If you want SVG images, use -T option"
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
+
+# 4a81c63d8ef1484fbd4a223236cc787c
+#: ../../../sources/en/actdiag/introduction.rst:55
+msgid "Font Configuration"
+msgstr "フォント設定"
+
+# 0b0048f44c6341ada16214bf500d9846
+#: ../../../sources/en/actdiag/introduction.rst:56
+msgid ""
+"actdiag uses TrueType Font to render text. actdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr ""
+"actdiag は文字の描画に TrueType フォントを利用します。指定がない場合 actdiag "
+"は自動的にフォントを検索しますが、見つからない場合もしくはフォントを指定した"
+"い場合は -f (-font) オプションを利用します。"
+
+# b6d57663734d467686f52a036da64f87
+#: ../../../sources/en/actdiag/introduction.rst:64
+msgid "If you always use same font, write $HOME/.blockdiagrc"
+msgstr ""
+"もし常に設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいで"
+"しょう"
+
+# 50c42fe430ef4ea09da95d5eb1436769
+#: ../../../sources/en/actdiag/introduction.rst:74
+msgid "Requirements"
+msgstr "事前に入れておくべきソフトウェア"
+
+# 66ff88e749d448df989b6b7064e24815
+#: ../../../sources/en/actdiag/introduction.rst:75
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
+
+# 438caa278c894fc783165812d3c0c466
+#: ../../../sources/en/actdiag/introduction.rst:76
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
+
+# 73cb2f53fda14e4da8d8358f77827cde
+#: ../../../sources/en/actdiag/introduction.rst:77
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
+
+# bcee0bbcad2a4f3eb71dcf4540d70f33
+#: ../../../sources/en/actdiag/introduction.rst:78
+msgid "setuptools or distribute."
+msgstr "setuptools もしくは distribute"
+
+# de4c1a32cdd64403b8112d7d6ff2098f
+#: ../../../sources/en/actdiag/introduction.rst:82
+msgid "License"
+msgstr "ライセンス"
+
+# 6dd632e748bb42449faf7e2a7e15d406
+#: ../../../sources/en/actdiag/introduction.rst:83
+msgid "Apache License 2.0"
+msgstr "Apache License 2.0"

@@ -1,0 +1,350 @@
+# Japanese translations for blockdiag package.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 13:24+0900\n"
+"PO-Revision-Date: 2014-07-20 13:24+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 4c84c89a365642abb06ee35282db6f51
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:3
+msgid "sphinxcontrib-actdiag"
+msgstr "Sphinx 拡張: sphinxcontrib-actdiag"
+
+# 9ee25a7e9d2f4660ac3b316182499693
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:5
+msgid ""
+"`sphinxcontrib-actdiag` is sphinx extension for embedding actdiag diagrams. "
+"You can embed activity diagrams with `actdiag` directive."
+msgstr ""
+"`sphinxcontrib-actdiag` は actdiag によるアクティビティ図をドキュメントに埋め込むための Sphinx 拡張です。"
+"アクティビティ図の埋め込みには `actdiag` ディレクティブを利用します。"
+
+# c192759e60a84155ac72c67d07bc333f
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:23
+msgid "Setting"
+msgstr "インストール・設定"
+
+# cfa327100b044979a28b17383d400954
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:25
+msgid ""
+"You can get archive file at http://bitbucket.org/birkenfeld/sphinx-contrib/"
+msgstr ""
+"アーカイブファイルは http://bitbucket.org/birkenfeld/sphinx-contrib/ よりダウンロード"
+"することができます。"
+
+# 2a43e317cb6f4f9798ec0800cf9379f3
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:28
+msgid "Install"
+msgstr "インストール"
+
+# 874b4cefcfd642d38238125377ceb1f6
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:36
+msgid "Configure Sphinx"
+msgstr "Sphinx の設定"
+
+# 11202a00598547779eaccc88ed9f77c2
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:38
+msgid ""
+"To enable this extension, add ``sphinxcontrib.actdiag`` module to extensions "
+"option at :file:`conf.py`."
+msgstr ""
+"sphinxcontrib-actdiag を有効にするには :file:`conf.py` を以下のように書き換えます。"
+
+# 2e934e5074ca4bb9b5f43ae8cbfa8208
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:51
+msgid ""
+"If you write documents including multibyte characters, you have to set "
+"fontpath to `actdiag_fontpath`."
+msgstr ""
+"日本語を利用する場合は、 `actdiag_fontpath` を設定する必要があります。"
+
+# 469161ee97e840fab50443b67e3b4588
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:56
+msgid "Directive"
+msgstr "ディレクティブ"
+
+# 0c810daf4b81429d835b1c2a7e784eeb
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:60
+msgid ""
+"This directive inserts a activity diagram into the document. When `filename` "
+"argument is specified, the extension reads a diagram definitiom from file. "
+"In another case, it reads from code block."
+msgstr ""
+"`actdiag` ディレクティブは指定した箇所にアクティビティ図を埋め込みます。"
+"`filename` 引数が指定された場合はそのファイルから、"
+"それ以外の場合はテキストブロックからブロック図の定義を読み込みます。"
+
+# 7ac8adcf2ba745f59b3dd75c407417f1
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:64
+msgid "Examples::"
+msgstr "例::"
+
+# 73ce7b8658824afa8a69e19208717892
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:74
+msgid "In addition, the following options are recognized:"
+msgstr "`actdiag` ディレクティブには以下のオプションを指定することができます。"
+
+# 881079a328ca40ec8e7564762cfa1e6c
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:78
+msgid "``alt`` : text"
+msgstr "``alt`` : text"
+
+# 72b824ca6b8441d9bd16a6dcc439c731
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:77
+msgid ""
+"Alternate text: a short description of the diagram, displayed by "
+"applications that cannot display diagram."
+msgstr ""
+"図を表示することができないアプリケーションが用いる代替テキスト(図の説明文)です。"
+
+# 6bed9d21b32f4882bcf99f26226a8c82
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:84
+msgid "``height`` : length"
+msgstr "``height`` : length"
+
+# f4c98cb54f414b1da664a79d9a3dd223
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:81
+msgid ""
+"The desired height of the diagram. When the \"scale\" option is also "
+"specified, they are combined. For example, a height of 200px and a scale of "
+"50 is equivalent to a height of 100px with no scale."
+msgstr ""
+"図の高さを指定します。\"scale\" オプションと同時に指定された場合、掛けあわせた結果が利用されます。"
+"例えば `height` オプションに 200px 、 `scale` オプションに 50% が指定された場合、"
+"図の高さとして 100px が指定されたものと解釈します。"
+
+# ffa82fe24c1f410d85cc309e3ef0e992
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:89
+msgid "``width`` : length"
+msgstr "``width`` : length"
+
+# 01c135e303a0450dba87a4378f5fc432
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:87
+msgid ""
+"The width of the diagram. As with \"height\" above, when the \"scale\" "
+"option is also specified, they are combined."
+msgstr ""
+"図の幅を指定します。 `height` オプションと同様に、 `scale` オプションと同時に指定された場合、掛けあわせた結果が利用されます。"
+
+# 3742bb34fd194e35a1e6d4521385cd43
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:93
+msgid "``scale`` : integer percentage"
+msgstr "``scale`` : integer percentage"
+
+# 14107282d9db46acac774df57983e9a9
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:92
+msgid ""
+"The uniform scaling factor of the image. The default is \"100%\", i.e. no "
+"scaling."
+msgstr ""
+"図の表示倍率を指定します。デフォルトでは 100%、つまりそのままの大きさで埋め込まれます。"
+
+# 44076ac80e014837a26501076a05d4aa
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:99
+msgid "``maxwidth`` : length"
+msgstr "``maxwidth`` : length"
+
+# e52c72acfa2f4a2f9a7a2f5ce79394b6
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:96
+msgid "Use ``width`` option."
+msgstr "``width`` オプションを使ってください。"
+
+# 110185e483974420aa8df11110b5683a
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:99
+msgid "Same as \"width\" option."
+msgstr "\"width\" オプションと等価です。"
+
+# 7ae316e97259471eaa6c3e480ff1fff7
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:102
+msgid "``align`` : \"left\", \"center\" or \"right\""
+msgstr "``align`` : \"left\", \"center\" or \"right\""
+
+# 063be3aaa7684322ac0c9427e2d0d67c
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:102
+msgid "The horizontal alignment of the diagram."
+msgstr "図の表示位置を指定します。"
+
+# c7d82f45bc204011a5046119d3a8a001
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:105
+msgid "``caption`` : text"
+msgstr "``caption`` : text"
+
+# b1b9f935a3664ac696036a8b159e2f5a
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:105
+msgid "The caption of the diagram."
+msgstr "図の表題を指定します。"
+
+# 0f143bb861d54d928f0790d18c0f96a4
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:134
+msgid "``desctable`` :"
+msgstr "``desctable`` :"
+
+# 10d9533668b2437db1ba7179096f577b
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:108
+msgid ""
+"Description Table: a table that describes each diagram elements (cf. nodes, "
+"edges) When this option is specified, Sphinx generates Description Table "
+"from diagram, corrects descriptons from `description` attribute of each node "
+"and edges."
+msgstr ""
+"図の要素(ノード、エッジなど)の説明表を生成します。`desctable` オプションが指定された場合、"
+"各要素の `description` 属性から要素の説明文を抜き出し、図と共に説明表を生成します。"
+
+# bff1a409b29f45878e74ed77149791a7
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:112
+msgid "Example::"
+msgstr "例::"
+
+# db5b7ff2e7c946099cf4b73573443417
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:124
+msgid "Generated:"
+msgstr "生成結果:"
+
+# e720c3ba5327492f945440a2431c50bc
+#: ../../../sources/en/A:1
+msgid "A"
+msgstr "A"
+
+# 473d1113cff7470da173b67e2969b40d
+#: ../../../sources/en/browsers in each client:1
+msgid "browsers in each client"
+msgstr "browsers in each client"
+
+# 367a6d2f748c42e78974ea632a7ce352
+#: ../../../sources/en/B:1
+msgid "B"
+msgstr "B"
+
+# 5f738df7d204443881ab2cb569e9b421
+#: ../../../sources/en/web server:1
+msgid "web server"
+msgstr "web server"
+
+# 1cca929eb996402a9255e13fca6d54c9
+#: ../../../sources/en/C:1
+msgid "C"
+msgstr "C"
+
+# d172c10a64cd4ea0aeb3c12e09a2f723
+#: ../../../sources/en/database server:1
+msgid "database server"
+msgstr "database server"
+
+# c46c76d9a5054c579e8a63affe9aa057
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:139
+msgid "``figwidth`` : \"image\", length"
+msgstr "``figwidth`` : \"image\", length"
+
+# 82a2aca31e88430f85b29bd8fb1fc09d
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:137
+msgid ""
+"The width of the figure. A special value of \"image\" is allowed, in which "
+"case the included diagram's actual width is used."
+msgstr ""
+"figure 要素の幅を指定します。\"image\" を指定した場合は図のサイズが利用されます。"
+
+# 532f0d0effee42788bbd9919289bd026
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:142
+msgid "``figclass`` : text"
+msgstr "``figclass`` : text"
+
+# 123e9fdcd5aa4ba0a48dffc6a3d09c62
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:142
+msgid "Set a `classes` attribute value on the figure element."
+msgstr "figure 要素の `classes` 属性を指定します。"
+
+# 79c4c18e202a4bc7b4a451a9297c31ee
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:146
+msgid "``name`` : text"
+msgstr "``name`` : text"
+
+# 7323c987bfae414a8beb1bcced423253
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:145
+msgid ""
+"Set a `names` attribute value on the diagram-image element. This allows "
+"hyperlink references to the diagram using text as reference name."
+msgstr ""
+"図の `names` 属性を指定します。"
+"設定した名前を使うことでドキュメント内から図へのハイパーリンクを作ることができます。"
+
+# f42864c4f7d34958939318d26912c0e2
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:148
+msgid "``class`` : text"
+msgstr "``class`` : text"
+
+# 39f230b2d0054800b20b7cc0cadc9c4e
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:149
+msgid "Set a `classes` attribute value on the diagram-image element."
+msgstr "図の `classes` 属性を指定します。"
+
+# ed03f4d8ccd14e5285d309d0c2aacb3a
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:153
+msgid "Configuration File Options"
+msgstr "設定オプション"
+
+# 4547f47de6c7402583ac4b6ed9d16b31
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:157
+msgid ""
+"The paths to truetype fonts. `actdiag_fontpath` option accepts both single "
+"path string and list of paths."
+msgstr ""
+"TrueType フォントファイルへのパスを指定します。"
+"`actdiag_fontpath` オプションにはファイル名(文字列)もしくはファイル名の配列を指定することができます。"
+
+# b6612d9fb74d47e190a014637002cd6e
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:162
+msgid "`actdiag_fontpath` accepts fontpath list"
+msgstr "配列によるパス指定に対応しました。"
+
+# e7e630cf42e648d0beff3c381e74b2c0
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:166
+msgid "The path to fontmap definitions."
+msgstr "フォント定義ファイルへのパスを指定します。"
+
+# fca8db389770499ea9d72ce3dde91bef
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:170
+msgid "Render diagrams in antialias mode or not."
+msgstr "図の描画の際にアンチエイリアスを行うかを指定します。"
+
+# fa39be658dc647ebb4dd07b2d266d415
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:174
+msgid "The output image format at generating HTML docs."
+msgstr "HTML 文書生成の際の画像出力フォーマットを指定します。"
+
+# 88b573399c254e8e887416a0bd81c9e5
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:178
+msgid ""
+"The output image format at generating PDF docs (through LaTeX). When a value "
+"of \"PDF\" is specified, you can get clear diagram images. In which case, "
+"reportlab_ library is required."
+msgstr ""
+"LaTeX 経由で PDF 文書を生成する際の画像出力フォーマットを指定します。"
+"\"PDF\" フォーマットで画像を出力するとベクター形式の画像を得ることができます。"
+"なお、その場合は reportlab_ のインストールが必要です。"
+
+# b3a79c2b40d44485894253cb0fbdcc0b
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:186
+msgid "Use ``actdiag_latex_image_format`` option."
+msgstr "``actdiag_latex_image_format`` オプションを使ってください。"
+
+# cf0cc4250ad74244bc7a8649baa7eeac
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:189
+msgid "Same as \"actdiag_latex_image_format\" option."
+msgstr "\"actdiag_latex_image_format\" オプションと等価です。"
+
+# dcf8d2fc98c2426dad16f65aa0367149
+#: ../../../sources/en/actdiag/sphinxcontrib.rst:193
+msgid "Enable debug mode of actdiag."
+msgstr "デバッグモードを有効にします。"
