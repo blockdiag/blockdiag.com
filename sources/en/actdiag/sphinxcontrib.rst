@@ -169,6 +169,12 @@ Configuration File Options
 
    Render diagrams in antialias mode or not.
 
+.. confval:: actdiag_transparency = bool
+
+   Render diagrams as transparency or not.
+
+   .. versionadded:: 0.8.0
+
 .. confval:: actdiag_html_image_format = "PNG" or "SVG"
 
    The output image format at generating HTML docs.
