@@ -43,6 +43,18 @@ And specify it as `blockdiag_fontpath` in `conf.py`::
 
 .. _Read the Docs: https://readthedocs.org/
 
+Embed in Re:VIEW
+=================
+
+
+`Re:VIEW`_ is a document generation tool which use its original format.
+
+Re:VIEW supports blockdiag, users can embed a blockdiag in a
+document with no additional software.
+
+
+.. _Re:VIEW: https://github.com/kmuto/review
+
 
 Embed in ipython-notebook
 ==========================
