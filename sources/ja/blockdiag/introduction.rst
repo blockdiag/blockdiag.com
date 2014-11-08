@@ -136,38 +136,11 @@ port コマンドで依存パッケージをインストールします。
 
 MacOSX (homebrew) の場合
 ------------------------
-MacOSX (homebrew) の環境でインストールされる PIL パッケージは
-freetype2 に対応していないためそのままでは blockdiag を利用することはできません。
-
-また、freetype2 用の Foluma (パッケージ)は提供されていないため、
-以下の内容で /usr/local/Library/Formula/freetype2.rb ファイルを作成します。
-
-.. code-block:: ruby
-
-   require 'formula'
-
-   class Freetype2 <Formula
-     url 'http://sourceforge.net/projects/freetype/files/freetype2/2.4.4/freetype-2.4.4.tar.gz/download'
-     homepage 'http://freetype.sourceforge.net/index2.html'
-     md5 '9273efacffb683483e58a9e113efae9f'
-     version '2.4.4'
-
-     # depends_on 'cmake'
-
-     def install
-       system "./configure", "--disable-debug", "--disable-dependency-tracking",
-                             "--prefix=#{prefix}"
-       # system "cmake . #{std_cmake_parameters}"
-       system "make install"
-     end
-   end
-
-その後、以下のコマンドで freetype2 および PIL をインストールします。
+brew コマンドで依存パッケージをインストールします。
 
 .. code-block:: bash
 
-   $ brew install freetype2
-   $ easy_install pil
+   $ brew install freetype
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
