@@ -64,14 +64,14 @@ Resources
 * Interactive Shell: `<http://interactive.blockdiag.com/>`_
 * blockdiag
    * PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_
-   * Repository: `<https://bitbucket.org/tk0miya/blockdiag/>`_
+   * Repository: `<https://bitbucket.org/blockdiag/blockdiag/>`_
 * seqdiag
    * PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_
-   * Repository: `<https://bitbucket.org/tk0miya/seqdiag/>`_
+   * Repository: `<https://bitbucket.org/blockdiag/seqdiag/>`_
 * actdiag
    * PyPI: `<http://pypi.python.org/pypi/actdiag/>`_
-   * Repository: `<https://bitbucket.org/tk0miya/actdiag/>`_
+   * Repository: `<https://bitbucket.org/blockdiag/actdiag/>`_
 * nwdiag
    * PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_
-   * Repository: `<https://bitbucket.org/tk0miya/nwdiag/>`_
+   * Repository: `<https://bitbucket.org/blockdiag/nwdiag/>`_
 * Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?status=new&status=open>`_
