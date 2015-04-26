@@ -272,17 +272,18 @@ language = None
 googleanalytics_id = 'UA-19477951-1'
 
 # font settings for blockdiag families
-blockdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+blockdiag_fontpath = ['/usr/share/fonts/truetype/ipafont/ipagp.ttf',
+                      '/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf']
 blockdiag_antialias = True
-seqdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+seqdiag_fontpath = blockdiag_fontpath
 seqdiag_antialias = True
-actdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+actdiag_fontpath = blockdiag_fontpath
 actdiag_antialias = True
-nwdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+nwdiag_fontpath = blockdiag_fontpath
 nwdiag_antialias = True
-rackdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+rackdiag_fontpath = blockdiag_fontpath
 rackdiag_antialias = True
-packetdiag_fontpath = '/usr/share/fonts/truetype/ipafont/ipagp.ttf'
+packetdiag_fontpath = blockdiag_fontpath
 packetdiag_antialias = True
 packetdiag_html_image_format = 'SVG'
 
