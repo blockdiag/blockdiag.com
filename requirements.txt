@@ -6,3 +6,4 @@ sphinxcontrib-seqdiag
 sphinxcontrib-actdiag
 sphinxcontrib-nwdiag
 transifex-client > 0.10
+boto_rsync
