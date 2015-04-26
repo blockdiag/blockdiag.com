@@ -314,3 +314,10 @@ def setup(app):
                         'blockdiag_node_attr',
                         'pair: %s; node attribute(blockdiag)',
                         parse_event, doc_field_types=[fdesc])
+
+
+# adhoc: Fix sphinxcontrib-googleanalytics does not work with Sphinx-1.3
+from sphinxcontrib import googleanalytics
+original_setup = googleanalytics.setup
+
+googleanalytics.setup = lambda app: original_setup(app) and None
