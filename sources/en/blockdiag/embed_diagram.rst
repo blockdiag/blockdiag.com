@@ -161,7 +161,7 @@ To embed a blockdiagram in the asciidoc, use `asciidoc-diag-filter`_.
 Get from API
 =============
 
-`interactive shell for blockdiag <http://interactive.blockdiag.com>` provides a Web API. When you
+`interactive shell for blockdiag <http://interactive.blockdiag.com>`_ provides a Web API. When you
 send some text data, you can get a blockdiagram which is SVG format.
 
 To use Web API, send a GET request to
