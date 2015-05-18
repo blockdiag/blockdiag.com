@@ -21,10 +21,9 @@ easy_install コマンドで依存パッケージをインストールします�
    $ easy_install pillow
 
 また、Pillow が依存している「Microsoft Visual C++ 2008 SP1 再頒布可能パッケージ」をインストールします。
-32ビット版は `こちら <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=a5c84275-3b97-4ab7-a40d-3802b2af5fc2&displaylang=ja-nec>`_ から、
-64ビット版は `こちら <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=ba9257ca-337f-4b40-8c14-157cfdffee4e&displaylang=ja-nec>`_ から
-ダウンロードしてください。
-
+`32ビット版 <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=a5c84275-3b97-4ab7-a40d-3802b2af5fc2&displaylang=ja-nec>`_ と
+`64ビット版 <http://www.microsoft.com/downloads/ja-jp/details.aspx?familyid=ba9257ca-337f-4b40-8c14-157cfdffee4e&displaylang=ja-nec>`_ が存在するため、
+環境に合わせて適切なものをダウンロードしてください。
 
 その後、easy_install コマンドにて `blockdiag` をインストールします。
 
