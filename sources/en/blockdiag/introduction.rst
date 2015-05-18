@@ -53,6 +53,8 @@ If you want SVG images or PDF images, use -T option
    simple.pdf
 
 
+.. _blockdiag_font_configurations:
+
 Font Configuration
 ==================
 blockdiag uses TrueType Font to render text. 
