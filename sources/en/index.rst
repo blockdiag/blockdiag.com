@@ -59,4 +59,4 @@ Resources
 * nwdiag
    * PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_
    * Repository: `<https://bitbucket.org/blockdiag/nwdiag/>`_
-* Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?status=new&status=open>`_
+* Issue Tracker: `<https://bitbucket.org/blockdiag/blockdiag/issues?status=new&status=open>`_
