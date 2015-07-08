@@ -1,0 +1,41 @@
+blockdiag admin {
+   A -> B -> C -> D;
+   A -> E;
+   A -> H;
+
+   // A and B belong to first group.
+   group {
+      A; B;
+   }
+
+   // E, F and G belong to second group.
+   group second_group {
+      // Set group-label
+      label = "second group";
+
+      // Set background-color to this group.
+      color = "#77FF77";
+
+      // Set textcolor to this group
+      textcolor = "#FF0000";
+
+      E -> F -> G;
+
+      // H and I belong to third "nested" group.
+      group {
+          label = "third group";
+          color = "#FF0000";
+
+          // Set group shape to 'line group' (default is box)
+          shape = line;
+
+          // Set line style (effects to 'line group' only)
+          style = dashed;
+
+          H -> I;
+      }
+   }
+
+   // J belongs to second group
+   J [group = second_group];
+}

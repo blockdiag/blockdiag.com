@@ -1,0 +1,13 @@
+blockdiag {
+  // Define class (list of attributes)
+  class emphasis [color = pink, style = dashed];
+  class redline [color = red, style = dotted];
+
+  A -> B -> C;
+
+  // Set class to node
+  A [class = "emphasis"];
+
+  // Set class to edge
+  A -> B [class = "redline"];
+}

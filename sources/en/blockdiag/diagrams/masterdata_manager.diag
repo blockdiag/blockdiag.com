@@ -1,0 +1,14 @@
+blockdiag admin {
+  index [label = "List of FOOs"];
+  add [label = "Add FOO"];
+  add_confirm [label = "Add FOO (confirm)"];
+  edit [label = "Edit FOO"];
+  edit_confirm [label = "Edit FOO (confirm)"];
+  show [label = "Show FOO"];
+  delete_confirm [label = "Delete FOO (confirm)"];
+
+  index -> add  -> add_confirm  -> index;
+  index -> edit -> edit_confirm -> index;
+  index -> show -> index;
+  index -> delete_confirm -> index;
+}

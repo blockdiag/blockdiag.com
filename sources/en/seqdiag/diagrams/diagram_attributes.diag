@@ -1,0 +1,20 @@
+seqdiag {
+  // Set edge metrix.
+  edge_length = 300;  // default value is 192
+  span_height = 80;  // default value is 40
+
+  // Set fontsize.
+  default_fontsize = 16;  // default value is 11
+
+  // Do not show activity line
+  activation = none;
+
+  // Numbering edges automaticaly
+  autonumber = True;
+
+  // Change note color
+  default_note_color = lightblue;
+
+  browser  -> webserver [label = "GET \n/index.html"];
+  browser <-- webserver [note = "Apache works!"];
+}

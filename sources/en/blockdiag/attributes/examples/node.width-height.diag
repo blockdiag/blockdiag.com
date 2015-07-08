@@ -1,0 +1,6 @@
+blockdiag {
+  A -> B;
+
+  A[width=192];
+  B[height=64];
+}

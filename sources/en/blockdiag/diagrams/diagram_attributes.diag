@@ -1,0 +1,25 @@
+blockdiag {
+  // Set node metrix
+  node_width = 200;  // default value is 128
+  node_height = 100;  // default value is 40
+
+  // Set span metrix
+  span_width = 240;  // default value is 64
+  span_height = 120;  // default value is 40
+
+  // set default shape
+  default_shape = roundedbox;  // default value is 'box'
+
+  // set default colors
+  default_node_color = lightblue;
+  default_group_color = "#7777FF";
+  default_linecolor = blue;
+  default_textcolor = red;
+
+  A -> B [label = "Use long long\nedge label"];
+  A -> C;
+
+  group {
+    C;
+  }
+}

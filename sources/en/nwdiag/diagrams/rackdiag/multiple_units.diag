@@ -1,0 +1,14 @@
+rackdiag {
+  // define height of rack
+  16U;
+
+  // define rack items
+  1: UPS [2U];
+  3: DB Server
+  4: Web Server 1  // put 2 units to rack-level 4
+  4: Web Server 2
+  5: Web Server 3
+  5: Web Server 4
+  7: Load Balancer
+  8: L3 Switch
+}

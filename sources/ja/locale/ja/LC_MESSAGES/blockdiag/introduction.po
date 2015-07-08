@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+# Takeshi KOMIYA <i.tkomiya@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:12+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# e1b7e8fed9714beeb804939cede35892
+#: ../../../sources/en/blockdiag/introduction.rst:3
+msgid "Introduction of blockdiag"
+msgstr "blockdiag の概要"
+
+# 1a8966ceddff437799db015d96cb7ba5
+#: ../../../sources/en/blockdiag/introduction.rst:6
+msgid "Features"
+msgstr "機能"
+
+# d51051115cbc4e4b99fe65fea5a4d3cf
+#: ../../../sources/en/blockdiag/introduction.rst:7
+msgid "Generate block-diagram from dot like text (basic feature)."
+msgstr "テキストファイルからブロック図を生成"
+
+# ef822d32548244c2bb367970e33b394b
+#: ../../../sources/en/blockdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr "日本語(UTF-8)対応"
+
+# 5b8fd077e4a341cba7b21ce6d8417d94
+#: ../../../sources/en/blockdiag/introduction.rst:9
+msgid "Sphinx embedding (using sphinxcontrib-blockdiag package)"
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-blockdiag パッケージの利用)"
+
+# c71a3bd4c5004a5184d33fca13ed0ab9
+#: ../../../sources/en/blockdiag/introduction.rst:12
+msgid "Setup"
+msgstr "インストール"
+
+# 6267de3d020a4768810aa305780335c1
+#: ../../../sources/en/blockdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
+
+# bdfeb79b6a914d77a578caec9217e36c
+#: ../../../sources/en/blockdiag/introduction.rst:24
+msgid "If you want to export as PDF format, give pdf arguments"
+msgstr "PDF 形式で出力したい場合は、pdf パラメータを指定します。"
+
+# 276755a493134c46ab4068f301f930c1
+#: ../../../sources/en/blockdiag/introduction.rst:32
+msgid "Usage"
+msgstr "実行方法"
+
+# 034c129310954d00b5f3c4ebdf1a20b2
+#: ../../../sources/en/blockdiag/introduction.rst:33
+msgid "Execute blockdiag command"
+msgstr "ブロック図を生成するには `blockdiag` コマンドを起動します。"
+
+# e8db27fc24e841a79efb0b2019aacbb3
+#: ../../../sources/en/blockdiag/introduction.rst:41
+msgid "If you want SVG images or PDF images, use -T option"
+msgstr "SVG 形式や PDF 形式でブロック図を生成する場合は -T オプションを指定します。"
+
+# 55c5b8f87d2e4a9da101985f1a19c597
+#: ../../../sources/en/blockdiag/introduction.rst:57
+msgid "Font Configuration"
+msgstr "フォント設定"
+
+# 0363bc244b9142e08cc6d1ad0345fff9
+#: ../../../sources/en/blockdiag/introduction.rst:58
+msgid ""
+"blockdiag uses TrueType Font to render text. blockdiag try to detect "
+"installed fonts but if nothing detected, You can specify fonts with -f "
+"(--font) option"
+msgstr "`blockdiag` はブロック図の生成に TrueType フォントを利用します。 `blockdiag` は自動的に利用可能なフォントを取得しますが、 -f (--font) オプションにて特定のフォントで画像を生成することができます。"
+
+# a68f5cb29d0f4f2db21e0aa440bd4d68
+#: ../../../sources/en/blockdiag/introduction.rst:67
+msgid "If you always use same font, write $HOME/.blockdiagrc"
+msgstr "また、$HOME/.blockdiagrc ファイルに設定を書くことで 常に同じフォントを利用することができます。"
+
+# 2ed6068db7434bdd895ba4458d7cb73b
+#: ../../../sources/en/blockdiag/introduction.rst:77
+msgid "Requirements"
+msgstr "事前に入れておくべきソフトウェア"
+
+# 0e472dde24f0470c93a6b885e3b9cdb3
+#: ../../../sources/en/blockdiag/introduction.rst:78
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
+
+# 49eb11869a8d45de8f296b66c3038fb7
+#: ../../../sources/en/blockdiag/introduction.rst:79
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
+
+# 36f08151d1de44e7a09331115b0c20c9
+#: ../../../sources/en/blockdiag/introduction.rst:80
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
+
+# 38b26e9616d849ffbb4ce9f9defd4d78
+#: ../../../sources/en/blockdiag/introduction.rst:81
+msgid "setuptools or distribute."
+msgstr "setuptools もしくは distribute."
+
+# 2f103ab3254743b6bc13ba9eed554671
+#: ../../../sources/en/blockdiag/introduction.rst:85
+msgid "License"
+msgstr "ライセンス"
+
+# e51293bf6bef4f7a93a215a7cee27901
+#: ../../../sources/en/blockdiag/introduction.rst:86
+msgid "Apache License 2.0"
+msgstr "Apache License 2.0"

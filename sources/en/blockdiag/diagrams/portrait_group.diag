@@ -1,0 +1,9 @@
+blockdiag {
+  A -> B -> C;
+
+  group {
+    orientation = portrait
+
+    C -> D -> E;
+  }
+}

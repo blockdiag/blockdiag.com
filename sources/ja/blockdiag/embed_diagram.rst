@@ -1,0 +1,1 @@
+../../en/blockdiag/embed_diagram.rst

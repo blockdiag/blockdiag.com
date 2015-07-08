@@ -1,0 +1,7 @@
+blockdiag {
+   // Set fontsize
+   default_fontsize = 24;
+
+   A -> B;
+}
+

@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Takeshi KOMIYA
+# This file is distributed under the same license as the blockdiag package.
+# 
+# Translators:
+# Automatically generated, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: blockdiag.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-20 19:01+0900\n"
+"PO-Revision-Date: 2014-07-20 10:08+0000\n"
+"Last-Translator: Takeshi KOMIYA <i.tkomiya@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/blockdiagcom/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# e52ed717fab64227a85a697c5b5a7841
+#: ../../../sources/en/seqdiag/introduction.rst:3
+msgid "Introduction of seqdiag"
+msgstr "seqdiag の概要"
+
+# f4c6df677ecd49b8abeb68d5394f6005
+#: ../../../sources/en/seqdiag/introduction.rst:6
+msgid "Features"
+msgstr "機能"
+
+# 06716fdd48bf4b1c83176ddc15ea5384
+#: ../../../sources/en/seqdiag/introduction.rst:7
+msgid "Generate sequence-diagram from dot like text (basic feature)."
+msgstr "テキストファイルからシーケンス図を生成"
+
+# 000b62cbd42d464992794ee6d77754af
+#: ../../../sources/en/seqdiag/introduction.rst:8
+msgid "Multilingualization for node-label (utf-8 only)."
+msgstr "日本語(UTF-8)対応"
+
+# 30983f3e39f543e5bf644f3918f2f638
+#: ../../../sources/en/seqdiag/introduction.rst:9
+msgid "Sphinx embedding"
+msgstr "Sphinx 文書への埋め込み (sphinxcontrib-seqdiag パッケージの利用)"
+
+# 95f1d87dd452469995dd46382c85ee77
+#: ../../../sources/en/seqdiag/introduction.rst:12
+msgid "Setup"
+msgstr "インストール"
+
+# b4bad149f39c4dffaebb75e808798f37
+#: ../../../sources/en/seqdiag/introduction.rst:14
+msgid "Use easy_install or pip"
+msgstr "easy_install もしくは pip を利用してインストールしてください。"
+
+# 2e457548e26f482199b379a12d80ec35
+#: ../../../sources/en/seqdiag/introduction.rst:24
+msgid "Copy and modify ini file. example"
+msgstr ""
+
+# 711daaa945824d548cc9c1cbf1d9fb7e
+#: ../../../sources/en/seqdiag/introduction.rst:31
+msgid ""
+"Please refer to :ref:`seqdiag-sample-diagrams` section for the format of the"
+" `simpla.diag` configuration file."
+msgstr "書式の詳細については :ref:`seqdiag-sample-diagrams` を参照してください。"
+
+# 0e568a655df849de91fc356e54a00ef2
+#: ../../../sources/en/seqdiag/introduction.rst:36
+msgid "Usage"
+msgstr "実行方法"
+
+# 7c41eb21f96c495faac7dadcf2b9b5e6
+#: ../../../sources/en/seqdiag/introduction.rst:37
+msgid "Execute seqdiag command"
+msgstr "コマンドラインで seqdiag コマンドを実行します。"
+
+# 3329c368086e487a802d0947eeeab227
+#: ../../../sources/en/seqdiag/introduction.rst:45
+msgid "If you want SVG images, use -T option"
+msgstr "SVG 形式で出力したい場合は -T オプションを利用します。"
+
+# e95197ebe405469c92c416dfe63fe512
+#: ../../../sources/en/seqdiag/introduction.rst:55
+msgid "Font Configuration"
+msgstr "フォント設定"
+
+# 7d3b15c6e91d41e0a5916c43fc972933
+#: ../../../sources/en/seqdiag/introduction.rst:56
+msgid ""
+"seqdiag uses TrueType Font to render text. seqdiag try to detect installed "
+"fonts but if nothing detected, You can specify fonts with -f (--font) option"
+msgstr "seqdiag は文字の描画に TrueType フォントを利用します。指定がない場合 seqdiag は自動的にフォントを検索しますが、見つからない場合もしくはフォントを指定したい場合は -f (--font) オプションを利用します。"
+
+# a8ace297a2534a7692ab9bb5914c4982
+#: ../../../sources/en/seqdiag/introduction.rst:65
+msgid "If you always use same font, write $HOME/.blockdiagrc"
+msgstr "もし常に同じ設定を利用する場合は $HOME/.blockdiagrc に以下の記述をするとよいでしょう。"
+
+# e279228493d543af9517d5d8e2861484
+#: ../../../sources/en/seqdiag/introduction.rst:75
+msgid "Requirements"
+msgstr "事前に入れておくべきソフトウェア"
+
+# dc94906724e24f97bb2efe1d4e90a08c
+#: ../../../sources/en/seqdiag/introduction.rst:76
+msgid "Python 2.6, 2.7, 3.2, 3.3 or later"
+msgstr "Python 2.6, 2.7, 3.2 および 3.3 以降"
+
+# e9b2757c69734c77b3e400a4848e864f
+#: ../../../sources/en/seqdiag/introduction.rst:77
+msgid "Pillow 2.2.1 or later."
+msgstr "Pillow 2.2.1 以降"
+
+# e111438c9dd844698146fee9c32c47d4
+#: ../../../sources/en/seqdiag/introduction.rst:78
+msgid "funcparserlib 0.3.6 or later."
+msgstr "funcparserlib 0.3.6 以降"
+
+# 436062b34d804575ab5c196a7b7a6cab
+#: ../../../sources/en/seqdiag/introduction.rst:79
+msgid "setuptools or distribute."
+msgstr "setuptools もしくは distribute"
+
+# f49f1f6d221a4438b2dcb6f27b07e7ab
+#: ../../../sources/en/seqdiag/introduction.rst:83
+msgid "License"
+msgstr "ライセンス"
+
+# 423d40fb3ad247909135829e7cdc5ca6
+#: ../../../sources/en/seqdiag/introduction.rst:84
+msgid "Apache License 2.0"
+msgstr "Apache License 2.0"

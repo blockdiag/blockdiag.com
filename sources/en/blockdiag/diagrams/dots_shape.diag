@@ -1,0 +1,8 @@
+blockdiag {
+  A -> B, C, D;
+
+  C [shape = "dots"];
+
+  // hide edge forward to dots node
+  A -> C [style = "none"];
+}
