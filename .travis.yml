@@ -13,5 +13,5 @@ script:
     - echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
     - make -C sources/en html
     - make -C sources/ja gettext html
-    - boto-rsync -g public-read --delete _build/en/html s3://blockdiag.com/en
-    - boto-rsync -g public-read --delete _build/ja/html s3://blockdiag.com/ja
+    - boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/en/html s3://blockdiag.com/en
+    - boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/ja/html s3://blockdiag.com/ja
