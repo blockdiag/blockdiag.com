@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+*.po~
+*.mo
+pip-selfcheck.json
+
+_build/
+bin/
+include/
+lib/

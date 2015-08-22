@@ -1,8 +1,0 @@
-.pyc
-.swp
-.po~
-.mo
-^_build/
-^bin/
-^include/
-^lib/
