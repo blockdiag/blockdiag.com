@@ -9,6 +9,8 @@ install:
     - pip install --upgrade --use-wheel docutils pip tox virtualenv
     - pip install --upgrade --use-wheel --pre -r requirements.txt
 script:
+    - echo "[s3]" > $HOME/.boto
+    - echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
     - make -C sources/en html
     - make -C sources/ja gettext html
     - boto-rsync -g public-read --delete _build/en/html s3://blockdiag.com/en
