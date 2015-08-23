@@ -1,10 +1,7 @@
 dependencies:
   pre:
     - sudo apt-get install fonts-ipafont-gothic libjpeg8-dev libfreetype6-dev
-    - pip install virtualenv
   override:
-    - virtualenv .
-    - . bin/activate
     - pip install --upgrade wheel
     - pip install --upgrade --use-wheel --pre -r requirements.txt
   post:
@@ -14,7 +11,6 @@ dependencies:
     - "~/.cache/pip"
 test:
   override:
-    - . bin/activate
     - make -C sources/en html
     - make -C sources/ja gettext html
     - boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/en/html s3://blockdiag.com/en

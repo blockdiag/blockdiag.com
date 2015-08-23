@@ -4,8 +4,8 @@
 # You can set these variables from the command line.
 LANGUAGE      = ja
 SPHINXOPTS    = -D language=$(LANGUAGE)
-SPHINXBUILD   = ../../bin/sphinx-build
-SPHINXINTL    = ../../bin/sphinx-intl
+SPHINXBUILD   = sphinx-build
+SPHINXINTL    = sphinx-intl
 PAPER         =
 BUILDDIR      = ../../_build/ja
 
