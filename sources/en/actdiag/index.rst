@@ -2,10 +2,10 @@
 actdiag - simple activity-diagram image generator
 =================================================
 
-`actdiag` generate activity-diagram image file from .diag file.  
-.diag file is similar to DOT file (graphviz's).
+`actdiag` generates activity-diagram images from .diag files
+(similar to graphviz's DOT files).
 
-You can get diagrams like this.
+You can get diagrams like this:
 
 .. actdiag::
 

@@ -1,8 +1,8 @@
 .. _nwdiag-sample-diagrams:
 
-======================
-Sample diagams: nwdiag
-======================
+=======================
+Sample diagrams: nwdiag
+=======================
 
 simple diagram
 ==============

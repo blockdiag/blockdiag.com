@@ -1,8 +1,8 @@
-============================================
+===========================================
 blockdiag - simple diagram images generator
-============================================
+===========================================
 
-`blockdiag` and its family generate diagram images from simply text file:
+`blockdiag` and its family generate diagram images from simple text files:
 
 .. blockdiag::
 
@@ -25,7 +25,6 @@ Features:
 * Generates beautiful diagram images from simple text format (similar to graphviz's DOT format)
 * Layouts diagram elements automatically
 * Embeds to many documentations; Sphinx, Trac, Redmine and some wikis
-
 
 Enjoy documentation with blockdiag !
 

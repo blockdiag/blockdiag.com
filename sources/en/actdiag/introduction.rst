@@ -21,7 +21,7 @@ Use easy_install or pip
 
    $ sudo pip install actdiag
 
-Copy and modify ini file. example
+Copy and modify the example file
 
 .. code-block:: bash
 
@@ -29,7 +29,7 @@ Copy and modify ini file. example
    $ vi simple.diag
 
 Please refer to :ref:`actdiag-sample-diagrams` section for the format of the
-`simpla.diag` configuration file.
+`simple.diag` configuration file.
 
 
 Usage

@@ -2,10 +2,10 @@
 seqdiag - simple sequence-diagram image generator
 =================================================
 
-`seqdiag` generate sequence-diagram image file from .diag file.  
-.diag file is similar to DOT file (graphviz's).
+`seqdiag` generates sequence-diagram images from .diag files
+(similar to graphviz's DOT files).
 
-You can get diagrams like this.
+You can get diagrams like this:
 
 .. seqdiag::
 

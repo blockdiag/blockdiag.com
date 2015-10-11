@@ -1,8 +1,8 @@
 .. _rackdiag-sample-diagrams:
 
-========================
-Sample diagams: rackdiag
-========================
+=========================
+Sample diagrams: rackdiag
+=========================
 
 simple diagram
 ==============
