@@ -31,7 +31,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo pip install sphinxcontrib-blockdiag
+   $ pip install sphinxcontrib-blockdiag
 
 
 Configure Sphinx

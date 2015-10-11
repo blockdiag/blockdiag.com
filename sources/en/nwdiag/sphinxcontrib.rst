@@ -35,7 +35,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo pip install sphinxcontrib-nwdiag
+   $ pip install sphinxcontrib-nwdiag
 
 
 Configure Sphinx

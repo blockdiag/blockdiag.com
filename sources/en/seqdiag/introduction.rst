@@ -11,15 +11,17 @@ Features
 Setup
 =====
 
-Use easy_install or pip
+Install with ``pip``:
 
 .. code-block:: bash
 
-   $ sudo easy_install seqdiag
+   $ pip install seqdiag
 
-   Or
+Or with ``easy_install``:
 
-   $ sudo pip install seqdiag
+.. code-block:: bash
+
+   $ easy_install seqdiag
 
 Copy and modify ini file. example
 

@@ -29,7 +29,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo pip install sphinxcontrib-seqdiag
+   $ pip install sphinxcontrib-seqdiag
 
 
 Configure Sphinx
