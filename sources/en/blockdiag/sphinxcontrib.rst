@@ -4,8 +4,8 @@
 sphinxcontrib-blockdiag
 =======================
 
-`sphinxcontrib-blockdiag` is sphinx extension for embedding blockdiag diagrams.
-You can embed block diagrams with `blockdiag` directive.
+`sphinxcontrib-blockdiag` is a Sphinx extension for embedding blockdiag diagrams.
+You can embed block diagrams with the `blockdiag` directive.
 
 .. code-block:: text
 
@@ -59,8 +59,9 @@ Directive
 .. describe:: .. blockdiag:: [filename]
 
    This directive inserts a block diagram into the document.
-   When `filename` argument is specified, the extension reads a diagram definitiom from file.
-   In another case, it reads from code block.
+   When the `filename` argument is specified, the extension reads the diagram
+   definition from the specified file.
+   Otherwise, it reads the diagram definition from the code block.
 
    Examples::
 

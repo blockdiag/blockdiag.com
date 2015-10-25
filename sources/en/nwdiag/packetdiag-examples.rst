@@ -1,7 +1,7 @@
 .. _packetdiag-sample-diagrams:
 
 ===========================
-Sample diagams: packetdiag
+Sample diagrams: packetdiag
 ===========================
 
 Structure of TCP Header

@@ -1,8 +1,8 @@
 .. _actdiag-sample-diagrams:
 
-==============
-Sample diagams
-==============
+===============
+Sample diagrams
+===============
 
 simple diagram
 ==============

@@ -2,10 +2,10 @@
 nwdiag - simple network-diagram image generators
 ================================================
 
-`nwdiag` generates network-diagram image file from .diag file.  
-.diag file is similar to DOT file (graphviz's).
+`nwdiag` generates network-diagram images from .diag files
+(similar to graphviz's DOT files).
 
-You can get diagrams like this.
+You can get diagrams like this:
 
 .. nwdiag::
 

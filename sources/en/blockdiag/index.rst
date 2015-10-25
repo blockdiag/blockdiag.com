@@ -2,10 +2,10 @@
 blockdiag - simple block-diagram image generator
 ================================================
 
-`blockdiag` generate block-diagram image file from .diag file.  
-.diag file is similar to DOT file (graphviz's).
+`blockdiag` generates block-diagram images from .diag files
+(similar to graphviz's DOT files).
 
-You can get diagrams like this.
+You can get diagrams like this:
 
 .. blockdiag::
 

@@ -1,8 +1,8 @@
 .. _seqdiag-sample-diagrams:
 
-==============
-Sample diagams
-==============
+===============
+Sample diagrams
+===============
 
 simple diagram
 ==============

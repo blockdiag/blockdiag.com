@@ -2,8 +2,8 @@
 sphinxcontrib-seqdiag
 =====================
 
-`sphinxcontrib-seqdiag` is sphinx extension for embedding seqdiag diagrams.
-You can embed sequence diagrams with `seqdiag` directive.
+`sphinxcontrib-seqdiag` is a Sphinx extension for embedding seqdiag diagrams.
+You can embed sequence diagrams with the `seqdiag` directive.
 
 .. code-block:: text
 
@@ -58,8 +58,9 @@ Directive
 .. describe:: .. seqdiag:: [filename]
 
    This directive inserts a sequence diagram into the document.
-   When `filename` argument is specified, the extension reads a diagram definitiom from file.
-   In another case, it reads from code block.
+   When the `filename` argument is specified, the extension reads the diagram
+   definition from the specified file.
+   Otherwise, it reads the diagram definition from the code block.
 
    Examples::
 

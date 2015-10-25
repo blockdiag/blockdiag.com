@@ -2,8 +2,8 @@
 sphinxcontrib-nwdiag
 ====================
 
-`sphinxcontrib-nwdiag` is sphinx extension for embedding nwdiag diagrams.
-You can embed network diagrams with `nwdiag`, `rackdiag` and `packetdiag` directives.
+`sphinxcontrib-nwdiag` is a Sphinx extension for embedding nwdiag diagrams.
+You can embed network diagrams with the `nwdiag`, `rackdiag` and `packetdiag` directives.
 
 .. code-block:: text
 
@@ -67,8 +67,9 @@ Directive
 .. describe:: .. nwdiag:: [filename]
 
    This directive inserts a network diagram into the document.
-   When `filename` argument is specified, the extension reads a diagram definitiom from file.
-   In another case, it reads from code block.
+   When the `filename` argument is specified, the extension reads the diagram
+   definition from the specified file.
+   Otherwise, it reads the diagram definition from the code block.
 
    Examples::
 

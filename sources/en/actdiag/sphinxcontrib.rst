@@ -2,8 +2,8 @@
 sphinxcontrib-actdiag
 =====================
 
-`sphinxcontrib-actdiag` is sphinx extension for embedding actdiag diagrams.
-You can embed activity diagrams with `actdiag` directive.
+`sphinxcontrib-actdiag` is a Sphinx extension for embedding actdiag diagrams.
+You can embed activity diagrams with the `actdiag` directive.
 
 .. code-block:: text
 
@@ -58,8 +58,9 @@ Directive
 .. describe:: .. actdiag:: [filename]
 
    This directive inserts a activity diagram into the document.
-   When `filename` argument is specified, the extension reads a diagram definitiom from file.
-   In another case, it reads from code block.
+   When the `filename` argument is specified, the extension reads the diagram
+   definition from the specified file.
+   Otherwise, it reads the diagram definition from the code block.
 
    Examples::
 
