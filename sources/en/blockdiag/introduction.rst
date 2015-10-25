@@ -11,22 +11,23 @@ Features
 Setup
 =====
 
-Use easy_install or pip
+Install with ``pip``:
 
 .. code-block:: bash
 
-   $ sudo easy_install blockdiag
+   $ pip install blockdiag
 
-   Or
+Or with ``easy_install``:
 
-   $ sudo pip install blockdiag
+.. code-block:: bash
+
+   $ easy_install blockdiag
 
 If you want to export as PDF format, give pdf arguments
 
 .. code-block:: bash
 
-   $ sudo easy_install "blockdiag[pdf]"
-
+   $ easy_install "blockdiag[pdf]"
 
 Usage
 =====

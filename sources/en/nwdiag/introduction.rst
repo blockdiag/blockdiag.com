@@ -11,15 +11,17 @@ Features
 Setup
 =====
 
-Use easy_install or pip
+Install with ``pip``:
 
 .. code-block:: bash
 
-   $ sudo easy_install nwdiag
+   $ pip install nwdiag
 
-   Or
+Or with ``easy_install``:
 
-   $ sudo pip install nwdiag
+.. code-block:: bash
+
+   $ easy_install nwdiag
 
 Copy and modify the example file
 

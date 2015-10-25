@@ -29,7 +29,7 @@ Install
 
 .. code-block:: bash
 
-   $ sudo pip install sphinxcontrib-actdiag
+   $ pip install sphinxcontrib-actdiag
 
 
 Configure Sphinx

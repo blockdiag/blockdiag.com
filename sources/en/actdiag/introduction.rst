@@ -11,15 +11,17 @@ Features
 Setup
 =====
 
-Use easy_install or pip
+Install with ``pip``:
 
 .. code-block:: bash
 
-   $ sudo easy_install actdiag
+   $ pip install actdiag
 
-   Or
+Or with ``easy_install``:
 
-   $ sudo pip install actdiag
+.. code-block:: bash
+
+   $ easy_install actdiag
 
 Copy and modify the example file
 
