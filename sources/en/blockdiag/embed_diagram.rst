@@ -152,10 +152,10 @@ Embed in asciidoc
 `asciidoc`_ is a document generation tool which can translate from
 text document to some formats.
 
-To embed a blockdiagram in the asciidoc, use `asciidoc-diag-filter`_.
+To embed a blockdiagram in the asciidoc, use `asciidoctor-diagram`_.
 
 .. _asciidoc: http://www.methods.co.nz/asciidoc/
-.. _asciidoc-diag-filter: https://code.google.com/p/asciidoc-diag-filter/
+.. _asciidoctor-diagram: https://github.com/asciidoctor/asciidoctor-diagram
 
 
 Get from API
