@@ -273,7 +273,8 @@ googleanalytics_id = 'UA-19477951-1'
 
 # font settings for blockdiag families
 blockdiag_fontpath = ['/usr/share/fonts/truetype/ipafont/ipagp.ttf',
-                      '/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf']
+                      '/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf',
+                      '/Library/Fonts/AppleGothic.ttf']
 blockdiag_antialias = True
 seqdiag_fontpath = blockdiag_fontpath
 seqdiag_antialias = True
