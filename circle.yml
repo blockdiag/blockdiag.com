@@ -1,5 +1,6 @@
 dependencies:
   pre:
+    - sudo apt-get update
     - sudo apt-get install fonts-ipafont-gothic libjpeg8-dev libfreetype6-dev
   override:
     - pip install --upgrade wheel
