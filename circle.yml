@@ -3,8 +3,8 @@ dependencies:
     - sudo apt-get update
     - sudo apt-get install fonts-ipafont-gothic libjpeg8-dev libfreetype6-dev
   override:
-    - pip install --upgrade wheel
-    - pip install --upgrade --use-wheel --pre -r requirements.txt
+    - pip install --upgrade pip setuptools wheel
+    - pip install --upgrade --pre -r requirements.txt
   post:
     - echo "[s3]" > $HOME/.boto
     - echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
