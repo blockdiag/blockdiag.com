@@ -1,9 +1,10 @@
 dependencies:
   pre:
     - sudo apt-get update
+    - sudo apt-get remove -y python-pip python-requests
     - sudo apt-get install fonts-ipafont-gothic libjpeg8-dev libfreetype6-dev
   override:
-    - pip install --upgrade pip setuptools wheel
+    - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py; python get-pip.py
     - pip install --upgrade --pre -r requirements.txt
   post:
     - echo "[s3]" > $HOME/.boto
