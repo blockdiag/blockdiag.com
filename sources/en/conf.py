@@ -320,6 +320,10 @@ def setup(app):
                         parse_event, doc_field_types=[fdesc])
 
 
+# adhoc: Fix sphinxcontrib-googleanalytics does not work with Sphinx-1.8
+from sphinx import application, errors
+application.ExtensionError = errors.ExtensionError
+
 # adhoc: Fix sphinxcontrib-googleanalytics does not work with Sphinx-1.3
 from sphinxcontrib import googleanalytics
 original_setup = googleanalytics.setup
