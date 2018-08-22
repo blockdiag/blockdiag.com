@@ -1,0 +1,15 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update && apt-get install -y python python-pip fonts-ipafont-gothic libjpeg8 libfreetype6-dev
+      - run: pip install --upgrade --pre pip setuptools
+      - run: pip install --upgrade --pre -r requirements.txt
+      - run: echo "[s3]" > $HOME/.boto && echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
+      - run: make -C sources/en html
+      - run: make -C sources/ja gettext html
+      - run: boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/en/html s3://blockdiag.com/en
+      - run: boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/ja/html s3://blockdiag.com/ja
