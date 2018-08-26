@@ -63,15 +63,15 @@ Resources
 * Twitter: #blockdiag
 * Interactive Shell: `<http://interactive.blockdiag.com/>`_
 * blockdiag
-   * PyPI: `<http://pypi.python.org/pypi/blockdiag/>`_
-   * Repository: `<https://bitbucket.org/blockdiag/blockdiag/>`_
+   * PyPI: `<http://pypi.org/project/blockdiag/>`_
+   * Repository: `<https://github.com/blockdiag/blockdiag/>`_
 * seqdiag
-   * PyPI: `<http://pypi.python.org/pypi/seqdiag/>`_
-   * Repository: `<https://bitbucket.org/blockdiag/seqdiag/>`_
+   * PyPI: `<http://pypi.org/project/seqdiag/>`_
+   * Repository: `<https://github.com/blockdiag/seqdiag/>`_
 * actdiag
-   * PyPI: `<http://pypi.python.org/pypi/actdiag/>`_
-   * Repository: `<https://bitbucket.org/blockdiag/actdiag/>`_
+   * PyPI: `<http://pypi.org/project/actdiag/>`_
+   * Repository: `<https://github.com/blockdiag/actdiag/>`_
 * nwdiag
-   * PyPI: `<http://pypi.python.org/pypi/nwdiag/>`_
-   * Repository: `<https://bitbucket.org/blockdiag/nwdiag/>`_
-* Issue Tracker: `<https://bitbucket.org/tk0miya/blockdiag/issues?status=new&status=open>`_
+   * PyPI: `<http://pypi.org/project/nwdiag/>`_
+   * Repository: `<https://github.com/blockdiag/nwdiag/>`_
+* Issue Tracker: `<https://github.com/blockdiag/blockdiag/issues>`_
