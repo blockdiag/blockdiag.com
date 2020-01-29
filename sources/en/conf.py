@@ -26,7 +26,7 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.todo',
-              'sphinxcontrib.googleanalytics',
+              #'sphinxcontrib.googleanalytics',
               'sphinxcontrib.blockdiag',
               'sphinxcontrib.seqdiag',
               'sphinxcontrib.actdiag',
@@ -321,11 +321,11 @@ def setup(app):
 
 
 # adhoc: Fix sphinxcontrib-googleanalytics does not work with Sphinx-1.8
-from sphinx import application, errors
-application.ExtensionError = errors.ExtensionError
-
+#from sphinx import application, errors
+#application.ExtensionError = errors.ExtensionError
+#
 # adhoc: Fix sphinxcontrib-googleanalytics does not work with Sphinx-1.3
-from sphinxcontrib import googleanalytics
-original_setup = googleanalytics.setup
-
-googleanalytics.setup = lambda app: original_setup(app) and None
+#from sphinxcontrib import googleanalytics
+#original_setup = googleanalytics.setup
+#
+#googleanalytics.setup = lambda app: original_setup(app) and None

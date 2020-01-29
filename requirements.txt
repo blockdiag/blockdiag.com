@@ -1,6 +1,5 @@
 sphinx
 sphinx-intl
-sphinxcontrib-googleanalytics
 sphinxcontrib-blockdiag
 sphinxcontrib-seqdiag
 sphinxcontrib-actdiag
