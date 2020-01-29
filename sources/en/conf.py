@@ -299,8 +299,7 @@ def parse_event(env, sig, signode):
 
 
 def setup(app):
-    app.add_description_unit('confval', 'confval',
-                             'pair: %s; configuration value')
+    app.add_object_type('confval', 'confval', 'pair: %s; configuration value')
 
     # original directives for index
     from sphinx.util.docfields import GroupedField
