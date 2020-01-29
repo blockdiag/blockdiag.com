@@ -5,9 +5,9 @@ jobs:
       - image: ubuntu:18.04
     steps:
       - checkout
-      - run: apt-get update && apt-get install -y python python-pip fonts-ipafont-gothic libjpeg8 libfreetype6-dev
-      - run: pip install --upgrade --pre pip setuptools
-      - run: pip install --upgrade --pre -r requirements.txt
+      - run: apt-get update && apt-get install -y python3 python3-pip fonts-ipafont-gothic libjpeg8 libfreetype6-dev
+      - run: pip3 install --upgrade --pre pip setuptools
+      - run: pip3 install --upgrade --pre -r requirements.txt
       - run: echo "[s3]" > $HOME/.boto && echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
       - run: make -C sources/en html
       - run: make -C sources/ja gettext html
