@@ -8,8 +8,7 @@ jobs:
       - run: apt-get update && apt-get install -y python3 python3-pip fonts-ipafont-gothic libjpeg8 libfreetype6-dev
       - run: pip3 install --upgrade --pre pip setuptools
       - run: pip3 install --upgrade --pre -r requirements.txt
-      - run: echo "[s3]" > $HOME/.boto && echo "calling_format = boto.s3.connection.OrdinaryCallingFormat" >> $HOME/.boto
       - run: make -C sources/en html
       - run: make -C sources/ja gettext html
-      - run: boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/en/html s3://blockdiag.com/en
-      - run: boto-rsync -g public-read --endpoint s3-ap-northeast-1.amazonaws.com --delete _build/ja/html s3://blockdiag.com/ja
+      - run: aws s3 sync --acl public-read --delete _build/en/html s3://blockdiag.com/en
+      - run: aws s3 sync --acl public-read --delete _build/ja/html s3://blockdiag.com/ja
