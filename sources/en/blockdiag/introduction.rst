@@ -75,6 +75,15 @@ If you always use same font, write $HOME/.blockdiagrc
    [blockdiag]
    fontpath = /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
 
+.. note::
+
+   The programming fonts are not recommended if you generate SVG image because they will
+   causes the collapse of the generated images.  blockdiag does not embed font itself or
+   any font information.  It only obtains font metrics (width, height and so on) of text.
+
+   Therefore text will be rendered as collapsed if you're using smart fonts like the
+   programming fonts to generate SVG images because the font metrics are different with
+   the viewers' font (ex. browser's font).
 
 Requirements
 ============
