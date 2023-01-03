@@ -178,24 +178,57 @@ Configuration File Options
 
    .. versionadded:: 1.5.0
 
-.. confval:: blockdiag_html_image_format = "PNG" or "SVG"
+.. confval:: blockdiag_image_format = dict or str
 
-   The output image format at generating HTML docs.
+   The output image format to use. For example:
 
-.. confval:: blockdiag_latex_image_format = "PNG" or "PDF"
+   .. code-block:: python
 
-   The output image format at generating PDF docs (through LaTeX).
-   When a value of "PDF" is specified, you can get clear diagram images.
-   In which case, reportlab_ library is required.
+       blockdiag_image_format = {
+           'html': 'SVG',  # PNG, SVG
+           'latex': 'PDF',  # PDF, PNG
+           '*': 'PNG',
+       }
+
+   In this example, when building with an ``html`` builder, SVG images will
+   be generated. Users can configure specific image formats for the builder
+   format they desire. To define a fallback image format for other builder
+   formats, the ``*`` key can be used. Users may also configure an image
+   format for all builders by using the following:
+
+   .. code-block:: python
+
+       blockdiag_image_format = 'PNG'
+
+   Supported image formats include ``PNG``, ``SVG`` and ``PDF``. Note
+   that not all builders can support each image format type. By default,
+   the ``PNG`` format is used. When using the ``PDF`` format, reportlab_
+   library is required.
 
    .. _reportlab: https://pypi.python.org/pypi/reportlab
 
-.. confval:: blockdiag_tex_image_format = "PNG" or "PDF"
+   .. versionadded:: 2.1.0
+
+.. confval:: blockdiag_html_image_format = str
+
+   .. deprecated:: 2.1.0
+      Use ``blockdiag_image_format`` option.
+
+   Same as the "blockdiag_image_format" option for an ``html`` format.
+
+.. confval:: blockdiag_latex_image_format = str
+
+   .. deprecated:: 2.1.0
+      Use ``blockdiag_image_format`` option.
+
+   Same as the "blockdiag_image_format" option for a ``latex`` format.
+
+.. confval:: blockdiag_tex_image_format = str
 
    .. deprecated:: 1.4.0
-      Use ``blockdiag_latex_image_format`` option.
+      Use ``blockdiag_image_format`` option.
 
-   Same as "blockdiag_latex_image_format" option.
+   Same as the "blockdiag_image_format" option for a ``latex`` format.
 
 .. confval:: blockdiag_debug = bool
 
